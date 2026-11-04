@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>NSE Paper Trader</title>
+<style>
+:root{color-scheme:light dark;--bg:#f6f6f4;--card:#fff;--fg:#1d1d1b;--mut:#6b6b66;--line:#e2e2dd;--g:#1a7f37;--r:#c22d2d;--b:#1f5fbf}
+@media(prefers-color-scheme:dark){:root{--bg:#121211;--card:#1d1d1b;--fg:#ececea;--mut:#9a9a94;--line:#2e2e2b;--g:#3fb950;--r:#f0605d;--b:#5b9cf5}}
+*{box-sizing:border-box}body{margin:0 auto;font:15px/1.4 -apple-system,system-ui,sans-serif;background:var(--bg);color:var(--fg);padding:14px 14px 40px;max-width:560px}
+h1{font-size:19px;margin:4px 0 2px}.mut{color:var(--mut);font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:12px 0}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+a.btn{flex:1;min-width:30%;text-align:center;text-decoration:none;font:600 14px system-ui;padding:12px 8px;border-radius:11px;border:1px solid var(--line);color:var(--fg);background:var(--card)}
+a.go{background:var(--g);color:#fff;border:0}
+.big{font-size:28px;font-weight:700}.pos{color:var(--g)}.neg{color:var(--r)}
+.pill{display:inline-block;padding:3px 10px;border-radius:99px;font-size:13px;font-weight:600}
+.on{background:color-mix(in srgb,var(--g) 18%,transparent);color:var(--g)}.off{background:color-mix(in srgb,var(--mut) 18%,transparent);color:var(--mut)}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+pre{white-space:pre-wrap;font:12px/1.45 ui-monospace,Menlo,monospace;margin:0;max-height:320px;overflow:auto}
+</style></head><body>
+<h1>NSE Paper Trader</h1><div class="mut" id="upd">Loading...</div>
+<div class="card">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <span id="state" class="pill off">...</span><span class="mut" id="strat"></span></div>
+  <div class="mut" style="margin-top:10px">Today, after charges</div>
+  <div class="big" id="today">Rs 0</div>
+  <div class="row" style="margin-top:12px">
+    <a class="btn go" id="runBtn" target="_blank">Start a run</a>
+    <a class="btn" id="runsBtn" target="_blank">Runs / Stop</a>
+  </div>
+  <div class="mut" style="margin-top:8px">Start: tap "Run workflow" on GitHub. Stop: open the running job and tap "Cancel". Updates every 10 min while trading.</div>
+</div>
+<div class="card"><b>Open positions</b><table id="openT"></table></div>
+<div class="card"><b>Closed today</b><table id="closedT"></table></div>
+<div class="card"><b>All paper trades</b><div class="mut" id="tot"></div><table id="byDay"></table><table id="recent" style="margin-top:10px"></table></div>
+<div class="card"><b>Today's log</b><pre id="logP"></pre></div>
+<p class="mut">Dummy money only. Nothing here can place a real order.</p>
+<script>
+const $=id=>document.getElementById(id);
+const rs=x=>(x>0?'+':'')+'Rs '+Math.round(x).toLocaleString('en-IN');
+const cls=x=>x>0?'pos':(x<0?'neg':'');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+// https://<owner>.github.io/<repo>/  ->  GitHub Actions links
+const owner=location.hostname.split('.')[0], repo=location.pathname.split('/').filter(Boolean)[0]||'';
+const wf=`https://github.com/${owner}/${repo}/actions/workflows/paper.yml`;
+$('runBtn').href=wf; $('runsBtn').href=`https://github.com/${owner}/${repo}/actions`;
+async function load(){
+  let d;
+  try{const r=await fetch('status.json?t='+Date.now());d=await r.json()}catch(e){$('upd').textContent='Could not load status.json yet.';return}
+  const age=Math.round((Date.now()/1000-d.updated_ts)/60);
+  $('upd').textContent='Updated '+d.updated+' ('+(age<1?'just now':age+' min ago')+')';
+  const live=d.in_session&&age<20;
+  $('state').textContent=live?'Running':'Not running';$('state').className='pill '+(live?'on':'off');
+  $('strat').textContent=(d.strategies||[]).join(', ');
+  const today=new Date(Date.now()+5.5*3600e3).toISOString().slice(0,10);
+  const isToday=d.date===today;
+  $('today').textContent=isToday?rs(d.today_net):'Rs 0';$('today').className='big '+(isToday?cls(d.today_net):'');
+  const o=isToday?Object.entries(d.open):[];
+  $('openT').innerHTML=o.length?'<tr><th>Stock</th><th>Side</th><th class=n>Qty</th><th class=n>Entry</th><th class=n>Stop</th><th class=n>Target</th></tr>'+
+    o.map(([s,p])=>`<tr><td>${esc(s)}</td><td>${p.side>0?'BUY':'SHORT'}</td><td class=n>${p.qty}</td><td class=n>${p.entry}</td><td class=n>${p.stop}</td><td class=n>${p.target}</td></tr>`).join(''):'<tr><td class=mut>None</td></tr>';
+  const c=isToday?d.closed:[];
+  $('closedT').innerHTML=c.length?'<tr><th>Stock</th><th>Exit</th><th class=n>Net</th></tr>'+
+    c.map(t=>`<tr><td>${esc(t.symbol)} ${t.side>0?'BUY':'SHORT'}</td><td>${esc(t.reason)} ${esc(t.exit_time)}</td><td class="n ${cls(t.net)}">${rs(t.net)}</td></tr>`).join(''):'<tr><td class=mut>None yet</td></tr>';
+  $('tot').textContent=d.all_trades?`${d.all_trades} trades, ${d.all_wins} won (${Math.round(100*d.all_wins/d.all_trades)}%), total ${rs(d.all_net)}`+(d.all_trades<100?'. Under 100 trades: too few to judge.':''):'No paper trades yet.';
+  const days=Object.entries(d.by_day||{}).reverse().slice(0,10);
+  $('byDay').innerHTML=days.length?'<tr><th>Day</th><th class=n>Net</th></tr>'+days.map(([k,v])=>`<tr><td>${k}</td><td class="n ${cls(v)}">${rs(v)}</td></tr>`).join(''):'';
+  $('recent').innerHTML=d.recent.length?'<tr><th>Date</th><th>Stock</th><th>Exit</th><th class=n>Net</th></tr>'+d.recent.map(t=>`<tr><td>${t.date.slice(5)}</td><td>${esc(t.symbol)}</td><td>${esc(t.reason)}</td><td class="n ${cls(+t.net)}">${rs(+t.net)}</td></tr>`).join(''):'';
+  $('logP').textContent=(isToday&&d.log.length)?d.log.join('\n'):'Nothing yet today.';
+}
+load();setInterval(load,60000);
+</script></body></html>

@@ -1,0 +1,51 @@
+# Paper trading (dummy money) on NSE, in two shifts because a GitHub job can run at most 6 hours.
+# Started on time by cron-job.org calling "run workflow" at 09:10 and 12:15 IST on weekdays
+# (GitHub's own schedule below is only a backup: it often starts hours late).
+# A run decides its shift from the clock: started before 12:00 IST -> stops 12:15, otherwise 15:20.
+# Open positions are saved in paper/state-<date>.json and carried from the morning to the afternoon run.
+name: Paper trading
+
+on:
+  workflow_dispatch:
+    inputs:
+      until:
+        description: "Stop at (IST, HH:MM). Leave empty: 12:15 for a morning start, 15:20 otherwise"
+        type: string
+        default: ""
+  schedule:
+    - cron: "40 3 * * 1-5"   # 09:10 IST backup
+    - cron: "45 6 * * 1-5"   # 12:15 IST backup
+
+permissions:
+  contents: write
+
+concurrency:
+  group: paper
+  cancel-in-progress: false
+
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - name: Paper trade until the end of the shift
+        env:
+          UNTIL_INPUT: ${{ inputs.until }}
+        run: |
+          git config user.name "nse-paper-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          export TZ=Asia/Kolkata
+          UNTIL="$UNTIL_INPUT"
+          if [ -z "$UNTIL" ]; then
+            if [ "$(date +%H)" -lt 12 ]; then UNTIL=12:15; else UNTIL=15:20; fi
+          fi
+          mkdir -p logs
+          LOG="logs/paper-$(date +%F).log"
+          echo "Shift until $UNTIL IST (started $(date +%H:%M))" | tee -a "$LOG"
+          ./publish.sh "paper: shift started, until $UNTIL" --running || true
+          ( while true; do sleep 600; ./publish.sh "paper: update $(date +%H:%M)" --running || true; done ) &
+          SAVER=$!
+          python3 -u trade.py paper --until "$UNTIL" 2>&1 | tee -a "$LOG"
+          kill $SAVER 2>/dev/null || true
+          ./publish.sh "paper: shift until $UNTIL finished"

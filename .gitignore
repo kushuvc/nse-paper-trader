@@ -1,0 +1,14 @@
+# local only
+.dashboard_key
+logs/paper.pid
+logs/launchd-*
+collect.log
+__pycache__/
+*.pyc
+.DS_Store
+# big caches: re-download any time with `python3 trade.py collect --interval 60m|1d`
+data/60m/
+data/1d/
+data/nifty100.txt
+# local replays/tests
+paper/*-replay.json

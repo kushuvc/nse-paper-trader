@@ -1,0 +1,29 @@
+# Saves the day's 5-minute bars for the Nifty 50 so the intraday history keeps growing
+# (Yahoo only keeps 60 days). Timing is not critical, so GitHub's own schedule is fine.
+name: Save data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 10 * * 1-5"  # 16:00 IST
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and save 5-minute bars
+        run: |
+          git config user.name "nse-paper-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          export TZ=Asia/Kolkata
+          python3 trade.py collect --interval 5m
+          ./publish.sh "data: 5-minute bars $(date +%F)"
