@@ -23,7 +23,9 @@ python3 trade.py report                        # paper journal and running total
 python3 -m unittest discover -s tests -v       # offline tests
 ```
 
-Settings live in `config.json`: capital (₹1,00,000 paper), risk per trade
+Every strategy in `config.json` -> `strategies` trades as its own paper
+account (its own 3 trades a day and daily loss limit), so results can be
+compared side by side. Settings live in `config.json`: capital (₹1,00,000 paper), risk per trade
 (₹500), max 3 trades a day, ₹1,500 daily loss stop, no entries before 9:30 or
 after 14:30, square-off at 15:15, strategies to run. Edit `nse/costs.py` or the
 `"costs"` key if your broker charges differently.

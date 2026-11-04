@@ -9,7 +9,13 @@
   "square_off": "15:15",
   "allow_short": true,
   "strategies": [
-    "orb15"
+    "orb15",
+    "orb30_2r",
+    "orb60",
+    "gap_go",
+    "gap_fade",
+    "vwap",
+    "trap90"
   ],
   "universe": "nifty50",
   "interval": "5m",

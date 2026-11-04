@@ -38,6 +38,8 @@ class Engine:
         if os.path.exists(p):
             with open(p) as f:
                 self.state = json.load(f)
+            self.state["open"] = {(k if "|" in k else "%s|%s" % (v.get("strategy", "?"), k)): dict(v, symbol=v.get("symbol", k))
+                                  for k, v in self.state["open"].items()}
         else:
             self.state = {"date": str(day), "open": {}, "closed": [], "seen": {}, "log": []}
 
@@ -81,28 +83,33 @@ class Engine:
                 continue
             st["seen"][sym] = today[-1].t.strftime("%H:%M")
 
-            # 1) manage an open position bar by bar
-            pos = st["open"].get(sym)
-            if pos:
+            # 1) manage this stock's open positions (one per strategy) bar by bar
+            for key, pos in list(st["open"].items()):
+                if pos["symbol"] != sym:
+                    continue
                 sig = strategies.Signal(pos["side"], pos["entry"], pos["stop"], pos["target"], "")
                 for b in new:
                     hit = exit_check(sig, b, INTERVAL, sq)
                     if hit:
-                        self._close(sym, pos, hit[0], hit[1], b, now)
+                        self._close(key, hit[0], hit[1], b, now)
                         break
+            if not prev:
                 continue
-            # 2) look for an entry, but only on the newest bar (never chase a stale trigger)
-            if any(t["symbol"] == sym for t in st["closed"]) or not prev:
-                continue
+            # 2) entries: every strategy is its own paper account (own trade cap and daily loss limit).
+            #    Only the newest bar can trigger (never chase a stale signal).
             ctx = {"interval": INTERVAL, "prev_close": prev[-1].c,
                    "prev_high": max(b.h for b in prev), "prev_low": min(b.l for b in prev)}
             t_end = bar_end(today[-1], INTERVAL)
             for name, scan in self.scans.items():
+                key = "%s|%s" % (name, sym)
+                if key in st["open"] or any(t["strategy"] == name and t["symbol"] == sym for t in st["closed"]):
+                    continue  # one trade per stock per strategy per day
                 s = scan(today, ctx)
                 if not s:
                     continue
-                pnl = sum(t["net"] for t in st["closed"])
-                ok, why = risk.can_enter(t_end, s.side, len(st["closed"]) + len(st["open"]), pnl, cfg)
+                mine = [t for t in st["closed"] if t["strategy"] == name]
+                n_open = sum(1 for p in st["open"].values() if p["strategy"] == name)
+                ok, why = risk.can_enter(t_end, s.side, len(mine) + n_open, sum(t["net"] for t in mine), cfg)
                 if t_end >= sq:
                     ok, why = False, "past square-off"
                 qty = risk.size(s.entry, s.stop, cfg) if ok else 0
@@ -111,30 +118,37 @@ class Engine:
                 if not ok:
                     self.say(now, "SKIP  %-11s %-9s %s: %s" % (sym, name, s.note, why))
                     continue
-                st["open"][sym] = {"strategy": name, "side": s.side, "qty": qty, "entry": s.entry,
+                st["open"][key] = {"strategy": name, "symbol": sym, "side": s.side, "qty": qty, "entry": s.entry,
                                    "stop": s.stop, "target": s.target, "entry_time": t_end.strftime("%H:%M"),
                                    "note": s.note}
                 self.say(now, "OPEN  %-11s %-5s %4d @ %.2f  stop %.2f  target %.2f  [%s: %s]" % (
                     sym, "BUY" if s.side > 0 else "SHORT", qty, s.entry, s.stop, s.target, name, s.note))
-                break
         # 3) square off anything still open after 15:15
         if now.time() >= sq:
-            for sym, pos in list(st["open"].items()):
-                bars = self.bars_fn(sym, now)
-                last = [b for b in bars if b.t.date() == day]
-                if last:
-                    self._close(sym, pos, last[-1].c, "square-off", last[-1], now)
+            last_by_sym = {}
+            for key, pos in list(st["open"].items()):
+                sym = pos["symbol"]
+                if sym not in last_by_sym:
+                    try:
+                        last_by_sym[sym] = [b for b in self.bars_fn(sym, now) if b.t.date() == day]
+                    except data.DataError:
+                        last_by_sym[sym] = []
+                if last_by_sym[sym]:
+                    bar = last_by_sym[sym][-1]
+                    self._close(key, bar.c, "square-off", bar, now)
         self._save()
 
-    def _close(self, sym, pos, px, reason, bar, now):
+    def _close(self, key, px, reason, bar, now):
+        pos = self.state["open"][key]
         net, gross, ch = costs.round_trip(pos["side"], pos["qty"], pos["entry"], px, self.cfg.get("costs"))
         risk_rs = abs(pos["entry"] - pos["stop"]) * pos["qty"]
-        rec = dict(pos, symbol=sym, date=self.state["date"], exit=round(px, 2),
+        rec = dict(pos, date=self.state["date"], exit=round(px, 2),
                    exit_time=bar_end(bar, INTERVAL).strftime("%H:%M"), reason=reason, gross=gross,
                    charges=ch, net=net, r=round(net / risk_rs, 3) if risk_rs else 0, mode=self.mode)
         self.state["closed"].append(rec)
-        del self.state["open"][sym]
-        self.say(now, "CLOSE %-11s %-10s @ %.2f  net Rs %+.0f (charges %.0f)" % (sym, reason, px, net, ch))
+        del self.state["open"][key]
+        self.say(now, "CLOSE %-11s %-10s @ %.2f  net Rs %+.0f [%s] (charges %.0f)" % (
+            pos["symbol"], reason, px, net, pos["strategy"], ch))
         self._journal(rec)
 
     def _journal(self, rec):
@@ -153,8 +167,12 @@ class Engine:
             return "no session"
         net = sum(t["net"] for t in st["closed"])
         wins = sum(t["net"] > 0 for t in st["closed"])
-        return "%s: %d closed (%d won), %d still open, net Rs %+.0f after charges" % (
-            st["date"], len(st["closed"]), wins, len(st["open"]), net)
+        lines = ["%s: %d closed (%d won), %d still open, net Rs %+.0f after charges" % (
+            st["date"], len(st["closed"]), wins, len(st["open"]), net)]
+        for name in self.scans:
+            mine = [t for t in st["closed"] if t["strategy"] == name]
+            lines.append("  %-9s %d trades, net Rs %+.0f" % (name, len(mine), sum(t["net"] for t in mine)))
+        return "\n".join(lines)
 
 
 def run_live(engine, until=datetime.time(15, 20)):

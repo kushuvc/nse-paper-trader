@@ -16,7 +16,7 @@ a.go{background:var(--g);color:#fff;border:0}
 .pill{display:inline-block;padding:3px 10px;border-radius:99px;font-size:13px;font-weight:600}
 .on{background:color-mix(in srgb,var(--g) 18%,transparent);color:var(--g)}.off{background:color-mix(in srgb,var(--mut) 18%,transparent);color:var(--mut)}
 table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}
-td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 pre{white-space:pre-wrap;font:12px/1.45 ui-monospace,Menlo,monospace;margin:0;max-height:320px;overflow:auto}
 </style></head><body>
 <h1>NSE Paper Trader</h1><div class="mut" id="upd">Loading...</div>
@@ -31,6 +31,7 @@ pre{white-space:pre-wrap;font:12px/1.45 ui-monospace,Menlo,monospace;margin:0;ma
   </div>
   <div class="mut" style="margin-top:8px">Start: tap "Run workflow" on GitHub. Stop: open the running job and tap "Cancel". Updates every 10 min while trading.</div>
 </div>
+<div class="card"><b>By strategy</b> <span class="mut">(each is its own Rs 1 lakh paper account)</span><table id="stratT"></table></div>
 <div class="card"><b>Open positions</b><table id="openT"></table></div>
 <div class="card"><b>Closed today</b><table id="closedT"></table></div>
 <div class="card"><b>All paper trades</b><div class="mut" id="tot"></div><table id="byDay"></table><table id="recent" style="margin-top:10px"></table></div>
@@ -56,16 +57,19 @@ async function load(){
   const today=new Date(Date.now()+5.5*3600e3).toISOString().slice(0,10);
   const isToday=d.date===today;
   $('today').textContent=isToday?rs(d.today_net):'Rs 0';$('today').className='big '+(isToday?cls(d.today_net):'');
-  const o=isToday?Object.entries(d.open):[];
-  $('openT').innerHTML=o.length?'<tr><th>Stock</th><th>Side</th><th class=n>Qty</th><th class=n>Entry</th><th class=n>Stop</th><th class=n>Target</th></tr>'+
-    o.map(([s,p])=>`<tr><td>${esc(s)}</td><td>${p.side>0?'BUY':'SHORT'}</td><td class=n>${p.qty}</td><td class=n>${p.entry}</td><td class=n>${p.stop}</td><td class=n>${p.target}</td></tr>`).join(''):'<tr><td class=mut>None</td></tr>';
+  const bs=Object.entries(d.by_strategy||{});
+  $('stratT').innerHTML=bs.length?'<tr><th>Strategy</th><th class=n>Today</th><th class=n>All time</th></tr>'+
+    bs.map(([n,b])=>`<tr><td><b>${esc(n)}</b><div class=mut>${esc(b.desc)}</div></td><td class="n ${isToday?cls(b.today_net):''}">${isToday?rs(b.today_net):'Rs 0'}<div class=mut>${isToday?b.today_trades:0} done${isToday&&b.open?', '+b.open+' open':''}</div></td><td class="n ${cls(b.all_net)}">${rs(b.all_net)}<div class=mut>${b.all_trades} trades${b.all_trades?', '+Math.round(100*b.all_wins/b.all_trades)+'% won':''}</div></td></tr>`).join(''):'';
+  const o=isToday?Object.values(d.open):[];
+  $('openT').innerHTML=o.length?'<tr><th>Stock</th><th>Strategy</th><th class=n>Qty</th><th class=n>Entry</th><th class=n>Stop</th><th class=n>Target</th></tr>'+
+    o.map(p=>`<tr><td>${esc(p.symbol)} ${p.side>0?'BUY':'SHORT'}</td><td>${esc(p.strategy)}</td><td class=n>${p.qty}</td><td class=n>${p.entry}</td><td class=n>${p.stop}</td><td class=n>${p.target}</td></tr>`).join(''):'<tr><td class=mut>None</td></tr>';
   const c=isToday?d.closed:[];
   $('closedT').innerHTML=c.length?'<tr><th>Stock</th><th>Exit</th><th class=n>Net</th></tr>'+
-    c.map(t=>`<tr><td>${esc(t.symbol)} ${t.side>0?'BUY':'SHORT'}</td><td>${esc(t.reason)} ${esc(t.exit_time)}</td><td class="n ${cls(t.net)}">${rs(t.net)}</td></tr>`).join(''):'<tr><td class=mut>None yet</td></tr>';
+    c.map(t=>`<tr><td>${esc(t.symbol)} ${t.side>0?'BUY':'SHORT'}<div class=mut>${esc(t.strategy)}</div></td><td>${esc(t.reason)} ${esc(t.exit_time)}</td><td class="n ${cls(t.net)}">${rs(t.net)}</td></tr>`).join(''):'<tr><td class=mut>None yet</td></tr>';
   $('tot').textContent=d.all_trades?`${d.all_trades} trades, ${d.all_wins} won (${Math.round(100*d.all_wins/d.all_trades)}%), total ${rs(d.all_net)}`+(d.all_trades<100?'. Under 100 trades: too few to judge.':''):'No paper trades yet.';
   const days=Object.entries(d.by_day||{}).reverse().slice(0,10);
   $('byDay').innerHTML=days.length?'<tr><th>Day</th><th class=n>Net</th></tr>'+days.map(([k,v])=>`<tr><td>${k}</td><td class="n ${cls(v)}">${rs(v)}</td></tr>`).join(''):'';
-  $('recent').innerHTML=d.recent.length?'<tr><th>Date</th><th>Stock</th><th>Exit</th><th class=n>Net</th></tr>'+d.recent.map(t=>`<tr><td>${t.date.slice(5)}</td><td>${esc(t.symbol)}</td><td>${esc(t.reason)}</td><td class="n ${cls(+t.net)}">${rs(+t.net)}</td></tr>`).join(''):'';
+  $('recent').innerHTML=d.recent.length?'<tr><th>Date</th><th>Stock</th><th>Exit</th><th class=n>Net</th></tr>'+d.recent.map(t=>`<tr><td>${t.date.slice(5)}</td><td>${esc(t.symbol)}<div class=mut>${esc(t.strategy)}</div></td><td>${esc(t.reason)}</td><td class="n ${cls(+t.net)}">${rs(+t.net)}</td></tr>`).join(''):'';
   $('logP').textContent=(isToday&&d.log.length)?d.log.join('\n'):'Nothing yet today.';
 }
 load();setInterval(load,60000);

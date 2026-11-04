@@ -196,6 +196,26 @@ def cmd_status(cfg, a):
     }
     for r in journal:
         out["by_day"][r["date"]] = round(out["by_day"].get(r["date"], 0) + float(r["net"]), 0)
+    desc = {n: strategies.REGISTRY[n][2] for n in cfg["strategies"] if n in strategies.REGISTRY}
+    by = {n: {"desc": desc.get(n, ""), "today_trades": 0, "today_net": 0.0, "open": 0,
+              "all_trades": 0, "all_wins": 0, "all_net": 0.0} for n in cfg["strategies"]}
+    for t in closed:
+        b = by.setdefault(t["strategy"], {"desc": "", "today_trades": 0, "today_net": 0.0, "open": 0,
+                                          "all_trades": 0, "all_wins": 0, "all_net": 0.0})
+        b["today_trades"] += 1
+        b["today_net"] += t["net"]
+    for p_ in st.get("open", {}).values():
+        if p_.get("strategy") in by:
+            by[p_["strategy"]]["open"] += 1
+    for r in journal:
+        b = by.setdefault(r["strategy"], {"desc": "", "today_trades": 0, "today_net": 0.0, "open": 0,
+                                          "all_trades": 0, "all_wins": 0, "all_net": 0.0})
+        b["all_trades"] += 1
+        b["all_wins"] += float(r["net"]) > 0
+        b["all_net"] += float(r["net"])
+    for b in by.values():
+        b["today_net"], b["all_net"] = round(b["today_net"]), round(b["all_net"])
+    out["by_strategy"] = by
     os.makedirs(os.path.join(HERE, "docs"), exist_ok=True)
     with open(os.path.join(HERE, "docs", "status.json"), "w") as f:
         json.dump(out, f, indent=1)

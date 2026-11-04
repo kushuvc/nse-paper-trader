@@ -154,5 +154,27 @@ class PaperMatchesBacktest(unittest.TestCase):
             shutil.rmtree(tmp)
 
 
+class SeparateAccounts(unittest.TestCase):
+    def test_each_strategy_has_its_own_trade_cap(self):
+        cfg = dict(CFG, strategies=["orb15", "orb30_2r", "orb60"], max_trades_per_day=1)
+        data = {"S%d" % i: random_days(4, seed=10 + i) for i in range(12)}
+        tmp = tempfile.mkdtemp()
+        try:
+            days = sorted({b.t.date() for b in data["S0"]})[1:]
+            seen = set()
+            for d in days:
+                eng = paper.Engine(cfg, list(data), tmp, mode="replay", log=lambda *_: None)
+                paper.replay(eng, data, d)
+                per = {}
+                for t in eng.state["closed"]:
+                    per[t["strategy"]] = per.get(t["strategy"], 0) + 1
+                self.assertTrue(all(n <= 1 for n in per.values()), per)
+                self.assertFalse(eng.state["open"], "everything squared off")
+                seen |= set(per)
+            self.assertGreaterEqual(len(seen), 2, "more than one strategy should trade on the same days")
+        finally:
+            shutil.rmtree(tmp)
+
+
 if __name__ == "__main__":
     unittest.main()
