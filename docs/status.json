@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 11:11 IST",
- "updated_ts": 1793857267,
+ "updated": "2026-11-05 11:21 IST",
+ "updated_ts": 1793857869,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -321,13 +321,6 @@
  ],
  "today_net": 1928.0,
  "log": [
-  "10:05  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day",
-  "10:05  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day",
-  "10:05  SKIP  COALINDIA   orb15     ORB15 down: max 3 trades a day",
-  "10:05  SKIP  COALINDIA   orb30_2r  ORB30 down: max 3 trades a day",
-  "10:05  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day",
-  "10:10  SKIP  ITC         orb15     ORB15 down: max 3 trades a day",
-  "10:10  SKIP  ITC         orb30_2r  ORB30 down: max 3 trades a day",
   "10:10  SKIP  TATASTEEL   orb15     ORB15 down: max 3 trades a day",
   "10:10  SKIP  TATASTEEL   orb30_2r  ORB30 down: max 3 trades a day",
   "10:15  SKIP  HDFCBANK    orb15     ORB15 down: max 3 trades a day",
@@ -380,7 +373,14 @@
   "11:05  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
   "11:05  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
   "11:10  CLOSE BSE         target     @ 3790.40  net Rs +436 [orb15] (charges 44)",
-  "11:10  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day"
+  "11:10  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day",
+  "11:15  SKIP  APOLLOHOSP  vwap      VWAP loss: max 3 trades a day",
+  "11:15  SKIP  DRREDDY     orb15     ORB15 down: max 3 trades a day",
+  "11:15  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day",
+  "11:15  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day",
+  "11:15  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
+  "11:15  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day",
+  "11:15  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 8,
  "all_wins": 7,
