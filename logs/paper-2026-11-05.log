@@ -193,3 +193,5 @@ Learner: model from 59 days of history
 12:35  CLOSE ICICIBANK   target     @ 1477.95  net Rs +396 [orb60] (charges 70)
 12:40  SKIP  TITAN       vwap      VWAP reclaim: max 3 trades a day
 12:45  SKIP  HINDALCO    vwap      VWAP loss: max 3 trades a day
+12:50  SKIP  TMPV        orb60     ORB60 up: max 3 trades a day
+12:50  SKIP  TATASTEEL   vwap      VWAP loss: max 3 trades a day
