@@ -65,3 +65,31 @@ PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2
 09:40  SKIP  INFY        orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  ONGC        orb15     ORB15 down: max 3 trades a day
 09:40  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day
+09:45  CLOSE ADANIENT    target     @ 2751.40  net Rs +1 [trap90] (charges 35)
+09:45  SKIP  ADANIENT    orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  BAJFINANCE  orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  EICHERMOT   orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  TITAN       orb15     ORB15 up: max 3 trades a day
+09:50  CLOSE AXISBANK    target     @ 1262.80  net Rs +684 [gap_go] (charges 82)
+09:50  SKIP  AXISBANK    orb15     ORB15 up: max 3 trades a day
+09:50  OPEN  AXISBANK    BUY     27 @ 1265.50  stop 1247.50  target 1301.50  [orb30_2r: ORB30 up]
+09:50  OPEN  BAJFINANCE  BUY     18 @ 1048.25  stop 1021.00  target 1102.75  [orb30_2r: ORB30 up]
+09:50  OPEN  BAJAJFINSV  BUY     16 @ 1814.40  stop 1784.05  target 1875.00  [orb30_2r: ORB30 up]
+09:50  SKIP  ETERNAL     orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  ETERNAL     orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  HCLTECH     orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  HCLTECH     orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  INFY        orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  JSWSTEEL    orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  MARUTI      orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  POWERGRID   orb30_2r  ORB30 down: max 3 trades a day
+09:50  SKIP  RELIANCE    orb15     ORB15 down: max 3 trades a day
+09:50  SKIP  RELIANCE    orb30_2r  ORB30 down: max 3 trades a day
+09:50  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  TCS         orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  TMPV        orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  TMPV        orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  TECHM       orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  TITAN       orb30_2r  ORB30 up: max 3 trades a day

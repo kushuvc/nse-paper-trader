@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 09:40 IST",
- "updated_ts": 1793851851,
+ "updated": "2026-11-05 09:50 IST",
+ "updated_ts": 1793852453,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -24,17 +24,6 @@
    "entry_time": "09:30",
    "note": "gap +1.1% and go"
   },
-  "trap90|ADANIENT": {
-   "strategy": "trap90",
-   "symbol": "ADANIENT",
-   "side": 1,
-   "qty": 12,
-   "entry": 2747.3,
-   "stop": 2706.05,
-   "target": 2751.4,
-   "entry_time": "09:30",
-   "note": "tiny target, wide stop"
-  },
   "gap_fade|ADANIPORTS": {
    "strategy": "gap_fade",
    "symbol": "ADANIPORTS",
@@ -56,17 +45,6 @@
    "target": 2418.3,
    "entry_time": "09:30",
    "note": "gap +5.7% fading"
-  },
-  "gap_go|AXISBANK": {
-   "strategy": "gap_go",
-   "symbol": "AXISBANK",
-   "side": 1,
-   "qty": 79,
-   "entry": 1252.6,
-   "stop": 1247.5,
-   "target": 1262.8,
-   "entry_time": "09:30",
-   "note": "gap +1.3% and go"
   },
   "gap_go|BSE": {
    "strategy": "gap_go",
@@ -122,6 +100,39 @@
    "target": 1982.6,
    "entry_time": "09:35",
    "note": "ORB15 down"
+  },
+  "orb30_2r|AXISBANK": {
+   "strategy": "orb30_2r",
+   "symbol": "AXISBANK",
+   "side": 1,
+   "qty": 27,
+   "entry": 1265.5,
+   "stop": 1247.5,
+   "target": 1301.5,
+   "entry_time": "09:50",
+   "note": "ORB30 up"
+  },
+  "orb30_2r|BAJFINANCE": {
+   "strategy": "orb30_2r",
+   "symbol": "BAJFINANCE",
+   "side": 1,
+   "qty": 18,
+   "entry": 1048.25,
+   "stop": 1021.0,
+   "target": 1102.75,
+   "entry_time": "09:50",
+   "note": "ORB30 up"
+  },
+  "orb30_2r|BAJAJFINSV": {
+   "strategy": "orb30_2r",
+   "symbol": "BAJAJFINSV",
+   "side": 1,
+   "qty": 16,
+   "entry": 1814.4,
+   "stop": 1784.05,
+   "target": 1875.0,
+   "entry_time": "09:50",
+   "note": "ORB30 up"
   }
  },
  "closed": [
@@ -164,38 +175,50 @@
    "net": 4.39,
    "r": 0.009,
    "mode": "live"
+  },
+  {
+   "strategy": "trap90",
+   "symbol": "ADANIENT",
+   "side": 1,
+   "qty": 12,
+   "entry": 2747.3,
+   "stop": 2706.05,
+   "target": 2751.4,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop",
+   "date": "2026-11-05",
+   "exit": 2751.4,
+   "exit_time": "09:45",
+   "reason": "target",
+   "gross": 36.0,
+   "charges": 34.99,
+   "net": 1.01,
+   "r": 0.002,
+   "mode": "live"
+  },
+  {
+   "strategy": "gap_go",
+   "symbol": "AXISBANK",
+   "side": 1,
+   "qty": 79,
+   "entry": 1252.6,
+   "stop": 1247.5,
+   "target": 1262.8,
+   "entry_time": "09:30",
+   "note": "gap +1.3% and go",
+   "date": "2026-11-05",
+   "exit": 1262.8,
+   "exit_time": "09:50",
+   "reason": "target",
+   "gross": 766.06,
+   "charges": 82.3,
+   "net": 683.76,
+   "r": 1.697,
+   "mode": "live"
   }
  ],
- "today_net": 6.0,
+ "today_net": 690.0,
  "log": [
-  "09:30  OPEN  AXISBANK    BUY     26 @ 1252.60  stop 1233.80  target 1254.50  [trap90: tiny target, wide stop]",
-  "09:30  OPEN  BSE         BUY      6 @ 3734.00  stop 3655.35  target 3891.20  [gap_go: gap +2.2% and go]",
-  "09:30  OPEN  BSE         BUY      8 @ 3734.00  stop 3677.95  target 3739.60  [trap90: tiny target, wide stop]",
-  "09:30  SKIP  BAJFINANCE  gap_go    gap +3.5% and go: max 3 trades a day",
-  "09:30  SKIP  BAJFINANCE  trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  BAJAJFINSV  gap_go    gap +1.6% and go: max 3 trades a day",
-  "09:30  SKIP  BAJAJFINSV  trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  OPEN  BEL         SHORT  232 @ 401.70  stop 403.85  target 398.00  [gap_fade: gap +1.2% fading]",
-  "09:30  SKIP  EICHERMOT   trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  ETERNAL     trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  GRASIM      gap_go    gap +1.5% and go: max 3 trades a day",
-  "09:30  SKIP  GRASIM      trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  HCLTECH     gap_fade  gap +2.1% fading: max 3 trades a day",
-  "09:30  SKIP  HDFCBANK    gap_fade  gap +3.5% fading: max 3 trades a day",
-  "09:30  SKIP  HDFCLIFE    trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  HINDALCO    trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  HINDUNILVR  gap_fade  gap +1.6% fading: max 3 trades a day",
-  "09:30  SKIP  ICICIBANK   gap_go    gap +1.9% and go: max 3 trades a day",
-  "09:30  SKIP  ICICIBANK   trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  INFY        gap_go    gap +2.1% and go: max 3 trades a day",
-  "09:30  SKIP  INFY        trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  INDIGO      gap_fade  gap +5.2% fading: max 3 trades a day",
-  "09:30  SKIP  JSWSTEEL    trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  JIOFIN      gap_fade  gap +1.8% fading: max 3 trades a day",
-  "09:30  SKIP  LT          gap_go    gap +1.6% and go: max 3 trades a day",
-  "09:30  SKIP  LT          trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  M&M         trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  MARUTI      gap_go    gap +2.2% and go: max 3 trades a day",
   "09:30  SKIP  MARUTI      trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  ONGC        gap_go    gap -1.2% and go: max 3 trades a day",
   "09:30  SKIP  POWERGRID   gap_fade  gap +1.3% fading: max 3 trades a day",
@@ -227,12 +250,78 @@
   "09:40  SKIP  BAJAJFINSV  orb15     ORB15 up: max 3 trades a day",
   "09:40  SKIP  INFY        orb15     ORB15 up: max 3 trades a day",
   "09:40  SKIP  ONGC        orb15     ORB15 down: max 3 trades a day",
-  "09:40  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day"
+  "09:40  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day",
+  "09:45  CLOSE ADANIENT    target     @ 2751.40  net Rs +1 [trap90] (charges 35)",
+  "09:45  SKIP  ADANIENT    orb15     ORB15 up: max 3 trades a day",
+  "09:45  SKIP  BAJFINANCE  orb15     ORB15 up: max 3 trades a day",
+  "09:45  SKIP  EICHERMOT   orb15     ORB15 up: max 3 trades a day",
+  "09:45  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day",
+  "09:45  SKIP  TITAN       orb15     ORB15 up: max 3 trades a day",
+  "09:50  CLOSE AXISBANK    target     @ 1262.80  net Rs +684 [gap_go] (charges 82)",
+  "09:50  SKIP  AXISBANK    orb15     ORB15 up: max 3 trades a day",
+  "09:50  OPEN  AXISBANK    BUY     27 @ 1265.50  stop 1247.50  target 1301.50  [orb30_2r: ORB30 up]",
+  "09:50  OPEN  BAJFINANCE  BUY     18 @ 1048.25  stop 1021.00  target 1102.75  [orb30_2r: ORB30 up]",
+  "09:50  OPEN  BAJAJFINSV  BUY     16 @ 1814.40  stop 1784.05  target 1875.00  [orb30_2r: ORB30 up]",
+  "09:50  SKIP  ETERNAL     orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  ETERNAL     orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  HCLTECH     orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  HCLTECH     orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  INFY        orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  JSWSTEEL    orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  MARUTI      orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  POWERGRID   orb30_2r  ORB30 down: max 3 trades a day",
+  "09:50  SKIP  RELIANCE    orb15     ORB15 down: max 3 trades a day",
+  "09:50  SKIP  RELIANCE    orb30_2r  ORB30 down: max 3 trades a day",
+  "09:50  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  TCS         orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  TMPV        orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  TMPV        orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  TECHM       orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  TITAN       orb30_2r  ORB30 up: max 3 trades a day"
  ],
- "all_trades": 2,
- "all_wins": 2,
- "all_net": 6.0,
+ "all_trades": 4,
+ "all_wins": 4,
+ "all_net": 690.0,
  "recent": [
+  {
+   "date": "2026-11-05",
+   "symbol": "AXISBANK",
+   "strategy": "gap_go",
+   "side": "1",
+   "qty": "79",
+   "entry_time": "09:30",
+   "entry": "1252.6",
+   "stop": "1247.5",
+   "target": "1262.8",
+   "exit_time": "09:50",
+   "exit": "1262.8",
+   "reason": "target",
+   "gross": "766.06",
+   "charges": "82.3",
+   "net": "683.76",
+   "r": "1.697",
+   "mode": "live"
+  },
+  {
+   "date": "2026-11-05",
+   "symbol": "ADANIENT",
+   "strategy": "trap90",
+   "side": "1",
+   "qty": "12",
+   "entry_time": "09:30",
+   "entry": "2747.3",
+   "stop": "2706.05",
+   "target": "2751.4",
+   "exit_time": "09:45",
+   "exit": "2751.4",
+   "reason": "target",
+   "gross": "36.0",
+   "charges": "34.99",
+   "net": "1.01",
+   "r": "0.002",
+   "mode": "live"
+  },
   {
    "date": "2026-11-05",
    "symbol": "AXISBANK",
@@ -273,7 +362,7 @@
   }
  ],
  "by_day": {
-  "2026-11-05": 5.0
+  "2026-11-05": 690.0
  },
  "by_strategy": {
   "orb15": {
@@ -289,7 +378,7 @@
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 0,
    "all_wins": 0,
    "all_net": 0
@@ -305,12 +394,12 @@
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 0,
-   "all_wins": 0,
-   "all_net": 0
+   "today_trades": 1,
+   "today_net": 684,
+   "open": 2,
+   "all_trades": 1,
+   "all_wins": 1,
+   "all_net": 684
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
@@ -332,12 +421,12 @@
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
-   "today_trades": 2,
-   "today_net": 6,
-   "open": 1,
-   "all_trades": 2,
-   "all_wins": 2,
-   "all_net": 6
+   "today_trades": 3,
+   "today_net": 7,
+   "open": 0,
+   "all_trades": 3,
+   "all_wins": 3,
+   "all_net": 7
   }
  }
 }
