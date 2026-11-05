@@ -152,3 +152,11 @@ PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2
 10:40  SKIP  SBIN        orb30_2r  ORB30 down: max 3 trades a day
 10:40  SKIP  SBIN        orb60     ORB60 down: max 3 trades a day
 10:45  CLOSE BAJAJFINSV  stop       @ 1795.65  net Rs -614 [vwap] (charges 82)
+10:55  SKIP  BAJAJ-AUTO  vwap      VWAP loss: max 3 trades a day
+11:00  CLOSE BEL         target     @ 398.00  net Rs +741 [gap_fade] (charges 80)
+11:00  CLOSE BEL         target     @ 398.10  net Rs +675 [vwap] (charges 82)
+11:00  SKIP  CIPLA       vwap      VWAP loss: max 3 trades a day
+11:00  SKIP  DRREDDY     vwap      VWAP loss: max 3 trades a day
+11:00  SKIP  M&M         orb60     ORB60 up: max 3 trades a day
+11:00  SKIP  NESTLEIND   orb30_2r  ORB30 down: max 3 trades a day
+11:00  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day

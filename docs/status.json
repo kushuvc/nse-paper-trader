@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 10:51 IST",
- "updated_ts": 1793856063,
+ "updated": "2026-11-05 11:01 IST",
+ "updated_ts": 1793856665,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -56,17 +56,6 @@
    "target": 3891.2,
    "entry_time": "09:30",
    "note": "gap +2.2% and go"
-  },
-  "gap_fade|BEL": {
-   "strategy": "gap_fade",
-   "symbol": "BEL",
-   "side": -1,
-   "qty": 232,
-   "entry": 401.7,
-   "stop": 403.85,
-   "target": 398.0,
-   "entry_time": "09:30",
-   "note": "gap +1.2% fading"
   },
   "orb15|APOLLOHOSP": {
    "strategy": "orb15",
@@ -177,17 +166,6 @@
    "target": 231.4,
    "entry_time": "10:25",
    "note": "ORB60 up"
-  },
-  "vwap|BEL": {
-   "strategy": "vwap",
-   "symbol": "BEL",
-   "side": -1,
-   "qty": 249,
-   "entry": 401.3,
-   "stop": 402.9,
-   "target": 398.1,
-   "entry_time": "10:30",
-   "note": "VWAP loss"
   }
  },
  "closed": [
@@ -290,18 +268,50 @@
    "net": -613.89,
    "r": -1.247,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_fade",
+   "symbol": "BEL",
+   "side": -1,
+   "qty": 232,
+   "entry": 401.7,
+   "stop": 403.85,
+   "target": 398.0,
+   "entry_time": "09:30",
+   "note": "gap +1.2% fading",
+   "date": "2026-11-05",
+   "exit": 398.0,
+   "exit_time": "11:00",
+   "reason": "target",
+   "gross": 821.29,
+   "charges": 79.99,
+   "net": 741.3,
+   "r": 1.486,
+   "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "BEL",
+   "side": -1,
+   "qty": 249,
+   "entry": 401.3,
+   "stop": 402.9,
+   "target": 398.1,
+   "entry_time": "10:30",
+   "note": "VWAP loss",
+   "date": "2026-11-05",
+   "exit": 398.1,
+   "exit_time": "11:00",
+   "reason": "target",
+   "gross": 756.99,
+   "charges": 82.36,
+   "net": 674.63,
+   "r": 1.693,
+   "mode": "live"
   }
  ],
- "today_net": 76.0,
+ "today_net": 1492.0,
  "log": [
-  "09:50  SKIP  TITAN       orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day",
-  "09:55  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  JSWSTEEL    orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  JIOFIN      orb15     ORB15 up: max 3 trades a day",
-  "09:55  SKIP  JIOFIN      orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  M&M         orb15     ORB15 up: max 3 trades a day",
   "09:55  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day",
   "09:55  SKIP  MARUTI      orb30_2r  ORB30 up: max 3 trades a day",
   "09:55  SKIP  NTPC        orb30_2r  ORB30 down: max 3 trades a day",
@@ -353,12 +363,58 @@
   "10:40  SKIP  SBIN        orb15     ORB15 down: max 3 trades a day",
   "10:40  SKIP  SBIN        orb30_2r  ORB30 down: max 3 trades a day",
   "10:40  SKIP  SBIN        orb60     ORB60 down: max 3 trades a day",
-  "10:45  CLOSE BAJAJFINSV  stop       @ 1795.65  net Rs -614 [vwap] (charges 82)"
+  "10:45  CLOSE BAJAJFINSV  stop       @ 1795.65  net Rs -614 [vwap] (charges 82)",
+  "10:55  SKIP  BAJAJ-AUTO  vwap      VWAP loss: max 3 trades a day",
+  "11:00  CLOSE BEL         target     @ 398.00  net Rs +741 [gap_fade] (charges 80)",
+  "11:00  CLOSE BEL         target     @ 398.10  net Rs +675 [vwap] (charges 82)",
+  "11:00  SKIP  CIPLA       vwap      VWAP loss: max 3 trades a day",
+  "11:00  SKIP  DRREDDY     vwap      VWAP loss: max 3 trades a day",
+  "11:00  SKIP  M&M         orb60     ORB60 up: max 3 trades a day",
+  "11:00  SKIP  NESTLEIND   orb30_2r  ORB30 down: max 3 trades a day",
+  "11:00  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day"
  ],
- "all_trades": 5,
- "all_wins": 4,
- "all_net": 76.0,
+ "all_trades": 7,
+ "all_wins": 6,
+ "all_net": 1492.0,
  "recent": [
+  {
+   "date": "2026-11-05",
+   "symbol": "BEL",
+   "strategy": "vwap",
+   "side": "-1",
+   "qty": "249",
+   "entry_time": "10:30",
+   "entry": "401.3",
+   "stop": "402.9",
+   "target": "398.1",
+   "exit_time": "11:00",
+   "exit": "398.1",
+   "reason": "target",
+   "gross": "756.99",
+   "charges": "82.36",
+   "net": "674.63",
+   "r": "1.693",
+   "mode": "live"
+  },
+  {
+   "date": "2026-11-05",
+   "symbol": "BEL",
+   "strategy": "gap_fade",
+   "side": "-1",
+   "qty": "232",
+   "entry_time": "09:30",
+   "entry": "401.7",
+   "stop": "403.85",
+   "target": "398.0",
+   "exit_time": "11:00",
+   "exit": "398.0",
+   "reason": "target",
+   "gross": "821.29",
+   "charges": "79.99",
+   "net": "741.3",
+   "r": "1.486",
+   "mode": "live"
+  },
   {
    "date": "2026-11-05",
    "symbol": "BAJAJFINSV",
@@ -456,7 +512,7 @@
   }
  ],
  "by_day": {
-  "2026-11-05": 76.0
+  "2026-11-05": 1492.0
  },
  "by_strategy": {
   "orb15": {
@@ -497,21 +553,21 @@
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 0,
-   "all_wins": 0,
-   "all_net": 0
+   "today_trades": 1,
+   "today_net": 741,
+   "open": 2,
+   "all_trades": 1,
+   "all_wins": 1,
+   "all_net": 741
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 1,
-   "today_net": -614,
-   "open": 2,
-   "all_trades": 1,
-   "all_wins": 0,
-   "all_net": -614
+   "today_trades": 2,
+   "today_net": 61,
+   "open": 1,
+   "all_trades": 2,
+   "all_wins": 1,
+   "all_net": 61
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
