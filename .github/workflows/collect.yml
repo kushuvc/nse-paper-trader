@@ -1,6 +1,7 @@
 # Saves the day's 5-minute bars for the Nifty 50 so the intraday history keeps growing
-# (Yahoo only keeps 60 days). Timing is not critical, so GitHub's own schedule is fine.
-name: Save data
+# (Yahoo only keeps 60 days), then re-learns from all of it (model/learned.json) for tomorrow's
+# learner account. Timing is not critical, so GitHub's own schedule is fine.
+name: Save data and learn
 
 on:
   workflow_dispatch:
@@ -20,10 +21,12 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-      - name: Download and save 5-minute bars
+      - name: Save 5-minute bars, then learn from them
         run: |
           git config user.name "nse-paper-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           export TZ=Asia/Kolkata
+          mkdir -p logs
           python3 trade.py collect --interval 5m
-          ./publish.sh "data: 5-minute bars $(date +%F)"
+          python3 trade.py learn 2>&1 | tee "logs/learn-$(date +%F).log" || true  # never blocks saving the data
+          ./publish.sh "data + learning: $(date +%F)"

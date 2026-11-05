@@ -17,7 +17,8 @@ python3 trade.py backtest --interval 5m --portfolio          # with 3 trades/day
 python3 trade.py backtest --interval 5m --strategy orb15 --trades   # every trade -> results/*.csv
 python3 trade.py backtest --interval 60m
 python3 trade.py daily                         # 20+ year open-to-close gap study (read its warning)
-python3 trade.py replay --date 2026-11-04      # live engine re-run on a past day, bar by bar
+python3 trade.py learn                         # nightly: learn from all history, walk-forward check
+python3 trade.py replay --date 2026-11-04      # live engine re-run on a past day, bar by bar (+ learner)
 python3 trade.py paper                         # LIVE dummy trades, leave running 9:15-15:20 IST
 python3 trade.py report                        # paper journal and running totals
 python3 -m unittest discover -s tests -v       # offline tests
@@ -68,6 +69,30 @@ believing in 90 % systems.
   one is the hard part, and the win rate doesn't tell you which you have.
 - 60 days of 5-minute data is short. Keep running `collect` every evening:
   after 6-12 months the 5-minute tests mean much more.
+
+## Learning from mistakes (every evening)
+
+`python3 trade.py learn` (run automatically at 16:00 IST in the cloud, after the
+day's bars are saved) re-tests every strategy on all saved 5-minute history and
+tags each trade with five facts known at entry: long/short, time of day, with or
+against the market's move, with or against the stock's opening gap, and stop
+width. It learns which strategies and conditions have been losing (the
+mistakes), writes `model/learned.json`, and the next day an 8th paper account,
+**learner**, takes only the signals the model expects to make at least +0.05 R
+after costs.
+
+Guards against overfitting (all in `nse/learn.py`): few coarse facts fixed in
+advance and judged one at a time; every estimate shrunk toward "no edge" (50
+trades' worth of doubt); a condition needs 30+ trades before it counts; older
+trades fade (60-day half-life); 20 days of warm-up; and a **walk-forward test**
+where each past day is judged by a model fitted only on the days before it.
+That fair-test result is on the phone page, next to the unfiltered baseline.
+
+First run (4 Nov 2026, 60 days): the model would take only some `orb30_2r` and
+`orb60` setups and nothing else. In the walk-forward test it lost Rs 112 a trade
+(69 trades) against Rs 105 a trade for the unfiltered first 3 signals a day: it
+**lost less in total by trading less, but did not find an edge**. Learning can
+only filter what the strategies offer; it can't create an edge they don't have.
 
 ## Paper trading ("dummy live trades")
 
@@ -121,7 +146,8 @@ individual intraday traders in the cash segment lost money (FY23) and roughly
 - `.github/workflows/paper.yml` paper-trades on weekdays in two shifts
   (09:10-12:15 and 12:15-15:20 IST: a GitHub job can run at most 6 hours) and
   saves `paper/`, `logs/` and `docs/status.json` back to the repo every 10 min.
-- `.github/workflows/collect.yml` saves the day's 5-minute bars at 16:00 IST.
+- `.github/workflows/collect.yml` saves the day's 5-minute bars at 16:00 IST,
+  then runs `learn` and saves `model/learned.json` for the next morning.
 - `docs/` is the phone page (GitHub Pages: Settings > Pages > Deploy from a
   branch > `main` / `docs`). It reads `docs/status.json`.
 - GitHub's own schedule often starts hours late, so cron-job.org starts the

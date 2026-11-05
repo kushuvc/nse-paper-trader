@@ -9,7 +9,7 @@ import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from nse import backtest as bt, costs, paper, risk, strategies  # noqa: E402
+from nse import backtest as bt, costs, learn, paper, risk, strategies  # noqa: E402
 from nse.market import Bar, IST, full_sessions, round_tick  # noqa: E402
 
 CFG = dict(risk.DEFAULTS)
@@ -172,6 +172,76 @@ class SeparateAccounts(unittest.TestCase):
                 self.assertFalse(eng.state["open"], "everything squared off")
                 seen |= set(per)
             self.assertGreaterEqual(len(seen), 2, "more than one strategy should trade on the same days")
+        finally:
+            shutil.rmtree(tmp)
+
+
+class Learner(unittest.TestCase):
+    def fake(self, day, r, n, **f):
+        base = {"side": "long", "time": "before 10:30", "market": "flat market", "gap": "no gap",
+                "stop": "normal stop"}
+        return [{"strategy": "s", "day": day, "r": r, "f": dict(base, **f)} for _ in range(n)]
+
+    def test_small_samples_do_not_move_the_model(self):
+        tr = []
+        for d in range(25):
+            tr += self.fake(d, -0.2, 20)
+        tr += self.fake(24, 3.0, 5, market="with market")  # 5 lucky trades: not enough to act on
+        m = learn.Model.fit(tr, 25)
+        self.assertEqual(m.d["strategies"]["s"]["cells"]["market"]["with market"]["delta"], 0.0)
+        self.assertFalse(m.approve("s", dict(tr[-1]["f"]))[0])
+
+    def test_strong_evidence_does(self):
+        tr = []
+        for d in range(25):
+            tr += self.fake(d, -0.3, 20) + self.fake(d, 0.6, 20, market="with market")
+        m = learn.Model.fit(tr, 25)
+        self.assertTrue(m.approve("s", dict(tr[-1]["f"]))[0])
+        self.assertFalse(m.approve("s", dict(tr[0]["f"]))[0])
+
+    def test_estimates_are_shrunk_toward_zero(self):
+        tr = []
+        for d in range(25):
+            tr += self.fake(d, 1.0, 2)
+        m = learn.Model.fit(tr, 25)
+        self.assertLess(m.d["strategies"]["s"]["r"], 1.0)
+        self.assertGreater(m.d["strategies"]["s"]["r"], 0.0)
+
+    def test_fit_never_sees_the_day_it_decides(self):
+        tr = []
+        for d in range(25):
+            tr += self.fake(d, -0.2, 20)
+        tr += self.fake(25, 5.0, 500)  # a huge win on the day being decided must not leak in
+        a, b = learn.Model.fit(tr, 25), learn.Model.fit(tr[:-500], 25)
+        self.assertEqual(a.d, b.d)
+
+    def test_no_trades_during_warmup(self):
+        tr = []
+        for d in range(5):
+            tr += self.fake(d, 2.0, 50)
+        self.assertFalse(learn.Model.fit(tr, 5).approve("s", tr[0]["f"])[0])
+
+    def test_live_learner_matches_walk_forward(self):
+        """The paper engine's learner account takes exactly the trades the walk-forward test credits it with."""
+        cfg = dict(CFG, strategies=["orb15", "orb60"], max_trades_per_day=50, max_daily_loss=10 ** 9)
+        data = {"S%d" % i: random_days(26, seed=40 + i, sym_price=200 + 50 * i) for i in range(6)}
+        p = {"min_edge_r": -9.0, "warmup_days": 3}  # approve everything after warm-up: tests the plumbing
+        trades, days = learn.labelled_trades(data, cfg["strategies"], cfg)
+        taken, _, _ = learn.walk_forward(trades, len(days), cfg, p)
+        exp = {(t["date"], t["symbol"], t["strategy"], t["entry"]) for t in taken
+               if t["date"] in (str(days[-1]), str(days[-2]))}
+        tmp = tempfile.mkdtemp()
+        try:
+            got = set()
+            for D in (len(days) - 2, len(days) - 1):
+                eng = paper.Engine(cfg, list(data), tmp, mode="replay", log=lambda *_: None,
+                                   model=learn.Model.fit(trades, D, p))
+                paper.replay(eng, data, days[D])
+                got |= {(t["date"], t["symbol"], t["via"], t["entry"]) for t in eng.state["closed"]
+                        if t["strategy"] == "learner"}
+            self.assertTrue(exp)
+            # walk-forward's portfolio() lets a stock re-enter once flat; the live account does too
+            self.assertEqual(got, exp)
         finally:
             shutil.rmtree(tmp)
 

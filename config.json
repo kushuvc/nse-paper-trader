@@ -17,6 +17,7 @@
     "vwap",
     "trap90"
   ],
+  "learner": true,
   "universe": "nifty50",
   "interval": "5m",
   "costs": {}

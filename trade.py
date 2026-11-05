@@ -8,6 +8,7 @@
   python3 trade.py backtest --interval 5m            # every strategy, every stock, after costs
   python3 trade.py backtest --interval 5m --strategy orb15 --trades
   python3 trade.py daily                             # 20+ year open-to-close gap study
+  python3 trade.py learn                             # nightly: learn from mistakes, walk-forward check
   python3 trade.py replay --date 2026-11-04          # paper engine on a past day, bar by bar
   python3 trade.py paper                             # LIVE dummy trades today, 9:20-15:20 IST
   python3 trade.py report                            # paper journal so far
@@ -23,12 +24,13 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-from nse import backtest as bt, data, paper, risk, strategies  # noqa: E402
+from nse import backtest as bt, data, learn, paper, risk, strategies  # noqa: E402
 from nse.market import IST, now_ist  # noqa: E402
 
 DATA = os.path.join(HERE, "data")
 PAPER = os.path.join(HERE, "paper")
 RESULTS = os.path.join(HERE, "results")
+MODEL = os.path.join(HERE, "model", "learned.json")
 
 
 def symbols(cfg, a):
@@ -142,14 +144,24 @@ def cmd_daily(cfg, a):
     print("same rule LOST money over the last 60 days. A data artifact, not an edge.")
 
 
+def cmd_learn(cfg, a):
+    """Nightly: learn from all saved 5-min history (including today's mistakes)."""
+    learn.run(load_all(cfg, a, "5m"), cfg, MODEL)
+
+
 def cmd_replay(cfg, a):
     day = datetime.date.fromisoformat(a.date)
     bars = load_all(cfg, a, "5m")
     syms = list(bars)
-    eng = paper.Engine(cfg, syms, PAPER, mode="replay")
+    model = None
+    if cfg.get("learner", True):  # honest: the learner only knows the days BEFORE the one replayed
+        trades, days = learn.labelled_trades(bars, cfg["strategies"], cfg)
+        model = learn.Model.fit(trades, sum(d < day for d in days))
+    eng = paper.Engine(cfg, syms, PAPER, mode="replay", model=model)
     if os.path.exists(eng._path(day)):
         os.remove(eng._path(day))
-    print("Replaying %s for %d stocks with %s ..." % (day, len(syms), ", ".join(cfg["strategies"])))
+    print("Replaying %s for %d stocks with %s%s ..." % (day, len(syms), ", ".join(cfg["strategies"]),
+                                                       " + learner" if model else ""))
     paper.replay(eng, bars, day)
 
 
@@ -157,7 +169,10 @@ def cmd_paper(cfg, a):
     syms = symbols(cfg, a)
     print("PAPER TRADING (dummy money, no orders sent anywhere). Strategies: %s. %d stocks. Ctrl-C to stop."
           % (", ".join(cfg["strategies"]), len(syms)))
-    eng = paper.Engine(cfg, syms, PAPER, mode="live")
+    model = learn.Model.load(MODEL) if cfg.get("learner", True) else None
+    print("Learner: %s" % ("model from %s" % model.d.get("days") + " days of history" if model
+                           else "off (no model/learned.json yet: run `python3 trade.py learn`)"))
+    eng = paper.Engine(cfg, syms, PAPER, mode="live", model=model)
     if a.once:
         eng.step(now_ist())
         print(eng.summary())
@@ -215,7 +230,17 @@ def cmd_status(cfg, a):
         b["all_net"] += float(r["net"])
     for b in by.values():
         b["today_net"], b["all_net"] = round(b["today_net"]), round(b["all_net"])
+    if cfg.get("learner", True) and "learner" in by:
+        by["learner"]["desc"] = "takes only the signals last night's model expects to profit"
+    elif cfg.get("learner", True):
+        by["learner"] = {"desc": "takes only the signals last night's model expects to profit", "today_trades": 0,
+                         "today_net": 0, "open": 0, "all_trades": 0, "all_wins": 0, "all_net": 0}
     out["by_strategy"] = by
+    if os.path.exists(MODEL):
+        m = json.load(open(MODEL))
+        out["learning"] = {k: m.get(k) for k in ("asof", "history_days", "lessons", "changes", "strategies",
+                                                  "walk_forward", "last_day")}
+        out["learning"]["walk_forward"] = dict(m["walk_forward"], by_day=m["walk_forward"]["by_day"][-10:])
     os.makedirs(os.path.join(HERE, "docs"), exist_ok=True)
     with open(os.path.join(HERE, "docs", "status.json"), "w") as f:
         json.dump(out, f, indent=1)
@@ -253,6 +278,7 @@ def main(argv=None):
     p.add_argument("--portfolio", action="store_true", help="apply max trades/day + daily loss limit")
     p.add_argument("--trades", action="store_true", help="save every trade to results/ (needs --strategy)")
     sub.add_parser("daily")
+    sub.add_parser("learn")
     p = sub.add_parser("replay"); p.add_argument("--date", required=True)
     p = sub.add_parser("paper"); p.add_argument("--once", action="store_true", help="one step, then exit")
     p.add_argument("--until", default="15:20", help="IST time to stop (e.g. 12:15 for a morning shift)")
@@ -261,7 +287,7 @@ def main(argv=None):
     a = ap.parse_args(argv)
     cfg = risk.load_config(a.config)
     {"universe": cmd_universe, "collect": cmd_collect, "backtest": cmd_backtest, "daily": cmd_daily,
-     "replay": cmd_replay, "paper": cmd_paper, "report": cmd_report,
+     "replay": cmd_replay, "learn": cmd_learn, "paper": cmd_paper, "report": cmd_report,
      "status": cmd_status}[a.cmd](cfg, a)
 
 

@@ -1,0 +1,986 @@
+{
+ "asof": "2026-11-04",
+ "built": "2026-11-05 11:33",
+ "history_days": 60,
+ "first_day": "2026-08-10",
+ "strategies": {
+  "orb15": {
+   "trades": 2785,
+   "avg_r": -0.243,
+   "shrunk_r": -0.237,
+   "setups_allowed": 0,
+   "setups_allowed_yesterday": null
+  },
+  "orb30_2r": {
+   "trades": 2649,
+   "avg_r": -0.09,
+   "shrunk_r": -0.088,
+   "setups_allowed": 18,
+   "setups_allowed_yesterday": null
+  },
+  "orb60": {
+   "trades": 2436,
+   "avg_r": -0.186,
+   "shrunk_r": -0.181,
+   "setups_allowed": 9,
+   "setups_allowed_yesterday": null
+  },
+  "gap_go": {
+   "trades": 166,
+   "avg_r": -0.355,
+   "shrunk_r": -0.254,
+   "setups_allowed": 0,
+   "setups_allowed_yesterday": null
+  },
+  "gap_fade": {
+   "trades": 64,
+   "avg_r": -0.169,
+   "shrunk_r": -0.081,
+   "setups_allowed": 0,
+   "setups_allowed_yesterday": null
+  },
+  "vwap": {
+   "trades": 1928,
+   "avg_r": -0.359,
+   "shrunk_r": -0.346,
+   "setups_allowed": 0,
+   "setups_allowed_yesterday": null
+  },
+  "trap90": {
+   "trades": 1246,
+   "avg_r": -0.121,
+   "shrunk_r": -0.115,
+   "setups_allowed": 0,
+   "setups_allowed_yesterday": null
+  }
+ },
+ "lessons": [
+  "orb15 tight stop: -0.39 R a trade over 775 trades (strategy average -0.24 R) -> avoid",
+  "orb30_2r with market: +0.03 R a trade over 1001 trades (strategy average -0.09 R) -> better than usual",
+  "orb60 with market: -0.07 R a trade over 1024 trades (strategy average -0.19 R) -> better than usual",
+  "orb60 tight stop: -0.39 R a trade over 353 trades (strategy average -0.19 R) -> avoid",
+  "vwap normal stop: -0.21 R a trade over 608 trades (strategy average -0.36 R) -> better than usual",
+  "vwap tight stop: -0.43 R a trade over 1300 trades (strategy average -0.36 R) -> avoid",
+  "orb60 flat market: -0.27 R a trade over 1165 trades (strategy average -0.19 R) -> avoid",
+  "orb60 wide stop: -0.04 R a trade over 375 trades (strategy average -0.19 R) -> better than usual",
+  "orb30_2r flat market: -0.15 R a trade over 1409 trades (strategy average -0.09 R) -> avoid",
+  "orb15 with market: -0.16 R a trade over 985 trades (strategy average -0.24 R) -> better than usual",
+  "orb30_2r normal stop: -0.15 R a trade over 1251 trades (strategy average -0.09 R) -> avoid",
+  "orb15 flat market: -0.29 R a trade over 1557 trades (strategy average -0.24 R) -> avoid"
+ ],
+ "changes": [
+  "First run: model built from 60 days of history."
+ ],
+ "last_day": {
+  "date": "2026-11-04",
+  "signals": 197,
+  "approved": 7,
+  "learner_trades": 3,
+  "learner_net": -608,
+  "every_signal_net": -28
+ },
+ "walk_forward": {
+  "days": 40,
+  "learner": {
+   "trades": 69,
+   "win_rate": 34.8,
+   "expectancy_rs": -112.1,
+   "expectancy_r": -0.244,
+   "t_stat": -2.76,
+   "total_net": -7733.0,
+   "max_drawdown": -9169.0
+  },
+  "every_signal": {
+   "trades": 120,
+   "win_rate": 69.2,
+   "expectancy_rs": -104.9,
+   "expectancy_r": -0.236,
+   "t_stat": -4.77,
+   "total_net": -12593.0,
+   "max_drawdown": -13492.0
+  },
+  "by_day": [
+   {
+    "date": "2026-09-22",
+    "signals": 191,
+    "approved": 3,
+    "learner_trades": 3,
+    "learner_net": -434,
+    "every_signal_net": -327
+   },
+   {
+    "date": "2026-09-23",
+    "signals": 213,
+    "approved": 0,
+    "learner_trades": 0,
+    "learner_net": 0,
+    "every_signal_net": 23
+   },
+   {
+    "date": "2026-09-24",
+    "signals": 208,
+    "approved": 0,
+    "learner_trades": 0,
+    "learner_net": 0,
+    "every_signal_net": -137
+   },
+   {
+    "date": "2026-09-25",
+    "signals": 203,
+    "approved": 0,
+    "learner_trades": 0,
+    "learner_net": 0,
+    "every_signal_net": -113
+   },
+   {
+    "date": "2026-09-28",
+    "signals": 180,
+    "approved": 6,
+    "learner_trades": 3,
+    "learner_net": -432,
+    "every_signal_net": -413
+   },
+   {
+    "date": "2026-09-29",
+    "signals": 176,
+    "approved": 10,
+    "learner_trades": 3,
+    "learner_net": -924,
+    "every_signal_net": -350
+   },
+   {
+    "date": "2026-09-30",
+    "signals": 215,
+    "approved": 6,
+    "learner_trades": 3,
+    "learner_net": -896,
+    "every_signal_net": -1508
+   },
+   {
+    "date": "2026-10-01",
+    "signals": 209,
+    "approved": 6,
+    "learner_trades": 3,
+    "learner_net": -1315,
+    "every_signal_net": -194
+   },
+   {
+    "date": "2026-10-05",
+    "signals": 203,
+    "approved": 0,
+    "learner_trades": 0,
+    "learner_net": 0,
+    "every_signal_net": -863
+   },
+   {
+    "date": "2026-10-06",
+    "signals": 193,
+    "approved": 0,
+    "learner_trades": 0,
+    "learner_net": 0,
+    "every_signal_net": 3
+   },
+   {
+    "date": "2026-10-07",
+    "signals": 200,
+    "approved": 1,
+    "learner_trades": 1,
+    "learner_net": -82,
+    "every_signal_net": -967
+   },
+   {
+    "date": "2026-10-08",
+    "signals": 186,
+    "approved": 11,
+    "learner_trades": 3,
+    "learner_net": 1697,
+    "every_signal_net": -524
+   },
+   {
+    "date": "2026-10-09",
+    "signals": 195,
+    "approved": 0,
+    "learner_trades": 0,
+    "learner_net": 0,
+    "every_signal_net": -451
+   },
+   {
+    "date": "2026-10-12",
+    "signals": 198,
+    "approved": 30,
+    "learner_trades": 3,
+    "learner_net": 267,
+    "every_signal_net": -1070
+   },
+   {
+    "date": "2026-10-13",
+    "signals": 196,
+    "approved": 0,
+    "learner_trades": 0,
+    "learner_net": 0,
+    "every_signal_net": 3
+   },
+   {
+    "date": "2026-10-14",
+    "signals": 191,
+    "approved": 6,
+    "learner_trades": 3,
+    "learner_net": 138,
+    "every_signal_net": -359
+   },
+   {
+    "date": "2026-10-15",
+    "signals": 202,
+    "approved": 6,
+    "learner_trades": 3,
+    "learner_net": -595,
+    "every_signal_net": 3
+   },
+   {
+    "date": "2026-10-16",
+    "signals": 168,
+    "approved": 10,
+    "learner_trades": 3,
+    "learner_net": -955,
+    "every_signal_net": 5
+   },
+   {
+    "date": "2026-10-19",
+    "signals": 158,
+    "approved": 22,
+    "learner_trades": 3,
+    "learner_net": 173,
+    "every_signal_net": -162
+   },
+   {
+    "date": "2026-10-21",
+    "signals": 205,
+    "approved": 32,
+    "learner_trades": 3,
+    "learner_net": -247,
+    "every_signal_net": -525
+   },
+   {
+    "date": "2026-10-22",
+    "signals": 197,
+    "approved": 17,
+    "learner_trades": 3,
+    "learner_net": -1413,
+    "every_signal_net": -1190
+   },
+   {
+    "date": "2026-10-23",
+    "signals": 183,
+    "approved": 91,
+    "learner_trades": 3,
+    "learner_net": -95,
+    "every_signal_net": -539
+   },
+   {
+    "date": "2026-10-26",
+    "signals": 183,
+    "approved": 0,
+    "learner_trades": 0,
+    "learner_net": 0,
+    "every_signal_net": -564
+   },
+   {
+    "date": "2026-10-27",
+    "signals": 207,
+    "approved": 5,
+    "learner_trades": 3,
+    "learner_net": -477,
+    "every_signal_net": 4
+   },
+   {
+    "date": "2026-10-28",
+    "signals": 193,
+    "approved": 23,
+    "learner_trades": 3,
+    "learner_net": -803,
+    "every_signal_net": -550
+   },
+   {
+    "date": "2026-10-29",
+    "signals": 216,
+    "approved": 0,
+    "learner_trades": 0,
+    "learner_net": 0,
+    "every_signal_net": 913
+   },
+   {
+    "date": "2026-10-30",
+    "signals": 196,
+    "approved": 0,
+    "learner_trades": 0,
+    "learner_net": 0,
+    "every_signal_net": 4
+   },
+   {
+    "date": "2026-11-02",
+    "signals": 201,
+    "approved": 2,
+    "learner_trades": 2,
+    "learner_net": 26,
+    "every_signal_net": 4
+   },
+   {
+    "date": "2026-11-03",
+    "signals": 195,
+    "approved": 1,
+    "learner_trades": 1,
+    "learner_net": -300,
+    "every_signal_net": 4
+   },
+   {
+    "date": "2026-11-04",
+    "signals": 197,
+    "approved": 7,
+    "learner_trades": 3,
+    "learner_net": -608,
+    "every_signal_net": -28
+   }
+  ]
+ },
+ "model": {
+  "params": {
+   "half_life_days": 60,
+   "prior_trades": 50,
+   "min_trades": 30,
+   "min_edge_r": 0.05,
+   "warmup_days": 20
+  },
+  "days": 59,
+  "strategies": {
+   "trap90": {
+    "n": 1246,
+    "raw_r": -0.121,
+    "r": -0.115,
+    "cells": {
+     "side": {
+      "long": {
+       "n": 1246,
+       "raw_r": -0.121,
+       "r": -0.121,
+       "delta": -0.006
+      }
+     },
+     "time": {
+      "before 10:30": {
+       "n": 1246,
+       "raw_r": -0.121,
+       "r": -0.121,
+       "delta": -0.006
+      }
+     },
+     "market": {
+      "against market": {
+       "n": 130,
+       "raw_r": -0.059,
+       "r": -0.078,
+       "delta": 0.037
+      },
+      "flat market": {
+       "n": 829,
+       "raw_r": -0.133,
+       "r": -0.132,
+       "delta": -0.016
+      },
+      "with market": {
+       "n": 287,
+       "raw_r": -0.119,
+       "r": -0.118,
+       "delta": -0.003
+      }
+     },
+     "gap": {
+      "no gap": {
+       "n": 821,
+       "raw_r": -0.13,
+       "r": -0.129,
+       "delta": -0.014
+      },
+      "with gap": {
+       "n": 218,
+       "raw_r": -0.1,
+       "r": -0.103,
+       "delta": 0.012
+      },
+      "against gap": {
+       "n": 207,
+       "raw_r": -0.11,
+       "r": -0.112,
+       "delta": 0.004
+      }
+     },
+     "stop": {
+      "wide stop": {
+       "n": 1246,
+       "raw_r": -0.121,
+       "r": -0.121,
+       "delta": -0.006
+      }
+     }
+    }
+   },
+   "orb15": {
+    "n": 2785,
+    "raw_r": -0.243,
+    "r": -0.237,
+    "cells": {
+     "side": {
+      "short": {
+       "n": 1550,
+       "raw_r": -0.235,
+       "r": -0.235,
+       "delta": 0.002
+      },
+      "long": {
+       "n": 1235,
+       "raw_r": -0.252,
+       "r": -0.251,
+       "delta": -0.014
+      }
+     },
+     "time": {
+      "before 10:30": {
+       "n": 2126,
+       "raw_r": -0.248,
+       "r": -0.248,
+       "delta": -0.011
+      },
+      "10:30-13:00": {
+       "n": 561,
+       "raw_r": -0.235,
+       "r": -0.235,
+       "delta": 0.002
+      },
+      "after 13:00": {
+       "n": 98,
+       "raw_r": -0.173,
+       "r": -0.2,
+       "delta": 0.037
+      }
+     },
+     "market": {
+      "with market": {
+       "n": 985,
+       "raw_r": -0.156,
+       "r": -0.162,
+       "delta": 0.075
+      },
+      "against market": {
+       "n": 243,
+       "raw_r": -0.287,
+       "r": -0.276,
+       "delta": -0.04
+      },
+      "flat market": {
+       "n": 1557,
+       "raw_r": -0.295,
+       "r": -0.293,
+       "delta": -0.056
+      }
+     },
+     "gap": {
+      "no gap": {
+       "n": 1904,
+       "raw_r": -0.242,
+       "r": -0.242,
+       "delta": -0.005
+      },
+      "against gap": {
+       "n": 449,
+       "raw_r": -0.211,
+       "r": -0.215,
+       "delta": 0.022
+      },
+      "with gap": {
+       "n": 432,
+       "raw_r": -0.277,
+       "r": -0.272,
+       "delta": -0.035
+      }
+     },
+     "stop": {
+      "normal stop": {
+       "n": 1790,
+       "raw_r": -0.205,
+       "r": -0.206,
+       "delta": 0.031
+      },
+      "tight stop": {
+       "n": 775,
+       "raw_r": -0.394,
+       "r": -0.38,
+       "delta": -0.143
+      },
+      "wide stop": {
+       "n": 220,
+       "raw_r": -0.09,
+       "r": -0.123,
+       "delta": 0.114
+      }
+     }
+    }
+   },
+   "orb30_2r": {
+    "n": 2649,
+    "raw_r": -0.09,
+    "r": -0.088,
+    "cells": {
+     "side": {
+      "short": {
+       "n": 1437,
+       "raw_r": -0.041,
+       "r": -0.043,
+       "delta": 0.045
+      },
+      "long": {
+       "n": 1212,
+       "raw_r": -0.146,
+       "r": -0.143,
+       "delta": -0.055
+      }
+     },
+     "time": {
+      "before 10:30": {
+       "n": 1616,
+       "raw_r": -0.068,
+       "r": -0.068,
+       "delta": 0.02
+      },
+      "10:30-13:00": {
+       "n": 875,
+       "raw_r": -0.129,
+       "r": -0.126,
+       "delta": -0.038
+      },
+      "after 13:00": {
+       "n": 158,
+       "raw_r": -0.115,
+       "r": -0.107,
+       "delta": -0.019
+      }
+     },
+     "market": {
+      "with market": {
+       "n": 1001,
+       "raw_r": 0.031,
+       "r": 0.024,
+       "delta": 0.112
+      },
+      "against market": {
+       "n": 239,
+       "raw_r": -0.264,
+       "r": -0.226,
+       "delta": -0.138
+      },
+      "flat market": {
+       "n": 1409,
+       "raw_r": -0.154,
+       "r": -0.151,
+       "delta": -0.063
+      }
+     },
+     "gap": {
+      "no gap": {
+       "n": 1808,
+       "raw_r": -0.104,
+       "r": -0.103,
+       "delta": -0.015
+      },
+      "against gap": {
+       "n": 444,
+       "raw_r": -0.057,
+       "r": -0.061,
+       "delta": 0.027
+      },
+      "with gap": {
+       "n": 397,
+       "raw_r": -0.07,
+       "r": -0.073,
+       "delta": 0.015
+      }
+     },
+     "stop": {
+      "normal stop": {
+       "n": 1251,
+       "raw_r": -0.155,
+       "r": -0.151,
+       "delta": -0.063
+      },
+      "wide stop": {
+       "n": 1372,
+       "raw_r": -0.034,
+       "r": -0.036,
+       "delta": 0.052
+      },
+      "tight stop": {
+       "n": 26,
+       "raw_r": -0.44,
+       "r": -0.172,
+       "delta": 0.0
+      }
+     }
+    }
+   },
+   "orb60": {
+    "n": 2436,
+    "raw_r": -0.186,
+    "r": -0.181,
+    "cells": {
+     "side": {
+      "short": {
+       "n": 1348,
+       "raw_r": -0.13,
+       "r": -0.133,
+       "delta": 0.048
+      },
+      "long": {
+       "n": 1088,
+       "raw_r": -0.251,
+       "r": -0.247,
+       "delta": -0.066
+      }
+     },
+     "time": {
+      "before 10:30": {
+       "n": 656,
+       "raw_r": -0.199,
+       "r": -0.198,
+       "delta": -0.017
+      },
+      "10:30-13:00": {
+       "n": 1517,
+       "raw_r": -0.181,
+       "r": -0.181,
+       "delta": 0.0
+      },
+      "after 13:00": {
+       "n": 263,
+       "raw_r": -0.181,
+       "r": -0.181,
+       "delta": -0.0
+      }
+     },
+     "market": {
+      "with market": {
+       "n": 1024,
+       "raw_r": -0.065,
+       "r": -0.072,
+       "delta": 0.108
+      },
+      "against market": {
+       "n": 247,
+       "raw_r": -0.324,
+       "r": -0.294,
+       "delta": -0.113
+      },
+      "flat market": {
+       "n": 1165,
+       "raw_r": -0.271,
+       "r": -0.265,
+       "delta": -0.085
+      }
+     },
+     "gap": {
+      "no gap": {
+       "n": 1678,
+       "raw_r": -0.196,
+       "r": -0.196,
+       "delta": -0.015
+      },
+      "against gap": {
+       "n": 400,
+       "raw_r": -0.181,
+       "r": -0.181,
+       "delta": -0.001
+      },
+      "with gap": {
+       "n": 358,
+       "raw_r": -0.144,
+       "r": -0.15,
+       "delta": 0.031
+      }
+     },
+     "stop": {
+      "normal stop": {
+       "n": 1708,
+       "raw_r": -0.184,
+       "r": -0.184,
+       "delta": -0.003
+      },
+      "wide stop": {
+       "n": 375,
+       "raw_r": -0.035,
+       "r": -0.056,
+       "delta": 0.124
+      },
+      "tight stop": {
+       "n": 353,
+       "raw_r": -0.394,
+       "r": -0.355,
+       "delta": -0.175
+      }
+     }
+    }
+   },
+   "vwap": {
+    "n": 1928,
+    "raw_r": -0.359,
+    "r": -0.346,
+    "cells": {
+     "side": {
+      "long": {
+       "n": 865,
+       "raw_r": -0.427,
+       "r": -0.421,
+       "delta": -0.075
+      },
+      "short": {
+       "n": 1063,
+       "raw_r": -0.3,
+       "r": -0.303,
+       "delta": 0.043
+      }
+     },
+     "time": {
+      "before 10:30": {
+       "n": 287,
+       "raw_r": -0.31,
+       "r": -0.317,
+       "delta": 0.029
+      },
+      "10:30-13:00": {
+       "n": 1383,
+       "raw_r": -0.385,
+       "r": -0.383,
+       "delta": -0.037
+      },
+      "after 13:00": {
+       "n": 258,
+       "raw_r": -0.274,
+       "r": -0.289,
+       "delta": 0.057
+      }
+     },
+     "market": {
+      "against market": {
+       "n": 320,
+       "raw_r": -0.459,
+       "r": -0.44,
+       "delta": -0.094
+      },
+      "with market": {
+       "n": 679,
+       "raw_r": -0.297,
+       "r": -0.301,
+       "delta": 0.045
+      },
+      "flat market": {
+       "n": 929,
+       "raw_r": -0.37,
+       "r": -0.368,
+       "delta": -0.022
+      }
+     },
+     "gap": {
+      "no gap": {
+       "n": 1302,
+       "raw_r": -0.35,
+       "r": -0.35,
+       "delta": -0.004
+      },
+      "against gap": {
+       "n": 276,
+       "raw_r": -0.313,
+       "r": -0.32,
+       "delta": 0.027
+      },
+      "with gap": {
+       "n": 350,
+       "raw_r": -0.423,
+       "r": -0.411,
+       "delta": -0.065
+      }
+     },
+     "stop": {
+      "tight stop": {
+       "n": 1300,
+       "raw_r": -0.432,
+       "r": -0.428,
+       "delta": -0.082
+      },
+      "normal stop": {
+       "n": 608,
+       "raw_r": -0.209,
+       "r": -0.223,
+       "delta": 0.123
+      },
+      "wide stop": {
+       "n": 20,
+       "raw_r": -0.468,
+       "r": -0.375,
+       "delta": 0.0
+      }
+     }
+    }
+   },
+   "gap_go": {
+    "n": 166,
+    "raw_r": -0.355,
+    "r": -0.254,
+    "cells": {
+     "side": {
+      "long": {
+       "n": 70,
+       "raw_r": -0.043,
+       "r": -0.144,
+       "delta": 0.11
+      },
+      "short": {
+       "n": 96,
+       "raw_r": -0.597,
+       "r": -0.454,
+       "delta": -0.2
+      }
+     },
+     "time": {
+      "before 10:30": {
+       "n": 166,
+       "raw_r": -0.355,
+       "r": -0.326,
+       "delta": -0.073
+      }
+     },
+     "market": {
+      "flat market": {
+       "n": 109,
+       "raw_r": -0.343,
+       "r": -0.308,
+       "delta": -0.054
+      },
+      "with market": {
+       "n": 40,
+       "raw_r": -0.351,
+       "r": -0.293,
+       "delta": -0.039
+      },
+      "against market": {
+       "n": 17,
+       "raw_r": -0.437,
+       "r": -0.292,
+       "delta": 0.0
+      }
+     },
+     "gap": {
+      "with gap": {
+       "n": 166,
+       "raw_r": -0.355,
+       "r": -0.326,
+       "delta": -0.073
+      }
+     },
+     "stop": {
+      "wide stop": {
+       "n": 75,
+       "raw_r": -0.002,
+       "r": -0.119,
+       "delta": 0.135
+      },
+      "normal stop": {
+       "n": 64,
+       "raw_r": -0.634,
+       "r": -0.438,
+       "delta": -0.185
+      },
+      "tight stop": {
+       "n": 27,
+       "raw_r": -0.721,
+       "r": -0.386,
+       "delta": 0.0
+      }
+     }
+    }
+   },
+   "gap_fade": {
+    "n": 64,
+    "raw_r": -0.169,
+    "r": -0.081,
+    "cells": {
+     "side": {
+      "short": {
+       "n": 29,
+       "raw_r": -0.398,
+       "r": -0.177,
+       "delta": 0.0
+      },
+      "long": {
+       "n": 35,
+       "raw_r": 0.038,
+       "r": -0.042,
+       "delta": 0.0
+      }
+     },
+     "time": {
+      "before 10:30": {
+       "n": 64,
+       "raw_r": -0.169,
+       "r": -0.123,
+       "delta": -0.042
+      }
+     },
+     "market": {
+      "flat market": {
+       "n": 49,
+       "raw_r": -0.22,
+       "r": -0.138,
+       "delta": -0.057
+      },
+      "against market": {
+       "n": 9,
+       "raw_r": -0.334,
+       "r": -0.111,
+       "delta": 0.0
+      },
+      "with market": {
+       "n": 6,
+       "raw_r": 0.451,
+       "r": -0.035,
+       "delta": 0.0
+      }
+     },
+     "gap": {
+      "against gap": {
+       "n": 64,
+       "raw_r": -0.169,
+       "r": -0.123,
+       "delta": -0.042
+      }
+     },
+     "stop": {
+      "tight stop": {
+       "n": 17,
+       "raw_r": -1.226,
+       "r": -0.302,
+       "delta": 0.0
+      },
+      "normal stop": {
+       "n": 38,
+       "raw_r": 0.117,
+       "r": -0.012,
+       "delta": 0.0
+      },
+      "wide stop": {
+       "n": 9,
+       "raw_r": 0.522,
+       "r": -0.005,
+       "delta": 0.0
+      }
+     }
+    }
+   }
+  }
+ }
+}

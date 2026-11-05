@@ -32,6 +32,12 @@ pre{white-space:pre-wrap;font:12px/1.45 ui-monospace,Menlo,monospace;margin:0;ma
   <div class="mut" style="margin-top:8px">Start: tap "Run workflow" on GitHub. Stop: open the running job and tap "Cancel". Updates every 10 min while trading.</div>
 </div>
 <div class="card"><b>By strategy</b> <span class="mut">(each is its own Rs 1 lakh paper account)</span><table id="stratT"></table></div>
+<div class="card"><b>What it learned</b> <span class="mut" id="lAsof"></span>
+  <div class="mut" style="margin:6px 0">Re-learns every evening from all saved history. "learner" above trades only what this model expects to profit.</div>
+  <div id="lFair"></div>
+  <div style="margin-top:8px"><b style="font-size:13px">Changed last night</b><ul id="lChg" style="margin:4px 0;padding-left:18px;font-size:13px"></ul></div>
+  <div><b style="font-size:13px">Lessons</b><ul id="lLes" style="margin:4px 0;padding-left:18px;font-size:13px"></ul></div>
+</div>
 <div class="card"><b>Open positions</b><table id="openT"></table></div>
 <div class="card"><b>Closed today</b><table id="closedT"></table></div>
 <div class="card"><b>All paper trades</b><div class="mut" id="tot"></div><table id="byDay"></table><table id="recent" style="margin-top:10px"></table></div>
@@ -62,14 +68,23 @@ async function load(){
     bs.map(([n,b])=>`<tr><td><b>${esc(n)}</b><div class=mut>${esc(b.desc)}</div></td><td class="n ${isToday?cls(b.today_net):''}">${isToday?rs(b.today_net):'Rs 0'}<div class=mut>${isToday?b.today_trades:0} done${isToday&&b.open?', '+b.open+' open':''}</div></td><td class="n ${cls(b.all_net)}">${rs(b.all_net)}<div class=mut>${b.all_trades} trades${b.all_trades?', '+Math.round(100*b.all_wins/b.all_trades)+'% won':''}</div></td></tr>`).join(''):'';
   const o=isToday?Object.values(d.open):[];
   $('openT').innerHTML=o.length?'<tr><th>Stock</th><th>Strategy</th><th class=n>Qty</th><th class=n>Entry</th><th class=n>Stop</th><th class=n>Target</th></tr>'+
-    o.map(p=>`<tr><td>${esc(p.symbol)} ${p.side>0?'BUY':'SHORT'}</td><td>${esc(p.strategy)}</td><td class=n>${p.qty}</td><td class=n>${p.entry}</td><td class=n>${p.stop}</td><td class=n>${p.target}</td></tr>`).join(''):'<tr><td class=mut>None</td></tr>';
+    o.map(p=>`<tr><td>${esc(p.symbol)} ${p.side>0?'BUY':'SHORT'}</td><td>${esc(p.strategy)}${p.via?'<div class=mut>via '+esc(p.via)+'</div>':''}</td><td class=n>${p.qty}</td><td class=n>${p.entry}</td><td class=n>${p.stop}</td><td class=n>${p.target}</td></tr>`).join(''):'<tr><td class=mut>None</td></tr>';
   const c=isToday?d.closed:[];
   $('closedT').innerHTML=c.length?'<tr><th>Stock</th><th>Exit</th><th class=n>Net</th></tr>'+
-    c.map(t=>`<tr><td>${esc(t.symbol)} ${t.side>0?'BUY':'SHORT'}<div class=mut>${esc(t.strategy)}</div></td><td>${esc(t.reason)} ${esc(t.exit_time)}</td><td class="n ${cls(t.net)}">${rs(t.net)}</td></tr>`).join(''):'<tr><td class=mut>None yet</td></tr>';
+    c.map(t=>`<tr><td>${esc(t.symbol)} ${t.side>0?'BUY':'SHORT'}<div class=mut>${esc(t.strategy)}${t.via?' via '+esc(t.via):''}</div></td><td>${esc(t.reason)} ${esc(t.exit_time)}</td><td class="n ${cls(t.net)}">${rs(t.net)}</td></tr>`).join(''):'<tr><td class=mut>None yet</td></tr>';
   $('tot').textContent=d.all_trades?`${d.all_trades} trades, ${d.all_wins} won (${Math.round(100*d.all_wins/d.all_trades)}%), total ${rs(d.all_net)}`+(d.all_trades<100?'. Under 100 trades: too few to judge.':''):'No paper trades yet.';
   const days=Object.entries(d.by_day||{}).reverse().slice(0,10);
   $('byDay').innerHTML=days.length?'<tr><th>Day</th><th class=n>Net</th></tr>'+days.map(([k,v])=>`<tr><td>${k}</td><td class="n ${cls(v)}">${rs(v)}</td></tr>`).join(''):'';
   $('recent').innerHTML=d.recent.length?'<tr><th>Date</th><th>Stock</th><th>Exit</th><th class=n>Net</th></tr>'+d.recent.map(t=>`<tr><td>${t.date.slice(5)}</td><td>${esc(t.symbol)}<div class=mut>${esc(t.strategy)}</div></td><td>${esc(t.reason)}</td><td class="n ${cls(+t.net)}">${rs(+t.net)}</td></tr>`).join(''):'';
+  const L=d.learning;
+  if(L){
+    $('lAsof').textContent='(data to '+L.asof+', '+L.history_days+' days)';
+    const wf=L.walk_forward, a=wf.learner||{}, e=wf.every_signal||{};
+    const line=(n,v)=>v&&v.trades?`<tr><td>${n}</td><td class=n>${v.trades}</td><td class=n>${v.win_rate}%</td><td class="n ${cls(v.expectancy_rs)}">${rs(v.expectancy_rs)}</td><td class="n ${cls(v.total_net)}">${rs(v.total_net)}</td></tr>`:`<tr><td>${n}</td><td colspan=4 class=mut>no trades</td></tr>`;
+    $('lFair').innerHTML=`<div class=mut>Fair test: ${wf.days} past days, each judged by a model that had not seen it</div><table><tr><th></th><th class=n>Trades</th><th class=n>Won</th><th class=n>Per trade</th><th class=n>Total</th></tr>${line('Learner',a)}${line('First 3 signals a day, unfiltered',e)}</table>`;
+    $('lChg').innerHTML=(L.changes||[]).map(x=>'<li>'+esc(x)+'</li>').join('');
+    $('lLes').innerHTML=(L.lessons||[]).map(x=>'<li>'+esc(x)+'</li>').join('');
+  }
   $('logP').textContent=(isToday&&d.log.length)?d.log.join('\n'):'Nothing yet today.';
 }
 load();setInterval(load,60000);

@@ -12,3 +12,4 @@ data/1d/
 data/nifty100.txt
 # local replays/tests
 paper/*-replay.json
+.claude/
