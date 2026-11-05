@@ -113,3 +113,9 @@ PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2
 10:10  SKIP  ITC         orb30_2r  ORB30 down: max 3 trades a day
 10:10  SKIP  TATASTEEL   orb15     ORB15 down: max 3 trades a day
 10:10  SKIP  TATASTEEL   orb30_2r  ORB30 down: max 3 trades a day
+10:15  SKIP  HDFCBANK    orb15     ORB15 down: max 3 trades a day
+10:15  SKIP  HDFCBANK    orb30_2r  ORB30 down: max 3 trades a day
+10:15  SKIP  HINDUNILVR  orb30_2r  ORB30 down: max 3 trades a day
+10:15  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day
+10:20  OPEN  ETERNAL     BUY     72 @ 357.40  stop 350.55  target 364.20  [orb60: ORB60 up]
+10:20  OPEN  ICICIBANK   BUY     45 @ 1467.00  stop 1456.05  target 1477.95  [orb60: ORB60 up]

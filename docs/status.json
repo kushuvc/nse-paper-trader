@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 10:10 IST",
- "updated_ts": 1793853656,
+ "updated": "2026-11-05 10:20 IST",
+ "updated_ts": 1793854258,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -133,6 +133,28 @@
    "target": 1875.0,
    "entry_time": "09:50",
    "note": "ORB30 up"
+  },
+  "orb60|ETERNAL": {
+   "strategy": "orb60",
+   "symbol": "ETERNAL",
+   "side": 1,
+   "qty": 72,
+   "entry": 357.4,
+   "stop": 350.55,
+   "target": 364.2,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
+  },
+  "orb60|ICICIBANK": {
+   "strategy": "orb60",
+   "symbol": "ICICIBANK",
+   "side": 1,
+   "qty": 45,
+   "entry": 1467.0,
+   "stop": 1456.05,
+   "target": 1477.95,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
   }
  },
  "closed": [
@@ -219,12 +241,6 @@
  ],
  "today_net": 690.0,
  "log": [
-  "09:35  OPEN  BSE         BUY     11 @ 3745.30  stop 3700.15  target 3790.40  [orb15: ORB15 up]",
-  "09:35  OPEN  HINDUNILVR  SHORT   47 @ 1993.00  stop 2003.45  target 1982.60  [orb15: ORB15 down]",
-  "09:35  SKIP  MAXHEALTH   orb15     ORB15 down: max 3 trades a day",
-  "09:35  SKIP  NTPC        orb15     ORB15 down: max 3 trades a day",
-  "09:35  SKIP  POWERGRID   orb15     ORB15 down: max 3 trades a day",
-  "09:35  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day",
   "09:35  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day",
   "09:40  CLOSE AXISBANK    target     @ 1254.60  net Rs +4 [trap90] (charges 35)",
   "09:40  SKIP  BAJAJFINSV  orb15     ORB15 up: max 3 trades a day",
@@ -278,7 +294,13 @@
   "10:10  SKIP  ITC         orb15     ORB15 down: max 3 trades a day",
   "10:10  SKIP  ITC         orb30_2r  ORB30 down: max 3 trades a day",
   "10:10  SKIP  TATASTEEL   orb15     ORB15 down: max 3 trades a day",
-  "10:10  SKIP  TATASTEEL   orb30_2r  ORB30 down: max 3 trades a day"
+  "10:10  SKIP  TATASTEEL   orb30_2r  ORB30 down: max 3 trades a day",
+  "10:15  SKIP  HDFCBANK    orb15     ORB15 down: max 3 trades a day",
+  "10:15  SKIP  HDFCBANK    orb30_2r  ORB30 down: max 3 trades a day",
+  "10:15  SKIP  HINDUNILVR  orb30_2r  ORB30 down: max 3 trades a day",
+  "10:15  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day",
+  "10:20  OPEN  ETERNAL     BUY     72 @ 357.40  stop 350.55  target 364.20  [orb60: ORB60 up]",
+  "10:20  OPEN  ICICIBANK   BUY     45 @ 1467.00  stop 1456.05  target 1477.95  [orb60: ORB60 up]"
  ],
  "all_trades": 4,
  "all_wins": 4,
@@ -387,7 +409,7 @@
    "desc": "first-hour range breakout, stop at mid, 1R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 2,
    "all_trades": 0,
    "all_wins": 0,
    "all_net": 0
