@@ -208,3 +208,4 @@ Learner: model from 59 days of history
 13:20  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day
 13:20  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day
 13:25  SKIP  HINDALCO    vwap      VWAP reclaim: max 3 trades a day
+13:35  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day
