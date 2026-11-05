@@ -182,3 +182,7 @@ PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2
 11:40  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day
 11:40  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day
 Shift until 15:20 IST (started 12:16)
+PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
+Learner: model from 59 days of history
+12:20  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day
+12:25  SKIP  BAJAJFINSV  orb60     ORB60 up: max 3 trades a day
