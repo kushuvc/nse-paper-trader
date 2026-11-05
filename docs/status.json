@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 10:41 IST",
- "updated_ts": 1793855461,
+ "updated": "2026-11-05 10:51 IST",
+ "updated_ts": 1793856063,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -156,17 +156,6 @@
    "entry_time": "10:20",
    "note": "ORB60 up"
   },
-  "vwap|BAJAJFINSV": {
-   "strategy": "vwap",
-   "symbol": "BAJAJFINSV",
-   "side": 1,
-   "qty": 55,
-   "entry": 1804.6,
-   "stop": 1795.65,
-   "target": 1822.4,
-   "entry_time": "10:25",
-   "note": "VWAP reclaim"
-  },
   "vwap|INDIGO": {
    "strategy": "vwap",
    "symbol": "INDIGO",
@@ -281,11 +270,30 @@
    "net": 683.76,
    "r": 1.697,
    "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "BAJAJFINSV",
+   "side": 1,
+   "qty": 55,
+   "entry": 1804.6,
+   "stop": 1795.65,
+   "target": 1822.4,
+   "entry_time": "10:25",
+   "note": "VWAP reclaim",
+   "date": "2026-11-05",
+   "exit": 1795.65,
+   "exit_time": "10:45",
+   "reason": "stop",
+   "gross": -531.85,
+   "charges": 82.04,
+   "net": -613.89,
+   "r": -1.247,
+   "mode": "live"
   }
  ],
- "today_net": 690.0,
+ "today_net": 76.0,
  "log": [
-  "09:50  SKIP  TECHM       orb30_2r  ORB30 up: max 3 trades a day",
   "09:50  SKIP  TITAN       orb30_2r  ORB30 up: max 3 trades a day",
   "09:55  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day",
   "09:55  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day",
@@ -344,12 +352,32 @@
   "10:40  SKIP  RELIANCE    orb60     ORB60 down: max 3 trades a day",
   "10:40  SKIP  SBIN        orb15     ORB15 down: max 3 trades a day",
   "10:40  SKIP  SBIN        orb30_2r  ORB30 down: max 3 trades a day",
-  "10:40  SKIP  SBIN        orb60     ORB60 down: max 3 trades a day"
+  "10:40  SKIP  SBIN        orb60     ORB60 down: max 3 trades a day",
+  "10:45  CLOSE BAJAJFINSV  stop       @ 1795.65  net Rs -614 [vwap] (charges 82)"
  ],
- "all_trades": 4,
+ "all_trades": 5,
  "all_wins": 4,
- "all_net": 690.0,
+ "all_net": 76.0,
  "recent": [
+  {
+   "date": "2026-11-05",
+   "symbol": "BAJAJFINSV",
+   "strategy": "vwap",
+   "side": "1",
+   "qty": "55",
+   "entry_time": "10:25",
+   "entry": "1804.6",
+   "stop": "1795.65",
+   "target": "1822.4",
+   "exit_time": "10:45",
+   "exit": "1795.65",
+   "reason": "stop",
+   "gross": "-531.85",
+   "charges": "82.04",
+   "net": "-613.89",
+   "r": "-1.247",
+   "mode": "live"
+  },
   {
    "date": "2026-11-05",
    "symbol": "AXISBANK",
@@ -428,7 +456,7 @@
   }
  ],
  "by_day": {
-  "2026-11-05": 690.0
+  "2026-11-05": 76.0
  },
  "by_strategy": {
   "orb15": {
@@ -478,12 +506,12 @@
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 0,
+   "today_trades": 1,
+   "today_net": -614,
+   "open": 2,
+   "all_trades": 1,
    "all_wins": 0,
-   "all_net": 0
+   "all_net": -614
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",

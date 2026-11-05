@@ -151,3 +151,4 @@ PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2
 10:40  SKIP  SBIN        orb15     ORB15 down: max 3 trades a day
 10:40  SKIP  SBIN        orb30_2r  ORB30 down: max 3 trades a day
 10:40  SKIP  SBIN        orb60     ORB60 down: max 3 trades a day
+10:45  CLOSE BAJAJFINSV  stop       @ 1795.65  net Rs -614 [vwap] (charges 82)
