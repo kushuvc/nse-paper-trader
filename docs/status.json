@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 13:06 IST",
- "updated_ts": 1793864176,
+ "updated": "2026-11-05 13:16 IST",
+ "updated_ts": 1793864778,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -348,9 +348,6 @@
  ],
  "today_net": 2111.0,
  "log": [
-  "10:45  CLOSE BAJAJFINSV  stop       @ 1795.65  net Rs -614 [vwap] (charges 82)",
-  "10:55  SKIP  BAJAJ-AUTO  vwap      VWAP loss: max 3 trades a day",
-  "11:00  CLOSE BEL         target     @ 398.00  net Rs +741 [gap_fade] (charges 80)",
   "11:00  CLOSE BEL         target     @ 398.10  net Rs +675 [vwap] (charges 82)",
   "11:00  SKIP  CIPLA       vwap      VWAP loss: max 3 trades a day",
   "11:00  SKIP  DRREDDY     vwap      VWAP loss: max 3 trades a day",
@@ -407,7 +404,10 @@
   "13:05  SKIP  HDFCBANK    vwap      VWAP loss: max 3 trades a day",
   "13:05  CLOSE HINDUNILVR  target     @ 1982.60  net Rs +371 [orb15] (charges 80)",
   "13:05  SKIP  INFY        vwap      VWAP reclaim: max 3 trades a day",
-  "13:05  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day"
+  "13:05  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day",
+  "13:10  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
+  "13:10  SKIP  TCS         vwap      VWAP reclaim: max 3 trades a day",
+  "13:15  SKIP  TATASTEEL   vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 11,
  "all_wins": 9,

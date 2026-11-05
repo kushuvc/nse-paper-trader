@@ -200,3 +200,6 @@ Learner: model from 59 days of history
 13:05  CLOSE HINDUNILVR  target     @ 1982.60  net Rs +371 [orb15] (charges 80)
 13:05  SKIP  INFY        vwap      VWAP reclaim: max 3 trades a day
 13:05  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day
+13:10  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day
+13:10  SKIP  TCS         vwap      VWAP reclaim: max 3 trades a day
+13:15  SKIP  TATASTEEL   vwap      VWAP reclaim: max 3 trades a day
