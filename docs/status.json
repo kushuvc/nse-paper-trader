@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 12:26 IST",
- "updated_ts": 1793861769,
+ "updated": "2026-11-05 12:36 IST",
+ "updated_ts": 1793862371,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -122,28 +122,6 @@
    "target": 364.2,
    "entry_time": "10:20",
    "note": "ORB60 up"
-  },
-  "orb60|ICICIBANK": {
-   "strategy": "orb60",
-   "symbol": "ICICIBANK",
-   "side": 1,
-   "qty": 45,
-   "entry": 1467.0,
-   "stop": 1456.05,
-   "target": 1477.95,
-   "entry_time": "10:20",
-   "note": "ORB60 up"
-  },
-  "vwap|INDIGO": {
-   "strategy": "vwap",
-   "symbol": "INDIGO",
-   "side": -1,
-   "qty": 14,
-   "entry": 5395.7,
-   "stop": 5430.0,
-   "target": 5327.1,
-   "entry_time": "10:25",
-   "note": "VWAP loss"
   },
   "orb60|JIOFIN": {
    "strategy": "orb60",
@@ -317,15 +295,50 @@
    "net": 435.52,
    "r": 0.877,
    "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "INDIGO",
+   "side": -1,
+   "qty": 14,
+   "entry": 5395.7,
+   "stop": 5430.0,
+   "target": 5327.1,
+   "entry_time": "10:25",
+   "note": "VWAP loss",
+   "date": "2026-11-05",
+   "exit": 5430.0,
+   "exit_time": "12:30",
+   "reason": "stop",
+   "gross": -510.51,
+   "charges": 73.85,
+   "net": -584.36,
+   "r": -1.217,
+   "mode": "live"
+  },
+  {
+   "strategy": "orb60",
+   "symbol": "ICICIBANK",
+   "side": 1,
+   "qty": 45,
+   "entry": 1467.0,
+   "stop": 1456.05,
+   "target": 1477.95,
+   "entry_time": "10:20",
+   "note": "ORB60 up",
+   "date": "2026-11-05",
+   "exit": 1477.95,
+   "exit_time": "12:35",
+   "reason": "target",
+   "gross": 466.25,
+   "charges": 70.32,
+   "net": 395.93,
+   "r": 0.804,
+   "mode": "live"
   }
  ],
- "today_net": 1928.0,
+ "today_net": 1739.0,
  "log": [
-  "10:40  SKIP  BEL         orb15     ORB15 down: max 3 trades a day",
-  "10:40  SKIP  BEL         orb30_2r  ORB30 down: max 3 trades a day",
-  "10:40  SKIP  BEL         orb60     ORB60 down: max 3 trades a day",
-  "10:40  SKIP  CIPLA       orb15     ORB15 up: max 3 trades a day",
-  "10:40  SKIP  CIPLA       orb30_2r  ORB30 up: max 3 trades a day",
   "10:40  SKIP  CIPLA       orb60     ORB60 up: max 3 trades a day",
   "10:40  SKIP  COALINDIA   orb60     ORB60 down: max 3 trades a day",
   "10:40  SKIP  ITC         orb60     ORB60 down: max 3 trades a day",
@@ -380,12 +393,59 @@
   "12:10  SKIP  INFY        vwap      VWAP reclaim: max 3 trades a day",
   "12:10  SKIP  RELIANCE    vwap      VWAP loss: max 3 trades a day",
   "12:20  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day",
-  "12:25  SKIP  BAJAJFINSV  orb60     ORB60 up: max 3 trades a day"
+  "12:25  SKIP  BAJAJFINSV  orb60     ORB60 up: max 3 trades a day",
+  "12:30  CLOSE INDIGO      stop       @ 5430.00  net Rs -584 [vwap] (charges 74)",
+  "12:30  SKIP  TRENT       orb15     ORB15 down: max 3 trades a day",
+  "12:30  SKIP  TRENT       orb30_2r  ORB30 down: max 3 trades a day",
+  "12:30  SKIP  TRENT       orb60     ORB60 down: max 3 trades a day",
+  "12:35  CLOSE ICICIBANK   target     @ 1477.95  net Rs +396 [orb60] (charges 70)"
  ],
- "all_trades": 8,
- "all_wins": 7,
- "all_net": 1928.0,
+ "all_trades": 10,
+ "all_wins": 8,
+ "all_net": 1739.0,
  "recent": [
+  {
+   "date": "2026-11-05",
+   "symbol": "ICICIBANK",
+   "strategy": "orb60",
+   "side": "1",
+   "qty": "45",
+   "entry_time": "10:20",
+   "entry": "1467.0",
+   "stop": "1456.05",
+   "target": "1477.95",
+   "exit_time": "12:35",
+   "exit": "1477.95",
+   "reason": "target",
+   "gross": "466.25",
+   "charges": "70.32",
+   "net": "395.93",
+   "r": "0.804",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
+  {
+   "date": "2026-11-05",
+   "symbol": "INDIGO",
+   "strategy": "vwap",
+   "side": "-1",
+   "qty": "14",
+   "entry_time": "10:25",
+   "entry": "5395.7",
+   "stop": "5430.0",
+   "target": "5327.1",
+   "exit_time": "12:30",
+   "exit": "5430.0",
+   "reason": "stop",
+   "gross": "-510.51",
+   "charges": "73.85",
+   "net": "-584.36",
+   "r": "-1.217",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-05",
    "symbol": "BSE",
@@ -403,7 +463,9 @@
    "charges": "44.0",
    "net": "435.52",
    "r": "0.877",
-   "mode": "live"
+   "mode": "live",
+   "via": "",
+   "setup": ""
   },
   {
    "date": "2026-11-05",
@@ -422,7 +484,9 @@
    "charges": "82.36",
    "net": "674.63",
    "r": "1.693",
-   "mode": "live"
+   "mode": "live",
+   "via": "",
+   "setup": ""
   },
   {
    "date": "2026-11-05",
@@ -441,7 +505,9 @@
    "charges": "79.99",
    "net": "741.3",
    "r": "1.486",
-   "mode": "live"
+   "mode": "live",
+   "via": "",
+   "setup": ""
   },
   {
    "date": "2026-11-05",
@@ -460,7 +526,9 @@
    "charges": "82.04",
    "net": "-613.89",
    "r": "-1.247",
-   "mode": "live"
+   "mode": "live",
+   "via": "",
+   "setup": ""
   },
   {
    "date": "2026-11-05",
@@ -479,7 +547,9 @@
    "charges": "82.3",
    "net": "683.76",
    "r": "1.697",
-   "mode": "live"
+   "mode": "live",
+   "via": "",
+   "setup": ""
   },
   {
    "date": "2026-11-05",
@@ -498,7 +568,9 @@
    "charges": "34.99",
    "net": "1.01",
    "r": "0.002",
-   "mode": "live"
+   "mode": "live",
+   "via": "",
+   "setup": ""
   },
   {
    "date": "2026-11-05",
@@ -517,7 +589,9 @@
    "charges": "34.57",
    "net": "4.39",
    "r": "0.009",
-   "mode": "live"
+   "mode": "live",
+   "via": "",
+   "setup": ""
   },
   {
    "date": "2026-11-05",
@@ -536,11 +610,13 @@
    "charges": "31.71",
    "net": "1.13",
    "r": "0.003",
-   "mode": "live"
+   "mode": "live",
+   "via": "",
+   "setup": ""
   }
  ],
  "by_day": {
-  "2026-11-05": 1928.0
+  "2026-11-05": 1740.0
  },
  "by_strategy": {
   "orb15": {
@@ -563,12 +639,12 @@
   },
   "orb60": {
    "desc": "first-hour range breakout, stop at mid, 1R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 0,
-   "all_wins": 0,
-   "all_net": 0
+   "today_trades": 1,
+   "today_net": 396,
+   "open": 2,
+   "all_trades": 1,
+   "all_wins": 1,
+   "all_net": 396
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
@@ -590,12 +666,12 @@
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 2,
-   "today_net": 61,
-   "open": 1,
-   "all_trades": 2,
+   "today_trades": 3,
+   "today_net": -524,
+   "open": 0,
+   "all_trades": 3,
    "all_wins": 1,
-   "all_net": 61
+   "all_net": -524
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",

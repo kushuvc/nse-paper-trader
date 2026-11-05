@@ -186,3 +186,8 @@ PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2
 Learner: model from 59 days of history
 12:20  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day
 12:25  SKIP  BAJAJFINSV  orb60     ORB60 up: max 3 trades a day
+12:30  CLOSE INDIGO      stop       @ 5430.00  net Rs -584 [vwap] (charges 74)
+12:30  SKIP  TRENT       orb15     ORB15 down: max 3 trades a day
+12:30  SKIP  TRENT       orb30_2r  ORB30 down: max 3 trades a day
+12:30  SKIP  TRENT       orb60     ORB60 down: max 3 trades a day
+12:35  CLOSE ICICIBANK   target     @ 1477.95  net Rs +396 [orb60] (charges 70)
