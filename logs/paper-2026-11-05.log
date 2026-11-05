@@ -171,3 +171,13 @@ PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2
 11:15  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day
 11:15  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day
 11:15  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day
+11:35  SKIP  GRASIM      orb15     ORB15 up: max 3 trades a day
+11:35  SKIP  GRASIM      orb30_2r  ORB30 up: max 3 trades a day
+11:35  SKIP  GRASIM      orb60     ORB60 up: max 3 trades a day
+11:35  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day
+11:35  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day
+11:35  SKIP  SHRIRAMFIN  vwap      VWAP reclaim: max 3 trades a day
+11:40  SKIP  LT          vwap      VWAP reclaim: max 3 trades a day
+11:40  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day
+11:40  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day
+11:40  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day
