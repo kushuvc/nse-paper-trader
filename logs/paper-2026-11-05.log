@@ -220,3 +220,6 @@ Learner: model from 59 days of history
 14:00  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day
 14:00  SKIP  TCS         vwap      VWAP reclaim: max 3 trades a day
 14:05  SKIP  APOLLOHOSP  vwap      VWAP loss: max 3 trades a day
+14:20  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day
+14:25  SKIP  DRREDDY     vwap      VWAP loss: max 3 trades a day
+14:25  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day
