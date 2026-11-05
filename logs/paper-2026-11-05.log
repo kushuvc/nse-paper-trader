@@ -214,3 +214,6 @@ Learner: model from 59 days of history
 13:45  SKIP  KOTAKBANK   orb15     ORB15 up: max 3 trades a day
 13:45  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day
 13:45  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day
+13:50  SKIP  HCLTECH     vwap      VWAP reclaim: max 3 trades a day
+13:55  SKIP  CIPLA       vwap      VWAP loss: max 3 trades a day
+13:55  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day
