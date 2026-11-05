@@ -253,3 +253,19 @@ Learner: model from 59 days of history
   trap90    3 trades, net Rs +7
   learner   0 trades, net Rs +0
 Shift until 15:20 IST (started 16:57)
+PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
+Learner: model from 59 days of history
+16:57  SKIP  ASIANPAINT  vwap      VWAP loss: past square-off
+16:57  SKIP  BHARTIARTL  vwap      VWAP loss: past square-off
+16:57  SKIP  COALINDIA   vwap      VWAP loss: past square-off
+16:57  SKIP  HINDALCO    orb30_2r  ORB30 down: past square-off
+16:57  SKIP  ONGC        vwap      VWAP loss: past square-off
+2026-11-05: 21 closed (16 won), 0 still open, net Rs +3748 after charges
+  orb15     3 trades, net Rs +601
+  orb30_2r  3 trades, net Rs +1070
+  orb60     3 trades, net Rs +472
+  gap_go    3 trades, net Rs +511
+  gap_fade  3 trades, net Rs +1610
+  vwap      3 trades, net Rs -524
+  trap90    3 trades, net Rs +7
+  learner   0 trades, net Rs +0

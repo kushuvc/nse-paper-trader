@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-05 16:57 IST",
- "updated_ts": 1793878052,
+ "updated_ts": 1793878079,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -437,11 +437,6 @@
  ],
  "today_net": 3748.0,
  "log": [
-  "12:10  SKIP  RELIANCE    vwap      VWAP loss: max 3 trades a day",
-  "12:20  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day",
-  "12:25  SKIP  BAJAJFINSV  orb60     ORB60 up: max 3 trades a day",
-  "12:30  CLOSE INDIGO      stop       @ 5430.00  net Rs -584 [vwap] (charges 74)",
-  "12:30  SKIP  TRENT       orb15     ORB15 down: max 3 trades a day",
   "12:30  SKIP  TRENT       orb30_2r  ORB30 down: max 3 trades a day",
   "12:30  SKIP  TRENT       orb60     ORB60 down: max 3 trades a day",
   "12:35  CLOSE ICICIBANK   target     @ 1477.95  net Rs +396 [orb60] (charges 70)",
@@ -496,7 +491,12 @@
   "15:15  CLOSE ETERNAL     square-off @ 358.90  net Rs +70 [orb60] (charges 27)",
   "15:15  SKIP  JSWSTEEL    vwap      VWAP reclaim: past square-off",
   "15:15  CLOSE JIOFIN      square-off @ 229.55  net Rs +6 [orb60] (charges 55)",
-  "15:15  SKIP  RELIANCE    vwap      VWAP loss: past square-off"
+  "15:15  SKIP  RELIANCE    vwap      VWAP loss: past square-off",
+  "16:57  SKIP  ASIANPAINT  vwap      VWAP loss: past square-off",
+  "16:57  SKIP  BHARTIARTL  vwap      VWAP loss: past square-off",
+  "16:57  SKIP  COALINDIA   vwap      VWAP loss: past square-off",
+  "16:57  SKIP  HINDALCO    orb30_2r  ORB30 down: past square-off",
+  "16:57  SKIP  ONGC        vwap      VWAP loss: past square-off"
  ],
  "all_trades": 21,
  "all_wins": 16,
