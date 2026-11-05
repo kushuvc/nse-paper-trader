@@ -230,3 +230,16 @@ Learner: model from 59 days of history
 14:50  SKIP  DRREDDY     vwap      VWAP loss: after 14:30
 14:55  SKIP  MAXHEALTH   vwap      VWAP loss: after 14:30
 15:05  SKIP  BHARTIARTL  vwap      VWAP loss: after 14:30
+15:10  SKIP  ADANIPORTS  vwap      VWAP loss: after 14:30
+15:15  CLOSE ADANIENT    square-off @ 2733.60  net Rs -441 [gap_go] (charges 71)
+15:15  CLOSE ADANIPORTS  target     @ 1910.00  net Rs +1013 [gap_fade] (charges 79)
+15:15  CLOSE APOLLOHOSP  square-off @ 8365.00  net Rs -205 [orb15] (charges 18)
+15:15  CLOSE ASIANPAINT  square-off @ 2528.90  net Rs -144 [gap_fade] (charges 24)
+15:15  CLOSE AXISBANK    square-off @ 1281.20  net Rs +374 [orb30_2r] (charges 36)
+15:15  CLOSE BSE         square-off @ 3784.20  net Rs +268 [gap_go] (charges 24)
+15:15  CLOSE BAJFINANCE  square-off @ 1069.90  net Rs +362 [orb30_2r] (charges 20)
+15:15  CLOSE BAJAJFINSV  square-off @ 1838.00  net Rs +335 [orb30_2r] (charges 31)
+15:15  CLOSE ETERNAL     square-off @ 358.90  net Rs +70 [orb60] (charges 27)
+15:15  SKIP  JSWSTEEL    vwap      VWAP reclaim: past square-off
+15:15  CLOSE JIOFIN      square-off @ 229.55  net Rs +6 [orb60] (charges 55)
+15:15  SKIP  RELIANCE    vwap      VWAP loss: past square-off
