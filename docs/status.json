@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 12:56 IST",
- "updated_ts": 1793863574,
+ "updated": "2026-11-05 13:06 IST",
+ "updated_ts": 1793864176,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -65,17 +65,6 @@
    "entry": 8274.5,
    "stop": 8484.75,
    "target": 8064.25,
-   "entry_time": "09:35",
-   "note": "ORB15 down"
-  },
-  "orb15|HINDUNILVR": {
-   "strategy": "orb15",
-   "symbol": "HINDUNILVR",
-   "side": -1,
-   "qty": 47,
-   "entry": 1993.0,
-   "stop": 2003.45,
-   "target": 1982.6,
    "entry_time": "09:35",
    "note": "ORB15 down"
   },
@@ -335,15 +324,30 @@
    "net": 395.93,
    "r": 0.804,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "HINDUNILVR",
+   "side": -1,
+   "qty": 47,
+   "entry": 1993.0,
+   "stop": 2003.45,
+   "target": 1982.6,
+   "entry_time": "09:35",
+   "note": "ORB15 down",
+   "date": "2026-11-05",
+   "exit": 1982.6,
+   "exit_time": "13:05",
+   "reason": "target",
+   "gross": 451.43,
+   "charges": 80.18,
+   "net": 371.25,
+   "r": 0.756,
+   "mode": "live"
   }
  ],
- "today_net": 1739.0,
+ "today_net": 2111.0,
  "log": [
-  "10:40  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day",
-  "10:40  SKIP  RELIANCE    orb60     ORB60 down: max 3 trades a day",
-  "10:40  SKIP  SBIN        orb15     ORB15 down: max 3 trades a day",
-  "10:40  SKIP  SBIN        orb30_2r  ORB30 down: max 3 trades a day",
-  "10:40  SKIP  SBIN        orb60     ORB60 down: max 3 trades a day",
   "10:45  CLOSE BAJAJFINSV  stop       @ 1795.65  net Rs -614 [vwap] (charges 82)",
   "10:55  SKIP  BAJAJ-AUTO  vwap      VWAP loss: max 3 trades a day",
   "11:00  CLOSE BEL         target     @ 398.00  net Rs +741 [gap_fade] (charges 80)",
@@ -398,12 +402,38 @@
   "12:40  SKIP  TITAN       vwap      VWAP reclaim: max 3 trades a day",
   "12:45  SKIP  HINDALCO    vwap      VWAP loss: max 3 trades a day",
   "12:50  SKIP  TMPV        orb60     ORB60 up: max 3 trades a day",
-  "12:50  SKIP  TATASTEEL   vwap      VWAP loss: max 3 trades a day"
+  "12:50  SKIP  TATASTEEL   vwap      VWAP loss: max 3 trades a day",
+  "13:00  SKIP  TITAN       vwap      VWAP reclaim: max 3 trades a day",
+  "13:05  SKIP  HDFCBANK    vwap      VWAP loss: max 3 trades a day",
+  "13:05  CLOSE HINDUNILVR  target     @ 1982.60  net Rs +371 [orb15] (charges 80)",
+  "13:05  SKIP  INFY        vwap      VWAP reclaim: max 3 trades a day",
+  "13:05  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day"
  ],
- "all_trades": 10,
- "all_wins": 8,
- "all_net": 1739.0,
+ "all_trades": 11,
+ "all_wins": 9,
+ "all_net": 2111.0,
  "recent": [
+  {
+   "date": "2026-11-05",
+   "symbol": "HINDUNILVR",
+   "strategy": "orb15",
+   "side": "-1",
+   "qty": "47",
+   "entry_time": "09:35",
+   "entry": "1993.0",
+   "stop": "2003.45",
+   "target": "1982.6",
+   "exit_time": "13:05",
+   "exit": "1982.6",
+   "reason": "target",
+   "gross": "451.43",
+   "charges": "80.18",
+   "net": "371.25",
+   "r": "0.756",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-05",
    "symbol": "ICICIBANK",
@@ -616,17 +646,17 @@
   }
  ],
  "by_day": {
-  "2026-11-05": 1740.0
+  "2026-11-05": 2111.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 1,
-   "today_net": 436,
-   "open": 2,
-   "all_trades": 1,
-   "all_wins": 1,
-   "all_net": 436
+   "today_trades": 2,
+   "today_net": 807,
+   "open": 1,
+   "all_trades": 2,
+   "all_wins": 2,
+   "all_net": 807
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",

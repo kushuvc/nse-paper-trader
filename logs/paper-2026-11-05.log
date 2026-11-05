@@ -195,3 +195,8 @@ Learner: model from 59 days of history
 12:45  SKIP  HINDALCO    vwap      VWAP loss: max 3 trades a day
 12:50  SKIP  TMPV        orb60     ORB60 up: max 3 trades a day
 12:50  SKIP  TATASTEEL   vwap      VWAP loss: max 3 trades a day
+13:00  SKIP  TITAN       vwap      VWAP reclaim: max 3 trades a day
+13:05  SKIP  HDFCBANK    vwap      VWAP loss: max 3 trades a day
+13:05  CLOSE HINDUNILVR  target     @ 1982.60  net Rs +371 [orb15] (charges 80)
+13:05  SKIP  INFY        vwap      VWAP reclaim: max 3 trades a day
+13:05  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day
