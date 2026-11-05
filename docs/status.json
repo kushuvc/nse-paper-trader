@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 11:51 IST",
- "updated_ts": 1793859674,
+ "updated": "2026-11-05 12:01 IST",
+ "updated_ts": 1793860276,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -321,11 +321,6 @@
  ],
  "today_net": 1928.0,
  "log": [
-  "10:30  SKIP  HDFCLIFE    orb30_2r  ORB30 up: max 3 trades a day",
-  "10:30  SKIP  HDFCLIFE    orb60     ORB60 up: max 3 trades a day",
-  "10:35  SKIP  AXISBANK    orb60     ORB60 up: max 3 trades a day",
-  "10:35  SKIP  HDFCBANK    orb60     ORB60 down: max 3 trades a day",
-  "10:35  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day",
   "10:35  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day",
   "10:35  SKIP  POWERGRID   orb60     ORB60 down: max 3 trades a day",
   "10:35  SKIP  TATASTEEL   orb60     ORB60 down: max 3 trades a day",
@@ -380,7 +375,12 @@
   "11:50  SKIP  ADANIPORTS  vwap      VWAP loss: max 3 trades a day",
   "11:50  SKIP  BAJFINANCE  orb60     ORB60 up: max 3 trades a day",
   "11:50  SKIP  EICHERMOT   orb30_2r  ORB30 up: max 3 trades a day",
-  "11:50  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day"
+  "11:50  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day",
+  "11:55  SKIP  HINDALCO    vwap      VWAP loss: max 3 trades a day",
+  "12:00  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day",
+  "12:00  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day",
+  "12:00  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day",
+  "12:00  SKIP  TATASTEEL   vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 8,
  "all_wins": 7,
