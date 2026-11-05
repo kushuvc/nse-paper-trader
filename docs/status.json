@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 12:01 IST",
- "updated_ts": 1793860276,
+ "updated": "2026-11-05 12:11 IST",
+ "updated_ts": 1793860877,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -321,11 +321,6 @@
  ],
  "today_net": 1928.0,
  "log": [
-  "10:35  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day",
-  "10:35  SKIP  POWERGRID   orb60     ORB60 down: max 3 trades a day",
-  "10:35  SKIP  TATASTEEL   orb60     ORB60 down: max 3 trades a day",
-  "10:40  SKIP  ADANIPORTS  orb15     ORB15 down: max 3 trades a day",
-  "10:40  SKIP  ADANIPORTS  orb30_2r  ORB30 down: max 3 trades a day",
   "10:40  SKIP  ADANIPORTS  orb60     ORB60 down: max 3 trades a day",
   "10:40  SKIP  BSE         orb60     ORB60 up: max 3 trades a day",
   "10:40  SKIP  BEL         orb15     ORB15 down: max 3 trades a day",
@@ -380,7 +375,12 @@
   "12:00  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day",
   "12:00  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day",
   "12:00  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day",
-  "12:00  SKIP  TATASTEEL   vwap      VWAP loss: max 3 trades a day"
+  "12:00  SKIP  TATASTEEL   vwap      VWAP loss: max 3 trades a day",
+  "12:05  SKIP  HINDUNILVR  orb60     ORB60 down: max 3 trades a day",
+  "12:05  SKIP  SHRIRAMFIN  vwap      VWAP reclaim: max 3 trades a day",
+  "12:10  SKIP  EICHERMOT   orb60     ORB60 up: max 3 trades a day",
+  "12:10  SKIP  INFY        vwap      VWAP reclaim: max 3 trades a day",
+  "12:10  SKIP  RELIANCE    vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 8,
  "all_wins": 7,
