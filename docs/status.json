@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 13:36 IST",
- "updated_ts": 1793865981,
+ "updated": "2026-11-05 13:46 IST",
+ "updated_ts": 1793866583,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -348,11 +348,6 @@
  ],
  "today_net": 2111.0,
  "log": [
-  "11:05  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
-  "11:05  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
-  "11:10  CLOSE BSE         target     @ 3790.40  net Rs +436 [orb15] (charges 44)",
-  "11:10  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day",
-  "11:15  SKIP  APOLLOHOSP  vwap      VWAP loss: max 3 trades a day",
   "11:15  SKIP  DRREDDY     orb15     ORB15 down: max 3 trades a day",
   "11:15  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day",
   "11:15  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day",
@@ -407,7 +402,12 @@
   "13:20  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day",
   "13:20  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day",
   "13:25  SKIP  HINDALCO    vwap      VWAP reclaim: max 3 trades a day",
-  "13:35  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day"
+  "13:35  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
+  "13:40  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day",
+  "13:40  SKIP  TITAN       vwap      VWAP reclaim: max 3 trades a day",
+  "13:45  SKIP  KOTAKBANK   orb15     ORB15 up: max 3 trades a day",
+  "13:45  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day",
+  "13:45  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 11,
  "all_wins": 9,
