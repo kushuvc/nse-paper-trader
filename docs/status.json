@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 10:20 IST",
- "updated_ts": 1793854258,
+ "updated": "2026-11-05 10:31 IST",
+ "updated_ts": 1793854860,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -155,6 +155,50 @@
    "target": 1477.95,
    "entry_time": "10:20",
    "note": "ORB60 up"
+  },
+  "vwap|BAJAJFINSV": {
+   "strategy": "vwap",
+   "symbol": "BAJAJFINSV",
+   "side": 1,
+   "qty": 55,
+   "entry": 1804.6,
+   "stop": 1795.65,
+   "target": 1822.4,
+   "entry_time": "10:25",
+   "note": "VWAP reclaim"
+  },
+  "vwap|INDIGO": {
+   "strategy": "vwap",
+   "symbol": "INDIGO",
+   "side": -1,
+   "qty": 14,
+   "entry": 5395.7,
+   "stop": 5430.0,
+   "target": 5327.1,
+   "entry_time": "10:25",
+   "note": "VWAP loss"
+  },
+  "orb60|JIOFIN": {
+   "strategy": "orb60",
+   "symbol": "JIOFIN",
+   "side": 1,
+   "qty": 228,
+   "entry": 229.19,
+   "stop": 227.0,
+   "target": 231.4,
+   "entry_time": "10:25",
+   "note": "ORB60 up"
+  },
+  "vwap|BEL": {
+   "strategy": "vwap",
+   "symbol": "BEL",
+   "side": -1,
+   "qty": 249,
+   "entry": 401.3,
+   "stop": 402.9,
+   "target": 398.1,
+   "entry_time": "10:30",
+   "note": "VWAP loss"
   }
  },
  "closed": [
@@ -241,14 +285,6 @@
  ],
  "today_net": 690.0,
  "log": [
-  "09:35  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day",
-  "09:40  CLOSE AXISBANK    target     @ 1254.60  net Rs +4 [trap90] (charges 35)",
-  "09:40  SKIP  BAJAJFINSV  orb15     ORB15 up: max 3 trades a day",
-  "09:40  SKIP  INFY        orb15     ORB15 up: max 3 trades a day",
-  "09:40  SKIP  ONGC        orb15     ORB15 down: max 3 trades a day",
-  "09:40  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day",
-  "09:45  CLOSE ADANIENT    target     @ 2751.40  net Rs +1 [trap90] (charges 35)",
-  "09:45  SKIP  ADANIENT    orb15     ORB15 up: max 3 trades a day",
   "09:45  SKIP  BAJFINANCE  orb15     ORB15 up: max 3 trades a day",
   "09:45  SKIP  EICHERMOT   orb15     ORB15 up: max 3 trades a day",
   "09:45  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day",
@@ -300,7 +336,15 @@
   "10:15  SKIP  HINDUNILVR  orb30_2r  ORB30 down: max 3 trades a day",
   "10:15  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day",
   "10:20  OPEN  ETERNAL     BUY     72 @ 357.40  stop 350.55  target 364.20  [orb60: ORB60 up]",
-  "10:20  OPEN  ICICIBANK   BUY     45 @ 1467.00  stop 1456.05  target 1477.95  [orb60: ORB60 up]"
+  "10:20  OPEN  ICICIBANK   BUY     45 @ 1467.00  stop 1456.05  target 1477.95  [orb60: ORB60 up]",
+  "10:25  OPEN  BAJAJFINSV  BUY     55 @ 1804.60  stop 1795.65  target 1822.40  [vwap: VWAP reclaim]",
+  "10:25  OPEN  INDIGO      SHORT   14 @ 5395.70  stop 5430.00  target 5327.10  [vwap: VWAP loss]",
+  "10:25  OPEN  JIOFIN      BUY    228 @ 229.19  stop 227.00  target 231.40  [orb60: ORB60 up]",
+  "10:25  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day",
+  "10:30  OPEN  BEL         SHORT  249 @ 401.30  stop 402.90  target 398.10  [vwap: VWAP loss]",
+  "10:30  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day",
+  "10:30  SKIP  HDFCLIFE    orb30_2r  ORB30 up: max 3 trades a day",
+  "10:30  SKIP  HDFCLIFE    orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 4,
  "all_wins": 4,
@@ -409,7 +453,7 @@
    "desc": "first-hour range breakout, stop at mid, 1R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 2,
+   "open": 3,
    "all_trades": 0,
    "all_wins": 0,
    "all_net": 0
@@ -436,7 +480,7 @@
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 0,
    "all_wins": 0,
    "all_net": 0
