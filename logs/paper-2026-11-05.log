@@ -103,3 +103,13 @@ PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2
 09:55  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day
 09:55  SKIP  MARUTI      orb30_2r  ORB30 up: max 3 trades a day
 09:55  SKIP  NTPC        orb30_2r  ORB30 down: max 3 trades a day
+10:05  SKIP  ADANIENT    orb30_2r  ORB30 up: max 3 trades a day
+10:05  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day
+10:05  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day
+10:05  SKIP  COALINDIA   orb15     ORB15 down: max 3 trades a day
+10:05  SKIP  COALINDIA   orb30_2r  ORB30 down: max 3 trades a day
+10:05  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day
+10:10  SKIP  ITC         orb15     ORB15 down: max 3 trades a day
+10:10  SKIP  ITC         orb30_2r  ORB30 down: max 3 trades a day
+10:10  SKIP  TATASTEEL   orb15     ORB15 down: max 3 trades a day
+10:10  SKIP  TATASTEEL   orb30_2r  ORB30 down: max 3 trades a day
