@@ -93,3 +93,13 @@ PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2
 09:50  SKIP  TMPV        orb30_2r  ORB30 up: max 3 trades a day
 09:50  SKIP  TECHM       orb30_2r  ORB30 up: max 3 trades a day
 09:50  SKIP  TITAN       orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  JSWSTEEL    orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  JIOFIN      orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  JIOFIN      orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  M&M         orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  MARUTI      orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  NTPC        orb30_2r  ORB30 down: max 3 trades a day
