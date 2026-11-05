@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 13:56 IST",
- "updated_ts": 1793867184,
+ "updated": "2026-11-05 14:06 IST",
+ "updated_ts": 1793867786,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -348,9 +348,6 @@
  ],
  "today_net": 2111.0,
  "log": [
-  "11:15  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
-  "11:15  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day",
-  "11:15  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day",
   "11:35  SKIP  GRASIM      orb15     ORB15 up: max 3 trades a day",
   "11:35  SKIP  GRASIM      orb30_2r  ORB30 up: max 3 trades a day",
   "11:35  SKIP  GRASIM      orb60     ORB60 up: max 3 trades a day",
@@ -407,7 +404,10 @@
   "13:45  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day",
   "13:50  SKIP  HCLTECH     vwap      VWAP reclaim: max 3 trades a day",
   "13:55  SKIP  CIPLA       vwap      VWAP loss: max 3 trades a day",
-  "13:55  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day"
+  "13:55  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
+  "14:00  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day",
+  "14:00  SKIP  TCS         vwap      VWAP reclaim: max 3 trades a day",
+  "14:05  SKIP  APOLLOHOSP  vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 11,
  "all_wins": 9,
