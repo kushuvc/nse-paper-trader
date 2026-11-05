@@ -1,0 +1,34 @@
+Learned from 61 days (2026-08-10 to 2026-11-05), 11468 trades across 7 strategies.
+
+What each strategy has earned (R per trade after costs; 'shrunk' is what the model believes):
+  orb15      2831 trades  avg -0.236 R  shrunk -0.230 R  setups it would take:   0 of 162
+  orb30_2r   2692 trades  avg -0.088 R  shrunk -0.086 R  setups it would take:  18 of 162
+  orb60      2472 trades  avg -0.186 R  shrunk -0.181 R  setups it would take:  11 of 162
+  gap_go      182 trades  avg -0.235 R  shrunk -0.173 R  setups it would take:  16 of 162
+  gap_fade     74 trades  avg -0.140 R  shrunk -0.074 R  setups it would take:   0 of 162
+  vwap       1946 trades  avg -0.362 R  shrunk -0.349 R  setups it would take:   0 of 162
+  trap90     1271 trades  avg -0.118 R  shrunk -0.112 R  setups it would take:   0 of 162
+
+Lessons (mistakes to avoid, and what did better):
+  - orb15 tight stop: -0.39 R a trade over 779 trades (strategy average -0.24 R) -> avoid
+  - orb30_2r with market: +0.03 R a trade over 1026 trades (strategy average -0.09 R) -> better than usual
+  - orb60 with market: -0.06 R a trade over 1036 trades (strategy average -0.19 R) -> better than usual
+  - orb60 tight stop: -0.39 R a trade over 353 trades (strategy average -0.19 R) -> avoid
+  - vwap normal stop: -0.20 R a trade over 618 trades (strategy average -0.36 R) -> better than usual
+  - vwap tight stop: -0.44 R a trade over 1308 trades (strategy average -0.36 R) -> avoid
+  - orb60 flat market: -0.27 R a trade over 1188 trades (strategy average -0.19 R) -> avoid
+  - orb60 wide stop: -0.03 R a trade over 391 trades (strategy average -0.19 R) -> better than usual
+  - orb30_2r flat market: -0.15 R a trade over 1421 trades (strategy average -0.09 R) -> avoid
+  - gap_go short: -0.58 R a trade over 97 trades (strategy average -0.23 R) -> avoid
+  - orb15 with market: -0.15 R a trade over 1001 trades (strategy average -0.24 R) -> better than usual
+  - orb30_2r normal stop: -0.16 R a trade over 1255 trades (strategy average -0.09 R) -> avoid
+
+Changed since last night:
+  - orb60: now takes 11 of 162 setups (was 9)
+  - gap_go: now takes 16 of 162 setups (was 0)
+
+Walk-forward test (41 days, each judged by a model that had NOT seen it, 3 trades/day cap):
+  learner          72 trades  win  37.5%  Rs   -92.5 a trade  total Rs     -6662  t -2.32
+  every signal    123 trades  win  68.3%  Rs   -99.0 a trade  total Rs    -12175  t -4.29
+
+Saved model/learned.json
