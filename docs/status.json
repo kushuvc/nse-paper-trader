@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 11:01 IST",
- "updated_ts": 1793856665,
+ "updated": "2026-11-05 11:11 IST",
+ "updated_ts": 1793857267,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -67,17 +67,6 @@
    "target": 8064.25,
    "entry_time": "09:35",
    "note": "ORB15 down"
-  },
-  "orb15|BSE": {
-   "strategy": "orb15",
-   "symbol": "BSE",
-   "side": 1,
-   "qty": 11,
-   "entry": 3745.3,
-   "stop": 3700.15,
-   "target": 3790.4,
-   "entry_time": "09:35",
-   "note": "ORB15 up"
   },
   "orb15|HINDUNILVR": {
    "strategy": "orb15",
@@ -308,14 +297,30 @@
    "net": 674.63,
    "r": 1.693,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "BSE",
+   "side": 1,
+   "qty": 11,
+   "entry": 3745.3,
+   "stop": 3700.15,
+   "target": 3790.4,
+   "entry_time": "09:35",
+   "note": "ORB15 up",
+   "date": "2026-11-05",
+   "exit": 3790.4,
+   "exit_time": "11:10",
+   "reason": "target",
+   "gross": 479.52,
+   "charges": 44.0,
+   "net": 435.52,
+   "r": 0.877,
+   "mode": "live"
   }
  ],
- "today_net": 1492.0,
+ "today_net": 1928.0,
  "log": [
-  "09:55  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  MARUTI      orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  NTPC        orb30_2r  ORB30 down: max 3 trades a day",
-  "10:05  SKIP  ADANIENT    orb30_2r  ORB30 up: max 3 trades a day",
   "10:05  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day",
   "10:05  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day",
   "10:05  SKIP  COALINDIA   orb15     ORB15 down: max 3 trades a day",
@@ -371,12 +376,35 @@
   "11:00  SKIP  DRREDDY     vwap      VWAP loss: max 3 trades a day",
   "11:00  SKIP  M&M         orb60     ORB60 up: max 3 trades a day",
   "11:00  SKIP  NESTLEIND   orb30_2r  ORB30 down: max 3 trades a day",
-  "11:00  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day"
+  "11:00  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day",
+  "11:05  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
+  "11:05  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
+  "11:10  CLOSE BSE         target     @ 3790.40  net Rs +436 [orb15] (charges 44)",
+  "11:10  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day"
  ],
- "all_trades": 7,
- "all_wins": 6,
- "all_net": 1492.0,
+ "all_trades": 8,
+ "all_wins": 7,
+ "all_net": 1928.0,
  "recent": [
+  {
+   "date": "2026-11-05",
+   "symbol": "BSE",
+   "strategy": "orb15",
+   "side": "1",
+   "qty": "11",
+   "entry_time": "09:35",
+   "entry": "3745.3",
+   "stop": "3700.15",
+   "target": "3790.4",
+   "exit_time": "11:10",
+   "exit": "3790.4",
+   "reason": "target",
+   "gross": "479.52",
+   "charges": "44.0",
+   "net": "435.52",
+   "r": "0.877",
+   "mode": "live"
+  },
   {
    "date": "2026-11-05",
    "symbol": "BEL",
@@ -512,17 +540,17 @@
   }
  ],
  "by_day": {
-  "2026-11-05": 1492.0
+  "2026-11-05": 1928.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 0,
-   "all_wins": 0,
-   "all_net": 0
+   "today_trades": 1,
+   "today_net": 436,
+   "open": 2,
+   "all_trades": 1,
+   "all_wins": 1,
+   "all_net": 436
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",

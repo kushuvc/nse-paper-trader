@@ -160,3 +160,7 @@ PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2
 11:00  SKIP  M&M         orb60     ORB60 up: max 3 trades a day
 11:00  SKIP  NESTLEIND   orb30_2r  ORB30 down: max 3 trades a day
 11:00  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day
+11:05  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day
+11:05  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day
+11:10  CLOSE BSE         target     @ 3790.40  net Rs +436 [orb15] (charges 44)
+11:10  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day
