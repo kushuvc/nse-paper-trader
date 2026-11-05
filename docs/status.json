@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05 12:36 IST",
- "updated_ts": 1793862371,
+ "updated": "2026-11-05 12:46 IST",
+ "updated_ts": 1793862972,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -339,8 +339,6 @@
  ],
  "today_net": 1739.0,
  "log": [
-  "10:40  SKIP  CIPLA       orb60     ORB60 up: max 3 trades a day",
-  "10:40  SKIP  COALINDIA   orb60     ORB60 down: max 3 trades a day",
   "10:40  SKIP  ITC         orb60     ORB60 down: max 3 trades a day",
   "10:40  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day",
   "10:40  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day",
@@ -398,7 +396,9 @@
   "12:30  SKIP  TRENT       orb15     ORB15 down: max 3 trades a day",
   "12:30  SKIP  TRENT       orb30_2r  ORB30 down: max 3 trades a day",
   "12:30  SKIP  TRENT       orb60     ORB60 down: max 3 trades a day",
-  "12:35  CLOSE ICICIBANK   target     @ 1477.95  net Rs +396 [orb60] (charges 70)"
+  "12:35  CLOSE ICICIBANK   target     @ 1477.95  net Rs +396 [orb60] (charges 70)",
+  "12:40  SKIP  TITAN       vwap      VWAP reclaim: max 3 trades a day",
+  "12:45  SKIP  HINDALCO    vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 10,
  "all_wins": 8,
