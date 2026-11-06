@@ -45,3 +45,19 @@ Learner: model from 60 days of history
 09:30  SKIP  TATACONSUM  trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  TITAN       trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  ULTRACEMCO  trap90    tiny target, wide stop: max 3 trades a day
+09:35  CLOSE APOLLOHOSP  target     @ 8435.65  net Rs +1 [trap90] (charges 27)
+09:35  OPEN  APOLLOHOSP  BUY      8 @ 8435.50  stop 8376.00  target 8495.00  [orb15: ORB15 up]
+09:35  CLOSE BSE         target     @ 3783.15  net Rs +1 [trap90] (charges 32)
+09:35  OPEN  CIPLA       BUY     52 @ 1397.20  stop 1387.75  target 1406.60  [orb15: ORB15 up]
+09:35  OPEN  DRREDDY     BUY     73 @ 1366.80  stop 1363.35  target 1370.20  [orb15: ORB15 up]
+09:35  SKIP  HDFCBANK    orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  JSWSTEEL    orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  M&M         orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  TITAN       orb15     ORB15 up: max 3 trades a day
+09:40  CLOSE ADANIPORTS  target     @ 1905.65  net Rs +1 [trap90] (charges 34)
+09:40  SKIP  ADANIPORTS  orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  BAJFINANCE  orb15     ORB15 down: max 3 trades a day
+09:40  CLOSE BHARTIARTL  stop       @ 2101.70  net Rs -493 [gap_fade] (charges 82)
+09:40  CLOSE DRREDDY     target     @ 1370.20  net Rs +126 [orb15] (charges 82)
+09:40  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day
