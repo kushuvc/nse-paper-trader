@@ -235,3 +235,4 @@ Learner: model from 60 days of history
 12:20  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day
 12:25  SKIP  JIOFIN      vwap      VWAP reclaim: max 3 trades a day
 12:25  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day
+12:45  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day
