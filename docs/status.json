@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-06 16:56 IST",
- "updated_ts": 1793964385,
+ "updated_ts": 1793964415,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -506,8 +506,6 @@
  ],
  "today_net": -291.0,
  "log": [
-  "11:50  SKIP  TRENT       orb60     ORB60 up: max 3 trades a day",
-  "11:55  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day",
   "12:00  SKIP  INDIGO      vwap      VWAP reclaim: max 3 trades a day",
   "12:00  SKIP  LT          orb15     ORB15 up: max 3 trades a day",
   "12:00  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day",
@@ -565,7 +563,9 @@
   "15:15  CLOSE ASIANPAINT  square-off @ 2533.70  net Rs +536 [orb30_2r] (charges 35)",
   "15:15  CLOSE BAJAJ-AUTO  square-off @ 10910.00  net Rs +19 [learner] (charges 12)",
   "15:15  CLOSE BAJAJ-AUTO  square-off @ 10910.00  net Rs +19 [orb30_2r] (charges 12)",
-  "15:15  CLOSE COALINDIA   square-off @ 398.80  net Rs +94 [orb60] (charges 70)"
+  "15:15  CLOSE COALINDIA   square-off @ 398.80  net Rs +94 [orb60] (charges 70)",
+  "16:56  SKIP  BHARTIARTL  orb60     ORB60 up: past square-off",
+  "16:56  SKIP  M&M         orb60     ORB60 up: past square-off"
  ],
  "all_trades": 45,
  "all_wins": 31,
