@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 13:56 IST",
- "updated_ts": 1793953576,
+ "updated": "2026-11-06 14:06 IST",
+ "updated_ts": 1793954178,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -444,7 +444,6 @@
  ],
  "today_net": -2838.0,
  "log": [
-  "11:10  SKIP  HCLTECH     orb30_2r  ORB30 down: max 3 trades a day",
   "11:10  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day",
   "11:15  SKIP  DRREDDY     vwap      VWAP loss: max 3 trades a day",
   "11:15  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day",
@@ -503,7 +502,8 @@
   "13:35  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
   "13:45  SKIP  MARUTI      orb60     ORB60 up: max 3 trades a day",
   "13:50  SKIP  TATACONSUM  vwap      VWAP reclaim: max 3 trades a day",
-  "13:55  CLOSE INDIGO      target     @ 5420.00  net Rs +779 [gap_fade] (charges 69)"
+  "13:55  CLOSE INDIGO      target     @ 5420.00  net Rs +779 [gap_fade] (charges 69)",
+  "14:05  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 38,
  "all_wins": 24,
