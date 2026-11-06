@@ -1,1 +1,3 @@
 Shift until 12:15 IST (started 09:10)
+PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
+Learner: model from 60 days of history
