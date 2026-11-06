@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 11:21 IST",
- "updated_ts": 1793944266,
+ "updated": "2026-11-06 11:31 IST",
+ "updated_ts": 1793944868,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -408,12 +408,6 @@
  ],
  "today_net": -2916.0,
  "log": [
-  "10:25  CLOSE CIPLA       target     @ 1404.10  net Rs +473 [gap_fade] (charges 71)",
-  "10:25  SKIP  CIPLA       orb60     ORB60 up: max 3 trades a day",
-  "10:30  SKIP  ADANIPORTS  learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "10:30  SKIP  ADANIPORTS  orb30_2r  ORB30 up: max 3 trades a day",
-  "10:30  SKIP  ADANIPORTS  orb60     ORB60 up: max 3 trades a day",
-  "10:30  OPEN  ETERNAL     BUY    278 @ 358.45  stop 356.70  target 361.95  [vwap: VWAP reclaim]",
   "10:30  OPEN  HCLTECH     BUY     68 @ 1455.80  stop 1450.05  target 1467.20  [vwap: VWAP reclaim]",
   "10:30  SKIP  HDFCBANK    orb60     ORB60 up: max 3 trades a day",
   "10:30  SKIP  ICICIBANK   orb60     ORB60 up: max 3 trades a day",
@@ -467,7 +461,13 @@
   "11:10  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day",
   "11:15  SKIP  DRREDDY     vwap      VWAP loss: max 3 trades a day",
   "11:15  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day",
-  "11:20  SKIP  ADANIENT    vwap      VWAP loss: max 3 trades a day"
+  "11:20  SKIP  ADANIENT    vwap      VWAP loss: max 3 trades a day",
+  "11:25  SKIP  BEL         vwap      VWAP loss: max 3 trades a day",
+  "11:25  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day",
+  "11:25  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day",
+  "11:30  SKIP  ETERNAL     orb15     ORB15 down: max 3 trades a day",
+  "11:30  SKIP  ETERNAL     orb30_2r  ORB30 down: max 3 trades a day",
+  "11:30  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 34,
  "all_wins": 22,
