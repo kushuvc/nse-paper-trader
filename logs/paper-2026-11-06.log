@@ -261,3 +261,6 @@ Learner: model from 60 days of history
 13:55  CLOSE INDIGO      target     @ 5420.00  net Rs +779 [gap_fade] (charges 69)
 14:05  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day
 14:15  SKIP  EICHERMOT   vwap      VWAP loss: max 3 trades a day
+14:30  SKIP  BSE         orb15     ORB15 up: max 3 trades a day
+14:30  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day
+14:30  SKIP  BSE         orb60     ORB60 up: max 3 trades a day
