@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 10:00 IST",
- "updated_ts": 1793939454,
+ "updated": "2026-11-06 10:10 IST",
+ "updated_ts": 1793940056,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -13,17 +13,6 @@
  ],
  "date": "2026-11-06",
  "open": {
-  "gap_go|BEL": {
-   "strategy": "gap_go",
-   "symbol": "BEL",
-   "side": -1,
-   "qty": 147,
-   "entry": 387.15,
-   "stop": 390.55,
-   "target": 380.35,
-   "entry_time": "09:30",
-   "note": "gap -1.2% and go"
-  },
   "gap_fade|CIPLA": {
    "strategy": "gap_fade",
    "symbol": "CIPLA",
@@ -284,18 +273,30 @@
    "net": -597.14,
    "r": -1.211,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_go",
+   "symbol": "BEL",
+   "side": -1,
+   "qty": 147,
+   "entry": 387.15,
+   "stop": 390.55,
+   "target": 380.35,
+   "entry_time": "09:30",
+   "note": "gap -1.2% and go",
+   "date": "2026-11-06",
+   "exit": 390.55,
+   "exit_time": "10:10",
+   "reason": "stop",
+   "gross": -522.66,
+   "charges": 60.56,
+   "net": -583.22,
+   "r": -1.167,
+   "mode": "live"
   }
  ],
- "today_net": -1484.0,
+ "today_net": -2068.0,
  "log": [
-  "09:50  SKIP  AXISBANK    orb15     ORB15 up: max 3 trades a day",
-  "09:50  OPEN  AXISBANK    BUY     51 @ 1285.80  stop 1276.15  target 1305.00  [orb30_2r: ORB30 up]",
-  "09:50  OPEN  BAJAJ-AUTO  BUY      1 @ 10875.00  stop 10618.00  target 11389.00  [learner via orb30_2r, expects +0.07R: long, before 10:30, with market, against gap, wide stop]",
-  "09:50  OPEN  BAJAJ-AUTO  BUY      1 @ 10875.00  stop 10618.00  target 11389.00  [orb30_2r: ORB30 up]",
-  "09:50  CLOSE BAJFINANCE  stop       @ 1051.85  net Rs -597 [gap_go] (charges 74)",
-  "09:50  OPEN  BAJFINANCE  BUY     41 @ 1053.35  stop 1041.40  target 1077.15  [learner via orb30_2r, expects +0.07R: long, before 10:30, with market, against gap, wide stop]",
-  "09:50  SKIP  BAJFINANCE  orb30_2r  ORB30 up: max 3 trades a day",
-  "09:50  SKIP  BAJAJFINSV  learner   via orb30_2r (expects +0.07R): max 3 trades a day",
   "09:50  SKIP  BAJAJFINSV  orb30_2r  ORB30 up: max 3 trades a day",
   "09:50  SKIP  EICHERMOT   orb15     ORB15 up: max 3 trades a day",
   "09:50  SKIP  EICHERMOT   learner   via orb30_2r (expects +0.07R): max 3 trades a day",
@@ -347,12 +348,41 @@
   "09:55  SKIP  TRENT       learner   via orb30_2r (expects +0.07R): max 3 trades a day",
   "09:55  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day",
   "09:55  SKIP  ULTRACEMCO  learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "09:55  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day"
+  "09:55  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day",
+  "10:05  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day",
+  "10:05  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day",
+  "10:10  CLOSE BEL         stop       @ 390.55  net Rs -583 [gap_go] (charges 61)",
+  "10:10  SKIP  COALINDIA   orb15     ORB15 up: max 3 trades a day",
+  "10:10  SKIP  COALINDIA   orb30_2r  ORB30 up: max 3 trades a day",
+  "10:10  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day",
+  "10:10  SKIP  TATASTEEL   learner   via orb30_2r (expects +0.07R): max 3 trades a day",
+  "10:10  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day"
  ],
- "all_trades": 28,
+ "all_trades": 29,
  "all_wins": 20,
- "all_net": 2263.0,
+ "all_net": 1680.0,
  "recent": [
+  {
+   "date": "2026-11-06",
+   "symbol": "BEL",
+   "strategy": "gap_go",
+   "side": "-1",
+   "qty": "147",
+   "entry_time": "09:30",
+   "entry": "387.15",
+   "stop": "390.55",
+   "target": "380.35",
+   "exit_time": "10:10",
+   "exit": "390.55",
+   "reason": "stop",
+   "gross": "-522.66",
+   "charges": "60.56",
+   "net": "-583.22",
+   "r": "-1.167",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-06",
    "symbol": "BAJFINANCE",
@@ -856,32 +886,11 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-05",
-   "symbol": "AXISBANK",
-   "strategy": "gap_go",
-   "side": "1",
-   "qty": "79",
-   "entry_time": "09:30",
-   "entry": "1252.6",
-   "stop": "1247.5",
-   "target": "1262.8",
-   "exit_time": "09:50",
-   "exit": "1262.8",
-   "reason": "target",
-   "gross": "766.06",
-   "charges": "82.3",
-   "net": "683.76",
-   "r": "1.697",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
-  "2026-11-06": -1485.0
+  "2026-11-06": -2068.0
  },
  "by_strategy": {
   "orb15": {
@@ -913,12 +922,12 @@
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
-   "today_trades": 2,
-   "today_net": -1121,
-   "open": 1,
-   "all_trades": 5,
+   "today_trades": 3,
+   "today_net": -1704,
+   "open": 0,
+   "all_trades": 6,
    "all_wins": 2,
-   "all_net": -610
+   "all_net": -1193
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",

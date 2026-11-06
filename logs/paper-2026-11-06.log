@@ -129,3 +129,11 @@ Learner: model from 60 days of history
 09:55  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day
 09:55  SKIP  ULTRACEMCO  learner   via orb30_2r (expects +0.07R): max 3 trades a day
 09:55  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day
+10:05  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day
+10:05  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day
+10:10  CLOSE BEL         stop       @ 390.55  net Rs -583 [gap_go] (charges 61)
+10:10  SKIP  COALINDIA   orb15     ORB15 up: max 3 trades a day
+10:10  SKIP  COALINDIA   orb30_2r  ORB30 up: max 3 trades a day
+10:10  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day
+10:10  SKIP  TATASTEEL   learner   via orb30_2r (expects +0.07R): max 3 trades a day
+10:10  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day
