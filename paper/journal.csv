@@ -39,3 +39,8 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-06,INDIGO,gap_fade,1,12,09:30,5347.2,5307.2,5420.0,13:55,5420.0,target,847.76,68.6,779.16,1.623,live,,
 2026-11-06,ASIANPAINT,orb60,1,18,10:20,2505.5,2477.8,2533.15,14:55,2533.15,target,479.56,48.14,431.42,0.865,live,,
 2026-11-06,BAJFINANCE,learner,1,41,09:50,1053.35,1041.4,1077.15,14:55,1077.15,target,958.33,46.42,911.91,1.861,live,orb30_2r,"long, before 10:30, with market, against gap, wide stop"
+2026-11-06,ASIANPAINT,learner,1,13,09:50,2488.8,2453.0,2560.4,15:15,2533.7,square-off,570.64,34.68,535.96,1.152,live,orb30_2r,"long, before 10:30, with market, against gap, wide stop"
+2026-11-06,ASIANPAINT,orb30_2r,1,13,09:50,2488.8,2453.0,2560.4,15:15,2533.7,square-off,570.64,34.68,535.96,1.152,live,,
+2026-11-06,BAJAJ-AUTO,learner,1,1,09:50,10875.0,10618.0,11389.0,15:15,10910.0,square-off,30.64,11.55,19.09,0.074,live,orb30_2r,"long, before 10:30, with market, against gap, wide stop"
+2026-11-06,BAJAJ-AUTO,orb30_2r,1,1,09:50,10875.0,10618.0,11389.0,15:15,10910.0,square-off,30.64,11.55,19.09,0.074,live,,
+2026-11-06,COALINDIA,orb60,1,166,10:20,397.65,394.65,400.6,15:15,398.8,square-off,164.46,70.12,94.34,0.189,live,,

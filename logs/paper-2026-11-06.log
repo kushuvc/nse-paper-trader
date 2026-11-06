@@ -269,3 +269,10 @@ Learner: model from 60 days of history
 14:55  CLOSE ASIANPAINT  target     @ 2533.15  net Rs +431 [orb60] (charges 48)
 14:55  CLOSE BAJFINANCE  target     @ 1077.15  net Rs +912 [learner] (charges 46)
 15:05  SKIP  GRASIM      orb60     ORB60 up: after 14:30
+15:10  SKIP  ITC         orb60     ORB60 up: after 14:30
+15:15  SKIP  APOLLOHOSP  vwap      VWAP reclaim: past square-off
+15:15  CLOSE ASIANPAINT  square-off @ 2533.70  net Rs +536 [learner] (charges 35)
+15:15  CLOSE ASIANPAINT  square-off @ 2533.70  net Rs +536 [orb30_2r] (charges 35)
+15:15  CLOSE BAJAJ-AUTO  square-off @ 10910.00  net Rs +19 [learner] (charges 12)
+15:15  CLOSE BAJAJ-AUTO  square-off @ 10910.00  net Rs +19 [orb30_2r] (charges 12)
+15:15  CLOSE COALINDIA   square-off @ 398.80  net Rs +94 [orb60] (charges 70)
