@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 11:51 IST",
- "updated_ts": 1793946071,
+ "updated": "2026-11-06 12:01 IST",
+ "updated_ts": 1793946673,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -408,10 +408,6 @@
  ],
  "today_net": -2916.0,
  "log": [
-  "10:30  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day",
-  "10:35  CLOSE CIPLA       target     @ 1406.60  net Rs +387 [orb15] (charges 73)",
-  "10:35  SKIP  GRASIM      vwap      VWAP loss: max 3 trades a day",
-  "10:35  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day",
   "10:35  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day",
   "10:40  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day",
   "10:45  SKIP  ADANIENT    vwap      VWAP loss: max 3 trades a day",
@@ -467,7 +463,11 @@
   "11:40  SKIP  TATASTEEL   vwap      VWAP loss: max 3 trades a day",
   "11:45  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day",
   "11:50  SKIP  BEL         vwap      VWAP loss: max 3 trades a day",
-  "11:50  SKIP  TRENT       orb60     ORB60 up: max 3 trades a day"
+  "11:50  SKIP  TRENT       orb60     ORB60 up: max 3 trades a day",
+  "11:55  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day",
+  "12:00  SKIP  INDIGO      vwap      VWAP reclaim: max 3 trades a day",
+  "12:00  SKIP  LT          orb15     ORB15 up: max 3 trades a day",
+  "12:00  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 34,
  "all_wins": 22,
