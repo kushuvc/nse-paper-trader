@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 13:26 IST",
- "updated_ts": 1793951771,
+ "updated": "2026-11-06 13:36 IST",
+ "updated_ts": 1793952373,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -435,13 +435,6 @@
  ],
  "today_net": -3618.0,
  "log": [
-  "11:05  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day",
-  "11:05  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day",
-  "11:05  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day",
-  "11:05  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day",
-  "11:05  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day",
-  "11:05  SKIP  HINDUNILVR  orb60     ORB60 up: max 3 trades a day",
-  "11:05  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day",
   "11:05  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day",
   "11:10  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day",
   "11:10  SKIP  HCLTECH     orb15     ORB15 down: max 3 trades a day",
@@ -494,7 +487,14 @@
   "13:25  SKIP  RELIANCE    orb60     ORB60 up: max 3 trades a day",
   "13:25  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day",
   "13:25  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day",
-  "13:25  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day"
+  "13:25  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day",
+  "13:30  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day",
+  "13:35  SKIP  HDFCLIFE    orb60     ORB60 up: max 3 trades a day",
+  "13:35  SKIP  ONGC        orb15     ORB15 up: max 3 trades a day",
+  "13:35  SKIP  ONGC        orb30_2r  ORB30 up: max 3 trades a day",
+  "13:35  SKIP  ONGC        learner   via orb60 (expects +0.05R): max 3 trades a day",
+  "13:35  SKIP  ONGC        orb60     ORB60 up: max 3 trades a day",
+  "13:35  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 37,
  "all_wins": 23,

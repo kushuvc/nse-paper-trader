@@ -249,3 +249,10 @@ Learner: model from 60 days of history
 13:25  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day
 13:25  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day
 13:25  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day
+13:30  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day
+13:35  SKIP  HDFCLIFE    orb60     ORB60 up: max 3 trades a day
+13:35  SKIP  ONGC        orb15     ORB15 up: max 3 trades a day
+13:35  SKIP  ONGC        orb30_2r  ORB30 up: max 3 trades a day
+13:35  SKIP  ONGC        learner   via orb60 (expects +0.05R): max 3 trades a day
+13:35  SKIP  ONGC        orb60     ORB60 up: max 3 trades a day
+13:35  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day
