@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 10:30 IST",
- "updated_ts": 1793941259,
+ "updated": "2026-11-06 10:41 IST",
+ "updated_ts": 1793941860,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -32,17 +32,6 @@
    "entry": 8435.5,
    "stop": 8376.0,
    "target": 8495.0,
-   "entry_time": "09:35",
-   "note": "ORB15 up"
-  },
-  "orb15|CIPLA": {
-   "strategy": "orb15",
-   "symbol": "CIPLA",
-   "side": 1,
-   "qty": 52,
-   "entry": 1397.2,
-   "stop": 1387.75,
-   "target": 1406.6,
    "entry_time": "09:35",
    "note": "ORB15 up"
   },
@@ -368,15 +357,30 @@
    "net": 473.45,
    "r": 0.962,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "CIPLA",
+   "side": 1,
+   "qty": 52,
+   "entry": 1397.2,
+   "stop": 1387.75,
+   "target": 1406.6,
+   "entry_time": "09:35",
+   "note": "ORB15 up",
+   "date": "2026-11-06",
+   "exit": 1406.6,
+   "exit_time": "10:35",
+   "reason": "target",
+   "gross": 459.64,
+   "charges": 72.94,
+   "net": 386.7,
+   "r": 0.787,
+   "mode": "live"
   }
  ],
- "today_net": -1594.0,
+ "today_net": -1207.0,
  "log": [
-  "09:50  SKIP  RELIANCE    orb15     ORB15 up: max 3 trades a day",
-  "09:50  SKIP  RELIANCE    learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "09:50  SKIP  RELIANCE    orb30_2r  ORB30 up: max 3 trades a day",
-  "09:50  SKIP  SBIN        orb15     ORB15 up: max 3 trades a day",
-  "09:50  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day",
   "09:50  SKIP  TITAN       learner   via orb30_2r (expects +0.07R): max 3 trades a day",
   "09:50  SKIP  TITAN       orb30_2r  ORB30 up: max 3 trades a day",
   "09:50  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day",
@@ -431,12 +435,38 @@
   "10:30  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
   "10:30  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day",
   "10:30  SKIP  TCS         vwap      VWAP reclaim: max 3 trades a day",
-  "10:30  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day"
+  "10:30  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day",
+  "10:35  CLOSE CIPLA       target     @ 1406.60  net Rs +387 [orb15] (charges 73)",
+  "10:35  SKIP  GRASIM      vwap      VWAP loss: max 3 trades a day",
+  "10:35  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day",
+  "10:35  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day",
+  "10:40  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day"
  ],
- "all_trades": 30,
- "all_wins": 21,
- "all_net": 2154.0,
+ "all_trades": 31,
+ "all_wins": 22,
+ "all_net": 2540.0,
  "recent": [
+  {
+   "date": "2026-11-06",
+   "symbol": "CIPLA",
+   "strategy": "orb15",
+   "side": "1",
+   "qty": "52",
+   "entry_time": "09:35",
+   "entry": "1397.2",
+   "stop": "1387.75",
+   "target": "1406.6",
+   "exit_time": "10:35",
+   "exit": "1406.6",
+   "reason": "target",
+   "gross": "459.64",
+   "charges": "72.94",
+   "net": "386.7",
+   "r": "0.787",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-06",
    "symbol": "CIPLA",
@@ -940,42 +970,21 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-05",
-   "symbol": "BEL",
-   "strategy": "gap_fade",
-   "side": "-1",
-   "qty": "232",
-   "entry_time": "09:30",
-   "entry": "401.7",
-   "stop": "403.85",
-   "target": "398.0",
-   "exit_time": "11:00",
-   "exit": "398.0",
-   "reason": "target",
-   "gross": "821.29",
-   "charges": "79.99",
-   "net": "741.3",
-   "r": "1.486",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
-  "2026-11-06": -1595.0
+  "2026-11-06": -1208.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 1,
-   "today_net": 126,
-   "open": 2,
-   "all_trades": 4,
-   "all_wins": 3,
-   "all_net": 727
+   "today_trades": 2,
+   "today_net": 513,
+   "open": 1,
+   "all_trades": 5,
+   "all_wins": 4,
+   "all_net": 1114
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",

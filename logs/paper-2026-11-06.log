@@ -164,3 +164,8 @@ Learner: model from 60 days of history
 10:30  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day
 10:30  SKIP  TCS         vwap      VWAP reclaim: max 3 trades a day
 10:30  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day
+10:35  CLOSE CIPLA       target     @ 1406.60  net Rs +387 [orb15] (charges 73)
+10:35  SKIP  GRASIM      vwap      VWAP loss: max 3 trades a day
+10:35  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day
+10:35  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day
+10:40  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day
