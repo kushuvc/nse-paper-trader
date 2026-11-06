@@ -238,3 +238,14 @@ Learner: model from 60 days of history
 12:45  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day
 12:55  SKIP  BSE         vwap      VWAP loss: max 3 trades a day
 13:00  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day
+13:20  SKIP  APOLLOHOSP  vwap      VWAP reclaim: max 3 trades a day
+13:20  SKIP  BAJFINANCE  orb60     ORB60 up: max 3 trades a day
+13:20  CLOSE LT          target     @ 4068.40  net Rs +470 [vwap] (charges 82)
+13:20  SKIP  POWERGRID   orb15     ORB15 up: max 3 trades a day
+13:20  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day
+13:20  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day
+13:20  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day
+13:25  SKIP  RELIANCE    orb60     ORB60 up: max 3 trades a day
+13:25  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day
+13:25  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day
+13:25  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day
