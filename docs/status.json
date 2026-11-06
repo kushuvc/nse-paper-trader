@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 10:41 IST",
- "updated_ts": 1793941860,
+ "updated": "2026-11-06 10:51 IST",
+ "updated_ts": 1793942462,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -57,17 +57,6 @@
    "entry": 2488.8,
    "stop": 2453.0,
    "target": 2560.4,
-   "entry_time": "09:50",
-   "note": "ORB30 up"
-  },
-  "orb30_2r|AXISBANK": {
-   "strategy": "orb30_2r",
-   "symbol": "AXISBANK",
-   "side": 1,
-   "qty": 51,
-   "entry": 1285.8,
-   "stop": 1276.15,
-   "target": 1305.0,
    "entry_time": "09:50",
    "note": "ORB30 up"
   },
@@ -377,23 +366,30 @@
    "net": 386.7,
    "r": 0.787,
    "mode": "live"
+  },
+  {
+   "strategy": "orb30_2r",
+   "symbol": "AXISBANK",
+   "side": 1,
+   "qty": 51,
+   "entry": 1285.8,
+   "stop": 1276.15,
+   "target": 1305.0,
+   "entry_time": "09:50",
+   "note": "ORB30 up",
+   "date": "2026-11-06",
+   "exit": 1276.15,
+   "exit_time": "10:45",
+   "reason": "stop",
+   "gross": -518.28,
+   "charges": 69.22,
+   "net": -587.5,
+   "r": -1.194,
+   "mode": "live"
   }
  ],
- "today_net": -1207.0,
+ "today_net": -1795.0,
  "log": [
-  "09:50  SKIP  TITAN       learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "09:50  SKIP  TITAN       orb30_2r  ORB30 up: max 3 trades a day",
-  "09:50  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day",
-  "09:50  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day",
-  "09:55  SKIP  APOLLOHOSP  orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  CIPLA       learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "09:55  SKIP  CIPLA       orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  KOTAKBANK   orb15     ORB15 up: max 3 trades a day",
-  "09:55  SKIP  KOTAKBANK   learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "09:55  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day",
-  "09:55  SKIP  SBILIFE     learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "09:55  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day",
   "09:55  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day",
   "09:55  SKIP  TATACONSUM  learner   via orb30_2r (expects +0.07R): max 3 trades a day",
   "09:55  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day",
@@ -440,12 +436,46 @@
   "10:35  SKIP  GRASIM      vwap      VWAP loss: max 3 trades a day",
   "10:35  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day",
   "10:35  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day",
-  "10:40  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day"
+  "10:40  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day",
+  "10:45  SKIP  ADANIENT    vwap      VWAP loss: max 3 trades a day",
+  "10:45  CLOSE AXISBANK    stop       @ 1276.15  net Rs -588 [orb30_2r] (charges 69)",
+  "10:45  SKIP  AXISBANK    orb60     ORB60 down: max 3 trades a day",
+  "10:45  SKIP  BSE         vwap      VWAP loss: max 3 trades a day",
+  "10:45  SKIP  INFY        orb15     ORB15 down: max 3 trades a day",
+  "10:45  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day",
+  "10:45  SKIP  INFY        orb60     ORB60 down: max 3 trades a day",
+  "10:45  SKIP  JIOFIN      orb60     ORB60 down: max 3 trades a day",
+  "10:50  SKIP  BAJAJFINSV  orb60     ORB60 up: max 3 trades a day",
+  "10:50  SKIP  INDIGO      orb60     ORB60 up: max 3 trades a day",
+  "10:50  SKIP  TECHM       orb15     ORB15 down: max 3 trades a day",
+  "10:50  SKIP  TECHM       orb30_2r  ORB30 down: max 3 trades a day",
+  "10:50  SKIP  TECHM       orb60     ORB60 down: max 3 trades a day"
  ],
- "all_trades": 31,
+ "all_trades": 32,
  "all_wins": 22,
- "all_net": 2540.0,
+ "all_net": 1953.0,
  "recent": [
+  {
+   "date": "2026-11-06",
+   "symbol": "AXISBANK",
+   "strategy": "orb30_2r",
+   "side": "1",
+   "qty": "51",
+   "entry_time": "09:50",
+   "entry": "1285.8",
+   "stop": "1276.15",
+   "target": "1305.0",
+   "exit_time": "10:45",
+   "exit": "1276.15",
+   "reason": "stop",
+   "gross": "-518.28",
+   "charges": "69.22",
+   "net": "-587.5",
+   "r": "-1.194",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-06",
    "symbol": "CIPLA",
@@ -949,32 +979,11 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-05",
-   "symbol": "BEL",
-   "strategy": "vwap",
-   "side": "-1",
-   "qty": "249",
-   "entry_time": "10:30",
-   "entry": "401.3",
-   "stop": "402.9",
-   "target": "398.1",
-   "exit_time": "11:00",
-   "exit": "398.1",
-   "reason": "target",
-   "gross": "756.99",
-   "charges": "82.36",
-   "net": "674.63",
-   "r": "1.693",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
-  "2026-11-06": -1208.0
+  "2026-11-06": -1796.0
  },
  "by_strategy": {
   "orb15": {
@@ -988,12 +997,12 @@
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 3,
+   "today_trades": 1,
+   "today_net": -588,
+   "open": 2,
+   "all_trades": 4,
    "all_wins": 3,
-   "all_net": 1070
+   "all_net": 483
   },
   "orb60": {
    "desc": "first-hour range breakout, stop at mid, 1R",

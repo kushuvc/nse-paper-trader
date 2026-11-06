@@ -169,3 +169,16 @@ Learner: model from 60 days of history
 10:35  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day
 10:35  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day
 10:40  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day
+10:45  SKIP  ADANIENT    vwap      VWAP loss: max 3 trades a day
+10:45  CLOSE AXISBANK    stop       @ 1276.15  net Rs -588 [orb30_2r] (charges 69)
+10:45  SKIP  AXISBANK    orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  BSE         vwap      VWAP loss: max 3 trades a day
+10:45  SKIP  INFY        orb15     ORB15 down: max 3 trades a day
+10:45  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day
+10:45  SKIP  INFY        orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  JIOFIN      orb60     ORB60 down: max 3 trades a day
+10:50  SKIP  BAJAJFINSV  orb60     ORB60 up: max 3 trades a day
+10:50  SKIP  INDIGO      orb60     ORB60 up: max 3 trades a day
+10:50  SKIP  TECHM       orb15     ORB15 down: max 3 trades a day
+10:50  SKIP  TECHM       orb30_2r  ORB30 down: max 3 trades a day
+10:50  SKIP  TECHM       orb60     ORB60 down: max 3 trades a day
