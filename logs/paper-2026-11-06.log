@@ -227,3 +227,8 @@ Learner: model from 60 days of history
 12:00  SKIP  INDIGO      vwap      VWAP reclaim: max 3 trades a day
 12:00  SKIP  LT          orb15     ORB15 up: max 3 trades a day
 12:00  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day
+12:05  SKIP  BSE         vwap      VWAP loss: max 3 trades a day
+12:05  CLOSE BEL         stop       @ 388.10  net Rs -598 [orb60] (charges 72)
+12:05  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day
+12:10  SKIP  MARUTI      vwap      VWAP reclaim: max 3 trades a day
+12:10  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day
