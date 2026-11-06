@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 20:07 IST",
- "updated_ts": 1793975861,
+ "updated": "2026-11-06 23:07 IST",
+ "updated_ts": 1793986678,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -1176,106 +1176,101 @@
   }
  },
  "learning": {
-  "asof": "2026-11-05",
-  "history_days": 61,
+  "asof": "2026-11-06",
+  "history_days": 62,
   "lessons": [
-   "orb15 tight stop: -0.39 R a trade over 779 trades (strategy average -0.24 R) -> avoid",
-   "orb30_2r with market: +0.03 R a trade over 1026 trades (strategy average -0.09 R) -> better than usual",
-   "orb60 with market: -0.06 R a trade over 1036 trades (strategy average -0.19 R) -> better than usual",
-   "orb60 tight stop: -0.39 R a trade over 353 trades (strategy average -0.19 R) -> avoid",
-   "vwap normal stop: -0.20 R a trade over 618 trades (strategy average -0.36 R) -> better than usual",
-   "vwap tight stop: -0.44 R a trade over 1308 trades (strategy average -0.36 R) -> avoid",
-   "orb60 flat market: -0.27 R a trade over 1188 trades (strategy average -0.19 R) -> avoid",
-   "orb60 wide stop: -0.03 R a trade over 391 trades (strategy average -0.19 R) -> better than usual",
-   "orb30_2r flat market: -0.15 R a trade over 1421 trades (strategy average -0.09 R) -> avoid",
-   "gap_go short: -0.58 R a trade over 97 trades (strategy average -0.23 R) -> avoid",
-   "orb15 with market: -0.15 R a trade over 1001 trades (strategy average -0.24 R) -> better than usual",
-   "orb30_2r normal stop: -0.16 R a trade over 1255 trades (strategy average -0.09 R) -> avoid"
+   "orb15 tight stop: -0.39 R a trade over 781 trades (strategy average -0.23 R) -> avoid",
+   "orb30_2r with market: +0.06 R a trade over 1066 trades (strategy average -0.08 R) -> better than usual",
+   "orb60 with market: -0.04 R a trade over 1068 trades (strategy average -0.18 R) -> better than usual",
+   "orb60 tight stop: -0.39 R a trade over 353 trades (strategy average -0.18 R) -> avoid",
+   "orb60 flat market: -0.28 R a trade over 1189 trades (strategy average -0.18 R) -> avoid",
+   "vwap normal stop: -0.21 R a trade over 641 trades (strategy average -0.37 R) -> better than usual",
+   "vwap tight stop: -0.45 R a trade over 1310 trades (strategy average -0.37 R) -> avoid",
+   "orb60 wide stop: -0.01 R a trade over 405 trades (strategy average -0.18 R) -> better than usual",
+   "orb30_2r flat market: -0.16 R a trade over 1422 trades (strategy average -0.08 R) -> avoid",
+   "vwap against market: -0.53 R a trade over 332 trades (strategy average -0.37 R) -> avoid",
+   "gap_go short: -0.65 R a trade over 105 trades (strategy average -0.30 R) -> avoid",
+   "orb15 with market: -0.14 R a trade over 1027 trades (strategy average -0.23 R) -> better than usual"
   ],
   "changes": [
-   "orb60: now takes 11 of 162 setups (was 9)",
-   "gap_go: now takes 16 of 162 setups (was 0)"
+   "orb15: now takes 2 of 162 setups (was 0)",
+   "orb30_2r: now takes 25 of 162 setups (was 18)",
+   "orb60: now takes 15 of 162 setups (was 11)",
+   "gap_go: now takes 4 of 162 setups (was 16)",
+   "gap_fade: now takes 27 of 162 setups (was 0)"
   ],
   "strategies": {
    "orb15": {
-    "trades": 2831,
-    "avg_r": -0.236,
-    "shrunk_r": -0.23,
-    "setups_allowed": 0,
+    "trades": 2880,
+    "avg_r": -0.227,
+    "shrunk_r": -0.221,
+    "setups_allowed": 2,
     "setups_allowed_yesterday": 0
    },
    "orb30_2r": {
-    "trades": 2692,
-    "avg_r": -0.088,
-    "shrunk_r": -0.086,
-    "setups_allowed": 18,
+    "trades": 2741,
+    "avg_r": -0.079,
+    "shrunk_r": -0.077,
+    "setups_allowed": 25,
     "setups_allowed_yesterday": 18
    },
    "orb60": {
-    "trades": 2472,
-    "avg_r": -0.186,
-    "shrunk_r": -0.181,
-    "setups_allowed": 11,
-    "setups_allowed_yesterday": 9
+    "trades": 2515,
+    "avg_r": -0.177,
+    "shrunk_r": -0.172,
+    "setups_allowed": 15,
+    "setups_allowed_yesterday": 11
    },
    "gap_go": {
-    "trades": 182,
-    "avg_r": -0.235,
-    "shrunk_r": -0.173,
-    "setups_allowed": 16,
-    "setups_allowed_yesterday": 0
+    "trades": 194,
+    "avg_r": -0.3,
+    "shrunk_r": -0.225,
+    "setups_allowed": 4,
+    "setups_allowed_yesterday": 16
    },
    "gap_fade": {
-    "trades": 74,
-    "avg_r": -0.14,
-    "shrunk_r": -0.074,
-    "setups_allowed": 0,
+    "trades": 80,
+    "avg_r": -0.03,
+    "shrunk_r": -0.017,
+    "setups_allowed": 27,
     "setups_allowed_yesterday": 0
    },
    "vwap": {
-    "trades": 1946,
-    "avg_r": -0.362,
-    "shrunk_r": -0.349,
+    "trades": 1971,
+    "avg_r": -0.368,
+    "shrunk_r": -0.356,
     "setups_allowed": 0,
     "setups_allowed_yesterday": 0
    },
    "trap90": {
-    "trades": 1271,
-    "avg_r": -0.118,
-    "shrunk_r": -0.112,
+    "trades": 1297,
+    "avg_r": -0.115,
+    "shrunk_r": -0.109,
     "setups_allowed": 0,
     "setups_allowed_yesterday": 0
    }
   },
   "walk_forward": {
-   "days": 41,
+   "days": 42,
    "learner": {
-    "trades": 72,
-    "win_rate": 37.5,
-    "expectancy_rs": -92.5,
-    "expectancy_r": -0.203,
-    "t_stat": -2.32,
-    "total_net": -6662.0,
-    "max_drawdown": -9169.0
+    "trades": 75,
+    "win_rate": 38.7,
+    "expectancy_rs": -80.8,
+    "expectancy_r": -0.18,
+    "t_stat": -2.02,
+    "total_net": -6058.0,
+    "max_drawdown": -9644.0
    },
    "every_signal": {
-    "trades": 123,
+    "trades": 126,
     "win_rate": 68.3,
-    "expectancy_rs": -99.0,
-    "expectancy_r": -0.223,
-    "t_stat": -4.29,
-    "total_net": -12175.0,
+    "expectancy_rs": -100.8,
+    "expectancy_r": -0.227,
+    "t_stat": -4.42,
+    "total_net": -12696.0,
     "max_drawdown": -13492.0
    },
    "by_day": [
-    {
-     "date": "2026-10-23",
-     "signals": 183,
-     "approved": 91,
-     "learner_trades": 3,
-     "learner_net": -95,
-     "every_signal_net": -539
-    },
     {
      "date": "2026-10-26",
      "signals": 183,
@@ -1342,21 +1337,29 @@
     },
     {
      "date": "2026-11-05",
-     "signals": 206,
+     "signals": 204,
      "approved": 18,
      "learner_trades": 3,
      "learner_net": 1070,
      "every_signal_net": 418
+    },
+    {
+     "date": "2026-11-06",
+     "signals": 215,
+     "approved": 23,
+     "learner_trades": 3,
+     "learner_net": 1080,
+     "every_signal_net": -521
     }
    ]
   },
   "last_day": {
-   "date": "2026-11-05",
-   "signals": 206,
-   "approved": 18,
+   "date": "2026-11-06",
+   "signals": 215,
+   "approved": 23,
    "learner_trades": 3,
-   "learner_net": 1070,
-   "every_signal_net": 418
+   "learner_net": 1080,
+   "every_signal_net": -521
   }
  }
 }
