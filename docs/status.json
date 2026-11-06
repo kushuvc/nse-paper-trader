@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 10:10 IST",
- "updated_ts": 1793940056,
+ "updated": "2026-11-06 10:20 IST",
+ "updated_ts": 1793940657,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -131,6 +131,50 @@
    "via": "orb30_2r",
    "setup": "long, before 10:30, with market, against gap, wide stop",
    "score": 0.073
+  },
+  "orb60|ASIANPAINT": {
+   "strategy": "orb60",
+   "symbol": "ASIANPAINT",
+   "side": 1,
+   "qty": 18,
+   "entry": 2505.5,
+   "stop": 2477.8,
+   "target": 2533.15,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
+  },
+  "orb60|BEL": {
+   "strategy": "orb60",
+   "symbol": "BEL",
+   "side": 1,
+   "qty": 181,
+   "entry": 390.85,
+   "stop": 388.1,
+   "target": 393.6,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
+  },
+  "orb60|COALINDIA": {
+   "strategy": "orb60",
+   "symbol": "COALINDIA",
+   "side": 1,
+   "qty": 166,
+   "entry": 397.65,
+   "stop": 394.65,
+   "target": 400.6,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
+  },
+  "vwap|LT": {
+   "strategy": "vwap",
+   "symbol": "LT",
+   "side": 1,
+   "qty": 24,
+   "entry": 4043.8,
+   "stop": 4031.5,
+   "target": 4068.4,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim"
   }
  },
  "closed": [
@@ -297,19 +341,6 @@
  ],
  "today_net": -2068.0,
  "log": [
-  "09:50  SKIP  BAJAJFINSV  orb30_2r  ORB30 up: max 3 trades a day",
-  "09:50  SKIP  EICHERMOT   orb15     ORB15 up: max 3 trades a day",
-  "09:50  SKIP  EICHERMOT   learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "09:50  SKIP  EICHERMOT   orb30_2r  ORB30 up: max 3 trades a day",
-  "09:50  SKIP  GRASIM      learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "09:50  SKIP  GRASIM      orb30_2r  ORB30 up: max 3 trades a day",
-  "09:50  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day",
-  "09:50  SKIP  HDFCLIFE    orb30_2r  ORB30 up: max 3 trades a day",
-  "09:50  SKIP  HINDUNILVR  orb15     ORB15 up: max 3 trades a day",
-  "09:50  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day",
-  "09:50  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day",
-  "09:50  SKIP  ITC         learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "09:50  SKIP  ITC         orb30_2r  ORB30 up: max 3 trades a day",
   "09:50  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day",
   "09:50  SKIP  INDIGO      learner   via orb30_2r (expects +0.07R): max 3 trades a day",
   "09:50  SKIP  INDIGO      orb30_2r  ORB30 up: max 3 trades a day",
@@ -356,7 +387,20 @@
   "10:10  SKIP  COALINDIA   orb30_2r  ORB30 up: max 3 trades a day",
   "10:10  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day",
   "10:10  SKIP  TATASTEEL   learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "10:10  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day"
+  "10:10  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day",
+  "10:20  OPEN  ASIANPAINT  BUY     18 @ 2505.50  stop 2477.80  target 2533.15  [orb60: ORB60 up]",
+  "10:20  SKIP  BEL         orb15     ORB15 up: max 3 trades a day",
+  "10:20  SKIP  BEL         learner   via orb30_2r (expects +0.07R): max 3 trades a day",
+  "10:20  SKIP  BEL         orb30_2r  ORB30 up: max 3 trades a day",
+  "10:20  OPEN  BEL         BUY    181 @ 390.85  stop 388.10  target 393.60  [orb60: ORB60 up]",
+  "10:20  OPEN  COALINDIA   BUY    166 @ 397.65  stop 394.65  target 400.60  [orb60: ORB60 up]",
+  "10:20  SKIP  JSWSTEEL    learner   via orb30_2r (expects +0.07R): max 3 trades a day",
+  "10:20  SKIP  JSWSTEEL    orb30_2r  ORB30 up: max 3 trades a day",
+  "10:20  SKIP  JSWSTEEL    orb60     ORB60 up: max 3 trades a day",
+  "10:20  OPEN  LT          BUY     24 @ 4043.80  stop 4031.50  target 4068.40  [vwap: VWAP reclaim]",
+  "10:20  SKIP  NTPC        orb60     ORB60 up: max 3 trades a day",
+  "10:20  SKIP  TATASTEEL   orb60     ORB60 up: max 3 trades a day",
+  "10:20  SKIP  TITAN       orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 29,
  "all_wins": 20,
@@ -915,7 +959,7 @@
    "desc": "first-hour range breakout, stop at mid, 1R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 3,
    "all_wins": 3,
    "all_net": 472
@@ -942,7 +986,7 @@
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 1,
    "all_trades": 3,
    "all_wins": 1,
    "all_net": -524

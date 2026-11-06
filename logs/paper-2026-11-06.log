@@ -137,3 +137,16 @@ Learner: model from 60 days of history
 10:10  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day
 10:10  SKIP  TATASTEEL   learner   via orb30_2r (expects +0.07R): max 3 trades a day
 10:10  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day
+10:20  OPEN  ASIANPAINT  BUY     18 @ 2505.50  stop 2477.80  target 2533.15  [orb60: ORB60 up]
+10:20  SKIP  BEL         orb15     ORB15 up: max 3 trades a day
+10:20  SKIP  BEL         learner   via orb30_2r (expects +0.07R): max 3 trades a day
+10:20  SKIP  BEL         orb30_2r  ORB30 up: max 3 trades a day
+10:20  OPEN  BEL         BUY    181 @ 390.85  stop 388.10  target 393.60  [orb60: ORB60 up]
+10:20  OPEN  COALINDIA   BUY    166 @ 397.65  stop 394.65  target 400.60  [orb60: ORB60 up]
+10:20  SKIP  JSWSTEEL    learner   via orb30_2r (expects +0.07R): max 3 trades a day
+10:20  SKIP  JSWSTEEL    orb30_2r  ORB30 up: max 3 trades a day
+10:20  SKIP  JSWSTEEL    orb60     ORB60 up: max 3 trades a day
+10:20  OPEN  LT          BUY     24 @ 4043.80  stop 4031.50  target 4068.40  [vwap: VWAP reclaim]
+10:20  SKIP  NTPC        orb60     ORB60 up: max 3 trades a day
+10:20  SKIP  TATASTEEL   orb60     ORB60 up: max 3 trades a day
+10:20  SKIP  TITAN       orb60     ORB60 up: max 3 trades a day
