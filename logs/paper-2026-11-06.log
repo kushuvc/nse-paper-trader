@@ -195,3 +195,15 @@ Learner: model from 60 days of history
 10:55  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day
 11:00  CLOSE ETERNAL     stop       @ 356.70  net Rs -608 [vwap] (charges 82)
 11:00  SKIP  TRENT       vwap      VWAP loss: max 3 trades a day
+11:05  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day
+11:05  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day
+11:05  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day
+11:05  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day
+11:05  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day
+11:05  SKIP  HINDUNILVR  orb60     ORB60 up: max 3 trades a day
+11:05  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day
+11:05  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day
+11:10  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day
+11:10  SKIP  HCLTECH     orb15     ORB15 down: max 3 trades a day
+11:10  SKIP  HCLTECH     orb30_2r  ORB30 down: max 3 trades a day
+11:10  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day
