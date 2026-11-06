@@ -113,3 +113,19 @@ Learner: model from 60 days of history
 09:50  SKIP  TITAN       orb30_2r  ORB30 up: max 3 trades a day
 09:50  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day
 09:50  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  APOLLOHOSP  orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  CIPLA       learner   via orb30_2r (expects +0.07R): max 3 trades a day
+09:55  SKIP  CIPLA       orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  KOTAKBANK   orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  KOTAKBANK   learner   via orb30_2r (expects +0.07R): max 3 trades a day
+09:55  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  SBILIFE     learner   via orb30_2r (expects +0.07R): max 3 trades a day
+09:55  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  TATACONSUM  learner   via orb30_2r (expects +0.07R): max 3 trades a day
+09:55  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  TRENT       learner   via orb30_2r (expects +0.07R): max 3 trades a day
+09:55  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  ULTRACEMCO  learner   via orb30_2r (expects +0.07R): max 3 trades a day
+09:55  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day
