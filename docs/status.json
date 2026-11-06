@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 13:46 IST",
- "updated_ts": 1793952975,
+ "updated": "2026-11-06 13:56 IST",
+ "updated_ts": 1793953576,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -13,17 +13,6 @@
  ],
  "date": "2026-11-06",
  "open": {
-  "gap_fade|INDIGO": {
-   "strategy": "gap_fade",
-   "symbol": "INDIGO",
-   "side": 1,
-   "qty": 12,
-   "entry": 5347.2,
-   "stop": 5307.2,
-   "target": 5420.0,
-   "entry_time": "09:30",
-   "note": "gap -2.1% fading"
-  },
   "learner|ASIANPAINT": {
    "strategy": "learner",
    "symbol": "ASIANPAINT",
@@ -431,12 +420,30 @@
    "net": 469.89,
    "r": 1.592,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_fade",
+   "symbol": "INDIGO",
+   "side": 1,
+   "qty": 12,
+   "entry": 5347.2,
+   "stop": 5307.2,
+   "target": 5420.0,
+   "entry_time": "09:30",
+   "note": "gap -2.1% fading",
+   "date": "2026-11-06",
+   "exit": 5420.0,
+   "exit_time": "13:55",
+   "reason": "target",
+   "gross": 847.76,
+   "charges": 68.6,
+   "net": 779.16,
+   "r": 1.623,
+   "mode": "live"
   }
  ],
- "today_net": -3618.0,
+ "today_net": -2838.0,
  "log": [
-  "11:10  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day",
-  "11:10  SKIP  HCLTECH     orb15     ORB15 down: max 3 trades a day",
   "11:10  SKIP  HCLTECH     orb30_2r  ORB30 down: max 3 trades a day",
   "11:10  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day",
   "11:15  SKIP  DRREDDY     vwap      VWAP loss: max 3 trades a day",
@@ -494,12 +501,35 @@
   "13:35  SKIP  ONGC        learner   via orb60 (expects +0.05R): max 3 trades a day",
   "13:35  SKIP  ONGC        orb60     ORB60 up: max 3 trades a day",
   "13:35  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
-  "13:45  SKIP  MARUTI      orb60     ORB60 up: max 3 trades a day"
+  "13:45  SKIP  MARUTI      orb60     ORB60 up: max 3 trades a day",
+  "13:50  SKIP  TATACONSUM  vwap      VWAP reclaim: max 3 trades a day",
+  "13:55  CLOSE INDIGO      target     @ 5420.00  net Rs +779 [gap_fade] (charges 69)"
  ],
- "all_trades": 37,
- "all_wins": 23,
- "all_net": 130.0,
+ "all_trades": 38,
+ "all_wins": 24,
+ "all_net": 909.0,
  "recent": [
+  {
+   "date": "2026-11-06",
+   "symbol": "INDIGO",
+   "strategy": "gap_fade",
+   "side": "1",
+   "qty": "12",
+   "entry_time": "09:30",
+   "entry": "5347.2",
+   "stop": "5307.2",
+   "target": "5420.0",
+   "exit_time": "13:55",
+   "exit": "5420.0",
+   "reason": "target",
+   "gross": "847.76",
+   "charges": "68.6",
+   "net": "779.16",
+   "r": "1.623",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-06",
    "symbol": "LT",
@@ -1003,32 +1033,11 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-05",
-   "symbol": "ADANIPORTS",
-   "strategy": "gap_fade",
-   "side": "-1",
-   "qty": "47",
-   "entry_time": "09:30",
-   "entry": "1934.0",
-   "stop": "1944.5",
-   "target": "1910.0",
-   "exit_time": "15:15",
-   "exit": "1910.0",
-   "reason": "target",
-   "gross": "1091.87",
-   "charges": "79.16",
-   "net": "1012.71",
-   "r": "2.052",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
-  "2026-11-06": -3618.0
+  "2026-11-06": -2839.0
  },
  "by_strategy": {
   "orb15": {
@@ -1069,12 +1078,12 @@
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
-   "today_trades": 2,
-   "today_net": -19,
-   "open": 1,
-   "all_trades": 5,
-   "all_wins": 3,
-   "all_net": 1591
+   "today_trades": 3,
+   "today_net": 760,
+   "open": 0,
+   "all_trades": 6,
+   "all_wins": 4,
+   "all_net": 2370
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
