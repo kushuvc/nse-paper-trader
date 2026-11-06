@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 11:31 IST",
- "updated_ts": 1793944868,
+ "updated": "2026-11-06 11:41 IST",
+ "updated_ts": 1793945469,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -408,10 +408,6 @@
  ],
  "today_net": -2916.0,
  "log": [
-  "10:30  OPEN  HCLTECH     BUY     68 @ 1455.80  stop 1450.05  target 1467.20  [vwap: VWAP reclaim]",
-  "10:30  SKIP  HDFCBANK    orb60     ORB60 up: max 3 trades a day",
-  "10:30  SKIP  ICICIBANK   orb60     ORB60 up: max 3 trades a day",
-  "10:30  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day",
   "10:30  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
   "10:30  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day",
   "10:30  SKIP  TCS         vwap      VWAP reclaim: max 3 trades a day",
@@ -467,7 +463,11 @@
   "11:25  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day",
   "11:30  SKIP  ETERNAL     orb15     ORB15 down: max 3 trades a day",
   "11:30  SKIP  ETERNAL     orb30_2r  ORB30 down: max 3 trades a day",
-  "11:30  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day"
+  "11:30  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day",
+  "11:35  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day",
+  "11:40  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day",
+  "11:40  SKIP  EICHERMOT   orb60     ORB60 down: max 3 trades a day",
+  "11:40  SKIP  TATASTEEL   vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 34,
  "all_wins": 22,

@@ -216,3 +216,7 @@ Learner: model from 60 days of history
 11:30  SKIP  ETERNAL     orb15     ORB15 down: max 3 trades a day
 11:30  SKIP  ETERNAL     orb30_2r  ORB30 down: max 3 trades a day
 11:30  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day
+11:35  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day
+11:40  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day
+11:40  SKIP  EICHERMOT   orb60     ORB60 down: max 3 trades a day
+11:40  SKIP  TATASTEEL   vwap      VWAP loss: max 3 trades a day
