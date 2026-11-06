@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 14:56 IST",
- "updated_ts": 1793957186,
+ "updated": "2026-11-06 15:06 IST",
+ "updated_ts": 1793957788,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -462,7 +462,6 @@
  ],
  "today_net": -1495.0,
  "log": [
-  "11:30  SKIP  ETERNAL     orb30_2r  ORB30 down: max 3 trades a day",
   "11:30  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day",
   "11:35  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day",
   "11:40  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day",
@@ -521,7 +520,8 @@
   "14:40  SKIP  BAJAJ-AUTO  orb60     ORB60 up: after 14:30",
   "14:50  SKIP  MAXHEALTH   vwap      VWAP loss: after 14:30",
   "14:55  CLOSE ASIANPAINT  target     @ 2533.15  net Rs +431 [orb60] (charges 48)",
-  "14:55  CLOSE BAJFINANCE  target     @ 1077.15  net Rs +912 [learner] (charges 46)"
+  "14:55  CLOSE BAJFINANCE  target     @ 1077.15  net Rs +912 [learner] (charges 46)",
+  "15:05  SKIP  GRASIM      orb60     ORB60 up: after 14:30"
  ],
  "all_trades": 40,
  "all_wins": 26,

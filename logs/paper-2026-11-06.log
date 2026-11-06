@@ -268,3 +268,4 @@ Learner: model from 60 days of history
 14:50  SKIP  MAXHEALTH   vwap      VWAP loss: after 14:30
 14:55  CLOSE ASIANPAINT  target     @ 2533.15  net Rs +431 [orb60] (charges 48)
 14:55  CLOSE BAJFINANCE  target     @ 1077.15  net Rs +912 [learner] (charges 46)
+15:05  SKIP  GRASIM      orb60     ORB60 up: after 14:30
