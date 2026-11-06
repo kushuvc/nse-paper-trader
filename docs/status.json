@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 14:46 IST",
- "updated_ts": 1793956584,
+ "updated": "2026-11-06 14:56 IST",
+ "updated_ts": 1793957186,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -62,31 +62,6 @@
    "target": 11389.0,
    "entry_time": "09:50",
    "note": "ORB30 up"
-  },
-  "learner|BAJFINANCE": {
-   "strategy": "learner",
-   "symbol": "BAJFINANCE",
-   "side": 1,
-   "qty": 41,
-   "entry": 1053.35,
-   "stop": 1041.4,
-   "target": 1077.15,
-   "entry_time": "09:50",
-   "note": "ORB30 up",
-   "via": "orb30_2r",
-   "setup": "long, before 10:30, with market, against gap, wide stop",
-   "score": 0.073
-  },
-  "orb60|ASIANPAINT": {
-   "strategy": "orb60",
-   "symbol": "ASIANPAINT",
-   "side": 1,
-   "qty": 18,
-   "entry": 2505.5,
-   "stop": 2477.8,
-   "target": 2533.15,
-   "entry_time": "10:20",
-   "note": "ORB60 up"
   },
   "orb60|COALINDIA": {
    "strategy": "orb60",
@@ -440,13 +415,53 @@
    "net": 779.16,
    "r": 1.623,
    "mode": "live"
+  },
+  {
+   "strategy": "orb60",
+   "symbol": "ASIANPAINT",
+   "side": 1,
+   "qty": 18,
+   "entry": 2505.5,
+   "stop": 2477.8,
+   "target": 2533.15,
+   "entry_time": "10:20",
+   "note": "ORB60 up",
+   "date": "2026-11-06",
+   "exit": 2533.15,
+   "exit_time": "14:55",
+   "reason": "target",
+   "gross": 479.56,
+   "charges": 48.14,
+   "net": 431.42,
+   "r": 0.865,
+   "mode": "live"
+  },
+  {
+   "strategy": "learner",
+   "symbol": "BAJFINANCE",
+   "side": 1,
+   "qty": 41,
+   "entry": 1053.35,
+   "stop": 1041.4,
+   "target": 1077.15,
+   "entry_time": "09:50",
+   "note": "ORB30 up",
+   "via": "orb30_2r",
+   "setup": "long, before 10:30, with market, against gap, wide stop",
+   "score": 0.073,
+   "date": "2026-11-06",
+   "exit": 1077.15,
+   "exit_time": "14:55",
+   "reason": "target",
+   "gross": 958.33,
+   "charges": 46.42,
+   "net": 911.91,
+   "r": 1.861,
+   "mode": "live"
   }
  ],
- "today_net": -2838.0,
+ "today_net": -1495.0,
  "log": [
-  "11:25  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day",
-  "11:25  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day",
-  "11:30  SKIP  ETERNAL     orb15     ORB15 down: max 3 trades a day",
   "11:30  SKIP  ETERNAL     orb30_2r  ORB30 down: max 3 trades a day",
   "11:30  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day",
   "11:35  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day",
@@ -503,12 +518,57 @@
   "14:30  SKIP  BSE         orb15     ORB15 up: max 3 trades a day",
   "14:30  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day",
   "14:30  SKIP  BSE         orb60     ORB60 up: max 3 trades a day",
-  "14:40  SKIP  BAJAJ-AUTO  orb60     ORB60 up: after 14:30"
+  "14:40  SKIP  BAJAJ-AUTO  orb60     ORB60 up: after 14:30",
+  "14:50  SKIP  MAXHEALTH   vwap      VWAP loss: after 14:30",
+  "14:55  CLOSE ASIANPAINT  target     @ 2533.15  net Rs +431 [orb60] (charges 48)",
+  "14:55  CLOSE BAJFINANCE  target     @ 1077.15  net Rs +912 [learner] (charges 46)"
  ],
- "all_trades": 38,
- "all_wins": 24,
- "all_net": 909.0,
+ "all_trades": 40,
+ "all_wins": 26,
+ "all_net": 2252.0,
  "recent": [
+  {
+   "date": "2026-11-06",
+   "symbol": "BAJFINANCE",
+   "strategy": "learner",
+   "side": "1",
+   "qty": "41",
+   "entry_time": "09:50",
+   "entry": "1053.35",
+   "stop": "1041.4",
+   "target": "1077.15",
+   "exit_time": "14:55",
+   "exit": "1077.15",
+   "reason": "target",
+   "gross": "958.33",
+   "charges": "46.42",
+   "net": "911.91",
+   "r": "1.861",
+   "mode": "live",
+   "via": "orb30_2r",
+   "setup": "long, before 10:30, with market, against gap, wide stop"
+  },
+  {
+   "date": "2026-11-06",
+   "symbol": "ASIANPAINT",
+   "strategy": "orb60",
+   "side": "1",
+   "qty": "18",
+   "entry_time": "10:20",
+   "entry": "2505.5",
+   "stop": "2477.8",
+   "target": "2533.15",
+   "exit_time": "14:55",
+   "exit": "2533.15",
+   "reason": "target",
+   "gross": "479.56",
+   "charges": "48.14",
+   "net": "431.42",
+   "r": "0.865",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-06",
    "symbol": "INDIGO",
@@ -991,53 +1051,11 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-05",
-   "symbol": "ASIANPAINT",
-   "strategy": "gap_fade",
-   "side": "-1",
-   "qty": "9",
-   "entry_time": "09:30",
-   "entry": "2516.6",
-   "stop": "2571.7",
-   "target": "2418.3",
-   "exit_time": "15:15",
-   "exit": "2528.9",
-   "reason": "square-off",
-   "gross": "-119.78",
-   "charges": "24.06",
-   "net": "-143.84",
-   "r": "-0.29",
-   "mode": "live",
-   "via": "",
-   "setup": ""
-  },
-  {
-   "date": "2026-11-05",
-   "symbol": "APOLLOHOSP",
-   "strategy": "orb15",
-   "side": "-1",
-   "qty": "2",
-   "entry_time": "09:35",
-   "entry": "8274.5",
-   "stop": "8484.75",
-   "target": "8064.25",
-   "exit_time": "15:15",
-   "exit": "8365.0",
-   "reason": "square-off",
-   "gross": "-187.66",
-   "charges": "17.62",
-   "net": "-205.28",
-   "r": "-0.488",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
-  "2026-11-06": -2839.0
+  "2026-11-06": -1496.0
  },
  "by_strategy": {
   "orb15": {
@@ -1060,12 +1078,12 @@
   },
   "orb60": {
    "desc": "first-hour range breakout, stop at mid, 1R",
-   "today_trades": 1,
-   "today_net": -598,
-   "open": 2,
-   "all_trades": 4,
-   "all_wins": 3,
-   "all_net": -126
+   "today_trades": 2,
+   "today_net": -167,
+   "open": 1,
+   "all_trades": 5,
+   "all_wins": 4,
+   "all_net": 305
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
@@ -1105,12 +1123,12 @@
   },
   "learner": {
    "desc": "takes only the signals last night's model expects to profit",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 0,
-   "all_trades": 0,
-   "all_wins": 0,
-   "all_net": 0
+   "today_trades": 1,
+   "today_net": 912,
+   "open": 2,
+   "all_trades": 1,
+   "all_wins": 1,
+   "all_net": 912
   }
  },
  "learning": {

@@ -265,3 +265,6 @@ Learner: model from 60 days of history
 14:30  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day
 14:30  SKIP  BSE         orb60     ORB60 up: max 3 trades a day
 14:40  SKIP  BAJAJ-AUTO  orb60     ORB60 up: after 14:30
+14:50  SKIP  MAXHEALTH   vwap      VWAP loss: after 14:30
+14:55  CLOSE ASIANPAINT  target     @ 2533.15  net Rs +431 [orb60] (charges 48)
+14:55  CLOSE BAJFINANCE  target     @ 1077.15  net Rs +912 [learner] (charges 46)
