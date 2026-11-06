@@ -264,3 +264,4 @@ Learner: model from 60 days of history
 14:30  SKIP  BSE         orb15     ORB15 up: max 3 trades a day
 14:30  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day
 14:30  SKIP  BSE         orb60     ORB60 up: max 3 trades a day
+14:40  SKIP  BAJAJ-AUTO  orb60     ORB60 up: after 14:30

@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-06 14:36 IST",
- "updated_ts": 1793955983,
+ "updated": "2026-11-06 14:46 IST",
+ "updated_ts": 1793956584,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -444,7 +444,6 @@
  ],
  "today_net": -2838.0,
  "log": [
-  "11:25  SKIP  BEL         vwap      VWAP loss: max 3 trades a day",
   "11:25  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day",
   "11:25  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day",
   "11:30  SKIP  ETERNAL     orb15     ORB15 down: max 3 trades a day",
@@ -503,7 +502,8 @@
   "14:15  SKIP  EICHERMOT   vwap      VWAP loss: max 3 trades a day",
   "14:30  SKIP  BSE         orb15     ORB15 up: max 3 trades a day",
   "14:30  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day",
-  "14:30  SKIP  BSE         orb60     ORB60 up: max 3 trades a day"
+  "14:30  SKIP  BSE         orb60     ORB60 up: max 3 trades a day",
+  "14:40  SKIP  BAJAJ-AUTO  orb60     ORB60 up: after 14:30"
  ],
  "all_trades": 38,
  "all_wins": 24,
