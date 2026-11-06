@@ -232,3 +232,16 @@ Learner: model from 60 days of history
 12:05  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day
 12:10  SKIP  MARUTI      vwap      VWAP reclaim: max 3 trades a day
 12:10  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day
+12:15  CLOSE APOLLOHOSP  stop       @ 8376.00  net Rs -574 [orb15] (charges 71)
+12:15  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day
+12:15  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day
+12:15  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day
+2026-11-06: 15 closed (6 won), 9 still open, net Rs -4088 after charges
+  orb15     3 trades, net Rs -61
+  orb30_2r  1 trades, net Rs -588
+  orb60     1 trades, net Rs -598
+  gap_go    3 trades, net Rs -1704
+  gap_fade  2 trades, net Rs -19
+  vwap      2 trades, net Rs -1121
+  trap90    3 trades, net Rs +3
+  learner   0 trades, net Rs +0
