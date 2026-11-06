@@ -276,3 +276,12 @@ Learner: model from 60 days of history
 15:15  CLOSE BAJAJ-AUTO  square-off @ 10910.00  net Rs +19 [learner] (charges 12)
 15:15  CLOSE BAJAJ-AUTO  square-off @ 10910.00  net Rs +19 [orb30_2r] (charges 12)
 15:15  CLOSE COALINDIA   square-off @ 398.80  net Rs +94 [orb60] (charges 70)
+2026-11-06: 24 closed (15 won), 0 still open, net Rs -291 after charges
+  orb15     3 trades, net Rs -61
+  orb30_2r  3 trades, net Rs -32
+  orb60     3 trades, net Rs -72
+  gap_go    3 trades, net Rs -1704
+  gap_fade  3 trades, net Rs +760
+  vwap      3 trades, net Rs -651
+  trap90    3 trades, net Rs +3
+  learner   3 trades, net Rs +1467
