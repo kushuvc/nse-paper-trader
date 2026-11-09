@@ -232,3 +232,5 @@ Learner: model from 61 days of history
 13:25  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day
 13:30  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day
 13:30  SKIP  INDIGO      orb60     ORB60 down: max 3 trades a day
+13:40  SKIP  HDFCLIFE    vwap      VWAP reclaim: max 3 trades a day
+13:40  SKIP  M&M         vwap      VWAP loss: max 3 trades a day
