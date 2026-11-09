@@ -165,3 +165,8 @@ Learner: model from 61 days of history
 11:20  CLOSE COALINDIA   stop       @ 401.60  net Rs -619 [orb15] (charges 81)
 11:20  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day
 11:20  SKIP  TRENT       orb60     ORB60 up: max 3 trades a day
+11:25  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day
+11:25  SKIP  NESTLEIND   orb30_2r  ORB30 up: max 3 trades a day
+11:25  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day
+11:25  CLOSE SUNPHARMA   stop       @ 1903.30  net Rs -566 [gap_go] (charges 49)
+11:30  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day
