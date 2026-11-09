@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-09 12:15 IST",
- "updated_ts": 1794206748,
- "in_session": false,
+ "updated": "2026-11-09 12:16 IST",
+ "updated_ts": 1794206764,
+ "in_session": true,
  "strategies": [
   "orb15",
   "orb30_2r",

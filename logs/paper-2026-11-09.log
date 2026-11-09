@@ -197,23 +197,4 @@ Learner: model from 61 days of history
 12:00  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day
 12:00  SKIP  ICICIBANK   vwap      VWAP loss: max 3 trades a day
 12:00  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day
-12:05  SKIP  HINDUNILVR  orb15     ORB15 down: max 3 trades a day
-12:05  SKIP  HINDUNILVR  orb30_2r  ORB30 down: max 3 trades a day
-12:05  SKIP  HINDUNILVR  orb60     ORB60 down: max 3 trades a day
-12:05  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day
-12:05  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day
-12:05  SKIP  POWERGRID   orb15     ORB15 down: max 3 trades a day
-12:05  SKIP  POWERGRID   learner   via orb30_2r (expects +0.06R): max 3 trades a day
-12:05  SKIP  POWERGRID   orb30_2r  ORB30 down: max 3 trades a day
-12:05  SKIP  POWERGRID   orb60     ORB60 down: max 3 trades a day
-12:05  SKIP  RELIANCE    vwap      VWAP loss: max 3 trades a day
-12:05  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day
-2026-11-09: 12 closed (7 won), 9 still open, net Rs -1142 after charges
-  orb15     2 trades, net Rs -228
-  orb30_2r  0 trades, net Rs +0
-  orb60     3 trades, net Rs -748
-  gap_go    2 trades, net Rs -137
-  gap_fade  0 trades, net Rs +0
-  vwap      2 trades, net Rs -33
-  trap90    3 trades, net Rs +3
-  learner   0 trades, net Rs +0
+Shift until 15:20 IST (started 12:16)
