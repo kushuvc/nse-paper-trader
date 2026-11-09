@@ -58,3 +58,10 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-09,HINDALCO,orb60,1,35,10:20,946.15,932.25,960.05,11:45,960.05,target,473.16,35.43,437.73,0.9,live,,
 2026-11-09,INFY,gap_go,-1,69,09:30,1159.8,1167.0,1145.4,12:20,1145.4,target,961.79,75.34,886.45,1.784,live,,
 2026-11-09,BAJAJFINSV,orb15,-1,42,09:35,1838.5,1850.2,1826.85,12:35,1826.85,target,458.51,74.38,384.13,0.782,live,,
+2026-11-09,AXISBANK,learner,-1,25,09:55,1304.1,1324.0,1264.3,15:15,1307.0,square-off,-85.56,34.6,-120.16,-0.242,live,orb30_2r,"short, before 10:30, with market, with gap, wide stop"
+2026-11-09,AXISBANK,orb30_2r,-1,25,09:55,1304.1,1324.0,1264.3,15:15,1307.0,square-off,-85.56,34.6,-120.16,-0.242,live,,
+2026-11-09,BAJFINANCE,learner,-1,25,09:55,1068.15,1087.7,1029.05,15:15,1067.0,square-off,18.07,28.3,-10.23,-0.021,live,orb30_2r,"short, before 10:30, with market, no gap, wide stop"
+2026-11-09,INDIGO,vwap,-1,18,10:30,5439.7,5463.4,5392.3,15:15,5425.4,square-off,218.29,81.69,136.6,0.32,live,,
+2026-11-09,SBILIFE,learner,-1,13,09:50,1734.9,1771.7,1661.3,15:15,1732.2,square-off,26.09,23.9,2.19,0.005,live,orb30_2r,"short, before 10:30, with market, with gap, wide stop"
+2026-11-09,SBILIFE,orb30_2r,-1,13,09:50,1734.9,1771.7,1661.3,15:15,1732.2,square-off,26.09,23.9,2.19,0.005,live,,
+2026-11-09,SBIN,orb30_2r,1,22,09:50,1045.85,1023.45,1090.65,15:15,1042.05,square-off,-92.79,24.35,-117.14,-0.238,live,,

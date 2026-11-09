@@ -257,3 +257,13 @@ Learner: model from 61 days of history
 15:00  SKIP  ETERNAL     vwap      VWAP loss: after 14:30
 15:00  SKIP  SHRIRAMFIN  vwap      VWAP loss: after 14:30
 15:05  SKIP  INFY        vwap      VWAP loss: after 14:30
+15:10  SKIP  BAJAJFINSV  vwap      VWAP loss: after 14:30
+15:15  CLOSE AXISBANK    square-off @ 1307.00  net Rs -120 [learner] (charges 35)
+15:15  CLOSE AXISBANK    square-off @ 1307.00  net Rs -120 [orb30_2r] (charges 35)
+15:15  CLOSE BAJFINANCE  square-off @ 1067.00  net Rs -10 [learner] (charges 28)
+15:15  SKIP  GRASIM      vwap      VWAP loss: past square-off
+15:15  CLOSE INDIGO      square-off @ 5425.40  net Rs +137 [vwap] (charges 82)
+15:15  SKIP  JSWSTEEL    vwap      VWAP loss: past square-off
+15:15  CLOSE SBILIFE     square-off @ 1732.20  net Rs +2 [learner] (charges 24)
+15:15  CLOSE SBILIFE     square-off @ 1732.20  net Rs +2 [orb30_2r] (charges 24)
+15:15  CLOSE SBIN        square-off @ 1042.05  net Rs -117 [orb30_2r] (charges 24)
