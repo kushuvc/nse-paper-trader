@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 10:10 IST",
- "updated_ts": 1794199257,
+ "updated": "2026-11-09 10:20 IST",
+ "updated_ts": 1794199859,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -13,17 +13,6 @@
  ],
  "date": "2026-11-09",
  "open": {
-  "trap90|CIPLA": {
-   "strategy": "trap90",
-   "symbol": "CIPLA",
-   "side": 1,
-   "qty": 23,
-   "entry": 1412.8,
-   "stop": 1391.6,
-   "target": 1414.9,
-   "entry_time": "09:30",
-   "note": "tiny target, wide stop"
-  },
   "gap_go|INFY": {
    "strategy": "gap_go",
    "symbol": "INFY",
@@ -142,6 +131,28 @@
    "via": "orb30_2r",
    "setup": "short, before 10:30, with market, no gap, wide stop",
    "score": 0.132
+  },
+  "orb60|HINDALCO": {
+   "strategy": "orb60",
+   "symbol": "HINDALCO",
+   "side": 1,
+   "qty": 35,
+   "entry": 946.15,
+   "stop": 932.25,
+   "target": 960.05,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
+  },
+  "orb60|TATACONSUM": {
+   "strategy": "orb60",
+   "symbol": "TATACONSUM",
+   "side": 1,
+   "qty": 65,
+   "entry": 1090.9,
+   "stop": 1083.25,
+   "target": 1098.5,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
   }
  },
  "closed": [
@@ -224,9 +235,29 @@
    "net": 391.01,
    "r": 0.783,
    "mode": "live"
+  },
+  {
+   "strategy": "trap90",
+   "symbol": "CIPLA",
+   "side": 1,
+   "qty": 23,
+   "entry": 1412.8,
+   "stop": 1391.6,
+   "target": 1414.9,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop",
+   "date": "2026-11-09",
+   "exit": 1414.9,
+   "exit_time": "10:20",
+   "reason": "target",
+   "gross": 35.29,
+   "charges": 34.49,
+   "net": 0.8,
+   "r": 0.002,
+   "mode": "live"
   }
  ],
- "today_net": 822.0,
+ "today_net": 823.0,
  "log": [
   "09:30  OPEN  APOLLOHOSP  BUY      3 @ 8521.00  stop 8393.15  target 8533.80  [trap90: tiny target, wide stop]",
   "09:30  OPEN  BSE         BUY      8 @ 3797.60  stop 3740.60  target 3803.30  [trap90: tiny target, wide stop]",
@@ -277,12 +308,43 @@
   "10:05  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day",
   "10:05  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day",
   "10:10  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day",
-  "10:10  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day"
+  "10:10  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day",
+  "10:15  SKIP  GRASIM      learner   via orb30_2r (expects +0.13R): max 3 trades a day",
+  "10:15  SKIP  GRASIM      orb30_2r  ORB30 down: max 3 trades a day",
+  "10:15  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day",
+  "10:15  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day",
+  "10:15  SKIP  INFY        orb15     ORB15 down: max 3 trades a day",
+  "10:15  SKIP  INFY        learner   via orb30_2r (expects +0.17R): max 3 trades a day",
+  "10:15  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day",
+  "10:20  CLOSE CIPLA       target     @ 1414.90  net Rs +1 [trap90] (charges 34)",
+  "10:20  OPEN  HINDALCO    BUY     35 @ 946.15  stop 932.25  target 960.05  [orb60: ORB60 up]",
+  "10:20  OPEN  TATACONSUM  BUY     65 @ 1090.90  stop 1083.25  target 1098.50  [orb60: ORB60 up]"
  ],
- "all_trades": 49,
- "all_wins": 35,
- "all_net": 4279.0,
+ "all_trades": 50,
+ "all_wins": 36,
+ "all_net": 4280.0,
  "recent": [
+  {
+   "date": "2026-11-09",
+   "symbol": "CIPLA",
+   "strategy": "trap90",
+   "side": "1",
+   "qty": "23",
+   "entry_time": "09:30",
+   "entry": "1412.8",
+   "stop": "1391.6",
+   "target": "1414.9",
+   "exit_time": "10:20",
+   "exit": "1414.9",
+   "reason": "target",
+   "gross": "35.29",
+   "charges": "34.49",
+   "net": "0.8",
+   "r": "0.002",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-09",
    "symbol": "AXISBANK",
@@ -786,33 +848,12 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-06",
-   "symbol": "BHARTIARTL",
-   "strategy": "gap_fade",
-   "side": "-1",
-   "qty": "47",
-   "entry_time": "09:30",
-   "entry": "2093.8",
-   "stop": "2101.7",
-   "target": "2056.9",
-   "exit_time": "09:40",
-   "exit": "2101.7",
-   "reason": "stop",
-   "gross": "-410.74",
-   "charges": "81.9",
-   "net": "-492.64",
-   "r": "-1.327",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
   "2026-11-06": -292.0,
-  "2026-11-09": 822.0
+  "2026-11-09": 823.0
  },
  "by_strategy": {
   "orb15": {
@@ -837,7 +878,7 @@
    "desc": "first-hour range breakout, stop at mid, 1R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 2,
    "all_trades": 6,
    "all_wins": 5,
    "all_net": 400
@@ -871,12 +912,12 @@
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
-   "today_trades": 2,
-   "today_net": 2,
-   "open": 1,
-   "all_trades": 8,
-   "all_wins": 8,
-   "all_net": 12
+   "today_trades": 3,
+   "today_net": 3,
+   "open": 0,
+   "all_trades": 9,
+   "all_wins": 9,
+   "all_net": 13
   },
   "learner": {
    "desc": "takes only the signals last night's model expects to profit",

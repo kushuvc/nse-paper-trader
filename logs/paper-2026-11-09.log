@@ -51,3 +51,13 @@ Learner: model from 61 days of history
 10:05  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day
 10:10  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day
 10:10  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day
+10:15  SKIP  GRASIM      learner   via orb30_2r (expects +0.13R): max 3 trades a day
+10:15  SKIP  GRASIM      orb30_2r  ORB30 down: max 3 trades a day
+10:15  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day
+10:15  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day
+10:15  SKIP  INFY        orb15     ORB15 down: max 3 trades a day
+10:15  SKIP  INFY        learner   via orb30_2r (expects +0.17R): max 3 trades a day
+10:15  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day
+10:20  CLOSE CIPLA       target     @ 1414.90  net Rs +1 [trap90] (charges 34)
+10:20  OPEN  HINDALCO    BUY     35 @ 946.15  stop 932.25  target 960.05  [orb60: ORB60 up]
+10:20  OPEN  TATACONSUM  BUY     65 @ 1090.90  stop 1083.25  target 1098.50  [orb60: ORB60 up]
