@@ -267,3 +267,14 @@ Learner: model from 61 days of history
 15:15  CLOSE SBILIFE     square-off @ 1732.20  net Rs +2 [learner] (charges 24)
 15:15  CLOSE SBILIFE     square-off @ 1732.20  net Rs +2 [orb30_2r] (charges 24)
 15:15  CLOSE SBIN        square-off @ 1042.05  net Rs -117 [orb30_2r] (charges 24)
+15:20  SKIP  ASIANPAINT  vwap      VWAP loss: past square-off
+15:20  SKIP  DRREDDY     vwap      VWAP reclaim: past square-off
+2026-11-09: 21 closed (12 won), 0 still open, net Rs -98 after charges
+  orb15     3 trades, net Rs +157
+  orb30_2r  3 trades, net Rs -235
+  orb60     3 trades, net Rs -748
+  gap_go    3 trades, net Rs +749
+  gap_fade  0 trades, net Rs +0
+  vwap      3 trades, net Rs +104
+  trap90    3 trades, net Rs +3
+  learner   3 trades, net Rs -128
