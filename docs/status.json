@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 13:26 IST",
- "updated_ts": 1794210974,
+ "updated": "2026-11-09 13:36 IST",
+ "updated_ts": 1794211575,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -384,8 +384,6 @@
  ],
  "today_net": 128.0,
  "log": [
-  "11:40  CLOSE TCS         stop       @ 2478.85  net Rs -472 [vwap] (charges 82)",
-  "11:45  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day",
   "11:45  CLOSE HINDALCO    target     @ 960.05  net Rs +438 [orb60] (charges 35)",
   "11:45  SKIP  TMPV        orb15     ORB15 up: max 3 trades a day",
   "11:45  SKIP  TMPV        orb30_2r  ORB30 up: max 3 trades a day",
@@ -443,7 +441,9 @@
   "13:25  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day",
   "13:25  SKIP  SBILIFE     learner   via orb60 (expects +0.17R): already holding this stock",
   "13:25  SKIP  SBILIFE     orb60     ORB60 down: max 3 trades a day",
-  "13:25  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day"
+  "13:25  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day",
+  "13:30  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day",
+  "13:30  SKIP  INDIGO      orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 59,
  "all_wins": 40,
