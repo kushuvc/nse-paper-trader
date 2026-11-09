@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-09 17:32 IST",
- "updated_ts": 1794225736,
+ "updated_ts": 1794225765,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -446,8 +446,6 @@
  ],
  "today_net": -98.0,
  "log": [
-  "12:45  SKIP  BHARTIARTL  learner   via orb30_2r (expects +0.10R): max 3 trades a day",
-  "12:45  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day",
   "12:45  SKIP  BHARTIARTL  learner   via orb60 (expects +0.15R): max 3 trades a day",
   "12:45  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day",
   "12:45  SKIP  TCS         orb15     ORB15 down: max 3 trades a day",
@@ -505,7 +503,9 @@
   "15:15  CLOSE SBILIFE     square-off @ 1732.20  net Rs +2 [orb30_2r] (charges 24)",
   "15:15  CLOSE SBIN        square-off @ 1042.05  net Rs -117 [orb30_2r] (charges 24)",
   "15:20  SKIP  ASIANPAINT  vwap      VWAP loss: past square-off",
-  "15:20  SKIP  DRREDDY     vwap      VWAP reclaim: past square-off"
+  "15:20  SKIP  DRREDDY     vwap      VWAP reclaim: past square-off",
+  "17:32  SKIP  APOLLOHOSP  vwap      VWAP reclaim: past square-off",
+  "17:32  SKIP  HDFCLIFE    vwap      VWAP reclaim: past square-off"
  ],
  "all_trades": 66,
  "all_wins": 43,
