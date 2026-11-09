@@ -208,3 +208,12 @@ Learner: model from 61 days of history
 12:05  SKIP  POWERGRID   orb60     ORB60 down: max 3 trades a day
 12:05  SKIP  RELIANCE    vwap      VWAP loss: max 3 trades a day
 12:05  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day
+2026-11-09: 12 closed (7 won), 9 still open, net Rs -1142 after charges
+  orb15     2 trades, net Rs -228
+  orb30_2r  0 trades, net Rs +0
+  orb60     3 trades, net Rs -748
+  gap_go    2 trades, net Rs -137
+  gap_fade  0 trades, net Rs +0
+  vwap      2 trades, net Rs -33
+  trap90    3 trades, net Rs +3
+  learner   0 trades, net Rs +0
