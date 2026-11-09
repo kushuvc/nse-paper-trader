@@ -209,3 +209,11 @@ Learner: model from 61 days of history
 12:25  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day
 12:35  SKIP  AXISBANK    vwap      VWAP loss: max 3 trades a day
 12:35  CLOSE BAJAJFINSV  target     @ 1826.85  net Rs +384 [orb15] (charges 74)
+12:45  SKIP  BHARTIARTL  learner   via orb30_2r (expects +0.10R): max 3 trades a day
+12:45  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day
+12:45  SKIP  BHARTIARTL  learner   via orb60 (expects +0.15R): max 3 trades a day
+12:45  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day
+12:45  SKIP  TCS         orb15     ORB15 down: max 3 trades a day
+12:45  SKIP  TCS         learner   via orb30_2r (expects +0.10R): max 3 trades a day
+12:45  SKIP  TCS         orb30_2r  ORB30 down: max 3 trades a day
+12:45  SKIP  TCS         orb60     ORB60 down: max 3 trades a day

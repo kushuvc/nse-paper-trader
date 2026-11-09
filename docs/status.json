@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 12:36 IST",
- "updated_ts": 1794207967,
+ "updated": "2026-11-09 12:46 IST",
+ "updated_ts": 1794208568,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -384,14 +384,6 @@
  ],
  "today_net": 128.0,
  "log": [
-  "11:10  SKIP  BEL         orb60     ORB60 down: max 3 trades a day",
-  "11:15  CLOSE APOLLOHOSP  stop       @ 8504.75  net Rs -588 [orb60] (charges 80)",
-  "11:15  SKIP  MARUTI      orb15     ORB15 up: max 3 trades a day",
-  "11:15  SKIP  MARUTI      orb30_2r  ORB30 up: max 3 trades a day",
-  "11:15  SKIP  MARUTI      orb60     ORB60 up: max 3 trades a day",
-  "11:20  CLOSE COALINDIA   stop       @ 401.60  net Rs -619 [orb15] (charges 81)",
-  "11:20  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day",
-  "11:20  SKIP  TRENT       orb60     ORB60 up: max 3 trades a day",
   "11:25  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
   "11:25  SKIP  NESTLEIND   orb30_2r  ORB30 up: max 3 trades a day",
   "11:25  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day",
@@ -443,7 +435,15 @@
   "12:20  SKIP  SBILIFE     vwap      VWAP loss: max 3 trades a day",
   "12:25  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day",
   "12:35  SKIP  AXISBANK    vwap      VWAP loss: max 3 trades a day",
-  "12:35  CLOSE BAJAJFINSV  target     @ 1826.85  net Rs +384 [orb15] (charges 74)"
+  "12:35  CLOSE BAJAJFINSV  target     @ 1826.85  net Rs +384 [orb15] (charges 74)",
+  "12:45  SKIP  BHARTIARTL  learner   via orb30_2r (expects +0.10R): max 3 trades a day",
+  "12:45  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day",
+  "12:45  SKIP  BHARTIARTL  learner   via orb60 (expects +0.15R): max 3 trades a day",
+  "12:45  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day",
+  "12:45  SKIP  TCS         orb15     ORB15 down: max 3 trades a day",
+  "12:45  SKIP  TCS         learner   via orb30_2r (expects +0.10R): max 3 trades a day",
+  "12:45  SKIP  TCS         orb30_2r  ORB30 down: max 3 trades a day",
+  "12:45  SKIP  TCS         orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 59,
  "all_wins": 40,
