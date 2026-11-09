@@ -46,3 +46,8 @@ Learner: model from 61 days of history
 09:55  SKIP  INDIGO      orb30_2r  ORB30 up: max 3 trades a day
 10:00  SKIP  NTPC        orb15     ORB15 up: max 3 trades a day
 10:00  SKIP  NTPC        orb30_2r  ORB30 up: max 3 trades a day
+10:05  CLOSE AXISBANK    target     @ 1299.95  net Rs +391 [orb15] (charges 76)
+10:05  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day
+10:05  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day
+10:10  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day
+10:10  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day

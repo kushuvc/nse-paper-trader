@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 10:00 IST",
- "updated_ts": 1794198655,
+ "updated": "2026-11-09 10:10 IST",
+ "updated_ts": 1794199257,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -45,17 +45,6 @@
    "target": 1965.7,
    "entry_time": "09:30",
    "note": "gap +3.0% and go"
-  },
-  "orb15|AXISBANK": {
-   "strategy": "orb15",
-   "symbol": "AXISBANK",
-   "side": -1,
-   "qty": 62,
-   "entry": 1308.0,
-   "stop": 1316.05,
-   "target": 1299.95,
-   "entry_time": "09:35",
-   "note": "ORB15 down"
   },
   "orb15|BAJAJFINSV": {
    "strategy": "orb15",
@@ -215,9 +204,29 @@
    "net": 1.04,
    "r": 0.003,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "AXISBANK",
+   "side": -1,
+   "qty": 62,
+   "entry": 1308.0,
+   "stop": 1316.05,
+   "target": 1299.95,
+   "entry_time": "09:35",
+   "note": "ORB15 down",
+   "date": "2026-11-09",
+   "exit": 1299.95,
+   "exit_time": "10:05",
+   "reason": "target",
+   "gross": 466.76,
+   "charges": 75.75,
+   "net": 391.01,
+   "r": 0.783,
+   "mode": "live"
   }
  ],
- "today_net": 431.0,
+ "today_net": 822.0,
  "log": [
   "09:30  OPEN  APOLLOHOSP  BUY      3 @ 8521.00  stop 8393.15  target 8533.80  [trap90: tiny target, wide stop]",
   "09:30  OPEN  BSE         BUY      8 @ 3797.60  stop 3740.60  target 3803.30  [trap90: tiny target, wide stop]",
@@ -263,12 +272,38 @@
   "09:55  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day",
   "09:55  SKIP  INDIGO      orb30_2r  ORB30 up: max 3 trades a day",
   "10:00  SKIP  NTPC        orb15     ORB15 up: max 3 trades a day",
-  "10:00  SKIP  NTPC        orb30_2r  ORB30 up: max 3 trades a day"
+  "10:00  SKIP  NTPC        orb30_2r  ORB30 up: max 3 trades a day",
+  "10:05  CLOSE AXISBANK    target     @ 1299.95  net Rs +391 [orb15] (charges 76)",
+  "10:05  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day",
+  "10:05  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day",
+  "10:10  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day",
+  "10:10  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day"
  ],
- "all_trades": 48,
- "all_wins": 34,
- "all_net": 3888.0,
+ "all_trades": 49,
+ "all_wins": 35,
+ "all_net": 4279.0,
  "recent": [
+  {
+   "date": "2026-11-09",
+   "symbol": "AXISBANK",
+   "strategy": "orb15",
+   "side": "-1",
+   "qty": "62",
+   "entry_time": "09:35",
+   "entry": "1308.0",
+   "stop": "1316.05",
+   "target": "1299.95",
+   "exit_time": "10:05",
+   "exit": "1299.95",
+   "reason": "target",
+   "gross": "466.76",
+   "charges": "75.75",
+   "net": "391.01",
+   "r": "0.783",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-09",
    "symbol": "APOLLOHOSP",
@@ -772,43 +807,22 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-06",
-   "symbol": "ADANIPORTS",
-   "strategy": "trap90",
-   "side": "1",
-   "qty": "17",
-   "entry_time": "09:30",
-   "entry": "1902.8",
-   "stop": "1874.25",
-   "target": "1905.65",
-   "exit_time": "09:40",
-   "exit": "1905.65",
-   "reason": "target",
-   "gross": "35.5",
-   "charges": "34.33",
-   "net": "1.17",
-   "r": "0.002",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
   "2026-11-06": -292.0,
-  "2026-11-09": 431.0
+  "2026-11-09": 822.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 6,
-   "all_wins": 4,
-   "all_net": 540
+   "today_trades": 1,
+   "today_net": 391,
+   "open": 2,
+   "all_trades": 7,
+   "all_wins": 5,
+   "all_net": 931
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
