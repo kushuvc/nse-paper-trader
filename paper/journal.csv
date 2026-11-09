@@ -44,3 +44,6 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-06,BAJAJ-AUTO,learner,1,1,09:50,10875.0,10618.0,11389.0,15:15,10910.0,square-off,30.64,11.55,19.09,0.074,live,orb30_2r,"long, before 10:30, with market, against gap, wide stop"
 2026-11-06,BAJAJ-AUTO,orb30_2r,1,1,09:50,10875.0,10618.0,11389.0,15:15,10910.0,square-off,30.64,11.55,19.09,0.074,live,,
 2026-11-06,COALINDIA,orb60,1,166,10:20,397.65,394.65,400.6,15:15,398.8,square-off,164.46,70.12,94.34,0.189,live,,
+2026-11-09,BSE,trap90,1,8,09:30,3797.6,3740.6,3803.3,09:35,3803.3,target,33.44,32.25,1.19,0.003,live,,
+2026-11-09,HINDALCO,gap_go,-1,106,09:30,941.4,944.0,936.2,09:35,936.2,target,511.39,82.33,429.06,1.557,live,,
+2026-11-09,APOLLOHOSP,trap90,1,3,09:30,8521.0,8393.15,8533.8,09:40,8533.8,target,28.17,27.13,1.04,0.003,live,,

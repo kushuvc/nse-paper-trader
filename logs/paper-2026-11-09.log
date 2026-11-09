@@ -12,3 +12,24 @@ Learner: model from 61 days of history
 09:30  OPEN  SUNPHARMA   BUY     24 @ 1924.10  stop 1903.30  target 1965.70  [gap_go: gap +3.0% and go]
 09:30  SKIP  SUNPHARMA   trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  TECHM       trap90    tiny target, wide stop: max 3 trades a day
+09:35  OPEN  AXISBANK    SHORT   62 @ 1308.00  stop 1316.05  target 1299.95  [orb15: ORB15 down]
+09:35  CLOSE BSE         target     @ 3803.30  net Rs +1 [trap90] (charges 32)
+09:35  OPEN  BAJAJFINSV  SHORT   42 @ 1838.50  stop 1850.20  target 1826.85  [orb15: ORB15 down]
+09:35  OPEN  COALINDIA   SHORT  243 @ 399.55  stop 401.60  target 397.55  [orb15: ORB15 down]
+09:35  SKIP  DRREDDY     orb15     ORB15 up: max 3 trades a day
+09:35  CLOSE HINDALCO    target     @ 936.20  net Rs +429 [gap_go] (charges 82)
+09:35  SKIP  JIOFIN      orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  MAXHEALTH   orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  SBILIFE     orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  SBIN        orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  ULTRACEMCO  orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  ADANIENT    orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  ADANIPORTS  orb15     ORB15 down: max 3 trades a day
+09:40  CLOSE APOLLOHOSP  target     @ 8533.80  net Rs +1 [trap90] (charges 27)
+09:40  SKIP  CIPLA       orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  GRASIM      orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  JSWSTEEL    orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  RELIANCE    orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  TRENT       orb15     ORB15 down: max 3 trades a day
