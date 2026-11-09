@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 11:51 IST",
- "updated_ts": 1794205273,
+ "updated": "2026-11-09 12:01 IST",
+ "updated_ts": 1794205875,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -366,12 +366,6 @@
  ],
  "today_net": -1142.0,
  "log": [
-  "10:45  SKIP  JIOFIN      orb30_2r  ORB30 down: max 3 trades a day",
-  "10:45  SKIP  JIOFIN      orb60     ORB60 down: max 3 trades a day",
-  "10:45  SKIP  KOTAKBANK   learner   via orb30_2r (expects +0.06R): max 3 trades a day",
-  "10:45  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day",
-  "10:45  SKIP  KOTAKBANK   orb60     ORB60 down: max 3 trades a day",
-  "10:45  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day",
   "10:45  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day",
   "10:45  SKIP  RELIANCE    learner   via orb30_2r (expects +0.06R): max 3 trades a day",
   "10:45  SKIP  RELIANCE    orb30_2r  ORB30 down: max 3 trades a day",
@@ -425,7 +419,13 @@
   "11:50  SKIP  LT          orb15     ORB15 up: max 3 trades a day",
   "11:50  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day",
   "11:50  SKIP  LT          orb60     ORB60 up: max 3 trades a day",
-  "11:50  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day"
+  "11:50  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day",
+  "11:55  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day",
+  "12:00  SKIP  BSE         vwap      VWAP loss: max 3 trades a day",
+  "12:00  SKIP  BAJAJFINSV  vwap      VWAP loss: max 3 trades a day",
+  "12:00  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day",
+  "12:00  SKIP  ICICIBANK   vwap      VWAP loss: max 3 trades a day",
+  "12:00  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 57,
  "all_wins": 38,
