@@ -198,3 +198,12 @@ Learner: model from 61 days of history
 12:00  SKIP  ICICIBANK   vwap      VWAP loss: max 3 trades a day
 12:00  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day
 Shift until 15:20 IST (started 12:16)
+PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
+Learner: model from 61 days of history
+12:20  SKIP  BAJFINANCE  learner   via orb60 (expects +0.09R): already holding this stock
+12:20  SKIP  BAJFINANCE  orb60     ORB60 down: max 3 trades a day
+12:20  SKIP  HDFCLIFE    vwap      VWAP loss: max 3 trades a day
+12:20  CLOSE INFY        target     @ 1145.40  net Rs +886 [gap_go] (charges 75)
+12:20  SKIP  JIOFIN      vwap      VWAP loss: max 3 trades a day
+12:20  SKIP  SBILIFE     vwap      VWAP loss: max 3 trades a day
+12:25  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day

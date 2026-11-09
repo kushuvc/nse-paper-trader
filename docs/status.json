@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 12:16 IST",
- "updated_ts": 1794206764,
+ "updated": "2026-11-09 12:26 IST",
+ "updated_ts": 1794207366,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -13,17 +13,6 @@
  ],
  "date": "2026-11-09",
  "open": {
-  "gap_go|INFY": {
-   "strategy": "gap_go",
-   "symbol": "INFY",
-   "side": -1,
-   "qty": 69,
-   "entry": 1159.8,
-   "stop": 1167.0,
-   "target": 1145.4,
-   "entry_time": "09:30",
-   "note": "gap -1.2% and go"
-  },
   "orb15|BAJAJFINSV": {
    "strategy": "orb15",
    "symbol": "BAJAJFINSV",
@@ -362,17 +351,30 @@
    "net": 437.73,
    "r": 0.9,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_go",
+   "symbol": "INFY",
+   "side": -1,
+   "qty": 69,
+   "entry": 1159.8,
+   "stop": 1167.0,
+   "target": 1145.4,
+   "entry_time": "09:30",
+   "note": "gap -1.2% and go",
+   "date": "2026-11-09",
+   "exit": 1145.4,
+   "exit_time": "12:20",
+   "reason": "target",
+   "gross": 961.79,
+   "charges": 75.34,
+   "net": 886.45,
+   "r": 1.784,
+   "mode": "live"
   }
  ],
- "today_net": -1142.0,
+ "today_net": -256.0,
  "log": [
-  "11:00  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day",
-  "11:00  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day",
-  "11:05  SKIP  ETERNAL     orb15     ORB15 down: max 3 trades a day",
-  "11:05  SKIP  ETERNAL     learner   via orb30_2r (expects +0.14R): max 3 trades a day",
-  "11:05  SKIP  ETERNAL     orb30_2r  ORB30 down: max 3 trades a day",
-  "11:05  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day",
-  "11:05  CLOSE TECHM       target     @ 1805.30  net Rs +439 [vwap] (charges 82)",
   "11:10  SKIP  BEL         learner   via orb30_2r (expects +0.14R): max 3 trades a day",
   "11:10  SKIP  BEL         orb30_2r  ORB30 down: max 3 trades a day",
   "11:10  SKIP  BEL         orb60     ORB60 down: max 3 trades a day",
@@ -425,12 +427,40 @@
   "12:05  SKIP  POWERGRID   orb30_2r  ORB30 down: max 3 trades a day",
   "12:05  SKIP  POWERGRID   orb60     ORB60 down: max 3 trades a day",
   "12:05  SKIP  RELIANCE    vwap      VWAP loss: max 3 trades a day",
-  "12:05  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day"
+  "12:05  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day",
+  "12:20  SKIP  BAJFINANCE  learner   via orb60 (expects +0.09R): already holding this stock",
+  "12:20  SKIP  BAJFINANCE  orb60     ORB60 down: max 3 trades a day",
+  "12:20  SKIP  HDFCLIFE    vwap      VWAP loss: max 3 trades a day",
+  "12:20  CLOSE INFY        target     @ 1145.40  net Rs +886 [gap_go] (charges 75)",
+  "12:20  SKIP  JIOFIN      vwap      VWAP loss: max 3 trades a day",
+  "12:20  SKIP  SBILIFE     vwap      VWAP loss: max 3 trades a day",
+  "12:25  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day"
  ],
- "all_trades": 57,
- "all_wins": 38,
- "all_net": 2315.0,
+ "all_trades": 58,
+ "all_wins": 39,
+ "all_net": 3201.0,
  "recent": [
+  {
+   "date": "2026-11-09",
+   "symbol": "INFY",
+   "strategy": "gap_go",
+   "side": "-1",
+   "qty": "69",
+   "entry_time": "09:30",
+   "entry": "1159.8",
+   "stop": "1167.0",
+   "target": "1145.4",
+   "exit_time": "12:20",
+   "exit": "1145.4",
+   "reason": "target",
+   "gross": "961.79",
+   "charges": "75.34",
+   "net": "886.45",
+   "r": "1.784",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-09",
    "symbol": "HINDALCO",
@@ -934,33 +964,12 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-06",
-   "symbol": "HCLTECH",
-   "strategy": "vwap",
-   "side": "1",
-   "qty": "68",
-   "entry_time": "10:30",
-   "entry": "1455.8",
-   "stop": "1450.05",
-   "target": "1467.2",
-   "exit_time": "10:55",
-   "exit": "1450.05",
-   "reason": "stop",
-   "gross": "-430.52",
-   "charges": "81.97",
-   "net": "-512.49",
-   "r": "-1.311",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
   "2026-11-06": -292.0,
-  "2026-11-09": -1143.0
+  "2026-11-09": -257.0
  },
  "by_strategy": {
   "orb15": {
@@ -992,12 +1001,12 @@
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
-   "today_trades": 2,
-   "today_net": -137,
-   "open": 1,
-   "all_trades": 8,
-   "all_wins": 3,
-   "all_net": -1330
+   "today_trades": 3,
+   "today_net": 749,
+   "open": 0,
+   "all_trades": 9,
+   "all_wins": 4,
+   "all_net": -444
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
