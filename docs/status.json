@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 14:56 IST",
- "updated_ts": 1794216387,
+ "updated": "2026-11-09 15:06 IST",
+ "updated_ts": 1794216989,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -384,11 +384,6 @@
  ],
  "today_net": 128.0,
  "log": [
-  "12:05  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day",
-  "12:05  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
-  "12:05  SKIP  POWERGRID   orb15     ORB15 down: max 3 trades a day",
-  "12:05  SKIP  POWERGRID   learner   via orb30_2r (expects +0.06R): max 3 trades a day",
-  "12:05  SKIP  POWERGRID   orb30_2r  ORB30 down: max 3 trades a day",
   "12:05  SKIP  POWERGRID   orb60     ORB60 down: max 3 trades a day",
   "12:05  SKIP  RELIANCE    vwap      VWAP loss: max 3 trades a day",
   "12:05  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day",
@@ -443,7 +438,12 @@
   "14:45  SKIP  ONGC        vwap      VWAP loss: after 14:30",
   "14:55  SKIP  KOTAKBANK   vwap      VWAP loss: after 14:30",
   "14:55  SKIP  POWERGRID   vwap      VWAP loss: after 14:30",
-  "14:55  SKIP  TATACONSUM  vwap      VWAP loss: after 14:30"
+  "14:55  SKIP  TATACONSUM  vwap      VWAP loss: after 14:30",
+  "15:00  SKIP  BSE         vwap      VWAP loss: after 14:30",
+  "15:00  SKIP  BEL         vwap      VWAP loss: after 14:30",
+  "15:00  SKIP  ETERNAL     vwap      VWAP loss: after 14:30",
+  "15:00  SKIP  SHRIRAMFIN  vwap      VWAP loss: after 14:30",
+  "15:05  SKIP  INFY        vwap      VWAP loss: after 14:30"
  ],
  "all_trades": 59,
  "all_wins": 40,
