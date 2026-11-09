@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 14:36 IST",
- "updated_ts": 1794215184,
+ "updated": "2026-11-09 14:46 IST",
+ "updated_ts": 1794215786,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -384,11 +384,6 @@
  ],
  "today_net": 128.0,
  "log": [
-  "12:00  SKIP  BSE         vwap      VWAP loss: max 3 trades a day",
-  "12:00  SKIP  BAJAJFINSV  vwap      VWAP loss: max 3 trades a day",
-  "12:00  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day",
-  "12:00  SKIP  ICICIBANK   vwap      VWAP loss: max 3 trades a day",
-  "12:00  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day",
   "12:05  SKIP  HINDUNILVR  orb15     ORB15 down: max 3 trades a day",
   "12:05  SKIP  HINDUNILVR  orb30_2r  ORB30 down: max 3 trades a day",
   "12:05  SKIP  HINDUNILVR  orb60     ORB60 down: max 3 trades a day",
@@ -443,7 +438,12 @@
   "14:20  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day",
   "14:20  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day",
   "14:20  SKIP  ICICIBANK   orb60     ORB60 up: max 3 trades a day",
-  "14:35  SKIP  AXISBANK    vwap      VWAP loss: after 14:30"
+  "14:35  SKIP  AXISBANK    vwap      VWAP loss: after 14:30",
+  "14:40  SKIP  COALINDIA   vwap      VWAP loss: after 14:30",
+  "14:40  SKIP  EICHERMOT   vwap      VWAP loss: after 14:30",
+  "14:40  SKIP  GRASIM      vwap      VWAP loss: after 14:30",
+  "14:40  SKIP  HDFCLIFE    vwap      VWAP loss: after 14:30",
+  "14:45  SKIP  ONGC        vwap      VWAP loss: after 14:30"
  ],
  "all_trades": 59,
  "all_wins": 40,
