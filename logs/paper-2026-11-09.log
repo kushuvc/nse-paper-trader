@@ -239,3 +239,7 @@ Learner: model from 61 days of history
 14:05  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day
 14:10  SKIP  ITC         vwap      VWAP loss: max 3 trades a day
 14:15  SKIP  HDFCLIFE    vwap      VWAP reclaim: max 3 trades a day
+14:20  SKIP  DRREDDY     vwap      VWAP reclaim: max 3 trades a day
+14:20  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day
+14:20  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day
+14:20  SKIP  ICICIBANK   orb60     ORB60 up: max 3 trades a day
