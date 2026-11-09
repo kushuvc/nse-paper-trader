@@ -33,3 +33,8 @@ Learner: model from 61 days of history
 09:40  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day
 09:40  SKIP  RELIANCE    orb15     ORB15 down: max 3 trades a day
 09:40  SKIP  TRENT       orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  BAJFINANCE  orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day
+09:50  OPEN  SBILIFE     SHORT   13 @ 1734.90  stop 1771.70  target 1661.30  [learner via orb30_2r, expects +0.17R: short, before 10:30, with market, with gap, wide stop]
+09:50  OPEN  SBILIFE     SHORT   13 @ 1734.90  stop 1771.70  target 1661.30  [orb30_2r: ORB30 down]
+09:50  OPEN  SBIN        BUY     22 @ 1045.85  stop 1023.45  target 1090.65  [orb30_2r: ORB30 up]
