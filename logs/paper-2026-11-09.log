@@ -38,3 +38,11 @@ Learner: model from 61 days of history
 09:50  OPEN  SBILIFE     SHORT   13 @ 1734.90  stop 1771.70  target 1661.30  [learner via orb30_2r, expects +0.17R: short, before 10:30, with market, with gap, wide stop]
 09:50  OPEN  SBILIFE     SHORT   13 @ 1734.90  stop 1771.70  target 1661.30  [orb30_2r: ORB30 down]
 09:50  OPEN  SBIN        BUY     22 @ 1045.85  stop 1023.45  target 1090.65  [orb30_2r: ORB30 up]
+09:55  OPEN  AXISBANK    SHORT   25 @ 1304.10  stop 1324.00  target 1264.30  [learner via orb30_2r, expects +0.17R: short, before 10:30, with market, with gap, wide stop]
+09:55  OPEN  AXISBANK    SHORT   25 @ 1304.10  stop 1324.00  target 1264.30  [orb30_2r: ORB30 down]
+09:55  OPEN  BAJFINANCE  SHORT   25 @ 1068.15  stop 1087.70  target 1029.05  [learner via orb30_2r, expects +0.13R: short, before 10:30, with market, no gap, wide stop]
+09:55  SKIP  BAJFINANCE  orb30_2r  ORB30 down: max 3 trades a day
+09:55  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  INDIGO      orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  NTPC        orb15     ORB15 up: max 3 trades a day
+10:00  SKIP  NTPC        orb30_2r  ORB30 up: max 3 trades a day
