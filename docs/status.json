@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 10:51 IST",
- "updated_ts": 1794201664,
+ "updated": "2026-11-09 11:01 IST",
+ "updated_ts": 1794202265,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -140,17 +140,6 @@
    "entry": 946.15,
    "stop": 932.25,
    "target": 960.05,
-   "entry_time": "10:20",
-   "note": "ORB60 up"
-  },
-  "orb60|TATACONSUM": {
-   "strategy": "orb60",
-   "symbol": "TATACONSUM",
-   "side": 1,
-   "qty": 65,
-   "entry": 1090.9,
-   "stop": 1083.25,
-   "target": 1098.5,
    "entry_time": "10:20",
    "note": "ORB60 up"
   },
@@ -299,13 +288,30 @@
    "net": 0.8,
    "r": 0.002,
    "mode": "live"
+  },
+  {
+   "strategy": "orb60",
+   "symbol": "TATACONSUM",
+   "side": 1,
+   "qty": 65,
+   "entry": 1090.9,
+   "stop": 1083.25,
+   "target": 1098.5,
+   "entry_time": "10:20",
+   "note": "ORB60 up",
+   "date": "2026-11-09",
+   "exit": 1083.25,
+   "exit_time": "10:55",
+   "reason": "stop",
+   "gross": -525.51,
+   "charges": 72.05,
+   "net": -597.56,
+   "r": -1.202,
+   "mode": "live"
   }
  ],
- "today_net": 823.0,
+ "today_net": 226.0,
  "log": [
-  "10:40  SKIP  BEL         vwap      VWAP loss: max 3 trades a day",
-  "10:40  SKIP  EICHERMOT   orb60     ORB60 down: max 3 trades a day",
-  "10:40  SKIP  HDFCBANK    orb15     ORB15 down: max 3 trades a day",
   "10:40  SKIP  HDFCBANK    learner   via orb30_2r (expects +0.14R): max 3 trades a day",
   "10:40  SKIP  HDFCBANK    orb30_2r  ORB30 down: max 3 trades a day",
   "10:40  SKIP  HDFCBANK    orb60     ORB60 down: max 3 trades a day",
@@ -362,12 +368,36 @@
   "10:45  SKIP  ULTRACEMCO  learner   via orb30_2r (expects +0.06R): max 3 trades a day",
   "10:45  SKIP  ULTRACEMCO  orb30_2r  ORB30 down: max 3 trades a day",
   "10:45  SKIP  ULTRACEMCO  learner   via orb60 (expects +0.09R): max 3 trades a day",
-  "10:45  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day"
+  "10:45  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day",
+  "10:55  CLOSE TATACONSUM  stop       @ 1083.25  net Rs -598 [orb60] (charges 72)",
+  "11:00  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day",
+  "11:00  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day"
  ],
- "all_trades": 50,
+ "all_trades": 51,
  "all_wins": 36,
- "all_net": 4280.0,
+ "all_net": 3682.0,
  "recent": [
+  {
+   "date": "2026-11-09",
+   "symbol": "TATACONSUM",
+   "strategy": "orb60",
+   "side": "1",
+   "qty": "65",
+   "entry_time": "10:20",
+   "entry": "1090.9",
+   "stop": "1083.25",
+   "target": "1098.5",
+   "exit_time": "10:55",
+   "exit": "1083.25",
+   "reason": "stop",
+   "gross": "-525.51",
+   "charges": "72.05",
+   "net": "-597.56",
+   "r": "-1.202",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-09",
    "symbol": "CIPLA",
@@ -871,33 +901,12 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-06",
-   "symbol": "DRREDDY",
-   "strategy": "orb15",
-   "side": "1",
-   "qty": "73",
-   "entry_time": "09:35",
-   "entry": "1366.8",
-   "stop": "1363.35",
-   "target": "1370.2",
-   "exit_time": "09:40",
-   "exit": "1370.2",
-   "reason": "target",
-   "gross": "208.24",
-   "charges": "82.43",
-   "net": "125.81",
-   "r": "0.5",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
   "2026-11-06": -292.0,
-  "2026-11-09": 823.0
+  "2026-11-09": 225.0
  },
  "by_strategy": {
   "orb15": {
@@ -920,12 +929,12 @@
   },
   "orb60": {
    "desc": "first-hour range breakout, stop at mid, 1R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 6,
+   "today_trades": 1,
+   "today_net": -598,
+   "open": 2,
+   "all_trades": 7,
    "all_wins": 5,
-   "all_net": 400
+   "all_net": -198
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
