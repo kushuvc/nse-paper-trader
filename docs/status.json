@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 09:20 IST",
- "updated_ts": 1794196249,
+ "updated": "2026-11-09 09:30 IST",
+ "updated_ts": 1794196851,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -12,10 +12,89 @@
   "trap90"
  ],
  "date": "2026-11-09",
- "open": {},
+ "open": {
+  "trap90|APOLLOHOSP": {
+   "strategy": "trap90",
+   "symbol": "APOLLOHOSP",
+   "side": 1,
+   "qty": 3,
+   "entry": 8521.0,
+   "stop": 8393.15,
+   "target": 8533.8,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop"
+  },
+  "trap90|BSE": {
+   "strategy": "trap90",
+   "symbol": "BSE",
+   "side": 1,
+   "qty": 8,
+   "entry": 3797.6,
+   "stop": 3740.6,
+   "target": 3803.3,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop"
+  },
+  "trap90|CIPLA": {
+   "strategy": "trap90",
+   "symbol": "CIPLA",
+   "side": 1,
+   "qty": 23,
+   "entry": 1412.8,
+   "stop": 1391.6,
+   "target": 1414.9,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop"
+  },
+  "gap_go|HINDALCO": {
+   "strategy": "gap_go",
+   "symbol": "HINDALCO",
+   "side": -1,
+   "qty": 106,
+   "entry": 941.4,
+   "stop": 944.0,
+   "target": 936.2,
+   "entry_time": "09:30",
+   "note": "gap -1.5% and go"
+  },
+  "gap_go|INFY": {
+   "strategy": "gap_go",
+   "symbol": "INFY",
+   "side": -1,
+   "qty": 69,
+   "entry": 1159.8,
+   "stop": 1167.0,
+   "target": 1145.4,
+   "entry_time": "09:30",
+   "note": "gap -1.2% and go"
+  },
+  "gap_go|SUNPHARMA": {
+   "strategy": "gap_go",
+   "symbol": "SUNPHARMA",
+   "side": 1,
+   "qty": 24,
+   "entry": 1924.1,
+   "stop": 1903.3,
+   "target": 1965.7,
+   "entry_time": "09:30",
+   "note": "gap +3.0% and go"
+  }
+ },
  "closed": [],
  "today_net": 0,
- "log": [],
+ "log": [
+  "09:30  OPEN  APOLLOHOSP  BUY      3 @ 8521.00  stop 8393.15  target 8533.80  [trap90: tiny target, wide stop]",
+  "09:30  OPEN  BSE         BUY      8 @ 3797.60  stop 3740.60  target 3803.30  [trap90: tiny target, wide stop]",
+  "09:30  OPEN  CIPLA       BUY     23 @ 1412.80  stop 1391.60  target 1414.90  [trap90: tiny target, wide stop]",
+  "09:30  SKIP  DRREDDY     trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  OPEN  HINDALCO    SHORT  106 @ 941.40  stop 944.00  target 936.20  [gap_go: gap -1.5% and go]",
+  "09:30  SKIP  ICICIBANK   trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  OPEN  INFY        SHORT   69 @ 1159.80  stop 1167.00  target 1145.40  [gap_go: gap -1.2% and go]",
+  "09:30  SKIP  SBIN        trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  OPEN  SUNPHARMA   BUY     24 @ 1924.10  stop 1903.30  target 1965.70  [gap_go: gap +3.0% and go]",
+  "09:30  SKIP  SUNPHARMA   trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  TECHM       trap90    tiny target, wide stop: max 3 trades a day"
+ ],
  "all_trades": 45,
  "all_wins": 31,
  "all_net": 3457.0,
@@ -582,7 +661,7 @@
    "desc": "gap >=1% that continues: join, 2R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 6,
    "all_wins": 2,
    "all_net": -1193
@@ -609,7 +688,7 @@
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 6,
    "all_wins": 6,
    "all_net": 10
