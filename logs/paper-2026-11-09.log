@@ -150,3 +150,11 @@ Learner: model from 61 days of history
 10:55  CLOSE TATACONSUM  stop       @ 1083.25  net Rs -598 [orb60] (charges 72)
 11:00  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day
 11:00  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day
+11:05  SKIP  ETERNAL     orb15     ORB15 down: max 3 trades a day
+11:05  SKIP  ETERNAL     learner   via orb30_2r (expects +0.14R): max 3 trades a day
+11:05  SKIP  ETERNAL     orb30_2r  ORB30 down: max 3 trades a day
+11:05  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day
+11:05  CLOSE TECHM       target     @ 1805.30  net Rs +439 [vwap] (charges 82)
+11:10  SKIP  BEL         learner   via orb30_2r (expects +0.14R): max 3 trades a day
+11:10  SKIP  BEL         orb30_2r  ORB30 down: max 3 trades a day
+11:10  SKIP  BEL         orb60     ORB60 down: max 3 trades a day

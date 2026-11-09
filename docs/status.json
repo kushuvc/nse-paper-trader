@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 11:01 IST",
- "updated_ts": 1794202265,
+ "updated": "2026-11-09 11:11 IST",
+ "updated_ts": 1794202867,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -175,17 +175,6 @@
    "target": 5392.3,
    "entry_time": "10:30",
    "note": "VWAP loss"
-  },
-  "vwap|TECHM": {
-   "strategy": "vwap",
-   "symbol": "TECHM",
-   "side": -1,
-   "qty": 55,
-   "entry": 1815.5,
-   "stop": 1820.6,
-   "target": 1805.3,
-   "entry_time": "10:35",
-   "note": "VWAP loss"
   }
  },
  "closed": [
@@ -308,18 +297,30 @@
    "net": -597.56,
    "r": -1.202,
    "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "TECHM",
+   "side": -1,
+   "qty": 55,
+   "entry": 1815.5,
+   "stop": 1820.6,
+   "target": 1805.3,
+   "entry_time": "10:35",
+   "note": "VWAP loss",
+   "date": "2026-11-09",
+   "exit": 1805.3,
+   "exit_time": "11:05",
+   "reason": "target",
+   "gross": 521.17,
+   "charges": 82.35,
+   "net": 438.82,
+   "r": 1.564,
+   "mode": "live"
   }
  ],
- "today_net": 226.0,
+ "today_net": 664.0,
  "log": [
-  "10:40  SKIP  HDFCBANK    learner   via orb30_2r (expects +0.14R): max 3 trades a day",
-  "10:40  SKIP  HDFCBANK    orb30_2r  ORB30 down: max 3 trades a day",
-  "10:40  SKIP  HDFCBANK    orb60     ORB60 down: max 3 trades a day",
-  "10:40  SKIP  HINDUNILVR  vwap      VWAP loss: max 3 trades a day",
-  "10:40  SKIP  ITC         orb15     ORB15 down: max 3 trades a day",
-  "10:40  SKIP  M&M         orb15     ORB15 down: max 3 trades a day",
-  "10:40  SKIP  M&M         learner   via orb30_2r (expects +0.06R): max 3 trades a day",
-  "10:40  SKIP  M&M         orb30_2r  ORB30 down: max 3 trades a day",
   "10:40  SKIP  M&M         orb60     ORB60 down: max 3 trades a day",
   "10:40  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day",
   "10:45  SKIP  ADANIENT    learner   via orb30_2r (expects +0.06R): max 3 trades a day",
@@ -371,12 +372,41 @@
   "10:45  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day",
   "10:55  CLOSE TATACONSUM  stop       @ 1083.25  net Rs -598 [orb60] (charges 72)",
   "11:00  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day",
-  "11:00  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day"
+  "11:00  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day",
+  "11:05  SKIP  ETERNAL     orb15     ORB15 down: max 3 trades a day",
+  "11:05  SKIP  ETERNAL     learner   via orb30_2r (expects +0.14R): max 3 trades a day",
+  "11:05  SKIP  ETERNAL     orb30_2r  ORB30 down: max 3 trades a day",
+  "11:05  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day",
+  "11:05  CLOSE TECHM       target     @ 1805.30  net Rs +439 [vwap] (charges 82)",
+  "11:10  SKIP  BEL         learner   via orb30_2r (expects +0.14R): max 3 trades a day",
+  "11:10  SKIP  BEL         orb30_2r  ORB30 down: max 3 trades a day",
+  "11:10  SKIP  BEL         orb60     ORB60 down: max 3 trades a day"
  ],
- "all_trades": 51,
- "all_wins": 36,
- "all_net": 3682.0,
+ "all_trades": 52,
+ "all_wins": 37,
+ "all_net": 4121.0,
  "recent": [
+  {
+   "date": "2026-11-09",
+   "symbol": "TECHM",
+   "strategy": "vwap",
+   "side": "-1",
+   "qty": "55",
+   "entry_time": "10:35",
+   "entry": "1815.5",
+   "stop": "1820.6",
+   "target": "1805.3",
+   "exit_time": "11:05",
+   "exit": "1805.3",
+   "reason": "target",
+   "gross": "521.17",
+   "charges": "82.35",
+   "net": "438.82",
+   "r": "1.564",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-09",
    "symbol": "TATACONSUM",
@@ -880,33 +910,12 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-06",
-   "symbol": "ASIANPAINT",
-   "strategy": "gap_go",
-   "side": "-1",
-   "qty": "15",
-   "entry_time": "09:30",
-   "entry": "2456.2",
-   "stop": "2487.5",
-   "target": "2393.6",
-   "exit_time": "09:50",
-   "exit": "2487.5",
-   "reason": "stop",
-   "gross": "-484.33",
-   "charges": "39.27",
-   "net": "-523.6",
-   "r": "-1.115",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
   "2026-11-06": -292.0,
-  "2026-11-09": 225.0
+  "2026-11-09": 664.0
  },
  "by_strategy": {
   "orb15": {
@@ -956,12 +965,12 @@
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 6,
-   "all_wins": 2,
-   "all_net": -1175
+   "today_trades": 1,
+   "today_net": 439,
+   "open": 2,
+   "all_trades": 7,
+   "all_wins": 3,
+   "all_net": -736
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
