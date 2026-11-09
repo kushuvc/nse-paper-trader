@@ -220,3 +220,13 @@ Learner: model from 61 days of history
 13:15  SKIP  EICHERMOT   vwap      VWAP loss: max 3 trades a day
 13:15  SKIP  HDFCBANK    vwap      VWAP loss: max 3 trades a day
 13:15  SKIP  LT          vwap      VWAP loss: max 3 trades a day
+13:20  SKIP  BSE         orb15     ORB15 down: max 3 trades a day
+13:20  SKIP  BSE         learner   via orb30_2r (expects +0.09R): max 3 trades a day
+13:20  SKIP  BSE         orb30_2r  ORB30 down: max 3 trades a day
+13:20  SKIP  BSE         orb60     ORB60 down: max 3 trades a day
+13:20  SKIP  JIOFIN      vwap      VWAP loss: max 3 trades a day
+13:25  SKIP  COALINDIA   vwap      VWAP loss: max 3 trades a day
+13:25  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day
+13:25  SKIP  SBILIFE     learner   via orb60 (expects +0.17R): already holding this stock
+13:25  SKIP  SBILIFE     orb60     ORB60 down: max 3 trades a day
+13:25  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day
