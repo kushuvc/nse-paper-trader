@@ -170,3 +170,12 @@ Learner: model from 61 days of history
 11:25  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day
 11:25  CLOSE SUNPHARMA   stop       @ 1903.30  net Rs -566 [gap_go] (charges 49)
 11:30  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day
+11:35  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day
+11:35  SKIP  HDFCLIFE    orb30_2r  ORB30 up: max 3 trades a day
+11:35  SKIP  HDFCLIFE    orb60     ORB60 up: max 3 trades a day
+11:35  SKIP  TATACONSUM  vwap      VWAP reclaim: max 3 trades a day
+11:40  SKIP  APOLLOHOSP  vwap      VWAP reclaim: max 3 trades a day
+11:40  SKIP  BAJAJ-AUTO  orb15     ORB15 up: max 3 trades a day
+11:40  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 up: max 3 trades a day
+11:40  SKIP  BAJAJ-AUTO  orb60     ORB60 up: max 3 trades a day
+11:40  CLOSE TCS         stop       @ 2478.85  net Rs -472 [vwap] (charges 82)
