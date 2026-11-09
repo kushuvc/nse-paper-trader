@@ -79,3 +79,24 @@ Learner: model from 61 days of history
 10:30  SKIP  TATASTEEL   orb30_2r  ORB30 down: max 3 trades a day
 10:30  SKIP  TATASTEEL   learner   via orb60 (expects +0.14R): max 3 trades a day
 10:30  SKIP  TATASTEEL   orb60     ORB60 down: max 3 trades a day
+10:35  SKIP  EICHERMOT   orb15     ORB15 down: max 3 trades a day
+10:35  SKIP  EICHERMOT   learner   via orb30_2r (expects +0.06R): max 3 trades a day
+10:35  SKIP  EICHERMOT   orb30_2r  ORB30 down: max 3 trades a day
+10:35  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day
+10:35  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day
+10:35  SKIP  NTPC        orb60     ORB60 up: max 3 trades a day
+10:35  OPEN  TECHM       SHORT   55 @ 1815.50  stop 1820.60  target 1805.30  [vwap: VWAP loss]
+10:40  SKIP  ASIANPAINT  vwap      VWAP loss: max 3 trades a day
+10:40  SKIP  BEL         vwap      VWAP loss: max 3 trades a day
+10:40  SKIP  EICHERMOT   orb60     ORB60 down: max 3 trades a day
+10:40  SKIP  HDFCBANK    orb15     ORB15 down: max 3 trades a day
+10:40  SKIP  HDFCBANK    learner   via orb30_2r (expects +0.14R): max 3 trades a day
+10:40  SKIP  HDFCBANK    orb30_2r  ORB30 down: max 3 trades a day
+10:40  SKIP  HDFCBANK    orb60     ORB60 down: max 3 trades a day
+10:40  SKIP  HINDUNILVR  vwap      VWAP loss: max 3 trades a day
+10:40  SKIP  ITC         orb15     ORB15 down: max 3 trades a day
+10:40  SKIP  M&M         orb15     ORB15 down: max 3 trades a day
+10:40  SKIP  M&M         learner   via orb30_2r (expects +0.06R): max 3 trades a day
+10:40  SKIP  M&M         orb30_2r  ORB30 down: max 3 trades a day
+10:40  SKIP  M&M         orb60     ORB60 down: max 3 trades a day
+10:40  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day
