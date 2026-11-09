@@ -249,3 +249,6 @@ Learner: model from 61 days of history
 14:40  SKIP  GRASIM      vwap      VWAP loss: after 14:30
 14:40  SKIP  HDFCLIFE    vwap      VWAP loss: after 14:30
 14:45  SKIP  ONGC        vwap      VWAP loss: after 14:30
+14:55  SKIP  KOTAKBANK   vwap      VWAP loss: after 14:30
+14:55  SKIP  POWERGRID   vwap      VWAP loss: after 14:30
+14:55  SKIP  TATACONSUM  vwap      VWAP loss: after 14:30
