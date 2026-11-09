@@ -243,3 +243,4 @@ Learner: model from 61 days of history
 14:20  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day
 14:20  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day
 14:20  SKIP  ICICIBANK   orb60     ORB60 up: max 3 trades a day
+14:35  SKIP  AXISBANK    vwap      VWAP loss: after 14:30

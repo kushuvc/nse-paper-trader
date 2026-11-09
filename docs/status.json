@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 14:26 IST",
- "updated_ts": 1794214583,
+ "updated": "2026-11-09 14:36 IST",
+ "updated_ts": 1794215184,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -384,7 +384,6 @@
  ],
  "today_net": 128.0,
  "log": [
-  "11:55  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day",
   "12:00  SKIP  BSE         vwap      VWAP loss: max 3 trades a day",
   "12:00  SKIP  BAJAJFINSV  vwap      VWAP loss: max 3 trades a day",
   "12:00  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day",
@@ -443,7 +442,8 @@
   "14:20  SKIP  DRREDDY     vwap      VWAP reclaim: max 3 trades a day",
   "14:20  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day",
   "14:20  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day",
-  "14:20  SKIP  ICICIBANK   orb60     ORB60 up: max 3 trades a day"
+  "14:20  SKIP  ICICIBANK   orb60     ORB60 up: max 3 trades a day",
+  "14:35  SKIP  AXISBANK    vwap      VWAP loss: after 14:30"
  ],
  "all_trades": 59,
  "all_wins": 40,
