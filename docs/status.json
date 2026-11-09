@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09 13:06 IST",
- "updated_ts": 1794209771,
+ "updated": "2026-11-09 13:16 IST",
+ "updated_ts": 1794210372,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -384,9 +384,6 @@
  ],
  "today_net": 128.0,
  "log": [
-  "11:25  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
-  "11:25  SKIP  NESTLEIND   orb30_2r  ORB30 up: max 3 trades a day",
-  "11:25  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day",
   "11:25  CLOSE SUNPHARMA   stop       @ 1903.30  net Rs -566 [gap_go] (charges 49)",
   "11:30  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day",
   "11:35  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day",
@@ -443,7 +440,10 @@
   "12:45  SKIP  TCS         orb15     ORB15 down: max 3 trades a day",
   "12:45  SKIP  TCS         learner   via orb30_2r (expects +0.10R): max 3 trades a day",
   "12:45  SKIP  TCS         orb30_2r  ORB30 down: max 3 trades a day",
-  "12:45  SKIP  TCS         orb60     ORB60 down: max 3 trades a day"
+  "12:45  SKIP  TCS         orb60     ORB60 down: max 3 trades a day",
+  "13:15  SKIP  EICHERMOT   vwap      VWAP loss: max 3 trades a day",
+  "13:15  SKIP  HDFCBANK    vwap      VWAP loss: max 3 trades a day",
+  "13:15  SKIP  LT          vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 59,
  "all_wins": 40,
