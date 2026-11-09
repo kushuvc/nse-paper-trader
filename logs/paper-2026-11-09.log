@@ -207,3 +207,5 @@ Learner: model from 61 days of history
 12:20  SKIP  JIOFIN      vwap      VWAP loss: max 3 trades a day
 12:20  SKIP  SBILIFE     vwap      VWAP loss: max 3 trades a day
 12:25  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day
+12:35  SKIP  AXISBANK    vwap      VWAP loss: max 3 trades a day
+12:35  CLOSE BAJAJFINSV  target     @ 1826.85  net Rs +384 [orb15] (charges 74)
