@@ -237,3 +237,5 @@ Learner: model from 61 days of history
 13:50  SKIP  NTPC        vwap      VWAP reclaim: max 3 trades a day
 14:05  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day
 14:05  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day
+14:10  SKIP  ITC         vwap      VWAP loss: max 3 trades a day
+14:15  SKIP  HDFCLIFE    vwap      VWAP reclaim: max 3 trades a day
