@@ -100,3 +100,50 @@ Learner: model from 61 days of history
 10:40  SKIP  M&M         orb30_2r  ORB30 down: max 3 trades a day
 10:40  SKIP  M&M         orb60     ORB60 down: max 3 trades a day
 10:40  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day
+10:45  SKIP  ADANIENT    learner   via orb30_2r (expects +0.06R): max 3 trades a day
+10:45  SKIP  ADANIENT    orb30_2r  ORB30 down: max 3 trades a day
+10:45  SKIP  ADANIENT    orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  ADANIPORTS  learner   via orb30_2r (expects +0.14R): max 3 trades a day
+10:45  SKIP  ADANIPORTS  orb30_2r  ORB30 down: max 3 trades a day
+10:45  SKIP  ADANIPORTS  orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  ASIANPAINT  orb15     ORB15 down: max 3 trades a day
+10:45  SKIP  ASIANPAINT  learner   via orb30_2r (expects +0.10R): max 3 trades a day
+10:45  SKIP  ASIANPAINT  orb30_2r  ORB30 down: max 3 trades a day
+10:45  SKIP  ASIANPAINT  orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  AXISBANK    learner   via orb60 (expects +0.15R): already holding this stock
+10:45  SKIP  AXISBANK    orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  BSE         vwap      VWAP loss: max 3 trades a day
+10:45  SKIP  BAJAJ-AUTO  vwap      VWAP loss: max 3 trades a day
+10:45  SKIP  BAJAJFINSV  learner   via orb30_2r (expects +0.06R): max 3 trades a day
+10:45  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day
+10:45  SKIP  BAJAJFINSV  orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  BEL         orb15     ORB15 down: max 3 trades a day
+10:45  SKIP  COALINDIA   vwap      VWAP loss: max 3 trades a day
+10:45  SKIP  GRASIM      orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  HCLTECH     orb15     ORB15 down: max 3 trades a day
+10:45  SKIP  HCLTECH     learner   via orb30_2r (expects +0.10R): max 3 trades a day
+10:45  SKIP  HCLTECH     orb30_2r  ORB30 down: max 3 trades a day
+10:45  SKIP  HCLTECH     learner   via orb60 (expects +0.15R): max 3 trades a day
+10:45  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  HDFCLIFE    vwap      VWAP loss: max 3 trades a day
+10:45  SKIP  HINDALCO    vwap      VWAP loss: max 3 trades a day
+10:45  SKIP  ITC         learner   via orb30_2r (expects +0.06R): max 3 trades a day
+10:45  SKIP  ITC         orb30_2r  ORB30 down: max 3 trades a day
+10:45  SKIP  ITC         orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  JIOFIN      learner   via orb30_2r (expects +0.10R): max 3 trades a day
+10:45  SKIP  JIOFIN      orb30_2r  ORB30 down: max 3 trades a day
+10:45  SKIP  JIOFIN      orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  KOTAKBANK   learner   via orb30_2r (expects +0.06R): max 3 trades a day
+10:45  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day
+10:45  SKIP  KOTAKBANK   orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day
+10:45  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day
+10:45  SKIP  RELIANCE    learner   via orb30_2r (expects +0.06R): max 3 trades a day
+10:45  SKIP  RELIANCE    orb30_2r  ORB30 down: max 3 trades a day
+10:45  SKIP  RELIANCE    orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  TATACONSUM  vwap      VWAP loss: max 3 trades a day
+10:45  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day
+10:45  SKIP  ULTRACEMCO  learner   via orb30_2r (expects +0.06R): max 3 trades a day
+10:45  SKIP  ULTRACEMCO  orb30_2r  ORB30 down: max 3 trades a day
+10:45  SKIP  ULTRACEMCO  learner   via orb60 (expects +0.09R): max 3 trades a day
+10:45  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day
