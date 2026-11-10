@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-10 10:11 IST",
- "updated_ts": 1794285672,
+ "updated": "2026-11-10 10:21 IST",
+ "updated_ts": 1794286274,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -1102,6 +1102,14 @@
     "total_net": -88572.0,
     "max_drawdown": -94673.0
    }
+  },
+  "round2": {
+   "registered": "2026-11-10",
+   "split": "2025-11-01",
+   "promoted": [],
+   "passed": [],
+   "exam_opened": false,
+   "ideas": 7
   }
  },
  "learning": {
