@@ -1,13 +1,15 @@
 Learned from 63 days (2026-08-10 to 2026-11-09), 11869 trades across 7 strategies.
 
 What each strategy has earned (R per trade after costs; 'shrunk' is what the model believes):
-  orb15      2927 trades  avg -0.232 R  shrunk -0.227 R  setups it would take:   1 of 162
-  orb30_2r   2785 trades  avg -0.084 R  shrunk -0.082 R  setups it would take:  21 of 162
-  orb60      2558 trades  avg -0.187 R  shrunk -0.182 R  setups it would take:  15 of 162
-  gap_go      197 trades  avg -0.280 R  shrunk -0.210 R  setups it would take:   0 of 162
-  gap_fade     80 trades  avg -0.030 R  shrunk -0.017 R  setups it would take:  27 of 162
-  vwap       2017 trades  avg -0.359 R  shrunk -0.347 R  setups it would take:   0 of 162
-  trap90     1305 trades  avg -0.115 R  shrunk -0.109 R  setups it would take:   0 of 162
+  orb15      2927 trades  avg -0.232 R  shrunk -0.227 R  setups it would take:   21 of 1458
+  orb30_2r   2785 trades  avg -0.084 R  shrunk -0.082 R  setups it would take:  151 of 1458
+  orb60      2558 trades  avg -0.187 R  shrunk -0.182 R  setups it would take:   89 of 1458
+  gap_go      197 trades  avg -0.280 R  shrunk -0.210 R  setups it would take:    0 of 1458
+  gap_fade     80 trades  avg -0.030 R  shrunk -0.017 R  setups it would take:  243 of 1458
+  vwap       2017 trades  avg -0.359 R  shrunk -0.347 R  setups it would take:    0 of 1458
+  trap90     1305 trades  avg -0.115 R  shrunk -0.109 R  setups it would take:    0 of 1458
+
+NSE's own daily file: 11869 of 11869 trades carry its facts (delivery, breadth); latest file 2026-11-09.
 
 Lessons (mistakes to avoid, and what did better):
   - orb15 tight stop: -0.39 R a trade over 781 trades (strategy average -0.23 R) -> avoid
@@ -24,12 +26,11 @@ Lessons (mistakes to avoid, and what did better):
   - orb30_2r normal stop: -0.15 R a trade over 1266 trades (strategy average -0.08 R) -> avoid
 
 Changed since last night:
-  - orb15: now takes 1 of 162 setups (was 2)
-  - orb30_2r: now takes 21 of 162 setups (was 25)
-  - gap_go: now takes 0 of 162 setups (was 4)
+  - The model now reads 7 facts per trade (side, time, market, gap, stop, delivery, breadth), so it tells 1458 setups apart; it read 5 before.
 
 Walk-forward test (43 days, each judged by a model that had NOT seen it, 3 trades/day cap):
-  learner          78 trades  win  39.7%  Rs   -73.2 a trade  total Rs     -5711  t -1.9
+  learner          76 trades  win  46.1%  Rs   -59.1 a trade  total Rs     -4491  t -1.51
+  without NSE      78 trades  win  39.7%  Rs   -73.2 a trade  total Rs     -5711  t -1.9
   every signal    129 trades  win  69.0%  Rs   -98.4 a trade  total Rs    -12693  t -4.41
 
 Saved model/learned.json

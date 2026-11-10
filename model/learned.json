@@ -1,6 +1,6 @@
 {
  "asof": "2026-11-09",
- "built": "2026-11-10 02:25",
+ "built": "2026-11-10 22:08",
  "history_days": 63,
  "first_day": "2026-08-10",
  "strategies": {
@@ -8,50 +8,57 @@
    "trades": 2927,
    "avg_r": -0.232,
    "shrunk_r": -0.227,
-   "setups_allowed": 1,
-   "setups_allowed_yesterday": 2
+   "setups_allowed": 21,
+   "setups_total": 1458,
+   "setups_allowed_yesterday": null
   },
   "orb30_2r": {
    "trades": 2785,
    "avg_r": -0.084,
    "shrunk_r": -0.082,
-   "setups_allowed": 21,
-   "setups_allowed_yesterday": 25
+   "setups_allowed": 151,
+   "setups_total": 1458,
+   "setups_allowed_yesterday": null
   },
   "orb60": {
    "trades": 2558,
    "avg_r": -0.187,
    "shrunk_r": -0.182,
-   "setups_allowed": 15,
-   "setups_allowed_yesterday": 15
+   "setups_allowed": 89,
+   "setups_total": 1458,
+   "setups_allowed_yesterday": null
   },
   "gap_go": {
    "trades": 197,
    "avg_r": -0.28,
    "shrunk_r": -0.21,
    "setups_allowed": 0,
-   "setups_allowed_yesterday": 4
+   "setups_total": 1458,
+   "setups_allowed_yesterday": null
   },
   "gap_fade": {
    "trades": 80,
    "avg_r": -0.03,
    "shrunk_r": -0.017,
-   "setups_allowed": 27,
-   "setups_allowed_yesterday": 27
+   "setups_allowed": 243,
+   "setups_total": 1458,
+   "setups_allowed_yesterday": null
   },
   "vwap": {
    "trades": 2017,
    "avg_r": -0.359,
    "shrunk_r": -0.347,
    "setups_allowed": 0,
-   "setups_allowed_yesterday": 0
+   "setups_total": 1458,
+   "setups_allowed_yesterday": null
   },
   "trap90": {
    "trades": 1305,
    "avg_r": -0.115,
    "shrunk_r": -0.109,
    "setups_allowed": 0,
-   "setups_allowed_yesterday": 0
+   "setups_total": 1458,
+   "setups_allowed_yesterday": null
   }
  },
  "lessons": [
@@ -69,28 +76,35 @@
   "orb30_2r normal stop: -0.15 R a trade over 1266 trades (strategy average -0.08 R) -> avoid"
  ],
  "changes": [
-  "orb15: now takes 1 of 162 setups (was 2)",
-  "orb30_2r: now takes 21 of 162 setups (was 25)",
-  "gap_go: now takes 0 of 162 setups (was 4)"
+  "The model now reads 7 facts per trade (side, time, market, gap, stop, delivery, breadth), so it tells 1458 setups apart; it read 5 before."
  ],
  "last_day": {
   "date": "2026-11-09",
   "signals": 186,
-  "approved": 33,
+  "approved": 40,
   "learner_trades": 3,
   "learner_net": -128,
   "every_signal_net": 3
  },
+ "nse": {
+  "facts": [
+   "delivery",
+   "breadth"
+  ],
+  "trades_with_nse_facts": 11869,
+  "trades": 11869,
+  "last_file": "2026-11-09"
+ },
  "walk_forward": {
   "days": 43,
   "learner": {
-   "trades": 78,
-   "win_rate": 39.7,
-   "expectancy_rs": -73.2,
-   "expectancy_r": -0.161,
-   "t_stat": -1.9,
-   "total_net": -5711.0,
-   "max_drawdown": -9169.0
+   "trades": 76,
+   "win_rate": 46.1,
+   "expectancy_rs": -59.1,
+   "expectancy_r": -0.133,
+   "t_stat": -1.51,
+   "total_net": -4491.0,
+   "max_drawdown": -7878.0
   },
   "every_signal": {
    "trades": 129,
@@ -101,27 +115,36 @@
    "total_net": -12693.0,
    "max_drawdown": -13492.0
   },
+  "without_nse": {
+   "trades": 78,
+   "win_rate": 39.7,
+   "expectancy_rs": -73.2,
+   "expectancy_r": -0.161,
+   "t_stat": -1.9,
+   "total_net": -5711.0,
+   "max_drawdown": -9169.0
+  },
   "by_day": [
    {
     "date": "2026-09-25",
     "signals": 203,
-    "approved": 0,
-    "learner_trades": 0,
-    "learner_net": 0,
+    "approved": 1,
+    "learner_trades": 1,
+    "learner_net": -160,
     "every_signal_net": -113
    },
    {
     "date": "2026-09-28",
     "signals": 180,
-    "approved": 6,
-    "learner_trades": 3,
-    "learner_net": -432,
+    "approved": 3,
+    "learner_trades": 2,
+    "learner_net": -424,
     "every_signal_net": -413
    },
    {
     "date": "2026-09-29",
     "signals": 176,
-    "approved": 10,
+    "approved": 9,
     "learner_trades": 3,
     "learner_net": -924,
     "every_signal_net": -350
@@ -129,7 +152,7 @@
    {
     "date": "2026-09-30",
     "signals": 215,
-    "approved": 6,
+    "approved": 5,
     "learner_trades": 3,
     "learner_net": -896,
     "every_signal_net": -1508
@@ -137,9 +160,9 @@
    {
     "date": "2026-10-01",
     "signals": 209,
-    "approved": 6,
+    "approved": 4,
     "learner_trades": 3,
-    "learner_net": -1315,
+    "learner_net": -1334,
     "every_signal_net": -194
    },
    {
@@ -169,9 +192,9 @@
    {
     "date": "2026-10-08",
     "signals": 186,
-    "approved": 11,
+    "approved": 4,
     "learner_trades": 3,
-    "learner_net": 1697,
+    "learner_net": 312,
     "every_signal_net": -524
    },
    {
@@ -185,9 +208,9 @@
    {
     "date": "2026-10-12",
     "signals": 198,
-    "approved": 30,
+    "approved": 25,
     "learner_trades": 3,
-    "learner_net": 267,
+    "learner_net": -18,
     "every_signal_net": -1070
    },
    {
@@ -201,7 +224,7 @@
    {
     "date": "2026-10-14",
     "signals": 191,
-    "approved": 6,
+    "approved": 5,
     "learner_trades": 3,
     "learner_net": 138,
     "every_signal_net": -359
@@ -209,23 +232,23 @@
    {
     "date": "2026-10-15",
     "signals": 202,
-    "approved": 6,
+    "approved": 3,
     "learner_trades": 3,
-    "learner_net": -595,
+    "learner_net": -95,
     "every_signal_net": 3
    },
    {
     "date": "2026-10-16",
     "signals": 168,
-    "approved": 10,
+    "approved": 9,
     "learner_trades": 3,
-    "learner_net": -955,
+    "learner_net": -782,
     "every_signal_net": 5
    },
    {
     "date": "2026-10-19",
     "signals": 158,
-    "approved": 22,
+    "approved": 21,
     "learner_trades": 3,
     "learner_net": 173,
     "every_signal_net": -162
@@ -233,9 +256,9 @@
    {
     "date": "2026-10-21",
     "signals": 205,
-    "approved": 32,
+    "approved": 29,
     "learner_trades": 3,
-    "learner_net": -247,
+    "learner_net": 475,
     "every_signal_net": -525
    },
    {
@@ -249,7 +272,7 @@
    {
     "date": "2026-10-23",
     "signals": 183,
-    "approved": 91,
+    "approved": 92,
     "learner_trades": 3,
     "learner_net": -95,
     "every_signal_net": -539
@@ -265,15 +288,15 @@
    {
     "date": "2026-10-27",
     "signals": 207,
-    "approved": 5,
+    "approved": 14,
     "learner_trades": 3,
-    "learner_net": -477,
+    "learner_net": 708,
     "every_signal_net": 4
    },
    {
     "date": "2026-10-28",
     "signals": 193,
-    "approved": 23,
+    "approved": 24,
     "learner_trades": 3,
     "learner_net": -803,
     "every_signal_net": -550
@@ -297,31 +320,31 @@
    {
     "date": "2026-11-02",
     "signals": 201,
-    "approved": 2,
-    "learner_trades": 2,
-    "learner_net": 26,
+    "approved": 0,
+    "learner_trades": 0,
+    "learner_net": 0,
     "every_signal_net": 4
    },
    {
     "date": "2026-11-03",
     "signals": 195,
-    "approved": 1,
-    "learner_trades": 1,
-    "learner_net": -300,
+    "approved": 7,
+    "learner_trades": 3,
+    "learner_net": 352,
     "every_signal_net": 4
    },
    {
     "date": "2026-11-04",
     "signals": 197,
-    "approved": 7,
+    "approved": 4,
     "learner_trades": 3,
-    "learner_net": -608,
+    "learner_net": -650,
     "every_signal_net": -28
    },
    {
     "date": "2026-11-05",
     "signals": 206,
-    "approved": 18,
+    "approved": 23,
     "learner_trades": 3,
     "learner_net": 1070,
     "every_signal_net": 418
@@ -329,7 +352,7 @@
    {
     "date": "2026-11-06",
     "signals": 215,
-    "approved": 23,
+    "approved": 35,
     "learner_trades": 3,
     "learner_net": 1080,
     "every_signal_net": -521
@@ -337,7 +360,7 @@
    {
     "date": "2026-11-09",
     "signals": 186,
-    "approved": 33,
+    "approved": 40,
     "learner_trades": 3,
     "learner_net": -128,
     "every_signal_net": 3
@@ -353,6 +376,15 @@
    "warmup_days": 20
   },
   "days": 62,
+  "facts": [
+   "side",
+   "time",
+   "market",
+   "gap",
+   "stop",
+   "delivery",
+   "breadth"
+  ],
   "strategies": {
    "trap90": {
     "n": 1305,
@@ -421,6 +453,46 @@
        "raw_r": -0.115,
        "r": -0.115,
        "delta": -0.005
+      }
+     },
+     "delivery": {
+      "after high delivery": {
+       "n": 104,
+       "raw_r": -0.062,
+       "r": -0.081,
+       "delta": 0.028
+      },
+      "after usual delivery": {
+       "n": 1081,
+       "raw_r": -0.12,
+       "r": -0.119,
+       "delta": -0.01
+      },
+      "after low delivery": {
+       "n": 120,
+       "raw_r": -0.116,
+       "r": -0.114,
+       "delta": -0.005
+      }
+     },
+     "breadth": {
+      "after a mixed market": {
+       "n": 507,
+       "raw_r": -0.086,
+       "r": -0.089,
+       "delta": 0.02
+      },
+      "against yesterday's market": {
+       "n": 467,
+       "raw_r": -0.138,
+       "r": -0.134,
+       "delta": -0.025
+      },
+      "with yesterday's market": {
+       "n": 331,
+       "raw_r": -0.123,
+       "r": -0.121,
+       "delta": -0.012
       }
      }
     }
@@ -523,6 +595,46 @@
        "r": -0.087,
        "delta": 0.14
       }
+     },
+     "delivery": {
+      "after high delivery": {
+       "n": 205,
+       "raw_r": -0.373,
+       "r": -0.335,
+       "delta": -0.108
+      },
+      "after usual delivery": {
+       "n": 2482,
+       "raw_r": -0.229,
+       "r": -0.229,
+       "delta": -0.002
+      },
+      "after low delivery": {
+       "n": 240,
+       "raw_r": -0.158,
+       "r": -0.173,
+       "delta": 0.054
+      }
+     },
+     "breadth": {
+      "after a mixed market": {
+       "n": 1136,
+       "raw_r": -0.255,
+       "r": -0.253,
+       "delta": -0.026
+      },
+      "with yesterday's market": {
+       "n": 987,
+       "raw_r": -0.201,
+       "r": -0.203,
+       "delta": 0.024
+      },
+      "against yesterday's market": {
+       "n": 804,
+       "raw_r": -0.243,
+       "r": -0.242,
+       "delta": -0.015
+      }
      }
     }
    },
@@ -623,6 +735,46 @@
        "raw_r": -0.44,
        "r": -0.166,
        "delta": 0.0
+      }
+     },
+     "delivery": {
+      "after high delivery": {
+       "n": 194,
+       "raw_r": -0.203,
+       "r": -0.17,
+       "delta": -0.088
+      },
+      "after usual delivery": {
+       "n": 2361,
+       "raw_r": -0.075,
+       "r": -0.075,
+       "delta": 0.007
+      },
+      "after low delivery": {
+       "n": 230,
+       "raw_r": -0.084,
+       "r": -0.084,
+       "delta": -0.001
+      }
+     },
+     "breadth": {
+      "after a mixed market": {
+       "n": 1087,
+       "raw_r": -0.112,
+       "r": -0.11,
+       "delta": -0.028
+      },
+      "with yesterday's market": {
+       "n": 907,
+       "raw_r": -0.013,
+       "r": -0.017,
+       "delta": 0.065
+      },
+      "against yesterday's market": {
+       "n": 791,
+       "raw_r": -0.134,
+       "r": -0.13,
+       "delta": -0.047
       }
      }
     }
@@ -725,6 +877,46 @@
        "r": -0.354,
        "delta": -0.172
       }
+     },
+     "delivery": {
+      "after usual delivery": {
+       "n": 2172,
+       "raw_r": -0.18,
+       "r": -0.18,
+       "delta": 0.002
+      },
+      "after high delivery": {
+       "n": 178,
+       "raw_r": -0.261,
+       "r": -0.238,
+       "delta": -0.056
+      },
+      "after low delivery": {
+       "n": 208,
+       "raw_r": -0.196,
+       "r": -0.192,
+       "delta": -0.01
+      }
+     },
+     "breadth": {
+      "after a mixed market": {
+       "n": 999,
+       "raw_r": -0.176,
+       "r": -0.176,
+       "delta": 0.006
+      },
+      "with yesterday's market": {
+       "n": 821,
+       "raw_r": -0.124,
+       "r": -0.128,
+       "delta": 0.054
+      },
+      "against yesterday's market": {
+       "n": 738,
+       "raw_r": -0.271,
+       "r": -0.264,
+       "delta": -0.082
+      }
      }
     }
    },
@@ -826,6 +1018,46 @@
        "r": -0.375,
        "delta": 0.0
       }
+     },
+     "delivery": {
+      "after high delivery": {
+       "n": 134,
+       "raw_r": -0.465,
+       "r": -0.423,
+       "delta": -0.076
+      },
+      "after usual delivery": {
+       "n": 1714,
+       "raw_r": -0.335,
+       "r": -0.335,
+       "delta": 0.012
+      },
+      "after low delivery": {
+       "n": 169,
+       "raw_r": -0.517,
+       "r": -0.469,
+       "delta": -0.122
+      }
+     },
+     "breadth": {
+      "after a mixed market": {
+       "n": 790,
+       "raw_r": -0.296,
+       "r": -0.301,
+       "delta": 0.046
+      },
+      "with yesterday's market": {
+       "n": 685,
+       "raw_r": -0.359,
+       "r": -0.358,
+       "delta": -0.011
+      },
+      "against yesterday's market": {
+       "n": 542,
+       "raw_r": -0.44,
+       "r": -0.43,
+       "delta": -0.083
+      }
      }
     }
    },
@@ -903,6 +1135,46 @@
        "r": -0.339,
        "delta": 0.0
       }
+     },
+     "delivery": {
+      "after usual delivery": {
+       "n": 153,
+       "raw_r": -0.303,
+       "r": -0.275,
+       "delta": -0.065
+      },
+      "after high delivery": {
+       "n": 21,
+       "raw_r": -0.183,
+       "r": -0.203,
+       "delta": 0.0
+      },
+      "after low delivery": {
+       "n": 23,
+       "raw_r": -0.218,
+       "r": -0.212,
+       "delta": 0.0
+      }
+     },
+     "breadth": {
+      "after a mixed market": {
+       "n": 32,
+       "raw_r": 0.104,
+       "r": -0.115,
+       "delta": 0.0
+      },
+      "with yesterday's market": {
+       "n": 86,
+       "raw_r": -0.341,
+       "r": -0.285,
+       "delta": -0.075
+      },
+      "against yesterday's market": {
+       "n": 79,
+       "raw_r": -0.35,
+       "r": -0.287,
+       "delta": -0.077
+      }
      }
     }
    },
@@ -978,6 +1250,46 @@
        "n": 11,
        "raw_r": 0.318,
        "r": 0.034,
+       "delta": 0.0
+      }
+     },
+     "delivery": {
+      "after usual delivery": {
+       "n": 63,
+       "raw_r": -0.003,
+       "r": -0.01,
+       "delta": 0.007
+      },
+      "after low delivery": {
+       "n": 6,
+       "raw_r": -0.033,
+       "r": -0.018,
+       "delta": 0.0
+      },
+      "after high delivery": {
+       "n": 11,
+       "raw_r": -0.204,
+       "r": -0.041,
+       "delta": 0.0
+      }
+     },
+     "breadth": {
+      "after a mixed market": {
+       "n": 16,
+       "raw_r": -0.666,
+       "r": -0.127,
+       "delta": 0.0
+      },
+      "with yesterday's market": {
+       "n": 29,
+       "raw_r": 0.555,
+       "r": 0.161,
+       "delta": 0.0
+      },
+      "against yesterday's market": {
+       "n": 35,
+       "raw_r": -0.273,
+       "r": -0.107,
        "delta": 0.0
       }
      }

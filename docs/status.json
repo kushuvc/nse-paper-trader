@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-10 20:45 IST",
- "updated_ts": 1794323708,
+ "updated": "2026-11-10 22:08 IST",
+ "updated_ts": 1794328711,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -1075,7 +1075,7 @@
       "id": "history",
       "need": "Also profitable on saved history",
       "ok": false,
-      "now": "-0.16 R a trade over 78 trades (fair test on days it had not seen)"
+      "now": "-0.13 R a trade over 76 trades (fair test on days it had not seen)"
      }
     ]
    }
@@ -1110,7 +1110,39 @@
    "passed": [],
    "exam_opened": false,
    "ideas": 7
+  },
+  "round3": {
+   "registered": "2026-11-10",
+   "split": "2023-01-01",
+   "promoted": [
+    "low_vol"
+   ],
+   "passed": [],
+   "exam_opened": true,
+   "ideas": 6
   }
+ },
+ "nse": {
+  "date": "2026-11-09",
+  "first": "2026-07-08",
+  "days": 87,
+  "market": {
+   "stocks": 2743.0,
+   "advances": 1126.0,
+   "declines": 1583.0,
+   "unchanged": 34.0,
+   "adv_pct": 41.6,
+   "median_move_pct": -0.3,
+   "turnover_cr": 117430.0,
+   "deliv_pct": 42.9,
+   "nifty": 25044.65,
+   "nifty_chg_pct": 0.23,
+   "nifty_pe": 20.48,
+   "vix": 17.42,
+   "vix_chg_pct": -5.48,
+   "date": "2026-11-09"
+  },
+  "text": "1126 of 2743 shares rose (41.6%), Nifty 50 25,045 (+0.23%), 42.9% of the money traded was taken for delivery, India VIX 17.42."
  },
  "learning": {
   "asof": "2026-11-09",
@@ -1130,71 +1162,76 @@
    "orb30_2r normal stop: -0.15 R a trade over 1266 trades (strategy average -0.08 R) -> avoid"
   ],
   "changes": [
-   "orb15: now takes 1 of 162 setups (was 2)",
-   "orb30_2r: now takes 21 of 162 setups (was 25)",
-   "gap_go: now takes 0 of 162 setups (was 4)"
+   "The model now reads 7 facts per trade (side, time, market, gap, stop, delivery, breadth), so it tells 1458 setups apart; it read 5 before."
   ],
   "strategies": {
    "orb15": {
     "trades": 2927,
     "avg_r": -0.232,
     "shrunk_r": -0.227,
-    "setups_allowed": 1,
-    "setups_allowed_yesterday": 2
+    "setups_allowed": 21,
+    "setups_total": 1458,
+    "setups_allowed_yesterday": null
    },
    "orb30_2r": {
     "trades": 2785,
     "avg_r": -0.084,
     "shrunk_r": -0.082,
-    "setups_allowed": 21,
-    "setups_allowed_yesterday": 25
+    "setups_allowed": 151,
+    "setups_total": 1458,
+    "setups_allowed_yesterday": null
    },
    "orb60": {
     "trades": 2558,
     "avg_r": -0.187,
     "shrunk_r": -0.182,
-    "setups_allowed": 15,
-    "setups_allowed_yesterday": 15
+    "setups_allowed": 89,
+    "setups_total": 1458,
+    "setups_allowed_yesterday": null
    },
    "gap_go": {
     "trades": 197,
     "avg_r": -0.28,
     "shrunk_r": -0.21,
     "setups_allowed": 0,
-    "setups_allowed_yesterday": 4
+    "setups_total": 1458,
+    "setups_allowed_yesterday": null
    },
    "gap_fade": {
     "trades": 80,
     "avg_r": -0.03,
     "shrunk_r": -0.017,
-    "setups_allowed": 27,
-    "setups_allowed_yesterday": 27
+    "setups_allowed": 243,
+    "setups_total": 1458,
+    "setups_allowed_yesterday": null
    },
    "vwap": {
     "trades": 2017,
     "avg_r": -0.359,
     "shrunk_r": -0.347,
     "setups_allowed": 0,
-    "setups_allowed_yesterday": 0
+    "setups_total": 1458,
+    "setups_allowed_yesterday": null
    },
    "trap90": {
     "trades": 1305,
     "avg_r": -0.115,
     "shrunk_r": -0.109,
     "setups_allowed": 0,
-    "setups_allowed_yesterday": 0
+    "setups_total": 1458,
+    "setups_allowed_yesterday": null
    }
   },
   "walk_forward": {
    "days": 43,
    "learner": {
-    "trades": 78,
-    "win_rate": 39.7,
-    "expectancy_rs": -73.2,
-    "expectancy_r": -0.161,
-    "t_stat": -1.9,
-    "total_net": -5711.0,
-    "max_drawdown": -9169.0
+    "trades": 76,
+    "win_rate": 46.1,
+    "expectancy_rs": -59.1,
+    "expectancy_r": -0.133,
+    "t_stat": -1.51,
+    "total_net": -4491.0,
+    "max_drawdown": -7878.0
    },
    "every_signal": {
     "trades": 129,
@@ -1205,19 +1242,28 @@
     "total_net": -12693.0,
     "max_drawdown": -13492.0
    },
+   "without_nse": {
+    "trades": 78,
+    "win_rate": 39.7,
+    "expectancy_rs": -73.2,
+    "expectancy_r": -0.161,
+    "t_stat": -1.9,
+    "total_net": -5711.0,
+    "max_drawdown": -9169.0
+   },
    "by_day": [
     {
      "date": "2026-10-27",
      "signals": 207,
-     "approved": 5,
+     "approved": 14,
      "learner_trades": 3,
-     "learner_net": -477,
+     "learner_net": 708,
      "every_signal_net": 4
     },
     {
      "date": "2026-10-28",
      "signals": 193,
-     "approved": 23,
+     "approved": 24,
      "learner_trades": 3,
      "learner_net": -803,
      "every_signal_net": -550
@@ -1241,31 +1287,31 @@
     {
      "date": "2026-11-02",
      "signals": 201,
-     "approved": 2,
-     "learner_trades": 2,
-     "learner_net": 26,
+     "approved": 0,
+     "learner_trades": 0,
+     "learner_net": 0,
      "every_signal_net": 4
     },
     {
      "date": "2026-11-03",
      "signals": 195,
-     "approved": 1,
-     "learner_trades": 1,
-     "learner_net": -300,
+     "approved": 7,
+     "learner_trades": 3,
+     "learner_net": 352,
      "every_signal_net": 4
     },
     {
      "date": "2026-11-04",
      "signals": 197,
-     "approved": 7,
+     "approved": 4,
      "learner_trades": 3,
-     "learner_net": -608,
+     "learner_net": -650,
      "every_signal_net": -28
     },
     {
      "date": "2026-11-05",
      "signals": 206,
-     "approved": 18,
+     "approved": 23,
      "learner_trades": 3,
      "learner_net": 1070,
      "every_signal_net": 418
@@ -1273,7 +1319,7 @@
     {
      "date": "2026-11-06",
      "signals": 215,
-     "approved": 23,
+     "approved": 35,
      "learner_trades": 3,
      "learner_net": 1080,
      "every_signal_net": -521
@@ -1281,7 +1327,7 @@
     {
      "date": "2026-11-09",
      "signals": 186,
-     "approved": 33,
+     "approved": 40,
      "learner_trades": 3,
      "learner_net": -128,
      "every_signal_net": 3
@@ -1291,10 +1337,19 @@
   "last_day": {
    "date": "2026-11-09",
    "signals": 186,
-   "approved": 33,
+   "approved": 40,
    "learner_trades": 3,
    "learner_net": -128,
    "every_signal_net": 3
+  },
+  "nse": {
+   "facts": [
+    "delivery",
+    "breadth"
+   ],
+   "trades_with_nse_facts": 11869,
+   "trades": 11869,
+   "last_file": "2026-11-09"
   }
  }
 }
