@@ -21,6 +21,8 @@ python3 trade.py learn                         # nightly: learn from all history
 python3 trade.py learn --interval 60m          # the same learner on ~3 years of hourly bars (a check, not used to trade)
 python3 trade.py ready                         # has any paper account earned a real-money trial?
 python3 trade.py research                      # Round 2: seven new ideas on the design years (rules in nse/research.py)
+python3 trade.py swing --collect               # Round 3: download daily prices for ~550 stocks (stays on this machine)
+python3 trade.py swing                         # Round 3: six ideas that hold for days or weeks (rules in nse/swing.py)
 python3 trade.py replay --date 2026-11-04      # live engine re-run on a past day, bar by bar (+ learner)
 python3 trade.py paper                         # LIVE dummy trades, leave running 9:15-15:20 IST
 python3 trade.py report                        # paper journal and running totals
@@ -197,6 +199,79 @@ about 0.2 % a round trip (STT alone is 0.1 % a side), against 0.084 % earned,
 and it faded to +3 % in 2026. The 50 stocks are today's Nifty 50, which
 flatters the past: stocks that dropped out of the index are not in the data.
 And three years is one stretch of one market.
+
+## Round 3: holding for days or weeks (10 Nov 2026)
+
+Round 2 found that these stocks made their gains while the market was shut,
+which a same-day rule never holds. Round 3 asked whether rules that hold for
+days or weeks do better. As before, the rules were committed to git before any
+idea was run on real prices (`nse/swing.py`, commit 3adee21):
+
+- buy only, shares paid for in full, decided and filled at the day's close;
+  Rs 1 lakh in 5 equal positions; today's delivery charges, about 0.40 % for a
+  round trip including slippage
+- stocks picked without hindsight: each month the 50 most traded, drawn from
+  today's Nifty 500 plus 47 once heavily traded names that have since left it
+  (Unitech, RCom, HDIL, Jet Airways and others). 165 stocks pass through
+- **design years** 2010 to 2022 (3,207 days) and **exam years** 2023 to
+  9 Nov 2026 (949 days) that are not looked at while choosing
+- to reach the exam an idea's average trade must make money after charges,
+  beat holding the 50 stocks over the same days, and beat the Nifty 50 index
+  over the same days. To pass the exam it must do all three again, with a
+  t-statistic by month of 2.5 or more
+
+Design years, every signal:
+
+| idea | what it does | trades | days held | after charges | holding the 50 | excess | t | Rs 1 lakh became |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| momentum | month end: the 5 biggest winners of the past year | 272 | 59 | +2.25 % | +2.38 % | −0.13 % | 0.0 | 2.03 lakh |
+| low_vol | month end: the 5 steadiest stocks | 295 | 54 | +4.21 % | +2.22 % | +1.99 % | 2.2 | 7.69 lakh |
+| high52 | first new one-year high; out after 20 days or at −8 % | 876 | 18 | +0.13 % | +0.45 % | −0.31 % | −1.7 | 0.95 lakh |
+| pullback | 5 % dip over 3 days in an uptrend; out on the bounce or after 10 days | 1,759 | 4 | +0.23 % | +0.24 % | 0.00 % | 0.2 | 0.55 lakh |
+| losers | week end: the 5 biggest fallers, for a week | 2,915 | 5 | −0.20 % | +0.21 % | −0.41 % | −3.6 | 0.05 lakh |
+| volume_surge | up 4 %+ on 3 times the usual volume; out after 10 days or at −8 % | 761 | 9 | −0.25 % | +0.20 % | −0.46 % | −1.2 | 0.62 lakh |
+| *holding the 50 stocks, no charges* | | | | | | | | 2.58 lakh |
+| *Nifty 50 index, no dividends* | | | | | | | | 3.46 lakh |
+
+"Excess" is the trade after charges minus what the 50 stocks did over the same
+days. Only `low_vol` qualified, so only `low_vol` was run on the exam years:
+
+| low_vol | trades | after charges | holding the 50 | excess | t | Rs 1 lakh became | a year | worst fall |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| design years 2010 to 2022 | 295 | +4.21 % | +2.22 % | +1.99 % | 2.2 | 7.69 lakh | 17.0 % | −36 % |
+| **exam years 2023 to 2026** | 97 | +1.27 % | +2.99 % | **−1.72 %** | −1.7 | 1.22 lakh | 5.2 % | −31 % |
+| *holding the 50 stocks, exam years* | | | | | | 1.59 lakh | 12.9 % | −24 % |
+| *Nifty 50 index, exam years* | | | | | | 1.38 lakh | 8.6 % | −16 % |
+
+**It failed, so no idea passed and no paper account was added.** In the exam
+years `low_vol` made money, but less than doing nothing: the Nifty 50 index
+made 8.6 % a year against its 5.2 %, with half the worst fall.
+
+What the detail shows:
+
+- `low_vol` looked like a rule and was largely one stock's decade. HDFC Bank,
+  bought in April 2014 and held to September 2019, made +240 %. Without its six
+  best trades the design-years excess is +0.75 %, not +1.99 %. That is what an
+  exam on unseen years is for.
+- `pullback`: the average dip-buy made +0.23 %, but all of it came from days
+  with more than 5 signals at once (+1.21 % each). A 5-position account cannot
+  take them all, and on the other days the average was −0.05 %. Taking trades
+  as they came, the account lost 4.5 % a year.
+- `losers` trades every week, so charges alone take about 0.4 % a week.
+- In the design years the Nifty 50 index (10.0 % a year) beat an equal holding
+  of the 50 most traded stocks (7.6 %): the most traded list is where the
+  story stocks are. The index beat five of the six ideas in the design years
+  and the sixth in the exam years.
+
+Cautions. The free data has no prices for 98 of the 145 former big names
+looked for (JP Associates, Reliance Capital, DHFL, Kingfisher, Satyam among
+them), and leaving failures out flatters every idea here. Fills are assumed at
+the closing price. Today's charges are applied to every year; a broker that
+charges Rs 20 per delivery order adds another 0.2 % a round trip. Dividends are
+not counted for the ideas, the 50 stocks or the index.
+
+Across three rounds, 20 rule-based ideas have now been tested on prices they
+were not built on. None beat charges and plain holding.
 
 ## Paper trading ("dummy live trades")
 

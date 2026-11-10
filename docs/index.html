@@ -27,6 +27,7 @@ pre{white-space:pre-wrap;font:12px/1.45 ui-monospace,Menlo,monospace;margin:0;ma
   <div id="gVerdict" style="margin-top:8px"></div>
   <div class="mut" id="gLong" style="margin-top:6px"></div>
   <div class="mut" id="gR2" style="margin-top:6px"></div>
+  <div class="mut" id="gR3" style="margin-top:6px"></div>
   <details><summary class="mut">What an account must pass</summary>
     <div class="mut" id="gFixed"></div>
     <ul class="chk" id="gRules"></ul>
@@ -98,6 +99,8 @@ async function load(){
     const lc=G.long_check, lw=lc&&lc.learner;
     $('gLong').textContent=lw&&lw.trades?`3-year check on hourly prices (${lc.days} days): the learner ${lw.expectancy_rs<0?'lost':'made'} Rs ${Math.abs(Math.round(lw.expectancy_rs))} a trade over ${lw.trades} trades.`:'';
     const r2=G.round2, won=r2&&r2.promoted||[];
+    const r3=G.round3, q3=r3&&r3.promoted||[], p3=r3&&r3.passed||[];
+    $('gR3').textContent=r3?`Round 3 (${r3.registered}): ${r3.ideas} ideas that hold for days or weeks, tested on daily prices before ${r3.split}. `+(p3.length?`Passed the exam on the years after: ${p3.join(', ')} (paper account only).`:q3.length?`${q3.join(', ')} beat simply holding there, then failed the exam on the years after, so none was added.`:'None beat simply holding, so none was added.'):'';
     $('gR2').textContent=r2?`Round 2 (${r2.registered}): ${r2.ideas} new kinds of strategy tested on hourly prices before ${r2.split}. `+(won.length?`Made money after charges: ${won.join(', ')}.`:'None made money after charges, so none was added.'):'';
     const acc=Object.entries(G.accounts||{}), first=acc.length?acc[0][1].checks:[];
     $('gFixed').textContent='Rules fixed on '+G.rules.fixed_on+', before the results were in. All '+first.length+' must hold for one account.';

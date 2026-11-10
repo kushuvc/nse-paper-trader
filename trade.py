@@ -228,6 +228,12 @@ def cmd_ready(cfg, a):
     if r2:
         print("Round 2 (%s): %d new kinds of strategy tested on hourly bars before %s. Made money after charges: %s."
               % (r2["registered"], len(r2["ideas"]), r2["split"], ", ".join(r2["promoted"]) or "none"))
+    r3 = load_json(ROUND3)
+    if r3:
+        print("Round 3 (%s): %d ideas that hold for days or weeks, tested on daily prices before %s. "
+              "Beat holding there: %s. Passed the exam on the years after: %s."
+              % (r3["registered"], len(r3["ideas"]), r3["split"], ", ".join(r3["promoted"]) or "none",
+                 (", ".join(r3["passed"]) or "none") if r3["exam_opened"] else "not opened"))
     print("\nRules were fixed on %s. Do not loosen them after seeing results." % g["rules"]["fixed_on"])
 
 
@@ -328,6 +334,10 @@ def cmd_status(cfg, a):
     if r2:
         out["gate"]["round2"] = {k: r2.get(k) for k in ("registered", "split", "promoted", "passed", "exam_opened")}
         out["gate"]["round2"]["ideas"] = len(r2.get("ideas") or {})
+    r3 = load_json(ROUND3)
+    if r3:
+        out["gate"]["round3"] = {k: r3.get(k) for k in ("registered", "split", "promoted", "passed", "exam_opened")}
+        out["gate"]["round3"]["ideas"] = len(r3.get("ideas") or {})
     if m:
         out["learning"] = {k: m.get(k) for k in ("asof", "history_days", "lessons", "changes", "strategies",
                                                   "walk_forward", "last_day")}

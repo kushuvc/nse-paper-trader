@@ -3,7 +3,7 @@
  "design_from": "2010-01-01",
  "split": "2023-01-01",
  "exam_min_t": 2.5,
- "exam_opened": false,
+ "exam_opened": true,
  "ideas": {
   "momentum": "At each month end hold the 5 stocks that rose most over the 11 months ending a month ago. Why: winners of the past year have tended to keep winning for some months.",
   "low_vol": "At each month end hold the 5 stocks whose price moved least from day to day over the last 60 days. Why: steady stocks have tended to return more than their risk suggests.",
@@ -566,7 +566,55 @@
    }
   }
  },
- "exam": {},
+ "exam": {
+  "low_vol": {
+   "trades": 97,
+   "months": 41,
+   "avg_days": 47.8,
+   "win_rate": 59.8,
+   "beat_holding": 43.3,
+   "gross_pct": 1.677,
+   "net_pct": 1.272,
+   "bench_pct": 2.993,
+   "excess_pct": -1.721,
+   "vs_index_pct": -0.704,
+   "t_excess_by_month": -1.71,
+   "by_year": {
+    "2023": {
+     "trades": 28,
+     "net_pct": 2.51,
+     "excess_pct": -4.95
+    },
+    "2024": {
+     "trades": 28,
+     "net_pct": 2.75,
+     "excess_pct": 1.59
+    },
+    "2025": {
+     "trades": 16,
+     "net_pct": 1.21,
+     "excess_pct": -0.23
+    },
+    "2026": {
+     "trades": 25,
+     "net_pct": -1.74,
+     "excess_pct": -2.76
+    }
+   },
+   "day_late": {
+    "trades": 97,
+    "net_pct": 1.354,
+    "excess_pct": -1.781
+   },
+   "account": {
+    "final": 121701,
+    "a_year_pct": 5.2,
+    "worst_fall_pct": -30.6,
+    "trades_taken": 97,
+    "invested_pct": 96.9
+   }
+  }
+ },
  "promoted": [
   "low_vol"
  ],
@@ -731,6 +779,115 @@
    "final": 346036,
    "a_year_pct": 10.0,
    "worst_fall_pct": -38.4
+  }
+ },
+ "exam_data": {
+  "from": "2023-01-02",
+  "to": "2026-11-09",
+  "trading_days": 949,
+  "stocks_with_prices": 528,
+  "former_names_with_prices": [
+   "63MOONS",
+   "ABAN",
+   "ADANIPOWER",
+   "ALOKINDS",
+   "ARSSINFRA",
+   "BAJAJHIND",
+   "BALRAMCHIN",
+   "BGRENERGY",
+   "BOMDYEING",
+   "CHAMBLFERT",
+   "DEN",
+   "DISHTV",
+   "DLF",
+   "EDELWEISS",
+   "EDUCOMP",
+   "EKC",
+   "ELECTCAST",
+   "ESSARSHPNG",
+   "FRETAIL",
+   "GESHIP",
+   "GTL",
+   "GTLINFRA",
+   "GVKPIL",
+   "HATHWAY",
+   "HCC",
+   "HCL-INSYS",
+   "HDIL",
+   "HINDOILEXP",
+   "IDEA",
+   "IFCI",
+   "IIFL",
+   "IL&FSTRANS",
+   "JETAIRWAYS",
+   "JINDALSAW",
+   "JISLJALEQS",
+   "JMFINANCIL",
+   "JPPOWER",
+   "JUSTDIAL",
+   "KARURVYSYA",
+   "MADHUCON",
+   "MASTEK",
+   "MCLEODRUSS",
+   "MOTILALOFS",
+   "MTNL",
+   "NCC",
+   "NETWORK18",
+   "ONMOBILE",
+   "PATELENG",
+   "PCJEWELLER",
+   "PRAJIND",
+   "RAJESHEXPO",
+   "RCOM",
+   "RELIGARE",
+   "RELINFRA",
+   "RENUKA",
+   "RPOWER",
+   "SCI",
+   "SIMPLEXINF",
+   "SOUTHBANK",
+   "SUZLON",
+   "TANLA",
+   "TRIVENI",
+   "TTML",
+   "UNITECH",
+   "VAKRANGEE",
+   "WELCORP",
+   "YESBANK"
+  ],
+  "stocks_ever_in_universe": 134,
+  "former_names_ever_in_universe": [
+   "ADANIPOWER",
+   "DLF",
+   "IDEA",
+   "IFCI",
+   "PCJEWELLER",
+   "SUZLON",
+   "WELCORP",
+   "YESBANK"
+  ],
+  "smallest_universe": 50,
+  "untrusted_moves": [
+   [
+    "2025-10-14",
+    "TMPV",
+    -40.2
+   ],
+   [
+    "2026-04-30",
+    "VEDL",
+    -64.9
+   ]
+  ],
+  "holding_universe": {
+   "final": 159329,
+   "a_year_pct": 12.9,
+   "worst_fall_pct": -23.7
+  },
+  "nifty50_index": {
+   "final": 137627,
+   "a_year_pct": 8.6,
+   "worst_fall_pct": -15.8
   }
  }
 }
