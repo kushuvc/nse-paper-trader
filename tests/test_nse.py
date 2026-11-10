@@ -426,6 +426,21 @@ class Round2Ideas(unittest.TestCase):
         self.assertTrue(set(res["exam"]) <= set(res["promoted"]))
         self.assertTrue(set(res["passed"]) <= set(res["exam"]))
 
+    def test_overnight_split(self):
+        # every day: opens 1 % above the last close, then gives 0.5 % back by the close
+        bars, close = [], 1000.0
+        for k in range(4):
+            o = close * 1.01
+            bars += day_bars(self.D + datetime.timedelta(days=k), [o * 0.995], start_price=o)
+            close = o * 0.995
+        got = research.overnight_split({"A": bars, "B": bars}, 5)
+        self.assertEqual(got["days"], 3)                                         # the first day has no "night before"
+        self.assertAlmostEqual(got["overnight_pct_per_day"], 1.0, places=3)
+        self.assertAlmostEqual(got["market_hours_pct_per_day"], -0.5, places=3)
+        self.assertEqual(got["by_year"], {"2026": {"days": 3, "overnight_total_pct": 3.0, "market_hours_total_pct": -1.5}})
+        self.assertEqual((got["stocks"], got["stocks_up_overnight"], got["stocks_up_market_hours"],
+                          got["stocks_better_overnight"]), (2, 2, 0, 2))
+
 
 if __name__ == "__main__":
     unittest.main()

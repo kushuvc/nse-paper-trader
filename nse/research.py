@@ -85,24 +85,42 @@ def summary(trades):
 def overnight_split(bars_by_sym, interval=60):
     """Where did the stocks' returns come from: while the market was shut (yesterday's close to
     today's open) or while it was open (open to close)? Average of all stocks, per day."""
-    night, day = {}, {}
+    night, day, stocks = {}, {}, []
     for s, b in bars_by_sym.items():
         ss = full_sessions(b, interval)
+        tot_n = tot_d = 0.0
         for (_, p), (d, c) in zip(ss, ss[1:]):
             on = (c[0].o / p[-1].c - 1) * 100
             if abs(on) > 15:  # split or bonus, not a real move
                 continue
+            mh = (c[-1].c / c[0].o - 1) * 100
             night.setdefault(d, []).append(on)
-            day.setdefault(d, []).append((c[-1].c / c[0].o - 1) * 100)
-    n_ = [sum(v) / len(v) for _, v in sorted(night.items())]
-    d_ = [sum(v) / len(v) for _, v in sorted(day.items())]
+            day.setdefault(d, []).append(mh)
+            tot_n, tot_d = tot_n + on, tot_d + mh
+        stocks.append((tot_n, tot_d))
+    ds = sorted(night)
+    n_ = [sum(night[d]) / len(night[d]) for d in ds]
+    d_ = [sum(day[d]) / len(day[d]) for d in ds]
     if not n_:
         return {}
+    by_year = {}
+    for d, a, b in zip(ds, n_, d_):
+        y = by_year.setdefault(str(d)[:4], {"days": 0, "overnight_total_pct": 0.0, "market_hours_total_pct": 0.0})
+        y["days"] += 1
+        y["overnight_total_pct"] += a
+        y["market_hours_total_pct"] += b
+    for y in by_year.values():
+        y["overnight_total_pct"] = round(y["overnight_total_pct"], 1)
+        y["market_hours_total_pct"] = round(y["market_hours_total_pct"], 1)
     return {"days": len(n_),
             "overnight_pct_per_day": round(sum(n_) / len(n_), 4), "overnight_t": _t(n_),
             "overnight_total_pct": round(sum(n_), 1),
             "market_hours_pct_per_day": round(sum(d_) / len(d_), 4), "market_hours_t": _t(d_),
-            "market_hours_total_pct": round(sum(d_), 1)}
+            "market_hours_total_pct": round(sum(d_), 1),
+            "by_year": by_year, "stocks": len(stocks),
+            "stocks_up_overnight": sum(n > 0 for n, _ in stocks),
+            "stocks_up_market_hours": sum(d > 0 for _, d in stocks),
+            "stocks_better_overnight": sum(n > d for n, d in stocks)}
 
 
 def study(bars_by_sym, cfg, interval=60, exam=False, log=print):
@@ -147,4 +165,8 @@ def study(bars_by_sym, cfg, interval=60, exam=False, log=print):
             o["overnight_pct_per_day"], o["overnight_total_pct"], o["overnight_t"]))
         log("  while the market was open (open to close):      %+.3f%% a day, %+.0f%% in total (t %s)" % (
             o["market_hours_pct_per_day"], o["market_hours_total_pct"], o["market_hours_t"]))
+        log("  by year (shut / open): " + ",  ".join("%s %+.0f%% / %+.0f%%" % (
+            y, v["overnight_total_pct"], v["market_hours_total_pct"]) for y, v in sorted(o["by_year"].items())))
+        log("  of %d stocks: %d gained while it was shut, %d gained while it was open, %d did better while it was shut" % (
+            o["stocks"], o["stocks_up_overnight"], o["stocks_up_market_hours"], o["stocks_better_overnight"]))
     return res

@@ -1,0 +1,125 @@
+{
+ "registered": "2026-11-10",
+ "split": "2025-11-01",
+ "exam_min_t": 2.5,
+ "exam_opened": false,
+ "ideas": {
+  "leaders": "11:15: join stocks 1%+ ahead of the market, short those 1%+ behind",
+  "laggards": "11:15: the mirror image, bet the gap to the market closes",
+  "trend_day": "11:15: market has moved 0.4%+, join the strong stocks",
+  "late_push": "14:15: market and stock moved the same way all day, ride to the close",
+  "daily_trend": "first-hour breakout in the direction of the 20-day trend",
+  "squeeze": "first-hour breakout after the quietest day in 7",
+  "bounce": "3 lower closes and down 4%+: buy a green first hour (and the mirror)"
+ },
+ "design": {
+  "leaders": {
+   "trades": 5682,
+   "days": 477,
+   "win_rate": 42.1,
+   "r_before_charges": 0.011,
+   "r_after_charges": -0.095,
+   "rs_per_trade": -46.4,
+   "total_net": -263667,
+   "t_by_day": -6.52
+  },
+  "laggards": {
+   "trades": 5682,
+   "days": 477,
+   "win_rate": 42.6,
+   "r_before_charges": -0.081,
+   "r_after_charges": -0.187,
+   "rs_per_trade": -91.4,
+   "total_net": -519323,
+   "t_by_day": -15.79
+  },
+  "trend_day": {
+   "trades": 2085,
+   "days": 163,
+   "win_rate": 41.2,
+   "r_before_charges": 0.004,
+   "r_after_charges": -0.102,
+   "rs_per_trade": -50.3,
+   "total_net": -104776,
+   "t_by_day": -3.05
+  },
+  "late_push": {
+   "trades": 3817,
+   "days": 183,
+   "win_rate": 39.6,
+   "r_before_charges": 0.021,
+   "r_after_charges": -0.12,
+   "rs_per_trade": -58.7,
+   "total_net": -223997,
+   "t_by_day": -4.49
+  },
+  "daily_trend": {
+   "trades": 5829,
+   "days": 458,
+   "win_rate": 40.8,
+   "r_before_charges": -0.006,
+   "r_after_charges": -0.088,
+   "rs_per_trade": -43.0,
+   "total_net": -250627,
+   "t_by_day": -9.21
+  },
+  "squeeze": {
+   "trades": 2321,
+   "days": 428,
+   "win_rate": 40.3,
+   "r_before_charges": -0.007,
+   "r_after_charges": -0.093,
+   "rs_per_trade": -45.4,
+   "total_net": -105277,
+   "t_by_day": -5.02
+  },
+  "bounce": {
+   "trades": 974,
+   "days": 353,
+   "win_rate": 41.9,
+   "r_before_charges": -0.021,
+   "r_after_charges": -0.138,
+   "rs_per_trade": -59.0,
+   "total_net": -57431,
+   "t_by_day": -2.99
+  }
+ },
+ "exam": {},
+ "promoted": [],
+ "passed": [],
+ "overnight": {
+  "days": 723,
+  "overnight_pct_per_day": 0.0841,
+  "overnight_t": 4.3,
+  "overnight_total_pct": 60.8,
+  "market_hours_pct_per_day": -0.0257,
+  "market_hours_t": -0.96,
+  "market_hours_total_pct": -18.6,
+  "by_year": {
+   "2023": {
+    "days": 26,
+    "overnight_total_pct": 7.4,
+    "market_hours_total_pct": 2.6
+   },
+   "2024": {
+    "days": 245,
+    "overnight_total_pct": 32.2,
+    "market_hours_total_pct": -13.3
+   },
+   "2025": {
+    "days": 247,
+    "overnight_total_pct": 18.3,
+    "market_hours_total_pct": -4.0
+   },
+   "2026": {
+    "days": 205,
+    "overnight_total_pct": 3.0,
+    "market_hours_total_pct": -3.9
+   }
+  },
+  "stocks": 50,
+  "stocks_up_overnight": 48,
+  "stocks_up_market_hours": 18,
+  "stocks_better_overnight": 44
+ }
+}

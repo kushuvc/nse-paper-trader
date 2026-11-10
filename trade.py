@@ -33,6 +33,7 @@ PAPER = os.path.join(HERE, "paper")
 RESULTS = os.path.join(HERE, "results")
 MODEL = os.path.join(HERE, "model", "learned.json")
 LONG_CHECK = os.path.join(HERE, "results", "learned-60m.json")
+ROUND2 = os.path.join(HERE, "results", "research-round2.json")
 
 
 def symbols(cfg, a):
@@ -161,9 +162,8 @@ def cmd_learn(cfg, a):
 def cmd_research(cfg, a):
     """Round 2 ideas on ~3 years of hourly bars. --exam opens the unseen last year (see nse/research.py)."""
     res = research.study(load_all(cfg, a, "60m"), cfg, 60, exam=a.exam)
-    out = os.path.join(HERE, "results", "research-round2.json")
-    os.makedirs(os.path.dirname(out), exist_ok=True)
-    json.dump(res, open(out, "w"), indent=1)
+    os.makedirs(os.path.dirname(ROUND2), exist_ok=True)
+    json.dump(res, open(ROUND2, "w"), indent=1)
     print("\nSaved results/research-round2.json")
 
 
@@ -199,6 +199,10 @@ def cmd_ready(cfg, a):
         w = lc["walk_forward"]["learner"]
         print("\n3-year check (hourly bars, %d days): the learner made Rs %+.0f a trade over %d trades (t %s)." % (
             lc["history_days"], w["expectancy_rs"], w["trades"], w["t_stat"]))
+    r2 = load_json(ROUND2)
+    if r2:
+        print("Round 2 (%s): %d new kinds of strategy tested on hourly bars before %s. Made money after charges: %s."
+              % (r2["registered"], len(r2["ideas"]), r2["split"], ", ".join(r2["promoted"]) or "none"))
     print("\nRules were fixed on %s. Do not loosen them after seeing results." % g["rules"]["fixed_on"])
 
 
@@ -295,6 +299,10 @@ def cmd_status(cfg, a):
         out["gate"]["long_check"] = {"days": lc["history_days"], "first": lc["first_day"], "last": lc["asof"],
                                      "learner": lc["walk_forward"]["learner"],
                                      "every_signal": lc["walk_forward"]["every_signal"]}
+    r2 = load_json(ROUND2)
+    if r2:
+        out["gate"]["round2"] = {k: r2.get(k) for k in ("registered", "split", "promoted", "passed", "exam_opened")}
+        out["gate"]["round2"]["ideas"] = len(r2.get("ideas") or {})
     if m:
         out["learning"] = {k: m.get(k) for k in ("asof", "history_days", "lessons", "changes", "strategies",
                                                   "walk_forward", "last_day")}

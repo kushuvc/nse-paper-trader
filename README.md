@@ -20,6 +20,7 @@ python3 trade.py daily                         # 20+ year open-to-close gap stud
 python3 trade.py learn                         # nightly: learn from all history, walk-forward check
 python3 trade.py learn --interval 60m          # the same learner on ~3 years of hourly bars (a check, not used to trade)
 python3 trade.py ready                         # has any paper account earned a real-money trial?
+python3 trade.py research                      # Round 2: seven new ideas on the design years (rules in nse/research.py)
 python3 trade.py replay --date 2026-11-04      # live engine re-run on a past day, bar by bar (+ learner)
 python3 trade.py paper                         # LIVE dummy trades, leave running 9:15-15:20 IST
 python3 trade.py report                        # paper journal and running totals
@@ -136,6 +137,66 @@ the top. Passing means "worth a small trial", never "safe". Real trading is
 harder than this paper account: orders queue and fill partly, the free data
 here is delayed and sometimes wrong, and shorting needs margin and can be
 blocked. Expect real results to be worse than paper results.
+
+## Round 2: seven different kinds of strategy (10 Nov 2026)
+
+The first seven strategies all trade breakouts, gaps and VWAP. Round 2 asked
+whether a different *kind* of idea does better. "Better" means rupees per trade
+after charges on days the idea was not built on, not win rate (see trap90
+above).
+
+The test rules were committed to git before any idea was run on any data
+(`nse/research.py`), so the result could not be steered:
+
+- settings are round numbers chosen in advance; nothing is tuned
+- 3 years of hourly bars are cut in two: **design years** (478 days, before
+  1 Nov 2025) and an **exam year** (246 days after) that is not looked at
+- an idea reaches the exam only if it made money after charges in the design
+  years, and passes only with profit and a t-statistic by day of 2.5 or more
+- passing earns a paper account, which must still pass the real-money gate
+
+Design years, every signal, 50 stocks:
+
+| idea | what it does | trades | won | per trade before charges | after charges | t by day |
+| --- | --- | --- | --- | --- | --- | --- |
+| leaders | 11:15: buy stocks 1 %+ ahead of the market, short those 1 %+ behind | 5,682 | 42 % | +0.01 R | −Rs 46 | −6.5 |
+| laggards | the mirror image: bet the gap to the market closes | 5,682 | 43 % | −0.08 R | −Rs 91 | −15.8 |
+| trend_day | 11:15: market has moved 0.4 %+, join the strong stocks | 2,085 | 41 % | 0.00 R | −Rs 50 | −3.1 |
+| late_push | 14:15: market and stock moved the same way all day, ride to the close | 3,817 | 40 % | +0.02 R | −Rs 59 | −4.5 |
+| daily_trend | first-hour breakout in the direction of the 20-day trend | 5,829 | 41 % | −0.01 R | −Rs 43 | −9.2 |
+| squeeze | first-hour breakout after the quietest day in 7 | 2,321 | 40 % | −0.01 R | −Rs 45 | −5.0 |
+| bounce | 3 lower closes and down 4 %+: buy a green first hour (and the mirror) | 974 | 42 % | −0.02 R | −Rs 59 | −3.0 |
+
+**No idea made money after charges, so none went to the exam.** The exam year
+was left unopened and no paper account was added. Before charges the best idea
+earns +0.02 R a trade (about Rs 10); charges then take Rs 40 to 70.
+
+### Why: these stocks made their gains while the market was shut
+
+`research` also splits each day's move of the average Nifty 50 stock in two
+(723 days, before charges):
+
+| | per day | 3-year total | t |
+| --- | --- | --- | --- |
+| while the market was shut (close to next open) | +0.084 % | +61 % | 4.3 |
+| while the market was open (open to close) | −0.026 % | −19 % | −1.0 |
+
+48 of the 50 stocks gained while the market was shut; only 18 gained while it
+was open. By year (shut / open): 2024 +32 % / −13 %, 2025 +18 % / −4 %, 2026 so
+far +3 % / −4 %.
+
+An intraday rule must be flat by 15:15, so it never holds the part of the day
+where the gains were made. What is left, open to close, averaged about zero,
+and none of the 14 intraday rules tried here found a pattern in it that
+survives charges. Trying more intraday rules until one backtest turns green
+would be overfitting.
+
+Cautions on the overnight number. It is not a strategy by itself: buying at
+the close and selling at the next open every day pays delivery charges of
+about 0.2 % a round trip (STT alone is 0.1 % a side), against 0.084 % earned,
+and it faded to +3 % in 2026. The 50 stocks are today's Nifty 50, which
+flatters the past: stocks that dropped out of the index are not in the data.
+And three years is one stretch of one market.
 
 ## Paper trading ("dummy live trades")
 
