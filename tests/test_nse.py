@@ -9,7 +9,7 @@ import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from nse import backtest as bt, costs, gate, learn, paper, risk, strategies  # noqa: E402
+from nse import backtest as bt, costs, gate, learn, paper, research, risk, strategies  # noqa: E402
 from nse.market import Bar, IST, full_sessions, round_tick  # noqa: E402
 
 CFG = dict(risk.DEFAULTS)
@@ -320,6 +320,111 @@ class Gate(unittest.TestCase):
         g = gate.readiness(journal_rows("orb15", 70, GOOD), names, HIST_GOOD)
         self.assertEqual(g["passed"], ["orb15"])
         self.assertIn("small real-money trial", g["verdict"])
+
+
+def ramp(pct, upto, start=1000.0):
+    """Closes that climb steadily to `pct` % by bar index `upto` (0-based) and then stay there."""
+    return [round(start * (1 + pct / 100 * min(i + 1, upto + 1) / (upto + 1)), 2) for i in range(75)]
+
+
+def fired(name, bars, ctx):
+    scan = strategies.get(name)
+    return [(bars[i].t.strftime("%H:%M"), s) for i in range(len(bars)) for s in [scan(bars[:i + 1], ctx)] if s]
+
+
+class Round2Ideas(unittest.TestCase):
+    D = datetime.date(2026, 3, 2)
+
+    def ctx(self, mkt=None, days=None):
+        return {"interval": 5, "prev_close": 1000.0, "prev_high": 1010.0, "prev_low": 990.0,
+                "mkt": mkt or {}, "days": days or []}
+
+    def test_leaders_and_its_mirror(self):
+        bars = day_bars(self.D, ramp(1.5, 23))            # +1.5 % by 11:15
+        got = fired("leaders", bars, self.ctx({"11:10": 0.2}))
+        self.assertEqual([t for t, _ in got], ["11:10"])  # only at the bar that ends 11:15
+        s = got[0][1]
+        self.assertEqual((s.side, s.entry), (1, 1015.0))
+        self.assertAlmostEqual(s.stop, 1015 * 0.99, delta=0.05)
+        self.assertEqual(fired("laggards", bars, self.ctx({"11:10": 0.2}))[0][1].side, -1)
+        self.assertEqual(fired("leaders", bars, self.ctx({"11:10": 0.8})), [])   # only 0.7 % ahead
+        self.assertEqual(fired("leaders", bars, self.ctx()), [])                  # market unknown: no trade
+        down = day_bars(self.D, ramp(-1.5, 23))
+        self.assertEqual(fired("leaders", down, self.ctx({"11:10": 0.0}))[0][1].side, -1)
+
+    def test_market_move_is_read_at_the_entry_bar_only(self):
+        bars = day_bars(self.D, ramp(1.5, 23))
+        a = fired("leaders", bars, self.ctx({"11:10": 0.2, "11:15": 9.0, "15:25": -9.0}))
+        b = fired("leaders", bars, self.ctx({"11:10": 0.2}))
+        self.assertEqual(a, b)
+
+    def test_trend_day_needs_the_market_and_a_strong_stock(self):
+        bars = day_bars(self.D, ramp(1.5, 23))
+        self.assertEqual(fired("trend_day", bars, self.ctx({"11:10": 0.5}))[0][1].side, 1)
+        self.assertEqual(fired("trend_day", bars, self.ctx({"11:10": 0.3})), [])    # market too quiet
+        self.assertEqual(fired("trend_day", bars, self.ctx({"11:10": -0.5})), [])   # stock is not weak
+        self.assertEqual(fired("trend_day", bars, self.ctx({"11:10": 1.8})), [])    # stock behind the market
+
+    def test_late_push(self):
+        bars = day_bars(self.D, ramp(1.2, 59))            # +1.2 % by 14:15
+        got = fired("late_push", bars, self.ctx({"14:10": 0.6}))
+        self.assertEqual([t for t, _ in got], ["14:10"])
+        self.assertAlmostEqual(got[0][1].stop, 1012 * 0.9925, delta=0.05)
+        self.assertEqual(fired("late_push", bars, self.ctx({"14:10": -0.6})), [])
+
+    def test_daily_trend_only_trades_with_the_trend(self):
+        up_days = [(0, c + 5, c - 5, c) for c in range(900, 1000, 5)]          # 20 rising closes
+        dn_days = [(0, c + 5, c - 5, c) for c in range(1100, 1000, -5)]
+        calm = [1000.0] * 12                                                     # first hour: flat
+        brk_up = day_bars(self.D, calm + [1004.0])
+        brk_dn = day_bars(self.D, calm + [996.0])
+        s = fired("daily_trend", brk_up, self.ctx(days=up_days))[0][1]
+        self.assertEqual((s.side, s.stop), (1, 999.5))                           # stop at the first hour's low
+        self.assertEqual(fired("daily_trend", brk_dn, self.ctx(days=up_days)), [])
+        self.assertEqual(fired("daily_trend", brk_dn, self.ctx(days=dn_days))[0][1].side, -1)
+        self.assertEqual(fired("daily_trend", brk_up, self.ctx(days=up_days[:10])), [])  # too little history
+
+    def test_squeeze_needs_the_quietest_day(self):
+        wide = [(0, 1010, 990, 1000)] * 6
+        brk = day_bars(self.D, [1000.0] * 12 + [1004.0])
+        self.assertEqual(len(fired("squeeze", brk, self.ctx(days=wide + [(0, 1002, 998, 1000)]))), 1)
+        self.assertEqual(fired("squeeze", brk, self.ctx(days=wide + [(0, 1015, 985, 1000)])), [])
+
+    def test_bounce(self):
+        fell = [(0, 0, 0, c) for c in (1050, 1030, 1015, 1000)]                # 3 lower closes, -4.8 %
+        green = day_bars(self.D, ramp(0.4, 11))
+        got = fired("bounce", green, self.ctx(days=fell))
+        self.assertEqual([t for t, _ in got], ["10:10"])                        # the bar that ends 10:15
+        self.assertEqual(got[0][1].side, 1)
+        self.assertLess(got[0][1].stop, 1000.0)                                 # under today's low
+        self.assertEqual(fired("bounce", day_bars(self.D, ramp(-0.4, 11)), self.ctx(days=fell)), [])
+        self.assertEqual(fired("bounce", green, self.ctx(days=[(0, 0, 0, c) for c in (1010, 1005, 1002, 1000)])), [])
+
+    def test_study_decisions_do_not_depend_on_later_bars(self):
+        data = {"S%d" % k: random_days(30, seed=k, sym_price=500.0 * (k + 1)) for k in range(6)}
+        last = max(b.t.date() for b in data["S0"])
+        rnd = random.Random(1)
+        changed = {}
+        for s, bars in data.items():
+            f = 1 + rnd.uniform(-0.05, 0.05)
+            changed[s] = [b if (b.t.date() != last or b.t.strftime("%H:%M") < "12:00")
+                          else Bar(b.t, b.o * f, b.h * f, b.l * f, b.c * f, b.v) for b in bars]
+        names = list(strategies.RESEARCH)
+
+        def early(d):
+            return {(n, t["symbol"], t["date"], t["time"], t["side"], t["entry"], t["stop"])
+                    for n, ts in research.run(d, names, CFG, 5).items() for t in ts
+                    if t["date"] != str(last) or t["time"] < "11:55"}
+        a = early(data)
+        self.assertTrue(a)
+        self.assertEqual(a, early(changed))
+
+    def test_exam_is_only_for_ideas_that_made_money_in_the_design_years(self):
+        data = {"S%d" % k: random_days(40, seed=20 + k, sym_price=800.0) for k in range(4)}
+        res = research.study(data, CFG, 5, exam=True, log=lambda *_: None)
+        self.assertEqual(set(res["design"]), set(strategies.RESEARCH))
+        self.assertTrue(set(res["exam"]) <= set(res["promoted"]))
+        self.assertTrue(set(res["passed"]) <= set(res["exam"]))
 
 
 if __name__ == "__main__":

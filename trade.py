@@ -25,7 +25,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-from nse import backtest as bt, data, gate, learn, paper, risk, strategies  # noqa: E402
+from nse import backtest as bt, data, gate, learn, paper, research, risk, strategies  # noqa: E402
 from nse.market import IST, now_ist  # noqa: E402
 
 DATA = os.path.join(HERE, "data")
@@ -156,6 +156,15 @@ def cmd_learn(cfg, a):
         learn.run(load_all(cfg, a, "60m"), cfg, LONG_CHECK, interval=60, names=names)
         return
     learn.run(load_all(cfg, a, "5m"), cfg, MODEL)
+
+
+def cmd_research(cfg, a):
+    """Round 2 ideas on ~3 years of hourly bars. --exam opens the unseen last year (see nse/research.py)."""
+    res = research.study(load_all(cfg, a, "60m"), cfg, 60, exam=a.exam)
+    out = os.path.join(HERE, "results", "research-round2.json")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    json.dump(res, open(out, "w"), indent=1)
+    print("\nSaved results/research-round2.json")
 
 
 def live_journal():
@@ -329,6 +338,7 @@ def main(argv=None):
     sub.add_parser("daily")
     p = sub.add_parser("learn"); p.add_argument("--interval", default="5m", choices=["5m", "60m"])
     sub.add_parser("ready")
+    p = sub.add_parser("research"); p.add_argument("--exam", action="store_true")
     p = sub.add_parser("replay"); p.add_argument("--date", required=True)
     p = sub.add_parser("paper"); p.add_argument("--once", action="store_true", help="one step, then exit")
     p.add_argument("--until", default="15:20", help="IST time to stop (e.g. 12:15 for a morning shift)")
@@ -337,7 +347,7 @@ def main(argv=None):
     a = ap.parse_args(argv)
     cfg = risk.load_config(a.config)
     {"universe": cmd_universe, "collect": cmd_collect, "backtest": cmd_backtest, "daily": cmd_daily,
-     "replay": cmd_replay, "learn": cmd_learn, "ready": cmd_ready, "paper": cmd_paper, "report": cmd_report,
+     "replay": cmd_replay, "learn": cmd_learn, "ready": cmd_ready, "research": cmd_research, "paper": cmd_paper, "report": cmd_report,
      "status": cmd_status}[a.cmd](cfg, a)
 
 
