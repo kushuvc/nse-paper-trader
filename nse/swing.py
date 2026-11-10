@@ -598,7 +598,7 @@ def study(symbols, load, exam=False, index=None, log=print):
     log("DESIGN YEARS: decisions %s to %s, %d trading days. No later price is loaded." % (DESIGN_FROM, d_end, q["trading_days"]))
     log("%d stocks with prices, %d of them in the 50-stock universe at some point (%d of those have since left the Nifty 500)." % (
         q["stocks_with_prices"], q["stocks_ever_in_universe"], len(q["former_names_ever_in_universe"])))
-    log("Per trade, in %% of the money put in. before/after = before/after charges; holding = the universe over the same days;")
+    log("Per trade, in % of the money put in. before/after = before/after charges; holding = the universe over the same days;")
     log("excess = after - holding; t(month) = how sure the excess is; vs index = after - the Nifty 50 over the same days;")
     log("day late = excess if every order is a day late.\n")
     log(HEAD)

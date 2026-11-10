@@ -1,0 +1,736 @@
+{
+ "registered": "2026-11-10",
+ "design_from": "2010-01-01",
+ "split": "2023-01-01",
+ "exam_min_t": 2.5,
+ "exam_opened": false,
+ "ideas": {
+  "momentum": "At each month end hold the 5 stocks that rose most over the 11 months ending a month ago. Why: winners of the past year have tended to keep winning for some months.",
+  "low_vol": "At each month end hold the 5 stocks whose price moved least from day to day over the last 60 days. Why: steady stocks have tended to return more than their risk suggests.",
+  "high52": "Buy on the first close above every close of the past 250 days (after 20 days without one). Sell after 20 trading days, or earlier on a close 8% below the entry. Why: a new one-year high is news that holders anchored to the old high are slow to price.",
+  "pullback": "In a stock above its 200-day average, buy after 3 lower closes in a row that add up to a fall of 5% or more. Sell on the first close above the 5-day average, or after 10 trading days. Why: sharp dips inside an uptrend have tended to be bought back.",
+  "losers": "At each week end hold the 5 stocks that fell most over the last 5 trading days, for one week. Why: the past week's biggest losers have tended to bounce the week after.",
+  "volume_surge": "Buy at the close of a day the stock rose 4% or more on at least 3 times its usual volume. Sell after 10 trading days, or earlier on a close 8% below the entry. Why: big news is absorbed over days, not in one."
+ },
+ "design": {
+  "momentum": {
+   "trades": 272,
+   "months": 142,
+   "avg_days": 58.6,
+   "win_rate": 49.6,
+   "beat_holding": 43.0,
+   "gross_pct": 2.661,
+   "net_pct": 2.255,
+   "bench_pct": 2.384,
+   "excess_pct": -0.129,
+   "vs_index_pct": -0.465,
+   "t_excess_by_month": 0.04,
+   "by_year": {
+    "2010": {
+     "trades": 30,
+     "net_pct": 0.03,
+     "excess_pct": 0.98
+    },
+    "2011": {
+     "trades": 19,
+     "net_pct": 1.28,
+     "excess_pct": 0.29
+    },
+    "2012": {
+     "trades": 28,
+     "net_pct": 4.77,
+     "excess_pct": 3.48
+    },
+    "2013": {
+     "trades": 14,
+     "net_pct": 4.05,
+     "excess_pct": 0.13
+    },
+    "2014": {
+     "trades": 19,
+     "net_pct": 9.87,
+     "excess_pct": 1.48
+    },
+    "2015": {
+     "trades": 16,
+     "net_pct": 0.29,
+     "excess_pct": 3.83
+    },
+    "2016": {
+     "trades": 20,
+     "net_pct": 4.66,
+     "excess_pct": -1.29
+    },
+    "2017": {
+     "trades": 27,
+     "net_pct": -2.06,
+     "excess_pct": -4.18
+    },
+    "2018": {
+     "trades": 19,
+     "net_pct": 2.84,
+     "excess_pct": 5.32
+    },
+    "2019": {
+     "trades": 23,
+     "net_pct": -6.15,
+     "excess_pct": -3.86
+    },
+    "2020": {
+     "trades": 22,
+     "net_pct": 0.99,
+     "excess_pct": -9.3
+    },
+    "2021": {
+     "trades": 21,
+     "net_pct": 5.33,
+     "excess_pct": -0.69
+    },
+    "2022": {
+     "trades": 14,
+     "net_pct": 8.72,
+     "excess_pct": 6.19
+    }
+   },
+   "day_late": {
+    "trades": 272,
+    "net_pct": 2.471,
+    "excess_pct": 0.038
+   },
+   "account": {
+    "final": 202931,
+    "a_year_pct": 5.6,
+    "worst_fall_pct": -49.1,
+    "trades_taken": 272,
+    "invested_pct": 96.8
+   }
+  },
+  "low_vol": {
+   "trades": 295,
+   "months": 147,
+   "avg_days": 54.0,
+   "win_rate": 61.7,
+   "beat_holding": 54.2,
+   "gross_pct": 4.62,
+   "net_pct": 4.211,
+   "bench_pct": 2.217,
+   "excess_pct": 1.994,
+   "vs_index_pct": 1.596,
+   "t_excess_by_month": 2.18,
+   "by_year": {
+    "2010": {
+     "trades": 30,
+     "net_pct": 2.23,
+     "excess_pct": 2.18
+    },
+    "2011": {
+     "trades": 32,
+     "net_pct": 1.84,
+     "excess_pct": 2.63
+    },
+    "2012": {
+     "trades": 21,
+     "net_pct": 4.01,
+     "excess_pct": 1.87
+    },
+    "2013": {
+     "trades": 29,
+     "net_pct": 3.76,
+     "excess_pct": 1.74
+    },
+    "2014": {
+     "trades": 17,
+     "net_pct": 24.09,
+     "excess_pct": 15.81
+    },
+    "2015": {
+     "trades": 13,
+     "net_pct": -0.87,
+     "excess_pct": 3.64
+    },
+    "2016": {
+     "trades": 17,
+     "net_pct": 4.46,
+     "excess_pct": -2.13
+    },
+    "2017": {
+     "trades": 22,
+     "net_pct": 4.96,
+     "excess_pct": 1.84
+    },
+    "2018": {
+     "trades": 21,
+     "net_pct": -2.13,
+     "excess_pct": -0.75
+    },
+    "2019": {
+     "trades": 22,
+     "net_pct": 1.52,
+     "excess_pct": 4.61
+    },
+    "2020": {
+     "trades": 29,
+     "net_pct": 5.93,
+     "excess_pct": -2.83
+    },
+    "2021": {
+     "trades": 20,
+     "net_pct": 6.47,
+     "excess_pct": 1.31
+    },
+    "2022": {
+     "trades": 22,
+     "net_pct": 2.28,
+     "excess_pct": -0.06
+    }
+   },
+   "day_late": {
+    "trades": 295,
+    "net_pct": 4.297,
+    "excess_pct": 2.058
+   },
+   "account": {
+    "final": 769120,
+    "a_year_pct": 17.0,
+    "worst_fall_pct": -35.6,
+    "trades_taken": 295,
+    "invested_pct": 98.2
+   }
+  },
+  "high52": {
+   "trades": 876,
+   "months": 153,
+   "avg_days": 17.8,
+   "win_rate": 46.3,
+   "beat_holding": 43.3,
+   "gross_pct": 0.535,
+   "net_pct": 0.132,
+   "bench_pct": 0.445,
+   "excess_pct": -0.313,
+   "vs_index_pct": -0.413,
+   "t_excess_by_month": -1.69,
+   "by_year": {
+    "2010": {
+     "trades": 82,
+     "net_pct": -0.12,
+     "excess_pct": -0.72
+    },
+    "2011": {
+     "trades": 27,
+     "net_pct": -4.29,
+     "excess_pct": -0.06
+    },
+    "2012": {
+     "trades": 57,
+     "net_pct": 0.66,
+     "excess_pct": 0.22
+    },
+    "2013": {
+     "trades": 66,
+     "net_pct": -0.86,
+     "excess_pct": 0.68
+    },
+    "2014": {
+     "trades": 83,
+     "net_pct": 3.14,
+     "excess_pct": -0.2
+    },
+    "2015": {
+     "trades": 62,
+     "net_pct": -4.62,
+     "excess_pct": -1.85
+    },
+    "2016": {
+     "trades": 53,
+     "net_pct": -0.31,
+     "excess_pct": -0.62
+    },
+    "2017": {
+     "trades": 103,
+     "net_pct": 1.58,
+     "excess_pct": 0.28
+    },
+    "2018": {
+     "trades": 54,
+     "net_pct": -1.83,
+     "excess_pct": -0.05
+    },
+    "2019": {
+     "trades": 57,
+     "net_pct": -1.78,
+     "excess_pct": -0.76
+    },
+    "2020": {
+     "trades": 64,
+     "net_pct": 3.31,
+     "excess_pct": -1.45
+    },
+    "2021": {
+     "trades": 102,
+     "net_pct": 2.28,
+     "excess_pct": 0.56
+    },
+    "2022": {
+     "trades": 66,
+     "net_pct": -1.59,
+     "excess_pct": -0.79
+    }
+   },
+   "day_late": {
+    "trades": 876,
+    "net_pct": 0.129,
+    "excess_pct": -0.259
+   },
+   "account": {
+    "final": 95229,
+    "a_year_pct": -0.4,
+    "worst_fall_pct": -54.7,
+    "trades_taken": 562,
+    "invested_pct": 62.0
+   }
+  },
+  "pullback": {
+   "trades": 1759,
+   "months": 154,
+   "avg_days": 4.1,
+   "win_rate": 63.3,
+   "beat_holding": 55.6,
+   "gross_pct": 0.637,
+   "net_pct": 0.234,
+   "bench_pct": 0.237,
+   "excess_pct": -0.003,
+   "vs_index_pct": 0.094,
+   "t_excess_by_month": 0.21,
+   "by_year": {
+    "2010": {
+     "trades": 146,
+     "net_pct": -0.28,
+     "excess_pct": 0.46
+    },
+    "2011": {
+     "trades": 94,
+     "net_pct": -0.17,
+     "excess_pct": 0.4
+    },
+    "2012": {
+     "trades": 114,
+     "net_pct": 0.75,
+     "excess_pct": 0.47
+    },
+    "2013": {
+     "trades": 133,
+     "net_pct": 0.16,
+     "excess_pct": -0.25
+    },
+    "2014": {
+     "trades": 247,
+     "net_pct": 1.02,
+     "excess_pct": 0.41
+    },
+    "2015": {
+     "trades": 138,
+     "net_pct": -0.44,
+     "excess_pct": -0.24
+    },
+    "2016": {
+     "trades": 107,
+     "net_pct": -0.85,
+     "excess_pct": -1.07
+    },
+    "2017": {
+     "trades": 114,
+     "net_pct": 0.67,
+     "excess_pct": 0.05
+    },
+    "2018": {
+     "trades": 128,
+     "net_pct": -0.69,
+     "excess_pct": -0.49
+    },
+    "2019": {
+     "trades": 50,
+     "net_pct": 0.1,
+     "excess_pct": 0.41
+    },
+    "2020": {
+     "trades": 110,
+     "net_pct": 0.32,
+     "excess_pct": 1.0
+    },
+    "2021": {
+     "trades": 251,
+     "net_pct": 0.97,
+     "excess_pct": -0.46
+    },
+    "2022": {
+     "trades": 127,
+     "net_pct": -0.08,
+     "excess_pct": -0.34
+    }
+   },
+   "day_late": {
+    "trades": 1759,
+    "net_pct": -0.001,
+    "excess_pct": -0.277
+   },
+   "account": {
+    "final": 54886,
+    "a_year_pct": -4.5,
+    "worst_fall_pct": -59.7,
+    "trades_taken": 1158,
+    "invested_pct": 30.5
+   }
+  },
+  "losers": {
+   "trades": 2915,
+   "months": 156,
+   "avg_days": 5.5,
+   "win_rate": 49.3,
+   "beat_holding": 45.5,
+   "gross_pct": 0.2,
+   "net_pct": -0.202,
+   "bench_pct": 0.207,
+   "excess_pct": -0.409,
+   "vs_index_pct": -0.446,
+   "t_excess_by_month": -3.64,
+   "by_year": {
+    "2010": {
+     "trades": 232,
+     "net_pct": -0.18,
+     "excess_pct": -0.19
+    },
+    "2011": {
+     "trades": 220,
+     "net_pct": -0.85,
+     "excess_pct": -0.19
+    },
+    "2012": {
+     "trades": 226,
+     "net_pct": 0.01,
+     "excess_pct": -0.74
+    },
+    "2013": {
+     "trades": 220,
+     "net_pct": -0.24,
+     "excess_pct": -0.21
+    },
+    "2014": {
+     "trades": 230,
+     "net_pct": 0.65,
+     "excess_pct": -0.02
+    },
+    "2015": {
+     "trades": 222,
+     "net_pct": -0.67,
+     "excess_pct": -0.52
+    },
+    "2016": {
+     "trades": 234,
+     "net_pct": 0.21,
+     "excess_pct": -0.02
+    },
+    "2017": {
+     "trades": 222,
+     "net_pct": 0.02,
+     "excess_pct": -0.65
+    },
+    "2018": {
+     "trades": 220,
+     "net_pct": -0.98,
+     "excess_pct": -0.69
+    },
+    "2019": {
+     "trades": 211,
+     "net_pct": -0.79,
+     "excess_pct": -0.81
+    },
+    "2020": {
+     "trades": 226,
+     "net_pct": 0.41,
+     "excess_pct": -0.1
+    },
+    "2021": {
+     "trades": 228,
+     "net_pct": -0.18,
+     "excess_pct": -0.94
+    },
+    "2022": {
+     "trades": 224,
+     "net_pct": -0.14,
+     "excess_pct": -0.28
+    }
+   },
+   "day_late": {
+    "trades": 2915,
+    "net_pct": -0.255,
+    "excess_pct": -0.468
+   },
+   "account": {
+    "final": 4595,
+    "a_year_pct": -21.1,
+    "worst_fall_pct": -95.8,
+    "trades_taken": 2285,
+    "invested_pct": 77.6
+   }
+  },
+  "volume_surge": {
+   "trades": 761,
+   "months": 147,
+   "avg_days": 9.1,
+   "win_rate": 48.9,
+   "beat_holding": 43.6,
+   "gross_pct": 0.149,
+   "net_pct": -0.253,
+   "bench_pct": 0.205,
+   "excess_pct": -0.458,
+   "vs_index_pct": -0.556,
+   "t_excess_by_month": -1.23,
+   "by_year": {
+    "2010": {
+     "trades": 49,
+     "net_pct": -0.82,
+     "excess_pct": -0.61
+    },
+    "2011": {
+     "trades": 40,
+     "net_pct": -1.51,
+     "excess_pct": -0.44
+    },
+    "2012": {
+     "trades": 42,
+     "net_pct": 4.12,
+     "excess_pct": 1.28
+    },
+    "2013": {
+     "trades": 51,
+     "net_pct": -0.53,
+     "excess_pct": 0.17
+    },
+    "2014": {
+     "trades": 53,
+     "net_pct": 1.29,
+     "excess_pct": -0.5
+    },
+    "2015": {
+     "trades": 42,
+     "net_pct": 1.05,
+     "excess_pct": 2.66
+    },
+    "2016": {
+     "trades": 47,
+     "net_pct": -2.03,
+     "excess_pct": -1.36
+    },
+    "2017": {
+     "trades": 70,
+     "net_pct": 0.07,
+     "excess_pct": -0.52
+    },
+    "2018": {
+     "trades": 60,
+     "net_pct": -1.31,
+     "excess_pct": -0.91
+    },
+    "2019": {
+     "trades": 66,
+     "net_pct": -1.87,
+     "excess_pct": -0.36
+    },
+    "2020": {
+     "trades": 85,
+     "net_pct": -1.1,
+     "excess_pct": -1.83
+    },
+    "2021": {
+     "trades": 90,
+     "net_pct": 1.71,
+     "excess_pct": 0.38
+    },
+    "2022": {
+     "trades": 66,
+     "net_pct": -1.8,
+     "excess_pct": -2.25
+    }
+   },
+   "day_late": {
+    "trades": 760,
+    "net_pct": -0.224,
+    "excess_pct": -0.452
+   },
+   "account": {
+    "final": 62162,
+    "a_year_pct": -3.6,
+    "worst_fall_pct": -60.0,
+    "trades_taken": 675,
+    "invested_pct": 38.5
+   }
+  }
+ },
+ "exam": {},
+ "promoted": [
+  "low_vol"
+ ],
+ "passed": [],
+ "design_data": {
+  "from": "2010-01-04",
+  "to": "2022-12-30",
+  "trading_days": 3207,
+  "stocks_with_prices": 457,
+  "former_names_with_prices": [
+   "63MOONS",
+   "ABAN",
+   "ADANIPOWER",
+   "ALOKINDS",
+   "ARSSINFRA",
+   "BAJAJHIND",
+   "BALRAMCHIN",
+   "BGRENERGY",
+   "BOMDYEING",
+   "CHAMBLFERT",
+   "DEN",
+   "DISHTV",
+   "DLF",
+   "EDELWEISS",
+   "EDUCOMP",
+   "EKC",
+   "ELECTCAST",
+   "ESSARSHPNG",
+   "FRETAIL",
+   "GESHIP",
+   "GTL",
+   "GTLINFRA",
+   "GVKPIL",
+   "HATHWAY",
+   "HCC",
+   "HCL-INSYS",
+   "HDIL",
+   "HINDOILEXP",
+   "IDEA",
+   "IFCI",
+   "IIFL",
+   "IL&FSTRANS",
+   "JETAIRWAYS",
+   "JINDALSAW",
+   "JISLJALEQS",
+   "JMFINANCIL",
+   "JPPOWER",
+   "JUSTDIAL",
+   "KARURVYSYA",
+   "MADHUCON",
+   "MASTEK",
+   "MCLEODRUSS",
+   "MOTILALOFS",
+   "MTNL",
+   "NCC",
+   "NETWORK18",
+   "ONMOBILE",
+   "PATELENG",
+   "PCJEWELLER",
+   "PRAJIND",
+   "RAJESHEXPO",
+   "RCOM",
+   "RELIGARE",
+   "RELINFRA",
+   "RENUKA",
+   "RPOWER",
+   "SCI",
+   "SIMPLEXINF",
+   "SOUTHBANK",
+   "SUZLON",
+   "TANLA",
+   "TRIVENI",
+   "TTML",
+   "UNITECH",
+   "VAKRANGEE",
+   "WELCORP",
+   "YESBANK"
+  ],
+  "stocks_ever_in_universe": 165,
+  "former_names_ever_in_universe": [
+   "ABAN",
+   "ADANIPOWER",
+   "ALOKINDS",
+   "BAJAJHIND",
+   "BALRAMCHIN",
+   "BOMDYEING",
+   "CHAMBLFERT",
+   "DISHTV",
+   "DLF",
+   "EDUCOMP",
+   "GVKPIL",
+   "HDIL",
+   "IDEA",
+   "IFCI",
+   "JETAIRWAYS",
+   "JINDALSAW",
+   "JUSTDIAL",
+   "PCJEWELLER",
+   "RCOM",
+   "RELINFRA",
+   "RENUKA",
+   "RPOWER",
+   "SUZLON",
+   "UNITECH",
+   "VAKRANGEE",
+   "YESBANK"
+  ],
+  "smallest_universe": 50,
+  "untrusted_moves": [
+   [
+    "2017-10-25",
+    "PNB",
+    46.2
+   ],
+   [
+    "2018-05-04",
+    "PCJEWELLER",
+    43.8
+   ],
+   [
+    "2018-05-17",
+    "RCOM",
+    56.2
+   ],
+   [
+    "2019-06-18",
+    "JETAIRWAYS",
+    -40.8
+   ],
+   [
+    "2019-06-20",
+    "JETAIRWAYS",
+    89.9
+   ],
+   [
+    "2020-03-06",
+    "YESBANK",
+    -56.1
+   ],
+   [
+    "2020-03-16",
+    "YESBANK",
+    45.2
+   ],
+   [
+    "2020-03-17",
+    "YESBANK",
+    58.1
+   ],
+   [
+    "2020-03-26",
+    "INDUSINDBK",
+    44.7
+   ]
+  ],
+  "holding_universe": {
+   "final": 258312,
+   "a_year_pct": 7.6,
+   "worst_fall_pct": -49.0
+  },
+  "nifty50_index": {
+   "final": 346036,
+   "a_year_pct": 10.0,
+   "worst_fall_pct": -38.4
+  }
+ }
+}
