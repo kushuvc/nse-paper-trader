@@ -10,6 +10,7 @@ __pycache__/
 data/60m/
 data/1d/
 data/nifty100.txt
+data/nifty500.txt
 # local replays/tests
 paper/*-replay.json
 .claude/

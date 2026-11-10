@@ -25,7 +25,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-from nse import backtest as bt, data, gate, learn, paper, research, risk, strategies  # noqa: E402
+from nse import backtest as bt, data, gate, learn, paper, research, risk, strategies, swing  # noqa: E402
 from nse.market import IST, now_ist  # noqa: E402
 
 DATA = os.path.join(HERE, "data")
@@ -34,12 +34,13 @@ RESULTS = os.path.join(HERE, "results")
 MODEL = os.path.join(HERE, "model", "learned.json")
 LONG_CHECK = os.path.join(HERE, "results", "learned-60m.json")
 ROUND2 = os.path.join(HERE, "results", "research-round2.json")
+ROUND3 = os.path.join(HERE, "results", "research-round3-swing.json")
 
 
 def symbols(cfg, a):
     if getattr(a, "symbols", None):
         return [s.strip().upper() for s in a.symbols.split(",")]
-    n = 100 if cfg["universe"] == "nifty100" else 50
+    n = getattr(a, "list", None) or (100 if cfg["universe"] == "nifty100" else 50)
     return data.nifty_list(n, DATA)
 
 
@@ -165,6 +166,30 @@ def cmd_research(cfg, a):
     os.makedirs(os.path.dirname(ROUND2), exist_ok=True)
     json.dump(res, open(ROUND2, "w"), indent=1)
     print("\nSaved results/research-round2.json")
+
+
+def cmd_swing(cfg, a):
+    """Round 3: six ideas that hold for days or weeks, on daily closes. Rules in nse/swing.py.
+    --collect downloads the prices, --check shows facts about the design-years data without running
+    any idea, --exam opens the unseen years for the ideas that qualified."""
+    syms = swing.candidates(data.nifty_list(500, DATA))
+    if a.collect:
+        print("Collecting daily bars for %d stocks into data/1d/ ..." % len(syms))
+        print("Done: %d/%d saved." % (data.collect(DATA, "1d", syms + ["^NSEI"]), len(syms) + 1))
+        return
+
+    def load(sym):
+        return data.load(DATA, "1d", sym)
+
+    index = load("^NSEI")
+    if a.check:
+        mkt = swing.build(syms, load, upto=swing.SPLIT, index=index)
+        print(json.dumps(swing.quality(mkt, swing.DESIGN_FROM, swing.SPLIT - datetime.timedelta(days=1)), indent=1))
+        return
+    res = swing.study(syms, load, exam=a.exam, index=index)
+    os.makedirs(os.path.dirname(ROUND3), exist_ok=True)
+    json.dump(res, open(ROUND3, "w"), indent=1)
+    print("\nSaved results/research-round3-swing.json")
 
 
 def live_journal():
@@ -339,6 +364,7 @@ def main(argv=None):
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("universe")
     p = sub.add_parser("collect"); p.add_argument("--interval", default="5m", choices=["5m", "15m", "60m", "1d"])
+    p.add_argument("--list", type=int, choices=[50, 100, 500], help="Nifty 50/100/500 instead of the configured list")
     p = sub.add_parser("backtest"); p.add_argument("--interval", default="5m", choices=["5m", "15m", "60m"])
     p.add_argument("--strategy", choices=list(strategies.REGISTRY))
     p.add_argument("--portfolio", action="store_true", help="apply max trades/day + daily loss limit")
@@ -347,6 +373,9 @@ def main(argv=None):
     p = sub.add_parser("learn"); p.add_argument("--interval", default="5m", choices=["5m", "60m"])
     sub.add_parser("ready")
     p = sub.add_parser("research"); p.add_argument("--exam", action="store_true")
+    p = sub.add_parser("swing"); p.add_argument("--exam", action="store_true", help="open the unseen years for ideas that qualified")
+    p.add_argument("--collect", action="store_true", help="download daily prices for the Nifty 500 and former big names")
+    p.add_argument("--check", action="store_true", help="facts about the design-years data; no idea is run")
     p = sub.add_parser("replay"); p.add_argument("--date", required=True)
     p = sub.add_parser("paper"); p.add_argument("--once", action="store_true", help="one step, then exit")
     p.add_argument("--until", default="15:20", help="IST time to stop (e.g. 12:15 for a morning shift)")
@@ -355,7 +384,7 @@ def main(argv=None):
     a = ap.parse_args(argv)
     cfg = risk.load_config(a.config)
     {"universe": cmd_universe, "collect": cmd_collect, "backtest": cmd_backtest, "daily": cmd_daily,
-     "replay": cmd_replay, "learn": cmd_learn, "ready": cmd_ready, "research": cmd_research, "paper": cmd_paper, "report": cmd_report,
+     "replay": cmd_replay, "learn": cmd_learn, "ready": cmd_ready, "research": cmd_research, "swing": cmd_swing, "paper": cmd_paper, "report": cmd_report,
      "status": cmd_status}[a.cmd](cfg, a)
 
 

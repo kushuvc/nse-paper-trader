@@ -47,3 +47,42 @@ def round_trip(side, qty, entry, exit_, c=None):
     gross = (sell - buy)
     ch = charges(buy, sell, c)
     return round(gross - ch, 2), round(gross, 2), ch
+
+
+# ------------------------------------------------------------------ delivery (shares held overnight or longer)
+# Today's charges, applied to every year tested: the question is whether an idea would pay NOW.
+DELIVERY = {
+    "brokerage": 0.0,             # per order. Zero at Zerodha; brokers that charge Rs 20 an order add 0.2% on Rs 20,000
+    "stt_pct": 0.1,               # Securities Transaction Tax, on the buy AND on the sell
+    "exchange_pct": 0.00297,      # NSE transaction charge, both sides
+    "sebi_per_crore": 10.0,       # SEBI turnover fee, both sides
+    "stamp_buy_pct": 0.015,       # stamp duty, buy side only
+    "gst_pct": 18.0,              # on brokerage + exchange + SEBI fees
+    "dp_sell": 15.93,             # depository charge each time a holding is sold, GST included
+    "slippage_pct": 0.05,         # assumed fill worse than the closing price, EACH side
+}
+
+
+def delivery_charges(buy_value, sell_value, c=None):
+    """Charges in rupees for buying and/or selling shares held for delivery (no slippage)."""
+    c = dict(DELIVERY, **(c or {}))
+    brok = c["brokerage"] * ((buy_value > 0) + (sell_value > 0))
+    turnover = buy_value + sell_value
+    stt = turnover * c["stt_pct"] / 100
+    exch = turnover * c["exchange_pct"] / 100
+    sebi = turnover * c["sebi_per_crore"] / 1e7
+    stamp = buy_value * c["stamp_buy_pct"] / 100
+    gst = (brok + exch + sebi) * c["gst_pct"] / 100
+    dp = c["dp_sell"] if sell_value > 0 else 0.0
+    return brok + stt + exch + sebi + stamp + gst + dp
+
+
+def delivery_pct(entry, exit_, position=20000.0, c=None):
+    """A delivery trade of `position` rupees bought at `entry` and sold at `exit_`.
+    Returns (net %, gross %): net is after slippage and every charge, as a share of the money put in."""
+    c = dict(DELIVERY, **(c or {}))
+    s = c["slippage_pct"] / 100
+    buy = position * (1 + s)
+    sell = position * exit_ / entry * (1 - s)
+    net = sell - buy - delivery_charges(buy, sell, c)
+    return net / position * 100, (exit_ / entry - 1) * 100

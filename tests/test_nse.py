@@ -1,5 +1,6 @@
 """Offline tests: python3 -m unittest discover -s tests -v"""
 import datetime
+import math
 import os
 import random
 import shutil
@@ -9,7 +10,7 @@ import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from nse import backtest as bt, costs, gate, learn, paper, research, risk, strategies  # noqa: E402
+from nse import backtest as bt, costs, gate, learn, paper, research, risk, strategies, swing  # noqa: E402
 from nse.market import Bar, IST, full_sessions, round_tick  # noqa: E402
 
 CFG = dict(risk.DEFAULTS)
@@ -440,6 +441,225 @@ class Round2Ideas(unittest.TestCase):
         self.assertEqual(got["by_year"], {"2026": {"days": 3, "overnight_total_pct": 3.0, "market_hours_total_pct": -1.5}})
         self.assertEqual((got["stocks"], got["stocks_up_overnight"], got["stocks_up_market_hours"],
                           got["stocks_better_overnight"]), (2, 2, 0, 2))
+
+
+def dbars(closes, vols=None, start=datetime.date(2015, 1, 1)):
+    """Daily bars on weekdays from made-up closes (and volumes)."""
+    out, d, i = [], start, 0
+    while i < len(closes):
+        if d.weekday() < 5:
+            c = closes[i]
+            out.append(Bar(datetime.datetime.combine(d, datetime.time(9, 15), IST), c, c, c, c, vols[i] if vols else 100000))
+            i += 1
+        d += datetime.timedelta(days=1)
+    return out
+
+
+def mk(stocks, universe=50, upto=None):
+    return swing.build(list(stocks), lambda s: stocks[s], upto=upto, universe=universe)
+
+
+def span(mkt):
+    return mkt.cal[0], mkt.cal[-1]
+
+
+def walks(n_stocks=10, n_days=700, seed=3, same=False):
+    rnd = random.Random(seed)
+    out = {}
+    path = None
+    for n in range(n_stocks):
+        if path is None or not same:
+            p, path = 100.0, []
+            for _ in range(n_days):
+                p *= 1 + rnd.gauss(0.0004, 0.02)
+                path.append(round(p, 2))
+        vols = [int(50000 * (n + 1) * math.exp(rnd.gauss(0, 0.9))) + 1 for _ in range(n_days)]
+        out["S%d" % n] = dbars(path, vols)
+    return out
+
+
+class Swing(unittest.TestCase):
+    FLAT = [100.0] * 300
+
+    def breakout(self, after):
+        """One stock: flat for 300 days, a close at 105 (a new high), then `after`."""
+        m = mk({"X": dbars(self.FLAT + [105.0] + after)})
+        return m, swing.simulate(m, "high52", *span(m))
+
+    def test_delivery_charges_on_20000(self):
+        # STT 20+20, exchange 1.188, SEBI 0.04, stamp 3, GST 18% of (exchange + SEBI), depository 15.93
+        exp = 40 + 1.188 + 0.04 + 3 + 0.18 * (1.188 + 0.04) + 15.93
+        self.assertAlmostEqual(costs.delivery_charges(20000, 20000), exp, places=4)
+        net, gross = costs.delivery_pct(100, 100)
+        self.assertEqual(gross, 0)
+        self.assertAlmostEqual(net, -0.402, places=2)  # a flat round trip costs about 0.40%
+
+    def test_universe_uses_only_what_was_known(self):
+        n = 700
+        stocks = {s: dbars([100.0] * n, [v] * n) for s, v in (("A", 1000), ("B", 2000), ("C", 3000), ("D", 4000))}
+        stocks["LATE"] = dbars([100.0] * 400, [9600] * 400, start=stocks["A"][300].t.date())  # listed on day 300
+        stocks["GROW"] = dbars([100.0] * n, [500] * 450 + [9500] * (n - 450))              # heavily traded from day 450
+        stocks["SPLIT"] = dbars([100.0] * 320 + [150.0] * (n - 320), [9900] * n)             # +50% in a day on day 320
+        m = mk(stocks, universe=2)
+        day = lambda k: m.universe(m.cix[stocks["A"][k].t.date()])
+        self.assertEqual(day(100), {})                                    # nobody has 260 days of history yet
+        self.assertEqual(sorted(day(300)), ["D", "SPLIT"])
+        self.assertEqual(sorted(day(360)), ["C", "D"])                    # SPLIT is out after its 50% day
+        self.assertEqual(sorted(day(440)), ["C", "D"])                    # GROW not yet, LATE has under 260 days
+        self.assertEqual(sorted(day(540)), ["D", "GROW"])                 # SPLIT still out (252 days), LATE still short
+        self.assertEqual(sorted(day(690)), ["LATE", "SPLIT"])             # both back once the rules allow
+        self.assertTrue(any(sym == "SPLIT" and pct == 50.0 for _, sym, pct in m.untrusted))
+
+    def test_benchmark_counts_an_untrusted_rise_and_not_an_untrusted_fall(self):
+        n = 400
+        up = mk({"A": dbars([100.0] * n), "B": dbars([100.0] * 300 + [150.0] * 100)}, universe=2)
+        self.assertAlmostEqual(up.held(*span(up)), 0.25, places=6)        # half the money rose 50%
+        down = mk({"A": dbars([100.0] * n), "B": dbars([100.0] * 300 + [50.0] * 100)}, universe=2)
+        self.assertAlmostEqual(down.held(*span(down)), 0.0, places=6)     # the benchmark is spared the 50% fall
+
+    def test_index_is_a_second_yardstick(self):
+        ramp_up = [105.0 + 10.5 * (k + 1) / 20 for k in range(20)]
+        closes = self.FLAT + [105.0] + ramp_up + [115.5] * 40
+        index = dbars([1000.0] * 300 + [1000.0 * 1.002 ** (k + 1) for k in range(61)])   # index rises 0.2% a day
+        m = swing.build(["X"], lambda s: dbars(closes), index=index)
+        row = swing.price(m, swing.simulate(m, "high52", *span(m)))[0]
+        self.assertAlmostEqual(row["net_pct"] - row["vs_index_pct"], (1.002 ** 20 - 1) * 100, places=6)
+        s = swing.summary([row])
+        self.assertLess(s["excess_pct"], 0)                                # the only stock IS the benchmark: it loses the charges
+        self.assertFalse(swing.qualifies(s))
+        s = dict(s, excess_pct=0.5)
+        self.assertTrue(swing.qualifies(s))                                # +9.6% after charges, index +4.1%
+        self.assertFalse(swing.qualifies(dict(s, vs_index_pct=-0.1)))
+        self.assertFalse(swing.qualifies(dict(s, excess_pct=-0.1)))
+        self.assertFalse(swing.qualifies(dict(s, net_pct=-0.1)))
+        cut = swing.build(["X"], lambda s: dbars(closes), index=index, upto=m.cal[310])
+        self.assertLess(cut.index[-1][0], m.cal[310])                      # no index price from the cut onwards either
+
+    def test_momentum_holds_the_past_winners(self):
+        stocks = {"S%d" % i: dbars([100 * (1 + 0.0002 * i) ** k for k in range(600)]) for i in range(6)}
+        m = mk(stocks, universe=6)
+        tr = swing.simulate(m, "momentum", *span(m), slots=2)
+        self.assertEqual(sorted(t.sym for t in tr), ["S4", "S5"])
+        self.assertTrue(all(t.why == "end" for t in tr))
+        rows = swing.price(m, tr)
+        self.assertTrue(all(r["excess_pct"] > 0 for r in rows))           # they beat the six held equally
+
+    def test_low_vol_holds_the_steadiest(self):
+        stocks = {}
+        for i in range(5):
+            p, path = 100.0, []
+            for k in range(600):
+                p *= 1 + (0.002 * (i + 1) if k % 2 else -0.002 * (i + 1))
+                path.append(p)
+            stocks["S%d" % i] = dbars(path)
+        m = mk(stocks, universe=5)
+        self.assertEqual({t.sym for t in swing.simulate(m, "low_vol", *span(m), slots=2)}, {"S0", "S1"})
+
+    def test_losers_buys_the_weeks_biggest_faller_for_a_week(self):
+        n = 400
+        flat = [100.0] * n
+        dip = list(flat)
+        dates = [b.t.date() for b in dbars(flat)]
+        wed = next(k for k in range(300, n) if dates[k].weekday() == 2)
+        for k in range(wed, n):
+            dip[k] = 95.0
+        stocks = {"A": dbars(flat, [3000] * n), "B": dbars(flat, [2000] * n), "DIP": dbars(dip, [1000] * n)}
+        m = mk(stocks, universe=3)
+        tr = [t for t in swing.simulate(m, "losers", *span(m), slots=1) if t.sym == "DIP"]
+        self.assertEqual(len(tr), 1)
+        s = m.s["DIP"]
+        self.assertEqual((s.d[tr[0].ke].weekday(), tr[0].ke - wed), (4, 2))  # bought at Friday's close, two days after the fall
+        self.assertEqual(tr[0].kx - tr[0].ke, 5)                             # sold a week later
+
+    def test_high52_entry_time_exit_and_stop(self):
+        m, tr = self.breakout([105.0] * 40)
+        self.assertEqual([(t.ke, t.kx, t.why) for t in tr], [(300, 320, "rule")])       # 20 trading days
+        m, tr = self.breakout([104.0, 96.0] + [96.0] * 40)                            # 96 <= 0.92 * 105
+        self.assertEqual([(t.ke, t.kx) for t in tr], [(300, 302)])
+        self.assertAlmostEqual(swing.price(m, tr)[0]["gross_pct"], (96 / 105 - 1) * 100, places=6)
+        m = mk({"X": dbars(self.FLAT)})
+        self.assertEqual(swing.simulate(m, "high52", *span(m)), [])
+
+    def test_pullback_buys_a_dip_in_an_uptrend_only(self):
+        up = [100 * 1.001 ** k for k in range(300)]
+        dip = [up[-1] * 0.98, up[-1] * 0.96, up[-1] * 0.94]
+        m = mk({"X": dbars(up + dip + [dip[-1] * 1.03] * 20)})
+        tr = swing.simulate(m, "pullback", *span(m))
+        # day 303 is up 3% but still under its 5-day average (which holds the pre-dip close); day 304 is above it
+        self.assertEqual([(t.ke, t.kx) for t in tr], [(302, 304)])
+        down = [100 * 0.999 ** k for k in range(300)]
+        dip = [down[-1] * 0.98, down[-1] * 0.96, down[-1] * 0.94]
+        m = mk({"X": dbars(down + dip + [dip[-1] * 1.03] * 20)})
+        self.assertEqual(swing.simulate(m, "pullback", *span(m)), [])    # below its 200-day average: no trade
+
+    def test_volume_surge_needs_both_the_rise_and_the_volume(self):
+        closes = self.FLAT + [105.0] * 40
+        m = mk({"X": dbars(closes, [1000] * 300 + [4000] + [1000] * 39)})
+        self.assertEqual([(t.ke, t.kx) for t in swing.simulate(m, "volume_surge", *span(m))], [(300, 310)])
+        m = mk({"X": dbars(closes, [1000] * 340)})
+        self.assertEqual(swing.simulate(m, "volume_surge", *span(m)), [])
+        m = mk({"X": dbars(self.FLAT + [103.0] * 40, [1000] * 300 + [4000] + [1000] * 39)})
+        self.assertEqual(swing.simulate(m, "volume_surge", *span(m)), [])
+
+    def test_untrusted_jump_is_not_credited_and_a_crash_counts(self):
+        m, tr = self.breakout([105.0, 105.0, 160.0] + [160.0] * 30)       # +52% in a day
+        self.assertEqual([(t.ke, t.kx, t.why) for t in tr], [(300, 302, "jump")])
+        row = swing.price(m, tr)[0]
+        self.assertEqual(row["gross_pct"], 0)
+        self.assertLess(row["net_pct"], 0)
+        m, tr = self.breakout([105.0, 105.0, 50.0] + [50.0] * 30)         # -52% in a day
+        self.assertEqual([(t.ke, t.kx, t.why) for t in tr], [(300, 303, "rule")])
+        self.assertAlmostEqual(swing.price(m, tr)[0]["gross_pct"], (50 / 105 - 1) * 100, places=6)
+
+    def test_decisions_do_not_use_later_prices(self):
+        stocks = walks()
+        full = mk(stocks, universe=6)
+        cut = full.cal[560]
+        part = mk(stocks, universe=6, upto=cut)
+        last = part.cal[-1]
+        self.assertLess(last, cut)
+        for name in swing.IDEAS:
+            a = swing.simulate(full, name, *span(full))
+            b = swing.simulate(part, name, *span(part))
+            self.assertTrue(a, name)
+            key = lambda m, t: (t.sym, m.s[t.sym].d[t.ke])
+            ea = {key(full, t): t for t in a if key(full, t)[1] < last}
+            eb = {key(part, t): t for t in b if key(part, t)[1] < last}
+            self.assertEqual(sorted(ea), sorted(eb), name)                # the same buys ...
+            for k, t in ea.items():
+                if full.s[t.sym].d[t.kx] < last:
+                    self.assertEqual((t.kx, t.why), (eb[k].kx, eb[k].why), name)  # ... and the same sells
+
+    def test_riding_the_market_earns_no_excess(self):
+        m = mk(walks(same=True), universe=6)
+        for name in ("losers", "high52", "momentum"):
+            rows = swing.price(m, swing.simulate(m, name, *span(m)))
+            self.assertTrue(rows, name)
+            for r in rows:
+                self.assertAlmostEqual(r["bench_pct"], r["gross_pct"], places=6)
+                self.assertTrue(-0.6 < r["excess_pct"] < -0.3, r)         # exactly the charges, nothing else
+
+    def test_account_and_day_late(self):
+        ramp_up = [105.0 + 10.5 * (k + 1) / 20 for k in range(20)]
+        m, tr = self.breakout(ramp_up + [115.5] * 40)
+        self.assertEqual([(t.ke, t.kx) for t in tr], [(300, 320)])
+        row = swing.price(m, tr)[0]
+        self.assertAlmostEqual(row["gross_pct"], 10.0, places=6)
+        self.assertEqual(row["days"], 20)
+        acct = swing.account(m, tr, *span(m))
+        self.assertAlmostEqual(acct["final"], 100000 + 20000 * row["net_pct"] / 100, delta=1)
+        self.assertEqual(acct["trades_taken"], 1)
+        late = swing.price(m, tr, delay=1)[0]
+        self.assertAlmostEqual(late["gross_pct"], (115.5 / ramp_up[0] - 1) * 100, places=6)
+
+    def test_summary_judges_the_excess_month_by_month(self):
+        rows = [{"entry_date": "2020-%02d-10" % mth, "days": 5, "gross_pct": 1.4, "net_pct": 1.0, "bench_pct": 0.5,
+                 "excess_pct": x} for mth, xs in ((1, [1.0] * 30), (2, [-1.0]), (3, [-0.5])) for x in xs]
+        s = swing.summary(rows)
+        self.assertEqual((s["trades"], s["months"]), (32, 3))
+        self.assertGreater(s["excess_pct"], 0.8)                          # 30 good trades in one month ...
+        self.assertLess(abs(s["t_excess_by_month"]), 1)                   # ... are one good month, not 30 proofs
+        self.assertEqual(s["by_year"]["2020"]["trades"], 32)
 
 
 if __name__ == "__main__":
