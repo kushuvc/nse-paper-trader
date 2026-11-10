@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-10 09:51 IST",
- "updated_ts": 1794284469,
+ "updated": "2026-11-10 10:01 IST",
+ "updated_ts": 1794285071,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -623,6 +623,485 @@
    "all_trades": 6,
    "all_wins": 4,
    "all_net": 1339
+  }
+ },
+ "gate": {
+  "ready": false,
+  "passed": [],
+  "closest": "trap90",
+  "verdict": "No account has passed. 3 of the 60 days needed so far.",
+  "days": 3,
+  "rules": {
+   "min_days": 60,
+   "min_trades": 150,
+   "min_t": 3.0,
+   "max_drawdown": 10000,
+   "fixed_on": "2026-11-10"
+  },
+  "accounts": {
+   "orb15": {
+    "days": 3,
+    "trades": 9,
+    "net": 697,
+    "per_trade": 77,
+    "t": 0.58,
+    "drawdown": -801,
+    "passed": 2,
+    "of": 7,
+    "ready": false,
+    "checks": [
+     {
+      "id": "days",
+      "need": "60+ days of paper trading",
+      "ok": false,
+      "now": "3 of 60 days"
+     },
+     {
+      "id": "trades",
+      "need": "150+ paper trades",
+      "ok": false,
+      "now": "9 of 150 trades"
+     },
+     {
+      "id": "profit",
+      "need": "Profit per trade after charges",
+      "ok": true,
+      "now": "Rs +77 a trade"
+     },
+     {
+      "id": "luck",
+      "need": "Too strong to be luck (t of 3 or more)",
+      "ok": false,
+      "now": "t = 0.58"
+     },
+     {
+      "id": "steady",
+      "need": "Profitable in both halves",
+      "ok": false,
+      "now": "Rs +727 then Rs -30"
+     },
+     {
+      "id": "drawdown",
+      "need": "Worst losing run under Rs 10,000",
+      "ok": true,
+      "now": "Rs -801"
+     },
+     {
+      "id": "history",
+      "need": "Also profitable on saved history",
+      "ok": false,
+      "now": "-0.23 R a trade over 2927 trades (backtest)"
+     }
+    ]
+   },
+   "orb30_2r": {
+    "days": 3,
+    "trades": 9,
+    "net": 803,
+    "per_trade": 89,
+    "t": 0.81,
+    "drawdown": -588,
+    "passed": 3,
+    "of": 7,
+    "ready": false,
+    "checks": [
+     {
+      "id": "days",
+      "need": "60+ days of paper trading",
+      "ok": false,
+      "now": "3 of 60 days"
+     },
+     {
+      "id": "trades",
+      "need": "150+ paper trades",
+      "ok": false,
+      "now": "9 of 150 trades"
+     },
+     {
+      "id": "profit",
+      "need": "Profit per trade after charges",
+      "ok": true,
+      "now": "Rs +89 a trade"
+     },
+     {
+      "id": "luck",
+      "need": "Too strong to be luck (t of 3 or more)",
+      "ok": false,
+      "now": "t = 0.81"
+     },
+     {
+      "id": "steady",
+      "need": "Profitable in both halves",
+      "ok": true,
+      "now": "Rs +483 then Rs +320"
+     },
+     {
+      "id": "drawdown",
+      "need": "Worst losing run under Rs 10,000",
+      "ok": true,
+      "now": "Rs -588"
+     },
+     {
+      "id": "history",
+      "need": "Also profitable on saved history",
+      "ok": false,
+      "now": "-0.08 R a trade over 2785 trades (backtest)"
+     }
+    ]
+   },
+   "orb60": {
+    "days": 3,
+    "trades": 9,
+    "net": -348,
+    "per_trade": -39,
+    "t": -0.27,
+    "drawdown": -1258,
+    "passed": 1,
+    "of": 7,
+    "ready": false,
+    "checks": [
+     {
+      "id": "days",
+      "need": "60+ days of paper trading",
+      "ok": false,
+      "now": "3 of 60 days"
+     },
+     {
+      "id": "trades",
+      "need": "150+ paper trades",
+      "ok": false,
+      "now": "9 of 150 trades"
+     },
+     {
+      "id": "profit",
+      "need": "Profit per trade after charges",
+      "ok": false,
+      "now": "Rs -39 a trade"
+     },
+     {
+      "id": "luck",
+      "need": "Too strong to be luck (t of 3 or more)",
+      "ok": false,
+      "now": "t = -0.27"
+     },
+     {
+      "id": "steady",
+      "need": "Profitable in both halves",
+      "ok": false,
+      "now": "Rs -126 then Rs -222"
+     },
+     {
+      "id": "drawdown",
+      "need": "Worst losing run under Rs 10,000",
+      "ok": true,
+      "now": "Rs -1258"
+     },
+     {
+      "id": "history",
+      "need": "Also profitable on saved history",
+      "ok": false,
+      "now": "-0.19 R a trade over 2558 trades (backtest)"
+     }
+    ]
+   },
+   "gap_go": {
+    "days": 3,
+    "trades": 9,
+    "net": -444,
+    "per_trade": -49,
+    "t": 0.02,
+    "drawdown": -2014,
+    "passed": 1,
+    "of": 7,
+    "ready": false,
+    "checks": [
+     {
+      "id": "days",
+      "need": "60+ days of paper trading",
+      "ok": false,
+      "now": "3 of 60 days"
+     },
+     {
+      "id": "trades",
+      "need": "150+ paper trades",
+      "ok": false,
+      "now": "9 of 150 trades"
+     },
+     {
+      "id": "profit",
+      "need": "Profit per trade after charges",
+      "ok": false,
+      "now": "Rs -49 a trade"
+     },
+     {
+      "id": "luck",
+      "need": "Too strong to be luck (t of 3 or more)",
+      "ok": false,
+      "now": "t = 0.02"
+     },
+     {
+      "id": "steady",
+      "need": "Profitable in both halves",
+      "ok": false,
+      "now": "Rs -13 then Rs -431"
+     },
+     {
+      "id": "drawdown",
+      "need": "Worst losing run under Rs 10,000",
+      "ok": true,
+      "now": "Rs -2014"
+     },
+     {
+      "id": "history",
+      "need": "Also profitable on saved history",
+      "ok": false,
+      "now": "-0.28 R a trade over 197 trades (backtest)"
+     }
+    ]
+   },
+   "gap_fade": {
+    "days": 2,
+    "trades": 6,
+    "net": 2370,
+    "per_trade": 395,
+    "t": 1.42,
+    "drawdown": -636,
+    "passed": 3,
+    "of": 7,
+    "ready": false,
+    "checks": [
+     {
+      "id": "days",
+      "need": "60+ days of paper trading",
+      "ok": false,
+      "now": "2 of 60 days"
+     },
+     {
+      "id": "trades",
+      "need": "150+ paper trades",
+      "ok": false,
+      "now": "6 of 150 trades"
+     },
+     {
+      "id": "profit",
+      "need": "Profit per trade after charges",
+      "ok": true,
+      "now": "Rs +395 a trade"
+     },
+     {
+      "id": "luck",
+      "need": "Too strong to be luck (t of 3 or more)",
+      "ok": false,
+      "now": "t = 1.42"
+     },
+     {
+      "id": "steady",
+      "need": "Profitable in both halves",
+      "ok": true,
+      "now": "Rs +1610 then Rs +760"
+     },
+     {
+      "id": "drawdown",
+      "need": "Worst losing run under Rs 10,000",
+      "ok": true,
+      "now": "Rs -636"
+     },
+     {
+      "id": "history",
+      "need": "Also profitable on saved history",
+      "ok": false,
+      "now": "-0.03 R a trade over 80 trades (backtest)"
+     }
+    ]
+   },
+   "vwap": {
+    "days": 3,
+    "trades": 9,
+    "net": -1071,
+    "per_trade": -119,
+    "t": -0.28,
+    "drawdown": -1705,
+    "passed": 1,
+    "of": 7,
+    "ready": false,
+    "checks": [
+     {
+      "id": "days",
+      "need": "60+ days of paper trading",
+      "ok": false,
+      "now": "3 of 60 days"
+     },
+     {
+      "id": "trades",
+      "need": "150+ paper trades",
+      "ok": false,
+      "now": "9 of 150 trades"
+     },
+     {
+      "id": "profit",
+      "need": "Profit per trade after charges",
+      "ok": false,
+      "now": "Rs -119 a trade"
+     },
+     {
+      "id": "luck",
+      "need": "Too strong to be luck (t of 3 or more)",
+      "ok": false,
+      "now": "t = -0.28"
+     },
+     {
+      "id": "steady",
+      "need": "Profitable in both halves",
+      "ok": false,
+      "now": "Rs -1036 then Rs -35"
+     },
+     {
+      "id": "drawdown",
+      "need": "Worst losing run under Rs 10,000",
+      "ok": true,
+      "now": "Rs -1705"
+     },
+     {
+      "id": "history",
+      "need": "Also profitable on saved history",
+      "ok": false,
+      "now": "-0.36 R a trade over 2017 trades (backtest)"
+     }
+    ]
+   },
+   "trap90": {
+    "days": 3,
+    "trades": 9,
+    "net": 13,
+    "per_trade": 1,
+    "t": 4.35,
+    "drawdown": 0,
+    "passed": 4,
+    "of": 7,
+    "ready": false,
+    "checks": [
+     {
+      "id": "days",
+      "need": "60+ days of paper trading",
+      "ok": false,
+      "now": "3 of 60 days"
+     },
+     {
+      "id": "trades",
+      "need": "150+ paper trades",
+      "ok": false,
+      "now": "9 of 150 trades"
+     },
+     {
+      "id": "profit",
+      "need": "Profit per trade after charges",
+      "ok": true,
+      "now": "Rs +1 a trade"
+     },
+     {
+      "id": "luck",
+      "need": "Too strong to be luck (t of 3 or more)",
+      "ok": true,
+      "now": "t = 4.35"
+     },
+     {
+      "id": "steady",
+      "need": "Profitable in both halves",
+      "ok": true,
+      "now": "Rs +8 then Rs +5"
+     },
+     {
+      "id": "drawdown",
+      "need": "Worst losing run under Rs 10,000",
+      "ok": true,
+      "now": "Rs 0"
+     },
+     {
+      "id": "history",
+      "need": "Also profitable on saved history",
+      "ok": false,
+      "now": "-0.12 R a trade over 1305 trades (backtest)"
+     }
+    ]
+   },
+   "learner": {
+    "days": 2,
+    "trades": 6,
+    "net": 1339,
+    "per_trade": 223,
+    "t": 1.38,
+    "drawdown": -130,
+    "passed": 2,
+    "of": 7,
+    "ready": false,
+    "checks": [
+     {
+      "id": "days",
+      "need": "60+ days of paper trading",
+      "ok": false,
+      "now": "2 of 60 days"
+     },
+     {
+      "id": "trades",
+      "need": "150+ paper trades",
+      "ok": false,
+      "now": "6 of 150 trades"
+     },
+     {
+      "id": "profit",
+      "need": "Profit per trade after charges",
+      "ok": true,
+      "now": "Rs +223 a trade"
+     },
+     {
+      "id": "luck",
+      "need": "Too strong to be luck (t of 3 or more)",
+      "ok": false,
+      "now": "t = 1.38"
+     },
+     {
+      "id": "steady",
+      "need": "Profitable in both halves",
+      "ok": false,
+      "now": "Rs +1467 then Rs -128"
+     },
+     {
+      "id": "drawdown",
+      "need": "Worst losing run under Rs 10,000",
+      "ok": true,
+      "now": "Rs -130"
+     },
+     {
+      "id": "history",
+      "need": "Also profitable on saved history",
+      "ok": false,
+      "now": "-0.16 R a trade over 78 trades (fair test on days it had not seen)"
+     }
+    ]
+   }
+  },
+  "long_check": {
+   "days": 724,
+   "first": "2023-11-21",
+   "last": "2026-11-04",
+   "learner": {
+    "trades": 392,
+    "win_rate": 43.6,
+    "expectancy_rs": -51.1,
+    "expectancy_r": -0.111,
+    "t_stat": -2.24,
+    "total_net": -20047.0,
+    "max_drawdown": -22566.0
+   },
+   "every_signal": {
+    "trades": 2112,
+    "win_rate": 45.4,
+    "expectancy_rs": -41.9,
+    "expectancy_r": -0.103,
+    "t_stat": -4.88,
+    "total_net": -88572.0,
+    "max_drawdown": -94673.0
+   }
   }
  },
  "learning": {
