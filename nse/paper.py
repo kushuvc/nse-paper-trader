@@ -24,8 +24,9 @@ LEARNER = "learner"
 
 
 class Engine:
-    def __init__(self, cfg, symbols, out_dir, bars_fn=None, mode="live", log=print, model=None):
+    def __init__(self, cfg, symbols, out_dir, bars_fn=None, mode="live", log=print, model=None, nse=None):
         self.cfg, self.symbols, self.out, self.mode, self.log = cfg, symbols, out_dir, mode, log
+        self.nse = nse      # official.Context: yesterday's facts from NSE's own file, for the learner (None = none)
         self.bars_fn = bars_fn or self._live_bars
         self.scans = {n: strategies.get(n) for n in cfg["strategies"]}
         self.model = model  # learn.Model: drives the extra "learner" account (None = no learner)
@@ -105,7 +106,7 @@ class Engine:
                 continue
             # 2) entries: every strategy is its own paper account (own trade cap and daily loss limit).
             #    Only the newest bar can trigger (never chase a stale signal).
-            ctx = {"interval": INTERVAL, "prev_close": prev[-1].c,
+            ctx = {"interval": INTERVAL, "prev_close": prev[-1].c, "prev_date": sess[-2][0],
                    "prev_high": max(b.h for b in prev), "prev_low": min(b.l for b in prev)}
             t_end = bar_end(today[-1], INTERVAL)
             for name, scan in self.scans.items():
@@ -157,7 +158,7 @@ class Engine:
             return
         st["considered"].append(tag)
         f = learn.features(s.side, s.entry, s.stop, today, ctx["prev_close"], mkt.get(today[-1].t.strftime("%H:%M")),
-                           INTERVAL)
+                           INTERVAL, self.nse.before(sym, ctx["prev_date"]) if self.nse else None)
         take, score = self.model.approve(name, f)
         if not take:
             return

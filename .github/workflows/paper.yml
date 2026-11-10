@@ -43,6 +43,7 @@ jobs:
           mkdir -p logs
           LOG="logs/paper-$(date +%F).log"
           echo "Shift until $UNTIL IST (started $(date +%H:%M))" | tee -a "$LOG"
+          python3 trade.py nse 2>&1 | tee -a "$LOG" || true   # yesterday's NSE file, if last evening's run missed it
           ./publish.sh "paper: shift started, until $UNTIL" --running || true
           ( while true; do sleep 600; ./publish.sh "paper: update $(date +%H:%M)" --running || true; done ) &
           SAVER=$!

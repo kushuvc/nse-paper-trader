@@ -47,6 +47,10 @@ pre{white-space:pre-wrap;font:12px/1.45 ui-monospace,Menlo,monospace;margin:0;ma
   <div class="mut" style="margin-top:8px">Start: tap "Run workflow" on GitHub. Stop: open the running job and tap "Cancel". Updates every 10 min while trading.</div>
 </div>
 <div class="card"><b>By strategy</b> <span class="mut">(each is its own Rs 1 lakh paper account)</span><table id="stratT"></table></div>
+<div class="card" id="nseC" style="display:none"><b>NSE's own daily file</b> <span class="mut" id="nAsof"></span>
+  <div id="nText" style="margin-top:6px;font-size:14px"></div>
+  <div class="mut" id="nNote" style="margin-top:6px"></div>
+</div>
 <div class="card"><b>What it learned</b> <span class="mut" id="lAsof"></span>
   <div class="mut" style="margin:6px 0">Re-learns every evening from all saved history. "learner" above trades only what this model expects to profit.</div>
   <div id="lFair"></div>
@@ -108,12 +112,20 @@ async function load(){
     $('gT').innerHTML='<tr><th>Account</th><th class=n>Days</th><th class=n>Trades</th><th class=n>Per trade</th><th class=n>Passed</th></tr>'+
       acc.map(([n,v])=>`<tr><td>${esc(n)}</td><td class=n>${v.days}/${G.rules.min_days}</td><td class=n>${v.trades}/${G.rules.min_trades}</td><td class="n ${cls(v.per_trade)}">${rs(v.per_trade)}</td><td class=n>${v.passed}/${v.of}</td></tr>`).join('');
   }
+  const N=d.nse;
+  if(N){
+    $('nseC').style.display='';
+    $('nAsof').textContent='('+N.date+')';
+    $('nText').textContent=N.text||'';
+    const ln=(d.learning||{}).nse||{}, nf=ln.facts||[];
+    $('nNote').textContent=`Saved every evening from NSE itself: ${N.days} days so far, from ${N.first}. `+(nf.length?`The learner reads two facts from it before the market opens: how much of each stock was taken for delivery yesterday, and how many shares rose yesterday (${ln.trades_with_nse_facts} of ${ln.trades} past trades carry them).`:'The learner will start reading it at its next evening run.');
+  }
   const L=d.learning;
   if(L){
     $('lAsof').textContent='(data to '+L.asof+', '+L.history_days+' days)';
     const wf=L.walk_forward, a=wf.learner||{}, e=wf.every_signal||{};
     const line=(n,v)=>v&&v.trades?`<tr><td>${n}</td><td class=n>${v.trades}</td><td class=n>${v.win_rate}%</td><td class="n ${cls(v.expectancy_rs)}">${rs(v.expectancy_rs)}</td><td class="n ${cls(v.total_net)}">${rs(v.total_net)}</td></tr>`:`<tr><td>${n}</td><td colspan=4 class=mut>no trades</td></tr>`;
-    $('lFair').innerHTML=`<div class=mut>Fair test: ${wf.days} past days, each judged by a model that had not seen it</div><table><tr><th></th><th class=n>Trades</th><th class=n>Won</th><th class=n>Per trade</th><th class=n>Total</th></tr>${line('Learner',a)}${line('First 3 signals a day, unfiltered',e)}</table>`;
+    $('lFair').innerHTML=`<div class=mut>Fair test: ${wf.days} past days, each judged by a model that had not seen it</div><table><tr><th></th><th class=n>Trades</th><th class=n>Won</th><th class=n>Per trade</th><th class=n>Total</th></tr>${line('Learner',a)}${wf.without_nse?line('Learner without the NSE facts',wf.without_nse):''}${line('First 3 signals a day, unfiltered',e)}</table>`;
     $('lChg').innerHTML=(L.changes||[]).map(x=>'<li>'+esc(x)+'</li>').join('');
     $('lLes').innerHTML=(L.lessons||[]).map(x=>'<li>'+esc(x)+'</li>').join('');
   }

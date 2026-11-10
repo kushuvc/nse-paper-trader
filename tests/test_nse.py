@@ -10,7 +10,7 @@ import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from nse import backtest as bt, costs, gate, learn, paper, research, risk, strategies, swing  # noqa: E402
+from nse import backtest as bt, costs, gate, learn, official, paper, research, risk, strategies, swing  # noqa: E402
 from nse.market import Bar, IST, full_sessions, round_tick  # noqa: E402
 
 CFG = dict(risk.DEFAULTS)
@@ -660,6 +660,217 @@ class Swing(unittest.TestCase):
         self.assertGreater(s["excess_pct"], 0.8)                          # 30 good trades in one month ...
         self.assertLess(abs(s["t_excess_by_month"]), 1)                   # ... are one good month, not 30 proofs
         self.assertEqual(s["by_year"]["2020"]["trades"], 32)
+
+
+def bhav_text(day, shares, date_in_file=None):
+    """NSE's end-of-day file as text. shares: (symbol, series, prev close, close, volume, delivery %)."""
+    stamp = (date_in_file or day).strftime("%d-%b-%Y")
+    out = ["SYMBOL, SERIES, DATE1, PREV_CLOSE, OPEN_PRICE, HIGH_PRICE, LOW_PRICE, LAST_PRICE, CLOSE_PRICE, AVG_PRICE, "
+           "TTL_TRD_QNTY, TURNOVER_LACS, NO_OF_TRADES, DELIV_QTY, DELIV_PER"]
+    for sym, series, prev, close, vol, dp in shares:
+        dq = " -" if dp is None else " %d" % (vol * dp / 100)
+        out.append("%s, %s, %s, %.2f, %.2f, %.2f, %.2f, %.2f, %.2f, %.2f, %d, %.2f, %d,%s, %s" % (
+            sym, series, stamp, prev, prev, max(prev, close), min(prev, close), close, close, close, vol,
+            vol * close / 1e5, vol // 50, dq, "-" if dp is None else "%.2f" % dp))
+    return "\n".join(out) + "\n"
+
+
+def market(day, up=400, down=200, extra=()):
+    """600 made-up shares (`up` rise 1%, `down` fall 1%) plus any `extra` rows."""
+    rows = [("UP%03d" % i, "EQ", 100.0, 101.0, 1000 + i, 40.0) for i in range(up)]
+    rows += [("DN%03d" % i, "EQ", 100.0, 99.0, 1000 + i, 40.0) for i in range(down)]
+    return bhav_text(day, rows + list(extra))
+
+
+INDEX_TEXT = ("Index Name,Index Date,Open Index Value,High Index Value,Low Index Value,Closing Index Value,"
+              "Points Change,Change(%),Volume,Turnover (Rs. Cr.),P/E,P/B,Div Yield\n"
+              "Nifty 50,09-11-2026,25076.4,25084.05,24838.75,25044.65,58.25,.23,406189985,37153.19,20.48,3.07,1.38\n"
+              "India VIX,09-11-2026,18.43,18.44,16.7725,17.42,-1.01,-5.48,-,-,-,-,-\n")
+
+
+class NseFiles(unittest.TestCase):
+    DAY = datetime.date(2026, 11, 9)
+
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+
+    def tearDown(self):
+        shutil.rmtree(self.tmp)
+
+    def fetcher(self, files, calls=None):
+        def fetch(path):
+            if calls is not None:
+                calls.append(path)
+            if path not in files:
+                raise official.NoFile(path)
+            if isinstance(files[path], Exception):
+                raise files[path]
+            return files[path]
+        return fetch
+
+    def test_parse_keeps_ordinary_shares_and_reads_delivery(self):
+        text = market(self.DAY, extra=[("RELIANCE", "EQ", 1324.0, 1324.4, 19734153, 51.98),
+                                       ("SOMEBOND", "GS", 100.0, 100.5, 10, None),       # not a share
+                                       ("T2TSHARE", "BE", 50.0, 52.0, 500, None),        # trade-for-trade: left out
+                                       ("NODELIV", "EQ", 10.0, 10.0, 500, None)])
+        rows = {r["symbol"]: r for r in official.parse_bhav(text, self.DAY)}
+        official.save_day(self.tmp, self.DAY, list(rows.values()))
+        saved = official.load_day(self.tmp, self.DAY)["RELIANCE"]       # saved exactly as NSE gave it, nothing rounded
+        self.assertEqual((saved["volume"], saved["close"], saved["deliv_pct"]), (19734153.0, 1324.4, 51.98))
+        self.assertEqual(len(rows), 602)
+        self.assertNotIn("SOMEBOND", rows)
+        self.assertNotIn("T2TSHARE", rows)
+        self.assertAlmostEqual(rows["RELIANCE"]["deliv_pct"], 51.98)
+        self.assertIsNone(rows["NODELIV"]["deliv_pct"])
+
+    def test_a_file_for_another_day_is_not_taken(self):
+        # on a holiday NSE serves the previous day's file again under the holiday's name
+        with self.assertRaises(official.NoFile):
+            official.parse_bhav(market(self.DAY), self.DAY + datetime.timedelta(days=1))
+        with self.assertRaises(official.DataError):
+            official.parse_bhav("<html>Access Denied</html>", self.DAY)
+
+    def test_the_day_in_one_line(self):
+        m = official.summarise(self.DAY, official.parse_bhav(market(self.DAY, up=450, down=150), self.DAY),
+                               official.parse_indices(INDEX_TEXT))
+        self.assertEqual((m["stocks"], m["advances"], m["declines"], m["adv_pct"]), (600, 450, 150, 75.0))
+        self.assertEqual((m["nifty"], m["nifty_chg_pct"], m["vix"]), (25044.65, 0.23, 17.42))
+        self.assertAlmostEqual(m["deliv_pct"], 40.0, places=1)
+        self.assertIn("450 of 600 shares rose (75%)", official.describe(m))
+
+    def test_collect_saves_new_days_once_and_skips_holidays(self):
+        d1, d2, hol = datetime.date(2026, 11, 6), datetime.date(2026, 11, 9), datetime.date(2026, 11, 10)
+        files = {official.BHAV % d.strftime("%d%m%Y"): market(d, extra=[("WATCHED", "EQ", 5.0, 5.1, 1, 30.0)]) for d in (d1, d2)}
+        files[official.BHAV % hol.strftime("%d%m%Y")] = market(d2)               # the holiday: yesterday's file again
+        files[official.INDICES % d2.strftime("%d%m%Y")] = INDEX_TEXT
+        now = datetime.datetime.combine(hol, datetime.time(21, 0), IST)
+        calls, said = [], []
+        new = official.collect(self.tmp, ["WATCHED"], back=4, now=now, fetch=self.fetcher(files, calls), log=said.append, pause=0)
+        self.assertEqual(new, [d1, d2])
+        self.assertEqual(official.days(self.tmp), [d1, d2])
+        day = official.load_day(self.tmp, d2)
+        self.assertEqual(len(day), official.KEEP + 1)                            # the 500 most traded + the watchlist
+        self.assertIn("WATCHED", day)
+        self.assertEqual((day["UP399"]["volume"], day["UP399"]["close"], day["WATCHED"]["deliv_pct"]), (1399.0, 101.0, 30.0))
+        self.assertEqual(official.load_market(self.tmp)[str(d2)]["nifty"], 25044.65)
+        self.assertTrue(any("2026-11-10: no file" in x for x in said))
+        calls.clear()
+        self.assertEqual(official.collect(self.tmp, back=4, now=now, fetch=self.fetcher(files, calls), log=said.append, pause=0), [])
+        self.assertFalse(any(d.strftime("%d%m%Y") in c for c in calls for d in (d1, d2)))   # saved days are not fetched again
+
+    def test_collect_gives_up_quickly_when_nse_is_unreachable_and_waits_for_the_evening(self):
+        blocked = {official.BHAV % (self.DAY - datetime.timedelta(days=n)).strftime("%d%m%Y"): official.DataError("timed out")
+                   for n in range(8)}
+        calls = []
+        now = datetime.datetime.combine(self.DAY, datetime.time(21, 0), IST)
+        self.assertEqual(official.collect(self.tmp, back=7, now=now, fetch=self.fetcher(blocked, calls), log=lambda *_: None, pause=0), [])
+        self.assertEqual(len(calls), 1)
+        calls.clear()
+        noon = datetime.datetime.combine(self.DAY, datetime.time(12, 0), IST)
+        official.collect(self.tmp, back=0, now=noon, fetch=self.fetcher({}, calls), log=lambda *_: None, pause=0)
+        self.assertEqual(calls, [])                                              # today's file is not out before the evening
+
+    def test_facts_come_only_from_the_session_before(self):
+        days, d = [], datetime.date(2026, 9, 1)
+        while len(days) < 25:
+            if d.weekday() < 5:
+                days.append(d)
+            d += datetime.timedelta(days=1)
+        for k, day in enumerate(days):
+            dp = 60.0 if k == 24 else 40.0                                       # delivery jumps on the last day
+            rows = official.parse_bhav(market(day, up=420 if k == 24 else 300, down=180 if k == 24 else 300,
+                                              extra=[("ABC", "EQ", 100.0, 101.0, 5000, dp)]), day)
+            official.save_day(self.tmp, day, rows, ["ABC"])
+            mk = official.load_market(self.tmp)
+            mk[str(day)] = official.summarise(day, rows)
+            official.save_market(self.tmp, mk)
+        ctx = official.Context(self.tmp)
+        got = ctx.before("ABC", days[24])
+        self.assertAlmostEqual(got["deliv_ratio"], 1.5)                          # 60% against a 20-day average of 40%
+        self.assertEqual(got["adv_pct"], 70.0)
+        self.assertEqual(ctx.before("ABC", days[24] + datetime.timedelta(days=1)), {})   # no file for that day: no guess
+        self.assertNotIn("deliv_ratio", ctx.before("ABC", days[5]))              # under 10 earlier days: not judged
+        self.assertNotIn("deliv_ratio", ctx.before("UNKNOWN", days[24]))
+        self.assertEqual(learn.nse_facts(+1, got), {"delivery": "after high delivery", "breadth": "with yesterday's market"})
+        self.assertEqual(learn.nse_facts(-1, got)["breadth"], "against yesterday's market")
+        self.assertEqual(learn.nse_facts(+1, ctx.before("ABC", days[23])),
+                         {"delivery": "after usual delivery", "breadth": "after a mixed market"})
+        self.assertEqual(learn.nse_facts(+1, {}), {})
+
+
+class LearnerWithNse(unittest.TestCase):
+    """The learner with facts from NSE's file: same plumbing live and in the fair test, and no fact means no change."""
+
+    class Fake:
+        """Stands in for official.Context: even-numbered stocks had high delivery, and every other day was an up day."""
+        days = [datetime.date(2026, 1, 1)]
+
+        def __init__(self):
+            self.asked = []
+
+        def before(self, sym, prev_day):
+            self.asked.append((sym, prev_day))
+            return {"deliv_ratio": 1.5 if int(sym[1:]) % 2 == 0 else 1.0, "adv_pct": 70.0 if prev_day.toordinal() % 2 else 50.0}
+
+    def setUp(self):
+        self.cfg = dict(CFG, strategies=["orb15", "orb60"], max_trades_per_day=50, max_daily_loss=10 ** 9)
+        self.data = {"S%d" % i: random_days(26, seed=40 + i, sym_price=200 + 50 * i) for i in range(6)}
+
+    def test_trades_carry_the_facts_of_the_day_before(self):
+        nse = self.Fake()
+        trades, days = learn.labelled_trades(self.data, self.cfg["strategies"], self.cfg, nse=nse)
+        self.assertTrue(all("delivery" in t["f"] and "breadth" in t["f"] for t in trades))
+        asked = set(nse.asked)
+        for t in trades:   # each trade asked about the session before its own ...
+            d = datetime.date.fromisoformat(t["date"])
+            self.assertIn((t["symbol"], days[days.index(d) - 1]), asked)
+        self.assertFalse(any(day == days[-1] for _, day in asked))   # ... and nobody asked about the newest day itself
+        m = learn.Model.fit(trades, len(days))
+        self.assertEqual(m.facts(), list(learn.ALL_VALUES))
+        self.assertEqual(m.total_setups(), 162 * 9)
+        plain, _ = learn.labelled_trades(self.data, self.cfg["strategies"], self.cfg)
+        self.assertEqual(learn.Model.fit(plain, len(days)).total_setups(), 162)
+
+    def test_live_learner_matches_walk_forward_with_nse_facts(self):
+        p = {"min_edge_r": -9.0, "warmup_days": 3}
+        nse = self.Fake()
+        trades, days = learn.labelled_trades(self.data, self.cfg["strategies"], self.cfg, nse=nse)
+        taken, _, _ = learn.walk_forward(trades, len(days), self.cfg, p)
+        exp = {(t["date"], t["symbol"], t["strategy"], t["entry"], learn.describe(t["f"])) for t in taken
+               if t["date"] == str(days[-1])}
+        tmp = tempfile.mkdtemp()
+        try:
+            eng = paper.Engine(self.cfg, list(self.data), tmp, mode="replay", log=lambda *_: None,
+                               model=learn.Model.fit(trades, len(days) - 1, p), nse=nse)
+            paper.replay(eng, self.data, days[-1])
+            got = {(t["date"], t["symbol"], t["via"], t["entry"], t["setup"]) for t in eng.state["closed"]
+                   if t["strategy"] == "learner"}
+            self.assertTrue(exp)
+            self.assertEqual(got, exp)                                            # same trades, same facts, live and in the test
+            self.assertTrue(any("delivery" in s for *_, s in got))
+        finally:
+            shutil.rmtree(tmp)
+
+    def test_nightly_run_also_tests_without_the_nse_facts(self):
+        tmp = tempfile.mkdtemp()
+        try:
+            out = os.path.join(tmp, "model", "learned.json")
+            a = learn.run(self.data, self.cfg, out, p={"warmup_days": 3}, log=lambda *_: None, nse=self.Fake())
+            self.assertEqual(a["nse"]["facts"], ["delivery", "breadth"])
+            self.assertEqual(a["nse"]["trades_with_nse_facts"], a["nse"]["trades"])
+            self.assertIsNotNone(a["walk_forward"]["without_nse"])
+            self.assertEqual(a["strategies"]["orb15"]["setups_total"], 162 * 9)
+            b = learn.run(self.data, self.cfg, os.path.join(tmp, "plain.json"), p={"warmup_days": 3}, log=lambda *_: None)
+            self.assertIsNone(b["walk_forward"]["without_nse"])
+            self.assertEqual(b["nse"]["facts"], [])
+            # the control inside the NSE run is exactly the learner that never had the NSE facts
+            self.assertEqual(a["walk_forward"]["without_nse"], b["walk_forward"]["learner"])
+            # an old saved model (five facts) followed by a new one: the change is explained, not miscounted
+            c = learn.run(self.data, self.cfg, os.path.join(tmp, "plain.json"), p={"warmup_days": 3}, log=lambda *_: None,
+                          nse=self.Fake())
+            self.assertTrue(any("now reads 7 facts" in x for x in c["changes"]))
+        finally:
+            shutil.rmtree(tmp)
 
 
 if __name__ == "__main__":

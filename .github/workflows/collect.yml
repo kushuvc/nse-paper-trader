@@ -1,12 +1,15 @@
-# Saves the day's 5-minute bars for the Nifty 50 so the intraday history keeps growing
-# (Yahoo only keeps 60 days), then re-learns from all of it (model/learned.json) for tomorrow's
-# learner account. Timing is not critical, so GitHub's own schedule is fine.
+# Every evening: saves the day's 5-minute bars for the Nifty 50 so the intraday history keeps growing
+# (Yahoo only keeps 60 days), saves NSE's own end-of-day file (published about 18:30-19:30 IST), then
+# re-learns from all of it (model/learned.json) for tomorrow's learner account.
+# Timing is not critical, so GitHub's own schedule is fine.
 name: Save data and learn
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 10 * * 1-5"  # 16:00 IST
+    - cron: "0 15 * * 1-5"  # 20:30 IST, after NSE has published the day's file
+  push:
+    paths: [".github/workflows/collect.yml"]  # one run whenever this file changes, as a self-test
 
 permissions:
   contents: write
@@ -21,12 +24,13 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-      - name: Save 5-minute bars, then learn from them
+      - name: Save 5-minute bars and NSE's daily file, then learn from them
         run: |
           git config user.name "nse-paper-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           export TZ=Asia/Kolkata
           mkdir -p logs
           python3 trade.py collect --interval 5m
+          python3 trade.py nse 2>&1 | tee "logs/nse-$(date +%F).log" || true    # never blocks the rest
           python3 trade.py learn 2>&1 | tee "logs/learn-$(date +%F).log" || true  # never blocks saving the data
           ./publish.sh "data + learning: $(date +%F)"

@@ -19,6 +19,7 @@ python3 trade.py backtest --interval 60m
 python3 trade.py daily                         # 20+ year open-to-close gap study (read its warning)
 python3 trade.py learn                         # nightly: learn from all history, walk-forward check
 python3 trade.py learn --interval 60m          # the same learner on ~3 years of hourly bars (a check, not used to trade)
+python3 trade.py nse                           # save NSE's own end-of-day files (data/nse/), read by the learner
 python3 trade.py ready                         # has any paper account earned a real-money trial?
 python3 trade.py research                      # Round 2: seven new ideas on the design years (rules in nse/research.py)
 python3 trade.py swing --collect               # Round 3: download daily prices for ~550 stocks (stays on this machine)
@@ -77,11 +78,12 @@ believing in 90 % systems.
 
 ## Learning from mistakes (every evening)
 
-`python3 trade.py learn` (run automatically at 16:00 IST in the cloud, after the
-day's bars are saved) re-tests every strategy on all saved 5-minute history and
-tags each trade with five facts known at entry: long/short, time of day, with or
-against the market's move, with or against the stock's opening gap, and stop
-width. It learns which strategies and conditions have been losing (the
+`python3 trade.py learn` (run automatically at 20:30 IST in the cloud, after the
+day's bars and NSE's own daily file are saved) re-tests every strategy on all
+saved 5-minute history and tags each trade with seven facts known at entry.
+Five come from the price bars: long/short, time of day, with or against the
+market's move, with or against the stock's opening gap, and stop width. Two
+come from NSE's own file of the day before (next section). It learns which strategies and conditions have been losing (the
 mistakes), writes `model/learned.json`, and the next day an 8th paper account,
 **learner**, takes only the signals the model expects to make at least +0.05 R
 after costs.
@@ -98,6 +100,39 @@ First run (4 Nov 2026, 60 days): the model would take only some `orb30_2r` and
 (69 trades) against Rs 105 a trade for the unfiltered first 3 signals a day: it
 **lost less in total by trading less, but did not find an edge**. Learning can
 only filter what the strategies offer; it can't create an edge they don't have.
+
+### NSE's own daily file (added 10 Nov 2026)
+
+The 5-minute bars come from Yahoo, which is unofficial. Every evening NSE
+itself publishes one file with every share's official prices, volume and
+**delivery** quantity (shares that changed hands for keeps, not bought and sold
+again the same day), and one with every index's close. `python3 trade.py nse`
+saves them (`nse/official.py`), one request per file per day:
+
+- `data/nse/days/YYYY-MM-DD.csv`: the 500 most traded shares that day, plus the
+  watchlist
+- `data/nse/market.csv`: one line per day about the whole market (how many
+  shares rose, how much was taken for delivery, Nifty 50, India VIX)
+
+The phone page shows the latest day in one sentence. The learner reads two
+facts from the file of the session **before** the one it trades, so both are
+known before the market opens:
+
+- **delivery**: the share of the stock's volume taken for delivery yesterday,
+  against its own average over the 20 days before (1.2 times or more = high,
+  0.8 times or less = low)
+- **breadth**: 60 % or more of all NSE shares rose yesterday = an up day, 40 %
+  or fewer = a down day; the trade is with it, against it, or after a mixed day
+
+The thresholds were written down before their effect was looked at, and the two
+facts obey every guard above. If a day's file is missing the trade simply has
+no such fact; an older file is never used in its place. Each night the fair
+test is also run **without** the NSE facts, and the phone page shows both
+lines, so whether NSE's data helps is measured rather than assumed.
+
+There is no "NSE connector" involved: a connector would let a chat read NSE
+data, but this bot runs by itself in the cloud and has to fetch the file
+itself, which is what this does.
 
 ## Before any real money
 
@@ -299,7 +334,8 @@ here on purpose.
 ## Limits
 
 - Yahoo data is free and unofficial. It can lag, have gaps, or be wrong (see
-  above). Real trading needs broker or exchange data.
+  above). Real trading needs broker or exchange data. NSE's own file is
+  official but arrives once a day, after the close: it cannot drive entries.
 - Bars, not ticks: fills assume the bar's close plus slippage. In fast markets
   real fills can be worse.
 - No news, results-day or F&O-ban filters yet.
@@ -325,8 +361,10 @@ individual intraday traders in the cash segment lost money (FY23) and roughly
 - `.github/workflows/paper.yml` paper-trades on weekdays in two shifts
   (09:10-12:15 and 12:15-15:20 IST: a GitHub job can run at most 6 hours) and
   saves `paper/`, `logs/` and `docs/status.json` back to the repo every 10 min.
-- `.github/workflows/collect.yml` saves the day's 5-minute bars at 16:00 IST,
-  then runs `learn` and saves `model/learned.json` for the next morning.
+- `.github/workflows/collect.yml` runs at 20:30 IST: it saves the day's
+  5-minute bars and NSE's own daily file, then runs `learn` and saves
+  `model/learned.json` for the next morning. The morning job fetches NSE's file
+  again in case the evening run missed it.
 - `docs/` is the phone page (GitHub Pages: Settings > Pages > Deploy from a
   branch > `main` / `docs`). It reads `docs/status.json`.
 - GitHub's own schedule often starts hours late, so cron-job.org starts the

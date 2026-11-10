@@ -25,7 +25,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-from nse import backtest as bt, data, gate, learn, paper, research, risk, strategies, swing  # noqa: E402
+from nse import backtest as bt, data, gate, learn, official, paper, research, risk, strategies, swing  # noqa: E402
 from nse.market import IST, now_ist  # noqa: E402
 
 DATA = os.path.join(HERE, "data")
@@ -34,6 +34,7 @@ RESULTS = os.path.join(HERE, "results")
 MODEL = os.path.join(HERE, "model", "learned.json")
 LONG_CHECK = os.path.join(HERE, "results", "learned-60m.json")
 ROUND2 = os.path.join(HERE, "results", "research-round2.json")
+NSE_DIR = os.path.join(DATA, "nse")
 ROUND3 = os.path.join(HERE, "results", "research-round3-swing.json")
 
 
@@ -148,6 +149,27 @@ def cmd_daily(cfg, a):
     print("same rule LOST money over the last 60 days. A data artifact, not an edge.")
 
 
+def nse_context():
+    """NSE's saved end-of-day files as facts for the learner (None until some are saved)."""
+    ctx = official.Context(NSE_DIR)
+    return ctx if ctx.days else None
+
+
+def cmd_nse(cfg, a):
+    """Save NSE's own end-of-day files for the last few days (nse/official.py) and say what the latest shows."""
+    try:
+        watch = symbols(cfg, a)
+    except data.DataError:
+        watch = []
+    print("NSE's own end-of-day files -> data/nse/ (looking back %d days) ..." % a.back)
+    new = official.collect(NSE_DIR, watch, back=a.back)
+    ds = official.days(NSE_DIR)
+    print("%d new. %d days saved%s." % (len(new), len(ds), ", %s to %s" % (ds[0], ds[-1]) if ds else ""))
+    m = official.load_market(NSE_DIR).get(str(ds[-1])) if ds else None
+    if m:
+        print("Latest day, %s: %s" % (ds[-1], official.describe(m)))
+
+
 def cmd_learn(cfg, a):
     """Nightly: learn from all saved 5-min history (including today's mistakes).
     --interval 60m: the same learner on ~3 years of hourly bars, as a long fair test (never used for trading)."""
@@ -157,7 +179,7 @@ def cmd_learn(cfg, a):
               % ", ".join(names))
         learn.run(load_all(cfg, a, "60m"), cfg, LONG_CHECK, interval=60, names=names)
         return
-    learn.run(load_all(cfg, a, "5m"), cfg, MODEL)
+    learn.run(load_all(cfg, a, "5m"), cfg, MODEL, nse=nse_context())
 
 
 def cmd_research(cfg, a):
@@ -243,9 +265,9 @@ def cmd_replay(cfg, a):
     syms = list(bars)
     model = None
     if cfg.get("learner", True):  # honest: the learner only knows the days BEFORE the one replayed
-        trades, days = learn.labelled_trades(bars, cfg["strategies"], cfg)
+        trades, days = learn.labelled_trades(bars, cfg["strategies"], cfg, nse=nse_context())
         model = learn.Model.fit(trades, sum(d < day for d in days))
-    eng = paper.Engine(cfg, syms, PAPER, mode="replay", model=model)
+    eng = paper.Engine(cfg, syms, PAPER, mode="replay", model=model, nse=nse_context())
     if os.path.exists(eng._path(day)):
         os.remove(eng._path(day))
     print("Replaying %s for %d stocks with %s%s ..." % (day, len(syms), ", ".join(cfg["strategies"]),
@@ -260,7 +282,9 @@ def cmd_paper(cfg, a):
     model = learn.Model.load(MODEL) if cfg.get("learner", True) else None
     print("Learner: %s" % ("model from %s" % model.d.get("days") + " days of history" if model
                            else "off (no model/learned.json yet: run `python3 trade.py learn`)"))
-    eng = paper.Engine(cfg, syms, PAPER, mode="live", model=model)
+    nse = nse_context() if model else None
+    print("NSE's own daily file: %s" % ("latest saved is %s" % nse.days[-1] if nse else "none saved (run `python3 trade.py nse`)"))
+    eng = paper.Engine(cfg, syms, PAPER, mode="live", model=model, nse=nse)
     if a.once:
         eng.step(now_ist())
         print(eng.summary())
@@ -338,9 +362,14 @@ def cmd_status(cfg, a):
     if r3:
         out["gate"]["round3"] = {k: r3.get(k) for k in ("registered", "split", "promoted", "passed", "exam_opened")}
         out["gate"]["round3"]["ideas"] = len(r3.get("ideas") or {})
+    nd = official.days(NSE_DIR)
+    if nd:
+        mk = official.load_market(NSE_DIR).get(str(nd[-1]))
+        out["nse"] = {"date": str(nd[-1]), "first": str(nd[0]), "days": len(nd), "market": mk,
+                      "text": official.describe(mk) if mk else ""}
     if m:
         out["learning"] = {k: m.get(k) for k in ("asof", "history_days", "lessons", "changes", "strategies",
-                                                  "walk_forward", "last_day")}
+                                                  "walk_forward", "last_day", "nse")}
         out["learning"]["walk_forward"] = dict(m["walk_forward"], by_day=m["walk_forward"]["by_day"][-10:])
     os.makedirs(os.path.join(HERE, "docs"), exist_ok=True)
     with open(os.path.join(HERE, "docs", "status.json"), "w") as f:
@@ -383,6 +412,7 @@ def main(argv=None):
     p = sub.add_parser("learn"); p.add_argument("--interval", default="5m", choices=["5m", "60m"])
     sub.add_parser("ready")
     p = sub.add_parser("research"); p.add_argument("--exam", action="store_true")
+    p = sub.add_parser("nse"); p.add_argument("--back", type=int, default=7, help="how many days back to look for missing files")
     p = sub.add_parser("swing"); p.add_argument("--exam", action="store_true", help="open the unseen years for ideas that qualified")
     p.add_argument("--collect", action="store_true", help="download daily prices for the Nifty 500 and former big names")
     p.add_argument("--check", action="store_true", help="facts about the design-years data; no idea is run")
@@ -394,7 +424,7 @@ def main(argv=None):
     a = ap.parse_args(argv)
     cfg = risk.load_config(a.config)
     {"universe": cmd_universe, "collect": cmd_collect, "backtest": cmd_backtest, "daily": cmd_daily,
-     "replay": cmd_replay, "learn": cmd_learn, "ready": cmd_ready, "research": cmd_research, "swing": cmd_swing, "paper": cmd_paper, "report": cmd_report,
+     "replay": cmd_replay, "learn": cmd_learn, "ready": cmd_ready, "research": cmd_research, "swing": cmd_swing, "nse": cmd_nse, "paper": cmd_paper, "report": cmd_report,
      "status": cmd_status}[a.cmd](cfg, a)
 
 
