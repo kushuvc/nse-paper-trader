@@ -14,12 +14,25 @@ a.btn{flex:1;min-width:30%;text-align:center;text-decoration:none;font:600 14px 
 a.go{background:var(--g);color:#fff;border:0}
 .big{font-size:28px;font-weight:700}.pos{color:var(--g)}.neg{color:var(--r)}
 .pill{display:inline-block;padding:3px 10px;border-radius:99px;font-size:13px;font-weight:600}
+.bad{background:color-mix(in srgb,var(--r) 18%,transparent);color:var(--r)}
+details summary{cursor:pointer;padding:6px 0}ul.chk{list-style:none;margin:6px 0 0;padding:0;font-size:13px}ul.chk li{padding:5px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px}
 .on{background:color-mix(in srgb,var(--g) 18%,transparent);color:var(--g)}.off{background:color-mix(in srgb,var(--mut) 18%,transparent);color:var(--mut)}
 table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 pre{white-space:pre-wrap;font:12px/1.45 ui-monospace,Menlo,monospace;margin:0;max-height:320px;overflow:auto}
 </style></head><body>
 <h1>NSE Paper Trader</h1><div class="mut" id="upd">Loading...</div>
+<div class="card" id="gateC" style="display:none">
+  <div style="display:flex;justify-content:space-between;align-items:center"><b>Real money</b><span id="gPill" class="pill bad">NOT READY</span></div>
+  <div id="gVerdict" style="margin-top:8px"></div>
+  <div class="mut" id="gLong" style="margin-top:6px"></div>
+  <details><summary class="mut">What an account must pass</summary>
+    <div class="mut" id="gFixed"></div>
+    <ul class="chk" id="gRules"></ul>
+    <table id="gT" style="margin-top:10px"></table>
+    <div class="mut" style="margin-top:8px">Passing would support a small trial only. Real fills are worse than paper fills.</div>
+  </details>
+</div>
 <div class="card">
   <div style="display:flex;justify-content:space-between;align-items:center">
     <span id="state" class="pill off">...</span><span class="mut" id="strat"></span></div>
@@ -76,6 +89,19 @@ async function load(){
   const days=Object.entries(d.by_day||{}).reverse().slice(0,10);
   $('byDay').innerHTML=days.length?'<tr><th>Day</th><th class=n>Net</th></tr>'+days.map(([k,v])=>`<tr><td>${k}</td><td class="n ${cls(v)}">${rs(v)}</td></tr>`).join(''):'';
   $('recent').innerHTML=d.recent.length?'<tr><th>Date</th><th>Stock</th><th>Exit</th><th class=n>Net</th></tr>'+d.recent.map(t=>`<tr><td>${t.date.slice(5)}</td><td>${esc(t.symbol)}<div class=mut>${esc(t.strategy)}</div></td><td>${esc(t.reason)}</td><td class="n ${cls(+t.net)}">${rs(+t.net)}</td></tr>`).join(''):'';
+  const G=d.gate;
+  if(G){
+    $('gateC').style.display='';
+    $('gPill').textContent=G.ready?'PASSED':'NOT READY';$('gPill').className='pill '+(G.ready?'on':'bad');
+    $('gVerdict').textContent=G.verdict;
+    const lc=G.long_check, lw=lc&&lc.learner;
+    $('gLong').textContent=lw&&lw.trades?`3-year check on hourly prices (${lc.days} days): the learner ${lw.expectancy_rs<0?'lost':'made'} Rs ${Math.abs(Math.round(lw.expectancy_rs))} a trade over ${lw.trades} trades.`:'';
+    const acc=Object.entries(G.accounts||{}), first=acc.length?acc[0][1].checks:[];
+    $('gFixed').textContent='Rules fixed on '+G.rules.fixed_on+', before the results were in. All '+first.length+' must hold for one account.';
+    $('gRules').innerHTML=first.map((c,i)=>{const k=acc.filter(([,v])=>v.checks[i].ok).length;return `<li><span>${esc(c.need)}</span><span class="mut" style="white-space:nowrap">${k} of ${acc.length}</span></li>`}).join('');
+    $('gT').innerHTML='<tr><th>Account</th><th class=n>Days</th><th class=n>Trades</th><th class=n>Per trade</th><th class=n>Passed</th></tr>'+
+      acc.map(([n,v])=>`<tr><td>${esc(n)}</td><td class=n>${v.days}/${G.rules.min_days}</td><td class=n>${v.trades}/${G.rules.min_trades}</td><td class="n ${cls(v.per_trade)}">${rs(v.per_trade)}</td><td class=n>${v.passed}/${v.of}</td></tr>`).join('');
+  }
   const L=d.learning;
   if(L){
     $('lAsof').textContent='(data to '+L.asof+', '+L.history_days+' days)';

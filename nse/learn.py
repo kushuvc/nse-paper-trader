@@ -233,10 +233,10 @@ def walk_forward(trades, ndays, cfg, p=None):
     return taken, base, rows
 
 
-def run(bars_by_sym, cfg, out_path, interval=5, p=None, log=print):
+def run(bars_by_sym, cfg, out_path, interval=5, p=None, log=print, names=None):
     """Nightly job: fit on everything, walk-forward check, lessons, what changed since last night."""
     p = dict(PARAMS, **(p or {}))
-    names = [n for n in cfg["strategies"]]
+    names = list(names or cfg["strategies"])
     trades, days = labelled_trades(bars_by_sym, names, cfg, interval)
     model = Model.fit(trades, len(days), p)
     prev = Model.load(out_path)

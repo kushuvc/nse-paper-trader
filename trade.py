@@ -9,6 +9,7 @@
   python3 trade.py backtest --interval 5m --strategy orb15 --trades
   python3 trade.py daily                             # 20+ year open-to-close gap study
   python3 trade.py learn                             # nightly: learn from mistakes, walk-forward check
+  python3 trade.py ready                             # has any paper account earned a real-money trial?
   python3 trade.py replay --date 2026-11-04          # paper engine on a past day, bar by bar
   python3 trade.py paper                             # LIVE dummy trades today, 9:20-15:20 IST
   python3 trade.py report                            # paper journal so far
@@ -24,13 +25,14 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-from nse import backtest as bt, data, learn, paper, risk, strategies  # noqa: E402
+from nse import backtest as bt, data, gate, learn, paper, risk, strategies  # noqa: E402
 from nse.market import IST, now_ist  # noqa: E402
 
 DATA = os.path.join(HERE, "data")
 PAPER = os.path.join(HERE, "paper")
 RESULTS = os.path.join(HERE, "results")
 MODEL = os.path.join(HERE, "model", "learned.json")
+LONG_CHECK = os.path.join(HERE, "results", "learned-60m.json")
 
 
 def symbols(cfg, a):
@@ -145,8 +147,50 @@ def cmd_daily(cfg, a):
 
 
 def cmd_learn(cfg, a):
-    """Nightly: learn from all saved 5-min history (including today's mistakes)."""
+    """Nightly: learn from all saved 5-min history (including today's mistakes).
+    --interval 60m: the same learner on ~3 years of hourly bars, as a long fair test (never used for trading)."""
+    if a.interval == "60m":
+        names = [n for n, (_, ivs, _) in strategies.REGISTRY.items() if 60 in ivs]
+        print("LONG CHECK on hourly bars with %s. Results only: live trading keeps using the 5-minute model.\n"
+              % ", ".join(names))
+        learn.run(load_all(cfg, a, "60m"), cfg, LONG_CHECK, interval=60, names=names)
+        return
     learn.run(load_all(cfg, a, "5m"), cfg, MODEL)
+
+
+def live_journal():
+    jp = os.path.join(PAPER, "journal.csv")
+    return [r for r in csv.DictReader(open(jp)) if r.get("mode") == "live"] if os.path.exists(jp) else []
+
+
+def accounts(cfg):
+    return list(cfg["strategies"]) + (["learner"] if cfg.get("learner", True) else [])
+
+
+def load_json(path):
+    return json.load(open(path)) if os.path.exists(path) else None
+
+
+def cmd_ready(cfg, a):
+    """Has any paper account earned a real-money trial? Rules are fixed in nse/gate.py."""
+    g = gate.readiness(live_journal(), accounts(cfg), load_json(MODEL))
+    print("REAL MONEY: %s" % ("PASSED" if g["ready"] else "NOT READY"))
+    print(g["verdict"] + "\n")
+    print("%-9s %5s %7s %9s %7s %8s" % ("account", "days", "trades", "Rs/trade", "t", "passed"))
+    for n, v in g["accounts"].items():
+        print("%-9s %5d %7d %9d %7s %5d/%d" % (n, v["days"], v["trades"], v["per_trade"], fmt(v["t"]),
+                                              v["passed"], v["of"]))
+    c = g["closest"]
+    if c:
+        print("\nClosest: %s" % c)
+        for k in g["accounts"][c]["checks"]:
+            print("  [%s] %-42s %s" % ("pass" if k["ok"] else "FAIL", k["need"], k["now"]))
+    lc = load_json(LONG_CHECK)
+    if lc:
+        w = lc["walk_forward"]["learner"]
+        print("\n3-year check (hourly bars, %d days): the learner made Rs %+.0f a trade over %d trades (t %s)." % (
+            lc["history_days"], w["expectancy_rs"], w["trades"], w["t_stat"]))
+    print("\nRules were fixed on %s. Do not loosen them after seeing results." % g["rules"]["fixed_on"])
 
 
 def cmd_replay(cfg, a):
@@ -188,8 +232,7 @@ def cmd_status(cfg, a):
     p = os.path.join(PAPER, "state-%s.json" % day)
     if os.path.exists(p):
         st = json.load(open(p))
-    jp = os.path.join(PAPER, "journal.csv")
-    journal = [r for r in csv.DictReader(open(jp)) if r.get("mode") == "live"] if os.path.exists(jp) else []
+    journal = live_journal()
     nets = [float(r["net"]) for r in journal]
     closed = st.get("closed", [])
     in_session = now.weekday() < 5 and datetime.time(9, 10) <= now.time() <= datetime.time(15, 25)
@@ -236,8 +279,14 @@ def cmd_status(cfg, a):
         by["learner"] = {"desc": "takes only the signals last night's model expects to profit", "today_trades": 0,
                          "today_net": 0, "open": 0, "all_trades": 0, "all_wins": 0, "all_net": 0}
     out["by_strategy"] = by
-    if os.path.exists(MODEL):
-        m = json.load(open(MODEL))
+    m = load_json(MODEL)
+    out["gate"] = gate.readiness(journal, accounts(cfg), m)
+    lc = load_json(LONG_CHECK)
+    if lc:
+        out["gate"]["long_check"] = {"days": lc["history_days"], "first": lc["first_day"], "last": lc["asof"],
+                                     "learner": lc["walk_forward"]["learner"],
+                                     "every_signal": lc["walk_forward"]["every_signal"]}
+    if m:
         out["learning"] = {k: m.get(k) for k in ("asof", "history_days", "lessons", "changes", "strategies",
                                                   "walk_forward", "last_day")}
         out["learning"]["walk_forward"] = dict(m["walk_forward"], by_day=m["walk_forward"]["by_day"][-10:])
@@ -278,7 +327,8 @@ def main(argv=None):
     p.add_argument("--portfolio", action="store_true", help="apply max trades/day + daily loss limit")
     p.add_argument("--trades", action="store_true", help="save every trade to results/ (needs --strategy)")
     sub.add_parser("daily")
-    sub.add_parser("learn")
+    p = sub.add_parser("learn"); p.add_argument("--interval", default="5m", choices=["5m", "60m"])
+    sub.add_parser("ready")
     p = sub.add_parser("replay"); p.add_argument("--date", required=True)
     p = sub.add_parser("paper"); p.add_argument("--once", action="store_true", help="one step, then exit")
     p.add_argument("--until", default="15:20", help="IST time to stop (e.g. 12:15 for a morning shift)")
@@ -287,7 +337,7 @@ def main(argv=None):
     a = ap.parse_args(argv)
     cfg = risk.load_config(a.config)
     {"universe": cmd_universe, "collect": cmd_collect, "backtest": cmd_backtest, "daily": cmd_daily,
-     "replay": cmd_replay, "learn": cmd_learn, "paper": cmd_paper, "report": cmd_report,
+     "replay": cmd_replay, "learn": cmd_learn, "ready": cmd_ready, "paper": cmd_paper, "report": cmd_report,
      "status": cmd_status}[a.cmd](cfg, a)
 
 

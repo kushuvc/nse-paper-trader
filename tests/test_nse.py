@@ -9,7 +9,7 @@ import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from nse import backtest as bt, costs, learn, paper, risk, strategies  # noqa: E402
+from nse import backtest as bt, costs, gate, learn, paper, risk, strategies  # noqa: E402
 from nse.market import Bar, IST, full_sessions, round_tick  # noqa: E402
 
 CFG = dict(risk.DEFAULTS)
@@ -244,6 +244,82 @@ class Learner(unittest.TestCase):
             self.assertEqual(got, exp)
         finally:
             shutil.rmtree(tmp)
+
+
+def journal_rows(name, ndays, pattern, per_day=3):
+    """Live journal rows: `per_day` trades a day, R values cycling through `pattern`, Rs 500 a R."""
+    rows, d0, i = [], datetime.date(2026, 1, 1), 0
+    for d in range(ndays):
+        for k in range(per_day):
+            r = pattern[i % len(pattern)]
+            i += 1
+            rows.append({"strategy": name, "date": str(d0 + datetime.timedelta(days=d)),
+                         "exit_time": "1%d:00" % k, "net": "%.2f" % (r * 500), "r": "%.3f" % r})
+    return rows
+
+
+GOOD = [1.0, 1.0, -0.9]                       # +0.37 R a trade
+HIST_GOOD = {"strategies": {"orb15": {"trades": 900, "avg_r": 0.08}}}
+HIST_BAD = {"strategies": {"orb15": {"trades": 900, "avg_r": -0.10}}}
+
+
+class Gate(unittest.TestCase):
+    def failed(self, res):
+        return {c["id"] for c in res["checks"] if not c["ok"]}
+
+    def test_three_lucky_days_are_not_ready(self):
+        res = gate.check_account("orb15", journal_rows("orb15", 3, [1.0, 0.8, 1.2]), HIST_GOOD)
+        self.assertFalse(res["ready"])
+        self.assertEqual(self.failed(res), {"days", "trades"})
+
+    def test_long_strong_record_with_good_history_passes(self):
+        res = gate.check_account("orb15", journal_rows("orb15", 70, GOOD), HIST_GOOD)
+        self.assertEqual(self.failed(res), set())
+        self.assertTrue(res["ready"])
+        self.assertGreaterEqual(res["t"], 3)
+
+    def test_same_record_fails_when_history_loses_or_is_missing(self):
+        rows = journal_rows("orb15", 70, GOOD)
+        self.assertEqual(self.failed(gate.check_account("orb15", rows, HIST_BAD)), {"history"})
+        self.assertEqual(self.failed(gate.check_account("orb15", rows, None)), {"history"})
+
+    def test_learner_is_judged_on_its_walk_forward_test(self):
+        rows = journal_rows("learner", 70, GOOD)
+        bad = {"walk_forward": {"learner": {"trades": 80, "expectancy_r": -0.07}}}
+        good = {"walk_forward": {"learner": {"trades": 80, "expectancy_r": 0.07}}}
+        self.assertEqual(self.failed(gate.check_account("learner", rows, bad)), {"history"})
+        self.assertTrue(gate.check_account("learner", rows, good)["ready"])
+
+    def test_good_start_then_fading_is_not_ready(self):
+        rows = journal_rows("orb15", 35, GOOD) + [
+            dict(r, date=str(datetime.date(2026, 3, 1) + datetime.timedelta(days=i // 3)))
+            for i, r in enumerate(journal_rows("orb15", 35, [1.0, -1.0, -0.3]))]
+        res = gate.check_account("orb15", rows, HIST_GOOD)
+        self.assertGreater(res["net"], 0)                  # still up overall ...
+        self.assertIn("steady", self.failed(res))          # ... but the second half lost
+        self.assertFalse(res["ready"])
+
+    def test_deep_losing_run_is_not_ready(self):
+        rows = journal_rows("orb15", 70, [2.0] * 100 + [-1.0] * 25 + [2.0] * 85)
+        res = gate.check_account("orb15", rows, HIST_GOOD)
+        self.assertEqual(res["drawdown"], -12500)
+        self.assertEqual(self.failed(res), {"drawdown"})
+
+    def test_weak_profit_is_not_enough(self):
+        # +0.03 R a trade over 210 trades: positive, but well inside luck
+        res = gate.check_account("orb15", journal_rows("orb15", 70, [1.0, -0.94]), HIST_GOOD)
+        self.assertGreater(res["per_trade"], 0)
+        self.assertIn("luck", self.failed(res))
+
+    def test_readiness_verdict(self):
+        names = ["orb15", "vwap", "learner"]
+        g = gate.readiness(journal_rows("orb15", 3, GOOD) + journal_rows("vwap", 3, [-1.0]), names, HIST_GOOD)
+        self.assertFalse(g["ready"])
+        self.assertEqual(g["verdict"], "No account has passed. 3 of the 60 days needed so far.")
+        self.assertEqual(g["accounts"]["learner"]["trades"], 0)
+        g = gate.readiness(journal_rows("orb15", 70, GOOD), names, HIST_GOOD)
+        self.assertEqual(g["passed"], ["orb15"])
+        self.assertIn("small real-money trial", g["verdict"])
 
 
 if __name__ == "__main__":

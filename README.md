@@ -18,6 +18,8 @@ python3 trade.py backtest --interval 5m --strategy orb15 --trades   # every trad
 python3 trade.py backtest --interval 60m
 python3 trade.py daily                         # 20+ year open-to-close gap study (read its warning)
 python3 trade.py learn                         # nightly: learn from all history, walk-forward check
+python3 trade.py learn --interval 60m          # the same learner on ~3 years of hourly bars (a check, not used to trade)
+python3 trade.py ready                         # has any paper account earned a real-money trial?
 python3 trade.py replay --date 2026-11-04      # live engine re-run on a past day, bar by bar (+ learner)
 python3 trade.py paper                         # LIVE dummy trades, leave running 9:15-15:20 IST
 python3 trade.py report                        # paper journal and running totals
@@ -94,6 +96,47 @@ First run (4 Nov 2026, 60 days): the model would take only some `orb30_2r` and
 **lost less in total by trading less, but did not find an edge**. Learning can
 only filter what the strategies offer; it can't create an edge they don't have.
 
+## Before any real money
+
+**As of 10 Nov 2026 the answer is no.** Three paper days were up Rs 3,359 over
+66 trades. That is one good day and two small losing days: far too little to
+tell skill from luck. The long tests all say the same thing:
+
+| test | trades | Rs per trade | t-stat |
+| --- | --- | --- | --- |
+| 5-minute history, 63 days: learner, fair test | 78 | −73 | −1.9 |
+| 5-minute history, 63 days: first 3 signals a day | 129 | −98 | −4.4 |
+| Hourly, 3 years (724 days): learner, fair test | 392 | −51 | −2.2 |
+| Hourly, 3 years: first 3 signals a day | 2,112 | −42 | −4.9 |
+| Hourly, 3 years: orb60 only "with market, wide stop" (the best lesson) | 4,300 | −30 | −6.8 |
+
+The lessons are real but small: trading with the market and with a wide stop
+cuts the loss per trade by more than half, mostly because charges are a smaller
+share of a wide stop. Nothing reaches profit. Before charges these setups earn
+about zero, and a filter cannot add what is not there. Tuning more settings
+until some backtest turns green would be overfitting, so that was not done.
+
+`nse/gate.py` holds the test an account must pass before real money is worth
+even a small trial. The rules were fixed on 10 Nov 2026, with 3 days of
+results, and must not be loosened later. All seven must hold for one account's
+live paper trades:
+
+1. 60+ trading days of paper trading
+2. 150+ trades
+3. profit per trade above zero after all charges
+4. t-statistic of 3 or more (not 2: eight accounts run side by side, and the
+   best of eight clears 2 by luck about one time in six)
+5. profitable in the first half and in the second half
+6. worst losing run under Rs 10,000
+7. also profitable on saved history (backtest for a strategy, fair test for
+   the learner)
+
+`python3 trade.py ready` prints the verdict, and the phone page shows it at
+the top. Passing means "worth a small trial", never "safe". Real trading is
+harder than this paper account: orders queue and fill partly, the free data
+here is delayed and sometimes wrong, and shorting needs margin and can be
+blocked. Expect real results to be worse than paper results.
+
 ## Paper trading ("dummy live trades")
 
 1. In the evening: `python3 trade.py collect --interval 5m`
@@ -111,11 +154,11 @@ remove, `status` to check). Paper trading starts at 9:10 IST, data is saved at
 15:45 IST, logs go to `logs/`, and a notification shows the day's result. The
 Mac must be awake with the lid open at 9:10.
 
-Judge a strategy only after **100+ paper trades** and only on ₹ per trade
-after costs, never on win rate. If paper results ever stay positive over
-several months, the next step is a tiny real position with a broker's API
-(Zerodha Kite Connect, Upstox, Dhan), with every order approved by hand.
-That is not built here on purpose.
+Judge a strategy only on ₹ per trade after costs, never on win rate, and only
+with the gate in "Before any real money" above. If an account ever passes it,
+the next step is a tiny real position with a broker's API (Zerodha Kite
+Connect, Upstox, Dhan), with every order approved by hand. That is not built
+here on purpose.
 
 ## Limits
 
