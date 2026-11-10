@@ -130,6 +130,22 @@ no such fact; an older file is never used in its place. Each night the fair
 test is also run **without** the NSE facts, and the phone page shows both
 lines, so whether NSE's data helps is measured rather than assumed.
 
+First run (10 Nov 2026: 63 days of 5-minute bars, 87 days of NSE files, fair
+test over 43 days):
+
+| | trades | won | per trade | total |
+| --- | --- | --- | --- | --- |
+| learner with the NSE facts | 76 | 46 % | −Rs 59 | −Rs 4,491 |
+| learner without them | 78 | 40 % | −Rs 73 | −Rs 5,711 |
+| first 3 signals a day, unfiltered | 129 | 69 % | −Rs 98 | −Rs 12,693 |
+
+With the NSE facts the learner **lost a little less, and still lost**. The gap
+is Rs 1,220 over about 77 trades, far too small to call an improvement yet.
+What the model read from the file: opening-range breakouts did worse the day
+after unusually high delivery in the stock, and better when they went the way
+most shares had moved the day before. No condition is profitable by itself;
+the facts only change which losing trades are skipped.
+
 There is no "NSE connector" involved: a connector would let a chat read NSE
 data, but this bot runs by itself in the cloud and has to fetch the file
 itself, which is what this does.
