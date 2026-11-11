@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 13:16 IST",
- "updated_ts": 1794383173,
+ "updated": "2026-11-11 13:26 IST",
+ "updated_ts": 1794383775,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -417,9 +417,6 @@
  ],
  "today_net": -847.0,
  "log": [
-  "11:20  SKIP  DRREDDY     orb15     ORB15 down: max 3 trades a day",
-  "11:20  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day",
-  "11:20  CLOSE LT          stop       @ 4238.25  net Rs -437 [vwap] (charges 82)",
   "11:25  SKIP  EICHERMOT   orb15     ORB15 up: max 3 trades a day",
   "11:25  SKIP  EICHERMOT   orb30_2r  ORB30 up: max 3 trades a day",
   "11:25  SKIP  EICHERMOT   orb60     ORB60 up: max 3 trades a day",
@@ -476,7 +473,10 @@
   "12:55  SKIP  INFY        orb60     ORB60 down: max 3 trades a day",
   "13:00  SKIP  BEL         orb15     ORB15 down: max 3 trades a day",
   "13:00  SKIP  BEL         orb30_2r  ORB30 down: max 3 trades a day",
-  "13:00  SKIP  BEL         orb60     ORB60 down: max 3 trades a day"
+  "13:00  SKIP  BEL         orb60     ORB60 down: max 3 trades a day",
+  "13:25  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day",
+  "13:25  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day",
+  "13:25  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 80,
  "all_wins": 50,
