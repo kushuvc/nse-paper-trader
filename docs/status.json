@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 11:01 IST",
- "updated_ts": 1794375067,
+ "updated": "2026-11-11 11:11 IST",
+ "updated_ts": 1794375669,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -180,6 +180,20 @@
    "target": 3252.05,
    "entry_time": "10:20",
    "note": "ORB60 up"
+  },
+  "learner|M&M": {
+   "strategy": "learner",
+   "symbol": "M&M",
+   "side": 1,
+   "qty": 10,
+   "entry": 3434.6,
+   "stop": 3387.3,
+   "target": 3481.85,
+   "entry_time": "11:10",
+   "note": "ORB60 up",
+   "via": "orb60",
+   "setup": "long, 10:30-13:00, with market, with gap, wide stop, after usual delivery, after a mixed market",
+   "score": 0.063
   }
  },
  "closed": [
@@ -326,13 +340,6 @@
  ],
  "today_net": 404.0,
  "log": [
-  "10:10  SKIP  MAXHEALTH   orb30_2r  ORB30 down: max 3 trades a day",
-  "10:15  SKIP  M&M         orb15     ORB15 up: max 3 trades a day",
-  "10:15  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day",
-  "10:20  CLOSE ADANIENT    target     @ 2767.50  net Rs +807 [gap_go] (charges 82)",
-  "10:20  SKIP  ADANIENT    orb15     ORB15 up: max 3 trades a day",
-  "10:20  SKIP  ADANIENT    orb30_2r  ORB30 up: max 3 trades a day",
-  "10:20  OPEN  ADANIENT    BUY     16 @ 2768.50  stop 2738.75  target 2798.25  [orb60: ORB60 up]",
   "10:20  OPEN  ADANIENT    BUY     14 @ 2768.50  stop 2734.00  target 2837.50  [vwap: VWAP reclaim]",
   "10:20  OPEN  LT          BUY     23 @ 4252.00  stop 4238.25  target 4279.40  [vwap: VWAP reclaim]",
   "10:20  OPEN  POWERGRID   BUY    380 @ 262.75  stop 262.10  target 264.05  [vwap: VWAP reclaim]",
@@ -385,7 +392,14 @@
   "11:00  SKIP  ITC         orb60     ORB60 up: max 3 trades a day",
   "11:00  SKIP  POWERGRID   orb15     ORB15 up: max 3 trades a day",
   "11:00  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day",
-  "11:00  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day"
+  "11:00  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day",
+  "11:10  SKIP  ETERNAL     vwap      VWAP reclaim: max 3 trades a day",
+  "11:10  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
+  "11:10  OPEN  M&M         BUY     10 @ 3434.60  stop 3387.30  target 3481.85  [learner via orb60, expects +0.06R: long, 10:30-13:00, with market, with gap, wide stop, after usual delivery, after a mixed market]",
+  "11:10  SKIP  M&M         orb60     ORB60 up: max 3 trades a day",
+  "11:10  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day",
+  "11:10  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day",
+  "11:10  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 73,
  "all_wins": 48,

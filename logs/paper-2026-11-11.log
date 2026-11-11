@@ -150,3 +150,10 @@ NSE's own daily file: latest saved is 2026-11-09
 11:00  SKIP  POWERGRID   orb15     ORB15 up: max 3 trades a day
 11:00  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day
 11:00  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day
+11:10  SKIP  ETERNAL     vwap      VWAP reclaim: max 3 trades a day
+11:10  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day
+11:10  OPEN  M&M         BUY     10 @ 3434.60  stop 3387.30  target 3481.85  [learner via orb60, expects +0.06R: long, 10:30-13:00, with market, with gap, wide stop, after usual delivery, after a mixed market]
+11:10  SKIP  M&M         orb60     ORB60 up: max 3 trades a day
+11:10  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day
+11:10  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day
+11:10  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day
