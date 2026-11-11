@@ -6,3 +6,47 @@ Latest day, 2026-11-09: 1126 of 2743 shares rose (41.6%), Nifty 50 25,045 (+0.23
 PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
 Learner: model from 62 days of history
 NSE's own daily file: latest saved is 2026-11-09
+09:30  OPEN  ADANIENT    BUY     36 @ 2741.70  stop 2728.80  target 2767.50  [gap_go: gap +1.0% and go]
+09:30  OPEN  ADANIENT    BUY     12 @ 2741.70  stop 2700.55  target 2745.80  [trap90: tiny target, wide stop]
+09:30  OPEN  ADANIPORTS  SHORT   42 @ 1956.90  stop 1968.55  target 1942.70  [gap_fade: gap +1.3% fading]
+09:30  OPEN  ASIANPAINT  BUY     39 @ 2551.70  stop 2550.00  target 2555.10  [gap_go: gap +1.7% and go]
+09:30  OPEN  ASIANPAINT  BUY     13 @ 2551.70  stop 2513.40  target 2555.55  [trap90: tiny target, wide stop]
+09:30  OPEN  AXISBANK    BUY     65 @ 1334.30  stop 1326.65  target 1349.50  [gap_go: gap +1.5% and go]
+09:30  OPEN  AXISBANK    BUY     24 @ 1334.30  stop 1314.25  target 1336.30  [trap90: tiny target, wide stop]
+09:30  SKIP  BSE         trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  BAJAJ-AUTO  trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  BAJFINANCE  SHORT   48 @ 1076.85  stop 1087.25  target 1064.85  [gap_fade: gap +1.5% fading]
+09:30  SKIP  BAJAJFINSV  gap_go    gap +1.1% and go: max 3 trades a day
+09:30  SKIP  BAJAJFINSV  trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  BEL         SHORT  204 @ 399.35  stop 401.80  target 394.55  [gap_fade: gap +1.8% fading]
+09:30  SKIP  BHARTIARTL  gap_go    gap +1.3% and go: max 3 trades a day
+09:30  SKIP  BHARTIARTL  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  COALINDIA   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ETERNAL     trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  GRASIM      trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  HCLTECH     gap_fade  gap +1.1% fading: max 3 trades a day
+09:30  SKIP  HDFCBANK    gap_go    gap +1.5% and go: max 3 trades a day
+09:30  SKIP  HDFCBANK    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  HDFCLIFE    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  HINDALCO    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ICICIBANK   gap_fade  gap +1.5% fading: max 3 trades a day
+09:30  SKIP  ITC         gap_fade  gap +1.3% fading: max 3 trades a day
+09:30  SKIP  INFY        trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  INDIGO      gap_go    gap +2.4% and go: max 3 trades a day
+09:30  SKIP  INDIGO      trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  JSWSTEEL    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  JIOFIN      trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  LT          trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  M&M         gap_go    gap +1.7% and go: max 3 trades a day
+09:30  SKIP  M&M         trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  MAXHEALTH   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  NTPC        trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  POWERGRID   gap_go    gap +1.4% and go: max 3 trades a day
+09:30  SKIP  POWERGRID   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  RELIANCE    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  SHRIRAMFIN  gap_go    gap +1.0% and go: max 3 trades a day
+09:30  SKIP  SHRIRAMFIN  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  SBIN        gap_go    gap +1.3% and go: max 3 trades a day
+09:30  SKIP  SBIN        trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  TMPV        gap_fade  gap +1.0% fading: max 3 trades a day
+09:30  SKIP  TATASTEEL   trap90    tiny target, wide stop: max 3 trades a day
