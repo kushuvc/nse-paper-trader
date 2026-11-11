@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 12:16 IST",
- "updated_ts": 1794379563,
+ "updated": "2026-11-11 12:26 IST",
+ "updated_ts": 1794380165,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -43,17 +43,6 @@
    "entry": 3888.9,
    "stop": 3853.8,
    "target": 3923.95,
-   "entry_time": "09:35",
-   "note": "ORB15 up"
-  },
-  "orb15|ETERNAL": {
-   "strategy": "orb15",
-   "symbol": "ETERNAL",
-   "side": 1,
-   "qty": 96,
-   "entry": 370.75,
-   "stop": 365.55,
-   "target": 375.95,
    "entry_time": "09:35",
    "note": "ORB15 up"
   },
@@ -395,12 +384,30 @@
    "net": 487.52,
    "r": 0.996,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "ETERNAL",
+   "side": 1,
+   "qty": 96,
+   "entry": 370.75,
+   "stop": 365.55,
+   "target": 375.95,
+   "entry_time": "09:35",
+   "note": "ORB15 up",
+   "date": "2026-11-11",
+   "exit": 365.55,
+   "exit_time": "12:25",
+   "reason": "stop",
+   "gross": -513.34,
+   "charges": 37.42,
+   "net": -550.76,
+   "r": -1.103,
+   "mode": "live"
   }
  ],
- "today_net": 248.0,
+ "today_net": -303.0,
  "log": [
-  "11:00  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day",
-  "11:00  SKIP  ITC         orb30_2r  ORB30 up: max 3 trades a day",
   "11:00  SKIP  ITC         orb60     ORB60 up: max 3 trades a day",
   "11:00  SKIP  POWERGRID   orb15     ORB15 up: max 3 trades a day",
   "11:00  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day",
@@ -458,12 +465,35 @@
   "12:10  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day",
   "12:15  SKIP  BAJFINANCE  orb15     ORB15 down: max 3 trades a day",
   "12:15  SKIP  BAJFINANCE  orb30_2r  ORB30 down: max 3 trades a day",
-  "12:15  SKIP  BAJFINANCE  orb60     ORB60 down: max 3 trades a day"
+  "12:15  SKIP  BAJFINANCE  orb60     ORB60 down: max 3 trades a day",
+  "12:25  SKIP  DRREDDY     vwap      VWAP loss: max 3 trades a day",
+  "12:25  CLOSE ETERNAL     stop       @ 365.55  net Rs -551 [orb15] (charges 37)"
  ],
- "all_trades": 78,
+ "all_trades": 79,
  "all_wins": 50,
- "all_net": 3607.0,
+ "all_net": 3056.0,
  "recent": [
+  {
+   "date": "2026-11-11",
+   "symbol": "ETERNAL",
+   "strategy": "orb15",
+   "side": "1",
+   "qty": "96",
+   "entry_time": "09:35",
+   "entry": "370.75",
+   "stop": "365.55",
+   "target": "375.95",
+   "exit_time": "12:25",
+   "exit": "365.55",
+   "reason": "stop",
+   "gross": "-513.34",
+   "charges": "37.42",
+   "net": "-550.76",
+   "r": "-1.103",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-11",
    "symbol": "ADANIPORTS",
@@ -967,44 +997,23 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-09",
-   "symbol": "COALINDIA",
-   "strategy": "orb15",
-   "side": "-1",
-   "qty": "243",
-   "entry_time": "09:35",
-   "entry": "399.55",
-   "stop": "401.6",
-   "target": "397.55",
-   "exit_time": "11:20",
-   "exit": "401.6",
-   "reason": "stop",
-   "gross": "-537.09",
-   "charges": "81.45",
-   "net": "-618.54",
-   "r": "-1.242",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
   "2026-11-06": -292.0,
   "2026-11-09": -99.0,
-  "2026-11-11": 248.0
+  "2026-11-11": -303.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 1,
-   "today_net": -604,
-   "open": 2,
-   "all_trades": 10,
+   "today_trades": 2,
+   "today_net": -1155,
+   "open": 1,
+   "all_trades": 11,
    "all_wins": 6,
-   "all_net": 93
+   "all_net": -458
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
@@ -1086,12 +1095,12 @@
   "accounts": {
    "orb15": {
     "days": 4,
-    "trades": 10,
-    "net": 93,
-    "per_trade": 9,
-    "t": 0.11,
-    "drawdown": -1021,
-    "passed": 2,
+    "trades": 11,
+    "net": -458,
+    "per_trade": -42,
+    "t": -0.24,
+    "drawdown": -1572,
+    "passed": 1,
     "of": 7,
     "ready": false,
     "checks": [
@@ -1105,31 +1114,31 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "10 of 150 trades"
+      "now": "11 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
-      "ok": true,
-      "now": "Rs +9 a trade"
+      "ok": false,
+      "now": "Rs -42 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = 0.11"
+      "now": "t = -0.24"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs +1114 then Rs -1021"
+      "now": "Rs +1114 then Rs -1572"
      },
      {
       "id": "drawdown",
       "need": "Worst losing run under Rs 10,000",
       "ok": true,
-      "now": "Rs -1021"
+      "now": "Rs -1572"
      },
      {
       "id": "history",
