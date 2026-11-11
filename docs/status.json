@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 13:46 IST",
- "updated_ts": 1794384978,
+ "updated": "2026-11-11 13:56 IST",
+ "updated_ts": 1794385580,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -417,8 +417,6 @@
  ],
  "today_net": -847.0,
  "log": [
-  "11:25  SKIP  HDFCBANK    orb60     ORB60 up: max 3 trades a day",
-  "11:25  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day",
   "11:25  SKIP  NESTLEIND   orb30_2r  ORB30 down: max 3 trades a day",
   "11:25  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day",
   "11:30  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day",
@@ -476,7 +474,9 @@
   "13:25  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day",
   "13:35  SKIP  ASIANPAINT  orb30_2r  ORB30 down: max 3 trades a day",
   "13:35  SKIP  ASIANPAINT  orb60     ORB60 down: max 3 trades a day",
-  "13:35  SKIP  SBILIFE     vwap      VWAP loss: max 3 trades a day"
+  "13:35  SKIP  SBILIFE     vwap      VWAP loss: max 3 trades a day",
+  "13:55  SKIP  ETERNAL     learner   via orb60 (expects +0.10R): max 3 trades a day",
+  "13:55  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 80,
  "all_wins": 50,
