@@ -70,3 +70,9 @@ NSE's own daily file: latest saved is 2026-11-09
 09:40  SKIP  ITC         orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  SUNPHARMA   orb15     ORB15 down: max 3 trades a day
 09:40  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  SBIN        orb15     ORB15 up: max 3 trades a day
+09:50  CLOSE ASIANPAINT  target     @ 2555.55  net Rs +2 [trap90] (charges 35)
+09:50  SKIP  CIPLA       orb15     ORB15 up: max 3 trades a day
+09:50  OPEN  CIPLA       BUY     70 @ 1415.50  stop 1409.50  target 1427.50  [orb30_2r: ORB30 up]
+09:50  OPEN  SBIN        BUY     38 @ 1068.05  stop 1055.05  target 1094.05  [learner via orb30_2r, expects +0.07R: long, before 10:30, with market, with gap, wide stop, after usual delivery, after a mixed market]
+09:50  OPEN  SBIN        BUY     38 @ 1068.05  stop 1055.05  target 1094.05  [orb30_2r: ORB30 up]
