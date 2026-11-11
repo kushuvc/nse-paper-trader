@@ -234,3 +234,4 @@ NSE's own daily file: latest saved is 2026-11-09
 14:20  SKIP  LT          orb60     ORB60 down: max 3 trades a day
 14:25  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day
 14:40  SKIP  HINDUNILVR  vwap      VWAP reclaim: after 14:30
+14:50  SKIP  CIPLA       vwap      VWAP loss: after 14:30

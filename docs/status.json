@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 14:46 IST",
- "updated_ts": 1794388588,
+ "updated": "2026-11-11 14:56 IST",
+ "updated_ts": 1794389189,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -426,7 +426,6 @@
  ],
  "today_net": -437.0,
  "log": [
-  "11:45  OPEN  HINDALCO    BUY     48 @ 963.50  stop 953.10  target 973.85  [learner via orb60, expects +0.07R: long, 10:30-13:00, with market, against gap, wide stop, after usual delivery, after a mixed market]",
   "11:45  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day",
   "11:55  SKIP  HDFCLIFE    orb60     ORB60 up: max 3 trades a day",
   "11:55  SKIP  HINDUNILVR  orb15     ORB15 up: max 3 trades a day",
@@ -485,7 +484,8 @@
   "14:20  SKIP  LT          orb30_2r  ORB30 down: max 3 trades a day",
   "14:20  SKIP  LT          orb60     ORB60 down: max 3 trades a day",
   "14:25  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day",
-  "14:40  SKIP  HINDUNILVR  vwap      VWAP reclaim: after 14:30"
+  "14:40  SKIP  HINDUNILVR  vwap      VWAP reclaim: after 14:30",
+  "14:50  SKIP  CIPLA       vwap      VWAP loss: after 14:30"
  ],
  "all_trades": 81,
  "all_wins": 51,
