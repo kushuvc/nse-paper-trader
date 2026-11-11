@@ -91,3 +91,14 @@ NSE's own daily file: latest saved is 2026-11-09
 10:10  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day
 10:10  SKIP  MAXHEALTH   orb15     ORB15 down: max 3 trades a day
 10:10  SKIP  MAXHEALTH   orb30_2r  ORB30 down: max 3 trades a day
+10:15  SKIP  M&M         orb15     ORB15 up: max 3 trades a day
+10:15  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day
+10:20  CLOSE ADANIENT    target     @ 2767.50  net Rs +807 [gap_go] (charges 82)
+10:20  SKIP  ADANIENT    orb15     ORB15 up: max 3 trades a day
+10:20  SKIP  ADANIENT    orb30_2r  ORB30 up: max 3 trades a day
+10:20  OPEN  ADANIENT    BUY     16 @ 2768.50  stop 2738.75  target 2798.25  [orb60: ORB60 up]
+10:20  OPEN  ADANIENT    BUY     14 @ 2768.50  stop 2734.00  target 2837.50  [vwap: VWAP reclaim]
+10:20  OPEN  LT          BUY     23 @ 4252.00  stop 4238.25  target 4279.40  [vwap: VWAP reclaim]
+10:20  OPEN  POWERGRID   BUY    380 @ 262.75  stop 262.10  target 264.05  [vwap: VWAP reclaim]
+10:20  OPEN  SUNPHARMA   SHORT   23 @ 1894.30  stop 1915.35  target 1873.25  [orb60: ORB60 down]
+10:20  OPEN  TRENT       BUY     11 @ 3208.80  stop 3165.50  target 3252.05  [orb60: ORB60 up]

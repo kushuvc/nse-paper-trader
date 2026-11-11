@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 10:10 IST",
- "updated_ts": 1794372059,
+ "updated": "2026-11-11 10:21 IST",
+ "updated_ts": 1794372661,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -13,17 +13,6 @@
  ],
  "date": "2026-11-11",
  "open": {
-  "gap_go|ADANIENT": {
-   "strategy": "gap_go",
-   "symbol": "ADANIENT",
-   "side": 1,
-   "qty": 36,
-   "entry": 2741.7,
-   "stop": 2728.8,
-   "target": 2767.5,
-   "entry_time": "09:30",
-   "note": "gap +1.0% and go"
-  },
   "gap_fade|ADANIPORTS": {
    "strategy": "gap_fade",
    "symbol": "ADANIPORTS",
@@ -136,6 +125,72 @@
    "target": 1910.9,
    "entry_time": "09:55",
    "note": "ORB30 down"
+  },
+  "orb60|ADANIENT": {
+   "strategy": "orb60",
+   "symbol": "ADANIENT",
+   "side": 1,
+   "qty": 16,
+   "entry": 2768.5,
+   "stop": 2738.75,
+   "target": 2798.25,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
+  },
+  "vwap|ADANIENT": {
+   "strategy": "vwap",
+   "symbol": "ADANIENT",
+   "side": 1,
+   "qty": 14,
+   "entry": 2768.5,
+   "stop": 2734.0,
+   "target": 2837.5,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim"
+  },
+  "vwap|LT": {
+   "strategy": "vwap",
+   "symbol": "LT",
+   "side": 1,
+   "qty": 23,
+   "entry": 4252.0,
+   "stop": 4238.25,
+   "target": 4279.4,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim"
+  },
+  "vwap|POWERGRID": {
+   "strategy": "vwap",
+   "symbol": "POWERGRID",
+   "side": 1,
+   "qty": 380,
+   "entry": 262.75,
+   "stop": 262.1,
+   "target": 264.05,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim"
+  },
+  "orb60|SUNPHARMA": {
+   "strategy": "orb60",
+   "symbol": "SUNPHARMA",
+   "side": -1,
+   "qty": 23,
+   "entry": 1894.3,
+   "stop": 1915.35,
+   "target": 1873.25,
+   "entry_time": "10:20",
+   "note": "ORB60 down"
+  },
+  "orb60|TRENT": {
+   "strategy": "orb60",
+   "symbol": "TRENT",
+   "side": 1,
+   "qty": 11,
+   "entry": 3208.8,
+   "stop": 3165.5,
+   "target": 3252.05,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
   }
  },
  "closed": [
@@ -238,21 +293,30 @@
    "net": -603.92,
    "r": -1.224,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_go",
+   "symbol": "ADANIENT",
+   "side": 1,
+   "qty": 36,
+   "entry": 2741.7,
+   "stop": 2728.8,
+   "target": 2767.5,
+   "entry_time": "09:30",
+   "note": "gap +1.0% and go",
+   "date": "2026-11-11",
+   "exit": 2767.5,
+   "exit_time": "10:20",
+   "reason": "target",
+   "gross": 889.13,
+   "charges": 82.25,
+   "net": 806.88,
+   "r": 1.737,
+   "mode": "live"
   }
  ],
- "today_net": -774.0,
+ "today_net": 33.0,
  "log": [
-  "09:30  SKIP  INFY        trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  INDIGO      gap_go    gap +2.4% and go: max 3 trades a day",
-  "09:30  SKIP  INDIGO      trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  JSWSTEEL    trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  JIOFIN      trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  LT          trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  M&M         gap_go    gap +1.7% and go: max 3 trades a day",
-  "09:30  SKIP  M&M         trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  MAXHEALTH   trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  NTPC        trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  POWERGRID   gap_go    gap +1.4% and go: max 3 trades a day",
   "09:30  SKIP  POWERGRID   trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  RELIANCE    trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  SHRIRAMFIN  gap_go    gap +1.0% and go: max 3 trades a day",
@@ -301,12 +365,44 @@
   "10:10  SKIP  ICICIBANK   orb15     ORB15 down: max 3 trades a day",
   "10:10  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day",
   "10:10  SKIP  MAXHEALTH   orb15     ORB15 down: max 3 trades a day",
-  "10:10  SKIP  MAXHEALTH   orb30_2r  ORB30 down: max 3 trades a day"
+  "10:10  SKIP  MAXHEALTH   orb30_2r  ORB30 down: max 3 trades a day",
+  "10:15  SKIP  M&M         orb15     ORB15 up: max 3 trades a day",
+  "10:15  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day",
+  "10:20  CLOSE ADANIENT    target     @ 2767.50  net Rs +807 [gap_go] (charges 82)",
+  "10:20  SKIP  ADANIENT    orb15     ORB15 up: max 3 trades a day",
+  "10:20  SKIP  ADANIENT    orb30_2r  ORB30 up: max 3 trades a day",
+  "10:20  OPEN  ADANIENT    BUY     16 @ 2768.50  stop 2738.75  target 2798.25  [orb60: ORB60 up]",
+  "10:20  OPEN  ADANIENT    BUY     14 @ 2768.50  stop 2734.00  target 2837.50  [vwap: VWAP reclaim]",
+  "10:20  OPEN  LT          BUY     23 @ 4252.00  stop 4238.25  target 4279.40  [vwap: VWAP reclaim]",
+  "10:20  OPEN  POWERGRID   BUY    380 @ 262.75  stop 262.10  target 264.05  [vwap: VWAP reclaim]",
+  "10:20  OPEN  SUNPHARMA   SHORT   23 @ 1894.30  stop 1915.35  target 1873.25  [orb60: ORB60 down]",
+  "10:20  OPEN  TRENT       BUY     11 @ 3208.80  stop 3165.50  target 3252.05  [orb60: ORB60 up]"
  ],
- "all_trades": 71,
- "all_wins": 46,
- "all_net": 2585.0,
+ "all_trades": 72,
+ "all_wins": 47,
+ "all_net": 3391.0,
  "recent": [
+  {
+   "date": "2026-11-11",
+   "symbol": "ADANIENT",
+   "strategy": "gap_go",
+   "side": "1",
+   "qty": "36",
+   "entry_time": "09:30",
+   "entry": "2741.7",
+   "stop": "2728.8",
+   "target": "2767.5",
+   "exit_time": "10:20",
+   "exit": "2767.5",
+   "reason": "target",
+   "gross": "889.13",
+   "charges": "82.25",
+   "net": "806.88",
+   "r": "1.737",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-11",
    "symbol": "ASIANPAINT",
@@ -810,34 +906,13 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-09",
-   "symbol": "HINDALCO",
-   "strategy": "gap_go",
-   "side": "-1",
-   "qty": "106",
-   "entry_time": "09:30",
-   "entry": "941.4",
-   "stop": "944.0",
-   "target": "936.2",
-   "exit_time": "09:35",
-   "exit": "936.2",
-   "reason": "target",
-   "gross": "511.39",
-   "charges": "82.33",
-   "net": "429.06",
-   "r": "1.557",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
   "2026-11-06": -292.0,
   "2026-11-09": -99.0,
-  "2026-11-11": -774.0
+  "2026-11-11": 33.0
  },
  "by_strategy": {
   "orb15": {
@@ -862,19 +937,19 @@
    "desc": "first-hour range breakout, stop at mid, 1R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 9,
    "all_wins": 6,
    "all_net": -348
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
-   "today_trades": 1,
-   "today_net": -188,
-   "open": 2,
-   "all_trades": 10,
-   "all_wins": 4,
-   "all_net": -632
+   "today_trades": 2,
+   "today_net": 619,
+   "open": 1,
+   "all_trades": 11,
+   "all_wins": 5,
+   "all_net": 175
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
@@ -889,7 +964,7 @@
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 9,
    "all_wins": 4,
    "all_net": -1071
@@ -1094,12 +1169,12 @@
    },
    "gap_go": {
     "days": 4,
-    "trades": 10,
-    "net": -632,
-    "per_trade": -63,
-    "t": -0.55,
+    "trades": 11,
+    "net": 175,
+    "per_trade": 16,
+    "t": -0.19,
     "drawdown": -2014,
-    "passed": 1,
+    "passed": 2,
     "of": 7,
     "ready": false,
     "checks": [
@@ -1113,25 +1188,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "10 of 150 trades"
+      "now": "11 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
-      "ok": false,
-      "now": "Rs -63 a trade"
+      "ok": true,
+      "now": "Rs +16 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.55"
+      "now": "t = -0.19"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -610 then Rs -22"
+      "now": "Rs -610 then Rs +785"
      },
      {
       "id": "drawdown",
