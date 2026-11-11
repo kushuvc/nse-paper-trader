@@ -225,3 +225,5 @@ NSE's own daily file: latest saved is 2026-11-09
 13:35  SKIP  SBILIFE     vwap      VWAP loss: max 3 trades a day
 13:55  SKIP  ETERNAL     learner   via orb60 (expects +0.10R): max 3 trades a day
 13:55  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day
+14:05  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day
+14:05  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day
