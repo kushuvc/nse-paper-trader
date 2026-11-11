@@ -192,3 +192,12 @@ NSE's own daily file: latest saved is 2026-11-09
 12:00  SKIP  RELIANCE    vwap      VWAP reclaim: max 3 trades a day
 12:00  SKIP  TECHM       orb30_2r  ORB30 down: max 3 trades a day
 12:00  SKIP  TECHM       orb60     ORB60 down: max 3 trades a day
+12:05  SKIP  JIOFIN      orb15     ORB15 up: max 3 trades a day
+12:05  SKIP  JIOFIN      orb30_2r  ORB30 up: max 3 trades a day
+12:05  SKIP  JIOFIN      orb60     ORB60 up: max 3 trades a day
+12:05  SKIP  MARUTI      orb15     ORB15 up: max 3 trades a day
+12:05  SKIP  MARUTI      orb30_2r  ORB30 up: max 3 trades a day
+12:05  SKIP  MARUTI      orb60     ORB60 up: max 3 trades a day
+12:10  CLOSE ADANIPORTS  target     @ 1942.70  net Rs +488 [gap_fade] (charges 76)
+12:10  SKIP  BEL         vwap      VWAP loss: max 3 trades a day
+12:10  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day
