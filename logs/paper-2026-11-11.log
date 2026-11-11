@@ -164,3 +164,13 @@ NSE's own daily file: latest saved is 2026-11-09
 11:20  SKIP  DRREDDY     orb15     ORB15 down: max 3 trades a day
 11:20  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day
 11:20  CLOSE LT          stop       @ 4238.25  net Rs -437 [vwap] (charges 82)
+11:25  SKIP  EICHERMOT   orb15     ORB15 up: max 3 trades a day
+11:25  SKIP  EICHERMOT   orb30_2r  ORB30 up: max 3 trades a day
+11:25  SKIP  EICHERMOT   orb60     ORB60 up: max 3 trades a day
+11:25  SKIP  HDFCBANK    orb60     ORB60 up: max 3 trades a day
+11:25  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day
+11:25  SKIP  NESTLEIND   orb30_2r  ORB30 down: max 3 trades a day
+11:25  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day
+11:30  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day
+11:30  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day
+11:30  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day
