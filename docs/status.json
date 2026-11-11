@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 11:41 IST",
- "updated_ts": 1794377473,
+ "updated": "2026-11-11 11:51 IST",
+ "updated_ts": 1794378075,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -104,17 +104,6 @@
    "entry_time": "09:55",
    "note": "ORB30 down"
   },
-  "orb60|ADANIENT": {
-   "strategy": "orb60",
-   "symbol": "ADANIENT",
-   "side": 1,
-   "qty": 16,
-   "entry": 2768.5,
-   "stop": 2738.75,
-   "target": 2798.25,
-   "entry_time": "10:20",
-   "note": "ORB60 up"
-  },
   "vwap|ADANIENT": {
    "strategy": "vwap",
    "symbol": "ADANIENT",
@@ -161,6 +150,20 @@
    "via": "orb60",
    "setup": "long, 10:30-13:00, with market, with gap, wide stop, after usual delivery, after a mixed market",
    "score": 0.063
+  },
+  "learner|HINDALCO": {
+   "strategy": "learner",
+   "symbol": "HINDALCO",
+   "side": 1,
+   "qty": 48,
+   "entry": 963.5,
+   "stop": 953.1,
+   "target": 973.85,
+   "entry_time": "11:45",
+   "note": "ORB60 up",
+   "via": "orb60",
+   "setup": "long, 10:30-13:00, with market, against gap, wide stop, after usual delivery, after a mixed market",
+   "score": 0.066
   }
  },
  "closed": [
@@ -363,13 +366,30 @@
    "net": -436.88,
    "r": -1.381,
    "mode": "live"
+  },
+  {
+   "strategy": "orb60",
+   "symbol": "ADANIENT",
+   "side": 1,
+   "qty": 16,
+   "entry": 2768.5,
+   "stop": 2738.75,
+   "target": 2798.25,
+   "entry_time": "10:20",
+   "note": "ORB60 up",
+   "date": "2026-11-11",
+   "exit": 2738.75,
+   "exit_time": "11:45",
+   "reason": "stop",
+   "gross": -493.62,
+   "charges": 46.67,
+   "net": -540.29,
+   "r": -1.135,
+   "mode": "live"
   }
  ],
- "today_net": 301.0,
+ "today_net": -239.0,
  "log": [
-  "10:35  SKIP  JSWSTEEL    orb60     ORB60 down: max 3 trades a day",
-  "10:35  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day",
-  "10:35  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day",
   "10:35  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day",
   "10:35  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day",
   "10:35  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day",
@@ -426,12 +446,36 @@
   "11:30  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day",
   "11:35  SKIP  ASIANPAINT  vwap      VWAP reclaim: max 3 trades a day",
   "11:35  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day",
-  "11:35  SKIP  BSE         orb60     ORB60 up: max 3 trades a day"
+  "11:35  SKIP  BSE         orb60     ORB60 up: max 3 trades a day",
+  "11:45  CLOSE ADANIENT    stop       @ 2738.75  net Rs -540 [orb60] (charges 47)",
+  "11:45  OPEN  HINDALCO    BUY     48 @ 963.50  stop 953.10  target 973.85  [learner via orb60, expects +0.07R: long, 10:30-13:00, with market, against gap, wide stop, after usual delivery, after a mixed market]",
+  "11:45  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day"
  ],
- "all_trades": 76,
+ "all_trades": 77,
  "all_wins": 49,
- "all_net": 3659.0,
+ "all_net": 3119.0,
  "recent": [
+  {
+   "date": "2026-11-11",
+   "symbol": "ADANIENT",
+   "strategy": "orb60",
+   "side": "1",
+   "qty": "16",
+   "entry_time": "10:20",
+   "entry": "2768.5",
+   "stop": "2738.75",
+   "target": "2798.25",
+   "exit_time": "11:45",
+   "exit": "2738.75",
+   "reason": "stop",
+   "gross": "-493.62",
+   "charges": "46.67",
+   "net": "-540.29",
+   "r": "-1.135",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-11",
    "symbol": "LT",
@@ -935,34 +979,13 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-09",
-   "symbol": "TECHM",
-   "strategy": "vwap",
-   "side": "-1",
-   "qty": "55",
-   "entry_time": "10:35",
-   "entry": "1815.5",
-   "stop": "1820.6",
-   "target": "1805.3",
-   "exit_time": "11:05",
-   "exit": "1805.3",
-   "reason": "target",
-   "gross": "521.17",
-   "charges": "82.35",
-   "net": "438.82",
-   "r": "1.564",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
   "2026-11-06": -292.0,
   "2026-11-09": -99.0,
-  "2026-11-11": 300.0
+  "2026-11-11": -240.0
  },
  "by_strategy": {
   "orb15": {
@@ -985,12 +1008,12 @@
   },
   "orb60": {
    "desc": "first-hour range breakout, stop at mid, 1R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 9,
+   "today_trades": 1,
+   "today_net": -540,
+   "open": 2,
+   "all_trades": 10,
    "all_wins": 6,
-   "all_net": -348
+   "all_net": -888
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
@@ -1163,12 +1186,12 @@
     ]
    },
    "orb60": {
-    "days": 3,
-    "trades": 9,
-    "net": -348,
-    "per_trade": -39,
-    "t": -0.27,
-    "drawdown": -1258,
+    "days": 4,
+    "trades": 10,
+    "net": -888,
+    "per_trade": -89,
+    "t": -0.64,
+    "drawdown": -1360,
     "passed": 1,
     "of": 7,
     "ready": false,
@@ -1177,37 +1200,37 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "3 of 60 days"
+      "now": "4 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "9 of 150 trades"
+      "now": "10 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -39 a trade"
+      "now": "Rs -89 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.27"
+      "now": "t = -0.64"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -126 then Rs -222"
+      "now": "Rs +305 then Rs -1194"
      },
      {
       "id": "drawdown",
       "need": "Worst losing run under Rs 10,000",
       "ok": true,
-      "now": "Rs -1258"
+      "now": "Rs -1360"
      },
      {
       "id": "history",
