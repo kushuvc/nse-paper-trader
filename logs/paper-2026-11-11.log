@@ -174,3 +174,6 @@ NSE's own daily file: latest saved is 2026-11-09
 11:30  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day
 11:30  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day
 11:30  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day
+11:35  SKIP  ASIANPAINT  vwap      VWAP reclaim: max 3 trades a day
+11:35  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day
+11:35  SKIP  BSE         orb60     ORB60 up: max 3 trades a day
