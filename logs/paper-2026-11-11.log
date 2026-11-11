@@ -180,3 +180,15 @@ NSE's own daily file: latest saved is 2026-11-09
 11:45  CLOSE ADANIENT    stop       @ 2738.75  net Rs -540 [orb60] (charges 47)
 11:45  OPEN  HINDALCO    BUY     48 @ 963.50  stop 953.10  target 973.85  [learner via orb60, expects +0.07R: long, 10:30-13:00, with market, against gap, wide stop, after usual delivery, after a mixed market]
 11:45  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day
+11:55  SKIP  HDFCLIFE    orb60     ORB60 up: max 3 trades a day
+11:55  SKIP  HINDUNILVR  orb15     ORB15 up: max 3 trades a day
+11:55  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day
+11:55  SKIP  HINDUNILVR  orb60     ORB60 up: max 3 trades a day
+11:55  SKIP  NTPC        orb15     ORB15 up: max 3 trades a day
+11:55  SKIP  NTPC        orb30_2r  ORB30 up: max 3 trades a day
+11:55  SKIP  NTPC        orb60     ORB60 up: max 3 trades a day
+11:55  SKIP  TMPV        orb30_2r  ORB30 up: max 3 trades a day
+11:55  SKIP  TMPV        orb60     ORB60 up: max 3 trades a day
+12:00  SKIP  RELIANCE    vwap      VWAP reclaim: max 3 trades a day
+12:00  SKIP  TECHM       orb30_2r  ORB30 down: max 3 trades a day
+12:00  SKIP  TECHM       orb60     ORB60 down: max 3 trades a day
