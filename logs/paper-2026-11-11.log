@@ -220,3 +220,6 @@ NSE's own daily file: latest saved is 2026-11-09
 13:25  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day
 13:25  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day
 13:25  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day
+13:35  SKIP  ASIANPAINT  orb30_2r  ORB30 down: max 3 trades a day
+13:35  SKIP  ASIANPAINT  orb60     ORB60 down: max 3 trades a day
+13:35  SKIP  SBILIFE     vwap      VWAP loss: max 3 trades a day
