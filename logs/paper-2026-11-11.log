@@ -128,3 +128,9 @@ NSE's own daily file: latest saved is 2026-11-09
 10:40  SKIP  TCS         orb15     ORB15 down: max 3 trades a day
 10:40  SKIP  TCS         orb30_2r  ORB30 down: max 3 trades a day
 10:40  SKIP  TCS         orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  ADANIPORTS  orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  CIPLA       orb60     ORB60 up: max 3 trades a day
+10:45  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day
+10:45  SKIP  TATACONSUM  vwap      VWAP reclaim: max 3 trades a day
+10:50  SKIP  MAXHEALTH   vwap      VWAP reclaim: max 3 trades a day
+10:50  CLOSE POWERGRID   target     @ 264.05  net Rs +371 [vwap] (charges 83)

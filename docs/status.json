@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 10:41 IST",
- "updated_ts": 1794373864,
+ "updated": "2026-11-11 10:51 IST",
+ "updated_ts": 1794374466,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -159,17 +159,6 @@
    "entry_time": "10:20",
    "note": "VWAP reclaim"
   },
-  "vwap|POWERGRID": {
-   "strategy": "vwap",
-   "symbol": "POWERGRID",
-   "side": 1,
-   "qty": 380,
-   "entry": 262.75,
-   "stop": 262.1,
-   "target": 264.05,
-   "entry_time": "10:20",
-   "note": "VWAP reclaim"
-  },
   "orb60|SUNPHARMA": {
    "strategy": "orb60",
    "symbol": "SUNPHARMA",
@@ -313,16 +302,30 @@
    "net": 806.88,
    "r": 1.737,
    "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "POWERGRID",
+   "side": 1,
+   "qty": 380,
+   "entry": 262.75,
+   "stop": 262.1,
+   "target": 264.05,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim",
+   "date": "2026-11-11",
+   "exit": 264.05,
+   "exit_time": "10:50",
+   "reason": "target",
+   "gross": 453.96,
+   "charges": 82.53,
+   "net": 371.43,
+   "r": 1.504,
+   "mode": "live"
   }
  ],
- "today_net": 33.0,
+ "today_net": 404.0,
  "log": [
-  "09:40  SKIP  SUNPHARMA   orb15     ORB15 down: max 3 trades a day",
-  "09:40  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day",
-  "09:45  SKIP  SBIN        orb15     ORB15 up: max 3 trades a day",
-  "09:50  CLOSE ASIANPAINT  target     @ 2555.55  net Rs +2 [trap90] (charges 35)",
-  "09:50  SKIP  CIPLA       orb15     ORB15 up: max 3 trades a day",
-  "09:50  OPEN  CIPLA       BUY     70 @ 1415.50  stop 1409.50  target 1427.50  [orb30_2r: ORB30 up]",
   "09:50  OPEN  SBIN        BUY     38 @ 1068.05  stop 1055.05  target 1094.05  [learner via orb30_2r, expects +0.07R: long, before 10:30, with market, with gap, wide stop, after usual delivery, after a mixed market]",
   "09:50  OPEN  SBIN        BUY     38 @ 1068.05  stop 1055.05  target 1094.05  [orb30_2r: ORB30 up]",
   "09:55  SKIP  ADANIPORTS  orb15     ORB15 down: max 3 trades a day",
@@ -376,12 +379,39 @@
   "10:40  SKIP  ITC         vwap      VWAP loss: max 3 trades a day",
   "10:40  SKIP  TCS         orb15     ORB15 down: max 3 trades a day",
   "10:40  SKIP  TCS         orb30_2r  ORB30 down: max 3 trades a day",
-  "10:40  SKIP  TCS         orb60     ORB60 down: max 3 trades a day"
+  "10:40  SKIP  TCS         orb60     ORB60 down: max 3 trades a day",
+  "10:45  SKIP  ADANIPORTS  orb60     ORB60 down: max 3 trades a day",
+  "10:45  SKIP  CIPLA       orb60     ORB60 up: max 3 trades a day",
+  "10:45  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day",
+  "10:45  SKIP  TATACONSUM  vwap      VWAP reclaim: max 3 trades a day",
+  "10:50  SKIP  MAXHEALTH   vwap      VWAP reclaim: max 3 trades a day",
+  "10:50  CLOSE POWERGRID   target     @ 264.05  net Rs +371 [vwap] (charges 83)"
  ],
- "all_trades": 72,
- "all_wins": 47,
- "all_net": 3391.0,
+ "all_trades": 73,
+ "all_wins": 48,
+ "all_net": 3763.0,
  "recent": [
+  {
+   "date": "2026-11-11",
+   "symbol": "POWERGRID",
+   "strategy": "vwap",
+   "side": "1",
+   "qty": "380",
+   "entry_time": "10:20",
+   "entry": "262.75",
+   "stop": "262.1",
+   "target": "264.05",
+   "exit_time": "10:50",
+   "exit": "264.05",
+   "reason": "target",
+   "gross": "453.96",
+   "charges": "82.53",
+   "net": "371.43",
+   "r": "1.504",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-11",
    "symbol": "ADANIENT",
@@ -885,34 +915,13 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-09",
-   "symbol": "APOLLOHOSP",
-   "strategy": "trap90",
-   "side": "1",
-   "qty": "3",
-   "entry_time": "09:30",
-   "entry": "8521.0",
-   "stop": "8393.15",
-   "target": "8533.8",
-   "exit_time": "09:40",
-   "exit": "8533.8",
-   "reason": "target",
-   "gross": "28.17",
-   "charges": "27.13",
-   "net": "1.04",
-   "r": "0.003",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
   "2026-11-06": -292.0,
   "2026-11-09": -99.0,
-  "2026-11-11": 33.0
+  "2026-11-11": 404.0
  },
  "by_strategy": {
   "orb15": {
@@ -962,12 +971,12 @@
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 9,
-   "all_wins": 4,
-   "all_net": -1071
+   "today_trades": 1,
+   "today_net": 371,
+   "open": 2,
+   "all_trades": 10,
+   "all_wins": 5,
+   "all_net": -699
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
@@ -1278,11 +1287,11 @@
     ]
    },
    "vwap": {
-    "days": 3,
-    "trades": 9,
-    "net": -1071,
-    "per_trade": -119,
-    "t": -0.28,
+    "days": 4,
+    "trades": 10,
+    "net": -699,
+    "per_trade": -70,
+    "t": 0.07,
     "drawdown": -1705,
     "passed": 1,
     "of": 7,
@@ -1292,31 +1301,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "3 of 60 days"
+      "now": "4 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "9 of 150 trades"
+      "now": "10 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -119 a trade"
+      "now": "Rs -70 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.28"
+      "now": "t = 0.07"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1036 then Rs -35"
+      "now": "Rs -1645 then Rs +945"
      },
      {
       "id": "drawdown",
