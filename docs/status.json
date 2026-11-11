@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 09:50 IST",
- "updated_ts": 1794370856,
+ "updated": "2026-11-11 10:00 IST",
+ "updated_ts": 1794371458,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -136,6 +136,17 @@
    "target": 1094.05,
    "entry_time": "09:50",
    "note": "ORB30 up"
+  },
+  "orb30_2r|ADANIPORTS": {
+   "strategy": "orb30_2r",
+   "symbol": "ADANIPORTS",
+   "side": -1,
+   "qty": 26,
+   "entry": 1949.3,
+   "stop": 1968.5,
+   "target": 1910.9,
+   "entry_time": "09:55",
+   "note": "ORB30 down"
   }
  },
  "closed": [
@@ -222,14 +233,6 @@
  ],
  "today_net": -170.0,
  "log": [
-  "09:30  SKIP  BAJAJFINSV  gap_go    gap +1.1% and go: max 3 trades a day",
-  "09:30  SKIP  BAJAJFINSV  trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  OPEN  BEL         SHORT  204 @ 399.35  stop 401.80  target 394.55  [gap_fade: gap +1.8% fading]",
-  "09:30  SKIP  BHARTIARTL  gap_go    gap +1.3% and go: max 3 trades a day",
-  "09:30  SKIP  BHARTIARTL  trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  COALINDIA   trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  ETERNAL     trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  GRASIM      trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  HCLTECH     gap_fade  gap +1.1% fading: max 3 trades a day",
   "09:30  SKIP  HDFCBANK    gap_go    gap +1.5% and go: max 3 trades a day",
   "09:30  SKIP  HDFCBANK    trap90    tiny target, wide stop: max 3 trades a day",
@@ -281,7 +284,15 @@
   "09:50  SKIP  CIPLA       orb15     ORB15 up: max 3 trades a day",
   "09:50  OPEN  CIPLA       BUY     70 @ 1415.50  stop 1409.50  target 1427.50  [orb30_2r: ORB30 up]",
   "09:50  OPEN  SBIN        BUY     38 @ 1068.05  stop 1055.05  target 1094.05  [learner via orb30_2r, expects +0.07R: long, before 10:30, with market, with gap, wide stop, after usual delivery, after a mixed market]",
-  "09:50  OPEN  SBIN        BUY     38 @ 1068.05  stop 1055.05  target 1094.05  [orb30_2r: ORB30 up]"
+  "09:50  OPEN  SBIN        BUY     38 @ 1068.05  stop 1055.05  target 1094.05  [orb30_2r: ORB30 up]",
+  "09:55  SKIP  ADANIPORTS  orb15     ORB15 down: max 3 trades a day",
+  "09:55  OPEN  ADANIPORTS  SHORT   26 @ 1949.30  stop 1968.50  target 1910.90  [orb30_2r: ORB30 down]",
+  "10:00  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 down: max 3 trades a day",
+  "10:00  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day",
+  "10:00  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day",
+  "10:00  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day",
+  "10:00  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day",
+  "10:00  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day"
  ],
  "all_trades": 70,
  "all_wins": 46,
@@ -833,7 +844,7 @@
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
    "today_trades": 0,
    "today_net": 0,
-   "open": 2,
+   "open": 3,
    "all_trades": 9,
    "all_wins": 6,
    "all_net": 803
