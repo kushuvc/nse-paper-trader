@@ -50,3 +50,23 @@ NSE's own daily file: latest saved is 2026-11-09
 09:30  SKIP  SBIN        trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  TMPV        gap_fade  gap +1.0% fading: max 3 trades a day
 09:30  SKIP  TATASTEEL   trap90    tiny target, wide stop: max 3 trades a day
+09:35  CLOSE ASIANPAINT  stop       @ 2550.00  net Rs -188 [gap_go] (charges 82)
+09:35  OPEN  ASIANPAINT  SHORT   33 @ 2547.00  stop 2561.95  target 2532.10  [orb15: ORB15 down]
+09:35  CLOSE AXISBANK    target     @ 1336.30  net Rs +1 [trap90] (charges 34)
+09:35  OPEN  BSE         BUY     14 @ 3888.90  stop 3853.80  target 3923.95  [orb15: ORB15 up]
+09:35  OPEN  ETERNAL     BUY     96 @ 370.75  stop 365.55  target 375.95  [orb15: ORB15 up]
+09:35  SKIP  HCLTECH     orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  INFY        orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  JSWSTEEL    orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  RELIANCE    orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  SBILIFE     orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  TMPV        orb15     ORB15 down: max 3 trades a day
+09:40  CLOSE ADANIENT    target     @ 2747.00  net Rs +16 [trap90] (charges 35)
+09:40  SKIP  AXISBANK    orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  BAJAJ-AUTO  orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  GRASIM      orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  HDFCBANK    orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  ITC         orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  SUNPHARMA   orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day
