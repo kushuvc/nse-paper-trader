@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 12:46 IST",
- "updated_ts": 1794381368,
+ "updated": "2026-11-11 12:56 IST",
+ "updated_ts": 1794381970,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -417,11 +417,6 @@
  ],
  "today_net": -847.0,
  "log": [
-  "11:10  SKIP  M&M         orb60     ORB60 up: max 3 trades a day",
-  "11:10  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day",
-  "11:10  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day",
-  "11:10  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day",
-  "11:15  CLOSE CIPLA       stop       @ 1409.50  net Rs -542 [orb30_2r] (charges 82)",
   "11:15  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day",
   "11:15  SKIP  HDFCLIFE    orb30_2r  ORB30 up: max 3 trades a day",
   "11:20  CLOSE AXISBANK    target     @ 1349.50  net Rs +875 [gap_go] (charges 78)",
@@ -476,7 +471,12 @@
   "12:40  SKIP  TATACONSUM  orb15     ORB15 down: max 3 trades a day",
   "12:40  SKIP  TATACONSUM  orb30_2r  ORB30 down: max 3 trades a day",
   "12:40  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day",
-  "12:45  CLOSE ADANIENT    stop (gap) @ 2733.60  net Rs -545 [vwap] (charges 41)"
+  "12:45  CLOSE ADANIENT    stop (gap) @ 2733.60  net Rs -545 [vwap] (charges 41)",
+  "12:50  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day",
+  "12:55  SKIP  HCLTECH     orb30_2r  ORB30 down: max 3 trades a day",
+  "12:55  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day",
+  "12:55  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day",
+  "12:55  SKIP  INFY        orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 80,
  "all_wins": 50,
