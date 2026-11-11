@@ -247,3 +247,12 @@ NSE's own daily file: latest saved is 2026-11-09
 15:15  CLOSE SBIN        square-off @ 1059.10  net Rs -399 [orb30_2r] (charges 43)
 15:15  CLOSE SUNPHARMA   square-off @ 1895.50  net Rs -91 [orb60] (charges 46)
 15:15  CLOSE TRENT       square-off @ 3199.10  net Rs -158 [orb60] (charges 37)
+2026-11-11: 24 closed (11 won), 0 still open, net Rs -342 after charges
+  orb15     3 trades, net Rs -744
+  orb30_2r  3 trades, net Rs -16
+  orb60     3 trades, net Rs -790
+  gap_go    3 trades, net Rs +1494
+  gap_fade  3 trades, net Rs +1214
+  vwap      3 trades, net Rs -610
+  trap90    3 trades, net Rs +18
+  learner   3 trades, net Rs -908
