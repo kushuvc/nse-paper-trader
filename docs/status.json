@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 14:16 IST",
- "updated_ts": 1794386783,
+ "updated": "2026-11-11 14:26 IST",
+ "updated_ts": 1794387385,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -426,11 +426,6 @@
  ],
  "today_net": -437.0,
  "log": [
-  "11:30  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day",
-  "11:30  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day",
-  "11:35  SKIP  ASIANPAINT  vwap      VWAP reclaim: max 3 trades a day",
-  "11:35  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day",
-  "11:35  SKIP  BSE         orb60     ORB60 up: max 3 trades a day",
   "11:45  CLOSE ADANIENT    stop       @ 2738.75  net Rs -540 [orb60] (charges 47)",
   "11:45  OPEN  HINDALCO    BUY     48 @ 963.50  stop 953.10  target 973.85  [learner via orb60, expects +0.07R: long, 10:30-13:00, with market, against gap, wide stop, after usual delivery, after a mixed market]",
   "11:45  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day",
@@ -485,7 +480,12 @@
   "13:55  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day",
   "14:05  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day",
   "14:05  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day",
-  "14:15  CLOSE BSE         target     @ 3923.95  net Rs +411 [orb15] (charges 58)"
+  "14:15  CLOSE BSE         target     @ 3923.95  net Rs +411 [orb15] (charges 58)",
+  "14:20  SKIP  DRREDDY     vwap      VWAP loss: max 3 trades a day",
+  "14:20  SKIP  LT          orb15     ORB15 down: max 3 trades a day",
+  "14:20  SKIP  LT          orb30_2r  ORB30 down: max 3 trades a day",
+  "14:20  SKIP  LT          orb60     ORB60 down: max 3 trades a day",
+  "14:25  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 81,
  "all_wins": 51,
