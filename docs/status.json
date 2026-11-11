@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 12:36 IST",
- "updated_ts": 1794380766,
+ "updated": "2026-11-11 12:46 IST",
+ "updated_ts": 1794381368,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -81,17 +81,6 @@
    "target": 1910.9,
    "entry_time": "09:55",
    "note": "ORB30 down"
-  },
-  "vwap|ADANIENT": {
-   "strategy": "vwap",
-   "symbol": "ADANIENT",
-   "side": 1,
-   "qty": 14,
-   "entry": 2768.5,
-   "stop": 2734.0,
-   "target": 2837.5,
-   "entry_time": "10:20",
-   "note": "VWAP reclaim"
   },
   "orb60|SUNPHARMA": {
    "strategy": "orb60",
@@ -404,15 +393,30 @@
    "net": -550.76,
    "r": -1.103,
    "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "ADANIENT",
+   "side": 1,
+   "qty": 14,
+   "entry": 2768.5,
+   "stop": 2734.0,
+   "target": 2837.5,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim",
+   "date": "2026-11-11",
+   "exit": 2733.6,
+   "exit_time": "12:45",
+   "reason": "stop (gap)",
+   "gross": -504.0,
+   "charges": 40.79,
+   "net": -544.79,
+   "r": -1.128,
+   "mode": "live"
   }
  ],
- "today_net": -303.0,
+ "today_net": -847.0,
  "log": [
-  "11:00  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day",
-  "11:00  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day",
-  "11:10  SKIP  ETERNAL     vwap      VWAP reclaim: max 3 trades a day",
-  "11:10  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
-  "11:10  OPEN  M&M         BUY     10 @ 3434.60  stop 3387.30  target 3481.85  [learner via orb60, expects +0.06R: long, 10:30-13:00, with market, with gap, wide stop, after usual delivery, after a mixed market]",
   "11:10  SKIP  M&M         orb60     ORB60 up: max 3 trades a day",
   "11:10  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day",
   "11:10  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day",
@@ -467,12 +471,38 @@
   "12:25  SKIP  DRREDDY     vwap      VWAP loss: max 3 trades a day",
   "12:25  CLOSE ETERNAL     stop       @ 365.55  net Rs -551 [orb15] (charges 37)",
   "12:30  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day",
-  "12:35  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day"
+  "12:35  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day",
+  "12:40  SKIP  SBILIFE     vwap      VWAP loss: max 3 trades a day",
+  "12:40  SKIP  TATACONSUM  orb15     ORB15 down: max 3 trades a day",
+  "12:40  SKIP  TATACONSUM  orb30_2r  ORB30 down: max 3 trades a day",
+  "12:40  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day",
+  "12:45  CLOSE ADANIENT    stop (gap) @ 2733.60  net Rs -545 [vwap] (charges 41)"
  ],
- "all_trades": 79,
+ "all_trades": 80,
  "all_wins": 50,
- "all_net": 3056.0,
+ "all_net": 2511.0,
  "recent": [
+  {
+   "date": "2026-11-11",
+   "symbol": "ADANIENT",
+   "strategy": "vwap",
+   "side": "1",
+   "qty": "14",
+   "entry_time": "10:20",
+   "entry": "2768.5",
+   "stop": "2734.0",
+   "target": "2837.5",
+   "exit_time": "12:45",
+   "exit": "2733.6",
+   "reason": "stop (gap)",
+   "gross": "-504.0",
+   "charges": "40.79",
+   "net": "-544.79",
+   "r": "-1.128",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-11",
    "symbol": "ETERNAL",
@@ -976,34 +1006,13 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-09",
-   "symbol": "SUNPHARMA",
-   "strategy": "gap_go",
-   "side": "1",
-   "qty": "24",
-   "entry_time": "09:30",
-   "entry": "1924.1",
-   "stop": "1903.3",
-   "target": "1965.7",
-   "exit_time": "11:25",
-   "exit": "1903.3",
-   "reason": "stop",
-   "gross": "-517.57",
-   "charges": "48.65",
-   "net": "-566.22",
-   "r": "-1.134",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
   "2026-11-06": -292.0,
   "2026-11-09": -99.0,
-  "2026-11-11": -303.0
+  "2026-11-11": -848.0
  },
  "by_strategy": {
   "orb15": {
@@ -1053,12 +1062,12 @@
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 2,
-   "today_net": -65,
-   "open": 1,
-   "all_trades": 11,
+   "today_trades": 3,
+   "today_net": -610,
+   "open": 0,
+   "all_trades": 12,
    "all_wins": 5,
-   "all_net": -1136
+   "all_net": -1681
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
@@ -1370,11 +1379,11 @@
    },
    "vwap": {
     "days": 4,
-    "trades": 11,
-    "net": -1136,
-    "per_trade": -103,
-    "t": -0.23,
-    "drawdown": -1705,
+    "trades": 12,
+    "net": -1681,
+    "per_trade": -140,
+    "t": -0.46,
+    "drawdown": -1742,
     "passed": 1,
     "of": 7,
     "ready": false,
@@ -1389,31 +1398,31 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "11 of 150 trades"
+      "now": "12 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -103 a trade"
+      "now": "Rs -140 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.23"
+      "now": "t = -0.46"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1645 then Rs +508"
+      "now": "Rs -1175 then Rs -506"
      },
      {
       "id": "drawdown",
       "need": "Worst losing run under Rs 10,000",
       "ok": true,
-      "now": "Rs -1705"
+      "now": "Rs -1742"
      },
      {
       "id": "history",
