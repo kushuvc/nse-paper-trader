@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-11 10:00 IST",
- "updated_ts": 1794371458,
+ "updated": "2026-11-11 10:10 IST",
+ "updated_ts": 1794372059,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -67,17 +67,6 @@
    "target": 394.55,
    "entry_time": "09:30",
    "note": "gap +1.8% fading"
-  },
-  "orb15|ASIANPAINT": {
-   "strategy": "orb15",
-   "symbol": "ASIANPAINT",
-   "side": -1,
-   "qty": 33,
-   "entry": 2547.0,
-   "stop": 2561.95,
-   "target": 2532.1,
-   "entry_time": "09:35",
-   "note": "ORB15 down"
   },
   "orb15|BSE": {
    "strategy": "orb15",
@@ -229,17 +218,30 @@
    "net": 1.56,
    "r": 0.003,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "ASIANPAINT",
+   "side": -1,
+   "qty": 33,
+   "entry": 2547.0,
+   "stop": 2561.95,
+   "target": 2532.1,
+   "entry_time": "09:35",
+   "note": "ORB15 down",
+   "date": "2026-11-11",
+   "exit": 2561.95,
+   "exit_time": "10:05",
+   "reason": "stop",
+   "gross": -527.07,
+   "charges": 76.85,
+   "net": -603.92,
+   "r": -1.224,
+   "mode": "live"
   }
  ],
- "today_net": -170.0,
+ "today_net": -774.0,
  "log": [
-  "09:30  SKIP  HCLTECH     gap_fade  gap +1.1% fading: max 3 trades a day",
-  "09:30  SKIP  HDFCBANK    gap_go    gap +1.5% and go: max 3 trades a day",
-  "09:30  SKIP  HDFCBANK    trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  HDFCLIFE    trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  HINDALCO    trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  ICICIBANK   gap_fade  gap +1.5% fading: max 3 trades a day",
-  "09:30  SKIP  ITC         gap_fade  gap +1.3% fading: max 3 trades a day",
   "09:30  SKIP  INFY        trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  INDIGO      gap_go    gap +2.4% and go: max 3 trades a day",
   "09:30  SKIP  INDIGO      trap90    tiny target, wide stop: max 3 trades a day",
@@ -292,12 +294,40 @@
   "10:00  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day",
   "10:00  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day",
   "10:00  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day",
-  "10:00  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day"
+  "10:00  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day",
+  "10:05  CLOSE ASIANPAINT  stop       @ 2561.95  net Rs -604 [orb15] (charges 77)",
+  "10:05  SKIP  ETERNAL     orb30_2r  ORB30 up: max 3 trades a day",
+  "10:05  SKIP  JSWSTEEL    orb30_2r  ORB30 down: max 3 trades a day",
+  "10:10  SKIP  ICICIBANK   orb15     ORB15 down: max 3 trades a day",
+  "10:10  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day",
+  "10:10  SKIP  MAXHEALTH   orb15     ORB15 down: max 3 trades a day",
+  "10:10  SKIP  MAXHEALTH   orb30_2r  ORB30 down: max 3 trades a day"
  ],
- "all_trades": 70,
+ "all_trades": 71,
  "all_wins": 46,
- "all_net": 3188.0,
+ "all_net": 2585.0,
  "recent": [
+  {
+   "date": "2026-11-11",
+   "symbol": "ASIANPAINT",
+   "strategy": "orb15",
+   "side": "-1",
+   "qty": "33",
+   "entry_time": "09:35",
+   "entry": "2547.0",
+   "stop": "2561.95",
+   "target": "2532.1",
+   "exit_time": "10:05",
+   "exit": "2561.95",
+   "reason": "stop",
+   "gross": "-527.07",
+   "charges": "76.85",
+   "net": "-603.92",
+   "r": "-1.224",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-11",
    "symbol": "ASIANPAINT",
@@ -801,44 +831,23 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-09",
-   "symbol": "BSE",
-   "strategy": "trap90",
-   "side": "1",
-   "qty": "8",
-   "entry_time": "09:30",
-   "entry": "3797.6",
-   "stop": "3740.6",
-   "target": "3803.3",
-   "exit_time": "09:35",
-   "exit": "3803.3",
-   "reason": "target",
-   "gross": "33.44",
-   "charges": "32.25",
-   "net": "1.19",
-   "r": "0.003",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
   "2026-11-05": 3749.0,
   "2026-11-06": -292.0,
   "2026-11-09": -99.0,
-  "2026-11-11": -170.0
+  "2026-11-11": -774.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 9,
+   "today_trades": 1,
+   "today_net": -604,
+   "open": 2,
+   "all_trades": 10,
    "all_wins": 6,
-   "all_net": 697
+   "all_net": 93
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
@@ -919,12 +928,12 @@
   },
   "accounts": {
    "orb15": {
-    "days": 3,
-    "trades": 9,
-    "net": 697,
-    "per_trade": 77,
-    "t": 0.58,
-    "drawdown": -801,
+    "days": 4,
+    "trades": 10,
+    "net": 93,
+    "per_trade": 9,
+    "t": 0.11,
+    "drawdown": -1021,
     "passed": 2,
     "of": 7,
     "ready": false,
@@ -933,37 +942,37 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "3 of 60 days"
+      "now": "4 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "9 of 150 trades"
+      "now": "10 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": true,
-      "now": "Rs +77 a trade"
+      "now": "Rs +9 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = 0.58"
+      "now": "t = 0.11"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs +727 then Rs -30"
+      "now": "Rs +1114 then Rs -1021"
      },
      {
       "id": "drawdown",
       "need": "Worst losing run under Rs 10,000",
       "ok": true,
-      "now": "Rs -801"
+      "now": "Rs -1021"
      },
      {
       "id": "history",
