@@ -227,3 +227,4 @@ NSE's own daily file: latest saved is 2026-11-09
 13:55  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day
 14:05  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day
 14:05  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day
+14:15  CLOSE BSE         target     @ 3923.95  net Rs +411 [orb15] (charges 58)
