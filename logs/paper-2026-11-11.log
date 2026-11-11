@@ -102,3 +102,17 @@ NSE's own daily file: latest saved is 2026-11-09
 10:20  OPEN  POWERGRID   BUY    380 @ 262.75  stop 262.10  target 264.05  [vwap: VWAP reclaim]
 10:20  OPEN  SUNPHARMA   SHORT   23 @ 1894.30  stop 1915.35  target 1873.25  [orb60: ORB60 down]
 10:20  OPEN  TRENT       BUY     11 @ 3208.80  stop 3165.50  target 3252.05  [orb60: ORB60 up]
+10:25  SKIP  APOLLOHOSP  orb15     ORB15 down: max 3 trades a day
+10:25  SKIP  APOLLOHOSP  orb30_2r  ORB30 down: max 3 trades a day
+10:25  SKIP  APOLLOHOSP  orb60     ORB60 down: max 3 trades a day
+10:25  SKIP  BAJAJFINSV  orb15     ORB15 down: max 3 trades a day
+10:25  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day
+10:25  SKIP  BAJAJFINSV  orb60     ORB60 down: max 3 trades a day
+10:25  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day
+10:25  SKIP  NTPC        vwap      VWAP reclaim: max 3 trades a day
+10:25  SKIP  TATASTEEL   orb60     ORB60 up: max 3 trades a day
+10:30  SKIP  GRASIM      orb60     ORB60 up: max 3 trades a day
+10:30  SKIP  INDIGO      orb30_2r  ORB30 up: max 3 trades a day
+10:30  SKIP  ONGC        orb15     ORB15 up: max 3 trades a day
+10:30  SKIP  ONGC        orb30_2r  ORB30 up: max 3 trades a day
+10:30  SKIP  ONGC        orb60     ORB60 up: max 3 trades a day
