@@ -235,3 +235,15 @@ NSE's own daily file: latest saved is 2026-11-09
 14:25  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day
 14:40  SKIP  HINDUNILVR  vwap      VWAP reclaim: after 14:30
 14:50  SKIP  CIPLA       vwap      VWAP loss: after 14:30
+15:10  CLOSE ADANIPORTS  target     @ 1910.90  net Rs +925 [orb30_2r] (charges 53)
+15:10  SKIP  RELIANCE    orb30_2r  ORB30 down: after 14:30
+15:10  SKIP  RELIANCE    orb60     ORB60 down: after 14:30
+15:15  CLOSE BAJFINANCE  square-off @ 1070.00  net Rs +254 [gap_fade] (charges 55)
+15:15  CLOSE BEL         square-off @ 396.50  net Rs +473 [gap_fade] (charges 76)
+15:15  CLOSE HINDALCO    square-off @ 959.00  net Rs -283 [learner] (charges 49)
+15:15  SKIP  HINDALCO    vwap      VWAP reclaim: past square-off
+15:15  CLOSE M&M         square-off @ 3417.00  net Rs -226 [learner] (charges 36)
+15:15  CLOSE SBIN        square-off @ 1059.10  net Rs -399 [learner] (charges 43)
+15:15  CLOSE SBIN        square-off @ 1059.10  net Rs -399 [orb30_2r] (charges 43)
+15:15  CLOSE SUNPHARMA   square-off @ 1895.50  net Rs -91 [orb60] (charges 46)
+15:15  CLOSE TRENT       square-off @ 3199.10  net Rs -158 [orb60] (charges 37)
