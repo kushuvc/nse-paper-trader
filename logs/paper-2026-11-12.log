@@ -6,3 +6,42 @@ Latest day, 2026-11-11: 1969 of 2746 shares rose (72.3%), Nifty 50 25,255 (+0.84
 PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
 Learner: model from 63 days of history
 NSE's own daily file: latest saved is 2026-11-11
+09:30  OPEN  ADANIENT    BUY     12 @ 2733.00  stop 2692.00  target 2737.10  [trap90: tiny target, wide stop]
+09:30  OPEN  ADANIPORTS  BUY     17 @ 1925.20  stop 1896.30  target 1928.10  [trap90: tiny target, wide stop]
+09:30  OPEN  ASIANPAINT  BUY     13 @ 2556.20  stop 2517.85  target 2560.05  [trap90: tiny target, wide stop]
+09:30  SKIP  AXISBANK    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  BSE         trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  BAJAJ-AUTO  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  BAJFINANCE  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  BAJAJFINSV  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  BEL         trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  BHARTIARTL  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  EICHERMOT   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ETERNAL     trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  HCLTECH     trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  HDFCBANK    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  HDFCLIFE    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  HINDALCO    trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  HINDUNILVR  BUY     44 @ 1997.60  stop 1986.35  target 2022.40  [learner via gap_fade, expects +0.10R: long, before 10:30, with market, against gap, normal stop, after usual delivery, with yesterday's market]
+09:30  OPEN  HINDUNILVR  BUY     44 @ 1997.60  stop 1986.35  target 2022.40  [gap_fade: gap -1.8% fading]
+09:30  SKIP  HINDUNILVR  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ICICIBANK   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ITC         trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  INFY        trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  INDIGO      trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  JSWSTEEL    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  JIOFIN      trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  KOTAKBANK   trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  M&M         SHORT   29 @ 3421.10  stop 3427.85  target 3407.70  [gap_go: gap -1.2% and go]
+09:30  SKIP  MAXHEALTH   trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  ONGC        SHORT  440 @ 226.94  stop 227.75  target 225.40  [gap_go: gap -3.1% and go]
+09:30  SKIP  RELIANCE    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  SBILIFE     trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  SHRIRAMFIN  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  SBIN        trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  TCS         trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  TATACONSUM  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  TATASTEEL   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  TITAN       trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  TRENT       trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ULTRACEMCO  trap90    tiny target, wide stop: max 3 trades a day
