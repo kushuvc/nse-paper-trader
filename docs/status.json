@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 11:31 IST",
- "updated_ts": 1794463273,
+ "updated": "2026-11-12 11:41 IST",
+ "updated_ts": 1794463875,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -366,10 +366,6 @@
  ],
  "today_net": -1897.0,
  "log": [
-  "10:25  SKIP  APOLLOHOSP  vwap      VWAP loss: max 3 trades a day",
-  "10:25  SKIP  BAJFINANCE  orb15     ORB15 up: max 3 trades a day",
-  "10:25  SKIP  BAJFINANCE  learner   via orb30_2r (expects +0.10R): max 3 trades a day",
-  "10:25  SKIP  BAJFINANCE  orb30_2r  ORB30 up: max 3 trades a day",
   "10:25  SKIP  BAJFINANCE  orb60     ORB60 up: max 3 trades a day",
   "10:25  SKIP  CIPLA       vwap      VWAP loss: max 3 trades a day",
   "10:25  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day",
@@ -425,7 +421,11 @@
   "11:25  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
   "11:30  CLOSE DRREDDY     stop       @ 1385.70  net Rs -532 [orb30_2r] (charges 82)",
   "11:30  SKIP  DRREDDY     orb60     ORB60 up: max 3 trades a day",
-  "11:30  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day"
+  "11:30  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day",
+  "11:40  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day",
+  "11:40  SKIP  SUNPHARMA   orb15     ORB15 down: max 3 trades a day",
+  "11:40  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day",
+  "11:40  SKIP  SUNPHARMA   orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 102,
  "all_wins": 60,

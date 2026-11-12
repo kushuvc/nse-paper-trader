@@ -187,3 +187,7 @@ NSE's own daily file: latest saved is 2026-11-11
 11:30  CLOSE DRREDDY     stop       @ 1385.70  net Rs -532 [orb30_2r] (charges 82)
 11:30  SKIP  DRREDDY     orb60     ORB60 up: max 3 trades a day
 11:30  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day
+11:40  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day
+11:40  SKIP  SUNPHARMA   orb15     ORB15 down: max 3 trades a day
+11:40  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day
+11:40  SKIP  SUNPHARMA   orb60     ORB60 down: max 3 trades a day
