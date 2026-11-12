@@ -106,3 +106,4 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-12,BHARTIARTL,orb15,1,36,09:35,2097.6,2083.85,2111.3,13:20,2083.85,stop,-525.11,73.67,-598.78,-1.21,live,,
 2026-11-12,TECHM,learner,1,27,09:40,1788.8,1770.8,1806.75,13:40,1770.8,stop,-505.22,50.9,-556.12,-1.144,live,orb15,"long, before 10:30, with market, against gap, wide stop, after usual delivery, with yesterday's market"
 2026-11-12,BAJAJFINSV,orb60,1,21,10:20,1904.3,1880.75,1927.85,14:05,1880.75,stop,-510.45,42.09,-552.54,-1.117,live,,
+2026-11-12,TATASTEEL,vwap,1,310,10:20,189.96,188.35,193.1,15:00,188.35,stop,-522.56,62.13,-584.69,-1.171,live,,
