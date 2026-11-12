@@ -146,3 +146,10 @@ NSE's own daily file: latest saved is 2026-11-11
 10:40  SKIP  ETERNAL     orb60     ORB60 up: max 3 trades a day
 10:40  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day
 10:40  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day
+10:45  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day
+10:45  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day
+10:45  SKIP  TECHM       vwap      VWAP loss: max 3 trades a day
+10:50  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day
+10:50  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day
+10:50  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day
+10:50  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day

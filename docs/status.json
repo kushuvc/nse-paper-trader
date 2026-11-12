@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 10:41 IST",
- "updated_ts": 1794460265,
+ "updated": "2026-11-12 10:51 IST",
+ "updated_ts": 1794460867,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -312,13 +312,6 @@
  ],
  "today_net": 385.0,
  "log": [
-  "09:55  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  MAXHEALTH   orb15     ORB15 up: max 3 trades a day",
-  "09:55  SKIP  MAXHEALTH   learner   via orb30_2r (expects +0.20R): max 3 trades a day",
-  "09:55  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  RELIANCE    orb15     ORB15 up: max 3 trades a day",
-  "09:55  SKIP  RELIANCE    orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day",
   "09:55  SKIP  TATASTEEL   learner   via orb30_2r (expects +0.10R): max 3 trades a day",
   "09:55  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day",
   "10:00  SKIP  ASIANPAINT  orb15     ORB15 up: max 3 trades a day",
@@ -371,7 +364,14 @@
   "10:40  SKIP  ETERNAL     orb30_2r  ORB30 up: max 3 trades a day",
   "10:40  SKIP  ETERNAL     orb60     ORB60 up: max 3 trades a day",
   "10:40  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day",
-  "10:40  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day"
+  "10:40  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day",
+  "10:45  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day",
+  "10:45  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
+  "10:45  SKIP  TECHM       vwap      VWAP loss: max 3 trades a day",
+  "10:50  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day",
+  "10:50  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day",
+  "10:50  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day",
+  "10:50  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 96,
  "all_wins": 59,
