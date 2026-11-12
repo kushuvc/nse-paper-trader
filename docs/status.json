@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 12:01 IST",
- "updated_ts": 1794465078,
+ "updated": "2026-11-12 12:11 IST",
+ "updated_ts": 1794465679,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -84,17 +84,6 @@
    "target": 4156.4,
    "entry_time": "10:20",
    "note": "VWAP loss"
-  },
-  "orb60|TATASTEEL": {
-   "strategy": "orb60",
-   "symbol": "TATASTEEL",
-   "side": 1,
-   "qty": 381,
-   "entry": 189.96,
-   "stop": 188.65,
-   "target": 191.25,
-   "entry_time": "10:20",
-   "note": "ORB60 up"
   },
   "vwap|TATASTEEL": {
    "strategy": "vwap",
@@ -371,15 +360,30 @@
    "net": 555.45,
    "r": 1.559,
    "mode": "live"
+  },
+  {
+   "strategy": "orb60",
+   "symbol": "TATASTEEL",
+   "side": 1,
+   "qty": 381,
+   "entry": 189.96,
+   "stop": 188.65,
+   "target": 191.25,
+   "entry_time": "10:20",
+   "note": "ORB60 up",
+   "date": "2026-11-12",
+   "exit": 188.65,
+   "exit_time": "12:10",
+   "reason": "stop",
+   "gross": -527.96,
+   "charges": 72.56,
+   "net": -600.52,
+   "r": -1.203,
+   "mode": "live"
   }
  ],
- "today_net": -1342.0,
+ "today_net": -1942.0,
  "log": [
-  "10:40  SKIP  ETERNAL     orb60     ORB60 up: max 3 trades a day",
-  "10:40  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day",
-  "10:40  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day",
-  "10:45  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day",
-  "10:45  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
   "10:45  SKIP  TECHM       vwap      VWAP loss: max 3 trades a day",
   "10:50  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day",
   "10:50  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day",
@@ -434,12 +438,38 @@
   "12:00  SKIP  M&M         orb30_2r  ORB30 down: max 3 trades a day",
   "12:00  SKIP  M&M         orb60     ORB60 down: max 3 trades a day",
   "12:00  CLOSE ONGC        target     @ 225.40  net Rs +555 [gap_go] (charges 82)",
-  "12:00  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day"
+  "12:00  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day",
+  "12:05  SKIP  GRASIM      orb30_2r  ORB30 down: max 3 trades a day",
+  "12:05  SKIP  GRASIM      orb60     ORB60 down: max 3 trades a day",
+  "12:05  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day",
+  "12:05  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day",
+  "12:10  CLOSE TATASTEEL   stop       @ 188.65  net Rs -601 [orb60] (charges 73)"
  ],
- "all_trades": 103,
+ "all_trades": 104,
  "all_wins": 61,
- "all_net": 1675.0,
+ "all_net": 1074.0,
  "recent": [
+  {
+   "date": "2026-11-12",
+   "symbol": "TATASTEEL",
+   "strategy": "orb60",
+   "side": "1",
+   "qty": "381",
+   "entry_time": "10:20",
+   "entry": "189.96",
+   "stop": "188.65",
+   "target": "191.25",
+   "exit_time": "12:10",
+   "exit": "188.65",
+   "reason": "stop",
+   "gross": "-527.96",
+   "charges": "72.56",
+   "net": "-600.52",
+   "r": "-1.203",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-12",
    "symbol": "ONGC",
@@ -943,27 +973,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-11",
-   "symbol": "ETERNAL",
-   "strategy": "orb15",
-   "side": "1",
-   "qty": "96",
-   "entry_time": "09:35",
-   "entry": "370.75",
-   "stop": "365.55",
-   "target": "375.95",
-   "exit_time": "12:25",
-   "exit": "365.55",
-   "reason": "stop",
-   "gross": "-513.34",
-   "charges": "37.42",
-   "net": "-550.76",
-   "r": "-1.103",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -971,7 +980,7 @@
   "2026-11-06": -292.0,
   "2026-11-09": -99.0,
   "2026-11-11": -341.0,
-  "2026-11-12": -1342.0
+  "2026-11-12": -1943.0
  },
  "by_strategy": {
   "orb15": {
@@ -994,12 +1003,12 @@
   },
   "orb60": {
    "desc": "first-hour range breakout, stop at mid, 1R",
-   "today_trades": 1,
-   "today_net": -588,
-   "open": 2,
-   "all_trades": 13,
+   "today_trades": 2,
+   "today_net": -1189,
+   "open": 1,
+   "all_trades": 14,
    "all_wins": 6,
-   "all_net": -1726
+   "all_net": -2326
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
@@ -1173,11 +1182,11 @@
    },
    "orb60": {
     "days": 5,
-    "trades": 13,
-    "net": -1726,
-    "per_trade": -133,
-    "t": -1.18,
-    "drawdown": -2198,
+    "trades": 14,
+    "net": -2326,
+    "per_trade": -166,
+    "t": -1.51,
+    "drawdown": -2798,
     "passed": 1,
     "of": 7,
     "ready": false,
@@ -1192,31 +1201,31 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "13 of 150 trades"
+      "now": "14 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -133 a trade"
+      "now": "Rs -166 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -1.18"
+      "now": "t = -1.51"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs +400 then Rs -2126"
+      "now": "Rs -198 then Rs -2129"
      },
      {
       "id": "drawdown",
       "need": "Worst losing run under Rs 10,000",
       "ok": true,
-      "now": "Rs -2198"
+      "now": "Rs -2798"
      },
      {
       "id": "history",
