@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 10:11 IST",
- "updated_ts": 1794458460,
+ "updated": "2026-11-12 10:21 IST",
+ "updated_ts": 1794459062,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -120,6 +120,72 @@
    "via": "orb30_2r",
    "setup": "long, before 10:30, with market, no gap, wide stop, after usual delivery, with yesterday's market",
    "score": 0.105
+  },
+  "orb60|BAJAJFINSV": {
+   "strategy": "orb60",
+   "symbol": "BAJAJFINSV",
+   "side": 1,
+   "qty": 21,
+   "entry": 1904.3,
+   "stop": 1880.75,
+   "target": 1927.85,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
+  },
+  "vwap|LT": {
+   "strategy": "vwap",
+   "symbol": "LT",
+   "side": -1,
+   "qty": 23,
+   "entry": 4194.6,
+   "stop": 4213.75,
+   "target": 4156.4,
+   "entry_time": "10:20",
+   "note": "VWAP loss"
+  },
+  "vwap|SHRIRAMFIN": {
+   "strategy": "vwap",
+   "symbol": "SHRIRAMFIN",
+   "side": 1,
+   "qty": 100,
+   "entry": 991.2,
+   "stop": 987.45,
+   "target": 998.7,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim"
+  },
+  "orb60|TATASTEEL": {
+   "strategy": "orb60",
+   "symbol": "TATASTEEL",
+   "side": 1,
+   "qty": 381,
+   "entry": 189.96,
+   "stop": 188.65,
+   "target": 191.25,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
+  },
+  "vwap|TATASTEEL": {
+   "strategy": "vwap",
+   "symbol": "TATASTEEL",
+   "side": 1,
+   "qty": 310,
+   "entry": 189.96,
+   "stop": 188.35,
+   "target": 193.1,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim"
+  },
+  "orb60|TRENT": {
+   "strategy": "orb60",
+   "symbol": "TRENT",
+   "side": 1,
+   "qty": 23,
+   "entry": 3232.8,
+   "stop": 3211.7,
+   "target": 3253.9,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
   }
  },
  "closed": [
@@ -246,13 +312,6 @@
  ],
  "today_net": 385.0,
  "log": [
-  "09:40  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day",
-  "09:40  SKIP  TMPV        orb15     ORB15 up: max 3 trades a day",
-  "09:40  OPEN  TECHM       BUY     27 @ 1788.80  stop 1770.80  target 1806.75  [learner via orb15, expects +0.05R: long, before 10:30, with market, against gap, wide stop, after usual delivery, with yesterday's market]",
-  "09:40  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day",
-  "09:45  CLOSE BEL         target     @ 403.80  net Rs +312 [orb15] (charges 82)",
-  "09:45  CLOSE EICHERMOT   target     @ 7674.00  net Rs +387 [orb15] (charges 72)",
-  "09:45  SKIP  KOTAKBANK   orb15     ORB15 up: max 3 trades a day",
   "09:50  CLOSE ASIANPAINT  target     @ 2560.05  net Rs +1 [trap90] (charges 35)",
   "09:50  SKIP  DRREDDY     orb15     ORB15 down: max 3 trades a day",
   "09:50  OPEN  DRREDDY     SHORT   72 @ 1380.00  stop 1385.70  target 1368.60  [orb30_2r: ORB30 down]",
@@ -305,7 +364,14 @@
   "10:05  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day",
   "10:10  CLOSE M&M         stop       @ 3427.85  net Rs -318 [gap_go] (charges 82)",
   "10:10  SKIP  TITAN       orb15     ORB15 up: max 3 trades a day",
-  "10:10  SKIP  TITAN       orb30_2r  ORB30 up: max 3 trades a day"
+  "10:10  SKIP  TITAN       orb30_2r  ORB30 up: max 3 trades a day",
+  "10:20  SKIP  BAJAJFINSV  learner   via orb60 (expects +0.05R): max 3 trades a day",
+  "10:20  OPEN  BAJAJFINSV  BUY     21 @ 1904.30  stop 1880.75  target 1927.85  [orb60: ORB60 up]",
+  "10:20  OPEN  LT          SHORT   23 @ 4194.60  stop 4213.75  target 4156.40  [vwap: VWAP loss]",
+  "10:20  OPEN  SHRIRAMFIN  BUY    100 @ 991.20  stop 987.45  target 998.70  [vwap: VWAP reclaim]",
+  "10:20  OPEN  TATASTEEL   BUY    381 @ 189.96  stop 188.65  target 191.25  [orb60: ORB60 up]",
+  "10:20  OPEN  TATASTEEL   BUY    310 @ 189.96  stop 188.35  target 193.10  [vwap: VWAP reclaim]",
+  "10:20  OPEN  TRENT       BUY     23 @ 3232.80  stop 3211.70  target 3253.90  [orb60: ORB60 up]"
  ],
  "all_trades": 96,
  "all_wins": 59,
@@ -867,7 +933,7 @@
    "desc": "first-hour range breakout, stop at mid, 1R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 12,
    "all_wins": 6,
    "all_net": -1138
@@ -894,7 +960,7 @@
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 12,
    "all_wins": 5,
    "all_net": -1681

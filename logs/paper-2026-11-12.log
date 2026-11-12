@@ -120,3 +120,10 @@ NSE's own daily file: latest saved is 2026-11-11
 10:10  CLOSE M&M         stop       @ 3427.85  net Rs -318 [gap_go] (charges 82)
 10:10  SKIP  TITAN       orb15     ORB15 up: max 3 trades a day
 10:10  SKIP  TITAN       orb30_2r  ORB30 up: max 3 trades a day
+10:20  SKIP  BAJAJFINSV  learner   via orb60 (expects +0.05R): max 3 trades a day
+10:20  OPEN  BAJAJFINSV  BUY     21 @ 1904.30  stop 1880.75  target 1927.85  [orb60: ORB60 up]
+10:20  OPEN  LT          SHORT   23 @ 4194.60  stop 4213.75  target 4156.40  [vwap: VWAP loss]
+10:20  OPEN  SHRIRAMFIN  BUY    100 @ 991.20  stop 987.45  target 998.70  [vwap: VWAP reclaim]
+10:20  OPEN  TATASTEEL   BUY    381 @ 189.96  stop 188.65  target 191.25  [orb60: ORB60 up]
+10:20  OPEN  TATASTEEL   BUY    310 @ 189.96  stop 188.35  target 193.10  [vwap: VWAP reclaim]
+10:20  OPEN  TRENT       BUY     23 @ 3232.80  stop 3211.70  target 3253.90  [orb60: ORB60 up]
