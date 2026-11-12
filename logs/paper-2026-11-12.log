@@ -197,3 +197,9 @@ NSE's own daily file: latest saved is 2026-11-11
 11:45  SKIP  JSWSTEEL    orb60     ORB60 down: max 3 trades a day
 11:45  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day
 11:50  SKIP  BEL         vwap      VWAP reclaim: max 3 trades a day
+12:00  SKIP  DRREDDY     vwap      VWAP loss: max 3 trades a day
+12:00  SKIP  M&M         orb15     ORB15 down: max 3 trades a day
+12:00  SKIP  M&M         orb30_2r  ORB30 down: max 3 trades a day
+12:00  SKIP  M&M         orb60     ORB60 down: max 3 trades a day
+12:00  CLOSE ONGC        target     @ 225.40  net Rs +555 [gap_go] (charges 82)
+12:00  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day

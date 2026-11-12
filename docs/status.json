@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 11:51 IST",
- "updated_ts": 1794464476,
+ "updated": "2026-11-12 12:01 IST",
+ "updated_ts": 1794465078,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -13,17 +13,6 @@
  ],
  "date": "2026-11-12",
  "open": {
-  "gap_go|ONGC": {
-   "strategy": "gap_go",
-   "symbol": "ONGC",
-   "side": -1,
-   "qty": 440,
-   "entry": 226.94,
-   "stop": 227.75,
-   "target": 225.4,
-   "entry_time": "09:30",
-   "note": "gap -3.1% and go"
-  },
   "orb15|BHARTIARTL": {
    "strategy": "orb15",
    "symbol": "BHARTIARTL",
@@ -362,16 +351,30 @@
    "net": -532.47,
    "r": -1.297,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_go",
+   "symbol": "ONGC",
+   "side": -1,
+   "qty": 440,
+   "entry": 226.94,
+   "stop": 227.75,
+   "target": 225.4,
+   "entry_time": "09:30",
+   "note": "gap -3.1% and go",
+   "date": "2026-11-12",
+   "exit": 225.4,
+   "exit_time": "12:00",
+   "reason": "target",
+   "gross": 637.79,
+   "charges": 82.34,
+   "net": 555.45,
+   "r": 1.559,
+   "mode": "live"
   }
  ],
- "today_net": -1897.0,
+ "today_net": -1342.0,
  "log": [
-  "10:30  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day",
-  "10:35  SKIP  BSE         orb15     ORB15 down: max 3 trades a day",
-  "10:35  SKIP  BSE         orb30_2r  ORB30 down: max 3 trades a day",
-  "10:35  SKIP  BSE         orb60     ORB60 down: max 3 trades a day",
-  "10:35  SKIP  MARUTI      vwap      VWAP loss: max 3 trades a day",
-  "10:40  SKIP  ETERNAL     orb30_2r  ORB30 up: max 3 trades a day",
   "10:40  SKIP  ETERNAL     orb60     ORB60 up: max 3 trades a day",
   "10:40  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day",
   "10:40  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day",
@@ -425,12 +428,39 @@
   "11:45  SKIP  BAJAJ-AUTO  orb60     ORB60 down: max 3 trades a day",
   "11:45  SKIP  JSWSTEEL    orb60     ORB60 down: max 3 trades a day",
   "11:45  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day",
-  "11:50  SKIP  BEL         vwap      VWAP reclaim: max 3 trades a day"
+  "11:50  SKIP  BEL         vwap      VWAP reclaim: max 3 trades a day",
+  "12:00  SKIP  DRREDDY     vwap      VWAP loss: max 3 trades a day",
+  "12:00  SKIP  M&M         orb15     ORB15 down: max 3 trades a day",
+  "12:00  SKIP  M&M         orb30_2r  ORB30 down: max 3 trades a day",
+  "12:00  SKIP  M&M         orb60     ORB60 down: max 3 trades a day",
+  "12:00  CLOSE ONGC        target     @ 225.40  net Rs +555 [gap_go] (charges 82)",
+  "12:00  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day"
  ],
- "all_trades": 102,
- "all_wins": 60,
- "all_net": 1119.0,
+ "all_trades": 103,
+ "all_wins": 61,
+ "all_net": 1675.0,
  "recent": [
+  {
+   "date": "2026-11-12",
+   "symbol": "ONGC",
+   "strategy": "gap_go",
+   "side": "-1",
+   "qty": "440",
+   "entry_time": "09:30",
+   "entry": "226.94",
+   "stop": "227.75",
+   "target": "225.4",
+   "exit_time": "12:00",
+   "exit": "225.4",
+   "reason": "target",
+   "gross": "637.79",
+   "charges": "82.34",
+   "net": "555.45",
+   "r": "1.559",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-12",
    "symbol": "DRREDDY",
@@ -934,27 +964,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-11",
-   "symbol": "ADANIPORTS",
-   "strategy": "gap_fade",
-   "side": "-1",
-   "qty": "42",
-   "entry_time": "09:30",
-   "entry": "1956.9",
-   "stop": "1968.55",
-   "target": "1942.7",
-   "exit_time": "12:10",
-   "exit": "1942.7",
-   "reason": "target",
-   "gross": "563.64",
-   "charges": "76.12",
-   "net": "487.52",
-   "r": "0.996",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -962,7 +971,7 @@
   "2026-11-06": -292.0,
   "2026-11-09": -99.0,
   "2026-11-11": -341.0,
-  "2026-11-12": -1897.0
+  "2026-11-12": -1342.0
  },
  "by_strategy": {
   "orb15": {
@@ -994,12 +1003,12 @@
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
-   "today_trades": 1,
-   "today_net": -318,
-   "open": 1,
-   "all_trades": 13,
-   "all_wins": 6,
-   "all_net": 732
+   "today_trades": 2,
+   "today_net": 238,
+   "open": 0,
+   "all_trades": 14,
+   "all_wins": 7,
+   "all_net": 1288
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
@@ -1219,10 +1228,10 @@
    },
    "gap_go": {
     "days": 5,
-    "trades": 13,
-    "net": 732,
-    "per_trade": 56,
-    "t": -0.15,
+    "trades": 14,
+    "net": 1288,
+    "per_trade": 92,
+    "t": 0.11,
     "drawdown": -2014,
     "passed": 2,
     "of": 7,
@@ -1238,25 +1247,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "13 of 150 trades"
+      "now": "14 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": true,
-      "now": "Rs +56 a trade"
+      "now": "Rs +92 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.15"
+      "now": "t = 0.11"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1193 then Rs +1925"
+      "now": "Rs -764 then Rs +2052"
      },
      {
       "id": "drawdown",
