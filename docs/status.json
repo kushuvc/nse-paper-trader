@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 13:46 IST",
- "updated_ts": 1794471378,
+ "updated": "2026-11-12 13:56 IST",
+ "updated_ts": 1794471980,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -402,7 +402,6 @@
  ],
  "today_net": -3097.0,
  "log": [
-  "11:25  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
   "11:30  CLOSE DRREDDY     stop       @ 1385.70  net Rs -532 [orb30_2r] (charges 82)",
   "11:30  SKIP  DRREDDY     orb60     ORB60 up: max 3 trades a day",
   "11:30  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day",
@@ -461,7 +460,8 @@
   "13:25  SKIP  INDIGO      orb60     ORB60 down: max 3 trades a day",
   "13:40  SKIP  ADANIENT    vwap      VWAP reclaim: max 3 trades a day",
   "13:40  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day",
-  "13:40  CLOSE TECHM       stop       @ 1770.80  net Rs -556 [learner] (charges 51)"
+  "13:40  CLOSE TECHM       stop       @ 1770.80  net Rs -556 [learner] (charges 51)",
+  "13:50  SKIP  INFY        vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 106,
  "all_wins": 61,

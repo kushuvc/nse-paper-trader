@@ -239,3 +239,4 @@ NSE's own daily file: latest saved is 2026-11-11
 13:40  SKIP  ADANIENT    vwap      VWAP reclaim: max 3 trades a day
 13:40  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day
 13:40  CLOSE TECHM       stop       @ 1770.80  net Rs -556 [learner] (charges 51)
+13:50  SKIP  INFY        vwap      VWAP reclaim: max 3 trades a day
