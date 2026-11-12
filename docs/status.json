@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 11:11 IST",
- "updated_ts": 1794462070,
+ "updated": "2026-11-12 11:21 IST",
+ "updated_ts": 1794462671,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -357,7 +357,6 @@
  ],
  "today_net": -1365.0,
  "log": [
-  "10:20  OPEN  BAJAJFINSV  BUY     21 @ 1904.30  stop 1880.75  target 1927.85  [orb60: ORB60 up]",
   "10:20  OPEN  LT          SHORT   23 @ 4194.60  stop 4213.75  target 4156.40  [vwap: VWAP loss]",
   "10:20  OPEN  SHRIRAMFIN  BUY    100 @ 991.20  stop 987.45  target 998.70  [vwap: VWAP reclaim]",
   "10:20  OPEN  TATASTEEL   BUY    381 @ 189.96  stop 188.65  target 191.25  [orb60: ORB60 up]",
@@ -416,7 +415,8 @@
   "11:10  SKIP  HDFCLIFE    orb60     ORB60 up: max 3 trades a day",
   "11:10  SKIP  ITC         orb15     ORB15 down: max 3 trades a day",
   "11:10  SKIP  ITC         orb30_2r  ORB30 down: max 3 trades a day",
-  "11:10  CLOSE JSWSTEEL    stop       @ 1352.80  net Rs -573 [orb30_2r] (charges 59)"
+  "11:10  CLOSE JSWSTEEL    stop       @ 1352.80  net Rs -573 [orb30_2r] (charges 59)",
+  "11:15  SKIP  GRASIM      vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 101,
  "all_wins": 60,
