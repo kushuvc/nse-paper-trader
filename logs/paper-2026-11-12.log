@@ -208,3 +208,19 @@ NSE's own daily file: latest saved is 2026-11-11
 12:05  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day
 12:05  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day
 12:10  CLOSE TATASTEEL   stop       @ 188.65  net Rs -601 [orb60] (charges 73)
+12:15  SKIP  AXISBANK    orb15     ORB15 down: max 3 trades a day
+12:15  SKIP  AXISBANK    orb30_2r  ORB30 down: max 3 trades a day
+12:15  SKIP  AXISBANK    orb60     ORB60 down: max 3 trades a day
+12:15  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day
+12:15  SKIP  LT          orb60     ORB60 down: max 3 trades a day
+12:15  SKIP  ULTRACEMCO  orb30_2r  ORB30 down: max 3 trades a day
+12:15  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day
+2026-11-12: 14 closed (7 won), 7 still open, net Rs -1942 after charges
+  orb15     2 trades, net Rs +699
+  orb30_2r  2 trades, net Rs -1106
+  orb60     2 trades, net Rs -1189
+  gap_go    2 trades, net Rs +238
+  gap_fade  1 trades, net Rs -608
+  vwap      1 trades, net Rs +628
+  trap90    3 trades, net Rs +4
+  learner   1 trades, net Rs -608

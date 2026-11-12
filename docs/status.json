@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-12 12:11 IST",
- "updated_ts": 1794465679,
- "in_session": true,
+ "updated": "2026-11-12 12:15 IST",
+ "updated_ts": 1794465947,
+ "in_session": false,
  "strategies": [
   "orb15",
   "orb30_2r",
@@ -384,13 +384,6 @@
  ],
  "today_net": -1942.0,
  "log": [
-  "10:45  SKIP  TECHM       vwap      VWAP loss: max 3 trades a day",
-  "10:50  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day",
-  "10:50  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day",
-  "10:50  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day",
-  "10:50  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day",
-  "10:55  SKIP  COALINDIA   orb15     ORB15 down: max 3 trades a day",
-  "10:55  SKIP  COALINDIA   orb30_2r  ORB30 down: max 3 trades a day",
   "10:55  SKIP  COALINDIA   orb60     ORB60 down: max 3 trades a day",
   "10:55  CLOSE HINDUNILVR  stop       @ 1986.35  net Rs -608 [learner] (charges 78)",
   "10:55  CLOSE HINDUNILVR  stop       @ 1986.35  net Rs -608 [gap_fade] (charges 78)",
@@ -443,7 +436,14 @@
   "12:05  SKIP  GRASIM      orb60     ORB60 down: max 3 trades a day",
   "12:05  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day",
   "12:05  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day",
-  "12:10  CLOSE TATASTEEL   stop       @ 188.65  net Rs -601 [orb60] (charges 73)"
+  "12:10  CLOSE TATASTEEL   stop       @ 188.65  net Rs -601 [orb60] (charges 73)",
+  "12:15  SKIP  AXISBANK    orb15     ORB15 down: max 3 trades a day",
+  "12:15  SKIP  AXISBANK    orb30_2r  ORB30 down: max 3 trades a day",
+  "12:15  SKIP  AXISBANK    orb60     ORB60 down: max 3 trades a day",
+  "12:15  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day",
+  "12:15  SKIP  LT          orb60     ORB60 down: max 3 trades a day",
+  "12:15  SKIP  ULTRACEMCO  orb30_2r  ORB30 down: max 3 trades a day",
+  "12:15  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 104,
  "all_wins": 61,
