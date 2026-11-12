@@ -236,3 +236,6 @@ NSE's own daily file: latest saved is 2026-11-11
 13:25  SKIP  INDIGO      orb15     ORB15 down: max 3 trades a day
 13:25  SKIP  INDIGO      orb30_2r  ORB30 down: max 3 trades a day
 13:25  SKIP  INDIGO      orb60     ORB60 down: max 3 trades a day
+13:40  SKIP  ADANIENT    vwap      VWAP reclaim: max 3 trades a day
+13:40  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day
+13:40  CLOSE TECHM       stop       @ 1770.80  net Rs -556 [learner] (charges 51)
