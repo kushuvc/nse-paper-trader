@@ -255,3 +255,7 @@ NSE's own daily file: latest saved is 2026-11-11
 15:00  SKIP  RELIANCE    orb60     ORB60 down: after 14:30
 15:00  CLOSE TATASTEEL   stop       @ 188.35  net Rs -585 [vwap] (charges 62)
 15:05  SKIP  ADANIPORTS  vwap      VWAP reclaim: after 14:30
+15:15  CLOSE HINDALCO    square-off @ 965.40  net Rs -142 [learner] (charges 35)
+15:15  CLOSE LT          square-off @ 4165.80  net Rs +543 [vwap] (charges 81)
+15:15  CLOSE NTPC        square-off @ 322.65  net Rs +154 [orb30_2r] (charges 57)
+15:15  SKIP  RELIANCE    vwap      VWAP reclaim: past square-off

@@ -107,3 +107,6 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-12,TECHM,learner,1,27,09:40,1788.8,1770.8,1806.75,13:40,1770.8,stop,-505.22,50.9,-556.12,-1.144,live,orb15,"long, before 10:30, with market, against gap, wide stop, after usual delivery, with yesterday's market"
 2026-11-12,BAJAJFINSV,orb60,1,21,10:20,1904.3,1880.75,1927.85,14:05,1880.75,stop,-510.45,42.09,-552.54,-1.117,live,,
 2026-11-12,TATASTEEL,vwap,1,310,10:20,189.96,188.35,193.1,15:00,188.35,stop,-522.56,62.13,-584.69,-1.171,live,,
+2026-11-12,HINDALCO,learner,1,34,09:55,968.15,953.7,997.05,15:15,965.4,square-off,-106.65,34.85,-141.5,-0.288,live,orb30_2r,"long, before 10:30, with market, no gap, wide stop, after usual delivery, with yesterday's market"
+2026-11-12,LT,vwap,-1,23,10:20,4194.6,4213.75,4156.4,15:15,4165.8,square-off,623.95,81.15,542.8,1.232,live,,
+2026-11-12,NTPC,orb30_2r,-1,166,09:50,324.05,327.05,318.05,15:15,322.65,square-off,210.93,56.94,153.99,0.309,live,,
