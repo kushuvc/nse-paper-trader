@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-12 17:15 IST",
- "updated_ts": 1794483935,
+ "updated_ts": 1794483959,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -446,9 +446,6 @@
  ],
  "today_net": -3679.0,
  "log": [
-  "12:05  SKIP  GRASIM      orb60     ORB60 down: max 3 trades a day",
-  "12:05  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day",
-  "12:05  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day",
   "12:10  CLOSE TATASTEEL   stop       @ 188.65  net Rs -601 [orb60] (charges 73)",
   "12:15  SKIP  AXISBANK    orb15     ORB15 down: max 3 trades a day",
   "12:15  SKIP  AXISBANK    orb30_2r  ORB30 down: max 3 trades a day",
@@ -505,7 +502,10 @@
   "15:15  CLOSE LT          square-off @ 4165.80  net Rs +543 [vwap] (charges 81)",
   "15:15  CLOSE NTPC        square-off @ 322.65  net Rs +154 [orb30_2r] (charges 57)",
   "15:15  SKIP  RELIANCE    vwap      VWAP reclaim: past square-off",
-  "15:20  SKIP  TECHM       vwap      VWAP loss: past square-off"
+  "15:20  SKIP  TECHM       vwap      VWAP loss: past square-off",
+  "17:15  SKIP  ADANIENT    vwap      VWAP reclaim: past square-off",
+  "17:15  SKIP  EICHERMOT   vwap      VWAP reclaim: past square-off",
+  "17:15  SKIP  SUNPHARMA   vwap      VWAP loss: past square-off"
  ],
  "all_trades": 111,
  "all_wins": 63,
