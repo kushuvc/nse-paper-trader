@@ -98,3 +98,5 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-12,HINDUNILVR,learner,1,44,09:30,1997.6,1986.35,2022.4,10:55,1986.35,stop,-530.06,78.03,-608.09,-1.228,live,gap_fade,"long, before 10:30, with market, against gap, normal stop, after usual delivery, with yesterday's market"
 2026-11-12,HINDUNILVR,gap_fade,1,44,09:30,1997.6,1986.35,2022.4,10:55,1986.35,stop,-530.06,78.03,-608.09,-1.228,live,,
 2026-11-12,SHRIRAMFIN,vwap,1,100,10:20,991.2,987.45,998.7,11:00,998.7,target,710.2,82.35,627.85,1.674,live,,
+2026-11-12,TRENT,orb60,1,23,10:20,3232.8,3211.7,3253.9,11:05,3211.7,stop,-514.94,73.26,-588.2,-1.212,live,,
+2026-11-12,JSWSTEEL,orb30_2r,1,41,09:50,1364.8,1352.8,1388.8,11:10,1352.8,stop,-514.28,59.02,-573.3,-1.165,live,,
