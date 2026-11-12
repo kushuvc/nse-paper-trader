@@ -153,3 +153,15 @@ NSE's own daily file: latest saved is 2026-11-11
 10:50  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day
 10:50  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day
 10:50  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day
+10:55  SKIP  COALINDIA   orb15     ORB15 down: max 3 trades a day
+10:55  SKIP  COALINDIA   orb30_2r  ORB30 down: max 3 trades a day
+10:55  SKIP  COALINDIA   orb60     ORB60 down: max 3 trades a day
+10:55  CLOSE HINDUNILVR  stop       @ 1986.35  net Rs -608 [learner] (charges 78)
+10:55  CLOSE HINDUNILVR  stop       @ 1986.35  net Rs -608 [gap_fade] (charges 78)
+10:55  SKIP  ONGC        orb15     ORB15 down: max 3 trades a day
+10:55  SKIP  ONGC        orb30_2r  ORB30 down: max 3 trades a day
+10:55  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day
+11:00  SKIP  HINDUNILVR  orb30_2r  ORB30 down: max 3 trades a day
+11:00  SKIP  HINDUNILVR  orb60     ORB60 down: max 3 trades a day
+11:00  SKIP  M&M         vwap      VWAP loss: max 3 trades a day
+11:00  CLOSE SHRIRAMFIN  target     @ 998.70  net Rs +628 [vwap] (charges 82)

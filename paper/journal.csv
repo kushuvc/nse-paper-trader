@@ -95,3 +95,6 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-12,EICHERMOT,orb15,1,9,09:35,7620.0,7566.0,7674.0,09:45,7674.0,target,458.47,71.51,386.96,0.796,live,,
 2026-11-12,ASIANPAINT,trap90,1,13,09:30,2556.2,2517.85,2560.05,09:50,2560.05,target,36.75,35.27,1.48,0.003,live,,
 2026-11-12,M&M,gap_go,-1,29,09:30,3421.1,3427.85,3407.7,10:10,3427.85,stop,-235.47,82.18,-317.65,-1.623,live,,
+2026-11-12,HINDUNILVR,learner,1,44,09:30,1997.6,1986.35,2022.4,10:55,1986.35,stop,-530.06,78.03,-608.09,-1.228,live,gap_fade,"long, before 10:30, with market, against gap, normal stop, after usual delivery, with yesterday's market"
+2026-11-12,HINDUNILVR,gap_fade,1,44,09:30,1997.6,1986.35,2022.4,10:55,1986.35,stop,-530.06,78.03,-608.09,-1.228,live,,
+2026-11-12,SHRIRAMFIN,vwap,1,100,10:20,991.2,987.45,998.7,11:00,998.7,target,710.2,82.35,627.85,1.674,live,,
