@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 13:16 IST",
- "updated_ts": 1794469574,
+ "updated": "2026-11-12 13:26 IST",
+ "updated_ts": 1794470175,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -13,17 +13,6 @@
  ],
  "date": "2026-11-12",
  "open": {
-  "orb15|BHARTIARTL": {
-   "strategy": "orb15",
-   "symbol": "BHARTIARTL",
-   "side": 1,
-   "qty": 36,
-   "entry": 2097.6,
-   "stop": 2083.85,
-   "target": 2111.3,
-   "entry_time": "09:35",
-   "note": "ORB15 up"
-  },
   "learner|TECHM": {
    "strategy": "learner",
    "symbol": "TECHM",
@@ -380,18 +369,30 @@
    "net": -600.52,
    "r": -1.203,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "BHARTIARTL",
+   "side": 1,
+   "qty": 36,
+   "entry": 2097.6,
+   "stop": 2083.85,
+   "target": 2111.3,
+   "entry_time": "09:35",
+   "note": "ORB15 up",
+   "date": "2026-11-12",
+   "exit": 2083.85,
+   "exit_time": "13:20",
+   "reason": "stop",
+   "gross": -525.11,
+   "charges": 73.67,
+   "net": -598.78,
+   "r": -1.21,
+   "mode": "live"
   }
  ],
- "today_net": -1942.0,
+ "today_net": -2541.0,
  "log": [
-  "11:05  SKIP  POWERGRID   orb30_2r  ORB30 down: max 3 trades a day",
-  "11:05  SKIP  POWERGRID   orb60     ORB60 down: max 3 trades a day",
-  "11:05  CLOSE TRENT       stop       @ 3211.70  net Rs -588 [orb60] (charges 73)",
-  "11:10  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day",
-  "11:10  SKIP  HDFCLIFE    orb30_2r  ORB30 up: max 3 trades a day",
-  "11:10  SKIP  HDFCLIFE    orb60     ORB60 up: max 3 trades a day",
-  "11:10  SKIP  ITC         orb15     ORB15 down: max 3 trades a day",
-  "11:10  SKIP  ITC         orb30_2r  ORB30 down: max 3 trades a day",
   "11:10  CLOSE JSWSTEEL    stop       @ 1352.80  net Rs -573 [orb30_2r] (charges 59)",
   "11:15  SKIP  GRASIM      vwap      VWAP loss: max 3 trades a day",
   "11:25  SKIP  ITC         orb60     ORB60 down: max 3 trades a day",
@@ -443,12 +444,41 @@
   "13:00  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day",
   "13:00  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day",
   "13:10  SKIP  ADANIENT    vwap      VWAP reclaim: max 3 trades a day",
-  "13:10  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day"
+  "13:10  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day",
+  "13:20  SKIP  APOLLOHOSP  vwap      VWAP loss: max 3 trades a day",
+  "13:20  SKIP  BSE         vwap      VWAP loss: max 3 trades a day",
+  "13:20  CLOSE BHARTIARTL  stop       @ 2083.85  net Rs -599 [orb15] (charges 74)",
+  "13:20  SKIP  HCLTECH     orb30_2r  ORB30 down: max 3 trades a day",
+  "13:20  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day",
+  "13:25  SKIP  INDIGO      orb15     ORB15 down: max 3 trades a day",
+  "13:25  SKIP  INDIGO      orb30_2r  ORB30 down: max 3 trades a day",
+  "13:25  SKIP  INDIGO      orb60     ORB60 down: max 3 trades a day"
  ],
- "all_trades": 104,
+ "all_trades": 105,
  "all_wins": 61,
- "all_net": 1074.0,
+ "all_net": 475.0,
  "recent": [
+  {
+   "date": "2026-11-12",
+   "symbol": "BHARTIARTL",
+   "strategy": "orb15",
+   "side": "1",
+   "qty": "36",
+   "entry_time": "09:35",
+   "entry": "2097.6",
+   "stop": "2083.85",
+   "target": "2111.3",
+   "exit_time": "13:20",
+   "exit": "2083.85",
+   "reason": "stop",
+   "gross": "-525.11",
+   "charges": "73.67",
+   "net": "-598.78",
+   "r": "-1.21",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-12",
    "symbol": "TATASTEEL",
@@ -952,27 +982,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-11",
-   "symbol": "ADANIENT",
-   "strategy": "vwap",
-   "side": "1",
-   "qty": "14",
-   "entry_time": "10:20",
-   "entry": "2768.5",
-   "stop": "2734.0",
-   "target": "2837.5",
-   "exit_time": "12:45",
-   "exit": "2733.6",
-   "reason": "stop (gap)",
-   "gross": "-504.0",
-   "charges": "40.79",
-   "net": "-544.79",
-   "r": "-1.128",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -980,17 +989,17 @@
   "2026-11-06": -292.0,
   "2026-11-09": -99.0,
   "2026-11-11": -341.0,
-  "2026-11-12": -1943.0
+  "2026-11-12": -2542.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 2,
-   "today_net": 699,
-   "open": 1,
-   "all_trades": 14,
+   "today_trades": 3,
+   "today_net": 100,
+   "open": 0,
+   "all_trades": 15,
    "all_wins": 9,
-   "all_net": 651
+   "all_net": 53
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
@@ -1072,10 +1081,10 @@
   "accounts": {
    "orb15": {
     "days": 5,
-    "trades": 14,
-    "net": 651,
-    "per_trade": 47,
-    "t": 0.45,
+    "trades": 15,
+    "net": 53,
+    "per_trade": 4,
+    "t": 0.09,
     "drawdown": -1572,
     "passed": 2,
     "of": 7,
@@ -1091,25 +1100,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "14 of 150 trades"
+      "now": "15 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": true,
-      "now": "Rs +47 a trade"
+      "now": "Rs +4 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = 0.45"
+      "now": "t = 0.09"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs +931 then Rs -280"
+      "now": "Rs +931 then Rs -879"
      },
      {
       "id": "drawdown",
