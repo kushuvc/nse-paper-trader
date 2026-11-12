@@ -77,3 +77,34 @@ NSE's own daily file: latest saved is 2026-11-11
 09:50  SKIP  NESTLEIND   orb30_2r  ORB30 down: max 3 trades a day
 09:50  SKIP  SBIN        orb15     ORB15 up: max 3 trades a day
 09:50  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day
+09:55  OPEN  HINDALCO    BUY     34 @ 968.15  stop 953.70  target 997.05  [learner via orb30_2r, expects +0.10R: long, before 10:30, with market, no gap, wide stop, after usual delivery, with yesterday's market]
+09:55  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  JIOFIN      orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  JIOFIN      learner   via orb30_2r (expects +0.12R): max 3 trades a day
+09:55  SKIP  JIOFIN      orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  KOTAKBANK   learner   via orb30_2r (expects +0.20R): max 3 trades a day
+09:55  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  LT          orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  MAXHEALTH   orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  MAXHEALTH   learner   via orb30_2r (expects +0.20R): max 3 trades a day
+09:55  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  RELIANCE    orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  RELIANCE    orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  TATASTEEL   learner   via orb30_2r (expects +0.10R): max 3 trades a day
+09:55  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  ASIANPAINT  orb15     ORB15 up: max 3 trades a day
+10:00  SKIP  ASIANPAINT  learner   via orb30_2r (expects +0.10R): max 3 trades a day
+10:00  SKIP  ASIANPAINT  orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  BAJAJFINSV  orb15     ORB15 up: max 3 trades a day
+10:00  SKIP  BAJAJFINSV  learner   via orb30_2r (expects +0.11R): max 3 trades a day
+10:00  SKIP  BAJAJFINSV  orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  BHARTIARTL  learner   via orb30_2r (expects +0.20R): max 3 trades a day
+10:00  SKIP  BHARTIARTL  orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  SBILIFE     learner   via orb30_2r (expects +0.10R): max 3 trades a day
+10:00  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  SBIN        learner   via orb30_2r (expects +0.10R): max 3 trades a day
+10:00  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day
