@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 10:00 IST",
- "updated_ts": 1794457859,
+ "updated": "2026-11-12 10:11 IST",
+ "updated_ts": 1794458460,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -37,17 +37,6 @@
    "target": 2022.4,
    "entry_time": "09:30",
    "note": "gap -1.8% fading"
-  },
-  "gap_go|M&M": {
-   "strategy": "gap_go",
-   "symbol": "M&M",
-   "side": -1,
-   "qty": 29,
-   "entry": 3421.1,
-   "stop": 3427.85,
-   "target": 3407.7,
-   "entry_time": "09:30",
-   "note": "gap -1.2% and go"
   },
   "gap_go|ONGC": {
    "strategy": "gap_go",
@@ -233,22 +222,30 @@
    "net": 1.48,
    "r": 0.003,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_go",
+   "symbol": "M&M",
+   "side": -1,
+   "qty": 29,
+   "entry": 3421.1,
+   "stop": 3427.85,
+   "target": 3407.7,
+   "entry_time": "09:30",
+   "note": "gap -1.2% and go",
+   "date": "2026-11-12",
+   "exit": 3427.85,
+   "exit_time": "10:10",
+   "reason": "stop",
+   "gross": -235.47,
+   "charges": 82.18,
+   "net": -317.65,
+   "r": -1.623,
+   "mode": "live"
   }
  ],
- "today_net": 703.0,
+ "today_net": 385.0,
  "log": [
-  "09:35  OPEN  BHARTIARTL  BUY     36 @ 2097.60  stop 2083.85  target 2111.30  [orb15: ORB15 up]",
-  "09:35  OPEN  EICHERMOT   BUY      9 @ 7620.00  stop 7566.00  target 7674.00  [orb15: ORB15 up]",
-  "09:35  SKIP  ETERNAL     orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  GRASIM      orb15     ORB15 down: max 3 trades a day",
-  "09:35  SKIP  HINDUNILVR  orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day",
-  "09:40  SKIP  ADANIPORTS  orb15     ORB15 up: max 3 trades a day",
-  "09:40  SKIP  HCLTECH     orb15     ORB15 up: max 3 trades a day",
-  "09:40  SKIP  INFY        orb15     ORB15 up: max 3 trades a day",
-  "09:40  SKIP  MARUTI      orb15     ORB15 up: max 3 trades a day",
-  "09:40  SKIP  NTPC        orb15     ORB15 down: max 3 trades a day",
-  "09:40  SKIP  TCS         orb15     ORB15 up: max 3 trades a day",
   "09:40  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day",
   "09:40  SKIP  TMPV        orb15     ORB15 up: max 3 trades a day",
   "09:40  OPEN  TECHM       BUY     27 @ 1788.80  stop 1770.80  target 1806.75  [learner via orb15, expects +0.05R: long, before 10:30, with market, against gap, wide stop, after usual delivery, with yesterday's market]",
@@ -296,12 +293,45 @@
   "10:00  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day",
   "10:00  SKIP  SBIN        learner   via orb30_2r (expects +0.10R): max 3 trades a day",
   "10:00  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day",
-  "10:00  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day"
+  "10:00  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day",
+  "10:05  SKIP  ADANIENT    orb15     ORB15 up: max 3 trades a day",
+  "10:05  SKIP  ADANIENT    learner   via orb30_2r (expects +0.10R): max 3 trades a day",
+  "10:05  SKIP  ADANIENT    orb30_2r  ORB30 up: max 3 trades a day",
+  "10:05  SKIP  BEL         learner   via orb30_2r (expects +0.11R): max 3 trades a day",
+  "10:05  SKIP  BEL         orb30_2r  ORB30 up: max 3 trades a day",
+  "10:05  SKIP  HDFCBANK    orb15     ORB15 up: max 3 trades a day",
+  "10:05  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day",
+  "10:05  SKIP  TRENT       learner   via orb30_2r (expects +0.10R): max 3 trades a day",
+  "10:05  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day",
+  "10:10  CLOSE M&M         stop       @ 3427.85  net Rs -318 [gap_go] (charges 82)",
+  "10:10  SKIP  TITAN       orb15     ORB15 up: max 3 trades a day",
+  "10:10  SKIP  TITAN       orb30_2r  ORB30 up: max 3 trades a day"
  ],
- "all_trades": 95,
+ "all_trades": 96,
  "all_wins": 59,
- "all_net": 3719.0,
+ "all_net": 3402.0,
  "recent": [
+  {
+   "date": "2026-11-12",
+   "symbol": "M&M",
+   "strategy": "gap_go",
+   "side": "-1",
+   "qty": "29",
+   "entry_time": "09:30",
+   "entry": "3421.1",
+   "stop": "3427.85",
+   "target": "3407.7",
+   "exit_time": "10:10",
+   "exit": "3427.85",
+   "reason": "stop",
+   "gross": "-235.47",
+   "charges": "82.18",
+   "net": "-317.65",
+   "r": "-1.623",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-12",
    "symbol": "ASIANPAINT",
@@ -805,27 +835,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-11",
-   "symbol": "ASIANPAINT",
-   "strategy": "orb15",
-   "side": "-1",
-   "qty": "33",
-   "entry_time": "09:35",
-   "entry": "2547.0",
-   "stop": "2561.95",
-   "target": "2532.1",
-   "exit_time": "10:05",
-   "exit": "2561.95",
-   "reason": "stop",
-   "gross": "-527.07",
-   "charges": "76.85",
-   "net": "-603.92",
-   "r": "-1.224",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -833,7 +842,7 @@
   "2026-11-06": -292.0,
   "2026-11-09": -99.0,
   "2026-11-11": -341.0,
-  "2026-11-12": 702.0
+  "2026-11-12": 384.0
  },
  "by_strategy": {
   "orb15": {
@@ -865,12 +874,12 @@
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 2,
-   "all_trades": 12,
+   "today_trades": 1,
+   "today_net": -318,
+   "open": 1,
+   "all_trades": 13,
    "all_wins": 6,
-   "all_net": 1050
+   "all_net": 732
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
@@ -1089,11 +1098,11 @@
     ]
    },
    "gap_go": {
-    "days": 4,
-    "trades": 12,
-    "net": 1050,
-    "per_trade": 87,
-    "t": 0.13,
+    "days": 5,
+    "trades": 13,
+    "net": 732,
+    "per_trade": 56,
+    "t": -0.15,
     "drawdown": -2014,
     "passed": 2,
     "of": 7,
@@ -1103,31 +1112,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "4 of 60 days"
+      "now": "5 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "12 of 150 trades"
+      "now": "13 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": true,
-      "now": "Rs +87 a trade"
+      "now": "Rs +56 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = 0.13"
+      "now": "t = -0.15"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1193 then Rs +2243"
+      "now": "Rs -1193 then Rs +1925"
      },
      {
       "id": "drawdown",
