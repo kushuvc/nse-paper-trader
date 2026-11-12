@@ -182,3 +182,8 @@ NSE's own daily file: latest saved is 2026-11-11
 11:10  SKIP  ITC         orb30_2r  ORB30 down: max 3 trades a day
 11:10  CLOSE JSWSTEEL    stop       @ 1352.80  net Rs -573 [orb30_2r] (charges 59)
 11:15  SKIP  GRASIM      vwap      VWAP loss: max 3 trades a day
+11:25  SKIP  ITC         orb60     ORB60 down: max 3 trades a day
+11:25  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day
+11:30  CLOSE DRREDDY     stop       @ 1385.70  net Rs -532 [orb30_2r] (charges 82)
+11:30  SKIP  DRREDDY     orb60     ORB60 up: max 3 trades a day
+11:30  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day
