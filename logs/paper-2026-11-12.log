@@ -45,3 +45,22 @@ NSE's own daily file: latest saved is 2026-11-11
 09:30  SKIP  TITAN       trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  TRENT       trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  ULTRACEMCO  trap90    tiny target, wide stop: max 3 trades a day
+09:35  CLOSE ADANIENT    target     @ 2737.10  net Rs +1 [trap90] (charges 35)
+09:35  CLOSE ADANIPORTS  target     @ 1928.10  net Rs +1 [trap90] (charges 35)
+09:35  OPEN  BEL         BUY    248 @ 402.05  stop 400.25  target 403.80  [orb15: ORB15 up]
+09:35  OPEN  BHARTIARTL  BUY     36 @ 2097.60  stop 2083.85  target 2111.30  [orb15: ORB15 up]
+09:35  OPEN  EICHERMOT   BUY      9 @ 7620.00  stop 7566.00  target 7674.00  [orb15: ORB15 up]
+09:35  SKIP  ETERNAL     orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  GRASIM      orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  HINDUNILVR  orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  ADANIPORTS  orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  HCLTECH     orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  INFY        orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  MARUTI      orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  NTPC        orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  TCS         orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  TMPV        orb15     ORB15 up: max 3 trades a day
+09:40  OPEN  TECHM       BUY     27 @ 1788.80  stop 1770.80  target 1806.75  [learner via orb15, expects +0.05R: long, before 10:30, with market, against gap, wide stop, after usual delivery, with yesterday's market]
+09:40  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day
