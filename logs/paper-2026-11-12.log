@@ -215,3 +215,8 @@ NSE's own daily file: latest saved is 2026-11-11
 12:20  SKIP  MARUTI      orb60     ORB60 down: max 3 trades a day
 12:20  SKIP  RELIANCE    vwap      VWAP reclaim: max 3 trades a day
 12:35  SKIP  HINDALCO    vwap      VWAP reclaim: max 3 trades a day
+12:40  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day
+12:45  SKIP  BEL         vwap      VWAP reclaim: max 3 trades a day
+12:45  SKIP  EICHERMOT   orb30_2r  ORB30 down: max 3 trades a day
+12:45  SKIP  EICHERMOT   orb60     ORB60 down: max 3 trades a day
+12:45  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day
