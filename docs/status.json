@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12 14:36 IST",
- "updated_ts": 1794474386,
+ "updated": "2026-11-12 14:46 IST",
+ "updated_ts": 1794474987,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -411,7 +411,6 @@
  ],
  "today_net": -3650.0,
  "log": [
-  "11:45  SKIP  BAJAJ-AUTO  orb15     ORB15 down: max 3 trades a day",
   "11:45  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 down: max 3 trades a day",
   "11:45  SKIP  BAJAJ-AUTO  orb60     ORB60 down: max 3 trades a day",
   "11:45  SKIP  JSWSTEEL    orb60     ORB60 down: max 3 trades a day",
@@ -470,7 +469,8 @@
   "14:15  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
   "14:20  SKIP  TCS         orb30_2r  ORB30 down: max 3 trades a day",
   "14:20  SKIP  TCS         orb60     ORB60 down: max 3 trades a day",
-  "14:30  SKIP  ADANIPORTS  vwap      VWAP reclaim: max 3 trades a day"
+  "14:30  SKIP  ADANIPORTS  vwap      VWAP reclaim: max 3 trades a day",
+  "14:40  SKIP  COALINDIA   vwap      VWAP loss: after 14:30"
  ],
  "all_trades": 107,
  "all_wins": 61,
