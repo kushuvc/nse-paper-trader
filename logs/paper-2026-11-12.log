@@ -64,3 +64,16 @@ NSE's own daily file: latest saved is 2026-11-11
 09:40  SKIP  TMPV        orb15     ORB15 up: max 3 trades a day
 09:40  OPEN  TECHM       BUY     27 @ 1788.80  stop 1770.80  target 1806.75  [learner via orb15, expects +0.05R: long, before 10:30, with market, against gap, wide stop, after usual delivery, with yesterday's market]
 09:40  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day
+09:45  CLOSE BEL         target     @ 403.80  net Rs +312 [orb15] (charges 82)
+09:45  CLOSE EICHERMOT   target     @ 7674.00  net Rs +387 [orb15] (charges 72)
+09:45  SKIP  KOTAKBANK   orb15     ORB15 up: max 3 trades a day
+09:50  CLOSE ASIANPAINT  target     @ 2560.05  net Rs +1 [trap90] (charges 35)
+09:50  SKIP  DRREDDY     orb15     ORB15 down: max 3 trades a day
+09:50  OPEN  DRREDDY     SHORT   72 @ 1380.00  stop 1385.70  target 1368.60  [orb30_2r: ORB30 down]
+09:50  SKIP  JSWSTEEL    orb15     ORB15 up: max 3 trades a day
+09:50  OPEN  JSWSTEEL    BUY     41 @ 1364.80  stop 1352.80  target 1388.80  [orb30_2r: ORB30 up]
+09:50  OPEN  NTPC        SHORT  166 @ 324.05  stop 327.05  target 318.05  [orb30_2r: ORB30 down]
+09:50  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day
+09:50  SKIP  NESTLEIND   orb30_2r  ORB30 down: max 3 trades a day
+09:50  SKIP  SBIN        orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day
