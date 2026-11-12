@@ -244,3 +244,5 @@ NSE's own daily file: latest saved is 2026-11-11
 14:10  SKIP  BSE         vwap      VWAP loss: max 3 trades a day
 14:15  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day
 14:15  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day
+14:20  SKIP  TCS         orb30_2r  ORB30 down: max 3 trades a day
+14:20  SKIP  TCS         orb60     ORB60 down: max 3 trades a day
