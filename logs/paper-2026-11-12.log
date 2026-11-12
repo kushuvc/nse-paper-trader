@@ -259,3 +259,13 @@ NSE's own daily file: latest saved is 2026-11-11
 15:15  CLOSE LT          square-off @ 4165.80  net Rs +543 [vwap] (charges 81)
 15:15  CLOSE NTPC        square-off @ 322.65  net Rs +154 [orb30_2r] (charges 57)
 15:15  SKIP  RELIANCE    vwap      VWAP reclaim: past square-off
+15:20  SKIP  TECHM       vwap      VWAP loss: past square-off
+2026-11-12: 21 closed (9 won), 0 still open, net Rs -3679 after charges
+  orb15     3 trades, net Rs +100
+  orb30_2r  3 trades, net Rs -952
+  orb60     3 trades, net Rs -1741
+  gap_go    2 trades, net Rs +238
+  gap_fade  1 trades, net Rs -608
+  vwap      3 trades, net Rs +586
+  trap90    3 trades, net Rs +4
+  learner   3 trades, net Rs -1306
