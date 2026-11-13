@@ -247,3 +247,12 @@ NSE's own daily file: latest saved is 2026-11-12
 15:15  SKIP  NESTLEIND   vwap      VWAP reclaim: past square-off
 15:15  CLOSE SBILIFE     square-off @ 1787.70  net Rs +65 [orb60] (charges 71)
 15:15  CLOSE SHRIRAMFIN  square-off @ 969.00  net Rs +487 [vwap] (charges 68)
+2026-11-13: 22 closed (6 won), 0 still open, net Rs -6091 after charges
+  orb15     3 trades, net Rs -977
+  orb30_2r  3 trades, net Rs -1751
+  orb60     3 trades, net Rs -320
+  gap_go    3 trades, net Rs -1473
+  gap_fade  2 trades, net Rs +431
+  vwap      3 trades, net Rs -338
+  trap90    3 trades, net Rs -1069
+  learner   2 trades, net Rs -594
