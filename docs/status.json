@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 14:46 IST",
- "updated_ts": 1794561387,
+ "updated": "2026-11-13 14:56 IST",
+ "updated_ts": 1794561989,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -410,8 +410,6 @@
  ],
  "today_net": -6211.0,
  "log": [
-  "11:50  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day",
-  "11:50  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day",
   "11:55  CLOSE BAJFINANCE  stop       @ 1098.75  net Rs -588 [orb15] (charges 69)",
   "11:55  SKIP  HDFCLIFE    orb30_2r  ORB30 down: max 3 trades a day",
   "11:55  SKIP  HDFCLIFE    orb60     ORB60 down: max 3 trades a day",
@@ -469,7 +467,9 @@
   "14:35  SKIP  NESTLEIND   vwap      VWAP reclaim: after 14:30",
   "14:40  SKIP  ASIANPAINT  vwap      VWAP reclaim: after 14:30",
   "14:40  CLOSE BAJFINANCE  target     @ 1115.00  net Rs +454 [gap_fade] (charges 52)",
-  "14:40  SKIP  MARUTI      vwap      VWAP reclaim: after 14:30"
+  "14:40  SKIP  MARUTI      vwap      VWAP reclaim: after 14:30",
+  "14:50  SKIP  ETERNAL     vwap      VWAP reclaim: after 14:30",
+  "14:55  SKIP  ITC         orb60     ORB60 up: after 14:30"
  ],
  "all_trades": 127,
  "all_wins": 66,

@@ -234,3 +234,5 @@ NSE's own daily file: latest saved is 2026-11-12
 14:40  SKIP  ASIANPAINT  vwap      VWAP reclaim: after 14:30
 14:40  CLOSE BAJFINANCE  target     @ 1115.00  net Rs +454 [gap_fade] (charges 52)
 14:40  SKIP  MARUTI      vwap      VWAP reclaim: after 14:30
+14:50  SKIP  ETERNAL     vwap      VWAP reclaim: after 14:30
+14:55  SKIP  ITC         orb60     ORB60 up: after 14:30
