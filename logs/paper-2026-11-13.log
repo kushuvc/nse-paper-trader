@@ -188,3 +188,10 @@ NSE's own daily file: latest saved is 2026-11-12
 12:00  CLOSE ADANIENT    stop       @ 2702.80  net Rs -542 [trap90] (charges 35)
 12:00  SKIP  HDFCBANK    vwap      VWAP loss: max 3 trades a day
 12:00  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day
+12:05  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day
+12:05  SKIP  INFY        orb60     ORB60 down: max 3 trades a day
+12:10  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day
+12:10  SKIP  HINDALCO    orb15     ORB15 down: max 3 trades a day
+12:10  SKIP  ULTRACEMCO  orb15     ORB15 down: max 3 trades a day
+12:10  SKIP  ULTRACEMCO  orb30_2r  ORB30 down: max 3 trades a day
+12:10  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day

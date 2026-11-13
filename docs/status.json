@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 12:01 IST",
- "updated_ts": 1794551475,
+ "updated": "2026-11-13 12:11 IST",
+ "updated_ts": 1794552077,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -347,13 +347,6 @@
  ],
  "today_net": -3424.0,
  "log": [
-  "10:35  SKIP  BHARTIARTL  orb60     ORB60 up: max 3 trades a day",
-  "10:35  SKIP  HCLTECH     orb60     ORB60 up: max 3 trades a day",
-  "10:35  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day",
-  "10:35  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day",
-  "10:35  SKIP  TCS         orb60     ORB60 up: max 3 trades a day",
-  "10:40  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day",
-  "10:40  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day",
   "10:45  SKIP  MARUTI      orb60     ORB60 up: max 3 trades a day",
   "10:45  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day",
   "10:50  SKIP  AXISBANK    orb15     ORB15 up: max 3 trades a day",
@@ -406,7 +399,14 @@
   "11:55  SKIP  SHRIRAMFIN  orb60     ORB60 down: max 3 trades a day",
   "12:00  CLOSE ADANIENT    stop       @ 2702.80  net Rs -542 [trap90] (charges 35)",
   "12:00  SKIP  HDFCBANK    vwap      VWAP loss: max 3 trades a day",
-  "12:00  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day"
+  "12:00  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day",
+  "12:05  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day",
+  "12:05  SKIP  INFY        orb60     ORB60 down: max 3 trades a day",
+  "12:10  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day",
+  "12:10  SKIP  HINDALCO    orb15     ORB15 down: max 3 trades a day",
+  "12:10  SKIP  ULTRACEMCO  orb15     ORB15 down: max 3 trades a day",
+  "12:10  SKIP  ULTRACEMCO  orb30_2r  ORB30 down: max 3 trades a day",
+  "12:10  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 120,
  "all_wins": 65,
