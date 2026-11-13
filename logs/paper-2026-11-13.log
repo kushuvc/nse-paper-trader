@@ -110,3 +110,11 @@ NSE's own daily file: latest saved is 2026-11-12
 10:10  SKIP  MAXHEALTH   orb15     ORB15 up: max 3 trades a day
 10:10  SKIP  ONGC        orb15     ORB15 up: max 3 trades a day
 10:10  SKIP  ONGC        orb30_2r  ORB30 up: max 3 trades a day
+10:15  CLOSE BHARTIARTL  target     @ 2100.30  net Rs +179 [orb15] (charges 82)
+10:20  SKIP  BAJAJFINSV  orb15     ORB15 down: max 3 trades a day
+10:20  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day
+10:20  OPEN  BAJAJFINSV  SHORT   45 @ 1862.20  stop 1873.10  target 1851.30  [orb60: ORB60 down]
+10:20  OPEN  COALINDIA   BUY    246 @ 404.90  stop 403.70  target 407.30  [vwap: VWAP reclaim]
+10:20  OPEN  HINDALCO    SHORT  104 @ 953.25  stop 956.00  target 947.75  [vwap: VWAP loss]
+10:20  OPEN  SBILIFE     SHORT   38 @ 1792.00  stop 1804.90  target 1779.15  [orb60: ORB60 down]
+10:20  OPEN  SHRIRAMFIN  SHORT   66 @ 977.80  stop 985.35  target 962.70  [vwap: VWAP loss]

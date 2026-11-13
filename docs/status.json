@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 10:10 IST",
- "updated_ts": 1794544858,
+ "updated": "2026-11-13 10:21 IST",
+ "updated_ts": 1794545460,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -93,17 +93,6 @@
    "entry_time": "09:35",
    "note": "ORB15 up"
   },
-  "orb15|BHARTIARTL": {
-   "strategy": "orb15",
-   "symbol": "BHARTIARTL",
-   "side": 1,
-   "qty": 47,
-   "entry": 2093.9,
-   "stop": 2087.5,
-   "target": 2100.3,
-   "entry_time": "09:35",
-   "note": "ORB15 up"
-  },
   "orb30_2r|ASIANPAINT": {
    "strategy": "orb30_2r",
    "symbol": "ASIANPAINT",
@@ -150,6 +139,61 @@
    "via": "orb30_2r",
    "setup": "long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market",
    "score": 0.085
+  },
+  "orb60|BAJAJFINSV": {
+   "strategy": "orb60",
+   "symbol": "BAJAJFINSV",
+   "side": -1,
+   "qty": 45,
+   "entry": 1862.2,
+   "stop": 1873.1,
+   "target": 1851.3,
+   "entry_time": "10:20",
+   "note": "ORB60 down"
+  },
+  "vwap|COALINDIA": {
+   "strategy": "vwap",
+   "symbol": "COALINDIA",
+   "side": 1,
+   "qty": 246,
+   "entry": 404.9,
+   "stop": 403.7,
+   "target": 407.3,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim"
+  },
+  "vwap|HINDALCO": {
+   "strategy": "vwap",
+   "symbol": "HINDALCO",
+   "side": -1,
+   "qty": 104,
+   "entry": 953.25,
+   "stop": 956.0,
+   "target": 947.75,
+   "entry_time": "10:20",
+   "note": "VWAP loss"
+  },
+  "orb60|SBILIFE": {
+   "strategy": "orb60",
+   "symbol": "SBILIFE",
+   "side": -1,
+   "qty": 38,
+   "entry": 1792.0,
+   "stop": 1804.9,
+   "target": 1779.15,
+   "entry_time": "10:20",
+   "note": "ORB60 down"
+  },
+  "vwap|SHRIRAMFIN": {
+   "strategy": "vwap",
+   "symbol": "SHRIRAMFIN",
+   "side": -1,
+   "qty": 66,
+   "entry": 977.8,
+   "stop": 985.35,
+   "target": 962.7,
+   "entry_time": "10:20",
+   "note": "VWAP loss"
   }
  },
  "closed": [
@@ -232,18 +276,30 @@
    "net": -609.48,
    "r": -1.226,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "BHARTIARTL",
+   "side": 1,
+   "qty": 47,
+   "entry": 2093.9,
+   "stop": 2087.5,
+   "target": 2100.3,
+   "entry_time": "09:35",
+   "note": "ORB15 up",
+   "date": "2026-11-13",
+   "exit": 2100.3,
+   "exit_time": "10:15",
+   "reason": "target",
+   "gross": 261.37,
+   "charges": 81.97,
+   "net": 179.4,
+   "r": 0.596,
+   "mode": "live"
   }
  ],
- "today_net": -1461.0,
+ "today_net": -1282.0,
  "log": [
-  "09:35  SKIP  INFY        orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  JSWSTEEL    orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day",
-  "09:40  CLOSE APOLLOHOSP  target     @ 8605.00  net Rs +12 [trap90] (charges 27)",
-  "09:40  SKIP  APOLLOHOSP  orb15     ORB15 up: max 3 trades a day",
-  "09:40  SKIP  BEL         orb15     ORB15 up: max 3 trades a day",
   "09:40  CLOSE JIOFIN      stop       @ 228.90  net Rs -504 [gap_go] (charges 82)",
   "09:40  SKIP  LT          orb15     ORB15 up: max 3 trades a day",
   "09:40  CLOSE MARUTI      stop       @ 12889.00  net Rs -360 [gap_go] (charges 79)",
@@ -295,12 +351,41 @@
   "10:10  SKIP  HCLTECH     orb30_2r  ORB30 up: max 3 trades a day",
   "10:10  SKIP  MAXHEALTH   orb15     ORB15 up: max 3 trades a day",
   "10:10  SKIP  ONGC        orb15     ORB15 up: max 3 trades a day",
-  "10:10  SKIP  ONGC        orb30_2r  ORB30 up: max 3 trades a day"
+  "10:10  SKIP  ONGC        orb30_2r  ORB30 up: max 3 trades a day",
+  "10:15  CLOSE BHARTIARTL  target     @ 2100.30  net Rs +179 [orb15] (charges 82)",
+  "10:20  SKIP  BAJAJFINSV  orb15     ORB15 down: max 3 trades a day",
+  "10:20  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day",
+  "10:20  OPEN  BAJAJFINSV  SHORT   45 @ 1862.20  stop 1873.10  target 1851.30  [orb60: ORB60 down]",
+  "10:20  OPEN  COALINDIA   BUY    246 @ 404.90  stop 403.70  target 407.30  [vwap: VWAP reclaim]",
+  "10:20  OPEN  HINDALCO    SHORT  104 @ 953.25  stop 956.00  target 947.75  [vwap: VWAP loss]",
+  "10:20  OPEN  SBILIFE     SHORT   38 @ 1792.00  stop 1804.90  target 1779.15  [orb60: ORB60 down]",
+  "10:20  OPEN  SHRIRAMFIN  SHORT   66 @ 977.80  stop 985.35  target 962.70  [vwap: VWAP loss]"
  ],
- "all_trades": 115,
- "all_wins": 64,
- "all_net": -2124.0,
+ "all_trades": 116,
+ "all_wins": 65,
+ "all_net": -1944.0,
  "recent": [
+  {
+   "date": "2026-11-13",
+   "symbol": "BHARTIARTL",
+   "strategy": "orb15",
+   "side": "1",
+   "qty": "47",
+   "entry_time": "09:35",
+   "entry": "2093.9",
+   "stop": "2087.5",
+   "target": "2100.3",
+   "exit_time": "10:15",
+   "exit": "2100.3",
+   "reason": "target",
+   "gross": "261.37",
+   "charges": "81.97",
+   "net": "179.4",
+   "r": "0.596",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-13",
    "symbol": "SHRIRAMFIN",
@@ -804,27 +889,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "ADANIENT",
-   "strategy": "trap90",
-   "side": "1",
-   "qty": "12",
-   "entry_time": "09:30",
-   "entry": "2733.0",
-   "stop": "2692.0",
-   "target": "2737.1",
-   "exit_time": "09:35",
-   "exit": "2737.1",
-   "reason": "target",
-   "gross": "36.07",
-   "charges": "34.81",
-   "net": "1.26",
-   "r": "0.003",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -833,17 +897,17 @@
   "2026-11-09": -99.0,
   "2026-11-11": -341.0,
   "2026-11-12": -3681.0,
-  "2026-11-13": -1461.0
+  "2026-11-13": -1282.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 15,
-   "all_wins": 9,
-   "all_net": 53
+   "today_trades": 1,
+   "today_net": 179,
+   "open": 2,
+   "all_trades": 16,
+   "all_wins": 10,
+   "all_net": 232
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
@@ -858,7 +922,7 @@
    "desc": "first-hour range breakout, stop at mid, 1R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 2,
    "all_trades": 15,
    "all_wins": 6,
    "all_net": -2879
@@ -885,7 +949,7 @@
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 15,
    "all_wins": 7,
    "all_net": -1095
@@ -924,11 +988,11 @@
   },
   "accounts": {
    "orb15": {
-    "days": 5,
-    "trades": 15,
-    "net": 53,
-    "per_trade": 4,
-    "t": 0.09,
+    "days": 6,
+    "trades": 16,
+    "net": 232,
+    "per_trade": 15,
+    "t": 0.25,
     "drawdown": -1572,
     "passed": 2,
     "of": 7,
@@ -938,31 +1002,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "5 of 60 days"
+      "now": "6 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "15 of 150 trades"
+      "now": "16 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": true,
-      "now": "Rs +4 a trade"
+      "now": "Rs +15 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = 0.09"
+      "now": "t = 0.25"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs +931 then Rs -879"
+      "now": "Rs +313 then Rs -81"
      },
      {
       "id": "drawdown",
