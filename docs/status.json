@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 10:21 IST",
- "updated_ts": 1794545460,
+ "updated": "2026-11-13 10:31 IST",
+ "updated_ts": 1794546061,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -194,6 +194,17 @@
    "target": 962.7,
    "entry_time": "10:20",
    "note": "VWAP loss"
+  },
+  "orb60|HINDUNILVR": {
+   "strategy": "orb60",
+   "symbol": "HINDUNILVR",
+   "side": 1,
+   "qty": 40,
+   "entry": 1985.0,
+   "stop": 1972.5,
+   "target": 1997.5,
+   "entry_time": "10:25",
+   "note": "ORB60 up"
   }
  },
  "closed": [
@@ -300,16 +311,6 @@
  ],
  "today_net": -1282.0,
  "log": [
-  "09:40  CLOSE JIOFIN      stop       @ 228.90  net Rs -504 [gap_go] (charges 82)",
-  "09:40  SKIP  LT          orb15     ORB15 up: max 3 trades a day",
-  "09:40  CLOSE MARUTI      stop       @ 12889.00  net Rs -360 [gap_go] (charges 79)",
-  "09:40  SKIP  SBIN        orb15     ORB15 down: max 3 trades a day",
-  "09:40  SKIP  TCS         orb15     ORB15 up: max 3 trades a day",
-  "09:40  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day",
-  "09:40  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day",
-  "09:45  SKIP  ASIANPAINT  orb15     ORB15 up: max 3 trades a day",
-  "09:45  SKIP  GRASIM      orb15     ORB15 up: max 3 trades a day",
-  "09:45  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day",
   "09:50  OPEN  ASIANPAINT  BUY     34 @ 2525.50  stop 2511.00  target 2554.50  [orb30_2r: ORB30 up]",
   "09:50  SKIP  BAJAJ-AUTO  orb15     ORB15 up: max 3 trades a day",
   "09:50  OPEN  BAJAJ-AUTO  BUY      5 @ 10919.00  stop 10819.00  target 11119.00  [orb30_2r: ORB30 up]",
@@ -359,7 +360,17 @@
   "10:20  OPEN  COALINDIA   BUY    246 @ 404.90  stop 403.70  target 407.30  [vwap: VWAP reclaim]",
   "10:20  OPEN  HINDALCO    SHORT  104 @ 953.25  stop 956.00  target 947.75  [vwap: VWAP loss]",
   "10:20  OPEN  SBILIFE     SHORT   38 @ 1792.00  stop 1804.90  target 1779.15  [orb60: ORB60 down]",
-  "10:20  OPEN  SHRIRAMFIN  SHORT   66 @ 977.80  stop 985.35  target 962.70  [vwap: VWAP loss]"
+  "10:20  OPEN  SHRIRAMFIN  SHORT   66 @ 977.80  stop 985.35  target 962.70  [vwap: VWAP loss]",
+  "10:25  OPEN  HINDUNILVR  BUY     40 @ 1985.00  stop 1972.50  target 1997.50  [orb60: ORB60 up]",
+  "10:25  SKIP  TRENT       orb60     ORB60 up: max 3 trades a day",
+  "10:30  SKIP  ADANIPORTS  orb15     ORB15 down: max 3 trades a day",
+  "10:30  SKIP  ADANIPORTS  orb30_2r  ORB30 down: max 3 trades a day",
+  "10:30  SKIP  ADANIPORTS  orb60     ORB60 down: max 3 trades a day",
+  "10:30  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
+  "10:30  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day",
+  "10:30  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day",
+  "10:30  SKIP  KOTAKBANK   orb60     ORB60 down: max 3 trades a day",
+  "10:30  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 116,
  "all_wins": 65,
@@ -922,7 +933,7 @@
    "desc": "first-hour range breakout, stop at mid, 1R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 2,
+   "open": 3,
    "all_trades": 15,
    "all_wins": 6,
    "all_net": -2879

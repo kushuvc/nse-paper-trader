@@ -118,3 +118,13 @@ NSE's own daily file: latest saved is 2026-11-12
 10:20  OPEN  HINDALCO    SHORT  104 @ 953.25  stop 956.00  target 947.75  [vwap: VWAP loss]
 10:20  OPEN  SBILIFE     SHORT   38 @ 1792.00  stop 1804.90  target 1779.15  [orb60: ORB60 down]
 10:20  OPEN  SHRIRAMFIN  SHORT   66 @ 977.80  stop 985.35  target 962.70  [vwap: VWAP loss]
+10:25  OPEN  HINDUNILVR  BUY     40 @ 1985.00  stop 1972.50  target 1997.50  [orb60: ORB60 up]
+10:25  SKIP  TRENT       orb60     ORB60 up: max 3 trades a day
+10:30  SKIP  ADANIPORTS  orb15     ORB15 down: max 3 trades a day
+10:30  SKIP  ADANIPORTS  orb30_2r  ORB30 down: max 3 trades a day
+10:30  SKIP  ADANIPORTS  orb60     ORB60 down: max 3 trades a day
+10:30  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day
+10:30  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day
+10:30  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day
+10:30  SKIP  KOTAKBANK   orb60     ORB60 down: max 3 trades a day
+10:30  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day
