@@ -286,3 +286,15 @@ NSE's own end-of-day files -> data/nse/ (looking back 7 days) ...
   2026-11-13: saved. 939 of 2744 shares rose (34.6%), Nifty 50 25,144 (-0.61%), 40.4% of the money traded was taken for delivery, India VIX 15.5.
 1 new. 90 days saved, 2026-07-08 to 2026-11-13.
 Latest day, 2026-11-13: 939 of 2744 shares rose (34.6%), Nifty 50 25,144 (-0.61%), 40.4% of the money traded was taken for delivery, India VIX 15.5.
+PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
+Learner: model from 64 days of history
+NSE's own daily file: latest saved is 2026-11-13
+2026-11-13: 22 closed (6 won), 0 still open, net Rs -6091 after charges
+  orb15     3 trades, net Rs -977
+  orb30_2r  3 trades, net Rs -1751
+  orb60     3 trades, net Rs -320
+  gap_go    3 trades, net Rs -1473
+  gap_fade  2 trades, net Rs +431
+  vwap      3 trades, net Rs -338
+  trap90    3 trades, net Rs -1069
+  learner   2 trades, net Rs -594
