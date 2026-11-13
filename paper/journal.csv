@@ -125,3 +125,4 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-13,BEL,orb30_2r,1,121,09:50,405.45,401.35,413.55,12:40,401.35,stop,-515.62,51.71,-567.33,-1.144,live,,
 2026-11-13,ADANIPORTS,trap90,1,17,09:30,1926.4,1897.5,1929.3,13:45,1897.5,stop,-504.3,34.41,-538.71,-1.096,live,,
 2026-11-13,TATASTEEL,learner,1,259,09:50,188.28,186.35,192.05,13:45,186.35,stop,-519.28,51.39,-570.67,-1.142,live,orb30_2r,"long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market"
+2026-11-13,BAJFINANCE,gap_fade,1,44,09:30,1103.05,1091.7,1115.0,14:40,1115.0,target,506.28,51.8,454.48,0.91,live,,

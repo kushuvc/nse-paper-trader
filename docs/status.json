@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 14:36 IST",
- "updated_ts": 1794560786,
+ "updated": "2026-11-13 14:46 IST",
+ "updated_ts": 1794561387,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -13,17 +13,6 @@
  ],
  "date": "2026-11-13",
  "open": {
-  "gap_fade|BAJFINANCE": {
-   "strategy": "gap_fade",
-   "symbol": "BAJFINANCE",
-   "side": 1,
-   "qty": 44,
-   "entry": 1103.05,
-   "stop": 1091.7,
-   "target": 1115.0,
-   "entry_time": "09:30",
-   "note": "gap -1.6% fading"
-  },
   "learner|INDIGO": {
    "strategy": "learner",
    "symbol": "INDIGO",
@@ -397,13 +386,30 @@
    "net": -570.67,
    "r": -1.142,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_fade",
+   "symbol": "BAJFINANCE",
+   "side": 1,
+   "qty": 44,
+   "entry": 1103.05,
+   "stop": 1091.7,
+   "target": 1115.0,
+   "entry_time": "09:30",
+   "note": "gap -1.6% fading",
+   "date": "2026-11-13",
+   "exit": 1115.0,
+   "exit_time": "14:40",
+   "reason": "target",
+   "gross": 506.28,
+   "charges": 51.8,
+   "net": 454.48,
+   "r": 0.91,
+   "mode": "live"
   }
  ],
- "today_net": -6666.0,
+ "today_net": -6211.0,
  "log": [
-  "11:50  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day",
-  "11:50  SKIP  TMPV        orb15     ORB15 down: max 3 trades a day",
-  "11:50  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day",
   "11:50  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day",
   "11:50  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day",
   "11:55  CLOSE BAJFINANCE  stop       @ 1098.75  net Rs -588 [orb15] (charges 69)",
@@ -460,12 +466,36 @@
   "14:20  SKIP  JIOFIN      orb60     ORB60 down: max 3 trades a day",
   "14:30  SKIP  BAJFINANCE  orb60     ORB60 up: max 3 trades a day",
   "14:35  SKIP  HINDUNILVR  vwap      VWAP reclaim: after 14:30",
-  "14:35  SKIP  NESTLEIND   vwap      VWAP reclaim: after 14:30"
+  "14:35  SKIP  NESTLEIND   vwap      VWAP reclaim: after 14:30",
+  "14:40  SKIP  ASIANPAINT  vwap      VWAP reclaim: after 14:30",
+  "14:40  CLOSE BAJFINANCE  target     @ 1115.00  net Rs +454 [gap_fade] (charges 52)",
+  "14:40  SKIP  MARUTI      vwap      VWAP reclaim: after 14:30"
  ],
- "all_trades": 126,
- "all_wins": 65,
- "all_net": -7328.0,
+ "all_trades": 127,
+ "all_wins": 66,
+ "all_net": -6874.0,
  "recent": [
+  {
+   "date": "2026-11-13",
+   "symbol": "BAJFINANCE",
+   "strategy": "gap_fade",
+   "side": "1",
+   "qty": "44",
+   "entry_time": "09:30",
+   "entry": "1103.05",
+   "stop": "1091.7",
+   "target": "1115.0",
+   "exit_time": "14:40",
+   "exit": "1115.0",
+   "reason": "target",
+   "gross": "506.28",
+   "charges": "51.8",
+   "net": "454.48",
+   "r": "0.91",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-13",
    "symbol": "TATASTEEL",
@@ -969,27 +999,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-12",
-   "symbol": "DRREDDY",
-   "strategy": "orb30_2r",
-   "side": "-1",
-   "qty": "72",
-   "entry_time": "09:50",
-   "entry": "1380.0",
-   "stop": "1385.7",
-   "target": "1368.6",
-   "exit_time": "11:30",
-   "exit": "1385.7",
-   "reason": "stop",
-   "gross": "-450.23",
-   "charges": "82.24",
-   "net": "-532.47",
-   "r": "-1.297",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -998,7 +1007,7 @@
   "2026-11-09": -99.0,
   "2026-11-11": -341.0,
   "2026-11-12": -3681.0,
-  "2026-11-13": -6667.0
+  "2026-11-13": -6213.0
  },
  "by_strategy": {
   "orb15": {
@@ -1039,12 +1048,12 @@
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 2,
-   "all_trades": 10,
-   "all_wins": 7,
-   "all_net": 2976
+   "today_trades": 1,
+   "today_net": 454,
+   "open": 1,
+   "all_trades": 11,
+   "all_wins": 8,
+   "all_net": 3431
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
@@ -1309,11 +1318,11 @@
     ]
    },
    "gap_fade": {
-    "days": 4,
-    "trades": 10,
-    "net": 2976,
-    "per_trade": 298,
-    "t": 1.56,
+    "days": 5,
+    "trades": 11,
+    "net": 3431,
+    "per_trade": 312,
+    "t": 1.8,
     "drawdown": -636,
     "passed": 3,
     "of": 7,
@@ -1323,31 +1332,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "4 of 60 days"
+      "now": "5 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "10 of 150 trades"
+      "now": "11 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": true,
-      "now": "Rs +298 a trade"
+      "now": "Rs +312 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = 1.56"
+      "now": "t = 1.80"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": true,
-      "now": "Rs +1591 then Rs +1385"
+      "now": "Rs +1591 then Rs +1840"
      },
      {
       "id": "drawdown",
