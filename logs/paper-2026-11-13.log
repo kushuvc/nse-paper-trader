@@ -178,3 +178,13 @@ NSE's own daily file: latest saved is 2026-11-12
 11:50  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day
 11:50  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day
 11:50  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day
+11:55  CLOSE BAJFINANCE  stop       @ 1098.75  net Rs -588 [orb15] (charges 69)
+11:55  SKIP  HDFCLIFE    orb30_2r  ORB30 down: max 3 trades a day
+11:55  SKIP  HDFCLIFE    orb60     ORB60 down: max 3 trades a day
+11:55  SKIP  ONGC        vwap      VWAP reclaim: max 3 trades a day
+11:55  SKIP  SHRIRAMFIN  orb15     ORB15 down: max 3 trades a day
+11:55  SKIP  SHRIRAMFIN  orb30_2r  ORB30 down: max 3 trades a day
+11:55  SKIP  SHRIRAMFIN  orb60     ORB60 down: max 3 trades a day
+12:00  CLOSE ADANIENT    stop       @ 2702.80  net Rs -542 [trap90] (charges 35)
+12:00  SKIP  HDFCBANK    vwap      VWAP loss: max 3 trades a day
+12:00  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day
