@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 12:46 IST",
- "updated_ts": 1794554168,
+ "updated": "2026-11-13 12:56 IST",
+ "updated_ts": 1794554770,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -383,9 +383,6 @@
  ],
  "today_net": -5556.0,
  "log": [
-  "11:05  SKIP  ADANIENT    orb60     ORB60 down: max 3 trades a day",
-  "11:05  SKIP  AXISBANK    vwap      VWAP loss: max 3 trades a day",
-  "11:05  SKIP  BAJAJ-AUTO  vwap      VWAP loss: max 3 trades a day",
   "11:05  SKIP  CIPLA       orb15     ORB15 down: max 3 trades a day",
   "11:05  SKIP  CIPLA       orb30_2r  ORB30 down: max 3 trades a day",
   "11:05  SKIP  CIPLA       orb60     ORB60 down: max 3 trades a day",
@@ -442,7 +439,10 @@
   "12:40  SKIP  BAJFINANCE  vwap      VWAP reclaim: max 3 trades a day",
   "12:40  CLOSE BEL         stop       @ 401.35  net Rs -567 [orb30_2r] (charges 52)",
   "12:40  SKIP  MARUTI      vwap      VWAP reclaim: max 3 trades a day",
-  "12:45  SKIP  BEL         orb60     ORB60 down: max 3 trades a day"
+  "12:45  SKIP  BEL         orb60     ORB60 down: max 3 trades a day",
+  "12:50  SKIP  BAJAJ-AUTO  orb60     ORB60 down: max 3 trades a day",
+  "12:50  SKIP  GRASIM      orb60     ORB60 down: max 3 trades a day",
+  "12:55  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 124,
  "all_wins": 65,
