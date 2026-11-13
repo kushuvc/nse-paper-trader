@@ -195,3 +195,15 @@ NSE's own daily file: latest saved is 2026-11-12
 12:10  SKIP  ULTRACEMCO  orb15     ORB15 down: max 3 trades a day
 12:10  SKIP  ULTRACEMCO  orb30_2r  ORB30 down: max 3 trades a day
 12:10  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day
+12:15  CLOSE COALINDIA   stop       @ 403.70  net Rs -417 [vwap] (charges 82)
+12:15  SKIP  HINDALCO    orb30_2r  ORB30 down: max 3 trades a day
+12:15  SKIP  HINDALCO    orb60     ORB60 down: max 3 trades a day
+2026-11-13: 10 closed (2 won), 12 still open, net Rs -3841 after charges
+  orb15     2 trades, net Rs -408
+  orb30_2r  1 trades, net Rs -605
+  orb60     0 trades, net Rs +0
+  gap_go    3 trades, net Rs -1473
+  gap_fade  0 trades, net Rs +0
+  vwap      2 trades, net Rs -825
+  trap90    2 trades, net Rs -530
+  learner   0 trades, net Rs +0
