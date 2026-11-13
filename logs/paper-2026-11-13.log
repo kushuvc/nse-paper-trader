@@ -128,3 +128,10 @@ NSE's own daily file: latest saved is 2026-11-12
 10:30  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day
 10:30  SKIP  KOTAKBANK   orb60     ORB60 down: max 3 trades a day
 10:30  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day
+10:35  SKIP  BHARTIARTL  orb60     ORB60 up: max 3 trades a day
+10:35  SKIP  HCLTECH     orb60     ORB60 up: max 3 trades a day
+10:35  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day
+10:35  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day
+10:35  SKIP  TCS         orb60     ORB60 up: max 3 trades a day
+10:40  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day
+10:40  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day

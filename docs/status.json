@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 10:31 IST",
- "updated_ts": 1794546061,
+ "updated": "2026-11-13 10:41 IST",
+ "updated_ts": 1794546663,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -311,13 +311,6 @@
  ],
  "today_net": -1282.0,
  "log": [
-  "09:50  OPEN  ASIANPAINT  BUY     34 @ 2525.50  stop 2511.00  target 2554.50  [orb30_2r: ORB30 up]",
-  "09:50  SKIP  BAJAJ-AUTO  orb15     ORB15 up: max 3 trades a day",
-  "09:50  OPEN  BAJAJ-AUTO  BUY      5 @ 10919.00  stop 10819.00  target 11119.00  [orb30_2r: ORB30 up]",
-  "09:50  OPEN  BEL         BUY    121 @ 405.45  stop 401.35  target 413.55  [orb30_2r: ORB30 up]",
-  "09:50  SKIP  GRASIM      orb30_2r  ORB30 up: max 3 trades a day",
-  "09:50  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day",
-  "09:50  SKIP  ITC         orb15     ORB15 up: max 3 trades a day",
   "09:50  SKIP  ITC         orb30_2r  ORB30 up: max 3 trades a day",
   "09:50  SKIP  INDIGO      learner   via orb30_2r (expects +0.09R): already holding this stock",
   "09:50  SKIP  INDIGO      orb30_2r  ORB30 up: max 3 trades a day",
@@ -370,7 +363,14 @@
   "10:30  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day",
   "10:30  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day",
   "10:30  SKIP  KOTAKBANK   orb60     ORB60 down: max 3 trades a day",
-  "10:30  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day"
+  "10:30  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day",
+  "10:35  SKIP  BHARTIARTL  orb60     ORB60 up: max 3 trades a day",
+  "10:35  SKIP  HCLTECH     orb60     ORB60 up: max 3 trades a day",
+  "10:35  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day",
+  "10:35  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day",
+  "10:35  SKIP  TCS         orb60     ORB60 up: max 3 trades a day",
+  "10:40  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day",
+  "10:40  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 116,
  "all_wins": 65,
