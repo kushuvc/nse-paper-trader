@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-13 16:58 IST",
- "updated_ts": 1794569306,
+ "updated_ts": 1794569335,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -463,13 +463,6 @@
  ],
  "today_net": -6091.0,
  "log": [
-  "12:05  SKIP  INFY        orb60     ORB60 down: max 3 trades a day",
-  "12:10  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day",
-  "12:10  SKIP  HINDALCO    orb15     ORB15 down: max 3 trades a day",
-  "12:10  SKIP  ULTRACEMCO  orb15     ORB15 down: max 3 trades a day",
-  "12:10  SKIP  ULTRACEMCO  orb30_2r  ORB30 down: max 3 trades a day",
-  "12:10  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day",
-  "12:15  CLOSE COALINDIA   stop       @ 403.70  net Rs -417 [vwap] (charges 82)",
   "12:15  SKIP  HINDALCO    orb30_2r  ORB30 down: max 3 trades a day",
   "12:15  SKIP  HINDALCO    orb60     ORB60 down: max 3 trades a day",
   "12:20  SKIP  AXISBANK    vwap      VWAP loss: max 3 trades a day",
@@ -522,7 +515,14 @@
   "15:15  CLOSE INDIGO      square-off @ 5580.60  net Rs -23 [gap_fade] (charges 81)",
   "15:15  SKIP  NESTLEIND   vwap      VWAP reclaim: past square-off",
   "15:15  CLOSE SBILIFE     square-off @ 1787.70  net Rs +65 [orb60] (charges 71)",
-  "15:15  CLOSE SHRIRAMFIN  square-off @ 969.00  net Rs +487 [vwap] (charges 68)"
+  "15:15  CLOSE SHRIRAMFIN  square-off @ 969.00  net Rs +487 [vwap] (charges 68)",
+  "16:58  SKIP  AXISBANK    vwap      VWAP loss: past square-off",
+  "16:58  SKIP  BSE         vwap      VWAP reclaim: past square-off",
+  "16:58  SKIP  HINDUNILVR  vwap      VWAP reclaim: past square-off",
+  "16:58  SKIP  INDIGO      vwap      VWAP reclaim: past square-off",
+  "16:58  SKIP  JSWSTEEL    vwap      VWAP reclaim: past square-off",
+  "16:58  SKIP  TECHM       orb30_2r  ORB30 down: past square-off",
+  "16:58  SKIP  TECHM       orb60     ORB60 down: past square-off"
  ],
  "all_trades": 133,
  "all_wins": 69,
