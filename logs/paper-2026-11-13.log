@@ -202,3 +202,7 @@ NSE's own daily file: latest saved is 2026-11-12
 12:25  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day
 12:30  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day
 12:35  SKIP  ETERNAL     vwap      VWAP reclaim: max 3 trades a day
+12:40  SKIP  BAJFINANCE  vwap      VWAP reclaim: max 3 trades a day
+12:40  CLOSE BEL         stop       @ 401.35  net Rs -567 [orb30_2r] (charges 52)
+12:40  SKIP  MARUTI      vwap      VWAP reclaim: max 3 trades a day
+12:45  SKIP  BEL         orb60     ORB60 down: max 3 trades a day
