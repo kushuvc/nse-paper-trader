@@ -126,3 +126,9 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-13,ADANIPORTS,trap90,1,17,09:30,1926.4,1897.5,1929.3,13:45,1897.5,stop,-504.3,34.41,-538.71,-1.096,live,,
 2026-11-13,TATASTEEL,learner,1,259,09:50,188.28,186.35,192.05,13:45,186.35,stop,-519.28,51.39,-570.67,-1.142,live,orb30_2r,"long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market"
 2026-11-13,BAJFINANCE,gap_fade,1,44,09:30,1103.05,1091.7,1115.0,14:40,1115.0,target,506.28,51.8,454.48,0.91,live,,
+2026-11-13,BAJAJFINSV,orb60,-1,45,10:20,1862.2,1873.1,1851.3,15:15,1858.2,square-off,146.52,76.72,69.8,0.142,live,,
+2026-11-13,HINDUNILVR,orb60,1,40,10:25,1985.0,1972.5,1997.5,15:15,1976.3,square-off,-379.69,75.08,-454.77,-0.91,live,,
+2026-11-13,INDIGO,learner,1,17,09:30,5575.0,5547.05,5660.0,15:15,5580.6,square-off,57.27,80.63,-23.36,-0.049,live,gap_fade,"long, before 10:30, flat market, against gap, normal stop, after usual delivery, after a mixed market"
+2026-11-13,INDIGO,gap_fade,1,17,09:30,5575.0,5547.05,5660.0,15:15,5580.6,square-off,57.27,80.63,-23.36,-0.049,live,,
+2026-11-13,SBILIFE,orb60,-1,38,10:20,1792.0,1804.9,1779.15,15:15,1787.7,square-off,136.2,71.19,65.01,0.133,live,,
+2026-11-13,SHRIRAMFIN,vwap,-1,66,10:20,977.8,985.35,962.7,15:15,969.0,square-off,555.1,68.19,486.91,0.977,live,,
