@@ -166,3 +166,6 @@ NSE's own daily file: latest saved is 2026-11-12
 11:10  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day
 11:15  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day
 11:20  CLOSE ASIANPAINT  stop       @ 2511.00  net Rs -605 [orb30_2r] (charges 77)
+11:25  SKIP  BAJFINANCE  vwap      VWAP reclaim: max 3 trades a day
+11:25  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day
+11:25  SKIP  LT          vwap      VWAP reclaim: max 3 trades a day
