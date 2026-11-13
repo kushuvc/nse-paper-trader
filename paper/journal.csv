@@ -123,3 +123,5 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-13,BSE,orb15,1,15,09:35,3935.0,3902.8,3967.15,12:20,3902.8,stop,-506.51,62.28,-568.79,-1.178,live,,
 2026-11-13,BAJAJ-AUTO,orb30_2r,1,5,09:50,10919.0,10819.0,11119.0,12:20,10819.0,stop,-521.74,57.57,-579.31,-1.159,live,,
 2026-11-13,BEL,orb30_2r,1,121,09:50,405.45,401.35,413.55,12:40,401.35,stop,-515.62,51.71,-567.33,-1.144,live,,
+2026-11-13,ADANIPORTS,trap90,1,17,09:30,1926.4,1897.5,1929.3,13:45,1897.5,stop,-504.3,34.41,-538.71,-1.096,live,,
+2026-11-13,TATASTEEL,learner,1,259,09:50,188.28,186.35,192.05,13:45,186.35,stop,-519.28,51.39,-570.67,-1.142,live,orb30_2r,"long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market"

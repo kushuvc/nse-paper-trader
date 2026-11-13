@@ -215,3 +215,9 @@ NSE's own daily file: latest saved is 2026-11-12
 13:20  SKIP  MARUTI      vwap      VWAP reclaim: max 3 trades a day
 13:25  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day
 13:30  SKIP  ETERNAL     vwap      VWAP reclaim: max 3 trades a day
+13:40  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day
+13:40  SKIP  BSE         orb60     ORB60 up: max 3 trades a day
+13:45  CLOSE ADANIPORTS  stop       @ 1897.50  net Rs -539 [trap90] (charges 34)
+13:45  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day
+13:45  CLOSE TATASTEEL   stop       @ 186.35  net Rs -571 [learner] (charges 51)
+13:45  SKIP  TATASTEEL   orb60     ORB60 down: max 3 trades a day
