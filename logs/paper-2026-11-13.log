@@ -65,3 +65,25 @@ NSE's own daily file: latest saved is 2026-11-12
 09:40  SKIP  TCS         orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  ASIANPAINT  orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  GRASIM      orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day
+09:50  OPEN  ASIANPAINT  BUY     34 @ 2525.50  stop 2511.00  target 2554.50  [orb30_2r: ORB30 up]
+09:50  SKIP  BAJAJ-AUTO  orb15     ORB15 up: max 3 trades a day
+09:50  OPEN  BAJAJ-AUTO  BUY      5 @ 10919.00  stop 10819.00  target 11119.00  [orb30_2r: ORB30 up]
+09:50  OPEN  BEL         BUY    121 @ 405.45  stop 401.35  target 413.55  [orb30_2r: ORB30 up]
+09:50  SKIP  GRASIM      orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  ITC         orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  ITC         orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  INDIGO      learner   via orb30_2r (expects +0.09R): already holding this stock
+09:50  SKIP  INDIGO      orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  MARUTI      orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  MARUTI      orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  POWERGRID   orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day
+09:50  OPEN  TATASTEEL   BUY    259 @ 188.28  stop 186.35  target 192.05  [learner via orb30_2r, expects +0.09R: long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market]
+09:50  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day
