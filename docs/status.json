@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 13:26 IST",
- "updated_ts": 1794556574,
+ "updated": "2026-11-13 13:36 IST",
+ "updated_ts": 1794557176,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -383,7 +383,6 @@
  ],
  "today_net": -5556.0,
  "log": [
-  "11:05  SKIP  SBIN        vwap      VWAP loss: max 3 trades a day",
   "11:05  SKIP  TCS         vwap      VWAP loss: max 3 trades a day",
   "11:05  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day",
   "11:10  SKIP  JIOFIN      vwap      VWAP loss: max 3 trades a day",
@@ -442,7 +441,8 @@
   "13:10  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day",
   "13:20  SKIP  EICHERMOT   orb60     ORB60 up: max 3 trades a day",
   "13:20  SKIP  MARUTI      vwap      VWAP reclaim: max 3 trades a day",
-  "13:25  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day"
+  "13:25  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day",
+  "13:30  SKIP  ETERNAL     vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 124,
  "all_wins": 65,
