@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 10:51 IST",
- "updated_ts": 1794547264,
+ "updated": "2026-11-13 11:01 IST",
+ "updated_ts": 1794547866,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -320,8 +320,6 @@
  ],
  "today_net": -1690.0,
  "log": [
-  "09:50  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day",
-  "09:50  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day",
   "09:50  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day",
   "09:55  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day",
   "09:55  SKIP  NESTLEIND   orb15     ORB15 up: max 3 trades a day",
@@ -379,7 +377,9 @@
   "10:50  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day",
   "10:50  SKIP  BAJFINANCE  vwap      VWAP reclaim: max 3 trades a day",
   "10:50  CLOSE HINDALCO    stop       @ 956.00  net Rs -408 [vwap] (charges 82)",
-  "10:50  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day"
+  "10:50  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day",
+  "11:00  SKIP  BEL         vwap      VWAP loss: max 3 trades a day",
+  "11:00  SKIP  ULTRACEMCO  vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 117,
  "all_wins": 65,
