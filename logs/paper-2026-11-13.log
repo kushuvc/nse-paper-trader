@@ -87,3 +87,15 @@ NSE's own daily file: latest saved is 2026-11-12
 09:50  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day
 09:50  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day
 09:50  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  NESTLEIND   orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  NESTLEIND   orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  BAJFINANCE  orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  EICHERMOT   orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  ETERNAL     orb15     ORB15 up: max 3 trades a day
+10:00  SKIP  ETERNAL     orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  SBILIFE     orb15     ORB15 down: max 3 trades a day
+10:00  SKIP  SBILIFE     orb30_2r  ORB30 down: max 3 trades a day
+10:00  CLOSE SHRIRAMFIN  stop       @ 986.60  net Rs -609 [gap_go] (charges 78)
+10:00  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day
+10:00  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day

@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 09:50 IST",
- "updated_ts": 1794543655,
+ "updated": "2026-11-13 10:00 IST",
+ "updated_ts": 1794544256,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -70,17 +70,6 @@
    "target": 5660.0,
    "entry_time": "09:30",
    "note": "gap -1.7% fading"
-  },
-  "gap_go|SHRIRAMFIN": {
-   "strategy": "gap_go",
-   "symbol": "SHRIRAMFIN",
-   "side": -1,
-   "qty": 88,
-   "entry": 980.95,
-   "stop": 986.6,
-   "target": 969.65,
-   "entry_time": "09:30",
-   "note": "gap -1.7% and go"
   },
   "orb15|BSE": {
    "strategy": "orb15",
@@ -223,22 +212,30 @@
    "net": -359.97,
    "r": -1.469,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_go",
+   "symbol": "SHRIRAMFIN",
+   "side": -1,
+   "qty": 88,
+   "entry": 980.95,
+   "stop": 986.6,
+   "target": 969.65,
+   "entry_time": "09:30",
+   "note": "gap -1.7% and go",
+   "date": "2026-11-13",
+   "exit": 986.6,
+   "exit_time": "10:00",
+   "reason": "stop",
+   "gross": -531.83,
+   "charges": 77.65,
+   "net": -609.48,
+   "r": -1.226,
+   "mode": "live"
   }
  ],
- "today_net": -852.0,
+ "today_net": -1461.0,
  "log": [
-  "09:30  SKIP  JSWSTEEL    trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  OPEN  JIOFIN      SHORT  438 @ 228.03  stop 228.90  target 226.35  [gap_go: gap -1.0% and go]",
-  "09:30  SKIP  KOTAKBANK   trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  OPEN  MARUTI      SHORT    7 @ 12854.00  stop 12889.00  target 12784.00  [gap_go: gap -1.0% and go]",
-  "09:30  SKIP  NTPC        trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  NESTLEIND   trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  ONGC        trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  POWERGRID   trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  RELIANCE    trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  SBILIFE     trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  OPEN  SHRIRAMFIN  SHORT   88 @ 980.95  stop 986.60  target 969.65  [gap_go: gap -1.7% and go]",
-  "09:30  SKIP  SUNPHARMA   trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  TATACONSUM  trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  TATASTEEL   trap90    tiny target, wide stop: max 3 trades a day",
   "09:35  OPEN  BSE         BUY     15 @ 3935.00  stop 3902.80  target 3967.15  [orb15: ORB15 up]",
@@ -286,12 +283,45 @@
   "09:50  OPEN  TATASTEEL   BUY    259 @ 188.28  stop 186.35  target 192.05  [learner via orb30_2r, expects +0.09R: long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market]",
   "09:50  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day",
   "09:50  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day",
-  "09:50  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day"
+  "09:50  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day",
+  "09:55  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day",
+  "09:55  SKIP  NESTLEIND   orb15     ORB15 up: max 3 trades a day",
+  "09:55  SKIP  NESTLEIND   orb30_2r  ORB30 up: max 3 trades a day",
+  "10:00  SKIP  BAJFINANCE  orb30_2r  ORB30 up: max 3 trades a day",
+  "10:00  SKIP  EICHERMOT   orb30_2r  ORB30 up: max 3 trades a day",
+  "10:00  SKIP  ETERNAL     orb15     ORB15 up: max 3 trades a day",
+  "10:00  SKIP  ETERNAL     orb30_2r  ORB30 up: max 3 trades a day",
+  "10:00  SKIP  SBILIFE     orb15     ORB15 down: max 3 trades a day",
+  "10:00  SKIP  SBILIFE     orb30_2r  ORB30 down: max 3 trades a day",
+  "10:00  CLOSE SHRIRAMFIN  stop       @ 986.60  net Rs -609 [gap_go] (charges 78)",
+  "10:00  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day",
+  "10:00  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day"
  ],
- "all_trades": 114,
+ "all_trades": 115,
  "all_wins": 64,
- "all_net": -1514.0,
+ "all_net": -2124.0,
  "recent": [
+  {
+   "date": "2026-11-13",
+   "symbol": "SHRIRAMFIN",
+   "strategy": "gap_go",
+   "side": "-1",
+   "qty": "88",
+   "entry_time": "09:30",
+   "entry": "980.95",
+   "stop": "986.6",
+   "target": "969.65",
+   "exit_time": "10:00",
+   "exit": "986.6",
+   "reason": "stop",
+   "gross": "-531.83",
+   "charges": "77.65",
+   "net": "-609.48",
+   "r": "-1.226",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-13",
    "symbol": "MARUTI",
@@ -795,27 +825,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-11",
-   "symbol": "TRENT",
-   "strategy": "orb60",
-   "side": "1",
-   "qty": "11",
-   "entry_time": "10:20",
-   "entry": "3208.8",
-   "stop": "3165.5",
-   "target": "3252.05",
-   "exit_time": "15:15",
-   "exit": "3199.1",
-   "reason": "square-off",
-   "gross": "-120.8",
-   "charges": "37.36",
-   "net": "-158.16",
-   "r": "-0.332",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -824,7 +833,7 @@
   "2026-11-09": -99.0,
   "2026-11-11": -341.0,
   "2026-11-12": -3681.0,
-  "2026-11-13": -852.0
+  "2026-11-13": -1461.0
  },
  "by_strategy": {
   "orb15": {
@@ -856,12 +865,12 @@
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
-   "today_trades": 2,
-   "today_net": -863,
-   "open": 1,
-   "all_trades": 16,
+   "today_trades": 3,
+   "today_net": -1473,
+   "open": 0,
+   "all_trades": 17,
    "all_wins": 7,
-   "all_net": 424
+   "all_net": -185
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
@@ -1081,12 +1090,12 @@
    },
    "gap_go": {
     "days": 6,
-    "trades": 16,
-    "net": 424,
-    "per_trade": 27,
-    "t": -0.33,
+    "trades": 17,
+    "net": -185,
+    "per_trade": -11,
+    "t": -0.52,
     "drawdown": -2014,
-    "passed": 2,
+    "passed": 1,
     "of": 7,
     "ready": false,
     "checks": [
@@ -1100,25 +1109,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "16 of 150 trades"
+      "now": "17 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
-      "ok": true,
-      "now": "Rs +27 a trade"
+      "ok": false,
+      "now": "Rs -11 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.33"
+      "now": "t = -0.52"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1330 then Rs +1754"
+      "now": "Rs -1330 then Rs +1145"
      },
      {
       "id": "drawdown",
