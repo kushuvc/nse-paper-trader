@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 14:26 IST",
- "updated_ts": 1794560184,
+ "updated": "2026-11-13 14:36 IST",
+ "updated_ts": 1794560786,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -401,9 +401,6 @@
  ],
  "today_net": -6666.0,
  "log": [
-  "11:45  SKIP  ASIANPAINT  orb60     ORB60 down: max 3 trades a day",
-  "11:45  SKIP  POWERGRID   orb30_2r  ORB30 down: max 3 trades a day",
-  "11:45  SKIP  POWERGRID   orb60     ORB60 down: max 3 trades a day",
   "11:50  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day",
   "11:50  SKIP  TMPV        orb15     ORB15 down: max 3 trades a day",
   "11:50  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day",
@@ -460,7 +457,10 @@
   "14:00  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day",
   "14:05  SKIP  AXISBANK    vwap      VWAP loss: max 3 trades a day",
   "14:20  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day",
-  "14:20  SKIP  JIOFIN      orb60     ORB60 down: max 3 trades a day"
+  "14:20  SKIP  JIOFIN      orb60     ORB60 down: max 3 trades a day",
+  "14:30  SKIP  BAJFINANCE  orb60     ORB60 up: max 3 trades a day",
+  "14:35  SKIP  HINDUNILVR  vwap      VWAP reclaim: after 14:30",
+  "14:35  SKIP  NESTLEIND   vwap      VWAP reclaim: after 14:30"
  ],
  "all_trades": 126,
  "all_wins": 65,
