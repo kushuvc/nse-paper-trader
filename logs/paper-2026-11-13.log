@@ -135,3 +135,12 @@ NSE's own daily file: latest saved is 2026-11-12
 10:35  SKIP  TCS         orb60     ORB60 up: max 3 trades a day
 10:40  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day
 10:40  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day
+10:45  SKIP  MARUTI      orb60     ORB60 up: max 3 trades a day
+10:45  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day
+10:50  SKIP  AXISBANK    orb15     ORB15 up: max 3 trades a day
+10:50  SKIP  AXISBANK    orb30_2r  ORB30 up: max 3 trades a day
+10:50  SKIP  AXISBANK    orb60     ORB60 up: max 3 trades a day
+10:50  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day
+10:50  SKIP  BAJFINANCE  vwap      VWAP reclaim: max 3 trades a day
+10:50  CLOSE HINDALCO    stop       @ 956.00  net Rs -408 [vwap] (charges 82)
+10:50  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day
