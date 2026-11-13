@@ -110,3 +110,6 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-12,HINDALCO,learner,1,34,09:55,968.15,953.7,997.05,15:15,965.4,square-off,-106.65,34.85,-141.5,-0.288,live,orb30_2r,"long, before 10:30, with market, no gap, wide stop, after usual delivery, with yesterday's market"
 2026-11-12,LT,vwap,-1,23,10:20,4194.6,4213.75,4156.4,15:15,4165.8,square-off,623.95,81.15,542.8,1.232,live,,
 2026-11-12,NTPC,orb30_2r,-1,166,09:50,324.05,327.05,318.05,15:15,322.65,square-off,210.93,56.94,153.99,0.309,live,,
+2026-11-13,APOLLOHOSP,trap90,1,3,09:30,8588.5,8459.65,8601.4,09:40,8605.0,target,39.18,27.35,11.83,0.031,live,,
+2026-11-13,JIOFIN,gap_go,-1,438,09:30,228.03,228.9,226.35,09:40,228.9,stop,-421.09,82.42,-503.51,-1.321,live,,
+2026-11-13,MARUTI,gap_go,-1,7,09:30,12854.0,12889.0,12784.0,09:40,12889.0,stop,-281.04,78.93,-359.97,-1.469,live,,

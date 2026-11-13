@@ -41,3 +41,27 @@ NSE's own daily file: latest saved is 2026-11-12
 09:30  SKIP  SUNPHARMA   trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  TATACONSUM  trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  TATASTEEL   trap90    tiny target, wide stop: max 3 trades a day
+09:35  OPEN  BSE         BUY     15 @ 3935.00  stop 3902.80  target 3967.15  [orb15: ORB15 up]
+09:35  OPEN  BAJFINANCE  BUY     59 @ 1107.10  stop 1098.75  target 1115.45  [orb15: ORB15 up]
+09:35  OPEN  BHARTIARTL  BUY     47 @ 2093.90  stop 2087.50  target 2100.30  [orb15: ORB15 up]
+09:35  SKIP  COALINDIA   orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  DRREDDY     orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  EICHERMOT   orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  HCLTECH     orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  HDFCLIFE    orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  HINDUNILVR  orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  INFY        orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  JSWSTEEL    orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day
+09:40  CLOSE APOLLOHOSP  target     @ 8605.00  net Rs +12 [trap90] (charges 27)
+09:40  SKIP  APOLLOHOSP  orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  BEL         orb15     ORB15 up: max 3 trades a day
+09:40  CLOSE JIOFIN      stop       @ 228.90  net Rs -504 [gap_go] (charges 82)
+09:40  SKIP  LT          orb15     ORB15 up: max 3 trades a day
+09:40  CLOSE MARUTI      stop       @ 12889.00  net Rs -360 [gap_go] (charges 79)
+09:40  SKIP  SBIN        orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  TCS         orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day
