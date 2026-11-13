@@ -6,3 +6,38 @@ Latest day, 2026-11-12: 1536 of 2748 shares rose (56.9%), Nifty 50 25,299 (+0.18
 PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
 Learner: model from 64 days of history
 NSE's own daily file: latest saved is 2026-11-12
+09:30  OPEN  ADANIENT    BUY     12 @ 2744.00  stop 2702.80  target 2748.10  [trap90: tiny target, wide stop]
+09:30  OPEN  ADANIPORTS  BUY     17 @ 1926.40  stop 1897.50  target 1929.30  [trap90: tiny target, wide stop]
+09:30  OPEN  APOLLOHOSP  BUY      3 @ 8588.50  stop 8459.65  target 8601.40  [trap90: tiny target, wide stop]
+09:30  SKIP  ASIANPAINT  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  BSE         trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  BAJFINANCE  BUY     44 @ 1103.05  stop 1091.70  target 1115.00  [gap_fade: gap -1.6% fading]
+09:30  SKIP  BAJFINANCE  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  BHARTIARTL  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  CIPLA       trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  COALINDIA   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  DRREDDY     trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  EICHERMOT   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ETERNAL     trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  GRASIM      trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  HINDUNILVR  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ICICIBANK   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ITC         trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  INFY        trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  INDIGO      BUY     17 @ 5575.00  stop 5547.05  target 5660.00  [learner via gap_fade, expects +0.07R: long, before 10:30, flat market, against gap, normal stop, after usual delivery, after a mixed market]
+09:30  OPEN  INDIGO      BUY     17 @ 5575.00  stop 5547.05  target 5660.00  [gap_fade: gap -1.7% fading]
+09:30  SKIP  INDIGO      trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  JSWSTEEL    trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  JIOFIN      SHORT  438 @ 228.03  stop 228.90  target 226.35  [gap_go: gap -1.0% and go]
+09:30  SKIP  KOTAKBANK   trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  MARUTI      SHORT    7 @ 12854.00  stop 12889.00  target 12784.00  [gap_go: gap -1.0% and go]
+09:30  SKIP  NTPC        trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  NESTLEIND   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ONGC        trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  POWERGRID   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  RELIANCE    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  SBILIFE     trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  SHRIRAMFIN  SHORT   88 @ 980.95  stop 986.60  target 969.65  [gap_go: gap -1.7% and go]
+09:30  SKIP  SUNPHARMA   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  TATACONSUM  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  TATASTEEL   trap90    tiny target, wide stop: max 3 trades a day
