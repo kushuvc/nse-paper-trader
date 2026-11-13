@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13 11:31 IST",
- "updated_ts": 1794549670,
+ "updated": "2026-11-13 11:41 IST",
+ "updated_ts": 1794550271,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -329,7 +329,6 @@
  ],
  "today_net": -2294.0,
  "log": [
-  "10:10  SKIP  ONGC        orb30_2r  ORB30 up: max 3 trades a day",
   "10:15  CLOSE BHARTIARTL  target     @ 2100.30  net Rs +179 [orb15] (charges 82)",
   "10:20  SKIP  BAJAJFINSV  orb15     ORB15 down: max 3 trades a day",
   "10:20  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day",
@@ -388,7 +387,8 @@
   "11:20  CLOSE ASIANPAINT  stop       @ 2511.00  net Rs -605 [orb30_2r] (charges 77)",
   "11:25  SKIP  BAJFINANCE  vwap      VWAP reclaim: max 3 trades a day",
   "11:25  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
-  "11:25  SKIP  LT          vwap      VWAP reclaim: max 3 trades a day"
+  "11:25  SKIP  LT          vwap      VWAP reclaim: max 3 trades a day",
+  "11:40  SKIP  JIOFIN      vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 118,
  "all_wins": 65,
