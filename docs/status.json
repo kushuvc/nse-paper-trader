@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 11:11 IST",
- "updated_ts": 1794807685,
+ "updated": "2026-11-16 11:21 IST",
+ "updated_ts": 1794808286,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -301,14 +301,6 @@
  ],
  "today_net": -729.0,
  "log": [
-  "10:20  SKIP  EICHERMOT   orb30_2r  ORB30 down: max 3 trades a day",
-  "10:20  OPEN  EICHERMOT   SHORT    3 @ 7630.00  stop 7788.75  target 7471.25  [orb60: ORB60 down]",
-  "10:20  OPEN  ITC         BUY    108 @ 293.00  stop 288.40  target 297.55  [orb60: ORB60 up]",
-  "10:20  OPEN  JIOFIN      SHORT  439 @ 227.50  stop 228.25  target 226.00  [vwap: VWAP loss]",
-  "10:20  SKIP  M&M         orb15     ORB15 down: max 3 trades a day",
-  "10:20  SKIP  M&M         orb30_2r  ORB30 down: max 3 trades a day",
-  "10:20  SKIP  TATASTEEL   orb15     ORB15 down: max 3 trades a day",
-  "10:20  SKIP  TATASTEEL   orb30_2r  ORB30 down: max 3 trades a day",
   "10:20  SKIP  TATASTEEL   orb60     ORB60 down: max 3 trades a day",
   "10:20  OPEN  TRENT       BUY     27 @ 3190.60  stop 3172.60  target 3226.60  [vwap: VWAP reclaim]",
   "10:25  SKIP  ADANIPORTS  orb15     ORB15 down: max 3 trades a day",
@@ -360,7 +352,15 @@
   "10:55  SKIP  BEL         orb60     ORB60 down: max 3 trades a day",
   "11:00  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day",
   "11:00  CLOSE TRENT       stop       @ 3172.60  net Rs -598 [vwap] (charges 77)",
-  "11:05  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day"
+  "11:05  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day",
+  "11:15  SKIP  CIPLA       orb60     ORB60 down: max 3 trades a day",
+  "11:15  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day",
+  "11:15  SKIP  TMPV        orb15     ORB15 down: max 3 trades a day",
+  "11:15  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day",
+  "11:15  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day",
+  "11:20  SKIP  ETERNAL     vwap      VWAP reclaim: max 3 trades a day",
+  "11:20  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day",
+  "11:20  SKIP  SUNPHARMA   orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 139,
  "all_wins": 73,
