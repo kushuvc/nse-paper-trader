@@ -28,3 +28,23 @@ NSE's own daily file: latest saved is 2026-11-13
 09:30  SKIP  TITAN       trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  TRENT       trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  ULTRACEMCO  trap90    tiny target, wide stop: max 3 trades a day
+09:35  CLOSE APOLLOHOSP  target     @ 8632.45  net Rs +1 [trap90] (charges 27)
+09:35  OPEN  APOLLOHOSP  BUY      9 @ 8647.00  stop 8594.75  target 8699.25  [orb15: ORB15 up]
+09:35  CLOSE ASIANPAINT  target     @ 2596.50  net Rs +1 [trap90] (charges 33)
+09:35  CLOSE BSE         target     @ 3951.00  net Rs +1 [trap90] (charges 34)
+09:35  OPEN  BAJAJ-AUTO  BUY      9 @ 10850.00  stop 10808.00  target 10892.00  [orb15: ORB15 up]
+09:35  OPEN  BHARTIARTL  BUY     20 @ 2163.50  stop 2139.30  target 2187.65  [orb15: ORB15 up]
+09:35  SKIP  CIPLA       orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  DRREDDY     orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  EICHERMOT   orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  ETERNAL     orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  GRASIM      orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  ITC         orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  MAXHEALTH   orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  TITAN       orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  INDIGO      orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  KOTAKBANK   orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day
