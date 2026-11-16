@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 12:46 IST",
- "updated_ts": 1794813367,
+ "updated": "2026-11-16 12:56 IST",
+ "updated_ts": 1794813969,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -103,17 +103,6 @@
    "target": 2639.65,
    "entry_time": "10:20",
    "note": "ORB60 down"
-  },
-  "vwap|BHARTIARTL": {
-   "strategy": "vwap",
-   "symbol": "BHARTIARTL",
-   "side": 1,
-   "qty": 43,
-   "entry": 2159.3,
-   "stop": 2147.85,
-   "target": 2182.1,
-   "entry_time": "10:20",
-   "note": "VWAP reclaim"
   },
   "learner|EICHERMOT": {
    "strategy": "learner",
@@ -306,14 +295,30 @@
    "net": 536.33,
    "r": 1.629,
    "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "BHARTIARTL",
+   "side": 1,
+   "qty": 43,
+   "entry": 2159.3,
+   "stop": 2147.85,
+   "target": 2182.1,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim",
+   "date": "2026-11-16",
+   "exit": 2147.85,
+   "exit_time": "12:55",
+   "reason": "stop",
+   "gross": -529.39,
+   "charges": 79.78,
+   "net": -609.17,
+   "r": -1.237,
+   "mode": "live"
   }
  ],
- "today_net": -192.0,
+ "today_net": -801.0,
  "log": [
-  "10:40  SKIP  INFY        orb60     ORB60 down: max 3 trades a day",
-  "10:40  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
-  "10:50  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 down: max 3 trades a day",
-  "10:50  SKIP  BAJAJ-AUTO  orb60     ORB60 down: max 3 trades a day",
   "10:50  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day",
   "10:50  SKIP  MARUTI      orb15     ORB15 down: max 3 trades a day",
   "10:50  SKIP  MARUTI      orb30_2r  ORB30 down: max 3 trades a day",
@@ -369,12 +374,37 @@
   "12:25  SKIP  HINDALCO    vwap      VWAP loss: max 3 trades a day",
   "12:45  SKIP  HCLTECH     orb15     ORB15 down: max 3 trades a day",
   "12:45  SKIP  HCLTECH     orb30_2r  ORB30 down: max 3 trades a day",
-  "12:45  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day"
+  "12:45  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day",
+  "12:50  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day",
+  "12:50  SKIP  RELIANCE    vwap      VWAP reclaim: max 3 trades a day",
+  "12:55  CLOSE BHARTIARTL  stop       @ 2147.85  net Rs -609 [vwap] (charges 80)",
+  "12:55  SKIP  TITAN       vwap      VWAP reclaim: max 3 trades a day"
  ],
- "all_trades": 140,
+ "all_trades": 141,
  "all_wins": 74,
- "all_net": -6946.0,
+ "all_net": -7555.0,
  "recent": [
+  {
+   "date": "2026-11-16",
+   "symbol": "BHARTIARTL",
+   "strategy": "vwap",
+   "side": "1",
+   "qty": "43",
+   "entry_time": "10:20",
+   "entry": "2159.3",
+   "stop": "2147.85",
+   "target": "2182.1",
+   "exit_time": "12:55",
+   "exit": "2147.85",
+   "reason": "stop",
+   "gross": "-529.39",
+   "charges": "79.78",
+   "net": "-609.17",
+   "r": "-1.237",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-16",
    "symbol": "JIOFIN",
@@ -878,27 +908,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-13",
-   "symbol": "BHARTIARTL",
-   "strategy": "orb15",
-   "side": "1",
-   "qty": "47",
-   "entry_time": "09:35",
-   "entry": "2093.9",
-   "stop": "2087.5",
-   "target": "2100.3",
-   "exit_time": "10:15",
-   "exit": "2100.3",
-   "reason": "target",
-   "gross": "261.37",
-   "charges": "81.97",
-   "net": "179.4",
-   "r": "0.596",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -908,7 +917,7 @@
   "2026-11-11": -341.0,
   "2026-11-12": -3681.0,
   "2026-11-13": -6092.0,
-  "2026-11-16": -193.0
+  "2026-11-16": -802.0
  },
  "by_strategy": {
   "orb15": {
@@ -958,12 +967,12 @@
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 2,
-   "today_net": -61,
-   "open": 1,
-   "all_trades": 20,
+   "today_trades": 3,
+   "today_net": -671,
+   "open": 0,
+   "all_trades": 21,
    "all_wins": 9,
-   "all_net": -1495
+   "all_net": -2104
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
@@ -1275,11 +1284,11 @@
    },
    "vwap": {
     "days": 7,
-    "trades": 20,
-    "net": -1495,
-    "per_trade": -75,
-    "t": -0.31,
-    "drawdown": -2092,
+    "trades": 21,
+    "net": -2104,
+    "per_trade": -100,
+    "t": -0.51,
+    "drawdown": -2165,
     "passed": 1,
     "of": 7,
     "ready": false,
@@ -1294,31 +1303,31 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "20 of 150 trades"
+      "now": "21 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -75 a trade"
+      "now": "Rs -100 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.31"
+      "now": "t = -0.51"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -699 then Rs -795"
+      "now": "Rs -699 then Rs -1404"
      },
      {
       "id": "drawdown",
       "need": "Worst losing run under Rs 10,000",
       "ok": true,
-      "now": "Rs -2092"
+      "now": "Rs -2165"
      },
      {
       "id": "history",

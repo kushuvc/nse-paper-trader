@@ -192,3 +192,7 @@ NSE's own daily file: latest saved is 2026-11-13
 12:45  SKIP  HCLTECH     orb15     ORB15 down: max 3 trades a day
 12:45  SKIP  HCLTECH     orb30_2r  ORB30 down: max 3 trades a day
 12:45  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day
+12:50  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day
+12:50  SKIP  RELIANCE    vwap      VWAP reclaim: max 3 trades a day
+12:55  CLOSE BHARTIARTL  stop       @ 2147.85  net Rs -609 [vwap] (charges 80)
+12:55  SKIP  TITAN       vwap      VWAP reclaim: max 3 trades a day
