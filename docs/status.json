@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 14:26 IST",
- "updated_ts": 1794819384,
+ "updated": "2026-11-16 14:36 IST",
+ "updated_ts": 1794819986,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -328,8 +328,6 @@
  ],
  "today_net": -1399.0,
  "log": [
-  "11:25  SKIP  COALINDIA   orb30_2r  ORB30 down: max 3 trades a day",
-  "11:25  SKIP  COALINDIA   orb60     ORB60 down: max 3 trades a day",
   "11:25  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day",
   "11:25  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day",
   "11:25  CLOSE JIOFIN      target     @ 226.00  net Rs +536 [vwap] (charges 82)",
@@ -387,7 +385,9 @@
   "14:10  SKIP  ASIANPAINT  orb30_2r  ORB30 down: max 3 trades a day",
   "14:10  SKIP  ASIANPAINT  orb60     ORB60 down: max 3 trades a day",
   "14:20  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day",
-  "14:25  SKIP  TATACONSUM  vwap      VWAP reclaim: max 3 trades a day"
+  "14:25  SKIP  TATACONSUM  vwap      VWAP reclaim: max 3 trades a day",
+  "14:30  SKIP  HDFCLIFE    vwap      VWAP reclaim: max 3 trades a day",
+  "14:35  SKIP  HINDUNILVR  orb60     ORB60 up: after 14:30"
  ],
  "all_trades": 142,
  "all_wins": 74,
