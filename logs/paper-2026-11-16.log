@@ -210,3 +210,7 @@ NSE's own daily file: latest saved is 2026-11-13
 13:55  SKIP  COALINDIA   vwap      VWAP loss: max 3 trades a day
 13:55  SKIP  RELIANCE    vwap      VWAP loss: max 3 trades a day
 14:05  CLOSE ASIANPAINT  stop       @ 2577.85  net Rs -598 [gap_go] (charges 77)
+14:10  SKIP  ASIANPAINT  orb15     ORB15 down: max 3 trades a day
+14:10  SKIP  ASIANPAINT  learner   via orb30_2r (expects +0.06R): max 3 trades a day
+14:10  SKIP  ASIANPAINT  orb30_2r  ORB30 down: max 3 trades a day
+14:10  SKIP  ASIANPAINT  orb60     ORB60 down: max 3 trades a day
