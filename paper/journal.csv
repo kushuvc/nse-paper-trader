@@ -141,3 +141,14 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-16,JIOFIN,vwap,-1,439,10:20,227.5,228.25,226.0,11:25,226.0,target,618.68,82.35,536.33,1.629,live,,
 2026-11-16,BHARTIARTL,vwap,1,43,10:20,2159.3,2147.85,2182.1,12:55,2147.85,stop,-529.39,79.78,-609.17,-1.237,live,,
 2026-11-16,ASIANPAINT,gap_go,1,33,09:30,2592.6,2577.85,2622.0,14:05,2577.85,stop,-520.87,77.21,-598.08,-1.229,live,,
+2026-11-16,ADANIENT,orb60,-1,26,10:20,2658.5,2677.35,2639.65,15:15,2656.0,square-off,37.36,71.55,-34.19,-0.07,live,,
+2026-11-16,BHARTIARTL,orb15,1,20,09:35,2163.5,2139.3,2187.65,15:15,2147.5,square-off,-337.24,45.68,-382.92,-0.791,live,,
+2026-11-16,BHARTIARTL,orb30_2r,1,10,09:50,2170.6,2123.0,2265.8,15:15,2147.5,square-off,-239.64,22.87,-262.51,-0.551,live,,
+2026-11-16,EICHERMOT,learner,-1,1,10:20,7630.0,7927.0,7036.0,15:15,7550.0,square-off,76.96,8.06,68.9,0.232,live,orb30_2r,"short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market"
+2026-11-16,EICHERMOT,orb60,-1,3,10:20,7630.0,7788.75,7471.25,15:15,7550.0,square-off,230.89,24.17,206.72,0.434,live,,
+2026-11-16,GRASIM,orb30_2r,1,10,09:50,3060.0,3012.3,3155.4,15:15,3076.1,square-off,148.73,32.55,116.18,0.244,live,,
+2026-11-16,ITC,orb60,1,108,10:20,293.0,288.4,297.55,15:15,294.55,square-off,154.71,33.66,121.05,0.244,live,,
+2026-11-16,KOTAKBANK,orb30_2r,1,97,09:50,495.75,490.6,506.05,15:15,492.9,square-off,-295.63,50.82,-346.45,-0.694,live,,
+2026-11-16,TCS,learner,-1,12,10:30,2408.0,2449.65,2324.8,15:15,2399.0,square-off,96.46,30.6,65.86,0.132,live,orb30_2r,"short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market"
+2026-11-16,TMPV,gap_go,-1,125,09:30,266.55,270.55,258.55,15:15,261.95,square-off,561.79,35.09,526.7,1.053,live,,
+2026-11-16,TITAN,learner,-1,10,10:10,4870.5,4919.5,4772.5,15:15,4896.9,square-off,-283.53,51.76,-335.29,-0.684,live,orb30_2r,"short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market"

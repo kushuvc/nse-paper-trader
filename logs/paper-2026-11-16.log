@@ -220,3 +220,14 @@ NSE's own daily file: latest saved is 2026-11-13
 14:35  SKIP  HINDUNILVR  orb60     ORB60 up: after 14:30
 14:55  SKIP  ETERNAL     vwap      VWAP reclaim: after 14:30
 15:00  SKIP  SHRIRAMFIN  vwap      VWAP loss: after 14:30
+15:15  CLOSE ADANIENT    square-off @ 2656.00  net Rs -34 [orb60] (charges 72)
+15:15  CLOSE BHARTIARTL  square-off @ 2147.50  net Rs -383 [orb15] (charges 46)
+15:15  CLOSE BHARTIARTL  square-off @ 2147.50  net Rs -263 [orb30_2r] (charges 23)
+15:15  CLOSE EICHERMOT   square-off @ 7550.00  net Rs +69 [learner] (charges 8)
+15:15  CLOSE EICHERMOT   square-off @ 7550.00  net Rs +207 [orb60] (charges 24)
+15:15  CLOSE GRASIM      square-off @ 3076.10  net Rs +116 [orb30_2r] (charges 33)
+15:15  CLOSE ITC         square-off @ 294.55  net Rs +121 [orb60] (charges 34)
+15:15  CLOSE KOTAKBANK   square-off @ 492.90  net Rs -346 [orb30_2r] (charges 51)
+15:15  CLOSE TCS         square-off @ 2399.00  net Rs +66 [learner] (charges 31)
+15:15  CLOSE TMPV        square-off @ 261.95  net Rs +527 [gap_go] (charges 35)
+15:15  CLOSE TITAN       square-off @ 4896.90  net Rs -335 [learner] (charges 52)
