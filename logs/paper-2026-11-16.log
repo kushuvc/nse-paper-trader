@@ -149,3 +149,18 @@ NSE's own daily file: latest saved is 2026-11-13
 11:20  SKIP  ETERNAL     vwap      VWAP reclaim: max 3 trades a day
 11:20  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day
 11:20  SKIP  SUNPHARMA   orb60     ORB60 down: max 3 trades a day
+11:25  SKIP  COALINDIA   orb15     ORB15 down: max 3 trades a day
+11:25  SKIP  COALINDIA   orb30_2r  ORB30 down: max 3 trades a day
+11:25  SKIP  COALINDIA   orb60     ORB60 down: max 3 trades a day
+11:25  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day
+11:25  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day
+11:25  CLOSE JIOFIN      target     @ 226.00  net Rs +536 [vwap] (charges 82)
+11:25  SKIP  JIOFIN      orb15     ORB15 down: max 3 trades a day
+11:25  SKIP  JIOFIN      orb30_2r  ORB30 down: max 3 trades a day
+11:25  SKIP  JIOFIN      orb60     ORB60 down: max 3 trades a day
+11:25  SKIP  ONGC        orb15     ORB15 down: max 3 trades a day
+11:25  SKIP  ONGC        orb30_2r  ORB30 down: max 3 trades a day
+11:25  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day
+11:30  SKIP  TECHM       orb15     ORB15 down: max 3 trades a day
+11:30  SKIP  TECHM       orb30_2r  ORB30 down: max 3 trades a day
+11:30  SKIP  TECHM       orb60     ORB60 down: max 3 trades a day
