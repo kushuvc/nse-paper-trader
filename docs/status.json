@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 17:28 IST",
- "updated_ts": 1794830326,
+ "updated": "2026-11-16 17:29 IST",
+ "updated_ts": 1794830349,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -426,8 +426,6 @@
  ],
  "today_net": -1655.0,
  "log": [
-  "11:35  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day",
-  "11:35  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
   "11:40  SKIP  AXISBANK    orb15     ORB15 down: max 3 trades a day",
   "11:40  SKIP  AXISBANK    orb30_2r  ORB30 down: max 3 trades a day",
   "11:40  SKIP  AXISBANK    orb60     ORB60 down: max 3 trades a day",
@@ -485,7 +483,9 @@
   "15:15  CLOSE KOTAKBANK   square-off @ 492.90  net Rs -346 [orb30_2r] (charges 51)",
   "15:15  CLOSE TCS         square-off @ 2399.00  net Rs +66 [learner] (charges 31)",
   "15:15  CLOSE TMPV        square-off @ 261.95  net Rs +527 [gap_go] (charges 35)",
-  "15:15  CLOSE TITAN       square-off @ 4896.90  net Rs -335 [learner] (charges 52)"
+  "15:15  CLOSE TITAN       square-off @ 4896.90  net Rs -335 [learner] (charges 52)",
+  "17:28  SKIP  AXISBANK    vwap      VWAP reclaim: past square-off",
+  "17:28  SKIP  KOTAKBANK   vwap      VWAP reclaim: past square-off"
  ],
  "all_trades": 153,
  "all_wins": 80,
