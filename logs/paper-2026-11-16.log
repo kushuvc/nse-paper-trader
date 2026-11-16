@@ -231,3 +231,12 @@ NSE's own daily file: latest saved is 2026-11-13
 15:15  CLOSE TCS         square-off @ 2399.00  net Rs +66 [learner] (charges 31)
 15:15  CLOSE TMPV        square-off @ 261.95  net Rs +527 [gap_go] (charges 35)
 15:15  CLOSE TITAN       square-off @ 4896.90  net Rs -335 [learner] (charges 52)
+2026-11-16: 20 closed (11 won), 0 still open, net Rs -1655 after charges
+  orb15     3 trades, net Rs -517
+  orb30_2r  3 trades, net Rs -493
+  orb60     3 trades, net Rs +294
+  gap_go    2 trades, net Rs -71
+  gap_fade  0 trades, net Rs +0
+  vwap      3 trades, net Rs -671
+  trap90    3 trades, net Rs +3
+  learner   3 trades, net Rs -201
