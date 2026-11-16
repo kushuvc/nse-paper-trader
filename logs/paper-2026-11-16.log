@@ -6,3 +6,25 @@ Latest day, 2026-11-13: 939 of 2744 shares rose (34.6%), Nifty 50 25,144 (-0.61%
 PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
 Learner: model from 65 days of history
 NSE's own daily file: latest saved is 2026-11-13
+09:30  OPEN  APOLLOHOSP  BUY      3 @ 8619.50  stop 8490.20  target 8632.45  [trap90: tiny target, wide stop]
+09:30  OPEN  ASIANPAINT  BUY     33 @ 2592.60  stop 2577.85  target 2622.00  [gap_go: gap +1.1% and go]
+09:30  OPEN  ASIANPAINT  BUY     12 @ 2592.60  stop 2553.70  target 2596.50  [trap90: tiny target, wide stop]
+09:30  OPEN  BSE         BUY      8 @ 3945.10  stop 3885.90  target 3951.00  [trap90: tiny target, wide stop]
+09:30  SKIP  BHARTIARTL  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  DRREDDY     trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ETERNAL     trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  GRASIM      trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  HDFCBANK    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ICICIBANK   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ITC         trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  KOTAKBANK   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  MAXHEALTH   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  NESTLEIND   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  RELIANCE    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  SBIN        trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  SUNPHARMA   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  TATACONSUM  trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  TMPV        SHORT  125 @ 266.55  stop 270.55  target 258.55  [gap_go: gap -5.9% and go]
+09:30  SKIP  TITAN       trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  TRENT       trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ULTRACEMCO  trap90    tiny target, wide stop: max 3 trades a day
