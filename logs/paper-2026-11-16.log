@@ -135,3 +135,8 @@ NSE's own daily file: latest saved is 2026-11-13
 10:50  SKIP  MARUTI      orb30_2r  ORB30 down: max 3 trades a day
 10:50  SKIP  MARUTI      orb60     ORB60 down: max 3 trades a day
 10:50  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day
+10:55  SKIP  BEL         orb15     ORB15 down: max 3 trades a day
+10:55  SKIP  BEL         orb30_2r  ORB30 down: max 3 trades a day
+10:55  SKIP  BEL         orb60     ORB60 down: max 3 trades a day
+11:00  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day
+11:00  CLOSE TRENT       stop       @ 3172.60  net Rs -598 [vwap] (charges 77)
