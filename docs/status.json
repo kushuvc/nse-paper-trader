@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 10:41 IST",
- "updated_ts": 1794805881,
+ "updated": "2026-11-16 10:51 IST",
+ "updated_ts": 1794806482,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -292,13 +292,6 @@
  ],
  "today_net": -131.0,
  "log": [
-  "10:05  SKIP  BAJFINANCE  orb30_2r  ORB30 down: max 3 trades a day",
-  "10:05  SKIP  INDIGO      orb30_2r  ORB30 down: max 3 trades a day",
-  "10:10  SKIP  BAJAJFINSV  orb15     ORB15 down: max 3 trades a day",
-  "10:10  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day",
-  "10:10  OPEN  TITAN       SHORT   10 @ 4870.50  stop 4919.50  target 4772.50  [learner via orb30_2r, expects +0.10R: short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market]",
-  "10:10  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day",
-  "10:15  SKIP  APOLLOHOSP  orb30_2r  ORB30 up: max 3 trades a day",
   "10:15  SKIP  CIPLA       orb30_2r  ORB30 up: max 3 trades a day",
   "10:20  SKIP  ADANIENT    orb15     ORB15 down: max 3 trades a day",
   "10:20  SKIP  ADANIENT    orb30_2r  ORB30 down: max 3 trades a day",
@@ -351,7 +344,14 @@
   "10:40  SKIP  INFY        orb15     ORB15 down: max 3 trades a day",
   "10:40  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day",
   "10:40  SKIP  INFY        orb60     ORB60 down: max 3 trades a day",
-  "10:40  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day"
+  "10:40  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
+  "10:50  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 down: max 3 trades a day",
+  "10:50  SKIP  BAJAJ-AUTO  orb60     ORB60 down: max 3 trades a day",
+  "10:50  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day",
+  "10:50  SKIP  MARUTI      orb15     ORB15 down: max 3 trades a day",
+  "10:50  SKIP  MARUTI      orb30_2r  ORB30 down: max 3 trades a day",
+  "10:50  SKIP  MARUTI      orb60     ORB60 down: max 3 trades a day",
+  "10:50  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 138,
  "all_wins": 73,
