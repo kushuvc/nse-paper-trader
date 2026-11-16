@@ -218,3 +218,4 @@ NSE's own daily file: latest saved is 2026-11-13
 14:25  SKIP  TATACONSUM  vwap      VWAP reclaim: max 3 trades a day
 14:30  SKIP  HDFCLIFE    vwap      VWAP reclaim: max 3 trades a day
 14:35  SKIP  HINDUNILVR  orb60     ORB60 up: after 14:30
+14:55  SKIP  ETERNAL     vwap      VWAP reclaim: after 14:30
