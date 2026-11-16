@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 11:41 IST",
- "updated_ts": 1794809489,
+ "updated": "2026-11-16 11:51 IST",
+ "updated_ts": 1794810091,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -310,8 +310,6 @@
  ],
  "today_net": -192.0,
  "log": [
-  "10:30  SKIP  LT          orb30_2r  ORB30 down: max 3 trades a day",
-  "10:30  SKIP  LT          orb60     ORB60 down: max 3 trades a day",
   "10:30  SKIP  TCS         orb15     ORB15 down: max 3 trades a day",
   "10:30  OPEN  TCS         SHORT   12 @ 2408.00  stop 2449.65  target 2324.80  [learner via orb30_2r, expects +0.10R: short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market]",
   "10:30  SKIP  TCS         orb30_2r  ORB30 down: max 3 trades a day",
@@ -369,7 +367,9 @@
   "11:40  SKIP  AXISBANK    orb15     ORB15 down: max 3 trades a day",
   "11:40  SKIP  AXISBANK    orb30_2r  ORB30 down: max 3 trades a day",
   "11:40  SKIP  AXISBANK    orb60     ORB60 down: max 3 trades a day",
-  "11:40  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day"
+  "11:40  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day",
+  "11:50  SKIP  INDIGO      orb60     ORB60 down: max 3 trades a day",
+  "11:50  SKIP  M&M         vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 140,
  "all_wins": 74,
