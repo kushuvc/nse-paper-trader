@@ -48,3 +48,14 @@ NSE's own daily file: latest saved is 2026-11-13
 09:40  SKIP  KOTAKBANK   orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day
+09:45  CLOSE BAJAJ-AUTO  stop       @ 10808.00  net Rs -498 [orb15] (charges 82)
+09:45  SKIP  HINDUNILVR  orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day
+09:50  OPEN  BHARTIARTL  BUY     10 @ 2170.60  stop 2123.00  target 2265.80  [orb30_2r: ORB30 up]
+09:50  OPEN  GRASIM      BUY     10 @ 3060.00  stop 3012.30  target 3155.40  [orb30_2r: ORB30 up]
+09:50  OPEN  KOTAKBANK   BUY     97 @ 495.75  stop 490.60  target 506.05  [orb30_2r: ORB30 up]
+09:50  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  NESTLEIND   orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  NESTLEIND   orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day
