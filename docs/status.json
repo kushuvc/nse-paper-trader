@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 14:16 IST",
- "updated_ts": 1794818782,
+ "updated": "2026-11-16 14:26 IST",
+ "updated_ts": 1794819384,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -328,8 +328,6 @@
  ],
  "today_net": -1399.0,
  "log": [
-  "11:20  SKIP  SUNPHARMA   orb60     ORB60 down: max 3 trades a day",
-  "11:25  SKIP  COALINDIA   orb15     ORB15 down: max 3 trades a day",
   "11:25  SKIP  COALINDIA   orb30_2r  ORB30 down: max 3 trades a day",
   "11:25  SKIP  COALINDIA   orb60     ORB60 down: max 3 trades a day",
   "11:25  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day",
@@ -387,7 +385,9 @@
   "14:10  SKIP  ASIANPAINT  orb15     ORB15 down: max 3 trades a day",
   "14:10  SKIP  ASIANPAINT  learner   via orb30_2r (expects +0.06R): max 3 trades a day",
   "14:10  SKIP  ASIANPAINT  orb30_2r  ORB30 down: max 3 trades a day",
-  "14:10  SKIP  ASIANPAINT  orb60     ORB60 down: max 3 trades a day"
+  "14:10  SKIP  ASIANPAINT  orb60     ORB60 down: max 3 trades a day",
+  "14:20  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day",
+  "14:25  SKIP  TATACONSUM  vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 142,
  "all_wins": 74,
