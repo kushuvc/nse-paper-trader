@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 13:26 IST",
- "updated_ts": 1794815774,
+ "updated": "2026-11-16 13:36 IST",
+ "updated_ts": 1794816376,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -319,9 +319,6 @@
  ],
  "today_net": -801.0,
  "log": [
-  "10:55  SKIP  BEL         orb15     ORB15 down: max 3 trades a day",
-  "10:55  SKIP  BEL         orb30_2r  ORB30 down: max 3 trades a day",
-  "10:55  SKIP  BEL         orb60     ORB60 down: max 3 trades a day",
   "11:00  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day",
   "11:00  CLOSE TRENT       stop       @ 3172.60  net Rs -598 [vwap] (charges 77)",
   "11:05  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day",
@@ -378,7 +375,10 @@
   "13:10  SKIP  RELIANCE    vwap      VWAP reclaim: max 3 trades a day",
   "13:15  SKIP  GRASIM      orb60     ORB60 up: max 3 trades a day",
   "13:15  SKIP  HDFCLIFE    vwap      VWAP reclaim: max 3 trades a day",
-  "13:15  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day"
+  "13:15  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day",
+  "13:35  SKIP  ICICIBANK   orb15     ORB15 down: max 3 trades a day",
+  "13:35  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day",
+  "13:35  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 141,
  "all_wins": 74,
