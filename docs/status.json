@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 11:31 IST",
- "updated_ts": 1794808888,
+ "updated": "2026-11-16 11:41 IST",
+ "updated_ts": 1794809489,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -310,13 +310,6 @@
  ],
  "today_net": -192.0,
  "log": [
-  "10:25  SKIP  LT          orb15     ORB15 down: max 3 trades a day",
-  "10:25  SKIP  M&M         orb60     ORB60 down: max 3 trades a day",
-  "10:25  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day",
-  "10:25  SKIP  NTPC        vwap      VWAP loss: max 3 trades a day",
-  "10:25  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day",
-  "10:30  CLOSE APOLLOHOSP  target     @ 8699.25  net Rs +364 [orb15] (charges 75)",
-  "10:30  SKIP  APOLLOHOSP  orb60     ORB60 up: max 3 trades a day",
   "10:30  SKIP  LT          orb30_2r  ORB30 down: max 3 trades a day",
   "10:30  SKIP  LT          orb60     ORB60 down: max 3 trades a day",
   "10:30  SKIP  TCS         orb15     ORB15 down: max 3 trades a day",
@@ -369,7 +362,14 @@
   "11:25  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day",
   "11:30  SKIP  TECHM       orb15     ORB15 down: max 3 trades a day",
   "11:30  SKIP  TECHM       orb30_2r  ORB30 down: max 3 trades a day",
-  "11:30  SKIP  TECHM       orb60     ORB60 down: max 3 trades a day"
+  "11:30  SKIP  TECHM       orb60     ORB60 down: max 3 trades a day",
+  "11:35  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
+  "11:35  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day",
+  "11:35  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
+  "11:40  SKIP  AXISBANK    orb15     ORB15 down: max 3 trades a day",
+  "11:40  SKIP  AXISBANK    orb30_2r  ORB30 down: max 3 trades a day",
+  "11:40  SKIP  AXISBANK    orb60     ORB60 down: max 3 trades a day",
+  "11:40  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 140,
  "all_wins": 74,
