@@ -74,3 +74,20 @@ NSE's own daily file: latest saved is 2026-11-13
 10:10  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day
 10:10  OPEN  TITAN       SHORT   10 @ 4870.50  stop 4919.50  target 4772.50  [learner via orb30_2r, expects +0.10R: short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market]
 10:10  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day
+10:15  SKIP  APOLLOHOSP  orb30_2r  ORB30 up: max 3 trades a day
+10:15  SKIP  CIPLA       orb30_2r  ORB30 up: max 3 trades a day
+10:20  SKIP  ADANIENT    orb15     ORB15 down: max 3 trades a day
+10:20  SKIP  ADANIENT    orb30_2r  ORB30 down: max 3 trades a day
+10:20  OPEN  ADANIENT    SHORT   26 @ 2658.50  stop 2677.35  target 2639.65  [orb60: ORB60 down]
+10:20  OPEN  BHARTIARTL  BUY     43 @ 2159.30  stop 2147.85  target 2182.10  [vwap: VWAP reclaim]
+10:20  OPEN  EICHERMOT   SHORT    1 @ 7630.00  stop 7927.00  target 7036.00  [learner via orb30_2r, expects +0.10R: short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market]
+10:20  SKIP  EICHERMOT   orb30_2r  ORB30 down: max 3 trades a day
+10:20  OPEN  EICHERMOT   SHORT    3 @ 7630.00  stop 7788.75  target 7471.25  [orb60: ORB60 down]
+10:20  OPEN  ITC         BUY    108 @ 293.00  stop 288.40  target 297.55  [orb60: ORB60 up]
+10:20  OPEN  JIOFIN      SHORT  439 @ 227.50  stop 228.25  target 226.00  [vwap: VWAP loss]
+10:20  SKIP  M&M         orb15     ORB15 down: max 3 trades a day
+10:20  SKIP  M&M         orb30_2r  ORB30 down: max 3 trades a day
+10:20  SKIP  TATASTEEL   orb15     ORB15 down: max 3 trades a day
+10:20  SKIP  TATASTEEL   orb30_2r  ORB30 down: max 3 trades a day
+10:20  SKIP  TATASTEEL   orb60     ORB60 down: max 3 trades a day
+10:20  OPEN  TRENT       BUY     27 @ 3190.60  stop 3172.60  target 3226.60  [vwap: VWAP reclaim]
