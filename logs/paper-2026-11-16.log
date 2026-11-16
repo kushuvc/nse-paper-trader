@@ -140,3 +140,4 @@ NSE's own daily file: latest saved is 2026-11-13
 10:55  SKIP  BEL         orb60     ORB60 down: max 3 trades a day
 11:00  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day
 11:00  CLOSE TRENT       stop       @ 3172.60  net Rs -598 [vwap] (charges 77)
+11:05  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day
