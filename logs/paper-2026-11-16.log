@@ -179,3 +179,4 @@ NSE's own daily file: latest saved is 2026-11-13
 12:00  SKIP  HDFCBANK    orb60     ORB60 up: max 3 trades a day
 12:00  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day
 12:00  SKIP  NTPC        orb60     ORB60 up: max 3 trades a day
+12:10  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day
