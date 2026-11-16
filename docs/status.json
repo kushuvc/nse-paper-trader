@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16 10:01 IST",
- "updated_ts": 1794803475,
+ "updated": "2026-11-16 10:11 IST",
+ "updated_ts": 1794804076,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -89,6 +89,20 @@
    "target": 506.05,
    "entry_time": "09:50",
    "note": "ORB30 up"
+  },
+  "learner|TITAN": {
+   "strategy": "learner",
+   "symbol": "TITAN",
+   "side": -1,
+   "qty": 10,
+   "entry": 4870.5,
+   "stop": 4919.5,
+   "target": 4772.5,
+   "entry_time": "10:10",
+   "note": "ORB30 down",
+   "via": "orb30_2r",
+   "setup": "short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market",
+   "score": 0.097
   }
  },
  "closed": [
@@ -175,13 +189,6 @@
  ],
  "today_net": -495.0,
  "log": [
-  "09:30  OPEN  ASIANPAINT  BUY     33 @ 2592.60  stop 2577.85  target 2622.00  [gap_go: gap +1.1% and go]",
-  "09:30  OPEN  ASIANPAINT  BUY     12 @ 2592.60  stop 2553.70  target 2596.50  [trap90: tiny target, wide stop]",
-  "09:30  OPEN  BSE         BUY      8 @ 3945.10  stop 3885.90  target 3951.00  [trap90: tiny target, wide stop]",
-  "09:30  SKIP  BHARTIARTL  trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  DRREDDY     trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  ETERNAL     trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  GRASIM      trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  HDFCBANK    trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  ICICIBANK   trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  ITC         trap90    tiny target, wide stop: max 3 trades a day",
@@ -234,7 +241,14 @@
   "09:55  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day",
   "09:55  SKIP  ITC         orb30_2r  ORB30 up: max 3 trades a day",
   "10:00  SKIP  POWERGRID   orb15     ORB15 up: max 3 trades a day",
-  "10:00  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day"
+  "10:00  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day",
+  "10:05  SKIP  BAJFINANCE  orb15     ORB15 down: max 3 trades a day",
+  "10:05  SKIP  BAJFINANCE  orb30_2r  ORB30 down: max 3 trades a day",
+  "10:05  SKIP  INDIGO      orb30_2r  ORB30 down: max 3 trades a day",
+  "10:10  SKIP  BAJAJFINSV  orb15     ORB15 down: max 3 trades a day",
+  "10:10  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day",
+  "10:10  OPEN  TITAN       SHORT   10 @ 4870.50  stop 4919.50  target 4772.50  [learner via orb30_2r, expects +0.10R: short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market]",
+  "10:10  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day"
  ],
  "all_trades": 137,
  "all_wins": 72,

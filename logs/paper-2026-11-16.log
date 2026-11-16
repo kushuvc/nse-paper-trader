@@ -67,3 +67,10 @@ NSE's own daily file: latest saved is 2026-11-13
 09:55  SKIP  ITC         orb30_2r  ORB30 up: max 3 trades a day
 10:00  SKIP  POWERGRID   orb15     ORB15 up: max 3 trades a day
 10:00  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day
+10:05  SKIP  BAJFINANCE  orb15     ORB15 down: max 3 trades a day
+10:05  SKIP  BAJFINANCE  orb30_2r  ORB30 down: max 3 trades a day
+10:05  SKIP  INDIGO      orb30_2r  ORB30 down: max 3 trades a day
+10:10  SKIP  BAJAJFINSV  orb15     ORB15 down: max 3 trades a day
+10:10  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day
+10:10  OPEN  TITAN       SHORT   10 @ 4870.50  stop 4919.50  target 4772.50  [learner via orb30_2r, expects +0.10R: short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market]
+10:10  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day
