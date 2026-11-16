@@ -117,3 +117,14 @@ NSE's own daily file: latest saved is 2026-11-13
 10:30  OPEN  TCS         SHORT   12 @ 2408.00  stop 2449.65  target 2324.80  [learner via orb30_2r, expects +0.10R: short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market]
 10:30  SKIP  TCS         orb30_2r  ORB30 down: max 3 trades a day
 10:30  SKIP  TCS         orb60     ORB60 down: max 3 trades a day
+10:35  SKIP  BEL         vwap      VWAP loss: max 3 trades a day
+10:35  SKIP  RELIANCE    orb15     ORB15 down: max 3 trades a day
+10:35  SKIP  RELIANCE    orb30_2r  ORB30 down: max 3 trades a day
+10:35  SKIP  RELIANCE    orb60     ORB60 down: max 3 trades a day
+10:40  SKIP  HINDALCO    orb15     ORB15 down: max 3 trades a day
+10:40  SKIP  HINDALCO    orb30_2r  ORB30 down: max 3 trades a day
+10:40  SKIP  HINDALCO    orb60     ORB60 down: max 3 trades a day
+10:40  SKIP  INFY        orb15     ORB15 down: max 3 trades a day
+10:40  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day
+10:40  SKIP  INFY        orb60     ORB60 down: max 3 trades a day
+10:40  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day
