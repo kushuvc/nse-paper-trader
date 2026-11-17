@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-17 13:16 IST",
- "updated_ts": 1794901570,
+ "updated": "2026-11-17 13:26 IST",
+ "updated_ts": 1794902172,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -371,7 +371,6 @@
  ],
  "today_net": -3803.0,
  "log": [
-  "11:05  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day",
   "11:05  SKIP  BEL         orb15     ORB15 down: max 3 trades a day",
   "11:05  SKIP  BEL         orb30_2r  ORB30 down: max 3 trades a day",
   "11:05  SKIP  BEL         orb60     ORB60 down: max 3 trades a day",
@@ -430,7 +429,8 @@
   "13:10  CLOSE JIOFIN      stop       @ 226.55  net Rs -612 [orb60] (charges 78)",
   "13:10  SKIP  SBILIFE     orb30_2r  ORB30 down: max 3 trades a day",
   "13:10  SKIP  SBILIFE     orb60     ORB60 down: max 3 trades a day",
-  "13:15  SKIP  ADANIENT    vwap      VWAP reclaim: max 3 trades a day"
+  "13:15  SKIP  ADANIENT    vwap      VWAP reclaim: max 3 trades a day",
+  "13:20  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 169,
  "all_wins": 86,
