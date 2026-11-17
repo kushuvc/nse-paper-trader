@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-17 11:51 IST",
- "updated_ts": 1794896482,
+ "updated": "2026-11-17 12:01 IST",
+ "updated_ts": 1794897083,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -344,9 +344,6 @@
  ],
  "today_net": -3028.0,
  "log": [
-  "10:30  SKIP  TRENT       orb60     ORB60 up: max 3 trades a day",
-  "10:35  CLOSE ADANIPORTS  stop       @ 1909.30  net Rs -330 [vwap] (charges 82)",
-  "10:35  SKIP  ASIANPAINT  orb30_2r  ORB30 up: max 3 trades a day",
   "10:40  SKIP  ASIANPAINT  orb60     ORB60 up: max 3 trades a day",
   "10:40  CLOSE COALINDIA   target     @ 392.90  net Rs +379 [orb15] (charges 81)",
   "10:40  SKIP  DRREDDY     orb15     ORB15 up: max 3 trades a day",
@@ -403,7 +400,10 @@
   "11:45  SKIP  NESTLEIND   vwap      VWAP reclaim: max 3 trades a day",
   "11:50  CLOSE TATACONSUM  stop       @ 1119.40  net Rs -487 [vwap] (charges 82)",
   "11:50  SKIP  TATACONSUM  orb30_2r  ORB30 down: max 3 trades a day",
-  "11:50  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day"
+  "11:50  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day",
+  "11:55  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day",
+  "12:00  SKIP  INDIGO      vwap      VWAP reclaim: max 3 trades a day",
+  "12:00  SKIP  M&M         orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 166,
  "all_wins": 85,
