@@ -71,3 +71,19 @@ NSE's own daily file: latest saved is 2026-11-16
 09:50  SKIP  MARUTI      orb15     ORB15 up: max 3 trades a day
 09:50  SKIP  MARUTI      orb30_2r  ORB30 up: max 3 trades a day
 09:50  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day
+09:55  CLOSE ASIANPAINT  stop       @ 2624.00  net Rs -592 [orb15] (charges 72)
+09:55  SKIP  AXISBANK    orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  AXISBANK    orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  ETERNAL     orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  GRASIM      orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  GRASIM      orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  INFY        orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  INFY        orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  HDFCLIFE    orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day
+10:00  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day
+10:00  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day
