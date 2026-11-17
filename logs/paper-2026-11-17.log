@@ -188,3 +188,8 @@ NSE's own daily file: latest saved is 2026-11-16
 11:40  SKIP  BHARTIARTL  orb30_2r  ORB30 up: max 3 trades a day
 11:40  SKIP  BHARTIARTL  orb60     ORB60 up: max 3 trades a day
 11:40  SKIP  INFY        vwap      VWAP loss: max 3 trades a day
+11:45  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day
+11:45  SKIP  NESTLEIND   vwap      VWAP reclaim: max 3 trades a day
+11:50  CLOSE TATACONSUM  stop       @ 1119.40  net Rs -487 [vwap] (charges 82)
+11:50  SKIP  TATACONSUM  orb30_2r  ORB30 down: max 3 trades a day
+11:50  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day
