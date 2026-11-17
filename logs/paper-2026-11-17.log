@@ -42,3 +42,19 @@ NSE's own daily file: latest saved is 2026-11-16
 09:30  SKIP  TITAN       trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  TRENT       trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  ULTRACEMCO  trap90    tiny target, wide stop: max 3 trades a day
+09:35  CLOSE ADANIENT    target     @ 2694.35  net Rs +1 [trap90] (charges 34)
+09:35  CLOSE ADANIPORTS  target     @ 1918.25  net Rs +1 [trap90] (charges 35)
+09:35  CLOSE APOLLOHOSP  target     @ 8805.00  net Rs +5 [trap90] (charges 28)
+09:35  OPEN  ASIANPAINT  SHORT   27 @ 2605.80  stop 2624.00  target 2587.65  [orb15: ORB15 down]
+09:35  OPEN  BAJAJFINSV  SHORT   54 @ 1850.50  stop 1856.25  target 1844.75  [orb15: ORB15 down]
+09:35  OPEN  COALINDIA   SHORT  243 @ 394.95  stop 397.00  target 392.90  [orb15: ORB15 down]
+09:35  SKIP  HDFCLIFE    orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  M&M         orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  NTPC        orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  POWERGRID   orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  RELIANCE    orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  SBILIFE     orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  TATACONSUM  orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  BSE         orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  ETERNAL     orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day
