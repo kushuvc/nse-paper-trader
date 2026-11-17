@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-17 12:26 IST",
- "updated_ts": 1794898562,
+ "updated": "2026-11-17 12:36 IST",
+ "updated_ts": 1794899164,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -13,17 +13,6 @@
  ],
  "date": "2026-11-17",
  "open": {
-  "gap_go|INDIGO": {
-   "strategy": "gap_go",
-   "symbol": "INDIGO",
-   "side": 1,
-   "qty": 17,
-   "entry": 5615.0,
-   "stop": 5599.0,
-   "target": 5647.0,
-   "entry_time": "09:30",
-   "note": "gap +1.0% and go"
-  },
   "orb30_2r|ADANIENT": {
    "strategy": "orb30_2r",
    "symbol": "ADANIENT",
@@ -349,12 +338,30 @@
    "net": -588.32,
    "r": -1.229,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_go",
+   "symbol": "INDIGO",
+   "side": 1,
+   "qty": 17,
+   "entry": 5615.0,
+   "stop": 5599.0,
+   "target": 5647.0,
+   "entry_time": "09:30",
+   "note": "gap +1.0% and go",
+   "date": "2026-11-17",
+   "exit": 5647.0,
+   "exit_time": "12:35",
+   "reason": "target",
+   "gross": 505.71,
+   "charges": 80.99,
+   "net": 424.72,
+   "r": 1.561,
+   "mode": "live"
   }
  ],
- "today_net": -3616.0,
+ "today_net": -3191.0,
  "log": [
-  "10:40  CLOSE ITC         stop       @ 294.60  net Rs -560 [vwap] (charges 82)",
-  "10:40  SKIP  ONGC        orb15     ORB15 down: max 3 trades a day",
   "10:40  SKIP  ONGC        orb30_2r  ORB30 down: max 3 trades a day",
   "10:40  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day",
   "10:45  SKIP  BAJFINANCE  orb15     ORB15 up: max 3 trades a day",
@@ -412,12 +419,35 @@
   "12:25  CLOSE BSE         stop       @ 3936.30  net Rs -588 [gap_go] (charges 76)",
   "12:25  SKIP  MAXHEALTH   orb15     ORB15 down: max 3 trades a day",
   "12:25  SKIP  MAXHEALTH   orb30_2r  ORB30 down: max 3 trades a day",
-  "12:25  SKIP  MAXHEALTH   orb60     ORB60 down: max 3 trades a day"
+  "12:25  SKIP  MAXHEALTH   orb60     ORB60 down: max 3 trades a day",
+  "12:35  CLOSE INDIGO      target     @ 5647.00  net Rs +425 [gap_go] (charges 81)",
+  "12:35  SKIP  INDIGO      orb60     ORB60 up: max 3 trades a day"
  ],
- "all_trades": 167,
- "all_wins": 85,
- "all_net": -12025.0,
+ "all_trades": 168,
+ "all_wins": 86,
+ "all_net": -11600.0,
  "recent": [
+  {
+   "date": "2026-11-17",
+   "symbol": "INDIGO",
+   "strategy": "gap_go",
+   "side": "1",
+   "qty": "17",
+   "entry_time": "09:30",
+   "entry": "5615.0",
+   "stop": "5599.0",
+   "target": "5647.0",
+   "exit_time": "12:35",
+   "exit": "5647.0",
+   "reason": "target",
+   "gross": "505.71",
+   "charges": "80.99",
+   "net": "424.72",
+   "r": "1.561",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-17",
    "symbol": "BSE",
@@ -921,27 +951,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-16",
-   "symbol": "ADANIENT",
-   "strategy": "orb60",
-   "side": "-1",
-   "qty": "26",
-   "entry_time": "10:20",
-   "entry": "2658.5",
-   "stop": "2677.35",
-   "target": "2639.65",
-   "exit_time": "15:15",
-   "exit": "2656.0",
-   "reason": "square-off",
-   "gross": "37.36",
-   "charges": "71.55",
-   "net": "-34.19",
-   "r": "-0.07",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -952,7 +961,7 @@
   "2026-11-12": -3681.0,
   "2026-11-13": -6092.0,
   "2026-11-16": -1655.0,
-  "2026-11-17": -3617.0
+  "2026-11-17": -3192.0
  },
  "by_strategy": {
   "orb15": {
@@ -984,12 +993,12 @@
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
-   "today_trades": 1,
-   "today_net": -588,
-   "open": 1,
-   "all_trades": 20,
-   "all_wins": 8,
-   "all_net": -845
+   "today_trades": 2,
+   "today_net": -164,
+   "open": 0,
+   "all_trades": 21,
+   "all_wins": 9,
+   "all_net": -420
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
@@ -1209,10 +1218,10 @@
    },
    "gap_go": {
     "days": 8,
-    "trades": 20,
-    "net": -845,
-    "per_trade": -42,
-    "t": -0.71,
+    "trades": 21,
+    "net": -420,
+    "per_trade": -20,
+    "t": -0.46,
     "drawdown": -2133,
     "passed": 1,
     "of": 7,
@@ -1228,25 +1237,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "20 of 150 trades"
+      "now": "21 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -42 a trade"
+      "now": "Rs -20 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.71"
+      "now": "t = -0.46"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -632 then Rs -213"
+      "now": "Rs -632 then Rs +212"
      },
      {
       "id": "drawdown",
