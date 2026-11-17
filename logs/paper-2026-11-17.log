@@ -158,3 +158,7 @@ NSE's own daily file: latest saved is 2026-11-16
 10:50  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day
 10:50  SKIP  LT          orb60     ORB60 up: max 3 trades a day
 10:50  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day
+10:55  SKIP  INFY        vwap      VWAP loss: max 3 trades a day
+10:55  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day
+10:55  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day
+11:00  SKIP  ICICIBANK   orb60     ORB60 up: max 3 trades a day
