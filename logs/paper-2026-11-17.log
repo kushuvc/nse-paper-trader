@@ -177,3 +177,7 @@ NSE's own daily file: latest saved is 2026-11-16
 11:20  CLOSE BAJAJFINSV  target     @ 1872.95  net Rs +347 [orb60] (charges 82)
 11:20  SKIP  EICHERMOT   vwap      VWAP reclaim: max 3 trades a day
 11:20  SKIP  NESTLEIND   vwap      VWAP reclaim: max 3 trades a day
+11:25  SKIP  CIPLA       orb15     ORB15 down: max 3 trades a day
+11:25  SKIP  CIPLA       orb30_2r  ORB30 down: max 3 trades a day
+11:25  SKIP  CIPLA       orb60     ORB60 down: max 3 trades a day
+11:30  SKIP  HCLTECH     vwap      VWAP loss: max 3 trades a day

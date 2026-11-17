@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-17 11:21 IST",
- "updated_ts": 1794894676,
+ "updated": "2026-11-17 11:31 IST",
+ "updated_ts": 1794895278,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -335,10 +335,6 @@
  ],
  "today_net": -2540.0,
  "log": [
-  "10:25  CLOSE APOLLOHOSP  stop       @ 8805.00  net Rs -566 [orb30_2r] (charges 75)",
-  "10:25  SKIP  APOLLOHOSP  orb60     ORB60 up: max 3 trades a day",
-  "10:25  SKIP  AXISBANK    orb60     ORB60 up: max 3 trades a day",
-  "10:30  SKIP  COALINDIA   orb60     ORB60 down: max 3 trades a day",
   "10:30  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
   "10:30  SKIP  HDFCLIFE    vwap      VWAP loss: max 3 trades a day",
   "10:30  SKIP  JSWSTEEL    orb15     ORB15 up: max 3 trades a day",
@@ -394,7 +390,11 @@
   "11:20  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day",
   "11:20  CLOSE BAJAJFINSV  target     @ 1872.95  net Rs +347 [orb60] (charges 82)",
   "11:20  SKIP  EICHERMOT   vwap      VWAP reclaim: max 3 trades a day",
-  "11:20  SKIP  NESTLEIND   vwap      VWAP reclaim: max 3 trades a day"
+  "11:20  SKIP  NESTLEIND   vwap      VWAP reclaim: max 3 trades a day",
+  "11:25  SKIP  CIPLA       orb15     ORB15 down: max 3 trades a day",
+  "11:25  SKIP  CIPLA       orb30_2r  ORB30 down: max 3 trades a day",
+  "11:25  SKIP  CIPLA       orb60     ORB60 down: max 3 trades a day",
+  "11:30  SKIP  HCLTECH     vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 165,
  "all_wins": 85,
