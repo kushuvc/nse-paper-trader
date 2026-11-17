@@ -236,3 +236,12 @@ NSE's own daily file: latest saved is 2026-11-16
 13:35  SKIP  NTPC        vwap      VWAP reclaim: max 3 trades a day
 13:45  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day
 13:45  SKIP  SUNPHARMA   vwap      VWAP reclaim: max 3 trades a day
+13:50  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day
+13:50  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day
+13:55  SKIP  ADANIENT    orb60     ORB60 up: max 3 trades a day
+13:55  SKIP  BAJFINANCE  vwap      VWAP reclaim: max 3 trades a day
+13:55  SKIP  BAJAJFINSV  vwap      VWAP reclaim: max 3 trades a day
+13:55  SKIP  HINDALCO    vwap      VWAP reclaim: max 3 trades a day
+13:55  SKIP  JIOFIN      vwap      VWAP reclaim: max 3 trades a day
+13:55  SKIP  NTPC        orb60     ORB60 up: max 3 trades a day
+13:55  SKIP  TATASTEEL   vwap      VWAP reclaim: max 3 trades a day

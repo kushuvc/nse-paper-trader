@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-17 13:46 IST",
- "updated_ts": 1794903375,
+ "updated": "2026-11-17 13:56 IST",
+ "updated_ts": 1794903977,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -380,15 +380,6 @@
  ],
  "today_net": -4392.0,
  "log": [
-  "11:10  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day",
-  "11:15  SKIP  ETERNAL     orb60     ORB60 up: max 3 trades a day",
-  "11:15  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day",
-  "11:20  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day",
-  "11:20  CLOSE BAJAJFINSV  target     @ 1872.95  net Rs +347 [orb60] (charges 82)",
-  "11:20  SKIP  EICHERMOT   vwap      VWAP reclaim: max 3 trades a day",
-  "11:20  SKIP  NESTLEIND   vwap      VWAP reclaim: max 3 trades a day",
-  "11:25  SKIP  CIPLA       orb15     ORB15 down: max 3 trades a day",
-  "11:25  SKIP  CIPLA       orb30_2r  ORB30 down: max 3 trades a day",
   "11:25  SKIP  CIPLA       orb60     ORB60 down: max 3 trades a day",
   "11:30  SKIP  HCLTECH     vwap      VWAP loss: max 3 trades a day",
   "11:35  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day",
@@ -439,7 +430,16 @@
   "13:35  SKIP  ETERNAL     vwap      VWAP reclaim: max 3 trades a day",
   "13:35  SKIP  NTPC        vwap      VWAP reclaim: max 3 trades a day",
   "13:45  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day",
-  "13:45  SKIP  SUNPHARMA   vwap      VWAP reclaim: max 3 trades a day"
+  "13:45  SKIP  SUNPHARMA   vwap      VWAP reclaim: max 3 trades a day",
+  "13:50  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day",
+  "13:50  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day",
+  "13:55  SKIP  ADANIENT    orb60     ORB60 up: max 3 trades a day",
+  "13:55  SKIP  BAJFINANCE  vwap      VWAP reclaim: max 3 trades a day",
+  "13:55  SKIP  BAJAJFINSV  vwap      VWAP reclaim: max 3 trades a day",
+  "13:55  SKIP  HINDALCO    vwap      VWAP reclaim: max 3 trades a day",
+  "13:55  SKIP  JIOFIN      vwap      VWAP reclaim: max 3 trades a day",
+  "13:55  SKIP  NTPC        orb60     ORB60 up: max 3 trades a day",
+  "13:55  SKIP  TATASTEEL   vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 170,
  "all_wins": 86,
