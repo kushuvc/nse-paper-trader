@@ -58,3 +58,16 @@ NSE's own daily file: latest saved is 2026-11-16
 09:40  SKIP  BSE         orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  ETERNAL     orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  ADANIENT    orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  BAJAJ-AUTO  orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  SBIN        orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  TCS         orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day
+09:50  OPEN  ADANIENT    BUY     13 @ 2700.30  stop 2664.00  target 2772.90  [orb30_2r: ORB30 up]
+09:50  SKIP  APOLLOHOSP  orb15     ORB15 down: max 3 trades a day
+09:50  OPEN  APOLLOHOSP  SHORT    9 @ 8754.00  stop 8805.00  target 8652.00  [orb30_2r: ORB30 down]
+09:50  OPEN  HINDALCO    BUY     25 @ 932.85  stop 912.90  target 972.75  [orb30_2r: ORB30 up]
+09:50  CLOSE MARUTI      stop       @ 12737.05  net Rs -220 [gap_fade] (charges 79)
+09:50  SKIP  MARUTI      orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  MARUTI      orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day
