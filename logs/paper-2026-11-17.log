@@ -218,3 +218,5 @@ NSE's own daily file: latest saved is 2026-11-16
 12:45  SKIP  HCLTECH     orb15     ORB15 down: max 3 trades a day
 12:45  SKIP  HCLTECH     orb30_2r  ORB30 down: max 3 trades a day
 12:45  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day
+12:50  SKIP  HDFCLIFE    orb60     ORB60 down: max 3 trades a day
+12:55  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day
