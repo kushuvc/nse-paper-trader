@@ -196,14 +196,8 @@ NSE's own daily file: latest saved is 2026-11-16
 11:55  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day
 12:00  SKIP  INDIGO      vwap      VWAP reclaim: max 3 trades a day
 12:00  SKIP  M&M         orb60     ORB60 up: max 3 trades a day
-12:10  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day
-12:10  SKIP  HDFCBANK    orb60     ORB60 up: max 3 trades a day
-2026-11-17: 13 closed (5 won), 6 still open, net Rs -3028 after charges
-  orb15     3 trades, net Rs -646
-  orb30_2r  1 trades, net Rs -566
-  orb60     1 trades, net Rs +347
-  gap_go    0 trades, net Rs +0
-  gap_fade  2 trades, net Rs -794
-  vwap      3 trades, net Rs -1377
-  trap90    3 trades, net Rs +7
-  learner   0 trades, net Rs +0
+Shift until 15:20 IST (started 12:15)
+NSE's own end-of-day files -> data/nse/ (looking back 7 days) ...
+  2026-11-10: no file from NSE (a holiday, or not published yet)
+0 new. 91 days saved, 2026-07-08 to 2026-11-16.
+Latest day, 2026-11-16: 792 of 2760 shares rose (29%), Nifty 50 25,291 (+0.58%), 42.6% of the money traded was taken for delivery, India VIX 15.68.
