@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-17 11:31 IST",
- "updated_ts": 1794895278,
+ "updated": "2026-11-17 11:41 IST",
+ "updated_ts": 1794895880,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -335,13 +335,6 @@
  ],
  "today_net": -2540.0,
  "log": [
-  "10:30  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
-  "10:30  SKIP  HDFCLIFE    vwap      VWAP loss: max 3 trades a day",
-  "10:30  SKIP  JSWSTEEL    orb15     ORB15 up: max 3 trades a day",
-  "10:30  SKIP  JSWSTEEL    orb30_2r  ORB30 up: max 3 trades a day",
-  "10:30  SKIP  JSWSTEEL    orb60     ORB60 up: max 3 trades a day",
-  "10:30  SKIP  MARUTI      orb60     ORB60 down: max 3 trades a day",
-  "10:30  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day",
   "10:30  SKIP  POWERGRID   orb60     ORB60 down: max 3 trades a day",
   "10:30  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day",
   "10:30  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day",
@@ -394,7 +387,14 @@
   "11:25  SKIP  CIPLA       orb15     ORB15 down: max 3 trades a day",
   "11:25  SKIP  CIPLA       orb30_2r  ORB30 down: max 3 trades a day",
   "11:25  SKIP  CIPLA       orb60     ORB60 down: max 3 trades a day",
-  "11:30  SKIP  HCLTECH     vwap      VWAP loss: max 3 trades a day"
+  "11:30  SKIP  HCLTECH     vwap      VWAP loss: max 3 trades a day",
+  "11:35  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day",
+  "11:40  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day",
+  "11:40  SKIP  BSE         orb60     ORB60 up: max 3 trades a day",
+  "11:40  SKIP  BHARTIARTL  orb15     ORB15 up: max 3 trades a day",
+  "11:40  SKIP  BHARTIARTL  orb30_2r  ORB30 up: max 3 trades a day",
+  "11:40  SKIP  BHARTIARTL  orb60     ORB60 up: max 3 trades a day",
+  "11:40  SKIP  INFY        vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 165,
  "all_wins": 85,
