@@ -261,3 +261,12 @@ NSE's own daily file: latest saved is 2026-11-16
 15:15  SKIP  HINDUNILVR  orb30_2r  ORB30 down: past square-off
 15:15  SKIP  HINDUNILVR  orb60     ORB60 down: past square-off
 15:15  SKIP  TECHM       vwap      VWAP reclaim: past square-off
+2026-11-17: 19 closed (7 won), 0 still open, net Rs -4065 after charges
+  orb15     3 trades, net Rs -646
+  orb30_2r  3 trades, net Rs -239
+  orb60     3 trades, net Rs -853
+  gap_go    2 trades, net Rs -164
+  gap_fade  2 trades, net Rs -794
+  vwap      3 trades, net Rs -1377
+  trap90    3 trades, net Rs +7
+  learner   0 trades, net Rs +0
