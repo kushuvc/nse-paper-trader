@@ -234,3 +234,5 @@ NSE's own daily file: latest saved is 2026-11-16
 13:30  CLOSE SHRIRAMFIN  stop       @ 985.00  net Rs -589 [orb60] (charges 65)
 13:35  SKIP  ETERNAL     vwap      VWAP reclaim: max 3 trades a day
 13:35  SKIP  NTPC        vwap      VWAP reclaim: max 3 trades a day
+13:45  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day
+13:45  SKIP  SUNPHARMA   vwap      VWAP reclaim: max 3 trades a day
