@@ -196,3 +196,5 @@ NSE's own daily file: latest saved is 2026-11-16
 11:55  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day
 12:00  SKIP  INDIGO      vwap      VWAP reclaim: max 3 trades a day
 12:00  SKIP  M&M         orb60     ORB60 up: max 3 trades a day
+12:10  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day
+12:10  SKIP  HDFCBANK    orb60     ORB60 up: max 3 trades a day
