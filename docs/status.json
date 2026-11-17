@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-17 10:01 IST",
- "updated_ts": 1794889863,
+ "updated": "2026-11-17 10:11 IST",
+ "updated_ts": 1794890465,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -45,17 +45,6 @@
    "target": 5647.0,
    "entry_time": "09:30",
    "note": "gap +1.0% and go"
-  },
-  "orb15|BAJAJFINSV": {
-   "strategy": "orb15",
-   "symbol": "BAJAJFINSV",
-   "side": -1,
-   "qty": 54,
-   "entry": 1850.5,
-   "stop": 1856.25,
-   "target": 1844.75,
-   "entry_time": "09:35",
-   "note": "ORB15 down"
   },
   "orb15|COALINDIA": {
    "strategy": "orb15",
@@ -202,19 +191,30 @@
    "net": -591.67,
    "r": -1.204,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "BAJAJFINSV",
+   "side": -1,
+   "qty": 54,
+   "entry": 1850.5,
+   "stop": 1856.25,
+   "target": 1844.75,
+   "entry_time": "09:35",
+   "note": "ORB15 down",
+   "date": "2026-11-17",
+   "exit": 1856.25,
+   "exit_time": "10:10",
+   "reason": "stop",
+   "gross": -350.53,
+   "charges": 82.44,
+   "net": -432.97,
+   "r": -1.394,
+   "mode": "live"
   }
  ],
- "today_net": -804.0,
+ "today_net": -1237.0,
  "log": [
-  "09:30  SKIP  MAXHEALTH   trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  NTPC        trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  NESTLEIND   trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  SBILIFE     trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  SHRIRAMFIN  trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  SBIN        trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  SUNPHARMA   trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  TCS         trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  TATACONSUM  trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  TMPV        trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  TATASTEEL   trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  TECHM       trap90    tiny target, wide stop: max 3 trades a day",
@@ -265,12 +265,42 @@
   "10:00  SKIP  HDFCLIFE    orb30_2r  ORB30 up: max 3 trades a day",
   "10:00  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day",
   "10:00  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day",
-  "10:00  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day"
+  "10:00  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day",
+  "10:05  SKIP  COALINDIA   orb30_2r  ORB30 down: max 3 trades a day",
+  "10:05  SKIP  POWERGRID   orb30_2r  ORB30 down: max 3 trades a day",
+  "10:05  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day",
+  "10:05  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day",
+  "10:10  CLOSE BAJAJFINSV  stop       @ 1856.25  net Rs -433 [orb15] (charges 82)",
+  "10:10  SKIP  NTPC        orb30_2r  ORB30 down: max 3 trades a day",
+  "10:10  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day",
+  "10:10  SKIP  NESTLEIND   orb30_2r  ORB30 down: max 3 trades a day",
+  "10:10  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day"
  ],
- "all_trades": 158,
+ "all_trades": 159,
  "all_wins": 83,
- "all_net": -9213.0,
+ "all_net": -9646.0,
  "recent": [
+  {
+   "date": "2026-11-17",
+   "symbol": "BAJAJFINSV",
+   "strategy": "orb15",
+   "side": "-1",
+   "qty": "54",
+   "entry_time": "09:35",
+   "entry": "1850.5",
+   "stop": "1856.25",
+   "target": "1844.75",
+   "exit_time": "10:10",
+   "exit": "1856.25",
+   "reason": "stop",
+   "gross": "-350.53",
+   "charges": "82.44",
+   "net": "-432.97",
+   "r": "-1.394",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-17",
    "symbol": "ASIANPAINT",
@@ -774,27 +804,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-16",
-   "symbol": "APOLLOHOSP",
-   "strategy": "trap90",
-   "side": "1",
-   "qty": "3",
-   "entry_time": "09:30",
-   "entry": "8619.5",
-   "stop": "8490.2",
-   "target": "8632.45",
-   "exit_time": "09:35",
-   "exit": "8632.45",
-   "reason": "target",
-   "gross": "28.5",
-   "charges": "27.45",
-   "net": "1.05",
-   "r": "0.003",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -805,17 +814,17 @@
   "2026-11-12": -3681.0,
   "2026-11-13": -6092.0,
   "2026-11-16": -1655.0,
-  "2026-11-17": -805.0
+  "2026-11-17": -1238.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 1,
-   "today_net": -592,
-   "open": 2,
-   "all_trades": 22,
+   "today_trades": 2,
+   "today_net": -1025,
+   "open": 1,
+   "all_trades": 23,
    "all_wins": 11,
-   "all_net": -2033
+   "all_net": -2466
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
@@ -897,11 +906,11 @@
   "accounts": {
    "orb15": {
     "days": 8,
-    "trades": 22,
-    "net": -2033,
-    "per_trade": -92,
-    "t": -0.88,
-    "drawdown": -3147,
+    "trades": 23,
+    "net": -2466,
+    "per_trade": -107,
+    "t": -1.15,
+    "drawdown": -3580,
     "passed": 1,
     "of": 7,
     "ready": false,
@@ -916,31 +925,31 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "22 of 150 trades"
+      "now": "23 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -92 a trade"
+      "now": "Rs -107 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.88"
+      "now": "t = -1.15"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -458 then Rs -1575"
+      "now": "Rs -458 then Rs -2008"
      },
      {
       "id": "drawdown",
       "need": "Worst losing run under Rs 10,000",
       "ok": true,
-      "now": "Rs -3147"
+      "now": "Rs -3580"
      },
      {
       "id": "history",

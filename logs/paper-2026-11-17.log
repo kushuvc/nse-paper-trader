@@ -87,3 +87,12 @@ NSE's own daily file: latest saved is 2026-11-16
 10:00  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day
 10:00  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day
 10:00  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day
+10:05  SKIP  COALINDIA   orb30_2r  ORB30 down: max 3 trades a day
+10:05  SKIP  POWERGRID   orb30_2r  ORB30 down: max 3 trades a day
+10:05  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day
+10:05  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day
+10:10  CLOSE BAJAJFINSV  stop       @ 1856.25  net Rs -433 [orb15] (charges 82)
+10:10  SKIP  NTPC        orb30_2r  ORB30 down: max 3 trades a day
+10:10  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day
+10:10  SKIP  NESTLEIND   orb30_2r  ORB30 down: max 3 trades a day
+10:10  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day
