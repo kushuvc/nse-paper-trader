@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-17 17:53 IST",
- "updated_ts": 1794918205,
+ "updated_ts": 1794918229,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -397,7 +397,6 @@
  ],
  "today_net": -4065.0,
  "log": [
-  "12:00  SKIP  M&M         orb60     ORB60 up: max 3 trades a day",
   "12:10  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day",
   "12:10  SKIP  HDFCBANK    orb60     ORB60 up: max 3 trades a day",
   "12:25  CLOSE BSE         stop       @ 3936.30  net Rs -588 [gap_go] (charges 76)",
@@ -456,7 +455,8 @@
   "15:15  SKIP  HINDUNILVR  orb15     ORB15 down: past square-off",
   "15:15  SKIP  HINDUNILVR  orb30_2r  ORB30 down: past square-off",
   "15:15  SKIP  HINDUNILVR  orb60     ORB60 down: past square-off",
-  "15:15  SKIP  TECHM       vwap      VWAP reclaim: past square-off"
+  "15:15  SKIP  TECHM       vwap      VWAP reclaim: past square-off",
+  "17:53  SKIP  POWERGRID   vwap      VWAP loss: past square-off"
  ],
  "all_trades": 172,
  "all_wins": 87,
