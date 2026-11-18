@@ -237,3 +237,5 @@ NSE's own daily file: latest saved is 2026-11-17
 14:20  SKIP  TCS         vwap      VWAP reclaim: max 3 trades a day
 14:20  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day
 14:25  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day
+14:30  CLOSE BAJAJFINSV  stop       @ 1865.00  net Rs -559 [vwap] (charges 53)
+14:35  SKIP  ICICIBANK   vwap      VWAP loss: after 14:30

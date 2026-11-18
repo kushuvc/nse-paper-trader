@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 14:26 IST",
- "updated_ts": 1794992186,
+ "updated": "2026-11-18 14:36 IST",
+ "updated_ts": 1794992788,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -59,17 +59,6 @@
    "via": "orb30_2r",
    "setup": "short, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market",
    "score": 0.132
-  },
-  "vwap|BAJAJFINSV": {
-   "strategy": "vwap",
-   "symbol": "BAJAJFINSV",
-   "side": -1,
-   "qty": 27,
-   "entry": 1847.0,
-   "stop": 1865.0,
-   "target": 1811.0,
-   "entry_time": "10:20",
-   "note": "VWAP loss"
   },
   "orb60|BHARTIARTL": {
    "strategy": "orb60",
@@ -391,12 +380,30 @@
    "net": -552.48,
    "r": -1.135,
    "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "BAJAJFINSV",
+   "side": -1,
+   "qty": 27,
+   "entry": 1847.0,
+   "stop": 1865.0,
+   "target": 1811.0,
+   "entry_time": "10:20",
+   "note": "VWAP loss",
+   "date": "2026-11-18",
+   "exit": 1865.0,
+   "exit_time": "14:30",
+   "reason": "stop",
+   "gross": -506.04,
+   "charges": 53.09,
+   "net": -559.13,
+   "r": -1.15,
+   "mode": "live"
   }
  ],
- "today_net": 1346.0,
+ "today_net": 787.0,
  "log": [
-  "11:35  SKIP  ICICIBANK   vwap      VWAP loss: max 3 trades a day",
-  "11:35  SKIP  MARUTI      vwap      VWAP reclaim: max 3 trades a day",
   "11:40  SKIP  HCLTECH     orb15     ORB15 up: max 3 trades a day",
   "11:40  SKIP  HDFCBANK    vwap      VWAP loss: max 3 trades a day",
   "11:50  SKIP  JIOFIN      orb30_2r  ORB30 down: max 3 trades a day",
@@ -454,12 +461,35 @@
   "14:15  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day",
   "14:20  SKIP  TCS         vwap      VWAP reclaim: max 3 trades a day",
   "14:20  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
-  "14:25  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day"
+  "14:25  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
+  "14:30  CLOSE BAJAJFINSV  stop       @ 1865.00  net Rs -559 [vwap] (charges 53)",
+  "14:35  SKIP  ICICIBANK   vwap      VWAP loss: after 14:30"
  ],
- "all_trades": 186,
+ "all_trades": 187,
  "all_wins": 97,
- "all_net": -11128.0,
+ "all_net": -11687.0,
  "recent": [
+  {
+   "date": "2026-11-18",
+   "symbol": "BAJAJFINSV",
+   "strategy": "vwap",
+   "side": "-1",
+   "qty": "27",
+   "entry_time": "10:20",
+   "entry": "1847.0",
+   "stop": "1865.0",
+   "target": "1811.0",
+   "exit_time": "14:30",
+   "exit": "1865.0",
+   "reason": "stop",
+   "gross": "-506.04",
+   "charges": "53.09",
+   "net": "-559.13",
+   "r": "-1.15",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-18",
    "symbol": "RELIANCE",
@@ -963,27 +993,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-17",
-   "symbol": "ADANIPORTS",
-   "strategy": "vwap",
-   "side": "1",
-   "qty": "52",
-   "entry_time": "10:20",
-   "entry": "1913.3",
-   "stop": "1909.3",
-   "target": "1921.3",
-   "exit_time": "10:35",
-   "exit": "1909.3",
-   "reason": "stop",
-   "gross": "-247.76",
-   "charges": "82.2",
-   "net": "-329.96",
-   "r": "-1.586",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -995,7 +1004,7 @@
   "2026-11-13": -6092.0,
   "2026-11-16": -1655.0,
   "2026-11-17": -4066.0,
-  "2026-11-18": 1345.0
+  "2026-11-18": 786.0
  },
  "by_strategy": {
   "orb15": {
@@ -1045,12 +1054,12 @@
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 1,
-   "today_net": 679,
-   "open": 2,
-   "all_trades": 25,
+   "today_trades": 2,
+   "today_net": 120,
+   "open": 1,
+   "all_trades": 26,
    "all_wins": 10,
-   "all_net": -2802
+   "all_net": -3361
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
@@ -1362,10 +1371,10 @@
    },
    "vwap": {
     "days": 9,
-    "trades": 25,
-    "net": -2802,
-    "per_trade": -112,
-    "t": -0.83,
+    "trades": 26,
+    "net": -3361,
+    "per_trade": -129,
+    "t": -0.98,
     "drawdown": -3542,
     "passed": 1,
     "of": 7,
@@ -1381,25 +1390,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "25 of 150 trades"
+      "now": "26 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -112 a trade"
+      "now": "Rs -129 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.83"
+      "now": "t = -0.98"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1681 then Rs -1121"
+      "now": "Rs -1053 then Rs -2308"
      },
      {
       "id": "drawdown",
