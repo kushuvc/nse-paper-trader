@@ -165,3 +165,10 @@ NSE's own daily file: latest saved is 2026-11-17
 11:05  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day
 11:10  CLOSE COALINDIA   target     @ 387.40  net Rs +380 [orb15] (charges 81)
 11:10  SKIP  SUNPHARMA   vwap      VWAP reclaim: max 3 trades a day
+11:15  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day
+11:15  CLOSE COALINDIA   target     @ 387.15  net Rs +367 [orb60] (charges 81)
+11:20  SKIP  HCLTECH     vwap      VWAP reclaim: max 3 trades a day
+11:20  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day
+11:20  SKIP  LT          orb15     ORB15 up: max 3 trades a day
+11:20  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day
+11:20  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day
