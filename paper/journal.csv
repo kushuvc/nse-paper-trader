@@ -186,3 +186,10 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-18,INFY,vwap,-1,89,10:20,1118.2,1122.7,1109.2,13:10,1109.2,target,761.35,82.22,679.13,1.696,live,,
 2026-11-18,RELIANCE,learner,-1,33,09:50,1357.6,1372.35,1328.2,13:55,1372.35,stop,-504.77,47.71,-552.48,-1.135,live,orb30_2r,"short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market"
 2026-11-18,BAJAJFINSV,vwap,-1,27,10:20,1847.0,1865.0,1811.0,14:30,1865.0,stop,-506.04,53.09,-559.13,-1.15,live,,
+2026-11-18,ADANIENT,orb30_2r,-1,9,09:50,2694.1,2745.5,2591.3,15:15,2686.0,square-off,63.22,25.68,37.54,0.081,live,,
+2026-11-18,APOLLOHOSP,learner,-1,3,10:20,8752.0,8897.0,8462.0,15:15,8799.0,square-off,-151.53,27.9,-179.43,-0.412,live,orb30_2r,"short, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market"
+2026-11-18,ASIANPAINT,orb30_2r,-1,27,09:50,2576.5,2594.85,2539.9,15:15,2577.8,square-off,-62.93,71.72,-134.65,-0.272,live,,
+2026-11-18,AXISBANK,trap90,1,24,09:30,1370.9,1350.3,1372.95,15:15,1359.7,square-off,-281.91,34.72,-316.63,-0.64,live,,
+2026-11-18,BHARTIARTL,orb60,-1,42,10:20,2133.2,2144.85,2121.55,15:15,2129.5,square-off,119.59,78.76,40.83,0.083,live,,
+2026-11-18,COALINDIA,learner,-1,128,10:20,389.1,393.0,381.4,15:15,388.0,square-off,120.91,52.75,68.16,0.137,live,orb30_2r,"short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market"
+2026-11-18,JSWSTEEL,vwap,-1,74,10:20,1317.5,1324.2,1304.1,15:15,1311.8,square-off,382.88,81.53,301.35,0.608,live,,
