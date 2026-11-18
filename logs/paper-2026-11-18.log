@@ -146,3 +146,12 @@ NSE's own daily file: latest saved is 2026-11-17
 10:50  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day
 10:50  SKIP  LT          vwap      VWAP reclaim: max 3 trades a day
 10:50  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day
+10:55  CLOSE BAJAJ-AUTO  stop       @ 10604.95  net Rs -576 [gap_fade] (charges 77)
+10:55  SKIP  DRREDDY     vwap      VWAP reclaim: max 3 trades a day
+10:55  SKIP  JSWSTEEL    orb30_2r  ORB30 down: max 3 trades a day
+10:55  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day
+10:55  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day
+10:55  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day
+11:00  CLOSE ASIANPAINT  target     @ 2569.00  net Rs +533 [gap_go] (charges 82)
+11:00  SKIP  HDFCLIFE    orb30_2r  ORB30 down: max 3 trades a day
+11:00  SKIP  NTPC        vwap      VWAP loss: max 3 trades a day
