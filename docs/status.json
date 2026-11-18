@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 14:56 IST",
- "updated_ts": 1794993991,
+ "updated": "2026-11-18 15:06 IST",
+ "updated_ts": 1794994592,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -404,9 +404,6 @@
  ],
  "today_net": 787.0,
  "log": [
-  "12:05  SKIP  GRASIM      vwap      VWAP loss: max 3 trades a day",
-  "12:05  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day",
-  "12:05  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day",
   "12:05  SKIP  NTPC        vwap      VWAP loss: max 3 trades a day",
   "12:05  SKIP  SBILIFE     vwap      VWAP loss: max 3 trades a day",
   "12:10  SKIP  HCLTECH     orb30_2r  ORB30 up: max 3 trades a day",
@@ -463,7 +460,10 @@
   "14:45  SKIP  NESTLEIND   vwap      VWAP loss: after 14:30",
   "14:45  SKIP  TATASTEEL   vwap      VWAP loss: after 14:30",
   "14:50  SKIP  COALINDIA   vwap      VWAP loss: after 14:30",
-  "14:55  SKIP  ASIANPAINT  vwap      VWAP loss: after 14:30"
+  "14:55  SKIP  ASIANPAINT  vwap      VWAP loss: after 14:30",
+  "15:00  SKIP  ADANIENT    vwap      VWAP loss: after 14:30",
+  "15:05  SKIP  HDFCBANK    orb30_2r  ORB30 down: after 14:30",
+  "15:05  SKIP  HDFCBANK    orb60     ORB60 down: after 14:30"
  ],
  "all_trades": 187,
  "all_wins": 97,

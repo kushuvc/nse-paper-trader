@@ -248,3 +248,6 @@ NSE's own daily file: latest saved is 2026-11-17
 14:45  SKIP  TATASTEEL   vwap      VWAP loss: after 14:30
 14:50  SKIP  COALINDIA   vwap      VWAP loss: after 14:30
 14:55  SKIP  ASIANPAINT  vwap      VWAP loss: after 14:30
+15:00  SKIP  ADANIENT    vwap      VWAP loss: after 14:30
+15:05  SKIP  HDFCBANK    orb30_2r  ORB30 down: after 14:30
+15:05  SKIP  HDFCBANK    orb60     ORB60 down: after 14:30
