@@ -27,3 +27,25 @@ NSE's own daily file: latest saved is 2026-11-17
 09:30  SKIP  TCS         trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  TECHM       trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  ULTRACEMCO  trap90    tiny target, wide stop: max 3 trades a day
+09:35  CLOSE APOLLOHOSP  target     @ 8812.20  net Rs +1 [trap90] (charges 28)
+09:35  OPEN  ASIANPAINT  SHORT   38 @ 2583.70  stop 2589.45  target 2578.00  [orb15: ORB15 down]
+09:35  CLOSE BSE         target     @ 3914.85  net Rs +1 [trap90] (charges 33)
+09:35  OPEN  COALINDIA   SHORT  243 @ 389.45  stop 391.50  target 387.40  [orb15: ORB15 down]
+09:35  OPEN  HDFCLIFE    SHORT  161 @ 582.80  stop 585.90  target 579.75  [orb15: ORB15 down]
+09:35  SKIP  INDIGO      orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  JIOFIN      orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  MAXHEALTH   orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  ONGC        orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  SBILIFE     orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  SHRIRAMFIN  orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  ADANIENT    orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  ADANIPORTS  orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  BAJFINANCE  orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  BEL         orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  EICHERMOT   orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  ETERNAL     orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  HDFCBANK    orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  RELIANCE    orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day
