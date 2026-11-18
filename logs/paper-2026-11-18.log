@@ -205,3 +205,7 @@ NSE's own daily file: latest saved is 2026-11-17
 12:35  CLOSE BAJFINANCE  target     @ 1098.30  net Rs +301 [orb60] (charges 82)
 12:35  SKIP  ITC         orb60     ORB60 down: max 3 trades a day
 12:35  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day
+12:40  SKIP  INFY        orb15     ORB15 down: max 3 trades a day
+12:40  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day
+12:40  SKIP  INFY        orb60     ORB60 down: max 3 trades a day
+12:45  CLOSE BAJFINANCE  target     @ 1095.50  net Rs +865 [gap_go] (charges 81)
