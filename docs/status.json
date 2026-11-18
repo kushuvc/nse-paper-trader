@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 14:06 IST",
- "updated_ts": 1794990982,
+ "updated": "2026-11-18 14:16 IST",
+ "updated_ts": 1794991584,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -395,9 +395,6 @@
  ],
  "today_net": 1346.0,
  "log": [
-  "11:25  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 down: max 3 trades a day",
-  "11:25  SKIP  BAJAJ-AUTO  orb60     ORB60 down: max 3 trades a day",
-  "11:25  SKIP  HINDUNILVR  orb60     ORB60 down: max 3 trades a day",
   "11:25  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day",
   "11:30  SKIP  TCS         vwap      VWAP reclaim: max 3 trades a day",
   "11:35  SKIP  HINDALCO    vwap      VWAP loss: max 3 trades a day",
@@ -454,7 +451,10 @@
   "13:55  SKIP  SUNPHARMA   vwap      VWAP reclaim: max 3 trades a day",
   "14:00  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
   "14:00  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day",
-  "14:00  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day"
+  "14:00  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day",
+  "14:10  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day",
+  "14:10  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day",
+  "14:15  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 186,
  "all_wins": 97,
