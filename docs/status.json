@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 13:46 IST",
- "updated_ts": 1794989779,
+ "updated": "2026-11-18 13:56 IST",
+ "updated_ts": 1794990381,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -45,20 +45,6 @@
    "target": 2539.9,
    "entry_time": "09:50",
    "note": "ORB30 down"
-  },
-  "learner|RELIANCE": {
-   "strategy": "learner",
-   "symbol": "RELIANCE",
-   "side": -1,
-   "qty": 33,
-   "entry": 1357.6,
-   "stop": 1372.35,
-   "target": 1328.2,
-   "entry_time": "09:50",
-   "note": "ORB30 down",
-   "via": "orb30_2r",
-   "setup": "short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market",
-   "score": 0.054
   },
   "learner|APOLLOHOSP": {
    "strategy": "learner",
@@ -382,14 +368,33 @@
    "net": 679.13,
    "r": 1.696,
    "mode": "live"
+  },
+  {
+   "strategy": "learner",
+   "symbol": "RELIANCE",
+   "side": -1,
+   "qty": 33,
+   "entry": 1357.6,
+   "stop": 1372.35,
+   "target": 1328.2,
+   "entry_time": "09:50",
+   "note": "ORB30 down",
+   "via": "orb30_2r",
+   "setup": "short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market",
+   "score": 0.054,
+   "date": "2026-11-18",
+   "exit": 1372.35,
+   "exit_time": "13:55",
+   "reason": "stop",
+   "gross": -504.77,
+   "charges": 47.71,
+   "net": -552.48,
+   "r": -1.135,
+   "mode": "live"
   }
  ],
- "today_net": 1898.0,
+ "today_net": 1346.0,
  "log": [
-  "11:15  CLOSE COALINDIA   target     @ 387.15  net Rs +367 [orb60] (charges 81)",
-  "11:20  SKIP  HCLTECH     vwap      VWAP reclaim: max 3 trades a day",
-  "11:20  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day",
-  "11:20  SKIP  LT          orb15     ORB15 up: max 3 trades a day",
   "11:20  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day",
   "11:20  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day",
   "11:25  SKIP  BAJAJ-AUTO  orb15     ORB15 down: max 3 trades a day",
@@ -445,12 +450,37 @@
   "13:30  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day",
   "13:40  SKIP  GRASIM      vwap      VWAP loss: max 3 trades a day",
   "13:40  SKIP  ITC         vwap      VWAP loss: max 3 trades a day",
-  "13:40  SKIP  SHRIRAMFIN  orb60     ORB60 down: max 3 trades a day"
+  "13:40  SKIP  SHRIRAMFIN  orb60     ORB60 down: max 3 trades a day",
+  "13:50  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day",
+  "13:55  CLOSE RELIANCE    stop       @ 1372.35  net Rs -552 [learner] (charges 48)",
+  "13:55  SKIP  RELIANCE    orb60     ORB60 up: max 3 trades a day",
+  "13:55  SKIP  SUNPHARMA   vwap      VWAP reclaim: max 3 trades a day"
  ],
- "all_trades": 185,
+ "all_trades": 186,
  "all_wins": 97,
- "all_net": -10576.0,
+ "all_net": -11128.0,
  "recent": [
+  {
+   "date": "2026-11-18",
+   "symbol": "RELIANCE",
+   "strategy": "learner",
+   "side": "-1",
+   "qty": "33",
+   "entry_time": "09:50",
+   "entry": "1357.6",
+   "stop": "1372.35",
+   "target": "1328.2",
+   "exit_time": "13:55",
+   "exit": "1372.35",
+   "reason": "stop",
+   "gross": "-504.77",
+   "charges": "47.71",
+   "net": "-552.48",
+   "r": "-1.135",
+   "mode": "live",
+   "via": "orb30_2r",
+   "setup": "short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market"
+  },
   {
    "date": "2026-11-18",
    "symbol": "INFY",
@@ -954,27 +984,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-17",
-   "symbol": "APOLLOHOSP",
-   "strategy": "orb30_2r",
-   "side": "-1",
-   "qty": "9",
-   "entry_time": "09:50",
-   "entry": "8754.0",
-   "stop": "8805.0",
-   "target": "8652.0",
-   "exit_time": "10:25",
-   "exit": "8805.0",
-   "reason": "stop",
-   "gross": "-490.61",
-   "charges": "75.0",
-   "net": "-565.61",
-   "r": "-1.232",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -986,7 +995,7 @@
   "2026-11-13": -6092.0,
   "2026-11-16": -1655.0,
   "2026-11-17": -4066.0,
-  "2026-11-18": 1897.0
+  "2026-11-18": 1345.0
  },
  "by_strategy": {
   "orb15": {
@@ -1054,12 +1063,12 @@
   },
   "learner": {
    "desc": "takes only the signals last night's model expects to profit",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 0,
-   "all_trades": 17,
+   "today_trades": 1,
+   "today_net": -552,
+   "open": 2,
+   "all_trades": 18,
    "all_wins": 6,
-   "all_net": -1670
+   "all_net": -2222
   }
  },
  "gate": {
@@ -1462,12 +1471,12 @@
     ]
    },
    "learner": {
-    "days": 6,
-    "trades": 17,
-    "net": -1670,
-    "per_trade": -98,
-    "t": -0.97,
-    "drawdown": -3137,
+    "days": 7,
+    "trades": 18,
+    "net": -2222,
+    "per_trade": -123,
+    "t": -1.27,
+    "drawdown": -3689,
     "passed": 1,
     "of": 7,
     "ready": false,
@@ -1476,37 +1485,37 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "6 of 60 days"
+      "now": "7 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "17 of 150 trades"
+      "now": "18 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -98 a trade"
+      "now": "Rs -123 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.97"
+      "now": "t = -1.27"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs +829 then Rs -2499"
+      "now": "Rs +430 then Rs -2653"
      },
      {
       "id": "drawdown",
       "need": "Worst losing run under Rs 10,000",
       "ok": true,
-      "now": "Rs -3137"
+      "now": "Rs -3689"
      },
      {
       "id": "history",

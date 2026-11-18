@@ -184,3 +184,4 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-18,BAJFINANCE,orb60,-1,90,10:20,1103.0,1107.7,1098.3,12:35,1098.3,target,383.38,82.16,301.22,0.712,live,,
 2026-11-18,BAJFINANCE,gap_go,-1,88,09:30,1106.7,1112.35,1095.5,12:45,1095.5,target,946.84,81.46,865.38,1.741,live,,
 2026-11-18,INFY,vwap,-1,89,10:20,1118.2,1122.7,1109.2,13:10,1109.2,target,761.35,82.22,679.13,1.696,live,,
+2026-11-18,RELIANCE,learner,-1,33,09:50,1357.6,1372.35,1328.2,13:55,1372.35,stop,-504.77,47.71,-552.48,-1.135,live,orb30_2r,"short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market"
