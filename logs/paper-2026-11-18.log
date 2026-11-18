@@ -155,3 +155,13 @@ NSE's own daily file: latest saved is 2026-11-17
 11:00  CLOSE ASIANPAINT  target     @ 2569.00  net Rs +533 [gap_go] (charges 82)
 11:00  SKIP  HDFCLIFE    orb30_2r  ORB30 down: max 3 trades a day
 11:00  SKIP  NTPC        vwap      VWAP loss: max 3 trades a day
+11:05  SKIP  BSE         orb15     ORB15 down: max 3 trades a day
+11:05  SKIP  BSE         orb30_2r  ORB30 down: max 3 trades a day
+11:05  SKIP  BSE         orb60     ORB60 down: max 3 trades a day
+11:05  SKIP  CIPLA       orb60     ORB60 up: max 3 trades a day
+11:05  SKIP  JSWSTEEL    orb60     ORB60 down: max 3 trades a day
+11:05  SKIP  NTPC        orb30_2r  ORB30 down: max 3 trades a day
+11:05  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day
+11:05  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day
+11:10  CLOSE COALINDIA   target     @ 387.40  net Rs +380 [orb15] (charges 81)
+11:10  SKIP  SUNPHARMA   vwap      VWAP reclaim: max 3 trades a day
