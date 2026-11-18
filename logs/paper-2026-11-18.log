@@ -259,3 +259,12 @@ NSE's own daily file: latest saved is 2026-11-17
 15:15  CLOSE COALINDIA   square-off @ 388.00  net Rs +68 [learner] (charges 53)
 15:15  SKIP  HCLTECH     vwap      VWAP reclaim: past square-off
 15:15  CLOSE JSWSTEEL    square-off @ 1311.80  net Rs +301 [vwap] (charges 82)
+2026-11-18: 22 closed (14 won), 0 still open, net Rs +604 after charges
+  orb15     3 trades, net Rs +849
+  orb30_2r  3 trades, net Rs -687
+  orb60     3 trades, net Rs +709
+  gap_go    3 trades, net Rs +865
+  gap_fade  1 trades, net Rs -576
+  vwap      3 trades, net Rs +421
+  trap90    3 trades, net Rs -315
+  learner   3 trades, net Rs -664
