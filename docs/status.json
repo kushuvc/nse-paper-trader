@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 12:26 IST",
- "updated_ts": 1794984966,
+ "updated": "2026-11-18 12:36 IST",
+ "updated_ts": 1794985568,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -84,17 +84,6 @@
    "via": "orb30_2r",
    "setup": "short, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market",
    "score": 0.132
-  },
-  "orb60|BAJFINANCE": {
-   "strategy": "orb60",
-   "symbol": "BAJFINANCE",
-   "side": -1,
-   "qty": 90,
-   "entry": 1103.0,
-   "stop": 1107.7,
-   "target": 1098.3,
-   "entry_time": "10:20",
-   "note": "ORB60 down"
   },
   "vwap|BAJAJFINSV": {
    "strategy": "vwap",
@@ -355,14 +344,30 @@
    "net": 367.24,
    "r": 0.734,
    "mode": "live"
+  },
+  {
+   "strategy": "orb60",
+   "symbol": "BAJFINANCE",
+   "side": -1,
+   "qty": 90,
+   "entry": 1103.0,
+   "stop": 1107.7,
+   "target": 1098.3,
+   "entry_time": "10:20",
+   "note": "ORB60 down",
+   "date": "2026-11-18",
+   "exit": 1098.3,
+   "exit_time": "12:35",
+   "reason": "target",
+   "gross": 383.38,
+   "charges": 82.16,
+   "net": 301.22,
+   "r": 0.712,
+   "mode": "live"
   }
  ],
- "today_net": 53.0,
+ "today_net": 354.0,
  "log": [
-  "10:50  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day",
-  "10:50  SKIP  LT          vwap      VWAP reclaim: max 3 trades a day",
-  "10:50  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day",
-  "10:55  CLOSE BAJAJ-AUTO  stop       @ 10604.95  net Rs -576 [gap_fade] (charges 77)",
   "10:55  SKIP  DRREDDY     vwap      VWAP reclaim: max 3 trades a day",
   "10:55  SKIP  JSWSTEEL    orb30_2r  ORB30 down: max 3 trades a day",
   "10:55  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day",
@@ -418,12 +423,37 @@
   "12:20  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day",
   "12:25  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day",
   "12:25  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day",
-  "12:25  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day"
+  "12:25  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day",
+  "12:30  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day",
+  "12:35  CLOSE BAJFINANCE  target     @ 1098.30  net Rs +301 [orb60] (charges 82)",
+  "12:35  SKIP  ITC         orb60     ORB60 down: max 3 trades a day",
+  "12:35  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day"
  ],
- "all_trades": 182,
- "all_wins": 94,
- "all_net": -12421.0,
+ "all_trades": 183,
+ "all_wins": 95,
+ "all_net": -12120.0,
  "recent": [
+  {
+   "date": "2026-11-18",
+   "symbol": "BAJFINANCE",
+   "strategy": "orb60",
+   "side": "-1",
+   "qty": "90",
+   "entry_time": "10:20",
+   "entry": "1103.0",
+   "stop": "1107.7",
+   "target": "1098.3",
+   "exit_time": "12:35",
+   "exit": "1098.3",
+   "reason": "target",
+   "gross": "383.38",
+   "charges": "82.16",
+   "net": "301.22",
+   "r": "0.712",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-18",
    "symbol": "COALINDIA",
@@ -927,27 +957,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-17",
-   "symbol": "ASIANPAINT",
-   "strategy": "orb15",
-   "side": "-1",
-   "qty": "27",
-   "entry_time": "09:35",
-   "entry": "2605.8",
-   "stop": "2624.0",
-   "target": "2587.65",
-   "exit_time": "09:55",
-   "exit": "2624.0",
-   "reason": "stop",
-   "gross": "-519.64",
-   "charges": "72.03",
-   "net": "-591.67",
-   "r": "-1.204",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -959,7 +968,7 @@
   "2026-11-13": -6092.0,
   "2026-11-16": -1655.0,
   "2026-11-17": -4066.0,
-  "2026-11-18": 52.0
+  "2026-11-18": 353.0
  },
  "by_strategy": {
   "orb15": {
@@ -982,12 +991,12 @@
   },
   "orb60": {
    "desc": "first-hour range breakout, stop at mid, 1R",
-   "today_trades": 1,
-   "today_net": 367,
-   "open": 2,
-   "all_trades": 25,
-   "all_wins": 12,
-   "all_net": -3391
+   "today_trades": 2,
+   "today_net": 668,
+   "open": 1,
+   "all_trades": 26,
+   "all_wins": 13,
+   "all_net": -3090
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
@@ -1161,10 +1170,10 @@
    },
    "orb60": {
     "days": 9,
-    "trades": 25,
-    "net": -3391,
-    "per_trade": -136,
-    "t": -1.71,
+    "trades": 26,
+    "net": -3090,
+    "per_trade": -119,
+    "t": -1.49,
     "drawdown": -4231,
     "passed": 1,
     "of": 7,
@@ -1180,25 +1189,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "25 of 150 trades"
+      "now": "26 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -136 a trade"
+      "now": "Rs -119 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -1.71"
+      "now": "t = -1.49"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1138 then Rs -2254"
+      "now": "Rs -1726 then Rs -1364"
      },
      {
       "id": "drawdown",
