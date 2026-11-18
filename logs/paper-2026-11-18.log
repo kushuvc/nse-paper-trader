@@ -194,3 +194,10 @@ Shift until 15:20 IST (started 12:16)
 NSE's own end-of-day files -> data/nse/ (looking back 7 days) ...
 0 new. 92 days saved, 2026-07-08 to 2026-11-17.
 Latest day, 2026-11-17: 1318 of 2760 shares rose (48.4%), Nifty 50 25,387 (+0.38%), 43.3% of the money traded was taken for delivery, India VIX 15.52.
+PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
+Learner: model from 67 days of history
+NSE's own daily file: latest saved is 2026-11-17
+12:20  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day
+12:25  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day
+12:25  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day
+12:25  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day
