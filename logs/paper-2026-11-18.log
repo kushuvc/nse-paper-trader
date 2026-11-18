@@ -49,3 +49,22 @@ NSE's own daily file: latest saved is 2026-11-17
 09:40  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day
 09:40  SKIP  RELIANCE    orb15     ORB15 down: max 3 trades a day
 09:40  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  APOLLOHOSP  orb15     ORB15 down: max 3 trades a day
+09:45  CLOSE ASIANPAINT  target     @ 2578.00  net Rs +96 [orb15] (charges 82)
+09:45  SKIP  AXISBANK    orb15     ORB15 down: max 3 trades a day
+09:45  CLOSE BAJAJFINSV  stop       @ 1849.70  net Rs -533 [gap_go] (charges 82)
+09:45  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  DRREDDY     orb15     ORB15 down: max 3 trades a day
+09:45  CLOSE HDFCLIFE    target     @ 579.75  net Rs +373 [orb15] (charges 80)
+09:45  SKIP  HINDUNILVR  orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  ICICIBANK   orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  ITC         orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  POWERGRID   orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  SBIN        orb15     ORB15 down: max 3 trades a day
+09:50  OPEN  ADANIENT    SHORT    9 @ 2694.10  stop 2745.50  target 2591.30  [orb30_2r: ORB30 down]
+09:50  OPEN  ASIANPAINT  SHORT   27 @ 2576.50  stop 2594.85  target 2539.90  [orb30_2r: ORB30 down]
+09:50  SKIP  JSWSTEEL    orb15     ORB15 down: max 3 trades a day
+09:50  OPEN  NESTLEIND   SHORT   51 @ 1276.30  stop 1286.00  target 1256.90  [orb30_2r: ORB30 down]
+09:50  OPEN  RELIANCE    SHORT   33 @ 1357.60  stop 1372.35  target 1328.20  [learner via orb30_2r, expects +0.05R: short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market]
+09:50  SKIP  RELIANCE    orb30_2r  ORB30 down: max 3 trades a day
