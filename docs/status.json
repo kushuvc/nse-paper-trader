@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 12:46 IST",
- "updated_ts": 1794986170,
+ "updated": "2026-11-18 12:56 IST",
+ "updated_ts": 1794986771,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -377,10 +377,6 @@
  ],
  "today_net": 1219.0,
  "log": [
-  "10:55  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day",
-  "11:00  CLOSE ASIANPAINT  target     @ 2569.00  net Rs +533 [gap_go] (charges 82)",
-  "11:00  SKIP  HDFCLIFE    orb30_2r  ORB30 down: max 3 trades a day",
-  "11:00  SKIP  NTPC        vwap      VWAP loss: max 3 trades a day",
   "11:05  SKIP  BSE         orb15     ORB15 down: max 3 trades a day",
   "11:05  SKIP  BSE         orb30_2r  ORB30 down: max 3 trades a day",
   "11:05  SKIP  BSE         orb60     ORB60 down: max 3 trades a day",
@@ -436,7 +432,11 @@
   "12:40  SKIP  INFY        orb15     ORB15 down: max 3 trades a day",
   "12:40  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day",
   "12:40  SKIP  INFY        orb60     ORB60 down: max 3 trades a day",
-  "12:45  CLOSE BAJFINANCE  target     @ 1095.50  net Rs +865 [gap_go] (charges 81)"
+  "12:45  CLOSE BAJFINANCE  target     @ 1095.50  net Rs +865 [gap_go] (charges 81)",
+  "12:50  SKIP  SHRIRAMFIN  orb30_2r  ORB30 down: max 3 trades a day",
+  "12:55  SKIP  HINDALCO    orb15     ORB15 down: max 3 trades a day",
+  "12:55  SKIP  HINDALCO    orb30_2r  ORB30 down: max 3 trades a day",
+  "12:55  SKIP  HINDALCO    orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 184,
  "all_wins": 96,
