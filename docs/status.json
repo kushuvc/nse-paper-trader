@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 12:01 IST",
- "updated_ts": 1794983480,
+ "updated": "2026-11-18 12:11 IST",
+ "updated_ts": 1794984082,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -359,13 +359,6 @@
  ],
  "today_net": 53.0,
  "log": [
-  "10:35  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day",
-  "10:35  SKIP  SUNPHARMA   orb60     ORB60 down: max 3 trades a day",
-  "10:40  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day",
-  "10:40  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day",
-  "10:40  SKIP  EICHERMOT   orb60     ORB60 down: max 3 trades a day",
-  "10:40  SKIP  ETERNAL     orb60     ORB60 down: max 3 trades a day",
-  "10:45  SKIP  AXISBANK    orb30_2r  ORB30 down: max 3 trades a day",
   "10:45  SKIP  AXISBANK    orb60     ORB60 down: max 3 trades a day",
   "10:45  SKIP  HDFCBANK    vwap      VWAP loss: max 3 trades a day",
   "10:45  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day",
@@ -418,7 +411,14 @@
   "11:55  SKIP  JIOFIN      orb60     ORB60 down: max 3 trades a day",
   "11:55  SKIP  LT          orb60     ORB60 down: max 3 trades a day",
   "11:55  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day",
-  "11:55  SKIP  TATASTEEL   vwap      VWAP loss: max 3 trades a day"
+  "11:55  SKIP  TATASTEEL   vwap      VWAP loss: max 3 trades a day",
+  "12:05  SKIP  GRASIM      vwap      VWAP loss: max 3 trades a day",
+  "12:05  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day",
+  "12:05  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day",
+  "12:05  SKIP  NTPC        vwap      VWAP loss: max 3 trades a day",
+  "12:05  SKIP  SBILIFE     vwap      VWAP loss: max 3 trades a day",
+  "12:10  SKIP  HCLTECH     orb30_2r  ORB30 up: max 3 trades a day",
+  "12:10  SKIP  HCLTECH     orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 182,
  "all_wins": 94,
