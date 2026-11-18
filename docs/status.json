@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-18 17:40 IST",
- "updated_ts": 1795003829,
+ "updated_ts": 1795003852,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -466,9 +466,6 @@
  ],
  "today_net": 604.0,
  "log": [
-  "12:25  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day",
-  "12:25  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day",
-  "12:30  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day",
   "12:35  CLOSE BAJFINANCE  target     @ 1098.30  net Rs +301 [orb60] (charges 82)",
   "12:35  SKIP  ITC         orb60     ORB60 down: max 3 trades a day",
   "12:35  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day",
@@ -525,7 +522,10 @@
   "15:15  CLOSE BHARTIARTL  square-off @ 2129.50  net Rs +41 [orb60] (charges 79)",
   "15:15  CLOSE COALINDIA   square-off @ 388.00  net Rs +68 [learner] (charges 53)",
   "15:15  SKIP  HCLTECH     vwap      VWAP reclaim: past square-off",
-  "15:15  CLOSE JSWSTEEL    square-off @ 1311.80  net Rs +301 [vwap] (charges 82)"
+  "15:15  CLOSE JSWSTEEL    square-off @ 1311.80  net Rs +301 [vwap] (charges 82)",
+  "17:40  SKIP  EICHERMOT   vwap      VWAP loss: past square-off",
+  "17:40  SKIP  NESTLEIND   vwap      VWAP loss: past square-off",
+  "17:40  SKIP  TCS         orb60     ORB60 down: past square-off"
  ],
  "all_trades": 194,
  "all_wins": 101,
