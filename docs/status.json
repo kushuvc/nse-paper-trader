@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 13:36 IST",
- "updated_ts": 1794989177,
+ "updated": "2026-11-18 13:46 IST",
+ "updated_ts": 1794989779,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -386,9 +386,6 @@
  ],
  "today_net": 1898.0,
  "log": [
-  "11:10  CLOSE COALINDIA   target     @ 387.40  net Rs +380 [orb15] (charges 81)",
-  "11:10  SKIP  SUNPHARMA   vwap      VWAP reclaim: max 3 trades a day",
-  "11:15  SKIP  AXISBANK    vwap      VWAP reclaim: max 3 trades a day",
   "11:15  CLOSE COALINDIA   target     @ 387.15  net Rs +367 [orb60] (charges 81)",
   "11:20  SKIP  HCLTECH     vwap      VWAP reclaim: max 3 trades a day",
   "11:20  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day",
@@ -445,7 +442,10 @@
   "13:15  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
   "13:25  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day",
   "13:30  SKIP  HCLTECH     vwap      VWAP loss: max 3 trades a day",
-  "13:30  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day"
+  "13:30  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day",
+  "13:40  SKIP  GRASIM      vwap      VWAP loss: max 3 trades a day",
+  "13:40  SKIP  ITC         vwap      VWAP loss: max 3 trades a day",
+  "13:40  SKIP  SHRIRAMFIN  orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 185,
  "all_wins": 97,
