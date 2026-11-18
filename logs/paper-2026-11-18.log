@@ -214,3 +214,7 @@ NSE's own daily file: latest saved is 2026-11-17
 12:55  SKIP  HINDALCO    orb30_2r  ORB30 down: max 3 trades a day
 12:55  SKIP  HINDALCO    orb60     ORB60 down: max 3 trades a day
 13:00  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day
+13:10  CLOSE INFY        target     @ 1109.20  net Rs +679 [vwap] (charges 82)
+13:10  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day
+13:10  SKIP  TATASTEEL   orb60     ORB60 up: max 3 trades a day
+13:15  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day
