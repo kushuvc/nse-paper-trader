@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 10:00 IST",
- "updated_ts": 1794976258,
+ "updated": "2026-11-18 10:11 IST",
+ "updated_ts": 1794976860,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -220,11 +220,6 @@
  ],
  "today_net": -61.0,
  "log": [
-  "09:30  SKIP  MARUTI      trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  ONGC        trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  SHRIRAMFIN  trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  SBIN        trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  SUNPHARMA   trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  TCS         trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  TECHM       trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  ULTRACEMCO  trap90    tiny target, wide stop: max 3 trades a day",
@@ -279,7 +274,12 @@
   "10:00  SKIP  ETERNAL     orb30_2r  ORB30 down: max 3 trades a day",
   "10:00  SKIP  M&M         orb15     ORB15 down: max 3 trades a day",
   "10:00  SKIP  M&M         orb30_2r  ORB30 down: max 3 trades a day",
-  "10:00  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day"
+  "10:00  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day",
+  "10:05  SKIP  TCS         orb15     ORB15 up: max 3 trades a day",
+  "10:05  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day",
+  "10:05  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day",
+  "10:05  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day",
+  "10:10  SKIP  INDIGO      orb30_2r  ORB30 down: max 3 trades a day"
  ],
  "all_trades": 177,
  "all_wins": 91,
