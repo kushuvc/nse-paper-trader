@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 11:51 IST",
- "updated_ts": 1794982878,
+ "updated": "2026-11-18 12:01 IST",
+ "updated_ts": 1794983480,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -359,12 +359,6 @@
  ],
  "today_net": 53.0,
  "log": [
-  "10:35  SKIP  INDIGO      orb60     ORB60 down: max 3 trades a day",
-  "10:35  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day",
-  "10:35  SKIP  ONGC        orb30_2r  ORB30 down: max 3 trades a day",
-  "10:35  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day",
-  "10:35  SKIP  SBILIFE     vwap      VWAP loss: max 3 trades a day",
-  "10:35  SKIP  SUNPHARMA   orb15     ORB15 down: max 3 trades a day",
   "10:35  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day",
   "10:35  SKIP  SUNPHARMA   orb60     ORB60 down: max 3 trades a day",
   "10:40  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day",
@@ -418,7 +412,13 @@
   "11:35  SKIP  MARUTI      vwap      VWAP reclaim: max 3 trades a day",
   "11:40  SKIP  HCLTECH     orb15     ORB15 up: max 3 trades a day",
   "11:40  SKIP  HDFCBANK    vwap      VWAP loss: max 3 trades a day",
-  "11:50  SKIP  JIOFIN      orb30_2r  ORB30 down: max 3 trades a day"
+  "11:50  SKIP  JIOFIN      orb30_2r  ORB30 down: max 3 trades a day",
+  "11:55  SKIP  BEL         vwap      VWAP loss: max 3 trades a day",
+  "11:55  SKIP  ITC         orb30_2r  ORB30 down: max 3 trades a day",
+  "11:55  SKIP  JIOFIN      orb60     ORB60 down: max 3 trades a day",
+  "11:55  SKIP  LT          orb60     ORB60 down: max 3 trades a day",
+  "11:55  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day",
+  "11:55  SKIP  TATASTEEL   vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 182,
  "all_wins": 94,
