@@ -197,3 +197,14 @@ NSE's own daily file: latest saved is 2026-11-17
 12:05  SKIP  SBILIFE     vwap      VWAP loss: max 3 trades a day
 12:10  SKIP  HCLTECH     orb30_2r  ORB30 up: max 3 trades a day
 12:10  SKIP  HCLTECH     orb60     ORB60 up: max 3 trades a day
+12:15  SKIP  HDFCLIFE    orb60     ORB60 down: max 3 trades a day
+12:15  SKIP  TCS         vwap      VWAP reclaim: max 3 trades a day
+2026-11-18: 10 closed (7 won), 12 still open, net Rs +53 after charges
+  orb15     3 trades, net Rs +849
+  orb30_2r  1 trades, net Rs -590
+  orb60     1 trades, net Rs +367
+  gap_go    2 trades, net Rs +0
+  gap_fade  1 trades, net Rs -576
+  vwap      0 trades, net Rs +0
+  trap90    2 trades, net Rs +2
+  learner   0 trades, net Rs +0
