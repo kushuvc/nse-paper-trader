@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18 11:21 IST",
- "updated_ts": 1794981073,
+ "updated": "2026-11-18 11:31 IST",
+ "updated_ts": 1794981674,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -359,12 +359,6 @@
  ],
  "today_net": 53.0,
  "log": [
-  "10:25  SKIP  ASIANPAINT  orb60     ORB60 down: max 3 trades a day",
-  "10:25  SKIP  HCLTECH     vwap      VWAP loss: max 3 trades a day",
-  "10:25  SKIP  MAXHEALTH   orb60     ORB60 down: max 3 trades a day",
-  "10:30  SKIP  ADANIENT    orb60     ORB60 down: max 3 trades a day",
-  "10:30  SKIP  EICHERMOT   learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "10:30  SKIP  EICHERMOT   orb30_2r  ORB30 down: max 3 trades a day",
   "10:30  SKIP  HINDUNILVR  orb30_2r  ORB30 down: max 3 trades a day",
   "10:30  SKIP  ITC         vwap      VWAP loss: max 3 trades a day",
   "10:30  SKIP  NTPC        orb15     ORB15 down: max 3 trades a day",
@@ -418,7 +412,13 @@
   "11:20  SKIP  ICICIBANK   vwap      VWAP reclaim: max 3 trades a day",
   "11:20  SKIP  LT          orb15     ORB15 up: max 3 trades a day",
   "11:20  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day",
-  "11:20  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day"
+  "11:20  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day",
+  "11:25  SKIP  BAJAJ-AUTO  orb15     ORB15 down: max 3 trades a day",
+  "11:25  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 down: max 3 trades a day",
+  "11:25  SKIP  BAJAJ-AUTO  orb60     ORB60 down: max 3 trades a day",
+  "11:25  SKIP  HINDUNILVR  orb60     ORB60 down: max 3 trades a day",
+  "11:25  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day",
+  "11:30  SKIP  TCS         vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 182,
  "all_wins": 94,
