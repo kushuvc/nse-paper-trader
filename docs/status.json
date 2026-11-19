@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 09:40 IST",
- "updated_ts": 1795061453,
+ "updated": "2026-11-19 09:50 IST",
+ "updated_ts": 1795062054,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -46,28 +46,6 @@
    "entry_time": "09:30",
    "note": "gap -1.0% and go"
   },
-  "orb15|AXISBANK": {
-   "strategy": "orb15",
-   "symbol": "AXISBANK",
-   "side": -1,
-   "qty": 73,
-   "entry": 1357.8,
-   "stop": 1362.75,
-   "target": 1352.9,
-   "entry_time": "09:35",
-   "note": "ORB15 down"
-  },
-  "orb15|BSE": {
-   "strategy": "orb15",
-   "symbol": "BSE",
-   "side": 1,
-   "qty": 19,
-   "entry": 3766.8,
-   "stop": 3741.15,
-   "target": 3792.45,
-   "entry_time": "09:35",
-   "note": "ORB15 up"
-  },
   "orb15|ICICIBANK": {
    "strategy": "orb15",
    "symbol": "ICICIBANK",
@@ -78,6 +56,39 @@
    "target": 1578.1,
    "entry_time": "09:35",
    "note": "ORB15 down"
+  },
+  "orb30_2r|ADANIENT": {
+   "strategy": "orb30_2r",
+   "symbol": "ADANIENT",
+   "side": 1,
+   "qty": 19,
+   "entry": 2702.3,
+   "stop": 2677.0,
+   "target": 2752.9,
+   "entry_time": "09:50",
+   "note": "ORB30 up"
+  },
+  "orb30_2r|ASIANPAINT": {
+   "strategy": "orb30_2r",
+   "symbol": "ASIANPAINT",
+   "side": 1,
+   "qty": 20,
+   "entry": 2585.3,
+   "stop": 2560.35,
+   "target": 2635.1,
+   "entry_time": "09:50",
+   "note": "ORB30 up"
+  },
+  "orb30_2r|BSE": {
+   "strategy": "orb30_2r",
+   "symbol": "BSE",
+   "side": 1,
+   "qty": 6,
+   "entry": 3795.0,
+   "stop": 3716.0,
+   "target": 3953.0,
+   "entry_time": "09:50",
+   "note": "ORB30 up"
   }
  },
  "closed": [
@@ -140,9 +151,49 @@
    "net": -495.5,
    "r": -1.073,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "AXISBANK",
+   "side": -1,
+   "qty": 73,
+   "entry": 1357.8,
+   "stop": 1362.75,
+   "target": 1352.9,
+   "entry_time": "09:35",
+   "note": "ORB15 down",
+   "date": "2026-11-19",
+   "exit": 1362.75,
+   "exit_time": "09:50",
+   "reason": "stop",
+   "gross": -401.07,
+   "charges": 82.15,
+   "net": -483.22,
+   "r": -1.337,
+   "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "BSE",
+   "side": 1,
+   "qty": 19,
+   "entry": 3766.8,
+   "stop": 3741.15,
+   "target": 3792.45,
+   "entry_time": "09:35",
+   "note": "ORB15 up",
+   "date": "2026-11-19",
+   "exit": 3792.45,
+   "exit_time": "09:50",
+   "reason": "target",
+   "gross": 458.62,
+   "charges": 72.56,
+   "net": 386.06,
+   "r": 0.792,
+   "mode": "live"
   }
  ],
- "today_net": -493.0,
+ "today_net": -590.0,
  "log": [
   "09:30  OPEN  ASIANPAINT  BUY     13 @ 2562.20  stop 2523.75  target 2566.05  [trap90: tiny target, wide stop]",
   "09:30  OPEN  BEL         BUY     83 @ 398.05  stop 392.05  target 398.65  [trap90: tiny target, wide stop]",
@@ -181,12 +232,75 @@
   "09:40  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day",
   "09:40  CLOSE TITAN       stop       @ 4640.80  net Rs -496 [gap_go] (charges 24)",
   "09:40  SKIP  TITAN       orb15     ORB15 up: max 3 trades a day",
-  "09:40  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day"
+  "09:40  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day",
+  "09:45  SKIP  ASIANPAINT  orb15     ORB15 up: max 3 trades a day",
+  "09:45  SKIP  HINDUNILVR  orb15     ORB15 up: max 3 trades a day",
+  "09:45  SKIP  JIOFIN      orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  ADANIENT    orb15     ORB15 up: max 3 trades a day",
+  "09:50  OPEN  ADANIENT    BUY     19 @ 2702.30  stop 2677.00  target 2752.90  [orb30_2r: ORB30 up]",
+  "09:50  OPEN  ASIANPAINT  BUY     20 @ 2585.30  stop 2560.35  target 2635.10  [orb30_2r: ORB30 up]",
+  "09:50  CLOSE AXISBANK    stop       @ 1362.75  net Rs -483 [orb15] (charges 82)",
+  "09:50  CLOSE BSE         target     @ 3792.45  net Rs +386 [orb15] (charges 73)",
+  "09:50  OPEN  BSE         BUY      6 @ 3795.00  stop 3716.00  target 3953.00  [orb30_2r: ORB30 up]",
+  "09:50  SKIP  EICHERMOT   orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  GRASIM      orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  GRASIM      orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  HDFCBANK    orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  INDIGO      orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  MARUTI      orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  TMPV        orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  TMPV        orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day"
  ],
- "all_trades": 197,
- "all_wins": 103,
- "all_net": -12363.0,
+ "all_trades": 199,
+ "all_wins": 104,
+ "all_net": -12460.0,
  "recent": [
+  {
+   "date": "2026-11-19",
+   "symbol": "BSE",
+   "strategy": "orb15",
+   "side": "1",
+   "qty": "19",
+   "entry_time": "09:35",
+   "entry": "3766.8",
+   "stop": "3741.15",
+   "target": "3792.45",
+   "exit_time": "09:50",
+   "exit": "3792.45",
+   "reason": "target",
+   "gross": "458.62",
+   "charges": "72.56",
+   "net": "386.06",
+   "r": "0.792",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
+  {
+   "date": "2026-11-19",
+   "symbol": "AXISBANK",
+   "strategy": "orb15",
+   "side": "-1",
+   "qty": "73",
+   "entry_time": "09:35",
+   "entry": "1357.8",
+   "stop": "1362.75",
+   "target": "1352.9",
+   "exit_time": "09:50",
+   "exit": "1362.75",
+   "reason": "stop",
+   "gross": "-401.07",
+   "charges": "82.15",
+   "net": "-483.22",
+   "r": "-1.337",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-19",
    "symbol": "TITAN",
@@ -669,48 +783,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-18",
-   "symbol": "BSE",
-   "strategy": "trap90",
-   "side": "1",
-   "qty": "8",
-   "entry_time": "09:30",
-   "entry": "3909.0",
-   "stop": "3850.35",
-   "target": "3914.85",
-   "exit_time": "09:35",
-   "exit": "3914.85",
-   "reason": "target",
-   "gross": "34.28",
-   "charges": "33.19",
-   "net": "1.09",
-   "r": "0.002",
-   "mode": "live",
-   "via": "",
-   "setup": ""
-  },
-  {
-   "date": "2026-11-18",
-   "symbol": "APOLLOHOSP",
-   "strategy": "trap90",
-   "side": "1",
-   "qty": "3",
-   "entry_time": "09:30",
-   "entry": "8799.0",
-   "stop": "8667.0",
-   "target": "8812.2",
-   "exit_time": "09:35",
-   "exit": "8812.2",
-   "reason": "target",
-   "gross": "29.03",
-   "charges": "28.02",
-   "net": "1.01",
-   "r": "0.003",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -723,23 +795,23 @@
   "2026-11-16": -1655.0,
   "2026-11-17": -4066.0,
   "2026-11-18": 603.0,
-  "2026-11-19": -494.0
+  "2026-11-19": -591.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 27,
-   "all_wins": 15,
-   "all_net": -1238
+   "today_trades": 2,
+   "today_net": -97,
+   "open": 1,
+   "all_trades": 29,
+   "all_wins": 16,
+   "all_net": -1336
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 27,
    "all_wins": 11,
    "all_net": -3334
@@ -814,11 +886,11 @@
   },
   "accounts": {
    "orb15": {
-    "days": 9,
-    "trades": 27,
-    "net": -1238,
+    "days": 10,
+    "trades": 29,
+    "net": -1336,
     "per_trade": -46,
-    "t": -0.53,
+    "t": -0.61,
     "drawdown": -3580,
     "passed": 1,
     "of": 7,
@@ -828,13 +900,13 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "9 of 60 days"
+      "now": "10 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "27 of 150 trades"
+      "now": "29 of 150 trades"
      },
      {
       "id": "profit",
@@ -846,13 +918,13 @@
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.53"
+      "now": "t = -0.61"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs +265 then Rs -1503"
+      "now": "Rs +651 then Rs -1987"
      },
      {
       "id": "drawdown",

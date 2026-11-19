@@ -43,3 +43,24 @@ NSE's own daily file: latest saved is 2026-11-18
 09:40  CLOSE TITAN       stop       @ 4640.80  net Rs -496 [gap_go] (charges 24)
 09:40  SKIP  TITAN       orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  ASIANPAINT  orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  HINDUNILVR  orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  JIOFIN      orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  ADANIENT    orb15     ORB15 up: max 3 trades a day
+09:50  OPEN  ADANIENT    BUY     19 @ 2702.30  stop 2677.00  target 2752.90  [orb30_2r: ORB30 up]
+09:50  OPEN  ASIANPAINT  BUY     20 @ 2585.30  stop 2560.35  target 2635.10  [orb30_2r: ORB30 up]
+09:50  CLOSE AXISBANK    stop       @ 1362.75  net Rs -483 [orb15] (charges 82)
+09:50  CLOSE BSE         target     @ 3792.45  net Rs +386 [orb15] (charges 73)
+09:50  OPEN  BSE         BUY      6 @ 3795.00  stop 3716.00  target 3953.00  [orb30_2r: ORB30 up]
+09:50  SKIP  EICHERMOT   orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  GRASIM      orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  GRASIM      orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  HDFCBANK    orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  INDIGO      orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  MARUTI      orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  TMPV        orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  TMPV        orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day
