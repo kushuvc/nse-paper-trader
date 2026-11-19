@@ -21,3 +21,25 @@ NSE's own daily file: latest saved is 2026-11-18
 09:30  SKIP  TATASTEEL   trap90    tiny target, wide stop: max 3 trades a day
 09:30  OPEN  TECHM       SHORT   22 @ 1712.10  stop 1734.20  target 1667.90  [gap_go: gap -1.0% and go]
 09:30  OPEN  TITAN       SHORT    5 @ 4548.40  stop 4640.80  target 4363.60  [gap_go: gap -1.4% and go]
+09:35  CLOSE ASIANPAINT  target     @ 2566.05  net Rs +1 [trap90] (charges 35)
+09:35  OPEN  AXISBANK    SHORT   73 @ 1357.80  stop 1362.75  target 1352.90  [orb15: ORB15 down]
+09:35  OPEN  BSE         BUY     19 @ 3766.80  stop 3741.15  target 3792.45  [orb15: ORB15 up]
+09:35  CLOSE BEL         target     @ 398.65  net Rs +2 [trap90] (charges 35)
+09:35  OPEN  ICICIBANK   SHORT   56 @ 1586.90  stop 1595.75  target 1578.10  [orb15: ORB15 down]
+09:35  SKIP  INFY        orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  M&M         orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  NTPC        orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  POWERGRID   orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  RELIANCE    orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  BAJAJ-AUTO  orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  BEL         orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  EICHERMOT   orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  MARUTI      orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  SBILIFE     orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  TCS         orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day
+09:40  CLOSE TITAN       stop       @ 4640.80  net Rs -496 [gap_go] (charges 24)
+09:40  SKIP  TITAN       orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day

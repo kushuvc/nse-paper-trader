@@ -193,3 +193,6 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-18,BHARTIARTL,orb60,-1,42,10:20,2133.2,2144.85,2121.55,15:15,2129.5,square-off,119.59,78.76,40.83,0.083,live,,
 2026-11-18,COALINDIA,learner,-1,128,10:20,389.1,393.0,381.4,15:15,388.0,square-off,120.91,52.75,68.16,0.137,live,orb30_2r,"short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market"
 2026-11-18,JSWSTEEL,vwap,-1,74,10:20,1317.5,1324.2,1304.1,15:15,1311.8,square-off,382.88,81.53,301.35,0.608,live,,
+2026-11-19,ASIANPAINT,trap90,1,13,09:30,2562.2,2523.75,2566.05,09:35,2566.05,target,36.72,35.35,1.37,0.003,live,,
+2026-11-19,BEL,trap90,1,83,09:30,398.05,392.05,398.65,09:35,398.65,target,36.57,35.07,1.5,0.003,live,,
+2026-11-19,TITAN,gap_go,-1,5,09:30,4548.4,4640.8,4363.6,09:40,4640.8,stop,-471.19,24.31,-495.5,-1.073,live,,
