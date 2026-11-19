@@ -64,3 +64,26 @@ NSE's own daily file: latest saved is 2026-11-18
 09:50  SKIP  TMPV        orb30_2r  ORB30 up: max 3 trades a day
 09:50  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day
 09:50  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day
+09:55  CLOSE BHARTIARTL  target     @ 2147.80  net Rs +1 [trap90] (charges 34)
+09:55  SKIP  DRREDDY     orb15     ORB15 down: max 3 trades a day
+09:55  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day
+09:55  SKIP  JSWSTEEL    orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  JSWSTEEL    orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  JIOFIN      orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  APOLLOHOSP  orb15     ORB15 down: max 3 trades a day
+10:00  SKIP  APOLLOHOSP  orb30_2r  ORB30 down: max 3 trades a day
+10:00  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  BAJFINANCE  orb15     ORB15 up: max 3 trades a day
+10:00  SKIP  BAJFINANCE  orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  BAJAJFINSV  orb15     ORB15 up: max 3 trades a day
+10:00  SKIP  BAJAJFINSV  orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  BHARTIARTL  orb15     ORB15 up: max 3 trades a day
+10:00  SKIP  BHARTIARTL  orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  NTPC        orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day
+10:00  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  TECHM       orb15     ORB15 down: max 3 trades a day
+10:00  SKIP  TECHM       orb30_2r  ORB30 down: max 3 trades a day
+10:00  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day
