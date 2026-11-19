@@ -105,3 +105,14 @@ NSE's own daily file: latest saved is 2026-11-18
 10:20  SKIP  M&M         orb60     ORB60 up: max 3 trades a day
 10:20  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day
 10:20  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day
+10:25  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day
+10:25  OPEN  ICICIBANK   SHORT   62 @ 1594.40  stop 1598.70  target 1585.80  [vwap: VWAP loss]
+10:25  OPEN  NESTLEIND   BUY     77 @ 1288.30  stop 1285.00  target 1294.90  [vwap: VWAP reclaim]
+10:25  SKIP  TCS         orb60     ORB60 down: max 3 trades a day
+10:25  SKIP  TECHM       orb60     ORB60 down: max 3 trades a day
+10:30  CLOSE AXISBANK    stop       @ 1362.60  net Rs -612 [orb60] (charges 79)
+10:30  OPEN  AXISBANK    SHORT   44 @ 1359.70  stop 1370.85  target 1337.50  [vwap: VWAP loss]
+10:30  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day
+10:30  SKIP  INFY        orb60     ORB60 down: max 3 trades a day
+10:30  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day
+10:30  SKIP  RELIANCE    vwap      VWAP loss: max 3 trades a day
