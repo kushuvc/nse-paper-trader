@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 14:56 IST",
- "updated_ts": 1795080391,
+ "updated": "2026-11-19 15:06 IST",
+ "updated_ts": 1795080993,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -333,9 +333,6 @@
  ],
  "today_net": -2649.0,
  "log": [
-  "11:40  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day",
-  "11:40  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day",
-  "11:45  SKIP  ASIANPAINT  orb60     ORB60 up: max 3 trades a day",
   "11:45  SKIP  TMPV        orb60     ORB60 up: max 3 trades a day",
   "11:50  CLOSE AXISBANK    stop       @ 1370.85  net Rs -578 [vwap] (charges 64)",
   "11:50  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day",
@@ -392,7 +389,10 @@
   "14:25  SKIP  JSWSTEEL    orb60     ORB60 up: max 3 trades a day",
   "14:30  SKIP  BAJFINANCE  vwap      VWAP reclaim: max 3 trades a day",
   "14:30  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day",
-  "14:40  CLOSE ADANIPORTS  target     @ 1914.70  net Rs +351 [orb60] (charges 82)"
+  "14:40  CLOSE ADANIPORTS  target     @ 1914.70  net Rs +351 [orb60] (charges 82)",
+  "15:00  SKIP  CIPLA       vwap      VWAP loss: after 14:30",
+  "15:05  SKIP  BEL         orb30_2r  ORB30 up: after 14:30",
+  "15:05  SKIP  HCLTECH     vwap      VWAP loss: after 14:30"
  ],
  "all_trades": 207,
  "all_wins": 107,
