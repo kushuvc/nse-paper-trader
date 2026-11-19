@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 12:16 IST",
- "updated_ts": 1795070765,
+ "updated": "2026-11-19 12:26 IST",
+ "updated_ts": 1795071366,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -315,7 +315,6 @@
  ],
  "today_net": -2612.0,
  "log": [
-  "10:30  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day",
   "10:30  SKIP  RELIANCE    vwap      VWAP loss: max 3 trades a day",
   "10:35  CLOSE ADANIENT    stop       @ 2691.90  net Rs -609 [orb60] (charges 77)",
   "10:35  SKIP  ASIANPAINT  vwap      VWAP reclaim: max 3 trades a day",
@@ -374,7 +373,8 @@
   "12:10  SKIP  ETERNAL     vwap      VWAP loss: max 3 trades a day",
   "12:15  SKIP  HCLTECH     vwap      VWAP loss: max 3 trades a day",
   "12:15  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day",
-  "12:15  SKIP  TCS         vwap      VWAP loss: max 3 trades a day"
+  "12:15  SKIP  TCS         vwap      VWAP loss: max 3 trades a day",
+  "12:20  SKIP  INFY        vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 205,
  "all_wins": 106,
