@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 14:26 IST",
- "updated_ts": 1795078585,
+ "updated": "2026-11-19 14:36 IST",
+ "updated_ts": 1795079188,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -324,8 +324,6 @@
  ],
  "today_net": -3000.0,
  "log": [
-  "11:35  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day",
-  "11:35  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day",
   "11:40  SKIP  KOTAKBANK   orb15     ORB15 up: max 3 trades a day",
   "11:40  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day",
   "11:40  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day",
@@ -383,7 +381,9 @@
   "14:05  SKIP  BAJFINANCE  vwap      VWAP reclaim: max 3 trades a day",
   "14:05  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day",
   "14:05  SKIP  ICICIBANK   orb60     ORB60 up: max 3 trades a day",
-  "14:25  SKIP  JSWSTEEL    orb60     ORB60 up: max 3 trades a day"
+  "14:25  SKIP  JSWSTEEL    orb60     ORB60 up: max 3 trades a day",
+  "14:30  SKIP  BAJFINANCE  vwap      VWAP reclaim: max 3 trades a day",
+  "14:30  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 206,
  "all_wins": 106,
