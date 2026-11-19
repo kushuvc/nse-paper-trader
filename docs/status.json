@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 12:36 IST",
- "updated_ts": 1795071968,
+ "updated": "2026-11-19 12:46 IST",
+ "updated_ts": 1795072569,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -315,10 +315,6 @@
  ],
  "today_net": -2612.0,
  "log": [
-  "10:35  SKIP  GRASIM      orb60     ORB60 up: max 3 trades a day",
-  "10:35  SKIP  NTPC        orb60     ORB60 up: max 3 trades a day",
-  "10:35  CLOSE NESTLEIND   target     @ 1294.90  net Rs +386 [vwap] (charges 82)",
-  "10:35  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
   "10:35  SKIP  TATASTEEL   orb60     ORB60 up: max 3 trades a day",
   "10:40  SKIP  MARUTI      orb60     ORB60 up: max 3 trades a day",
   "10:40  SKIP  MAXHEALTH   vwap      VWAP reclaim: max 3 trades a day",
@@ -374,7 +370,11 @@
   "12:35  SKIP  HINDALCO    vwap      VWAP reclaim: max 3 trades a day",
   "12:35  SKIP  ITC         orb15     ORB15 up: max 3 trades a day",
   "12:35  SKIP  TECHM       vwap      VWAP loss: max 3 trades a day",
-  "12:35  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day"
+  "12:35  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day",
+  "12:40  SKIP  ITC         orb30_2r  ORB30 up: max 3 trades a day",
+  "12:40  SKIP  ITC         orb60     ORB60 up: max 3 trades a day",
+  "12:40  SKIP  TITAN       orb30_2r  ORB30 up: max 3 trades a day",
+  "12:40  SKIP  TITAN       orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 205,
  "all_wins": 106,
