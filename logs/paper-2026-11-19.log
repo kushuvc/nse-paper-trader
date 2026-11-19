@@ -188,3 +188,4 @@ NSE's own daily file: latest saved is 2026-11-18
 12:55  SKIP  HINDALCO    vwap      VWAP reclaim: max 3 trades a day
 13:00  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day
 13:05  SKIP  INDIGO      orb60     ORB60 down: max 3 trades a day
+13:10  SKIP  BHARTIARTL  vwap      VWAP reclaim: max 3 trades a day
