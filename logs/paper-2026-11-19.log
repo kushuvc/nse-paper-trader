@@ -218,3 +218,11 @@ NSE's own daily file: latest saved is 2026-11-18
 15:00  SKIP  CIPLA       vwap      VWAP loss: after 14:30
 15:05  SKIP  BEL         orb30_2r  ORB30 up: after 14:30
 15:05  SKIP  HCLTECH     vwap      VWAP loss: after 14:30
+15:15  CLOSE ADANIENT    square-off @ 2706.00  net Rs -5 [orb30_2r] (charges 54)
+15:15  SKIP  APOLLOHOSP  vwap      VWAP loss: past square-off
+15:15  CLOSE ASIANPAINT  square-off @ 2595.00  net Rs +118 [orb30_2r] (charges 55)
+15:15  CLOSE BSE         square-off @ 3765.00  net Rs -213 [orb30_2r] (charges 24)
+15:15  SKIP  BAJAJFINSV  vwap      VWAP reclaim: past square-off
+15:15  SKIP  BEL         orb60     ORB60 up: past square-off
+15:15  CLOSE INFY        square-off @ 1091.90  net Rs -400 [gap_go] (charges 29)
+15:15  CLOSE TECHM       square-off @ 1721.30  net Rs -258 [gap_go] (charges 40)
