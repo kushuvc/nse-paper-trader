@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 10:51 IST",
- "updated_ts": 1795065663,
+ "updated": "2026-11-19 11:01 IST",
+ "updated_ts": 1795066264,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -306,7 +306,6 @@
  ],
  "today_net": -2034.0,
  "log": [
-  "10:00  SKIP  BHARTIARTL  orb15     ORB15 up: max 3 trades a day",
   "10:00  SKIP  BHARTIARTL  orb30_2r  ORB30 up: max 3 trades a day",
   "10:00  SKIP  NTPC        orb30_2r  ORB30 up: max 3 trades a day",
   "10:00  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day",
@@ -365,7 +364,8 @@
   "10:50  SKIP  LT          orb15     ORB15 up: max 3 trades a day",
   "10:50  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day",
   "10:50  SKIP  LT          orb60     ORB60 up: max 3 trades a day",
-  "10:50  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day"
+  "10:50  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day",
+  "11:00  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 204,
  "all_wins": 106,
