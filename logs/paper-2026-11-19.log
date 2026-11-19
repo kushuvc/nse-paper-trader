@@ -127,3 +127,14 @@ NSE's own daily file: latest saved is 2026-11-18
 10:35  SKIP  TATASTEEL   orb60     ORB60 up: max 3 trades a day
 10:40  SKIP  MARUTI      orb60     ORB60 up: max 3 trades a day
 10:40  SKIP  MAXHEALTH   vwap      VWAP reclaim: max 3 trades a day
+10:45  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day
+10:45  SKIP  NESTLEIND   orb15     ORB15 up: max 3 trades a day
+10:45  SKIP  NESTLEIND   orb30_2r  ORB30 up: max 3 trades a day
+10:45  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day
+10:50  SKIP  ADANIENT    vwap      VWAP reclaim: max 3 trades a day
+10:50  SKIP  HDFCLIFE    orb60     ORB60 up: max 3 trades a day
+10:50  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day
+10:50  SKIP  LT          orb15     ORB15 up: max 3 trades a day
+10:50  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day
+10:50  SKIP  LT          orb60     ORB60 up: max 3 trades a day
+10:50  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day
