@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 12:01 IST",
- "updated_ts": 1795069874,
+ "updated": "2026-11-19 12:11 IST",
+ "updated_ts": 1795070475,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -315,10 +315,6 @@
  ],
  "today_net": -2612.0,
  "log": [
-  "10:25  OPEN  NESTLEIND   BUY     77 @ 1288.30  stop 1285.00  target 1294.90  [vwap: VWAP reclaim]",
-  "10:25  SKIP  TCS         orb60     ORB60 down: max 3 trades a day",
-  "10:25  SKIP  TECHM       orb60     ORB60 down: max 3 trades a day",
-  "10:30  CLOSE AXISBANK    stop       @ 1362.60  net Rs -612 [orb60] (charges 79)",
   "10:30  OPEN  AXISBANK    SHORT   44 @ 1359.70  stop 1370.85  target 1337.50  [vwap: VWAP loss]",
   "10:30  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day",
   "10:30  SKIP  INFY        orb60     ORB60 down: max 3 trades a day",
@@ -374,7 +370,11 @@
   "11:55  SKIP  BHARTIARTL  vwap      VWAP reclaim: max 3 trades a day",
   "12:00  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day",
   "12:00  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day",
-  "12:00  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day"
+  "12:00  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day",
+  "12:05  SKIP  MAXHEALTH   orb15     ORB15 up: max 3 trades a day",
+  "12:05  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day",
+  "12:05  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day",
+  "12:10  SKIP  ETERNAL     vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 205,
  "all_wins": 106,
