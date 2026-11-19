@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 11:41 IST",
- "updated_ts": 1795068671,
+ "updated": "2026-11-19 11:51 IST",
+ "updated_ts": 1795069272,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -88,17 +88,6 @@
    "stop": 1598.7,
    "target": 1585.8,
    "entry_time": "10:25",
-   "note": "VWAP loss"
-  },
-  "vwap|AXISBANK": {
-   "strategy": "vwap",
-   "symbol": "AXISBANK",
-   "side": -1,
-   "qty": 44,
-   "entry": 1359.7,
-   "stop": 1370.85,
-   "target": 1337.5,
-   "entry_time": "10:30",
    "note": "VWAP loss"
   }
  },
@@ -302,16 +291,30 @@
    "net": 386.12,
    "r": 1.52,
    "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "AXISBANK",
+   "side": -1,
+   "qty": 44,
+   "entry": 1359.7,
+   "stop": 1370.85,
+   "target": 1337.5,
+   "entry_time": "10:30",
+   "note": "VWAP loss",
+   "date": "2026-11-19",
+   "exit": 1370.85,
+   "exit_time": "11:50",
+   "reason": "stop",
+   "gross": -514.63,
+   "charges": 63.65,
+   "net": -578.28,
+   "r": -1.179,
+   "mode": "live"
   }
  ],
- "today_net": -2034.0,
+ "today_net": -2612.0,
  "log": [
-  "10:20  SKIP  AXISBANK    orb30_2r  ORB30 up: max 3 trades a day",
-  "10:20  OPEN  AXISBANK    BUY     67 @ 1370.00  stop 1362.60  target 1377.35  [orb60: ORB60 up]",
-  "10:20  SKIP  BAJAJFINSV  orb60     ORB60 up: max 3 trades a day",
-  "10:20  SKIP  HDFCBANK    orb60     ORB60 up: max 3 trades a day",
-  "10:20  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day",
-  "10:20  SKIP  M&M         orb60     ORB60 up: max 3 trades a day",
   "10:20  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day",
   "10:20  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day",
   "10:25  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day",
@@ -365,12 +368,39 @@
   "11:35  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day",
   "11:40  SKIP  KOTAKBANK   orb15     ORB15 up: max 3 trades a day",
   "11:40  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day",
-  "11:40  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day"
+  "11:40  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day",
+  "11:45  SKIP  ASIANPAINT  orb60     ORB60 up: max 3 trades a day",
+  "11:45  SKIP  TMPV        orb60     ORB60 up: max 3 trades a day",
+  "11:50  CLOSE AXISBANK    stop       @ 1370.85  net Rs -578 [vwap] (charges 64)",
+  "11:50  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day",
+  "11:50  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day",
+  "11:50  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day"
  ],
- "all_trades": 204,
+ "all_trades": 205,
  "all_wins": 106,
- "all_net": -13904.0,
+ "all_net": -14482.0,
  "recent": [
+  {
+   "date": "2026-11-19",
+   "symbol": "AXISBANK",
+   "strategy": "vwap",
+   "side": "-1",
+   "qty": "44",
+   "entry_time": "10:30",
+   "entry": "1359.7",
+   "stop": "1370.85",
+   "target": "1337.5",
+   "exit_time": "11:50",
+   "exit": "1370.85",
+   "reason": "stop",
+   "gross": "-514.63",
+   "charges": "63.65",
+   "net": "-578.28",
+   "r": "-1.179",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-19",
    "symbol": "NESTLEIND",
@@ -874,27 +904,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-18",
-   "symbol": "ASIANPAINT",
-   "strategy": "gap_go",
-   "side": "-1",
-   "qty": "38",
-   "entry_time": "09:30",
-   "entry": "2586.2",
-   "stop": "2594.85",
-   "target": "2569.0",
-   "exit_time": "11:00",
-   "exit": "2569.0",
-   "reason": "target",
-   "gross": "614.42",
-   "charges": "81.79",
-   "net": "532.63",
-   "r": "1.62",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -907,7 +916,7 @@
   "2026-11-16": -1655.0,
   "2026-11-17": -4066.0,
   "2026-11-18": 603.0,
-  "2026-11-19": -2035.0
+  "2026-11-19": -2613.0
  },
  "by_strategy": {
   "orb15": {
@@ -957,12 +966,12 @@
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 1,
-   "today_net": 386,
-   "open": 2,
-   "all_trades": 28,
+   "today_trades": 2,
+   "today_net": -192,
+   "open": 1,
+   "all_trades": 29,
    "all_wins": 12,
-   "all_net": -2674
+   "all_net": -3252
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
@@ -1274,10 +1283,10 @@
    },
    "vwap": {
     "days": 10,
-    "trades": 28,
-    "net": -2674,
-    "per_trade": -95,
-    "t": -0.65,
+    "trades": 29,
+    "net": -3252,
+    "per_trade": -112,
+    "t": -0.81,
     "drawdown": -3542,
     "passed": 1,
     "of": 7,
@@ -1293,25 +1302,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "28 of 150 trades"
+      "now": "29 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -95 a trade"
+      "now": "Rs -112 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.65"
+      "now": "t = -0.81"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1638 then Rs -1036"
+      "now": "Rs -1638 then Rs -1614"
      },
      {
       "id": "drawdown",
