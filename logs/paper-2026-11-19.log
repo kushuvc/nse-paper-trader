@@ -171,3 +171,15 @@ NSE's own daily file: latest saved is 2026-11-18
 12:05  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day
 12:05  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day
 12:10  SKIP  ETERNAL     vwap      VWAP loss: max 3 trades a day
+12:15  SKIP  HCLTECH     vwap      VWAP loss: max 3 trades a day
+12:15  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day
+12:15  SKIP  TCS         vwap      VWAP loss: max 3 trades a day
+2026-11-19: 11 closed (5 won), 7 still open, net Rs -2612 after charges
+  orb15     3 trades, net Rs -707
+  orb30_2r  0 trades, net Rs +0
+  orb60     2 trades, net Rs -1221
+  gap_go    1 trades, net Rs -496
+  gap_fade  0 trades, net Rs +0
+  vwap      2 trades, net Rs -192
+  trap90    3 trades, net Rs +4
+  learner   0 trades, net Rs +0

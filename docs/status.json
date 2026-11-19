@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-19 12:11 IST",
- "updated_ts": 1795070475,
- "in_session": true,
+ "updated": "2026-11-19 12:15 IST",
+ "updated_ts": 1795070740,
+ "in_session": false,
  "strategies": [
   "orb15",
   "orb30_2r",
@@ -315,9 +315,6 @@
  ],
  "today_net": -2612.0,
  "log": [
-  "10:30  OPEN  AXISBANK    SHORT   44 @ 1359.70  stop 1370.85  target 1337.50  [vwap: VWAP loss]",
-  "10:30  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day",
-  "10:30  SKIP  INFY        orb60     ORB60 down: max 3 trades a day",
   "10:30  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day",
   "10:30  SKIP  RELIANCE    vwap      VWAP loss: max 3 trades a day",
   "10:35  CLOSE ADANIENT    stop       @ 2691.90  net Rs -609 [orb60] (charges 77)",
@@ -374,7 +371,10 @@
   "12:05  SKIP  MAXHEALTH   orb15     ORB15 up: max 3 trades a day",
   "12:05  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day",
   "12:05  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day",
-  "12:10  SKIP  ETERNAL     vwap      VWAP loss: max 3 trades a day"
+  "12:10  SKIP  ETERNAL     vwap      VWAP loss: max 3 trades a day",
+  "12:15  SKIP  HCLTECH     vwap      VWAP loss: max 3 trades a day",
+  "12:15  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day",
+  "12:15  SKIP  TCS         vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 205,
  "all_wins": 106,
