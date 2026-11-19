@@ -203,3 +203,7 @@ NSE's own daily file: latest saved is 2026-11-18
 13:35  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day
 13:45  SKIP  BHARTIARTL  vwap      VWAP reclaim: max 3 trades a day
 13:45  CLOSE ICICIBANK   stop       @ 1598.70  net Rs -388 [vwap] (charges 82)
+13:50  SKIP  JIOFIN      orb60     ORB60 up: max 3 trades a day
+13:50  SKIP  SBIN        orb15     ORB15 up: max 3 trades a day
+13:50  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day
+13:50  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day
