@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 11:11 IST",
- "updated_ts": 1795066866,
+ "updated": "2026-11-19 11:21 IST",
+ "updated_ts": 1795067468,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -306,7 +306,6 @@
  ],
  "today_net": -2034.0,
  "log": [
-  "10:00  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day",
   "10:00  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day",
   "10:00  SKIP  TECHM       orb15     ORB15 down: max 3 trades a day",
   "10:00  SKIP  TECHM       orb30_2r  ORB30 down: max 3 trades a day",
@@ -365,7 +364,8 @@
   "11:00  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day",
   "11:10  SKIP  COALINDIA   orb15     ORB15 up: max 3 trades a day",
   "11:10  SKIP  COALINDIA   orb30_2r  ORB30 up: max 3 trades a day",
-  "11:10  SKIP  COALINDIA   orb60     ORB60 up: max 3 trades a day"
+  "11:10  SKIP  COALINDIA   orb60     ORB60 up: max 3 trades a day",
+  "11:15  SKIP  APOLLOHOSP  orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 204,
  "all_wins": 106,
