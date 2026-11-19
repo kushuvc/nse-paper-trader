@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 09:20 IST",
- "updated_ts": 1795060250,
+ "updated": "2026-11-19 09:30 IST",
+ "updated_ts": 1795060851,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -12,10 +12,94 @@
   "trap90"
  ],
  "date": "2026-11-19",
- "open": {},
+ "open": {
+  "trap90|ASIANPAINT": {
+   "strategy": "trap90",
+   "symbol": "ASIANPAINT",
+   "side": 1,
+   "qty": 13,
+   "entry": 2562.2,
+   "stop": 2523.75,
+   "target": 2566.05,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop"
+  },
+  "trap90|BEL": {
+   "strategy": "trap90",
+   "symbol": "BEL",
+   "side": 1,
+   "qty": 83,
+   "entry": 398.05,
+   "stop": 392.05,
+   "target": 398.65,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop"
+  },
+  "trap90|BHARTIARTL": {
+   "strategy": "trap90",
+   "symbol": "BHARTIARTL",
+   "side": 1,
+   "qty": 15,
+   "entry": 2144.6,
+   "stop": 2112.4,
+   "target": 2147.8,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop"
+  },
+  "gap_go|INFY": {
+   "strategy": "gap_go",
+   "symbol": "INFY",
+   "side": -1,
+   "qty": 25,
+   "entry": 1077.5,
+   "stop": 1097.0,
+   "target": 1038.5,
+   "entry_time": "09:30",
+   "note": "gap -1.1% and go"
+  },
+  "gap_go|TECHM": {
+   "strategy": "gap_go",
+   "symbol": "TECHM",
+   "side": -1,
+   "qty": 22,
+   "entry": 1712.1,
+   "stop": 1734.2,
+   "target": 1667.9,
+   "entry_time": "09:30",
+   "note": "gap -1.0% and go"
+  },
+  "gap_go|TITAN": {
+   "strategy": "gap_go",
+   "symbol": "TITAN",
+   "side": -1,
+   "qty": 5,
+   "entry": 4548.4,
+   "stop": 4640.8,
+   "target": 4363.6,
+   "entry_time": "09:30",
+   "note": "gap -1.4% and go"
+  }
+ },
  "closed": [],
  "today_net": 0,
- "log": [],
+ "log": [
+  "09:30  OPEN  ASIANPAINT  BUY     13 @ 2562.20  stop 2523.75  target 2566.05  [trap90: tiny target, wide stop]",
+  "09:30  OPEN  BEL         BUY     83 @ 398.05  stop 392.05  target 398.65  [trap90: tiny target, wide stop]",
+  "09:30  OPEN  BHARTIARTL  BUY     15 @ 2144.60  stop 2112.40  target 2147.80  [trap90: tiny target, wide stop]",
+  "09:30  SKIP  EICHERMOT   trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  HINDALCO    trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  HINDUNILVR  trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  ITC         trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  OPEN  INFY        SHORT   25 @ 1077.50  stop 1097.00  target 1038.50  [gap_go: gap -1.1% and go]",
+  "09:30  SKIP  INDIGO      trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  M&M         trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  MARUTI      trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  NESTLEIND   trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  TMPV        trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  TATASTEEL   trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  OPEN  TECHM       SHORT   22 @ 1712.10  stop 1734.20  target 1667.90  [gap_go: gap -1.0% and go]",
+  "09:30  OPEN  TITAN       SHORT    5 @ 4548.40  stop 4640.80  target 4363.60  [gap_go: gap -1.4% and go]"
+ ],
  "all_trades": 194,
  "all_wins": 101,
  "all_net": -11870.0,
@@ -589,7 +673,7 @@
    "desc": "gap >=1% that continues: join, 2R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 24,
    "all_wins": 11,
    "all_net": 445
@@ -616,7 +700,7 @@
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 27,
    "all_wins": 24,
    "all_net": -1338

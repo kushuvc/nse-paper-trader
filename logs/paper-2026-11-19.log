@@ -5,3 +5,19 @@ Latest day, 2026-11-18: 693 of 2756 shares rose (25.4%), Nifty 50 25,228 (-0.63%
 PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
 Learner: model from 68 days of history
 NSE's own daily file: latest saved is 2026-11-18
+09:30  OPEN  ASIANPAINT  BUY     13 @ 2562.20  stop 2523.75  target 2566.05  [trap90: tiny target, wide stop]
+09:30  OPEN  BEL         BUY     83 @ 398.05  stop 392.05  target 398.65  [trap90: tiny target, wide stop]
+09:30  OPEN  BHARTIARTL  BUY     15 @ 2144.60  stop 2112.40  target 2147.80  [trap90: tiny target, wide stop]
+09:30  SKIP  EICHERMOT   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  HINDALCO    trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  HINDUNILVR  trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  ITC         trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  INFY        SHORT   25 @ 1077.50  stop 1097.00  target 1038.50  [gap_go: gap -1.1% and go]
+09:30  SKIP  INDIGO      trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  M&M         trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  MARUTI      trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  NESTLEIND   trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  TMPV        trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  TATASTEEL   trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  TECHM       SHORT   22 @ 1712.10  stop 1734.20  target 1667.90  [gap_go: gap -1.0% and go]
+09:30  OPEN  TITAN       SHORT    5 @ 4548.40  stop 4640.80  target 4363.60  [gap_go: gap -1.4% and go]
