@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19 11:31 IST",
- "updated_ts": 1795068069,
+ "updated": "2026-11-19 11:41 IST",
+ "updated_ts": 1795068671,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -306,15 +306,6 @@
  ],
  "today_net": -2034.0,
  "log": [
-  "10:05  SKIP  HCLTECH     orb30_2r  ORB30 down: max 3 trades a day",
-  "10:05  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day",
-  "10:05  SKIP  HDFCLIFE    orb30_2r  ORB30 up: max 3 trades a day",
-  "10:05  SKIP  TCS         orb30_2r  ORB30 down: max 3 trades a day",
-  "10:15  CLOSE ICICIBANK   stop       @ 1595.75  net Rs -610 [orb15] (charges 79)",
-  "10:20  OPEN  ADANIENT    BUY     31 @ 2708.00  stop 2691.90  target 2724.05  [orb60: ORB60 up]",
-  "10:20  SKIP  ADANIPORTS  orb15     ORB15 up: max 3 trades a day",
-  "10:20  SKIP  ADANIPORTS  orb30_2r  ORB30 up: max 3 trades a day",
-  "10:20  OPEN  ADANIPORTS  BUY     52 @ 1905.60  stop 1896.50  target 1914.70  [orb60: ORB60 up]",
   "10:20  SKIP  AXISBANK    orb30_2r  ORB30 up: max 3 trades a day",
   "10:20  OPEN  AXISBANK    BUY     67 @ 1370.00  stop 1362.60  target 1377.35  [orb60: ORB60 up]",
   "10:20  SKIP  BAJAJFINSV  orb60     ORB60 up: max 3 trades a day",
@@ -365,7 +356,16 @@
   "11:25  SKIP  ONGC        orb15     ORB15 up: max 3 trades a day",
   "11:25  SKIP  ONGC        orb30_2r  ORB30 up: max 3 trades a day",
   "11:25  SKIP  ONGC        orb60     ORB60 up: max 3 trades a day",
-  "11:25  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day"
+  "11:25  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day",
+  "11:35  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day",
+  "11:35  SKIP  HINDUNILVR  orb60     ORB60 up: max 3 trades a day",
+  "11:35  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day",
+  "11:35  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day",
+  "11:35  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day",
+  "11:35  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day",
+  "11:40  SKIP  KOTAKBANK   orb15     ORB15 up: max 3 trades a day",
+  "11:40  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day",
+  "11:40  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 204,
  "all_wins": 106,
