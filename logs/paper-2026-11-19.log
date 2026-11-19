@@ -163,3 +163,7 @@ NSE's own daily file: latest saved is 2026-11-18
 11:50  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day
 11:50  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day
 11:50  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day
+11:55  SKIP  BHARTIARTL  vwap      VWAP reclaim: max 3 trades a day
+12:00  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day
+12:00  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day
+12:00  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day
