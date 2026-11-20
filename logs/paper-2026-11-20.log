@@ -161,3 +161,5 @@ NSE's own daily file: latest saved is 2026-11-19
 10:50  SKIP  SHRIRAMFIN  vwap      VWAP reclaim: max 3 trades a day
 10:55  SKIP  ICICIBANK   orb60     ORB60 up: max 3 trades a day
 11:00  SKIP  COALINDIA   vwap      VWAP loss: max 3 trades a day
+11:10  SKIP  MAXHEALTH   vwap      VWAP reclaim: max 3 trades a day
+11:10  CLOSE POWERGRID   stop (gap) @ 262.35  net Rs -638 [orb60] (charges 81)
