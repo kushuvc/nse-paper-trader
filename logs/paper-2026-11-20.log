@@ -178,3 +178,12 @@ NSE's own daily file: latest saved is 2026-11-19
 11:55  CLOSE ICICIBANK   target     @ 1622.40  net Rs +534 [vwap] (charges 83)
 11:55  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day
 12:00  SKIP  SHRIRAMFIN  vwap      VWAP reclaim: max 3 trades a day
+12:05  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day
+12:05  SKIP  DRREDDY     vwap      VWAP reclaim: max 3 trades a day
+12:05  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day
+12:05  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day
+12:05  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day
+12:05  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day
+12:05  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day
+12:05  SKIP  TRENT       orb60     ORB60 up: max 3 trades a day
+12:10  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day

@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-20 12:01 IST",
- "updated_ts": 1795156273,
+ "updated": "2026-11-20 12:11 IST",
+ "updated_ts": 1795156874,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -372,15 +372,6 @@
  ],
  "today_net": 1368.0,
  "log": [
-  "10:20  OPEN  SUNPHARMA   SHORT   42 @ 1885.50  stop 1897.25  target 1873.75  [orb60: ORB60 down]",
-  "10:20  SKIP  TCS         orb15     ORB15 up: max 3 trades a day",
-  "10:20  SKIP  TCS         learner   via orb30_2r (expects +0.05R): max 3 trades a day",
-  "10:20  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day",
-  "10:20  OPEN  TCS         BUY     11 @ 2397.50  stop 2354.65  target 2440.35  [orb60: ORB60 up]",
-  "10:20  SKIP  TECHM       orb30_2r  ORB30 up: max 3 trades a day",
-  "10:20  SKIP  TECHM       orb60     ORB60 up: max 3 trades a day",
-  "10:25  OPEN  BEL         BUY    248 @ 402.00  stop 401.00  target 404.00  [vwap: VWAP reclaim]",
-  "10:25  SKIP  INFY        orb30_2r  ORB30 up: max 3 trades a day",
   "10:25  SKIP  INFY        orb60     ORB60 up: max 3 trades a day",
   "10:25  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day",
   "10:30  OPEN  ICICIBANK   BUY     62 @ 1611.80  stop 1606.50  target 1622.40  [vwap: VWAP reclaim]",
@@ -431,7 +422,16 @@
   "11:55  SKIP  HDFCLIFE    orb60     ORB60 up: max 3 trades a day",
   "11:55  CLOSE ICICIBANK   target     @ 1622.40  net Rs +534 [vwap] (charges 83)",
   "11:55  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day",
-  "12:00  SKIP  SHRIRAMFIN  vwap      VWAP reclaim: max 3 trades a day"
+  "12:00  SKIP  SHRIRAMFIN  vwap      VWAP reclaim: max 3 trades a day",
+  "12:05  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day",
+  "12:05  SKIP  DRREDDY     vwap      VWAP reclaim: max 3 trades a day",
+  "12:05  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day",
+  "12:05  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day",
+  "12:05  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day",
+  "12:05  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
+  "12:05  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day",
+  "12:05  SKIP  TRENT       orb60     ORB60 up: max 3 trades a day",
+  "12:10  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 221,
  "all_wins": 115,
