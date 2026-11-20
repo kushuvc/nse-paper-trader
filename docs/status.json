@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-20 13:06 IST",
- "updated_ts": 1795160172,
+ "updated": "2026-11-20 13:16 IST",
+ "updated_ts": 1795160774,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -399,8 +399,6 @@
  ],
  "today_net": 2099.0,
  "log": [
-  "10:45  SKIP  BAJAJFINSV  orb60     ORB60 up: max 3 trades a day",
-  "10:45  SKIP  ETERNAL     orb60     ORB60 up: max 3 trades a day",
   "10:45  SKIP  MARUTI      orb15     ORB15 up: max 3 trades a day",
   "10:45  SKIP  MARUTI      orb30_2r  ORB30 up: max 3 trades a day",
   "10:45  SKIP  MARUTI      orb60     ORB60 up: max 3 trades a day",
@@ -458,7 +456,9 @@
   "12:50  SKIP  RELIANCE    vwap      VWAP loss: max 3 trades a day",
   "12:55  SKIP  LT          orb60     ORB60 up: max 3 trades a day",
   "12:55  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day",
-  "12:55  SKIP  TITAN       orb60     ORB60 up: max 3 trades a day"
+  "12:55  SKIP  TITAN       orb60     ORB60 up: max 3 trades a day",
+  "13:10  SKIP  ADANIPORTS  orb60     ORB60 up: max 3 trades a day",
+  "13:15  SKIP  ETERNAL     vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 224,
  "all_wins": 117,

@@ -205,3 +205,5 @@ NSE's own daily file: latest saved is 2026-11-19
 12:55  SKIP  LT          orb60     ORB60 up: max 3 trades a day
 12:55  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day
 12:55  SKIP  TITAN       orb60     ORB60 up: max 3 trades a day
+13:10  SKIP  ADANIPORTS  orb60     ORB60 up: max 3 trades a day
+13:15  SKIP  ETERNAL     vwap      VWAP reclaim: max 3 trades a day
