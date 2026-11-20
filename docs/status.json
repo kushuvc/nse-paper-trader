@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-20 10:51 IST",
- "updated_ts": 1795152063,
+ "updated": "2026-11-20 11:01 IST",
+ "updated_ts": 1795152664,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -354,8 +354,6 @@
  ],
  "today_net": 1471.0,
  "log": [
-  "09:55  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day",
-  "09:55  SKIP  TATACONSUM  learner   via orb30_2r (expects +0.05R): max 3 trades a day",
   "09:55  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day",
   "10:00  SKIP  HINDALCO    learner   via orb30_2r (expects +0.05R): max 3 trades a day",
   "10:00  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day",
@@ -413,7 +411,9 @@
   "10:50  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day",
   "10:50  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day",
   "10:50  SKIP  JIOFIN      vwap      VWAP reclaim: max 3 trades a day",
-  "10:50  SKIP  SHRIRAMFIN  vwap      VWAP reclaim: max 3 trades a day"
+  "10:50  SKIP  SHRIRAMFIN  vwap      VWAP reclaim: max 3 trades a day",
+  "10:55  SKIP  ICICIBANK   orb60     ORB60 up: max 3 trades a day",
+  "11:00  SKIP  COALINDIA   vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 219,
  "all_wins": 114,
