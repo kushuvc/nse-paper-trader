@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-20 17:36 IST",
- "updated_ts": 1795176406,
+ "updated": "2026-11-20 21:15 IST",
+ "updated_ts": 1795189514,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -1682,26 +1682,26 @@
   }
  },
  "nse": {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "first": "2026-07-08",
-  "days": 94,
+  "days": 95,
   "market": {
-   "stocks": 2762.0,
-   "advances": 1563.0,
-   "declines": 1164.0,
-   "unchanged": 35.0,
-   "adv_pct": 57.3,
-   "median_move_pct": 0.23,
-   "turnover_cr": 120099.0,
-   "deliv_pct": 44.8,
-   "nifty": 25514.3,
-   "nifty_chg_pct": 1.14,
-   "nifty_pe": 20.78,
-   "vix": 16.11,
-   "vix_chg_pct": 3.5,
-   "date": "2026-11-19"
+   "stocks": 2760.0,
+   "advances": 1046.0,
+   "declines": 1682.0,
+   "unchanged": 32.0,
+   "adv_pct": 38.3,
+   "median_move_pct": -0.48,
+   "turnover_cr": 135093.0,
+   "deliv_pct": 46.3,
+   "nifty": 25800.6,
+   "nifty_chg_pct": 1.12,
+   "nifty_pe": 21.02,
+   "vix": 17.32,
+   "vix_chg_pct": 7.51,
+   "date": "2026-11-20"
   },
-  "text": "1563 of 2762 shares rose (57.3%), Nifty 50 25,514 (+1.14%), 44.8% of the money traded was taken for delivery, India VIX 16.11."
+  "text": "1046 of 2760 shares rose (38.3%), Nifty 50 25,801 (+1.12%), 46.3% of the money traded was taken for delivery, India VIX 17.32."
  },
  "learning": {
   "asof": "2026-11-19",
