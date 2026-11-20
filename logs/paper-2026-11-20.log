@@ -251,3 +251,13 @@ NSE's own daily file: latest saved is 2026-11-19
 15:15  CLOSE LT          square-off @ 4200.00  net Rs +645 [gap_fade] (charges 74)
 15:15  CLOSE SHRIRAMFIN  square-off @ 966.40  net Rs +388 [gap_fade] (charges 59)
 15:15  CLOSE TCS         square-off @ 2379.50  net Rs -236 [orb60] (charges 28)
+15:20  SKIP  TATACONSUM  vwap      VWAP reclaim: past square-off
+2026-11-20: 24 closed (15 won), 0 still open, net Rs +2066 after charges
+  orb15     3 trades, net Rs +489
+  orb30_2r  3 trades, net Rs -251
+  orb60     3 trades, net Rs -1475
+  gap_go    3 trades, net Rs -734
+  gap_fade  3 trades, net Rs +2069
+  vwap      3 trades, net Rs +593
+  trap90    3 trades, net Rs +3
+  learner   3 trades, net Rs +1371
