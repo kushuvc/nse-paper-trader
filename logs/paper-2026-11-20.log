@@ -182,3 +182,13 @@ Shift until 15:20 IST (started 12:16)
 NSE's own end-of-day files -> data/nse/ (looking back 7 days) ...
 0 new. 94 days saved, 2026-07-08 to 2026-11-19.
 Latest day, 2026-11-19: 1563 of 2762 shares rose (57.3%), Nifty 50 25,514 (+1.14%), 44.8% of the money traded was taken for delivery, India VIX 16.11.
+PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
+Learner: model from 69 days of history
+NSE's own daily file: latest saved is 2026-11-19
+12:20  CLOSE APOLLOHOSP  target     @ 9203.75  net Rs +381 [orb15] (charges 29)
+12:20  SKIP  APOLLOHOSP  orb60     ORB60 up: max 3 trades a day
+12:20  SKIP  ITC         vwap      VWAP loss: max 3 trades a day
+12:25  SKIP  BHARTIARTL  orb15     ORB15 up: max 3 trades a day
+12:25  SKIP  BHARTIARTL  orb30_2r  ORB30 up: max 3 trades a day
+12:25  SKIP  BHARTIARTL  orb60     ORB60 up: max 3 trades a day
+12:25  SKIP  TMPV        vwap      VWAP reclaim: max 3 trades a day
