@@ -93,3 +93,15 @@ NSE's own daily file: latest saved is 2026-11-19
 09:50  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day
 09:50  SKIP  TRENT       learner   via orb30_2r (expects +0.05R): max 3 trades a day
 09:50  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  APOLLOHOSP  orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  BAJAJ-AUTO  orb15     ORB15 down: max 3 trades a day
+09:55  SKIP  DRREDDY     learner   via orb30_2r (expects +0.05R): max 3 trades a day
+09:55  SKIP  DRREDDY     orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  SHRIRAMFIN  learner   via orb30_2r (expects +0.05R): max 3 trades a day
+09:55  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  TATACONSUM  learner   via orb30_2r (expects +0.05R): max 3 trades a day
+09:55  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  HINDALCO    learner   via orb30_2r (expects +0.05R): max 3 trades a day
+10:00  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day
