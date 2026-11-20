@@ -105,3 +105,13 @@ NSE's own daily file: latest saved is 2026-11-19
 10:00  SKIP  HINDALCO    learner   via orb30_2r (expects +0.05R): max 3 trades a day
 10:00  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day
 10:00  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day
+10:05  SKIP  CIPLA       orb30_2r  ORB30 down: max 3 trades a day
+10:05  CLOSE HINDALCO    target     @ 910.00  net Rs +1036 [gap_fade] (charges 81)
+10:05  SKIP  NTPC        orb15     ORB15 down: max 3 trades a day
+10:05  SKIP  NTPC        orb30_2r  ORB30 down: max 3 trades a day
+10:05  SKIP  POWERGRID   orb15     ORB15 down: max 3 trades a day
+10:05  SKIP  POWERGRID   orb30_2r  ORB30 down: max 3 trades a day
+10:10  SKIP  BSE         orb30_2r  ORB30 down: max 3 trades a day
+10:10  SKIP  HDFCBANK    orb15     ORB15 up: max 3 trades a day
+10:10  SKIP  HDFCBANK    learner   via orb30_2r (expects +0.05R): max 3 trades a day
+10:10  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day

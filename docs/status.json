@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-20 10:00 IST",
- "updated_ts": 1795149055,
+ "updated": "2026-11-20 10:10 IST",
+ "updated_ts": 1795149657,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -23,17 +23,6 @@
    "target": 9332.5,
    "entry_time": "09:30",
    "note": "gap +1.1% and go"
-  },
-  "gap_fade|HINDALCO": {
-   "strategy": "gap_fade",
-   "symbol": "HINDALCO",
-   "side": 1,
-   "qty": 106,
-   "entry": 899.1,
-   "stop": 894.4,
-   "target": 910.0,
-   "entry_time": "09:30",
-   "note": "gap -1.4% fading"
   },
   "gap_go|JSWSTEEL": {
    "strategy": "gap_go",
@@ -257,20 +246,30 @@
    "net": 373.24,
    "r": 0.756,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_fade",
+   "symbol": "HINDALCO",
+   "side": 1,
+   "qty": 106,
+   "entry": 899.1,
+   "stop": 894.4,
+   "target": 910.0,
+   "entry_time": "09:30",
+   "note": "gap -1.4% fading",
+   "date": "2026-11-20",
+   "exit": 910.0,
+   "exit_time": "10:05",
+   "reason": "target",
+   "gross": 1117.05,
+   "charges": 81.12,
+   "net": 1035.93,
+   "r": 2.079,
+   "mode": "live"
   }
  ],
- "today_net": 377.0,
+ "today_net": 1412.0,
  "log": [
-  "09:35  CLOSE APOLLOHOSP  target     @ 9012.00  net Rs +1 [trap90] (charges 29)",
-  "09:35  OPEN  APOLLOHOSP  BUY      3 @ 9063.50  stop 8923.25  target 9203.75  [orb15: ORB15 up]",
-  "09:35  OPEN  AXISBANK    BUY     70 @ 1382.70  stop 1375.65  target 1389.75  [orb15: ORB15 up]",
-  "09:35  SKIP  BSE         orb15     ORB15 down: max 3 trades a day",
-  "09:35  SKIP  BAJFINANCE  orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  CIPLA       orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  DRREDDY     orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  HCLTECH     orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  INFY        orb15     ORB15 up: max 3 trades a day",
   "09:35  SKIP  MAXHEALTH   orb15     ORB15 up: max 3 trades a day",
   "09:35  SKIP  NESTLEIND   orb15     ORB15 up: max 3 trades a day",
   "09:35  SKIP  SBIN        orb15     ORB15 up: max 3 trades a day",
@@ -320,12 +319,43 @@
   "09:55  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day",
   "10:00  SKIP  HINDALCO    learner   via orb30_2r (expects +0.05R): max 3 trades a day",
   "10:00  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day",
-  "10:00  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day"
+  "10:00  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day",
+  "10:05  SKIP  CIPLA       orb30_2r  ORB30 down: max 3 trades a day",
+  "10:05  CLOSE HINDALCO    target     @ 910.00  net Rs +1036 [gap_fade] (charges 81)",
+  "10:05  SKIP  NTPC        orb15     ORB15 down: max 3 trades a day",
+  "10:05  SKIP  NTPC        orb30_2r  ORB30 down: max 3 trades a day",
+  "10:05  SKIP  POWERGRID   orb15     ORB15 down: max 3 trades a day",
+  "10:05  SKIP  POWERGRID   orb30_2r  ORB30 down: max 3 trades a day",
+  "10:10  SKIP  BSE         orb30_2r  ORB30 down: max 3 trades a day",
+  "10:10  SKIP  HDFCBANK    orb15     ORB15 up: max 3 trades a day",
+  "10:10  SKIP  HDFCBANK    learner   via orb30_2r (expects +0.05R): max 3 trades a day",
+  "10:10  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day"
  ],
- "all_trades": 216,
- "all_wins": 112,
- "all_net": -14899.0,
+ "all_trades": 217,
+ "all_wins": 113,
+ "all_net": -13863.0,
  "recent": [
+  {
+   "date": "2026-11-20",
+   "symbol": "HINDALCO",
+   "strategy": "gap_fade",
+   "side": "1",
+   "qty": "106",
+   "entry_time": "09:30",
+   "entry": "899.1",
+   "stop": "894.4",
+   "target": "910.0",
+   "exit_time": "10:05",
+   "exit": "910.0",
+   "reason": "target",
+   "gross": "1117.05",
+   "charges": "81.12",
+   "net": "1035.93",
+   "r": "2.079",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-20",
    "symbol": "AXISBANK",
@@ -829,27 +859,6 @@
    "mode": "live",
    "via": "orb30_2r",
    "setup": "short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market"
-  },
-  {
-   "date": "2026-11-18",
-   "symbol": "BHARTIARTL",
-   "strategy": "orb60",
-   "side": "-1",
-   "qty": "42",
-   "entry_time": "10:20",
-   "entry": "2133.2",
-   "stop": "2144.85",
-   "target": "2121.55",
-   "exit_time": "15:15",
-   "exit": "2129.5",
-   "reason": "square-off",
-   "gross": "119.59",
-   "charges": "78.76",
-   "net": "40.83",
-   "r": "0.083",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -863,7 +872,7 @@
   "2026-11-17": -4066.0,
   "2026-11-18": 603.0,
   "2026-11-19": -3408.0,
-  "2026-11-20": 376.0
+  "2026-11-20": 1412.0
  },
  "by_strategy": {
   "orb15": {
@@ -904,12 +913,12 @@
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 15,
-   "all_wins": 8,
-   "all_net": 2038
+   "today_trades": 1,
+   "today_net": 1036,
+   "open": 2,
+   "all_trades": 16,
+   "all_wins": 9,
+   "all_net": 3074
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
@@ -1174,11 +1183,11 @@
     ]
    },
    "gap_fade": {
-    "days": 7,
-    "trades": 15,
-    "net": 2038,
-    "per_trade": 136,
-    "t": 0.42,
+    "days": 8,
+    "trades": 16,
+    "net": 3074,
+    "per_trade": 192,
+    "t": 0.78,
     "drawdown": -1546,
     "passed": 2,
     "of": 7,
@@ -1188,31 +1197,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "7 of 60 days"
+      "now": "8 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "15 of 150 trades"
+      "now": "16 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": true,
-      "now": "Rs +136 a trade"
+      "now": "Rs +192 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = 0.42"
+      "now": "t = 0.78"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs +2858 then Rs -820"
+      "now": "Rs +3111 then Rs -37"
      },
      {
       "id": "drawdown",
