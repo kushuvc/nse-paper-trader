@@ -224,3 +224,4 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-20,AXISBANK,learner,1,22,09:50,1391.2,1368.8,1436.0,12:35,1436.0,target,973.16,33.09,940.07,1.908,live,orb30_2r,"long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market"
 2026-11-20,JIOFIN,gap_go,-1,277,09:30,224.35,226.15,220.85,12:35,226.15,stop,-523.56,66.11,-589.67,-1.183,live,,
 2026-11-20,JSWSTEEL,gap_go,-1,15,09:30,1291.9,1323.35,1229.1,13:45,1323.35,stop,-479.6,20.75,-500.35,-1.061,live,,
+2026-11-20,SUNPHARMA,orb60,-1,42,10:20,1885.5,1897.25,1873.75,13:50,1897.25,stop,-525.28,75.14,-600.42,-1.217,live,,
