@@ -163,3 +163,4 @@ NSE's own daily file: latest saved is 2026-11-19
 11:00  SKIP  COALINDIA   vwap      VWAP loss: max 3 trades a day
 11:10  SKIP  MAXHEALTH   vwap      VWAP reclaim: max 3 trades a day
 11:10  CLOSE POWERGRID   stop (gap) @ 262.35  net Rs -638 [orb60] (charges 81)
+11:15  SKIP  NESTLEIND   vwap      VWAP reclaim: max 3 trades a day

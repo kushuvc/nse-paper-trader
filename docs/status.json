@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-20 11:11 IST",
- "updated_ts": 1795153266,
+ "updated": "2026-11-20 11:21 IST",
+ "updated_ts": 1795153867,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -363,7 +363,6 @@
  ],
  "today_net": 833.0,
  "log": [
-  "10:00  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day",
   "10:00  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day",
   "10:05  SKIP  CIPLA       orb30_2r  ORB30 down: max 3 trades a day",
   "10:05  CLOSE HINDALCO    target     @ 910.00  net Rs +1036 [gap_fade] (charges 81)",
@@ -422,7 +421,8 @@
   "10:55  SKIP  ICICIBANK   orb60     ORB60 up: max 3 trades a day",
   "11:00  SKIP  COALINDIA   vwap      VWAP loss: max 3 trades a day",
   "11:10  SKIP  MAXHEALTH   vwap      VWAP reclaim: max 3 trades a day",
-  "11:10  CLOSE POWERGRID   stop (gap) @ 262.35  net Rs -638 [orb60] (charges 81)"
+  "11:10  CLOSE POWERGRID   stop (gap) @ 262.35  net Rs -638 [orb60] (charges 81)",
+  "11:15  SKIP  NESTLEIND   vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 220,
  "all_wins": 114,
