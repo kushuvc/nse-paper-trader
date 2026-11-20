@@ -125,3 +125,12 @@ NSE's own daily file: latest saved is 2026-11-19
 10:20  OPEN  TCS         BUY     11 @ 2397.50  stop 2354.65  target 2440.35  [orb60: ORB60 up]
 10:20  SKIP  TECHM       orb30_2r  ORB30 up: max 3 trades a day
 10:20  SKIP  TECHM       orb60     ORB60 up: max 3 trades a day
+10:25  OPEN  BEL         BUY    248 @ 402.00  stop 401.00  target 404.00  [vwap: VWAP reclaim]
+10:25  SKIP  INFY        orb30_2r  ORB30 up: max 3 trades a day
+10:25  SKIP  INFY        orb60     ORB60 up: max 3 trades a day
+10:25  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day
+10:30  OPEN  ICICIBANK   BUY     62 @ 1611.80  stop 1606.50  target 1622.40  [vwap: VWAP reclaim]
+10:30  SKIP  ONGC        orb15     ORB15 down: max 3 trades a day
+10:30  SKIP  ONGC        orb30_2r  ORB30 down: max 3 trades a day
+10:30  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day
+10:30  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day

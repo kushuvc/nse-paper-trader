@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-20 10:20 IST",
- "updated_ts": 1795150258,
+ "updated": "2026-11-20 10:31 IST",
+ "updated_ts": 1795150860,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -208,6 +208,28 @@
    "target": 2440.35,
    "entry_time": "10:20",
    "note": "ORB60 up"
+  },
+  "vwap|BEL": {
+   "strategy": "vwap",
+   "symbol": "BEL",
+   "side": 1,
+   "qty": 248,
+   "entry": 402.0,
+   "stop": 401.0,
+   "target": 404.0,
+   "entry_time": "10:25",
+   "note": "VWAP reclaim"
+  },
+  "vwap|ICICIBANK": {
+   "strategy": "vwap",
+   "symbol": "ICICIBANK",
+   "side": 1,
+   "qty": 62,
+   "entry": 1611.8,
+   "stop": 1606.5,
+   "target": 1622.4,
+   "entry_time": "10:30",
+   "note": "VWAP reclaim"
   }
  },
  "closed": [
@@ -314,15 +336,6 @@
  ],
  "today_net": 1412.0,
  "log": [
-  "09:45  SKIP  ADANIENT    orb15     ORB15 up: max 3 trades a day",
-  "09:45  CLOSE AXISBANK    target     @ 1389.75  net Rs +373 [orb15] (charges 81)",
-  "09:45  SKIP  BAJAJFINSV  orb15     ORB15 up: max 3 trades a day",
-  "09:45  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day",
-  "09:45  SKIP  KOTAKBANK   orb15     ORB15 up: max 3 trades a day",
-  "09:45  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day",
-  "09:45  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day",
-  "09:50  OPEN  ADANIENT    BUY     17 @ 2704.00  stop 2675.85  target 2760.20  [learner via orb30_2r, expects +0.05R: long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market]",
-  "09:50  OPEN  ADANIENT    BUY     17 @ 2704.00  stop 2675.85  target 2760.20  [orb30_2r: ORB30 up]",
   "09:50  OPEN  ADANIPORTS  BUY     22 @ 1925.30  stop 1903.00  target 1969.90  [orb30_2r: ORB30 up]",
   "09:50  SKIP  ASIANPAINT  orb15     ORB15 up: max 3 trades a day",
   "09:50  OPEN  ASIANPAINT  BUY     24 @ 2599.10  stop 2578.50  target 2640.30  [orb30_2r: ORB30 up]",
@@ -373,7 +386,16 @@
   "10:20  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day",
   "10:20  OPEN  TCS         BUY     11 @ 2397.50  stop 2354.65  target 2440.35  [orb60: ORB60 up]",
   "10:20  SKIP  TECHM       orb30_2r  ORB30 up: max 3 trades a day",
-  "10:20  SKIP  TECHM       orb60     ORB60 up: max 3 trades a day"
+  "10:20  SKIP  TECHM       orb60     ORB60 up: max 3 trades a day",
+  "10:25  OPEN  BEL         BUY    248 @ 402.00  stop 401.00  target 404.00  [vwap: VWAP reclaim]",
+  "10:25  SKIP  INFY        orb30_2r  ORB30 up: max 3 trades a day",
+  "10:25  SKIP  INFY        orb60     ORB60 up: max 3 trades a day",
+  "10:25  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day",
+  "10:30  OPEN  ICICIBANK   BUY     62 @ 1611.80  stop 1606.50  target 1622.40  [vwap: VWAP reclaim]",
+  "10:30  SKIP  ONGC        orb15     ORB15 down: max 3 trades a day",
+  "10:30  SKIP  ONGC        orb30_2r  ORB30 down: max 3 trades a day",
+  "10:30  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day",
+  "10:30  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 217,
  "all_wins": 113,
@@ -968,7 +990,7 @@
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 1,
+   "open": 3,
    "all_trades": 30,
    "all_wins": 12,
    "all_net": -3640
