@@ -241,3 +241,13 @@ NSE's own daily file: latest saved is 2026-11-19
 14:35  SKIP  ONGC        vwap      VWAP loss: after 14:30
 14:50  SKIP  COALINDIA   vwap      VWAP loss: after 14:30
 15:00  SKIP  ETERNAL     vwap      VWAP reclaim: after 14:30
+15:15  CLOSE ADANIENT    square-off @ 2712.90  net Rs +84 [learner] (charges 49)
+15:15  CLOSE ADANIENT    square-off @ 2712.90  net Rs +84 [orb30_2r] (charges 49)
+15:15  CLOSE ADANIPORTS  square-off @ 1917.00  net Rs -265 [orb15] (charges 80)
+15:15  CLOSE ADANIPORTS  square-off @ 1917.00  net Rs -244 [orb30_2r] (charges 45)
+15:15  CLOSE APOLLOHOSP  square-off @ 9190.00  net Rs +356 [gap_go] (charges 19)
+15:15  CLOSE ASIANPAINT  square-off @ 2599.10  net Rs -91 [orb30_2r] (charges 66)
+15:15  CLOSE BAJFINANCE  square-off @ 1118.10  net Rs +347 [learner] (charges 26)
+15:15  CLOSE LT          square-off @ 4200.00  net Rs +645 [gap_fade] (charges 74)
+15:15  CLOSE SHRIRAMFIN  square-off @ 966.40  net Rs +388 [gap_fade] (charges 59)
+15:15  CLOSE TCS         square-off @ 2379.50  net Rs -236 [orb60] (charges 28)

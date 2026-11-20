@@ -225,3 +225,13 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-20,JIOFIN,gap_go,-1,277,09:30,224.35,226.15,220.85,12:35,226.15,stop,-523.56,66.11,-589.67,-1.183,live,,
 2026-11-20,JSWSTEEL,gap_go,-1,15,09:30,1291.9,1323.35,1229.1,13:45,1323.35,stop,-479.6,20.75,-500.35,-1.061,live,,
 2026-11-20,SUNPHARMA,orb60,-1,42,10:20,1885.5,1897.25,1873.75,13:50,1897.25,stop,-525.28,75.14,-600.42,-1.217,live,,
+2026-11-20,ADANIENT,learner,1,17,09:50,2704.0,2675.85,2760.2,15:15,2712.9,square-off,132.88,48.84,84.04,0.176,live,orb30_2r,"long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market"
+2026-11-20,ADANIENT,orb30_2r,1,17,09:50,2704.0,2675.85,2760.2,15:15,2712.9,square-off,132.88,48.84,84.04,0.176,live,,
+2026-11-20,ADANIPORTS,orb15,1,49,09:35,1920.0,1909.8,1930.15,15:15,1917.0,square-off,-184.6,80.31,-264.91,-0.53,live,,
+2026-11-20,ADANIPORTS,orb30_2r,1,22,09:50,1925.3,1903.0,1969.9,15:15,1917.0,square-off,-199.51,44.8,-244.31,-0.498,live,,
+2026-11-20,APOLLOHOSP,gap_go,1,2,09:30,8998.5,8831.5,9332.5,15:15,9190.0,square-off,375.72,19.33,356.39,1.067,live,,
+2026-11-20,ASIANPAINT,orb30_2r,1,24,09:50,2599.1,2578.5,2640.3,15:15,2599.1,square-off,-24.95,66.15,-91.1,-0.184,live,,
+2026-11-20,BAJFINANCE,learner,1,22,09:50,1100.7,1078.15,1145.8,15:15,1118.1,square-off,373.04,25.92,347.12,0.7,live,orb30_2r,"long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market"
+2026-11-20,LT,gap_fade,1,18,09:30,4158.4,4131.4,4211.0,15:15,4200.0,square-off,718.71,73.79,644.92,1.327,live,,
+2026-11-20,SHRIRAMFIN,gap_fade,1,58,09:30,958.3,949.7,973.3,15:15,966.4,square-off,447.47,59.24,388.23,0.778,live,,
+2026-11-20,TCS,orb60,1,11,10:20,2397.5,2354.65,2440.35,15:15,2379.5,square-off,-208.51,27.84,-236.35,-0.501,live,,
