@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-20 17:36 IST",
- "updated_ts": 1795176379,
+ "updated_ts": 1795176406,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -506,9 +506,6 @@
  ],
  "today_net": 2066.0,
  "log": [
-  "12:30  SKIP  ADANIENT    orb60     ORB60 up: max 3 trades a day",
-  "12:30  SKIP  ETERNAL     vwap      VWAP loss: max 3 trades a day",
-  "12:35  CLOSE AXISBANK    target     @ 1436.00  net Rs +940 [learner] (charges 33)",
   "12:35  CLOSE JIOFIN      stop       @ 226.15  net Rs -590 [gap_go] (charges 66)",
   "12:35  SKIP  MAXHEALTH   vwap      VWAP reclaim: max 3 trades a day",
   "12:40  SKIP  JIOFIN      orb15     ORB15 up: max 3 trades a day",
@@ -565,7 +562,10 @@
   "15:15  CLOSE LT          square-off @ 4200.00  net Rs +645 [gap_fade] (charges 74)",
   "15:15  CLOSE SHRIRAMFIN  square-off @ 966.40  net Rs +388 [gap_fade] (charges 59)",
   "15:15  CLOSE TCS         square-off @ 2379.50  net Rs -236 [orb60] (charges 28)",
-  "15:20  SKIP  TATACONSUM  vwap      VWAP reclaim: past square-off"
+  "15:20  SKIP  TATACONSUM  vwap      VWAP reclaim: past square-off",
+  "17:36  SKIP  ASIANPAINT  orb60     ORB60 up: past square-off",
+  "17:36  SKIP  ONGC        vwap      VWAP loss: past square-off",
+  "17:36  SKIP  TATACONSUM  vwap      VWAP reclaim: past square-off"
  ],
  "all_trades": 236,
  "all_wins": 123,
