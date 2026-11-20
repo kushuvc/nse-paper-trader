@@ -1,0 +1,20 @@
+NSE's own end-of-day files -> data/nse/ (looking back 7 days) ...
+Traceback (most recent call last):
+  File "/home/runner/work/nse-paper-trader/nse-paper-trader/trade.py", line 432, in <module>
+    main()
+    ~~~~^^
+  File "/home/runner/work/nse-paper-trader/nse-paper-trader/trade.py", line 426, in main
+    {"universe": cmd_universe, "collect": cmd_collect, "backtest": cmd_backtest, "daily": cmd_daily,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     "replay": cmd_replay, "learn": cmd_learn, "ready": cmd_ready, "research": cmd_research, "swing": cmd_swing, "nse": cmd_nse, "paper": cmd_paper, "report": cmd_report,
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     "status": cmd_status}[a.cmd](cfg, a)
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/runner/work/nse-paper-trader/nse-paper-trader/trade.py", line 165, in cmd_nse
+    new = official.collect(NSE_DIR, watch, back=a.back)
+  File "/home/runner/work/nse-paper-trader/nse-paper-trader/nse/official.py", line 200, in collect
+    rows = parse_bhav(fetch(BHAV % stamp), day)
+  File "/home/runner/work/nse-paper-trader/nse-paper-trader/nse/official.py", line 82, in parse_bhav
+    r = {(k or "").strip(): (v or "").strip() for k, v in r.items()}
+                            ^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'strip'
