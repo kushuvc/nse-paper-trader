@@ -43,3 +43,24 @@ NSE's own daily file: latest saved is 2026-11-19
 09:30  SKIP  TECHM       trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  TITAN       gap_go    gap -2.3% and go: max 3 trades a day
 09:30  SKIP  ULTRACEMCO  trap90    tiny target, wide stop: max 3 trades a day
+09:35  CLOSE ADANIPORTS  target     @ 1916.55  net Rs +1 [trap90] (charges 35)
+09:35  OPEN  ADANIPORTS  BUY     49 @ 1920.00  stop 1909.80  target 1930.15  [orb15: ORB15 up]
+09:35  CLOSE APOLLOHOSP  target     @ 9012.00  net Rs +1 [trap90] (charges 29)
+09:35  OPEN  APOLLOHOSP  BUY      3 @ 9063.50  stop 8923.25  target 9203.75  [orb15: ORB15 up]
+09:35  OPEN  AXISBANK    BUY     70 @ 1382.70  stop 1375.65  target 1389.75  [orb15: ORB15 up]
+09:35  SKIP  BSE         orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  BAJFINANCE  orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  CIPLA       orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  DRREDDY     orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  HCLTECH     orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  INFY        orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  MAXHEALTH   orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  NESTLEIND   orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  SBIN        orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  SUNPHARMA   orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  EICHERMOT   orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  LT          orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  RELIANCE    orb15     ORB15 down: max 3 trades a day
