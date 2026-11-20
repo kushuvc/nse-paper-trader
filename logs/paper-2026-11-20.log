@@ -145,3 +145,17 @@ NSE's own daily file: latest saved is 2026-11-19
 10:40  SKIP  HDFCBANK    orb60     ORB60 up: max 3 trades a day
 10:40  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day
 10:40  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day
+10:45  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day
+10:45  SKIP  BAJFINANCE  orb60     ORB60 up: max 3 trades a day
+10:45  CLOSE BAJAJFINSV  target     @ 1885.60  net Rs +429 [vwap] (charges 82)
+10:45  SKIP  BAJAJFINSV  orb60     ORB60 up: max 3 trades a day
+10:45  SKIP  ETERNAL     orb60     ORB60 up: max 3 trades a day
+10:45  SKIP  MARUTI      orb15     ORB15 up: max 3 trades a day
+10:45  SKIP  MARUTI      orb30_2r  ORB30 up: max 3 trades a day
+10:45  SKIP  MARUTI      orb60     ORB60 up: max 3 trades a day
+10:50  SKIP  BHARTIARTL  vwap      VWAP reclaim: max 3 trades a day
+10:50  SKIP  GRASIM      orb60     ORB60 down: max 3 trades a day
+10:50  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day
+10:50  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day
+10:50  SKIP  JIOFIN      vwap      VWAP reclaim: max 3 trades a day
+10:50  SKIP  SHRIRAMFIN  vwap      VWAP reclaim: max 3 trades a day
