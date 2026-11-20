@@ -115,3 +115,13 @@ NSE's own daily file: latest saved is 2026-11-19
 10:10  SKIP  HDFCBANK    orb15     ORB15 up: max 3 trades a day
 10:10  SKIP  HDFCBANK    learner   via orb30_2r (expects +0.05R): max 3 trades a day
 10:10  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day
+10:15  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day
+10:20  OPEN  BAJAJFINSV  BUY     53 @ 1875.20  stop 1870.00  target 1885.60  [vwap: VWAP reclaim]
+10:20  OPEN  POWERGRID   SHORT  370 @ 260.95  stop 262.30  target 259.65  [orb60: ORB60 down]
+10:20  OPEN  SUNPHARMA   SHORT   42 @ 1885.50  stop 1897.25  target 1873.75  [orb60: ORB60 down]
+10:20  SKIP  TCS         orb15     ORB15 up: max 3 trades a day
+10:20  SKIP  TCS         learner   via orb30_2r (expects +0.05R): max 3 trades a day
+10:20  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day
+10:20  OPEN  TCS         BUY     11 @ 2397.50  stop 2354.65  target 2440.35  [orb60: ORB60 up]
+10:20  SKIP  TECHM       orb30_2r  ORB30 up: max 3 trades a day
+10:20  SKIP  TECHM       orb60     ORB60 up: max 3 trades a day
