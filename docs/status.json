@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-20 14:06 IST",
- "updated_ts": 1795163783,
+ "updated": "2026-11-20 14:16 IST",
+ "updated_ts": 1795164384,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -417,11 +417,6 @@
  ],
  "today_net": 998.0,
  "log": [
-  "11:55  SKIP  ETERNAL     vwap      VWAP reclaim: max 3 trades a day",
-  "11:55  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day",
-  "11:55  SKIP  HDFCLIFE    orb30_2r  ORB30 up: max 3 trades a day",
-  "11:55  SKIP  HDFCLIFE    orb60     ORB60 up: max 3 trades a day",
-  "11:55  CLOSE ICICIBANK   target     @ 1622.40  net Rs +534 [vwap] (charges 83)",
   "11:55  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day",
   "12:00  SKIP  SHRIRAMFIN  vwap      VWAP reclaim: max 3 trades a day",
   "12:05  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day",
@@ -476,7 +471,12 @@
   "13:50  SKIP  JSWSTEEL    orb30_2r  ORB30 up: max 3 trades a day",
   "13:50  SKIP  JSWSTEEL    orb60     ORB60 up: max 3 trades a day",
   "13:50  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day",
-  "13:50  CLOSE SUNPHARMA   stop       @ 1897.25  net Rs -600 [orb60] (charges 75)"
+  "13:50  CLOSE SUNPHARMA   stop       @ 1897.25  net Rs -600 [orb60] (charges 75)",
+  "14:10  SKIP  ETERNAL     vwap      VWAP loss: max 3 trades a day",
+  "14:15  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day",
+  "14:15  SKIP  TMPV        orb15     ORB15 up: max 3 trades a day",
+  "14:15  SKIP  TMPV        orb30_2r  ORB30 up: max 3 trades a day",
+  "14:15  SKIP  TMPV        orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 226,
  "all_wins": 117,
