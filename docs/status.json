@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-20 12:11 IST",
- "updated_ts": 1795156874,
- "in_session": true,
+ "updated": "2026-11-20 12:15 IST",
+ "updated_ts": 1795157141,
+ "in_session": false,
  "strategies": [
   "orb15",
   "orb30_2r",
@@ -372,7 +372,6 @@
  ],
  "today_net": 1368.0,
  "log": [
-  "10:25  SKIP  INFY        orb60     ORB60 up: max 3 trades a day",
   "10:25  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day",
   "10:30  OPEN  ICICIBANK   BUY     62 @ 1611.80  stop 1606.50  target 1622.40  [vwap: VWAP reclaim]",
   "10:30  SKIP  ONGC        orb15     ORB15 down: max 3 trades a day",
@@ -431,7 +430,8 @@
   "12:05  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
   "12:05  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day",
   "12:05  SKIP  TRENT       orb60     ORB60 up: max 3 trades a day",
-  "12:10  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day"
+  "12:10  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
+  "12:15  SKIP  BSE         orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 221,
  "all_wins": 115,

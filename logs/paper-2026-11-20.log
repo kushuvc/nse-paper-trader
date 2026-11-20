@@ -187,3 +187,13 @@ NSE's own daily file: latest saved is 2026-11-19
 12:05  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day
 12:05  SKIP  TRENT       orb60     ORB60 up: max 3 trades a day
 12:10  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day
+12:15  SKIP  BSE         orb60     ORB60 up: max 3 trades a day
+2026-11-20: 9 closed (7 won), 15 still open, net Rs +1368 after charges
+  orb15     1 trades, net Rs +373
+  orb30_2r  0 trades, net Rs +0
+  orb60     1 trades, net Rs -638
+  gap_go    0 trades, net Rs +0
+  gap_fade  1 trades, net Rs +1036
+  vwap      3 trades, net Rs +593
+  trap90    3 trades, net Rs +3
+  learner   0 trades, net Rs +0
