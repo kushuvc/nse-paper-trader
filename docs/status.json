@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-20 14:16 IST",
- "updated_ts": 1795164384,
+ "updated": "2026-11-20 14:26 IST",
+ "updated_ts": 1795164986,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -417,11 +417,6 @@
  ],
  "today_net": 998.0,
  "log": [
-  "11:55  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day",
-  "12:00  SKIP  SHRIRAMFIN  vwap      VWAP reclaim: max 3 trades a day",
-  "12:05  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day",
-  "12:05  SKIP  DRREDDY     vwap      VWAP reclaim: max 3 trades a day",
-  "12:05  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day",
   "12:05  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day",
   "12:05  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day",
   "12:05  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
@@ -476,7 +471,12 @@
   "14:15  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day",
   "14:15  SKIP  TMPV        orb15     ORB15 up: max 3 trades a day",
   "14:15  SKIP  TMPV        orb30_2r  ORB30 up: max 3 trades a day",
-  "14:15  SKIP  TMPV        orb60     ORB60 up: max 3 trades a day"
+  "14:15  SKIP  TMPV        orb60     ORB60 up: max 3 trades a day",
+  "14:20  SKIP  CIPLA       vwap      VWAP loss: max 3 trades a day",
+  "14:20  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day",
+  "14:25  SKIP  ITC         vwap      VWAP loss: max 3 trades a day",
+  "14:25  SKIP  RELIANCE    orb30_2r  ORB30 up: max 3 trades a day",
+  "14:25  SKIP  RELIANCE    orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 226,
  "all_wins": 117,
