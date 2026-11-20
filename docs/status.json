@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-20 12:36 IST",
- "updated_ts": 1795158366,
+ "updated": "2026-11-20 12:46 IST",
+ "updated_ts": 1795158968,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -399,10 +399,6 @@
  ],
  "today_net": 2099.0,
  "log": [
-  "10:40  SKIP  ETERNAL     orb15     ORB15 up: max 3 trades a day",
-  "10:40  SKIP  ETERNAL     orb30_2r  ORB30 up: max 3 trades a day",
-  "10:40  SKIP  HDFCBANK    orb60     ORB60 up: max 3 trades a day",
-  "10:40  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day",
   "10:40  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
   "10:45  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day",
   "10:45  SKIP  BAJFINANCE  orb60     ORB60 up: max 3 trades a day",
@@ -458,7 +454,11 @@
   "12:30  SKIP  ETERNAL     vwap      VWAP loss: max 3 trades a day",
   "12:35  CLOSE AXISBANK    target     @ 1436.00  net Rs +940 [learner] (charges 33)",
   "12:35  CLOSE JIOFIN      stop       @ 226.15  net Rs -590 [gap_go] (charges 66)",
-  "12:35  SKIP  MAXHEALTH   vwap      VWAP reclaim: max 3 trades a day"
+  "12:35  SKIP  MAXHEALTH   vwap      VWAP reclaim: max 3 trades a day",
+  "12:40  SKIP  JIOFIN      orb15     ORB15 up: max 3 trades a day",
+  "12:40  SKIP  JIOFIN      orb30_2r  ORB30 up: max 3 trades a day",
+  "12:40  SKIP  JIOFIN      orb60     ORB60 up: max 3 trades a day",
+  "12:45  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 224,
  "all_wins": 117,
