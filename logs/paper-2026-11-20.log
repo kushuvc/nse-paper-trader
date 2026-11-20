@@ -64,3 +64,32 @@ NSE's own daily file: latest saved is 2026-11-19
 09:40  SKIP  EICHERMOT   orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  LT          orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  RELIANCE    orb15     ORB15 down: max 3 trades a day
+09:45  CLOSE ADANIENT    target     @ 2697.85  net Rs +1 [trap90] (charges 34)
+09:45  SKIP  ADANIENT    orb15     ORB15 up: max 3 trades a day
+09:45  CLOSE AXISBANK    target     @ 1389.75  net Rs +373 [orb15] (charges 81)
+09:45  SKIP  BAJAJFINSV  orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  KOTAKBANK   orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  TRENT       orb15     ORB15 up: max 3 trades a day
+09:50  OPEN  ADANIENT    BUY     17 @ 2704.00  stop 2675.85  target 2760.20  [learner via orb30_2r, expects +0.05R: long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market]
+09:50  OPEN  ADANIENT    BUY     17 @ 2704.00  stop 2675.85  target 2760.20  [orb30_2r: ORB30 up]
+09:50  OPEN  ADANIPORTS  BUY     22 @ 1925.30  stop 1903.00  target 1969.90  [orb30_2r: ORB30 up]
+09:50  SKIP  ASIANPAINT  orb15     ORB15 up: max 3 trades a day
+09:50  OPEN  ASIANPAINT  BUY     24 @ 2599.10  stop 2578.50  target 2640.30  [orb30_2r: ORB30 up]
+09:50  OPEN  AXISBANK    BUY     22 @ 1391.20  stop 1368.80  target 1436.00  [learner via orb30_2r, expects +0.05R: long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market]
+09:50  SKIP  AXISBANK    orb30_2r  ORB30 up: max 3 trades a day
+09:50  OPEN  BAJFINANCE  BUY     22 @ 1100.70  stop 1078.15  target 1145.80  [learner via orb30_2r, expects +0.05R: long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market]
+09:50  SKIP  BAJFINANCE  orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  BAJAJFINSV  orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  GRASIM      orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  GRASIM      orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  INDIGO      orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  KOTAKBANK   learner   via orb30_2r (expects +0.05R): max 3 trades a day
+09:50  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  NESTLEIND   learner   via orb30_2r (expects +0.05R): max 3 trades a day
+09:50  SKIP  NESTLEIND   orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day
+09:50  SKIP  TRENT       learner   via orb30_2r (expects +0.05R): max 3 trades a day
+09:50  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day
