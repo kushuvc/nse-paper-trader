@@ -139,3 +139,18 @@ NSE's own daily file: latest saved is 2026-11-20
 10:40  SKIP  APOLLOHOSP  orb60     ORB60 down: max 3 trades a day
 10:40  SKIP  BEL         orb30_2r  ORB30 down: max 3 trades a day
 10:40  SKIP  BEL         orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  JIOFIN      learner   via orb30_2r (expects +0.07R): max 3 trades a day
+10:45  SKIP  JIOFIN      orb30_2r  ORB30 down: max 3 trades a day
+10:45  SKIP  JIOFIN      learner   via orb60 (expects +0.09R): max 3 trades a day
+10:45  SKIP  JIOFIN      orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day
+10:45  SKIP  TMPV        learner   via orb30_2r (expects +0.05R): max 3 trades a day
+10:45  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day
+10:45  SKIP  TMPV        learner   via orb60 (expects +0.07R): max 3 trades a day
+10:45  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day
+10:45  CLOSE TATASTEEL   target     @ 166.30  net Rs +937 [gap_go] (charges 37)
+10:45  OPEN  TITAN       BUY     21 @ 4649.90  stop 4632.00  target 4685.70  [vwap: VWAP reclaim]
+10:50  SKIP  BAJAJFINSV  learner   via orb30_2r (expects +0.09R): max 3 trades a day
+10:50  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day
