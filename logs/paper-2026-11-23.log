@@ -168,3 +168,15 @@ NSE's own daily file: latest saved is 2026-11-20
 11:00  SKIP  RELIANCE    learner   via orb60 (expects +0.09R): max 3 trades a day
 11:00  SKIP  RELIANCE    orb60     ORB60 down: max 3 trades a day
 11:00  CLOSE TITAN       stop       @ 4632.00  net Rs -496 [vwap] (charges 82)
+11:05  CLOSE ASIANPAINT  target     @ 2581.15  net Rs +382 [orb15] (charges 76)
+11:05  CLOSE HCLTECH     stop       @ 1360.40  net Rs -549 [orb60] (charges 45)
+11:05  SKIP  HDFCBANK    learner   via orb60 (expects +0.14R): max 3 trades a day
+11:05  SKIP  HDFCBANK    orb60     ORB60 down: max 3 trades a day
+11:05  SKIP  ICICIBANK   learner   via orb30_2r (expects +0.07R): max 3 trades a day
+11:05  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day
+11:05  SKIP  ICICIBANK   learner   via orb60 (expects +0.09R): max 3 trades a day
+11:05  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day
+11:05  SKIP  TITAN       learner   via orb30_2r (expects +0.15R): max 3 trades a day
+11:05  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day
+11:05  SKIP  TRENT       learner   via orb60 (expects +0.09R): max 3 trades a day
+11:05  SKIP  TRENT       orb60     ORB60 down: max 3 trades a day

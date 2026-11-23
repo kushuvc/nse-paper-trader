@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 11:01 IST",
- "updated_ts": 1795411866,
+ "updated": "2026-11-23 11:11 IST",
+ "updated_ts": 1795412467,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -32,17 +32,6 @@
    "entry": 1909.0,
    "stop": 1933.3,
    "target": 1884.7,
-   "entry_time": "09:35",
-   "note": "ORB15 down"
-  },
-  "orb15|ASIANPAINT": {
-   "strategy": "orb15",
-   "symbol": "ASIANPAINT",
-   "side": -1,
-   "qty": 32,
-   "entry": 2596.5,
-   "stop": 2611.85,
-   "target": 2581.15,
    "entry_time": "09:35",
    "note": "ORB15 down"
   },
@@ -128,17 +117,6 @@
    "target": 1095.1,
    "entry_time": "10:20",
    "note": "ORB60 down"
-  },
-  "orb60|HCLTECH": {
-   "strategy": "orb60",
-   "symbol": "HCLTECH",
-   "side": 1,
-   "qty": 31,
-   "entry": 1376.1,
-   "stop": 1360.4,
-   "target": 1391.8,
-   "entry_time": "10:20",
-   "note": "ORB60 up"
   },
   "orb60|HDFCLIFE": {
    "strategy": "orb60",
@@ -337,22 +315,50 @@
    "net": -496.38,
    "r": -1.321,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "ASIANPAINT",
+   "side": -1,
+   "qty": 32,
+   "entry": 2596.5,
+   "stop": 2611.85,
+   "target": 2581.15,
+   "entry_time": "09:35",
+   "note": "ORB15 down",
+   "date": "2026-11-23",
+   "exit": 2581.15,
+   "exit_time": "11:05",
+   "reason": "target",
+   "gross": 458.06,
+   "charges": 76.45,
+   "net": 381.61,
+   "r": 0.777,
+   "mode": "live"
+  },
+  {
+   "strategy": "orb60",
+   "symbol": "HCLTECH",
+   "side": 1,
+   "qty": 31,
+   "entry": 1376.1,
+   "stop": 1360.4,
+   "target": 1391.8,
+   "entry_time": "10:20",
+   "note": "ORB60 up",
+   "date": "2026-11-23",
+   "exit": 1360.4,
+   "exit_time": "11:05",
+   "reason": "stop",
+   "gross": -503.67,
+   "charges": 44.92,
+   "net": -548.59,
+   "r": -1.127,
+   "mode": "live"
   }
  ],
- "today_net": -1398.0,
+ "today_net": -1565.0,
  "log": [
-  "10:20  OPEN  BAJFINANCE  SHORT   40 @ 1107.30  stop 1119.50  target 1095.10  [orb60: ORB60 down]",
-  "10:20  OPEN  HCLTECH     BUY     31 @ 1376.10  stop 1360.40  target 1391.80  [orb60: ORB60 up]",
-  "10:20  OPEN  HDFCLIFE    SHORT   59 @ 577.15  stop 585.50  target 568.80  [orb60: ORB60 down]",
-  "10:20  OPEN  HINDALCO    BUY     83 @ 911.00  stop 905.00  target 922.90  [vwap: VWAP reclaim]",
-  "10:20  SKIP  KOTAKBANK   learner   via orb30_2r (expects +0.13R): max 3 trades a day",
-  "10:20  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day",
-  "10:20  SKIP  TECHM       orb60     ORB60 up: max 3 trades a day",
-  "10:25  SKIP  POWERGRID   learner   via orb60 (expects +0.12R): already holding this stock",
-  "10:25  SKIP  POWERGRID   orb60     ORB60 down: max 3 trades a day",
-  "10:25  SKIP  SBIN        learner   via orb30_2r (expects +0.23R): max 3 trades a day",
-  "10:25  SKIP  SBIN        orb30_2r  ORB30 down: max 3 trades a day",
-  "10:25  SKIP  TATASTEEL   orb60     ORB60 down: max 3 trades a day",
   "10:30  SKIP  APOLLOHOSP  orb15     ORB15 down: max 3 trades a day",
   "10:30  SKIP  COALINDIA   orb30_2r  ORB30 down: max 3 trades a day",
   "10:30  SKIP  COALINDIA   orb60     ORB60 down: max 3 trades a day",
@@ -400,12 +406,66 @@
   "11:00  SKIP  MAXHEALTH   orb60     ORB60 down: max 3 trades a day",
   "11:00  SKIP  RELIANCE    learner   via orb60 (expects +0.09R): max 3 trades a day",
   "11:00  SKIP  RELIANCE    orb60     ORB60 down: max 3 trades a day",
-  "11:00  CLOSE TITAN       stop       @ 4632.00  net Rs -496 [vwap] (charges 82)"
+  "11:00  CLOSE TITAN       stop       @ 4632.00  net Rs -496 [vwap] (charges 82)",
+  "11:05  CLOSE ASIANPAINT  target     @ 2581.15  net Rs +382 [orb15] (charges 76)",
+  "11:05  CLOSE HCLTECH     stop       @ 1360.40  net Rs -549 [orb60] (charges 45)",
+  "11:05  SKIP  HDFCBANK    learner   via orb60 (expects +0.14R): max 3 trades a day",
+  "11:05  SKIP  HDFCBANK    orb60     ORB60 down: max 3 trades a day",
+  "11:05  SKIP  ICICIBANK   learner   via orb30_2r (expects +0.07R): max 3 trades a day",
+  "11:05  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day",
+  "11:05  SKIP  ICICIBANK   learner   via orb60 (expects +0.09R): max 3 trades a day",
+  "11:05  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day",
+  "11:05  SKIP  TITAN       learner   via orb30_2r (expects +0.15R): max 3 trades a day",
+  "11:05  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day",
+  "11:05  SKIP  TRENT       learner   via orb60 (expects +0.09R): max 3 trades a day",
+  "11:05  SKIP  TRENT       orb60     ORB60 down: max 3 trades a day"
  ],
- "all_trades": 244,
- "all_wins": 126,
- "all_net": -14607.0,
+ "all_trades": 246,
+ "all_wins": 127,
+ "all_net": -14774.0,
  "recent": [
+  {
+   "date": "2026-11-23",
+   "symbol": "HCLTECH",
+   "strategy": "orb60",
+   "side": "1",
+   "qty": "31",
+   "entry_time": "10:20",
+   "entry": "1376.1",
+   "stop": "1360.4",
+   "target": "1391.8",
+   "exit_time": "11:05",
+   "exit": "1360.4",
+   "reason": "stop",
+   "gross": "-503.67",
+   "charges": "44.92",
+   "net": "-548.59",
+   "r": "-1.127",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
+  {
+   "date": "2026-11-23",
+   "symbol": "ASIANPAINT",
+   "strategy": "orb15",
+   "side": "-1",
+   "qty": "32",
+   "entry_time": "09:35",
+   "entry": "2596.5",
+   "stop": "2611.85",
+   "target": "2581.15",
+   "exit_time": "11:05",
+   "exit": "2581.15",
+   "reason": "target",
+   "gross": "458.06",
+   "charges": "76.45",
+   "net": "381.61",
+   "r": "0.777",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-23",
    "symbol": "TITAN",
@@ -888,48 +948,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-20",
-   "symbol": "ICICIBANK",
-   "strategy": "vwap",
-   "side": "1",
-   "qty": "62",
-   "entry_time": "10:30",
-   "entry": "1611.8",
-   "stop": "1606.5",
-   "target": "1622.4",
-   "exit_time": "11:55",
-   "exit": "1622.4",
-   "reason": "target",
-   "gross": "617.1",
-   "charges": "82.6",
-   "net": "534.5",
-   "r": "1.627",
-   "mode": "live",
-   "via": "",
-   "setup": ""
-  },
-  {
-   "date": "2026-11-20",
-   "symbol": "POWERGRID",
-   "strategy": "orb60",
-   "side": "-1",
-   "qty": "370",
-   "entry_time": "10:20",
-   "entry": "260.95",
-   "stop": "262.3",
-   "target": "259.65",
-   "exit_time": "11:10",
-   "exit": "262.35",
-   "reason": "stop (gap)",
-   "gross": "-556.73",
-   "charges": "81.26",
-   "net": "-637.99",
-   "r": "-1.277",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -944,17 +962,17 @@
   "2026-11-18": 603.0,
   "2026-11-19": -3408.0,
   "2026-11-20": 2067.0,
-  "2026-11-23": -1397.0
+  "2026-11-23": -1564.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 33,
-   "all_wins": 18,
-   "all_net": -1456
+   "today_trades": 1,
+   "today_net": 382,
+   "open": 2,
+   "all_trades": 34,
+   "all_wins": 19,
+   "all_net": -1075
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
@@ -967,12 +985,12 @@
   },
   "orb60": {
    "desc": "first-hour range breakout, stop at mid, 1R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 33,
+   "today_trades": 1,
+   "today_net": -549,
+   "open": 2,
+   "all_trades": 34,
    "all_wins": 15,
-   "all_net": -5394
+   "all_net": -5943
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
@@ -1035,11 +1053,11 @@
   },
   "accounts": {
    "orb15": {
-    "days": 11,
-    "trades": 33,
-    "net": -1456,
-    "per_trade": -44,
-    "t": -0.6,
+    "days": 12,
+    "trades": 34,
+    "net": -1075,
+    "per_trade": -32,
+    "t": -0.45,
     "drawdown": -3580,
     "passed": 1,
     "of": 7,
@@ -1049,31 +1067,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "11 of 60 days"
+      "now": "12 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "33 of 150 trades"
+      "now": "34 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -44 a trade"
+      "now": "Rs -32 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.60"
+      "now": "t = -0.45"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs +232 then Rs -1688"
+      "now": "Rs -356 then Rs -719"
      },
      {
       "id": "drawdown",
@@ -1145,12 +1163,12 @@
     ]
    },
    "orb60": {
-    "days": 11,
-    "trades": 33,
-    "net": -5394,
-    "per_trade": -163,
-    "t": -2.3,
-    "drawdown": -5866,
+    "days": 12,
+    "trades": 34,
+    "net": -5943,
+    "per_trade": -175,
+    "t": -2.51,
+    "drawdown": -6414,
     "passed": 1,
     "of": 7,
     "ready": false,
@@ -1159,37 +1177,37 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "11 of 60 days"
+      "now": "12 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "33 of 150 trades"
+      "now": "34 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -163 a trade"
+      "now": "Rs -175 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -2.30"
+      "now": "t = -2.51"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -2809 then Rs -2585"
+      "now": "Rs -3264 then Rs -2679"
      },
      {
       "id": "drawdown",
       "need": "Worst losing run under Rs 10,000",
       "ok": true,
-      "now": "Rs -5866"
+      "now": "Rs -6414"
      },
      {
       "id": "history",
