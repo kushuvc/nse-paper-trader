@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 12:01 IST",
- "updated_ts": 1795415474,
+ "updated": "2026-11-23 12:11 IST",
+ "updated_ts": 1795416075,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -70,17 +70,6 @@
    "target": 555.55,
    "entry_time": "09:50",
    "note": "ORB30 down"
-  },
-  "orb30_2r|INFY": {
-   "strategy": "orb30_2r",
-   "symbol": "INFY",
-   "side": 1,
-   "qty": 29,
-   "entry": 1123.0,
-   "stop": 1106.3,
-   "target": 1156.4,
-   "entry_time": "09:50",
-   "note": "ORB30 up"
   },
   "learner|POWERGRID": {
    "strategy": "learner",
@@ -355,13 +344,30 @@
    "net": -548.59,
    "r": -1.127,
    "mode": "live"
+  },
+  {
+   "strategy": "orb30_2r",
+   "symbol": "INFY",
+   "side": 1,
+   "qty": 29,
+   "entry": 1123.0,
+   "stop": 1106.3,
+   "target": 1156.4,
+   "entry_time": "09:50",
+   "note": "ORB30 up",
+   "date": "2026-11-23",
+   "exit": 1106.3,
+   "exit_time": "12:10",
+   "reason": "stop",
+   "gross": -497.23,
+   "charges": 34.22,
+   "net": -531.45,
+   "r": -1.097,
+   "mode": "live"
   }
  ],
- "today_net": -1565.0,
+ "today_net": -2096.0,
  "log": [
-  "10:35  OPEN  JSWSTEEL    SHORT   75 @ 1320.90  stop 1327.50  target 1307.70  [vwap: VWAP loss]",
-  "10:35  SKIP  LT          orb60     ORB60 down: max 3 trades a day",
-  "10:40  SKIP  APOLLOHOSP  learner   via orb30_2r (expects +0.15R): max 3 trades a day",
   "10:40  SKIP  APOLLOHOSP  orb30_2r  ORB30 down: max 3 trades a day",
   "10:40  SKIP  APOLLOHOSP  orb60     ORB60 down: max 3 trades a day",
   "10:40  SKIP  BEL         orb30_2r  ORB30 down: max 3 trades a day",
@@ -418,12 +424,36 @@
   "12:00  SKIP  EICHERMOT   vwap      VWAP loss: max 3 trades a day",
   "12:00  SKIP  SBILIFE     learner   via orb30_2r (expects +0.07R): max 3 trades a day",
   "12:00  SKIP  SBILIFE     orb30_2r  ORB30 down: max 3 trades a day",
-  "12:00  SKIP  SBILIFE     orb60     ORB60 down: max 3 trades a day"
+  "12:00  SKIP  SBILIFE     orb60     ORB60 down: max 3 trades a day",
+  "12:10  CLOSE INFY        stop       @ 1106.30  net Rs -531 [orb30_2r] (charges 34)",
+  "12:10  SKIP  INFY        learner   via orb60 (expects +0.14R): max 3 trades a day",
+  "12:10  SKIP  INFY        orb60     ORB60 down: max 3 trades a day"
  ],
- "all_trades": 246,
+ "all_trades": 247,
  "all_wins": 127,
- "all_net": -14774.0,
+ "all_net": -15306.0,
  "recent": [
+  {
+   "date": "2026-11-23",
+   "symbol": "INFY",
+   "strategy": "orb30_2r",
+   "side": "1",
+   "qty": "29",
+   "entry_time": "09:50",
+   "entry": "1123.0",
+   "stop": "1106.3",
+   "target": "1156.4",
+   "exit_time": "12:10",
+   "exit": "1106.3",
+   "reason": "stop",
+   "gross": "-497.23",
+   "charges": "34.22",
+   "net": "-531.45",
+   "r": "-1.097",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-23",
    "symbol": "HCLTECH",
@@ -927,27 +957,6 @@
    "mode": "live",
    "via": "orb30_2r",
    "setup": "long, before 10:30, with market, against gap, wide stop, after usual delivery, after a mixed market"
-  },
-  {
-   "date": "2026-11-20",
-   "symbol": "APOLLOHOSP",
-   "strategy": "orb15",
-   "side": "1",
-   "qty": "3",
-   "entry_time": "09:35",
-   "entry": "9063.5",
-   "stop": "8923.25",
-   "target": "9203.75",
-   "exit_time": "12:20",
-   "exit": "9203.75",
-   "reason": "target",
-   "gross": "409.79",
-   "charges": "29.1",
-   "net": "380.69",
-   "r": "0.905",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -962,7 +971,7 @@
   "2026-11-18": 603.0,
   "2026-11-19": -3408.0,
   "2026-11-20": 2067.0,
-  "2026-11-23": -1564.0
+  "2026-11-23": -2095.0
  },
  "by_strategy": {
   "orb15": {
@@ -976,12 +985,12 @@
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 33,
+   "today_trades": 1,
+   "today_net": -531,
+   "open": 2,
+   "all_trades": 34,
    "all_wins": 13,
-   "all_net": -3685
+   "all_net": -4217
   },
   "orb60": {
    "desc": "first-hour range breakout, stop at mid, 1R",
@@ -1108,12 +1117,12 @@
     ]
    },
    "orb30_2r": {
-    "days": 11,
-    "trades": 33,
-    "net": -3685,
-    "per_trade": -112,
-    "t": -1.68,
-    "drawdown": -4872,
+    "days": 12,
+    "trades": 34,
+    "net": -4217,
+    "per_trade": -124,
+    "t": -1.88,
+    "drawdown": -5403,
     "passed": 1,
     "of": 7,
     "ready": false,
@@ -1122,37 +1131,37 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "11 of 60 days"
+      "now": "12 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "33 of 150 trades"
+      "now": "34 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -112 a trade"
+      "now": "Rs -124 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -1.68"
+      "now": "t = -1.88"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -769 then Rs -2916"
+      "now": "Rs -1348 then Rs -2868"
      },
      {
       "id": "drawdown",
       "need": "Worst losing run under Rs 10,000",
       "ok": true,
-      "now": "Rs -4872"
+      "now": "Rs -5403"
      },
      {
       "id": "history",

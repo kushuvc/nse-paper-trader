@@ -192,3 +192,6 @@ NSE's own daily file: latest saved is 2026-11-20
 12:00  SKIP  SBILIFE     learner   via orb30_2r (expects +0.07R): max 3 trades a day
 12:00  SKIP  SBILIFE     orb30_2r  ORB30 down: max 3 trades a day
 12:00  SKIP  SBILIFE     orb60     ORB60 down: max 3 trades a day
+12:10  CLOSE INFY        stop       @ 1106.30  net Rs -531 [orb30_2r] (charges 34)
+12:10  SKIP  INFY        learner   via orb60 (expects +0.14R): max 3 trades a day
+12:10  SKIP  INFY        orb60     ORB60 down: max 3 trades a day
