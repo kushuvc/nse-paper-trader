@@ -249,3 +249,11 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-23,HINDALCO,vwap,1,83,10:20,911.0,905.0,922.9,12:45,905.0,stop,-528.15,73.7,-601.85,-1.209,live,,
 2026-11-23,JSWSTEEL,vwap,-1,75,10:35,1320.9,1327.5,1307.7,13:10,1307.7,target,950.57,82.05,868.52,1.755,live,,
 2026-11-23,BAJFINANCE,orb60,-1,40,10:20,1107.3,1119.5,1095.1,15:00,1095.1,target,470.38,46.76,423.62,0.868,live,,
+2026-11-23,ADANIPORTS,orb15,-1,20,09:35,1909.0,1933.3,1884.7,15:15,1919.0,square-off,-215.31,40.57,-255.88,-0.527,live,,
+2026-11-23,APOLLOHOSP,trap90,1,3,09:30,9346.0,9205.8,9360.0,15:15,9260.0,square-off,-269.16,29.57,-298.73,-0.71,live,,
+2026-11-23,AXISBANK,orb15,-1,15,09:35,1400.0,1432.0,1368.05,15:15,1392.1,square-off,110.12,22.22,87.9,0.183,live,,
+2026-11-23,HDFCLIFE,learner,-1,39,09:50,580.75,593.35,555.55,15:15,574.45,square-off,236.69,23.91,212.78,0.433,live,orb30_2r,"short, before 10:30, with market, no gap, wide stop, after high delivery, with yesterday's market"
+2026-11-23,HDFCLIFE,orb30_2r,-1,39,09:50,580.75,593.35,555.55,15:15,574.45,square-off,236.69,23.91,212.78,0.433,live,,
+2026-11-23,HDFCLIFE,orb60,-1,59,10:20,577.15,585.5,568.8,15:15,574.45,square-off,145.71,36.04,109.67,0.223,live,,
+2026-11-23,POWERGRID,learner,-1,92,09:50,266.6,272.0,255.8,15:15,264.1,square-off,220.23,25.91,194.32,0.391,live,orb30_2r,"short, before 10:30, with market, against gap, wide stop, after usual delivery, with yesterday's market"
+2026-11-23,POWERGRID,orb30_2r,-1,92,09:50,266.6,272.0,255.8,15:15,264.1,square-off,220.23,25.91,194.32,0.391,live,,
