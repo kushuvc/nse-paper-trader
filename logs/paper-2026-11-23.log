@@ -115,3 +115,16 @@ NSE's own daily file: latest saved is 2026-11-20
 10:20  SKIP  KOTAKBANK   learner   via orb30_2r (expects +0.13R): max 3 trades a day
 10:20  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day
 10:20  SKIP  TECHM       orb60     ORB60 up: max 3 trades a day
+10:25  SKIP  POWERGRID   learner   via orb60 (expects +0.12R): already holding this stock
+10:25  SKIP  POWERGRID   orb60     ORB60 down: max 3 trades a day
+10:25  SKIP  SBIN        learner   via orb30_2r (expects +0.23R): max 3 trades a day
+10:25  SKIP  SBIN        orb30_2r  ORB30 down: max 3 trades a day
+10:25  SKIP  TATASTEEL   orb60     ORB60 down: max 3 trades a day
+10:30  SKIP  APOLLOHOSP  orb15     ORB15 down: max 3 trades a day
+10:30  SKIP  COALINDIA   orb30_2r  ORB30 down: max 3 trades a day
+10:30  SKIP  COALINDIA   orb60     ORB60 down: max 3 trades a day
+10:30  SKIP  KOTAKBANK   learner   via orb60 (expects +0.08R): max 3 trades a day
+10:30  SKIP  KOTAKBANK   orb60     ORB60 down: max 3 trades a day
+10:30  SKIP  M&M         learner   via orb30_2r (expects +0.13R): max 3 trades a day
+10:30  SKIP  M&M         orb30_2r  ORB30 down: max 3 trades a day
+10:30  SKIP  M&M         orb60     ORB60 down: max 3 trades a day
