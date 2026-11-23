@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 09:20 IST",
- "updated_ts": 1795405851,
+ "updated": "2026-11-23 09:30 IST",
+ "updated_ts": 1795406452,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -12,10 +12,114 @@
   "trap90"
  ],
  "date": "2026-11-23",
- "open": {},
+ "open": {
+  "gap_go|APOLLOHOSP": {
+   "strategy": "gap_go",
+   "symbol": "APOLLOHOSP",
+   "side": 1,
+   "qty": 7,
+   "entry": 9346.0,
+   "stop": 9280.0,
+   "target": 9478.0,
+   "entry_time": "09:30",
+   "note": "gap +1.0% and go"
+  },
+  "trap90|APOLLOHOSP": {
+   "strategy": "trap90",
+   "symbol": "APOLLOHOSP",
+   "side": 1,
+   "qty": 3,
+   "entry": 9346.0,
+   "stop": 9205.8,
+   "target": 9360.0,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop"
+  },
+  "trap90|BAJAJ-AUTO": {
+   "strategy": "trap90",
+   "symbol": "BAJAJ-AUTO",
+   "side": 1,
+   "qty": 3,
+   "entry": 10744.0,
+   "stop": 10582.8,
+   "target": 10760.1,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop"
+  },
+  "learner|HINDALCO": {
+   "strategy": "learner",
+   "symbol": "HINDALCO",
+   "side": 1,
+   "qty": 110,
+   "entry": 908.05,
+   "stop": 905.75,
+   "target": 929.5,
+   "entry_time": "09:30",
+   "note": "gap -2.5% fading",
+   "via": "gap_fade",
+   "setup": "long, before 10:30, against market, against gap, tight stop, after low delivery, against yesterday's market",
+   "score": 0.101
+  },
+  "gap_fade|HINDALCO": {
+   "strategy": "gap_fade",
+   "symbol": "HINDALCO",
+   "side": 1,
+   "qty": 110,
+   "entry": 908.05,
+   "stop": 905.75,
+   "target": 929.5,
+   "entry_time": "09:30",
+   "note": "gap -2.5% fading"
+  },
+  "trap90|HINDALCO": {
+   "strategy": "trap90",
+   "symbol": "HINDALCO",
+   "side": 1,
+   "qty": 36,
+   "entry": 908.05,
+   "stop": 894.4,
+   "target": 909.4,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop"
+  },
+  "gap_fade|TCS": {
+   "strategy": "gap_fade",
+   "symbol": "TCS",
+   "side": -1,
+   "qty": 17,
+   "entry": 2405.9,
+   "stop": 2433.75,
+   "target": 2376.2,
+   "entry_time": "09:30",
+   "note": "gap +1.8% fading"
+  },
+  "gap_go|TATASTEEL": {
+   "strategy": "gap_go",
+   "symbol": "TATASTEEL",
+   "side": -1,
+   "qty": 205,
+   "entry": 171.12,
+   "stop": 173.55,
+   "target": 166.3,
+   "entry_time": "09:30",
+   "note": "gap -2.5% and go"
+  }
+ },
  "closed": [],
  "today_net": 0,
- "log": [],
+ "log": [
+  "09:30  OPEN  APOLLOHOSP  BUY      7 @ 9346.00  stop 9280.00  target 9478.00  [gap_go: gap +1.0% and go]",
+  "09:30  OPEN  APOLLOHOSP  BUY      3 @ 9346.00  stop 9205.80  target 9360.00  [trap90: tiny target, wide stop]",
+  "09:30  OPEN  BAJAJ-AUTO  BUY      3 @ 10744.00  stop 10582.80  target 10760.10  [trap90: tiny target, wide stop]",
+  "09:30  OPEN  HINDALCO    BUY    110 @ 908.05  stop 905.75  target 929.50  [learner via gap_fade, expects +0.10R: long, before 10:30, against market, against gap, tight stop, after low delivery, against yesterday's market]",
+  "09:30  OPEN  HINDALCO    BUY    110 @ 908.05  stop 905.75  target 929.50  [gap_fade: gap -2.5% fading]",
+  "09:30  OPEN  HINDALCO    BUY     36 @ 908.05  stop 894.40  target 909.40  [trap90: tiny target, wide stop]",
+  "09:30  SKIP  MAXHEALTH   trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  OPEN  TCS         SHORT   17 @ 2405.90  stop 2433.75  target 2376.20  [gap_fade: gap +1.8% fading]",
+  "09:30  OPEN  TATASTEEL   SHORT  205 @ 171.12  stop 173.55  target 166.30  [gap_go: gap -2.5% and go]",
+  "09:30  SKIP  TECHM       trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  TITAN       trap90    tiny target, wide stop: max 3 trades a day"
+ ],
  "all_trades": 236,
  "all_wins": 123,
  "all_net": -13209.0,
@@ -591,7 +695,7 @@
    "desc": "gap >=1% that continues: join, 2R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 2,
    "all_trades": 30,
    "all_wins": 12,
    "all_net": -1441
@@ -600,7 +704,7 @@
    "desc": "gap >=1% that reverses: target yesterday's close",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 2,
    "all_trades": 18,
    "all_wins": 11,
    "all_net": 4107
@@ -618,7 +722,7 @@
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 33,
    "all_wins": 30,
    "all_net": -1330

@@ -5,3 +5,14 @@ Latest day, 2026-11-20: 1046 of 2760 shares rose (38.3%), Nifty 50 25,801 (+1.12
 PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
 Learner: model from 70 days of history
 NSE's own daily file: latest saved is 2026-11-20
+09:30  OPEN  APOLLOHOSP  BUY      7 @ 9346.00  stop 9280.00  target 9478.00  [gap_go: gap +1.0% and go]
+09:30  OPEN  APOLLOHOSP  BUY      3 @ 9346.00  stop 9205.80  target 9360.00  [trap90: tiny target, wide stop]
+09:30  OPEN  BAJAJ-AUTO  BUY      3 @ 10744.00  stop 10582.80  target 10760.10  [trap90: tiny target, wide stop]
+09:30  OPEN  HINDALCO    BUY    110 @ 908.05  stop 905.75  target 929.50  [learner via gap_fade, expects +0.10R: long, before 10:30, against market, against gap, tight stop, after low delivery, against yesterday's market]
+09:30  OPEN  HINDALCO    BUY    110 @ 908.05  stop 905.75  target 929.50  [gap_fade: gap -2.5% fading]
+09:30  OPEN  HINDALCO    BUY     36 @ 908.05  stop 894.40  target 909.40  [trap90: tiny target, wide stop]
+09:30  SKIP  MAXHEALTH   trap90    tiny target, wide stop: max 3 trades a day
+09:30  OPEN  TCS         SHORT   17 @ 2405.90  stop 2433.75  target 2376.20  [gap_fade: gap +1.8% fading]
+09:30  OPEN  TATASTEEL   SHORT  205 @ 171.12  stop 173.55  target 166.30  [gap_go: gap -2.5% and go]
+09:30  SKIP  TECHM       trap90    tiny target, wide stop: max 3 trades a day
+09:30  SKIP  TITAN       trap90    tiny target, wide stop: max 3 trades a day
