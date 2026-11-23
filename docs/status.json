@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 12:46 IST",
- "updated_ts": 1795418162,
+ "updated": "2026-11-23 12:56 IST",
+ "updated_ts": 1795418764,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -377,10 +377,6 @@
  ],
  "today_net": -2698.0,
  "log": [
-  "10:45  OPEN  TITAN       BUY     21 @ 4649.90  stop 4632.00  target 4685.70  [vwap: VWAP reclaim]",
-  "10:50  SKIP  BAJAJFINSV  learner   via orb30_2r (expects +0.09R): max 3 trades a day",
-  "10:50  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day",
-  "10:55  SKIP  BAJAJFINSV  orb60     ORB60 down: max 3 trades a day",
   "10:55  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day",
   "10:55  SKIP  SBIN        learner   via orb60 (expects +0.14R): max 3 trades a day",
   "10:55  SKIP  SBIN        orb60     ORB60 down: max 3 trades a day",
@@ -436,7 +432,11 @@
   "12:45  CLOSE HINDALCO    stop       @ 905.00  net Rs -602 [vwap] (charges 74)",
   "12:45  SKIP  HINDALCO    orb60     ORB60 down: max 3 trades a day",
   "12:45  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day",
-  "12:45  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day"
+  "12:45  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day",
+  "12:50  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day",
+  "12:55  SKIP  ADANIENT    learner   via orb60 (expects +0.14R): max 3 trades a day",
+  "12:55  SKIP  ADANIENT    orb60     ORB60 down: max 3 trades a day",
+  "12:55  SKIP  CIPLA       vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 248,
  "all_wins": 127,
