@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 12:56 IST",
- "updated_ts": 1795418764,
+ "updated": "2026-11-23 13:06 IST",
+ "updated_ts": 1795419366,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -377,7 +377,6 @@
  ],
  "today_net": -2698.0,
  "log": [
-  "10:55  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day",
   "10:55  SKIP  SBIN        learner   via orb60 (expects +0.14R): max 3 trades a day",
   "10:55  SKIP  SBIN        orb60     ORB60 down: max 3 trades a day",
   "10:55  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day",
@@ -436,7 +435,8 @@
   "12:50  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day",
   "12:55  SKIP  ADANIENT    learner   via orb60 (expects +0.14R): max 3 trades a day",
   "12:55  SKIP  ADANIENT    orb60     ORB60 down: max 3 trades a day",
-  "12:55  SKIP  CIPLA       vwap      VWAP loss: max 3 trades a day"
+  "12:55  SKIP  CIPLA       vwap      VWAP loss: max 3 trades a day",
+  "13:05  SKIP  ITC         vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 248,
  "all_wins": 127,
