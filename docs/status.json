@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-21 03:40 IST",
- "updated_ts": 1795212611,
- "in_session": false,
+ "updated": "2026-11-23 09:10 IST",
+ "updated_ts": 1795405249,
+ "in_session": true,
  "strategies": [
   "orb15",
   "orb30_2r",
@@ -11,7 +11,7 @@
   "vwap",
   "trap90"
  ],
- "date": "2026-11-21",
+ "date": "2026-11-23",
  "open": {},
  "closed": [],
  "today_net": 0,
