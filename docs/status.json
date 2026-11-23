@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 12:25 IST",
- "updated_ts": 1795416959,
+ "updated": "2026-11-23 12:36 IST",
+ "updated_ts": 1795417561,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -368,9 +368,6 @@
  ],
  "today_net": -2096.0,
  "log": [
-  "10:45  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day",
-  "10:45  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day",
-  "10:45  SKIP  TMPV        learner   via orb30_2r (expects +0.05R): max 3 trades a day",
   "10:45  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day",
   "10:45  SKIP  TMPV        learner   via orb60 (expects +0.07R): max 3 trades a day",
   "10:45  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day",
@@ -427,7 +424,10 @@
   "12:25  SKIP  NTPC        learner   via orb30_2r (expects +0.07R): max 3 trades a day",
   "12:25  SKIP  NTPC        orb30_2r  ORB30 down: max 3 trades a day",
   "12:25  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day",
-  "12:25  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day"
+  "12:25  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day",
+  "12:30  SKIP  BAJAJ-AUTO  orb60     ORB60 down: max 3 trades a day",
+  "12:30  SKIP  EICHERMOT   vwap      VWAP loss: max 3 trades a day",
+  "12:35  SKIP  SHRIRAMFIN  vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 247,
  "all_wins": 127,
