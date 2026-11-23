@@ -183,3 +183,6 @@ NSE's own daily file: latest saved is 2026-11-20
 11:15  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day
 11:40  SKIP  ULTRACEMCO  learner   via orb60 (expects +0.09R): max 3 trades a day
 11:40  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day
+11:45  SKIP  ADANIPORTS  vwap      VWAP loss: max 3 trades a day
+11:45  SKIP  NTPC        vwap      VWAP loss: max 3 trades a day
+11:50  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day
