@@ -242,3 +242,4 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-23,HINDALCO,learner,1,110,09:30,908.05,905.75,929.5,10:00,905.75,stop,-292.9,82.33,-375.23,-1.483,live,gap_fade,"long, before 10:30, against market, against gap, tight stop, after low delivery, against yesterday's market"
 2026-11-23,HINDALCO,gap_fade,1,110,09:30,908.05,905.75,929.5,10:00,905.75,stop,-292.9,82.33,-375.23,-1.483,live,,
 2026-11-23,TATASTEEL,gap_go,-1,205,09:30,171.12,173.55,166.3,10:45,166.3,target,974.27,36.78,937.49,1.882,live,,
+2026-11-23,TITAN,vwap,1,21,10:45,4649.9,4632.0,4685.7,11:00,4632.0,stop,-414.88,81.5,-496.38,-1.321,live,,

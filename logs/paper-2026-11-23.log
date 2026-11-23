@@ -154,3 +154,17 @@ NSE's own daily file: latest saved is 2026-11-20
 10:45  OPEN  TITAN       BUY     21 @ 4649.90  stop 4632.00  target 4685.70  [vwap: VWAP reclaim]
 10:50  SKIP  BAJAJFINSV  learner   via orb30_2r (expects +0.09R): max 3 trades a day
 10:50  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day
+10:55  SKIP  BAJAJFINSV  orb60     ORB60 down: max 3 trades a day
+10:55  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day
+10:55  SKIP  SBIN        learner   via orb60 (expects +0.14R): max 3 trades a day
+10:55  SKIP  SBIN        orb60     ORB60 down: max 3 trades a day
+10:55  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day
+11:00  SKIP  CIPLA       vwap      VWAP loss: max 3 trades a day
+11:00  SKIP  ETERNAL     vwap      VWAP loss: max 3 trades a day
+11:00  SKIP  ITC         orb60     ORB60 down: max 3 trades a day
+11:00  SKIP  MAXHEALTH   learner   via orb30_2r (expects +0.05R): max 3 trades a day
+11:00  SKIP  MAXHEALTH   orb30_2r  ORB30 down: max 3 trades a day
+11:00  SKIP  MAXHEALTH   orb60     ORB60 down: max 3 trades a day
+11:00  SKIP  RELIANCE    learner   via orb60 (expects +0.09R): max 3 trades a day
+11:00  SKIP  RELIANCE    orb60     ORB60 down: max 3 trades a day
+11:00  CLOSE TITAN       stop       @ 4632.00  net Rs -496 [vwap] (charges 82)
