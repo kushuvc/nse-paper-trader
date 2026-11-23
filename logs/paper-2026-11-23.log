@@ -99,3 +99,19 @@ NSE's own daily file: latest saved is 2026-11-20
 10:10  SKIP  BHARTIARTL  learner   via orb30_2r (expects +0.13R): max 3 trades a day
 10:10  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day
 10:10  SKIP  HCLTECH     orb30_2r  ORB30 up: max 3 trades a day
+10:15  SKIP  ASIANPAINT  learner   via orb30_2r (expects +0.13R): max 3 trades a day
+10:15  SKIP  ASIANPAINT  orb30_2r  ORB30 down: max 3 trades a day
+10:15  SKIP  GRASIM      learner   via orb30_2r (expects +0.06R): max 3 trades a day
+10:15  SKIP  GRASIM      orb30_2r  ORB30 down: max 3 trades a day
+10:15  SKIP  NESTLEIND   learner   via orb30_2r (expects +0.13R): max 3 trades a day
+10:15  SKIP  NESTLEIND   orb30_2r  ORB30 down: max 3 trades a day
+10:20  SKIP  BAJFINANCE  learner   via orb30_2r (expects +0.13R): max 3 trades a day
+10:20  SKIP  BAJFINANCE  orb30_2r  ORB30 down: max 3 trades a day
+10:20  SKIP  BAJFINANCE  learner   via orb60 (expects +0.08R): max 3 trades a day
+10:20  OPEN  BAJFINANCE  SHORT   40 @ 1107.30  stop 1119.50  target 1095.10  [orb60: ORB60 down]
+10:20  OPEN  HCLTECH     BUY     31 @ 1376.10  stop 1360.40  target 1391.80  [orb60: ORB60 up]
+10:20  OPEN  HDFCLIFE    SHORT   59 @ 577.15  stop 585.50  target 568.80  [orb60: ORB60 down]
+10:20  OPEN  HINDALCO    BUY     83 @ 911.00  stop 905.00  target 922.90  [vwap: VWAP reclaim]
+10:20  SKIP  KOTAKBANK   learner   via orb30_2r (expects +0.13R): max 3 trades a day
+10:20  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day
+10:20  SKIP  TECHM       orb60     ORB60 up: max 3 trades a day
