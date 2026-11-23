@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 13:16 IST",
- "updated_ts": 1795419967,
+ "updated": "2026-11-23 13:26 IST",
+ "updated_ts": 1795420569,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -386,12 +386,6 @@
  ],
  "today_net": -1830.0,
  "log": [
-  "11:00  SKIP  MAXHEALTH   orb30_2r  ORB30 down: max 3 trades a day",
-  "11:00  SKIP  MAXHEALTH   orb60     ORB60 down: max 3 trades a day",
-  "11:00  SKIP  RELIANCE    learner   via orb60 (expects +0.09R): max 3 trades a day",
-  "11:00  SKIP  RELIANCE    orb60     ORB60 down: max 3 trades a day",
-  "11:00  CLOSE TITAN       stop       @ 4632.00  net Rs -496 [vwap] (charges 82)",
-  "11:05  CLOSE ASIANPAINT  target     @ 2581.15  net Rs +382 [orb15] (charges 76)",
   "11:05  CLOSE HCLTECH     stop       @ 1360.40  net Rs -549 [orb60] (charges 45)",
   "11:05  SKIP  HDFCBANK    learner   via orb60 (expects +0.14R): max 3 trades a day",
   "11:05  SKIP  HDFCBANK    orb60     ORB60 down: max 3 trades a day",
@@ -445,7 +439,13 @@
   "13:10  SKIP  JSWSTEEL    orb30_2r  ORB30 down: max 3 trades a day",
   "13:10  SKIP  JSWSTEEL    learner   via orb60 (expects +0.11R): max 3 trades a day",
   "13:10  SKIP  JSWSTEEL    orb60     ORB60 down: max 3 trades a day",
-  "13:15  SKIP  INDIGO      orb15     ORB15 down: max 3 trades a day"
+  "13:15  SKIP  INDIGO      orb15     ORB15 down: max 3 trades a day",
+  "13:20  SKIP  BSE         vwap      VWAP loss: max 3 trades a day",
+  "13:25  SKIP  DRREDDY     learner   via orb30_2r (expects +0.11R): max 3 trades a day",
+  "13:25  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day",
+  "13:25  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day",
+  "13:25  SKIP  HCLTECH     vwap      VWAP reclaim: max 3 trades a day",
+  "13:25  SKIP  SUNPHARMA   orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 249,
  "all_wins": 128,
