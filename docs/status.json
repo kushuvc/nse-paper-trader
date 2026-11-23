@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 11:51 IST",
- "updated_ts": 1795414872,
+ "updated": "2026-11-23 12:01 IST",
+ "updated_ts": 1795415474,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -359,12 +359,6 @@
  ],
  "today_net": -1565.0,
  "log": [
-  "10:30  SKIP  M&M         orb30_2r  ORB30 down: max 3 trades a day",
-  "10:30  SKIP  M&M         orb60     ORB60 down: max 3 trades a day",
-  "10:35  SKIP  ASIANPAINT  orb60     ORB60 down: max 3 trades a day",
-  "10:35  SKIP  HINDUNILVR  learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "10:35  SKIP  HINDUNILVR  orb30_2r  ORB30 down: max 3 trades a day",
-  "10:35  SKIP  HINDUNILVR  orb60     ORB60 down: max 3 trades a day",
   "10:35  OPEN  JSWSTEEL    SHORT   75 @ 1320.90  stop 1327.50  target 1307.70  [vwap: VWAP loss]",
   "10:35  SKIP  LT          orb60     ORB60 down: max 3 trades a day",
   "10:40  SKIP  APOLLOHOSP  learner   via orb30_2r (expects +0.15R): max 3 trades a day",
@@ -418,7 +412,13 @@
   "11:40  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day",
   "11:45  SKIP  ADANIPORTS  vwap      VWAP loss: max 3 trades a day",
   "11:45  SKIP  NTPC        vwap      VWAP loss: max 3 trades a day",
-  "11:50  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day"
+  "11:50  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day",
+  "11:55  SKIP  ETERNAL     vwap      VWAP loss: max 3 trades a day",
+  "11:55  SKIP  HDFCLIFE    vwap      VWAP loss: max 3 trades a day",
+  "12:00  SKIP  EICHERMOT   vwap      VWAP loss: max 3 trades a day",
+  "12:00  SKIP  SBILIFE     learner   via orb30_2r (expects +0.07R): max 3 trades a day",
+  "12:00  SKIP  SBILIFE     orb30_2r  ORB30 down: max 3 trades a day",
+  "12:00  SKIP  SBILIFE     orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 246,
  "all_wins": 127,
