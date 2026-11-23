@@ -16,3 +16,41 @@ NSE's own daily file: latest saved is 2026-11-20
 09:30  OPEN  TATASTEEL   SHORT  205 @ 171.12  stop 173.55  target 166.30  [gap_go: gap -2.5% and go]
 09:30  SKIP  TECHM       trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  TITAN       trap90    tiny target, wide stop: max 3 trades a day
+09:35  OPEN  ADANIPORTS  SHORT   20 @ 1909.00  stop 1933.30  target 1884.70  [orb15: ORB15 down]
+09:35  CLOSE APOLLOHOSP  stop       @ 9280.00  net Rs -557 [gap_go] (charges 69)
+09:35  OPEN  ASIANPAINT  SHORT   32 @ 2596.50  stop 2611.85  target 2581.15  [orb15: ORB15 down]
+09:35  OPEN  AXISBANK    SHORT   15 @ 1400.00  stop 1432.00  target 1368.05  [orb15: ORB15 down]
+09:35  SKIP  BSE         orb15     ORB15 down: max 3 trades a day
+09:35  CLOSE BAJAJ-AUTO  target     @ 10760.10  net Rs +1 [trap90] (charges 34)
+09:35  SKIP  BAJAJ-AUTO  orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  BAJAJFINSV  orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  BEL         orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  CIPLA       orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  COALINDIA   orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  DRREDDY     orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  ETERNAL     orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  GRASIM      orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  HCLTECH     orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  HDFCBANK    orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  HDFCLIFE    orb15     ORB15 down: max 3 trades a day
+09:35  CLOSE HINDALCO    target     @ 909.40  net Rs +1 [trap90] (charges 35)
+09:35  SKIP  HINDUNILVR  orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  ICICIBANK   orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  JIOFIN      orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  LT          orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  M&M         orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  MAXHEALTH   orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  NTPC        orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  RELIANCE    orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  SBILIFE     orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  SHRIRAMFIN  orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  SBIN        orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  SUNPHARMA   orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  TMPV        orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  TRENT       orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  ULTRACEMCO  orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day
