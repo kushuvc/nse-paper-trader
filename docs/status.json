@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 12:15 IST",
- "updated_ts": 1795416357,
+ "updated": "2026-11-23 12:25 IST",
+ "updated_ts": 1795416959,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -368,15 +368,6 @@
  ],
  "today_net": -2096.0,
  "log": [
-  "10:40  SKIP  APOLLOHOSP  orb30_2r  ORB30 down: max 3 trades a day",
-  "10:40  SKIP  APOLLOHOSP  orb60     ORB60 down: max 3 trades a day",
-  "10:40  SKIP  BEL         orb30_2r  ORB30 down: max 3 trades a day",
-  "10:40  SKIP  BEL         orb60     ORB60 down: max 3 trades a day",
-  "10:45  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day",
-  "10:45  SKIP  JIOFIN      learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "10:45  SKIP  JIOFIN      orb30_2r  ORB30 down: max 3 trades a day",
-  "10:45  SKIP  JIOFIN      learner   via orb60 (expects +0.09R): max 3 trades a day",
-  "10:45  SKIP  JIOFIN      orb60     ORB60 down: max 3 trades a day",
   "10:45  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day",
   "10:45  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day",
   "10:45  SKIP  TMPV        learner   via orb30_2r (expects +0.05R): max 3 trades a day",
@@ -427,7 +418,16 @@
   "12:00  SKIP  SBILIFE     orb60     ORB60 down: max 3 trades a day",
   "12:10  CLOSE INFY        stop       @ 1106.30  net Rs -531 [orb30_2r] (charges 34)",
   "12:10  SKIP  INFY        learner   via orb60 (expects +0.14R): max 3 trades a day",
-  "12:10  SKIP  INFY        orb60     ORB60 down: max 3 trades a day"
+  "12:10  SKIP  INFY        orb60     ORB60 down: max 3 trades a day",
+  "12:20  SKIP  APOLLOHOSP  vwap      VWAP reclaim: max 3 trades a day",
+  "12:25  SKIP  BAJAJ-AUTO  learner   via orb30_2r (expects +0.07R): max 3 trades a day",
+  "12:25  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 down: max 3 trades a day",
+  "12:25  SKIP  INDIGO      vwap      VWAP loss: max 3 trades a day",
+  "12:25  SKIP  MAXHEALTH   vwap      VWAP reclaim: max 3 trades a day",
+  "12:25  SKIP  NTPC        learner   via orb30_2r (expects +0.07R): max 3 trades a day",
+  "12:25  SKIP  NTPC        orb30_2r  ORB30 down: max 3 trades a day",
+  "12:25  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day",
+  "12:25  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 247,
  "all_wins": 127,
