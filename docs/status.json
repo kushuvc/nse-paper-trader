@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 10:31 IST",
- "updated_ts": 1795410061,
+ "updated": "2026-11-23 10:41 IST",
+ "updated_ts": 1795410663,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -172,6 +172,17 @@
    "target": 922.9,
    "entry_time": "10:20",
    "note": "VWAP reclaim"
+  },
+  "vwap|JSWSTEEL": {
+   "strategy": "vwap",
+   "symbol": "JSWSTEEL",
+   "side": -1,
+   "qty": 75,
+   "entry": 1320.9,
+   "stop": 1327.5,
+   "target": 1307.7,
+   "entry_time": "10:35",
+   "note": "VWAP loss"
   }
  },
  "closed": [
@@ -301,17 +312,6 @@
  ],
  "today_net": -1839.0,
  "log": [
-  "09:55  SKIP  ITC         orb30_2r  ORB30 down: max 3 trades a day",
-  "09:55  SKIP  TATACONSUM  orb15     ORB15 down: max 3 trades a day",
-  "09:55  SKIP  TATACONSUM  orb30_2r  ORB30 down: max 3 trades a day",
-  "10:00  SKIP  BAJFINANCE  orb15     ORB15 down: max 3 trades a day",
-  "10:00  CLOSE HINDALCO    stop       @ 905.75  net Rs -375 [learner] (charges 82)",
-  "10:00  CLOSE HINDALCO    stop       @ 905.75  net Rs -375 [gap_fade] (charges 82)",
-  "10:00  SKIP  HINDALCO    orb15     ORB15 down: max 3 trades a day",
-  "10:00  SKIP  HINDALCO    orb30_2r  ORB30 down: max 3 trades a day",
-  "10:00  SKIP  ONGC        orb15     ORB15 down: max 3 trades a day",
-  "10:00  SKIP  ONGC        orb30_2r  ORB30 down: max 3 trades a day",
-  "10:00  SKIP  RELIANCE    learner   via orb30_2r (expects +0.13R): max 3 trades a day",
   "10:00  SKIP  RELIANCE    orb30_2r  ORB30 down: max 3 trades a day",
   "10:00  SKIP  SUNPHARMA   learner   via orb30_2r (expects +0.23R): max 3 trades a day",
   "10:00  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day",
@@ -360,7 +360,18 @@
   "10:30  SKIP  KOTAKBANK   orb60     ORB60 down: max 3 trades a day",
   "10:30  SKIP  M&M         learner   via orb30_2r (expects +0.13R): max 3 trades a day",
   "10:30  SKIP  M&M         orb30_2r  ORB30 down: max 3 trades a day",
-  "10:30  SKIP  M&M         orb60     ORB60 down: max 3 trades a day"
+  "10:30  SKIP  M&M         orb60     ORB60 down: max 3 trades a day",
+  "10:35  SKIP  ASIANPAINT  orb60     ORB60 down: max 3 trades a day",
+  "10:35  SKIP  HINDUNILVR  learner   via orb30_2r (expects +0.07R): max 3 trades a day",
+  "10:35  SKIP  HINDUNILVR  orb30_2r  ORB30 down: max 3 trades a day",
+  "10:35  SKIP  HINDUNILVR  orb60     ORB60 down: max 3 trades a day",
+  "10:35  OPEN  JSWSTEEL    SHORT   75 @ 1320.90  stop 1327.50  target 1307.70  [vwap: VWAP loss]",
+  "10:35  SKIP  LT          orb60     ORB60 down: max 3 trades a day",
+  "10:40  SKIP  APOLLOHOSP  learner   via orb30_2r (expects +0.15R): max 3 trades a day",
+  "10:40  SKIP  APOLLOHOSP  orb30_2r  ORB30 down: max 3 trades a day",
+  "10:40  SKIP  APOLLOHOSP  orb60     ORB60 down: max 3 trades a day",
+  "10:40  SKIP  BEL         orb30_2r  ORB30 down: max 3 trades a day",
+  "10:40  SKIP  BEL         orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 242,
  "all_wins": 125,
@@ -956,7 +967,7 @@
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 1,
+   "open": 2,
    "all_trades": 33,
    "all_wins": 14,
    "all_net": -3047
