@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 09:40 IST",
- "updated_ts": 1795407054,
+ "updated": "2026-11-23 09:50 IST",
+ "updated_ts": 1795407655,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -49,17 +49,6 @@
    "entry_time": "09:30",
    "note": "gap -2.5% fading"
   },
-  "gap_fade|TCS": {
-   "strategy": "gap_fade",
-   "symbol": "TCS",
-   "side": -1,
-   "qty": 17,
-   "entry": 2405.9,
-   "stop": 2433.75,
-   "target": 2376.2,
-   "entry_time": "09:30",
-   "note": "gap +1.8% fading"
-  },
   "gap_go|TATASTEEL": {
    "strategy": "gap_go",
    "symbol": "TATASTEEL",
@@ -103,6 +92,67 @@
    "target": 1368.05,
    "entry_time": "09:35",
    "note": "ORB15 down"
+  },
+  "learner|HDFCLIFE": {
+   "strategy": "learner",
+   "symbol": "HDFCLIFE",
+   "side": -1,
+   "qty": 39,
+   "entry": 580.75,
+   "stop": 593.35,
+   "target": 555.55,
+   "entry_time": "09:50",
+   "note": "ORB30 down",
+   "via": "orb30_2r",
+   "setup": "short, before 10:30, with market, no gap, wide stop, after high delivery, with yesterday's market",
+   "score": 0.055
+  },
+  "orb30_2r|HDFCLIFE": {
+   "strategy": "orb30_2r",
+   "symbol": "HDFCLIFE",
+   "side": -1,
+   "qty": 39,
+   "entry": 580.75,
+   "stop": 593.35,
+   "target": 555.55,
+   "entry_time": "09:50",
+   "note": "ORB30 down"
+  },
+  "orb30_2r|INFY": {
+   "strategy": "orb30_2r",
+   "symbol": "INFY",
+   "side": 1,
+   "qty": 29,
+   "entry": 1123.0,
+   "stop": 1106.3,
+   "target": 1156.4,
+   "entry_time": "09:50",
+   "note": "ORB30 up"
+  },
+  "learner|POWERGRID": {
+   "strategy": "learner",
+   "symbol": "POWERGRID",
+   "side": -1,
+   "qty": 92,
+   "entry": 266.6,
+   "stop": 272.0,
+   "target": 255.8,
+   "entry_time": "09:50",
+   "note": "ORB30 down",
+   "via": "orb30_2r",
+   "setup": "short, before 10:30, with market, against gap, wide stop, after usual delivery, with yesterday's market",
+   "score": 0.226
+  },
+  "orb30_2r|POWERGRID": {
+   "strategy": "orb30_2r",
+   "symbol": "POWERGRID",
+   "side": -1,
+   "qty": 92,
+   "entry": 266.6,
+   "stop": 272.0,
+   "target": 255.8,
+   "entry_time": "09:50",
+   "note": "ORB30 down"
   }
  },
  "closed": [
@@ -165,12 +215,30 @@
    "net": 0.81,
    "r": 0.002,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_fade",
+   "symbol": "TCS",
+   "side": -1,
+   "qty": 17,
+   "entry": 2405.9,
+   "stop": 2433.75,
+   "target": 2376.2,
+   "entry_time": "09:30",
+   "note": "gap +1.8% fading",
+   "date": "2026-11-23",
+   "exit": 2433.75,
+   "exit_time": "09:45",
+   "reason": "stop",
+   "gross": -489.9,
+   "charges": 43.57,
+   "net": -533.47,
+   "r": -1.127,
+   "mode": "live"
   }
  ],
- "today_net": -555.0,
+ "today_net": -1089.0,
  "log": [
-  "09:30  OPEN  APOLLOHOSP  BUY      7 @ 9346.00  stop 9280.00  target 9478.00  [gap_go: gap +1.0% and go]",
-  "09:30  OPEN  APOLLOHOSP  BUY      3 @ 9346.00  stop 9205.80  target 9360.00  [trap90: tiny target, wide stop]",
   "09:30  OPEN  BAJAJ-AUTO  BUY      3 @ 10744.00  stop 10582.80  target 10760.10  [trap90: tiny target, wide stop]",
   "09:30  OPEN  HINDALCO    BUY    110 @ 908.05  stop 905.75  target 929.50  [learner via gap_fade, expects +0.10R: long, before 10:30, against market, against gap, tight stop, after low delivery, against yesterday's market]",
   "09:30  OPEN  HINDALCO    BUY    110 @ 908.05  stop 905.75  target 929.50  [gap_fade: gap -2.5% fading]",
@@ -217,12 +285,46 @@
   "09:35  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day",
   "09:35  SKIP  TRENT       orb15     ORB15 down: max 3 trades a day",
   "09:35  SKIP  ULTRACEMCO  orb15     ORB15 down: max 3 trades a day",
-  "09:40  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day"
+  "09:40  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day",
+  "09:45  CLOSE TCS         stop       @ 2433.75  net Rs -533 [gap_fade] (charges 44)",
+  "09:45  SKIP  TCS         orb15     ORB15 up: max 3 trades a day",
+  "09:45  SKIP  TATASTEEL   orb15     ORB15 down: max 3 trades a day",
+  "09:50  OPEN  HDFCLIFE    SHORT   39 @ 580.75  stop 593.35  target 555.55  [learner via orb30_2r, expects +0.06R: short, before 10:30, with market, no gap, wide stop, after high delivery, with yesterday's market]",
+  "09:50  OPEN  HDFCLIFE    SHORT   39 @ 580.75  stop 593.35  target 555.55  [orb30_2r: ORB30 down]",
+  "09:50  SKIP  INFY        orb15     ORB15 up: max 3 trades a day",
+  "09:50  OPEN  INFY        BUY     29 @ 1123.00  stop 1106.30  target 1156.40  [orb30_2r: ORB30 up]",
+  "09:50  SKIP  POWERGRID   orb15     ORB15 down: max 3 trades a day",
+  "09:50  OPEN  POWERGRID   SHORT   92 @ 266.60  stop 272.00  target 255.80  [learner via orb30_2r, expects +0.23R: short, before 10:30, with market, against gap, wide stop, after usual delivery, with yesterday's market]",
+  "09:50  OPEN  POWERGRID   SHORT   92 @ 266.60  stop 272.00  target 255.80  [orb30_2r: ORB30 down]",
+  "09:50  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  TATASTEEL   learner   via orb30_2r (expects +0.13R): max 3 trades a day",
+  "09:50  SKIP  TATASTEEL   orb30_2r  ORB30 down: max 3 trades a day"
  ],
- "all_trades": 239,
+ "all_trades": 240,
  "all_wins": 125,
- "all_net": -13765.0,
+ "all_net": -14298.0,
  "recent": [
+  {
+   "date": "2026-11-23",
+   "symbol": "TCS",
+   "strategy": "gap_fade",
+   "side": "-1",
+   "qty": "17",
+   "entry_time": "09:30",
+   "entry": "2405.9",
+   "stop": "2433.75",
+   "target": "2376.2",
+   "exit_time": "09:45",
+   "exit": "2433.75",
+   "reason": "stop",
+   "gross": "-489.9",
+   "charges": "43.57",
+   "net": "-533.47",
+   "r": "-1.127",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-23",
    "symbol": "HINDALCO",
@@ -726,27 +828,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-20",
-   "symbol": "ADANIENT",
-   "strategy": "trap90",
-   "side": "1",
-   "qty": "12",
-   "entry_time": "09:30",
-   "entry": "2693.8",
-   "stop": "2653.35",
-   "target": "2697.85",
-   "exit_time": "09:45",
-   "exit": "2697.85",
-   "reason": "target",
-   "gross": "35.66",
-   "charges": "34.31",
-   "net": "1.35",
-   "r": "0.003",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -761,7 +842,7 @@
   "2026-11-18": 603.0,
   "2026-11-19": -3408.0,
   "2026-11-20": 2067.0,
-  "2026-11-23": -555.0
+  "2026-11-23": -1088.0
  },
  "by_strategy": {
   "orb15": {
@@ -777,7 +858,7 @@
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 33,
    "all_wins": 13,
    "all_net": -3685
@@ -802,12 +883,12 @@
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 2,
-   "all_trades": 18,
+   "today_trades": 1,
+   "today_net": -533,
+   "open": 1,
+   "all_trades": 19,
    "all_wins": 11,
-   "all_net": 4107
+   "all_net": 3574
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
@@ -1072,13 +1153,13 @@
     ]
    },
    "gap_fade": {
-    "days": 8,
-    "trades": 18,
-    "net": 4107,
-    "per_trade": 228,
-    "t": 1.15,
+    "days": 9,
+    "trades": 19,
+    "net": 3574,
+    "per_trade": 188,
+    "t": 0.92,
     "drawdown": -1546,
-    "passed": 3,
+    "passed": 2,
     "of": 7,
     "ready": false,
     "checks": [
@@ -1086,31 +1167,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "8 of 60 days"
+      "now": "9 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "18 of 150 trades"
+      "now": "19 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": true,
-      "now": "Rs +228 a trade"
+      "now": "Rs +188 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = 1.15"
+      "now": "t = 0.92"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
-      "ok": true,
-      "now": "Rs +3584 then Rs +523"
+      "ok": false,
+      "now": "Rs +3584 then Rs -10"
      },
      {
       "id": "drawdown",
