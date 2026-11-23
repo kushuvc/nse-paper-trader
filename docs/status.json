@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-23 15:16 IST",
- "updated_ts": 1795427189,
- "in_session": true,
+ "updated": "2026-11-23 15:20 IST",
+ "updated_ts": 1795427445,
+ "in_session": false,
  "strategies": [
   "orb15",
   "orb30_2r",
@@ -466,8 +466,6 @@
  ],
  "today_net": -949.0,
  "log": [
-  "12:10  SKIP  INFY        orb60     ORB60 down: max 3 trades a day",
-  "12:20  SKIP  APOLLOHOSP  vwap      VWAP reclaim: max 3 trades a day",
   "12:25  SKIP  BAJAJ-AUTO  learner   via orb30_2r (expects +0.07R): max 3 trades a day",
   "12:25  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 down: max 3 trades a day",
   "12:25  SKIP  INDIGO      vwap      VWAP loss: max 3 trades a day",
@@ -525,7 +523,9 @@
   "15:15  CLOSE HDFCLIFE    square-off @ 574.45  net Rs +213 [orb30_2r] (charges 24)",
   "15:15  CLOSE HDFCLIFE    square-off @ 574.45  net Rs +110 [orb60] (charges 36)",
   "15:15  CLOSE POWERGRID   square-off @ 264.10  net Rs +194 [learner] (charges 26)",
-  "15:15  CLOSE POWERGRID   square-off @ 264.10  net Rs +194 [orb30_2r] (charges 26)"
+  "15:15  CLOSE POWERGRID   square-off @ 264.10  net Rs +194 [orb30_2r] (charges 26)",
+  "15:20  SKIP  CIPLA       orb30_2r  ORB30 down: past square-off",
+  "15:20  SKIP  CIPLA       orb60     ORB60 down: past square-off"
  ],
  "all_trades": 258,
  "all_wins": 135,
