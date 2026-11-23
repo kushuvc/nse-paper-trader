@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 13:26 IST",
- "updated_ts": 1795420569,
+ "updated": "2026-11-23 13:36 IST",
+ "updated_ts": 1795421171,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -386,9 +386,6 @@
  ],
  "today_net": -1830.0,
  "log": [
-  "11:05  CLOSE HCLTECH     stop       @ 1360.40  net Rs -549 [orb60] (charges 45)",
-  "11:05  SKIP  HDFCBANK    learner   via orb60 (expects +0.14R): max 3 trades a day",
-  "11:05  SKIP  HDFCBANK    orb60     ORB60 down: max 3 trades a day",
   "11:05  SKIP  ICICIBANK   learner   via orb30_2r (expects +0.07R): max 3 trades a day",
   "11:05  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day",
   "11:05  SKIP  ICICIBANK   learner   via orb60 (expects +0.09R): max 3 trades a day",
@@ -445,7 +442,10 @@
   "13:25  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day",
   "13:25  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day",
   "13:25  SKIP  HCLTECH     vwap      VWAP reclaim: max 3 trades a day",
-  "13:25  SKIP  SUNPHARMA   orb60     ORB60 down: max 3 trades a day"
+  "13:25  SKIP  SUNPHARMA   orb60     ORB60 down: max 3 trades a day",
+  "13:35  SKIP  INDIGO      learner   via orb30_2r (expects +0.11R): max 3 trades a day",
+  "13:35  SKIP  INDIGO      orb30_2r  ORB30 down: max 3 trades a day",
+  "13:35  SKIP  INDIGO      orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 249,
  "all_wins": 128,
