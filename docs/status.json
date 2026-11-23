@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 14:36 IST",
- "updated_ts": 1795424782,
+ "updated": "2026-11-23 14:46 IST",
+ "updated_ts": 1795425383,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -386,7 +386,6 @@
  ],
  "today_net": -1830.0,
  "log": [
-  "11:15  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day",
   "11:40  SKIP  ULTRACEMCO  learner   via orb60 (expects +0.09R): max 3 trades a day",
   "11:40  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day",
   "11:45  SKIP  ADANIPORTS  vwap      VWAP loss: max 3 trades a day",
@@ -445,7 +444,8 @@
   "14:15  SKIP  ADANIPORTS  vwap      VWAP loss: max 3 trades a day",
   "14:20  SKIP  EICHERMOT   vwap      VWAP reclaim: max 3 trades a day",
   "14:35  SKIP  BSE         vwap      VWAP loss: after 14:30",
-  "14:35  SKIP  EICHERMOT   vwap      VWAP loss: after 14:30"
+  "14:35  SKIP  EICHERMOT   vwap      VWAP loss: after 14:30",
+  "14:45  SKIP  GRASIM      vwap      VWAP loss: after 14:30"
  ],
  "all_trades": 249,
  "all_wins": 128,
