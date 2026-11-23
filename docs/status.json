@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 13:06 IST",
- "updated_ts": 1795419366,
+ "updated": "2026-11-23 13:16 IST",
+ "updated_ts": 1795419967,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -117,17 +117,6 @@
    "target": 568.8,
    "entry_time": "10:20",
    "note": "ORB60 down"
-  },
-  "vwap|JSWSTEEL": {
-   "strategy": "vwap",
-   "symbol": "JSWSTEEL",
-   "side": -1,
-   "qty": 75,
-   "entry": 1320.9,
-   "stop": 1327.5,
-   "target": 1307.7,
-   "entry_time": "10:35",
-   "note": "VWAP loss"
   }
  },
  "closed": [
@@ -373,17 +362,30 @@
    "net": -601.85,
    "r": -1.209,
    "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "JSWSTEEL",
+   "side": -1,
+   "qty": 75,
+   "entry": 1320.9,
+   "stop": 1327.5,
+   "target": 1307.7,
+   "entry_time": "10:35",
+   "note": "VWAP loss",
+   "date": "2026-11-23",
+   "exit": 1307.7,
+   "exit_time": "13:10",
+   "reason": "target",
+   "gross": 950.57,
+   "charges": 82.05,
+   "net": 868.52,
+   "r": 1.755,
+   "mode": "live"
   }
  ],
- "today_net": -2698.0,
+ "today_net": -1830.0,
  "log": [
-  "10:55  SKIP  SBIN        learner   via orb60 (expects +0.14R): max 3 trades a day",
-  "10:55  SKIP  SBIN        orb60     ORB60 down: max 3 trades a day",
-  "10:55  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day",
-  "11:00  SKIP  CIPLA       vwap      VWAP loss: max 3 trades a day",
-  "11:00  SKIP  ETERNAL     vwap      VWAP loss: max 3 trades a day",
-  "11:00  SKIP  ITC         orb60     ORB60 down: max 3 trades a day",
-  "11:00  SKIP  MAXHEALTH   learner   via orb30_2r (expects +0.05R): max 3 trades a day",
   "11:00  SKIP  MAXHEALTH   orb30_2r  ORB30 down: max 3 trades a day",
   "11:00  SKIP  MAXHEALTH   orb60     ORB60 down: max 3 trades a day",
   "11:00  SKIP  RELIANCE    learner   via orb60 (expects +0.09R): max 3 trades a day",
@@ -436,12 +438,40 @@
   "12:55  SKIP  ADANIENT    learner   via orb60 (expects +0.14R): max 3 trades a day",
   "12:55  SKIP  ADANIENT    orb60     ORB60 down: max 3 trades a day",
   "12:55  SKIP  CIPLA       vwap      VWAP loss: max 3 trades a day",
-  "13:05  SKIP  ITC         vwap      VWAP loss: max 3 trades a day"
+  "13:05  SKIP  ITC         vwap      VWAP loss: max 3 trades a day",
+  "13:10  CLOSE JSWSTEEL    target     @ 1307.70  net Rs +869 [vwap] (charges 82)",
+  "13:10  SKIP  JSWSTEEL    orb15     ORB15 down: max 3 trades a day",
+  "13:10  SKIP  JSWSTEEL    learner   via orb30_2r (expects +0.11R): max 3 trades a day",
+  "13:10  SKIP  JSWSTEEL    orb30_2r  ORB30 down: max 3 trades a day",
+  "13:10  SKIP  JSWSTEEL    learner   via orb60 (expects +0.11R): max 3 trades a day",
+  "13:10  SKIP  JSWSTEEL    orb60     ORB60 down: max 3 trades a day",
+  "13:15  SKIP  INDIGO      orb15     ORB15 down: max 3 trades a day"
  ],
- "all_trades": 248,
- "all_wins": 127,
- "all_net": -15908.0,
+ "all_trades": 249,
+ "all_wins": 128,
+ "all_net": -15039.0,
  "recent": [
+  {
+   "date": "2026-11-23",
+   "symbol": "JSWSTEEL",
+   "strategy": "vwap",
+   "side": "-1",
+   "qty": "75",
+   "entry_time": "10:35",
+   "entry": "1320.9",
+   "stop": "1327.5",
+   "target": "1307.7",
+   "exit_time": "13:10",
+   "exit": "1307.7",
+   "reason": "target",
+   "gross": "950.57",
+   "charges": "82.05",
+   "net": "868.52",
+   "r": "1.755",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-23",
    "symbol": "HINDALCO",
@@ -945,27 +975,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-20",
-   "symbol": "JIOFIN",
-   "strategy": "gap_go",
-   "side": "-1",
-   "qty": "277",
-   "entry_time": "09:30",
-   "entry": "224.35",
-   "stop": "226.15",
-   "target": "220.85",
-   "exit_time": "12:35",
-   "exit": "226.15",
-   "reason": "stop",
-   "gross": "-523.56",
-   "charges": "66.11",
-   "net": "-589.67",
-   "r": "-1.183",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -980,7 +989,7 @@
   "2026-11-18": 603.0,
   "2026-11-19": -3408.0,
   "2026-11-20": 2067.0,
-  "2026-11-23": -2697.0
+  "2026-11-23": -1828.0
  },
  "by_strategy": {
   "orb15": {
@@ -1030,12 +1039,12 @@
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 2,
-   "today_net": -1098,
-   "open": 1,
-   "all_trades": 35,
-   "all_wins": 14,
-   "all_net": -4145
+   "today_trades": 3,
+   "today_net": -230,
+   "open": 0,
+   "all_trades": 36,
+   "all_wins": 15,
+   "all_net": -3277
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
@@ -1347,10 +1356,10 @@
    },
    "vwap": {
     "days": 12,
-    "trades": 35,
-    "net": -4145,
-    "per_trade": -118,
-    "t": -1.02,
+    "trades": 36,
+    "net": -3277,
+    "per_trade": -91,
+    "t": -0.78,
     "drawdown": -4206,
     "passed": 1,
     "of": 7,
@@ -1366,25 +1375,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "35 of 150 trades"
+      "now": "36 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -118 a trade"
+      "now": "Rs -91 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -1.02"
+      "now": "t = -0.78"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1920 then Rs -2225"
+      "now": "Rs -1433 then Rs -1843"
      },
      {
       "id": "drawdown",
