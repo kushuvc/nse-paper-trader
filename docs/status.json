@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23 11:11 IST",
- "updated_ts": 1795412467,
+ "updated": "2026-11-23 11:21 IST",
+ "updated_ts": 1795413068,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -359,7 +359,6 @@
  ],
  "today_net": -1565.0,
  "log": [
-  "10:30  SKIP  APOLLOHOSP  orb15     ORB15 down: max 3 trades a day",
   "10:30  SKIP  COALINDIA   orb30_2r  ORB30 down: max 3 trades a day",
   "10:30  SKIP  COALINDIA   orb60     ORB60 down: max 3 trades a day",
   "10:30  SKIP  KOTAKBANK   learner   via orb60 (expects +0.08R): max 3 trades a day",
@@ -418,7 +417,8 @@
   "11:05  SKIP  TITAN       learner   via orb30_2r (expects +0.15R): max 3 trades a day",
   "11:05  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day",
   "11:05  SKIP  TRENT       learner   via orb60 (expects +0.09R): max 3 trades a day",
-  "11:05  SKIP  TRENT       orb60     ORB60 down: max 3 trades a day"
+  "11:05  SKIP  TRENT       orb60     ORB60 down: max 3 trades a day",
+  "11:15  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 246,
  "all_wins": 127,
