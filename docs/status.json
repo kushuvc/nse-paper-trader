@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24 23:49 IST",
- "updated_ts": 1795544392,
+ "updated": "2026-11-25 05:18 IST",
+ "updated_ts": 1795564096,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -11,7 +11,7 @@
   "vwap",
   "trap90"
  ],
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "open": {},
  "closed": [],
  "today_net": 0,
@@ -1171,10 +1171,7 @@
    "orb30_2r normal stop: -0.14 R a trade over 1405 trades (strategy average -0.08 R) -> avoid"
   ],
   "changes": [
-   "orb15: now takes 33 of 1458 setups (was 21)",
-   "orb30_2r: now takes 113 of 1458 setups (was 100)",
-   "orb60: now takes 54 of 1458 setups (was 37)",
-   "gap_go: now takes 36 of 1458 setups (was 32)"
+   "No change in what it would take tomorrow."
   ],
   "strategies": {
    "orb15": {
@@ -1183,7 +1180,7 @@
     "shrunk_r": -0.219,
     "setups_allowed": 33,
     "setups_total": 1458,
-    "setups_allowed_yesterday": 21
+    "setups_allowed_yesterday": 33
    },
    "orb30_2r": {
     "trades": 3197,
@@ -1191,7 +1188,7 @@
     "shrunk_r": -0.076,
     "setups_allowed": 113,
     "setups_total": 1458,
-    "setups_allowed_yesterday": 100
+    "setups_allowed_yesterday": 113
    },
    "orb60": {
     "trades": 2938,
@@ -1199,7 +1196,7 @@
     "shrunk_r": -0.164,
     "setups_allowed": 54,
     "setups_total": 1458,
-    "setups_allowed_yesterday": 37
+    "setups_allowed_yesterday": 54
    },
    "gap_go": {
     "trades": 233,
@@ -1207,7 +1204,7 @@
     "shrunk_r": -0.199,
     "setups_allowed": 36,
     "setups_total": 1458,
-    "setups_allowed_yesterday": 32
+    "setups_allowed_yesterday": 36
    },
    "gap_fade": {
     "trades": 98,
