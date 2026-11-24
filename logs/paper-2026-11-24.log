@@ -13,3 +13,12 @@ Latest day, 2026-11-23: 748 of 2773 shares rose (27.2%), Nifty 50 25,350 (-1.75%
 PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
 Learner: model from 71 days of history
 NSE's own daily file: latest saved is 2026-11-23
+2026-11-24: 0 closed (0 won), 0 still open, net Rs +0 after charges
+  orb15     0 trades, net Rs +0
+  orb30_2r  0 trades, net Rs +0
+  orb60     0 trades, net Rs +0
+  gap_go    0 trades, net Rs +0
+  gap_fade  0 trades, net Rs +0
+  vwap      0 trades, net Rs +0
+  trap90    0 trades, net Rs +0
+  learner   0 trades, net Rs +0
