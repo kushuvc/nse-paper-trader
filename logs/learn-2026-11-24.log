@@ -1,0 +1,39 @@
+Learned from 72 days (2026-08-10 to 2026-11-23), 13609 trades across 7 strategies.
+
+What each strategy has earned (R per trade after costs; 'shrunk' is what the model believes):
+  orb15      3358 trades  avg -0.224 R  shrunk -0.219 R  setups it would take:   33 of 1458
+  orb30_2r   3197 trades  avg -0.077 R  shrunk -0.076 R  setups it would take:  113 of 1458
+  orb60      2938 trades  avg -0.168 R  shrunk -0.164 R  setups it would take:   54 of 1458
+  gap_go      233 trades  avg -0.258 R  shrunk -0.199 R  setups it would take:   36 of 1458
+  gap_fade     98 trades  avg -0.056 R  shrunk -0.033 R  setups it would take:  729 of 1458
+  vwap       2274 trades  avg -0.360 R  shrunk -0.348 R  setups it would take:    0 of 1458
+  trap90     1511 trades  avg -0.105 R  shrunk -0.100 R  setups it would take:    0 of 1458
+
+NSE's own daily file: 13609 of 13609 trades carry its facts (delivery, breadth); latest file 2026-11-23.
+
+Lessons (mistakes to avoid, and what did better):
+  - orb15 tight stop: -0.39 R a trade over 860 trades (strategy average -0.22 R) -> avoid
+  - orb60 tight stop: -0.40 R a trade over 381 trades (strategy average -0.17 R) -> avoid
+  - orb30_2r with market: +0.02 R a trade over 1337 trades (strategy average -0.08 R) -> better than usual
+  - orb60 with market: -0.06 R a trade over 1303 trades (strategy average -0.17 R) -> better than usual
+  - vwap normal stop: -0.23 R a trade over 750 trades (strategy average -0.36 R) -> better than usual
+  - vwap against market: -0.53 R a trade over 400 trades (strategy average -0.36 R) -> avoid
+  - vwap tight stop: -0.43 R a trade over 1503 trades (strategy average -0.36 R) -> avoid
+  - orb60 flat market: -0.25 R a trade over 1304 trades (strategy average -0.17 R) -> avoid
+  - orb30_2r against market: -0.27 R a trade over 325 trades (strategy average -0.08 R) -> avoid
+  - orb60 wide stop: -0.02 R a trade over 495 trades (strategy average -0.17 R) -> better than usual
+  - orb15 wide stop: -0.04 R a trade over 305 trades (strategy average -0.22 R) -> better than usual
+  - orb30_2r normal stop: -0.14 R a trade over 1405 trades (strategy average -0.08 R) -> avoid
+
+Changed since last night:
+  - orb15: now takes 33 of 1458 setups (was 21)
+  - orb30_2r: now takes 113 of 1458 setups (was 100)
+  - orb60: now takes 54 of 1458 setups (was 37)
+  - gap_go: now takes 36 of 1458 setups (was 32)
+
+Walk-forward test (52 days, each judged by a model that had NOT seen it, 3 trades/day cap):
+  learner          96 trades  win  44.8%  Rs   -71.4 a trade  total Rs     -6853  t -2.06
+  without NSE     102 trades  win  40.2%  Rs   -72.8 a trade  total Rs     -7421  t -2.15
+  every signal    156 trades  win  69.9%  Rs   -87.2 a trade  total Rs    -13597  t -4.04
+
+Saved model/learned.json
