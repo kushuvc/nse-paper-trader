@@ -70,3 +70,22 @@ NSE's own daily file: latest saved is 2026-11-23
 09:40  CLOSE INFY        stop       @ 1145.75  net Rs -605 [gap_fade] (charges 75)
 09:40  SKIP  INFY        orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  JIOFIN      orb15     ORB15 up: max 3 trades a day
+09:45  CLOSE BAJAJFINSV  target     @ 1926.40  net Rs +387 [orb15] (charges 78)
+09:45  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  TRENT       orb15     ORB15 down: max 3 trades a day
+09:50  SKIP  CIPLA       orb15     ORB15 up: max 3 trades a day
+09:50  OPEN  CIPLA       BUY     26 @ 1423.20  stop 1404.55  target 1460.40  [orb30_2r: ORB30 up]
+09:50  SKIP  HCLTECH     orb15     ORB15 down: max 3 trades a day
+09:50  OPEN  HCLTECH     SHORT   24 @ 1375.00  stop 1395.60  target 1333.80  [learner via orb30_2r, expects +0.10R: short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market]
+09:50  OPEN  HCLTECH     SHORT   24 @ 1375.00  stop 1395.60  target 1333.80  [orb30_2r: ORB30 down]
+09:50  OPEN  HDFCLIFE    BUY     34 @ 604.90  stop 590.25  target 634.10  [orb30_2r: ORB30 up]
+09:50  SKIP  M&M         orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day
+09:50  SKIP  TCS         orb15     ORB15 down: max 3 trades a day
+09:50  OPEN  TCS         SHORT   14 @ 2492.40  stop 2527.65  target 2422.00  [learner via orb30_2r, expects +0.10R: short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market]
+09:50  SKIP  TCS         orb30_2r  ORB30 down: max 3 trades a day
+09:50  SKIP  TECHM       orb15     ORB15 down: max 3 trades a day
+09:50  SKIP  TECHM       learner   via orb30_2r (expects +0.07R): max 3 trades a day
+09:50  SKIP  TECHM       orb30_2r  ORB30 down: max 3 trades a day

@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 09:40 IST",
- "updated_ts": 1795579855,
+ "updated": "2026-11-25 09:50 IST",
+ "updated_ts": 1795580456,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -90,17 +90,6 @@
    "entry_time": "09:35",
    "note": "ORB15 down"
   },
-  "orb15|BAJAJFINSV": {
-   "strategy": "orb15",
-   "symbol": "BAJAJFINSV",
-   "side": 1,
-   "qty": 45,
-   "entry": 1915.3,
-   "stop": 1904.2,
-   "target": 1926.4,
-   "entry_time": "09:35",
-   "note": "ORB15 up"
-  },
   "learner|POWERGRID": {
    "strategy": "learner",
    "symbol": "POWERGRID",
@@ -114,6 +103,67 @@
    "via": "orb15",
    "setup": "long, before 10:30, with market, against gap, wide stop, after usual delivery, against yesterday's market",
    "score": 0.051
+  },
+  "orb30_2r|CIPLA": {
+   "strategy": "orb30_2r",
+   "symbol": "CIPLA",
+   "side": 1,
+   "qty": 26,
+   "entry": 1423.2,
+   "stop": 1404.55,
+   "target": 1460.4,
+   "entry_time": "09:50",
+   "note": "ORB30 up"
+  },
+  "learner|HCLTECH": {
+   "strategy": "learner",
+   "symbol": "HCLTECH",
+   "side": -1,
+   "qty": 24,
+   "entry": 1375.0,
+   "stop": 1395.6,
+   "target": 1333.8,
+   "entry_time": "09:50",
+   "note": "ORB30 down",
+   "via": "orb30_2r",
+   "setup": "short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market",
+   "score": 0.099
+  },
+  "orb30_2r|HCLTECH": {
+   "strategy": "orb30_2r",
+   "symbol": "HCLTECH",
+   "side": -1,
+   "qty": 24,
+   "entry": 1375.0,
+   "stop": 1395.6,
+   "target": 1333.8,
+   "entry_time": "09:50",
+   "note": "ORB30 down"
+  },
+  "orb30_2r|HDFCLIFE": {
+   "strategy": "orb30_2r",
+   "symbol": "HDFCLIFE",
+   "side": 1,
+   "qty": 34,
+   "entry": 604.9,
+   "stop": 590.25,
+   "target": 634.1,
+   "entry_time": "09:50",
+   "note": "ORB30 up"
+  },
+  "learner|TCS": {
+   "strategy": "learner",
+   "symbol": "TCS",
+   "side": -1,
+   "qty": 14,
+   "entry": 2492.4,
+   "stop": 2527.65,
+   "target": 2422.0,
+   "entry_time": "09:50",
+   "note": "ORB30 down",
+   "via": "orb30_2r",
+   "setup": "short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market",
+   "score": 0.099
   }
  },
  "closed": [
@@ -196,29 +246,30 @@
    "net": -605.37,
    "r": -1.211,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "BAJAJFINSV",
+   "side": 1,
+   "qty": 45,
+   "entry": 1915.3,
+   "stop": 1904.2,
+   "target": 1926.4,
+   "entry_time": "09:35",
+   "note": "ORB15 up",
+   "date": "2026-11-25",
+   "exit": 1926.4,
+   "exit_time": "09:45",
+   "reason": "target",
+   "gross": 464.92,
+   "charges": 77.72,
+   "net": 387.2,
+   "r": 0.775,
+   "mode": "live"
   }
  ],
- "today_net": -1208.0,
+ "today_net": -821.0,
  "log": [
-  "09:30  OPEN  AXISBANK    BUY     40 @ 1420.80  stop 1408.55  target 1445.20  [gap_go: gap +1.4% and go]",
-  "09:30  SKIP  AXISBANK    trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  OPEN  BAJFINANCE  BUY     43 @ 1126.45  stop 1114.90  target 1149.45  [gap_go: gap +1.8% and go]",
-  "09:30  SKIP  BAJFINANCE  trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  BAJAJFINSV  trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  BEL         trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  CIPLA       trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  GRASIM      trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  OPEN  HCLTECH     SHORT   59 @ 1387.20  stop 1395.65  target 1364.30  [gap_fade: gap +1.8% fading]",
-  "09:30  SKIP  HDFCBANK    gap_go    gap +1.9% and go: max 3 trades a day",
-  "09:30  SKIP  HDFCBANK    trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  HDFCLIFE    gap_go    gap +2.7% and go: max 3 trades a day",
-  "09:30  SKIP  HDFCLIFE    trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  HINDUNILVR  trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  ICICIBANK   gap_go    gap +2.1% and go: max 3 trades a day",
-  "09:30  SKIP  ICICIBANK   trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  ITC         trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  OPEN  INFY        SHORT   68 @ 1138.40  stop 1145.75  target 1103.40  [gap_fade: gap +3.5% fading]",
-  "09:30  OPEN  INDIGO      SHORT    9 @ 5644.00  stop 5695.05  target 5523.00  [gap_fade: gap +2.4% fading]",
   "09:30  SKIP  JIOFIN      trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  KOTAKBANK   gap_go    gap +1.4% and go: max 3 trades a day",
   "09:30  SKIP  KOTAKBANK   trap90    tiny target, wide stop: max 3 trades a day",
@@ -259,12 +310,52 @@
   "09:40  SKIP  ETERNAL     orb15     ORB15 up: max 3 trades a day",
   "09:40  CLOSE INFY        stop       @ 1145.75  net Rs -605 [gap_fade] (charges 75)",
   "09:40  SKIP  INFY        orb15     ORB15 up: max 3 trades a day",
-  "09:40  SKIP  JIOFIN      orb15     ORB15 up: max 3 trades a day"
+  "09:40  SKIP  JIOFIN      orb15     ORB15 up: max 3 trades a day",
+  "09:45  CLOSE BAJAJFINSV  target     @ 1926.40  net Rs +387 [orb15] (charges 78)",
+  "09:45  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day",
+  "09:45  SKIP  TRENT       orb15     ORB15 down: max 3 trades a day",
+  "09:50  SKIP  CIPLA       orb15     ORB15 up: max 3 trades a day",
+  "09:50  OPEN  CIPLA       BUY     26 @ 1423.20  stop 1404.55  target 1460.40  [orb30_2r: ORB30 up]",
+  "09:50  SKIP  HCLTECH     orb15     ORB15 down: max 3 trades a day",
+  "09:50  OPEN  HCLTECH     SHORT   24 @ 1375.00  stop 1395.60  target 1333.80  [learner via orb30_2r, expects +0.10R: short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market]",
+  "09:50  OPEN  HCLTECH     SHORT   24 @ 1375.00  stop 1395.60  target 1333.80  [orb30_2r: ORB30 down]",
+  "09:50  OPEN  HDFCLIFE    BUY     34 @ 604.90  stop 590.25  target 634.10  [orb30_2r: ORB30 up]",
+  "09:50  SKIP  M&M         orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day",
+  "09:50  SKIP  TCS         orb15     ORB15 down: max 3 trades a day",
+  "09:50  OPEN  TCS         SHORT   14 @ 2492.40  stop 2527.65  target 2422.00  [learner via orb30_2r, expects +0.10R: short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market]",
+  "09:50  SKIP  TCS         orb30_2r  ORB30 down: max 3 trades a day",
+  "09:50  SKIP  TECHM       orb15     ORB15 down: max 3 trades a day",
+  "09:50  SKIP  TECHM       learner   via orb30_2r (expects +0.07R): max 3 trades a day",
+  "09:50  SKIP  TECHM       orb30_2r  ORB30 down: max 3 trades a day"
  ],
- "all_trades": 262,
- "all_wins": 137,
- "all_net": -15367.0,
+ "all_trades": 263,
+ "all_wins": 138,
+ "all_net": -14979.0,
  "recent": [
+  {
+   "date": "2026-11-25",
+   "symbol": "BAJAJFINSV",
+   "strategy": "orb15",
+   "side": "1",
+   "qty": "45",
+   "entry_time": "09:35",
+   "entry": "1915.3",
+   "stop": "1904.2",
+   "target": "1926.4",
+   "exit_time": "09:45",
+   "exit": "1926.4",
+   "reason": "target",
+   "gross": "464.92",
+   "charges": "77.72",
+   "net": "387.2",
+   "r": "0.775",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-25",
    "symbol": "INFY",
@@ -768,27 +859,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-23",
-   "symbol": "BAJAJ-AUTO",
-   "strategy": "trap90",
-   "side": "1",
-   "qty": "3",
-   "entry_time": "09:30",
-   "entry": "10744.0",
-   "stop": "10582.8",
-   "target": "10760.1",
-   "exit_time": "09:35",
-   "exit": "10760.1",
-   "reason": "target",
-   "gross": "35.4",
-   "charges": "34.21",
-   "net": "1.19",
-   "r": "0.002",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -804,23 +874,23 @@
   "2026-11-19": -3408.0,
   "2026-11-20": 2067.0,
   "2026-11-23": -947.0,
-  "2026-11-25": -1208.0
+  "2026-11-25": -821.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 1,
-   "today_net": -605,
-   "open": 2,
-   "all_trades": 37,
-   "all_wins": 20,
-   "all_net": -1848
+   "today_trades": 2,
+   "today_net": -218,
+   "open": 1,
+   "all_trades": 38,
+   "all_wins": 21,
+   "all_net": -1461
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 36,
    "all_wins": 15,
    "all_net": -3810
@@ -896,10 +966,10 @@
   "accounts": {
    "orb15": {
     "days": 13,
-    "trades": 37,
-    "net": -1848,
-    "per_trade": -50,
-    "t": -0.72,
+    "trades": 38,
+    "net": -1461,
+    "per_trade": -38,
+    "t": -0.57,
     "drawdown": -3580,
     "passed": 1,
     "of": 7,
@@ -915,25 +985,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "37 of 150 trades"
+      "now": "38 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -50 a trade"
+      "now": "Rs -38 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.72"
+      "now": "t = -0.57"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -924 then Rs -923"
+      "now": "Rs -1423 then Rs -38"
      },
      {
       "id": "drawdown",
