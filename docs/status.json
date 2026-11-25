@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 11:41 IST",
- "updated_ts": 1795587074,
+ "updated": "2026-11-25 11:51 IST",
+ "updated_ts": 1795587676,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -13,17 +13,6 @@
  ],
  "date": "2026-11-25",
  "open": {
-  "gap_go|AXISBANK": {
-   "strategy": "gap_go",
-   "symbol": "AXISBANK",
-   "side": 1,
-   "qty": 40,
-   "entry": 1420.8,
-   "stop": 1408.55,
-   "target": 1445.2,
-   "entry_time": "09:30",
-   "note": "gap +1.4% and go"
-  },
   "gap_go|BAJFINANCE": {
    "strategy": "gap_go",
    "symbol": "BAJFINANCE",
@@ -45,28 +34,6 @@
    "target": 1364.3,
    "entry_time": "09:30",
    "note": "gap +1.8% fading"
-  },
-  "gap_fade|INDIGO": {
-   "strategy": "gap_fade",
-   "symbol": "INDIGO",
-   "side": -1,
-   "qty": 9,
-   "entry": 5644.0,
-   "stop": 5695.05,
-   "target": 5523.0,
-   "entry_time": "09:30",
-   "note": "gap +2.4% fading"
-  },
-  "orb15|APOLLOHOSP": {
-   "strategy": "orb15",
-   "symbol": "APOLLOHOSP",
-   "side": -1,
-   "qty": 5,
-   "entry": 9189.5,
-   "stop": 9289.25,
-   "target": 9089.75,
-   "entry_time": "09:35",
-   "note": "ORB15 down"
   },
   "orb30_2r|CIPLA": {
    "strategy": "orb30_2r",
@@ -395,21 +362,70 @@
    "net": -501.75,
    "r": -1.303,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "APOLLOHOSP",
+   "side": -1,
+   "qty": 5,
+   "entry": 9189.5,
+   "stop": 9289.25,
+   "target": 9089.75,
+   "entry_time": "09:35",
+   "note": "ORB15 down",
+   "date": "2026-11-25",
+   "exit": 9289.25,
+   "exit_time": "11:45",
+   "reason": "stop",
+   "gross": -517.23,
+   "charges": 48.93,
+   "net": -566.16,
+   "r": -1.135,
+   "mode": "live"
+  },
+  {
+   "strategy": "gap_fade",
+   "symbol": "INDIGO",
+   "side": -1,
+   "qty": 9,
+   "entry": 5644.0,
+   "stop": 5695.05,
+   "target": 5523.0,
+   "entry_time": "09:30",
+   "note": "gap +2.4% fading",
+   "date": "2026-11-25",
+   "exit": 5695.05,
+   "exit_time": "11:45",
+   "reason": "stop",
+   "gross": -479.86,
+   "charges": 54.06,
+   "net": -533.92,
+   "r": -1.162,
+   "mode": "live"
+  },
+  {
+   "strategy": "gap_go",
+   "symbol": "AXISBANK",
+   "side": 1,
+   "qty": 40,
+   "entry": 1420.8,
+   "stop": 1408.55,
+   "target": 1445.2,
+   "entry_time": "09:30",
+   "note": "gap +1.4% and go",
+   "date": "2026-11-25",
+   "exit": 1445.2,
+   "exit_time": "11:50",
+   "reason": "target",
+   "gross": 953.07,
+   "charges": 60.89,
+   "net": 892.18,
+   "r": 1.821,
+   "mode": "live"
   }
  ],
- "today_net": -409.0,
+ "today_net": -617.0,
  "log": [
-  "10:40  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day",
-  "10:40  SKIP  TATASTEEL   orb60     ORB60 up: max 3 trades a day",
-  "10:45  SKIP  GRASIM      orb15     ORB15 up: max 3 trades a day",
-  "10:45  SKIP  GRASIM      orb30_2r  ORB30 up: max 3 trades a day",
-  "10:45  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day",
-  "10:45  SKIP  JIOFIN      vwap      VWAP reclaim: max 3 trades a day",
-  "10:45  SKIP  MARUTI      orb60     ORB60 down: max 3 trades a day",
-  "10:50  SKIP  BAJFINANCE  vwap      VWAP reclaim: max 3 trades a day",
-  "10:50  SKIP  BEL         orb60     ORB60 up: max 3 trades a day",
-  "10:50  SKIP  EICHERMOT   orb15     ORB15 up: max 3 trades a day",
-  "10:50  SKIP  EICHERMOT   orb30_2r  ORB30 up: max 3 trades a day",
   "10:50  SKIP  EICHERMOT   orb60     ORB60 up: max 3 trades a day",
   "10:50  SKIP  GRASIM      orb60     ORB60 up: max 3 trades a day",
   "10:50  CLOSE ONGC        target     @ 224.30  net Rs +231 [vwap] (charges 83)",
@@ -458,12 +474,86 @@
   "11:40  CLOSE APOLLOHOSP  stop       @ 9268.50  net Rs -502 [vwap] (charges 80)",
   "11:40  SKIP  BAJAJ-AUTO  orb15     ORB15 up: max 3 trades a day",
   "11:40  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 up: max 3 trades a day",
-  "11:40  SKIP  BAJAJ-AUTO  orb60     ORB60 up: max 3 trades a day"
+  "11:40  SKIP  BAJAJ-AUTO  orb60     ORB60 up: max 3 trades a day",
+  "11:45  CLOSE APOLLOHOSP  stop       @ 9289.25  net Rs -566 [orb15] (charges 49)",
+  "11:45  CLOSE INDIGO      stop       @ 5695.05  net Rs -534 [gap_fade] (charges 54)",
+  "11:45  SKIP  INDIGO      orb60     ORB60 up: max 3 trades a day",
+  "11:45  SKIP  SBIN        orb15     ORB15 up: max 3 trades a day",
+  "11:45  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day",
+  "11:45  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day",
+  "11:45  SKIP  TMPV        orb60     ORB60 up: max 3 trades a day",
+  "11:50  CLOSE AXISBANK    target     @ 1445.20  net Rs +892 [gap_go] (charges 61)",
+  "11:50  SKIP  BSE         orb60     ORB60 up: max 3 trades a day",
+  "11:50  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day",
+  "11:50  SKIP  INFY        orb60     ORB60 down: max 3 trades a day"
  ],
- "all_trades": 270,
- "all_wins": 143,
- "all_net": -14568.0,
+ "all_trades": 273,
+ "all_wins": 144,
+ "all_net": -14776.0,
  "recent": [
+  {
+   "date": "2026-11-25",
+   "symbol": "AXISBANK",
+   "strategy": "gap_go",
+   "side": "1",
+   "qty": "40",
+   "entry_time": "09:30",
+   "entry": "1420.8",
+   "stop": "1408.55",
+   "target": "1445.2",
+   "exit_time": "11:50",
+   "exit": "1445.2",
+   "reason": "target",
+   "gross": "953.07",
+   "charges": "60.89",
+   "net": "892.18",
+   "r": "1.821",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
+  {
+   "date": "2026-11-25",
+   "symbol": "INDIGO",
+   "strategy": "gap_fade",
+   "side": "-1",
+   "qty": "9",
+   "entry_time": "09:30",
+   "entry": "5644.0",
+   "stop": "5695.05",
+   "target": "5523.0",
+   "exit_time": "11:45",
+   "exit": "5695.05",
+   "reason": "stop",
+   "gross": "-479.86",
+   "charges": "54.06",
+   "net": "-533.92",
+   "r": "-1.162",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
+  {
+   "date": "2026-11-25",
+   "symbol": "APOLLOHOSP",
+   "strategy": "orb15",
+   "side": "-1",
+   "qty": "5",
+   "entry_time": "09:35",
+   "entry": "9189.5",
+   "stop": "9289.25",
+   "target": "9089.75",
+   "exit_time": "11:45",
+   "exit": "9289.25",
+   "reason": "stop",
+   "gross": "-517.23",
+   "charges": "48.93",
+   "net": "-566.16",
+   "r": "-1.135",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-25",
    "symbol": "APOLLOHOSP",
@@ -925,69 +1015,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-23",
-   "symbol": "HINDALCO",
-   "strategy": "vwap",
-   "side": "1",
-   "qty": "83",
-   "entry_time": "10:20",
-   "entry": "911.0",
-   "stop": "905.0",
-   "target": "922.9",
-   "exit_time": "12:45",
-   "exit": "905.0",
-   "reason": "stop",
-   "gross": "-528.15",
-   "charges": "73.7",
-   "net": "-601.85",
-   "r": "-1.209",
-   "mode": "live",
-   "via": "",
-   "setup": ""
-  },
-  {
-   "date": "2026-11-23",
-   "symbol": "INFY",
-   "strategy": "orb30_2r",
-   "side": "1",
-   "qty": "29",
-   "entry_time": "09:50",
-   "entry": "1123.0",
-   "stop": "1106.3",
-   "target": "1156.4",
-   "exit_time": "12:10",
-   "exit": "1106.3",
-   "reason": "stop",
-   "gross": "-497.23",
-   "charges": "34.22",
-   "net": "-531.45",
-   "r": "-1.097",
-   "mode": "live",
-   "via": "",
-   "setup": ""
-  },
-  {
-   "date": "2026-11-23",
-   "symbol": "HCLTECH",
-   "strategy": "orb60",
-   "side": "1",
-   "qty": "31",
-   "entry_time": "10:20",
-   "entry": "1376.1",
-   "stop": "1360.4",
-   "target": "1391.8",
-   "exit_time": "11:05",
-   "exit": "1360.4",
-   "reason": "stop",
-   "gross": "-503.67",
-   "charges": "44.92",
-   "net": "-548.59",
-   "r": "-1.127",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -1003,17 +1030,17 @@
   "2026-11-19": -3408.0,
   "2026-11-20": 2067.0,
   "2026-11-23": -947.0,
-  "2026-11-25": -410.0
+  "2026-11-25": -618.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 2,
-   "today_net": -218,
-   "open": 1,
-   "all_trades": 38,
+   "today_trades": 3,
+   "today_net": -784,
+   "open": 0,
+   "all_trades": 39,
    "all_wins": 21,
-   "all_net": -1461
+   "all_net": -2027
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
@@ -1035,21 +1062,21 @@
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
-   "today_trades": 1,
-   "today_net": -587,
-   "open": 2,
-   "all_trades": 33,
-   "all_wins": 13,
-   "all_net": -1648
+   "today_trades": 2,
+   "today_net": 305,
+   "open": 1,
+   "all_trades": 34,
+   "all_wins": 14,
+   "all_net": -755
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
-   "today_trades": 1,
-   "today_net": -605,
-   "open": 2,
-   "all_trades": 21,
+   "today_trades": 2,
+   "today_net": -1139,
+   "open": 1,
+   "all_trades": 22,
    "all_wins": 11,
-   "all_net": 2593
+   "all_net": 2059
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
@@ -1095,10 +1122,10 @@
   "accounts": {
    "orb15": {
     "days": 13,
-    "trades": 38,
-    "net": -1461,
-    "per_trade": -38,
-    "t": -0.57,
+    "trades": 39,
+    "net": -2027,
+    "per_trade": -52,
+    "t": -0.76,
     "drawdown": -3580,
     "passed": 1,
     "of": 7,
@@ -1114,25 +1141,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "38 of 150 trades"
+      "now": "39 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -38 a trade"
+      "now": "Rs -52 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.57"
+      "now": "t = -0.76"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1423 then Rs -38"
+      "now": "Rs -1423 then Rs -604"
      },
      {
       "id": "drawdown",
@@ -1260,10 +1287,10 @@
    },
    "gap_go": {
     "days": 13,
-    "trades": 33,
-    "net": -1648,
-    "per_trade": -50,
-    "t": -0.64,
+    "trades": 34,
+    "net": -755,
+    "per_trade": -22,
+    "t": -0.41,
     "drawdown": -3286,
     "passed": 1,
     "of": 7,
@@ -1279,25 +1306,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "33 of 150 trades"
+      "now": "34 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -50 a trade"
+      "now": "Rs -22 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.64"
+      "now": "t = -0.41"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs +424 then Rs -2072"
+      "now": "Rs -185 then Rs -570"
      },
      {
       "id": "drawdown",
@@ -1315,11 +1342,11 @@
    },
    "gap_fade": {
     "days": 10,
-    "trades": 21,
-    "net": 2593,
-    "per_trade": 123,
-    "t": 0.41,
-    "drawdown": -1546,
+    "trades": 22,
+    "net": 2059,
+    "per_trade": 94,
+    "t": 0.21,
+    "drawdown": -2048,
     "passed": 2,
     "of": 7,
     "ready": false,
@@ -1334,31 +1361,31 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "21 of 150 trades"
+      "now": "22 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": true,
-      "now": "Rs +123 a trade"
+      "now": "Rs +94 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = 0.41"
+      "now": "t = 0.21"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs +2976 then Rs -383"
+      "now": "Rs +3431 then Rs -1371"
      },
      {
       "id": "drawdown",
       "need": "Worst losing run under Rs 10,000",
       "ok": true,
-      "now": "Rs -1546"
+      "now": "Rs -2048"
      },
      {
       "id": "history",
