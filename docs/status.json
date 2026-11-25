@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 14:06 IST",
- "updated_ts": 1795595779,
+ "updated": "2026-11-25 14:16 IST",
+ "updated_ts": 1795596380,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -462,8 +462,6 @@
  ],
  "today_net": -41.0,
  "log": [
-  "11:35  SKIP  LT          orb15     ORB15 up: max 3 trades a day",
-  "11:35  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day",
   "11:35  SKIP  LT          orb60     ORB60 up: max 3 trades a day",
   "11:35  SKIP  MARUTI      vwap      VWAP loss: max 3 trades a day",
   "11:35  SKIP  TATACONSUM  orb60     ORB60 up: max 3 trades a day",
@@ -521,7 +519,9 @@
   "13:50  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
   "14:00  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day",
   "14:05  SKIP  ASIANPAINT  vwap      VWAP reclaim: max 3 trades a day",
-  "14:05  CLOSE HINDUNILVR  target     @ 2112.60  net Rs +445 [orb60] (charges 36)"
+  "14:05  CLOSE HINDUNILVR  target     @ 2112.60  net Rs +445 [orb60] (charges 36)",
+  "14:15  SKIP  COALINDIA   vwap      VWAP reclaim: max 3 trades a day",
+  "14:15  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 277,
  "all_wins": 146,
