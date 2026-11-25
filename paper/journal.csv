@@ -276,3 +276,8 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-25,RELIANCE,vwap,1,46,10:20,1380.7,1370.0,1402.1,13:00,1370.0,stop,-517.51,67.03,-584.54,-1.188,live,,
 2026-11-25,HCLTECH,gap_fade,-1,59,09:30,1387.2,1395.65,1364.3,13:10,1364.3,target,1318.63,75.95,1242.68,2.493,live,,
 2026-11-25,HINDUNILVR,orb60,1,16,10:20,2081.7,2050.8,2112.6,14:05,2112.6,target,480.98,35.64,445.34,0.901,live,,
+2026-11-25,BAJFINANCE,gap_go,1,43,09:30,1126.45,1114.9,1149.45,15:15,1124.55,square-off,-101.06,51.31,-152.37,-0.307,live,,
+2026-11-25,CIPLA,orb30_2r,1,26,09:50,1423.2,1404.55,1460.4,15:15,1431.0,square-off,187.96,39.37,148.59,0.306,live,,
+2026-11-25,HCLTECH,learner,-1,24,09:50,1375.0,1395.6,1333.8,15:15,1370.5,square-off,94.82,34.95,59.87,0.121,live,orb30_2r,"short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market"
+2026-11-25,HCLTECH,orb30_2r,-1,24,09:50,1375.0,1395.6,1333.8,15:15,1370.5,square-off,94.82,34.95,59.87,0.121,live,,
+2026-11-25,TCS,learner,-1,14,09:50,2492.4,2527.65,2422.0,15:15,2508.0,square-off,-232.4,37.09,-269.49,-0.546,live,orb30_2r,"short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market"

@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 15:06 IST",
- "updated_ts": 1795599388,
+ "updated": "2026-11-25 15:16 IST",
+ "updated_ts": 1795599990,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -12,69 +12,7 @@
   "trap90"
  ],
  "date": "2026-11-25",
- "open": {
-  "gap_go|BAJFINANCE": {
-   "strategy": "gap_go",
-   "symbol": "BAJFINANCE",
-   "side": 1,
-   "qty": 43,
-   "entry": 1126.45,
-   "stop": 1114.9,
-   "target": 1149.45,
-   "entry_time": "09:30",
-   "note": "gap +1.8% and go"
-  },
-  "orb30_2r|CIPLA": {
-   "strategy": "orb30_2r",
-   "symbol": "CIPLA",
-   "side": 1,
-   "qty": 26,
-   "entry": 1423.2,
-   "stop": 1404.55,
-   "target": 1460.4,
-   "entry_time": "09:50",
-   "note": "ORB30 up"
-  },
-  "learner|HCLTECH": {
-   "strategy": "learner",
-   "symbol": "HCLTECH",
-   "side": -1,
-   "qty": 24,
-   "entry": 1375.0,
-   "stop": 1395.6,
-   "target": 1333.8,
-   "entry_time": "09:50",
-   "note": "ORB30 down",
-   "via": "orb30_2r",
-   "setup": "short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market",
-   "score": 0.099
-  },
-  "orb30_2r|HCLTECH": {
-   "strategy": "orb30_2r",
-   "symbol": "HCLTECH",
-   "side": -1,
-   "qty": 24,
-   "entry": 1375.0,
-   "stop": 1395.6,
-   "target": 1333.8,
-   "entry_time": "09:50",
-   "note": "ORB30 down"
-  },
-  "learner|TCS": {
-   "strategy": "learner",
-   "symbol": "TCS",
-   "side": -1,
-   "qty": 14,
-   "entry": 2492.4,
-   "stop": 2527.65,
-   "target": 2422.0,
-   "entry_time": "09:50",
-   "note": "ORB30 down",
-   "via": "orb30_2r",
-   "setup": "short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market",
-   "score": 0.099
-  }
- },
+ "open": {},
  "closed": [
   {
    "strategy": "trap90",
@@ -458,15 +396,116 @@
    "net": 445.34,
    "r": 0.901,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_go",
+   "symbol": "BAJFINANCE",
+   "side": 1,
+   "qty": 43,
+   "entry": 1126.45,
+   "stop": 1114.9,
+   "target": 1149.45,
+   "entry_time": "09:30",
+   "note": "gap +1.8% and go",
+   "date": "2026-11-25",
+   "exit": 1124.55,
+   "exit_time": "15:15",
+   "reason": "square-off",
+   "gross": -101.06,
+   "charges": 51.31,
+   "net": -152.37,
+   "r": -0.307,
+   "mode": "live"
+  },
+  {
+   "strategy": "orb30_2r",
+   "symbol": "CIPLA",
+   "side": 1,
+   "qty": 26,
+   "entry": 1423.2,
+   "stop": 1404.55,
+   "target": 1460.4,
+   "entry_time": "09:50",
+   "note": "ORB30 up",
+   "date": "2026-11-25",
+   "exit": 1431.0,
+   "exit_time": "15:15",
+   "reason": "square-off",
+   "gross": 187.96,
+   "charges": 39.37,
+   "net": 148.59,
+   "r": 0.306,
+   "mode": "live"
+  },
+  {
+   "strategy": "learner",
+   "symbol": "HCLTECH",
+   "side": -1,
+   "qty": 24,
+   "entry": 1375.0,
+   "stop": 1395.6,
+   "target": 1333.8,
+   "entry_time": "09:50",
+   "note": "ORB30 down",
+   "via": "orb30_2r",
+   "setup": "short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market",
+   "score": 0.099,
+   "date": "2026-11-25",
+   "exit": 1370.5,
+   "exit_time": "15:15",
+   "reason": "square-off",
+   "gross": 94.82,
+   "charges": 34.95,
+   "net": 59.87,
+   "r": 0.121,
+   "mode": "live"
+  },
+  {
+   "strategy": "orb30_2r",
+   "symbol": "HCLTECH",
+   "side": -1,
+   "qty": 24,
+   "entry": 1375.0,
+   "stop": 1395.6,
+   "target": 1333.8,
+   "entry_time": "09:50",
+   "note": "ORB30 down",
+   "date": "2026-11-25",
+   "exit": 1370.5,
+   "exit_time": "15:15",
+   "reason": "square-off",
+   "gross": 94.82,
+   "charges": 34.95,
+   "net": 59.87,
+   "r": 0.121,
+   "mode": "live"
+  },
+  {
+   "strategy": "learner",
+   "symbol": "TCS",
+   "side": -1,
+   "qty": 14,
+   "entry": 2492.4,
+   "stop": 2527.65,
+   "target": 2422.0,
+   "entry_time": "09:50",
+   "note": "ORB30 down",
+   "via": "orb30_2r",
+   "setup": "short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market",
+   "score": 0.099,
+   "date": "2026-11-25",
+   "exit": 2508.0,
+   "exit_time": "15:15",
+   "reason": "square-off",
+   "gross": -232.4,
+   "charges": 37.09,
+   "net": -269.49,
+   "r": -0.546,
+   "mode": "live"
   }
  ],
- "today_net": -41.0,
+ "today_net": -195.0,
  "log": [
-  "11:40  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 up: max 3 trades a day",
-  "11:40  SKIP  BAJAJ-AUTO  orb60     ORB60 up: max 3 trades a day",
-  "11:45  CLOSE APOLLOHOSP  stop       @ 9289.25  net Rs -566 [orb15] (charges 49)",
-  "11:45  CLOSE INDIGO      stop       @ 5695.05  net Rs -534 [gap_fade] (charges 54)",
-  "11:45  SKIP  INDIGO      orb60     ORB60 up: max 3 trades a day",
   "11:45  SKIP  SBIN        orb15     ORB15 up: max 3 trades a day",
   "11:45  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day",
   "11:45  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day",
@@ -521,12 +560,122 @@
   "14:35  SKIP  HDFCBANK    vwap      VWAP reclaim: after 14:30",
   "14:40  SKIP  POWERGRID   vwap      VWAP reclaim: after 14:30",
   "14:50  SKIP  HDFCLIFE    vwap      VWAP reclaim: after 14:30",
-  "14:55  SKIP  NTPC        vwap      VWAP reclaim: after 14:30"
+  "14:55  SKIP  NTPC        vwap      VWAP reclaim: after 14:30",
+  "15:15  CLOSE BAJFINANCE  square-off @ 1124.55  net Rs -152 [gap_go] (charges 51)",
+  "15:15  CLOSE CIPLA       square-off @ 1431.00  net Rs +149 [orb30_2r] (charges 39)",
+  "15:15  CLOSE HCLTECH     square-off @ 1370.50  net Rs +60 [learner] (charges 35)",
+  "15:15  CLOSE HCLTECH     square-off @ 1370.50  net Rs +60 [orb30_2r] (charges 35)",
+  "15:15  CLOSE TCS         square-off @ 2508.00  net Rs -269 [learner] (charges 37)"
  ],
- "all_trades": 277,
- "all_wins": 146,
- "all_net": -14200.0,
+ "all_trades": 282,
+ "all_wins": 149,
+ "all_net": -14353.0,
  "recent": [
+  {
+   "date": "2026-11-25",
+   "symbol": "TCS",
+   "strategy": "learner",
+   "side": "-1",
+   "qty": "14",
+   "entry_time": "09:50",
+   "entry": "2492.4",
+   "stop": "2527.65",
+   "target": "2422.0",
+   "exit_time": "15:15",
+   "exit": "2508.0",
+   "reason": "square-off",
+   "gross": "-232.4",
+   "charges": "37.09",
+   "net": "-269.49",
+   "r": "-0.546",
+   "mode": "live",
+   "via": "orb30_2r",
+   "setup": "short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market"
+  },
+  {
+   "date": "2026-11-25",
+   "symbol": "HCLTECH",
+   "strategy": "orb30_2r",
+   "side": "-1",
+   "qty": "24",
+   "entry_time": "09:50",
+   "entry": "1375.0",
+   "stop": "1395.6",
+   "target": "1333.8",
+   "exit_time": "15:15",
+   "exit": "1370.5",
+   "reason": "square-off",
+   "gross": "94.82",
+   "charges": "34.95",
+   "net": "59.87",
+   "r": "0.121",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
+  {
+   "date": "2026-11-25",
+   "symbol": "HCLTECH",
+   "strategy": "learner",
+   "side": "-1",
+   "qty": "24",
+   "entry_time": "09:50",
+   "entry": "1375.0",
+   "stop": "1395.6",
+   "target": "1333.8",
+   "exit_time": "15:15",
+   "exit": "1370.5",
+   "reason": "square-off",
+   "gross": "94.82",
+   "charges": "34.95",
+   "net": "59.87",
+   "r": "0.121",
+   "mode": "live",
+   "via": "orb30_2r",
+   "setup": "short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market"
+  },
+  {
+   "date": "2026-11-25",
+   "symbol": "CIPLA",
+   "strategy": "orb30_2r",
+   "side": "1",
+   "qty": "26",
+   "entry_time": "09:50",
+   "entry": "1423.2",
+   "stop": "1404.55",
+   "target": "1460.4",
+   "exit_time": "15:15",
+   "exit": "1431.0",
+   "reason": "square-off",
+   "gross": "187.96",
+   "charges": "39.37",
+   "net": "148.59",
+   "r": "0.306",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
+  {
+   "date": "2026-11-25",
+   "symbol": "BAJFINANCE",
+   "strategy": "gap_go",
+   "side": "1",
+   "qty": "43",
+   "entry_time": "09:30",
+   "entry": "1126.45",
+   "stop": "1114.9",
+   "target": "1149.45",
+   "exit_time": "15:15",
+   "exit": "1124.55",
+   "reason": "square-off",
+   "gross": "-101.06",
+   "charges": "51.31",
+   "net": "-152.37",
+   "r": "-0.307",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-25",
    "symbol": "HINDUNILVR",
@@ -946,111 +1095,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-23",
-   "symbol": "POWERGRID",
-   "strategy": "learner",
-   "side": "-1",
-   "qty": "92",
-   "entry_time": "09:50",
-   "entry": "266.6",
-   "stop": "272.0",
-   "target": "255.8",
-   "exit_time": "15:15",
-   "exit": "264.1",
-   "reason": "square-off",
-   "gross": "220.23",
-   "charges": "25.91",
-   "net": "194.32",
-   "r": "0.391",
-   "mode": "live",
-   "via": "orb30_2r",
-   "setup": "short, before 10:30, with market, against gap, wide stop, after usual delivery, with yesterday's market"
-  },
-  {
-   "date": "2026-11-23",
-   "symbol": "HDFCLIFE",
-   "strategy": "orb60",
-   "side": "-1",
-   "qty": "59",
-   "entry_time": "10:20",
-   "entry": "577.15",
-   "stop": "585.5",
-   "target": "568.8",
-   "exit_time": "15:15",
-   "exit": "574.45",
-   "reason": "square-off",
-   "gross": "145.71",
-   "charges": "36.04",
-   "net": "109.67",
-   "r": "0.223",
-   "mode": "live",
-   "via": "",
-   "setup": ""
-  },
-  {
-   "date": "2026-11-23",
-   "symbol": "HDFCLIFE",
-   "strategy": "orb30_2r",
-   "side": "-1",
-   "qty": "39",
-   "entry_time": "09:50",
-   "entry": "580.75",
-   "stop": "593.35",
-   "target": "555.55",
-   "exit_time": "15:15",
-   "exit": "574.45",
-   "reason": "square-off",
-   "gross": "236.69",
-   "charges": "23.91",
-   "net": "212.78",
-   "r": "0.433",
-   "mode": "live",
-   "via": "",
-   "setup": ""
-  },
-  {
-   "date": "2026-11-23",
-   "symbol": "HDFCLIFE",
-   "strategy": "learner",
-   "side": "-1",
-   "qty": "39",
-   "entry_time": "09:50",
-   "entry": "580.75",
-   "stop": "593.35",
-   "target": "555.55",
-   "exit_time": "15:15",
-   "exit": "574.45",
-   "reason": "square-off",
-   "gross": "236.69",
-   "charges": "23.91",
-   "net": "212.78",
-   "r": "0.433",
-   "mode": "live",
-   "via": "orb30_2r",
-   "setup": "short, before 10:30, with market, no gap, wide stop, after high delivery, with yesterday's market"
-  },
-  {
-   "date": "2026-11-23",
-   "symbol": "AXISBANK",
-   "strategy": "orb15",
-   "side": "-1",
-   "qty": "15",
-   "entry_time": "09:35",
-   "entry": "1400.0",
-   "stop": "1432.0",
-   "target": "1368.05",
-   "exit_time": "15:15",
-   "exit": "1392.1",
-   "reason": "square-off",
-   "gross": "110.12",
-   "charges": "22.22",
-   "net": "87.9",
-   "r": "0.183",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -1066,7 +1110,7 @@
   "2026-11-19": -3408.0,
   "2026-11-20": 2067.0,
   "2026-11-23": -947.0,
-  "2026-11-25": -43.0
+  "2026-11-25": -195.0
  },
  "by_strategy": {
   "orb15": {
@@ -1080,12 +1124,12 @@
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
-   "today_trades": 1,
-   "today_net": -528,
-   "open": 2,
-   "all_trades": 37,
-   "all_wins": 15,
-   "all_net": -4337
+   "today_trades": 3,
+   "today_net": -319,
+   "open": 0,
+   "all_trades": 39,
+   "all_wins": 17,
+   "all_net": -4129
   },
   "orb60": {
    "desc": "first-hour range breakout, stop at mid, 1R",
@@ -1098,12 +1142,12 @@
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
-   "today_trades": 2,
-   "today_net": 305,
-   "open": 1,
-   "all_trades": 34,
+   "today_trades": 3,
+   "today_net": 153,
+   "open": 0,
+   "all_trades": 35,
    "all_wins": 14,
-   "all_net": -755
+   "all_net": -908
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
@@ -1134,12 +1178,12 @@
   },
   "learner": {
    "desc": "takes only the signals last night's model expects to profit",
-   "today_trades": 1,
-   "today_net": 420,
-   "open": 2,
-   "all_trades": 27,
-   "all_wins": 13,
-   "all_net": -510
+   "today_trades": 3,
+   "today_net": 211,
+   "open": 0,
+   "all_trades": 29,
+   "all_wins": 14,
+   "all_net": -720
   }
  },
  "gate": {
@@ -1213,10 +1257,10 @@
    },
    "orb30_2r": {
     "days": 13,
-    "trades": 37,
-    "net": -4337,
-    "per_trade": -117,
-    "t": -1.87,
+    "trades": 39,
+    "net": -4129,
+    "per_trade": -106,
+    "t": -1.77,
     "drawdown": -5524,
     "passed": 1,
     "of": 7,
@@ -1232,25 +1276,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "37 of 150 trades"
+      "now": "39 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -117 a trade"
+      "now": "Rs -106 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -1.87"
+      "now": "t = -1.77"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1916 then Rs -2422"
+      "now": "Rs -2178 then Rs -1951"
      },
      {
       "id": "drawdown",
@@ -1323,10 +1367,10 @@
    },
    "gap_go": {
     "days": 13,
-    "trades": 34,
-    "net": -755,
-    "per_trade": -22,
-    "t": -0.41,
+    "trades": 35,
+    "net": -908,
+    "per_trade": -26,
+    "t": -0.44,
     "drawdown": -3286,
     "passed": 1,
     "of": 7,
@@ -1342,25 +1386,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "34 of 150 trades"
+      "now": "35 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -22 a trade"
+      "now": "Rs -26 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.41"
+      "now": "t = -0.44"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -185 then Rs -570"
+      "now": "Rs -185 then Rs -722"
      },
      {
       "id": "drawdown",
@@ -1543,10 +1587,10 @@
    },
    "learner": {
     "days": 10,
-    "trades": 27,
-    "net": -510,
-    "per_trade": -19,
-    "t": -0.36,
+    "trades": 29,
+    "net": -720,
+    "per_trade": -25,
+    "t": -0.45,
     "drawdown": -3869,
     "passed": 1,
     "of": 7,
@@ -1562,25 +1606,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "27 of 150 trades"
+      "now": "29 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -19 a trade"
+      "now": "Rs -25 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.36"
+      "now": "t = -0.45"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1446 then Rs +936"
+      "now": "Rs -1469 then Rs +749"
      },
      {
       "id": "drawdown",

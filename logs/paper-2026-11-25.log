@@ -265,3 +265,8 @@ NSE's own daily file: latest saved is 2026-11-23
 14:40  SKIP  POWERGRID   vwap      VWAP reclaim: after 14:30
 14:50  SKIP  HDFCLIFE    vwap      VWAP reclaim: after 14:30
 14:55  SKIP  NTPC        vwap      VWAP reclaim: after 14:30
+15:15  CLOSE BAJFINANCE  square-off @ 1124.55  net Rs -152 [gap_go] (charges 51)
+15:15  CLOSE CIPLA       square-off @ 1431.00  net Rs +149 [orb30_2r] (charges 39)
+15:15  CLOSE HCLTECH     square-off @ 1370.50  net Rs +60 [learner] (charges 35)
+15:15  CLOSE HCLTECH     square-off @ 1370.50  net Rs +60 [orb30_2r] (charges 35)
+15:15  CLOSE TCS         square-off @ 2508.00  net Rs -269 [learner] (charges 37)
