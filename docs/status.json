@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 12:16 IST",
- "updated_ts": 1795589161,
+ "updated": "2026-11-25 12:26 IST",
+ "updated_ts": 1795589763,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -426,7 +426,6 @@
  ],
  "today_net": -617.0,
  "log": [
-  "10:50  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day",
   "10:50  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day",
   "10:55  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day",
   "10:55  SKIP  ETERNAL     orb30_2r  ORB30 up: max 3 trades a day",
@@ -485,7 +484,8 @@
   "12:00  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day",
   "12:05  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day",
   "12:15  SKIP  APOLLOHOSP  orb30_2r  ORB30 up: max 3 trades a day",
-  "12:15  SKIP  APOLLOHOSP  orb60     ORB60 up: max 3 trades a day"
+  "12:15  SKIP  APOLLOHOSP  orb60     ORB60 up: max 3 trades a day",
+  "12:20  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 273,
  "all_wins": 144,
