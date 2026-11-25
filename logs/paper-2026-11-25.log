@@ -50,3 +50,23 @@ NSE's own daily file: latest saved is 2026-11-23
 09:30  SKIP  TECHM       gap_fade  gap +1.9% fading: max 3 trades a day
 09:30  SKIP  TRENT       trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  ULTRACEMCO  trap90    tiny target, wide stop: max 3 trades a day
+09:35  CLOSE ADANIENT    target     @ 2719.65  net Rs +1 [trap90] (charges 35)
+09:35  OPEN  ADANIENT    BUY     31 @ 2728.70  stop 2712.75  target 2744.60  [orb15: ORB15 up]
+09:35  CLOSE ADANIPORTS  target     @ 1942.10  net Rs +1 [trap90] (charges 35)
+09:35  OPEN  APOLLOHOSP  SHORT    5 @ 9189.50  stop 9289.25  target 9089.75  [orb15: ORB15 down]
+09:35  OPEN  BAJAJFINSV  BUY     45 @ 1915.30  stop 1904.20  target 1926.40  [orb15: ORB15 up]
+09:35  SKIP  COALINDIA   orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  NTPC        orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  NESTLEIND   orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  ONGC        orb15     ORB15 up: max 3 trades a day
+09:35  OPEN  POWERGRID   BUY    178 @ 264.95  stop 262.15  target 267.70  [learner via orb15, expects +0.05R: long, before 10:30, with market, against gap, wide stop, after usual delivery, against yesterday's market]
+09:35  SKIP  POWERGRID   orb15     ORB15 up: max 3 trades a day
+09:35  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day
+09:40  CLOSE ADANIENT    stop       @ 2712.75  net Rs -605 [orb15] (charges 77)
+09:40  SKIP  ADANIPORTS  orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  ETERNAL     orb15     ORB15 up: max 3 trades a day
+09:40  CLOSE INFY        stop       @ 1145.75  net Rs -605 [gap_fade] (charges 75)
+09:40  SKIP  INFY        orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  JIOFIN      orb15     ORB15 up: max 3 trades a day

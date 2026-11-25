@@ -257,3 +257,7 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-23,HDFCLIFE,orb60,-1,59,10:20,577.15,585.5,568.8,15:15,574.45,square-off,145.71,36.04,109.67,0.223,live,,
 2026-11-23,POWERGRID,learner,-1,92,09:50,266.6,272.0,255.8,15:15,264.1,square-off,220.23,25.91,194.32,0.391,live,orb30_2r,"short, before 10:30, with market, against gap, wide stop, after usual delivery, with yesterday's market"
 2026-11-23,POWERGRID,orb30_2r,-1,92,09:50,266.6,272.0,255.8,15:15,264.1,square-off,220.23,25.91,194.32,0.391,live,,
+2026-11-25,ADANIENT,trap90,1,12,09:30,2715.6,2674.85,2719.65,09:35,2719.65,target,35.56,34.59,0.97,0.002,live,,
+2026-11-25,ADANIPORTS,trap90,1,17,09:30,1939.2,1910.1,1942.1,09:35,1942.1,target,36.1,34.99,1.11,0.002,live,,
+2026-11-25,ADANIENT,orb15,1,31,09:35,2728.7,2712.75,2744.6,09:40,2712.75,stop,-528.19,76.87,-605.06,-1.224,live,,
+2026-11-25,INFY,gap_fade,-1,68,09:30,1138.4,1145.75,1103.4,09:40,1145.75,stop,-530.86,74.51,-605.37,-1.211,live,,
