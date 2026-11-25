@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 11:21 IST",
- "updated_ts": 1795585870,
+ "updated": "2026-11-25 11:31 IST",
+ "updated_ts": 1795586472,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -390,9 +390,6 @@
  ],
  "today_net": 92.0,
  "log": [
-  "10:35  SKIP  BAJAJFINSV  orb30_2r  ORB30 up: max 3 trades a day",
-  "10:35  SKIP  BEL         vwap      VWAP reclaim: max 3 trades a day",
-  "10:35  SKIP  HDFCLIFE    orb60     ORB60 up: max 3 trades a day",
   "10:35  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day",
   "10:40  SKIP  AXISBANK    orb15     ORB15 up: max 3 trades a day",
   "10:40  SKIP  AXISBANK    orb30_2r  ORB30 up: max 3 trades a day",
@@ -449,7 +446,10 @@
   "11:15  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day",
   "11:15  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day",
   "11:20  CLOSE CIPLA       target     @ 1445.80  net Rs +415 [orb60] (charges 52)",
-  "11:20  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day"
+  "11:20  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
+  "11:25  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day",
+  "11:30  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day",
+  "11:30  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 269,
  "all_wins": 143,
