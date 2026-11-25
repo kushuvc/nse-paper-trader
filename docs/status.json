@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 12:56 IST",
- "updated_ts": 1795591568,
+ "updated": "2026-11-25 13:06 IST",
+ "updated_ts": 1795592169,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -95,17 +95,6 @@
    "target": 2112.6,
    "entry_time": "10:20",
    "note": "ORB60 up"
-  },
-  "vwap|RELIANCE": {
-   "strategy": "vwap",
-   "symbol": "RELIANCE",
-   "side": 1,
-   "qty": 46,
-   "entry": 1380.7,
-   "stop": 1370.0,
-   "target": 1402.1,
-   "entry_time": "10:20",
-   "note": "VWAP reclaim"
   }
  },
  "closed": [
@@ -431,16 +420,30 @@
    "net": -527.72,
    "r": -1.059,
    "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "RELIANCE",
+   "side": 1,
+   "qty": 46,
+   "entry": 1380.7,
+   "stop": 1370.0,
+   "target": 1402.1,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim",
+   "date": "2026-11-25",
+   "exit": 1370.0,
+   "exit_time": "13:00",
+   "reason": "stop",
+   "gross": -517.51,
+   "charges": 67.03,
+   "net": -584.54,
+   "r": -1.188,
+   "mode": "live"
   }
  ],
- "today_net": -1145.0,
+ "today_net": -1729.0,
  "log": [
-  "11:05  SKIP  HDFCBANK    orb60     ORB60 up: max 3 trades a day",
-  "11:05  CLOSE ITC         target     @ 310.60  net Rs +433 [orb60] (charges 48)",
-  "11:05  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day",
-  "11:15  SKIP  BSE         orb15     ORB15 up: max 3 trades a day",
-  "11:15  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day",
-  "11:15  SKIP  HDFCLIFE    vwap      VWAP reclaim: max 3 trades a day",
   "11:15  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day",
   "11:15  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day",
   "11:15  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day",
@@ -494,12 +497,39 @@
   "12:45  SKIP  ADANIENT    orb60     ORB60 down: max 3 trades a day",
   "12:50  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day",
   "12:50  SKIP  KOTAKBANK   orb60     ORB60 down: max 3 trades a day",
-  "12:55  CLOSE HDFCLIFE    stop       @ 590.25  net Rs -528 [orb30_2r] (charges 21)"
+  "12:55  CLOSE HDFCLIFE    stop       @ 590.25  net Rs -528 [orb30_2r] (charges 21)",
+  "13:00  SKIP  HINDALCO    vwap      VWAP loss: max 3 trades a day",
+  "13:00  CLOSE RELIANCE    stop       @ 1370.00  net Rs -585 [vwap] (charges 67)",
+  "13:00  SKIP  TCS         vwap      VWAP loss: max 3 trades a day",
+  "13:05  SKIP  ADANIPORTS  learner   via orb30_2r (expects +0.07R): max 3 trades a day",
+  "13:05  SKIP  ADANIPORTS  orb30_2r  ORB30 down: max 3 trades a day",
+  "13:05  SKIP  ADANIPORTS  orb60     ORB60 down: max 3 trades a day"
  ],
- "all_trades": 274,
+ "all_trades": 275,
  "all_wins": 144,
- "all_net": -15303.0,
+ "all_net": -15888.0,
  "recent": [
+  {
+   "date": "2026-11-25",
+   "symbol": "RELIANCE",
+   "strategy": "vwap",
+   "side": "1",
+   "qty": "46",
+   "entry_time": "10:20",
+   "entry": "1380.7",
+   "stop": "1370.0",
+   "target": "1402.1",
+   "exit_time": "13:00",
+   "exit": "1370.0",
+   "reason": "stop",
+   "gross": "-517.51",
+   "charges": "67.03",
+   "net": "-584.54",
+   "r": "-1.188",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-25",
    "symbol": "HDFCLIFE",
@@ -1003,27 +1033,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-23",
-   "symbol": "BAJFINANCE",
-   "strategy": "orb60",
-   "side": "-1",
-   "qty": "40",
-   "entry_time": "10:20",
-   "entry": "1107.3",
-   "stop": "1119.5",
-   "target": "1095.1",
-   "exit_time": "15:00",
-   "exit": "1095.1",
-   "reason": "target",
-   "gross": "470.38",
-   "charges": "46.76",
-   "net": "423.62",
-   "r": "0.868",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -1039,7 +1048,7 @@
   "2026-11-19": -3408.0,
   "2026-11-20": 2067.0,
   "2026-11-23": -947.0,
-  "2026-11-25": -1146.0
+  "2026-11-25": -1731.0
  },
  "by_strategy": {
   "orb15": {
@@ -1089,12 +1098,12 @@
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 2,
-   "today_net": -271,
-   "open": 1,
-   "all_trades": 38,
+   "today_trades": 3,
+   "today_net": -856,
+   "open": 0,
+   "all_trades": 39,
    "all_wins": 16,
-   "all_net": -3548
+   "all_net": -4132
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
@@ -1406,10 +1415,10 @@
    },
    "vwap": {
     "days": 13,
-    "trades": 38,
-    "net": -3548,
-    "per_trade": -93,
-    "t": -0.76,
+    "trades": 39,
+    "net": -4132,
+    "per_trade": -106,
+    "t": -0.9,
     "drawdown": -4206,
     "passed": 1,
     "of": 7,
@@ -1425,25 +1434,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "38 of 150 trades"
+      "now": "39 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -93 a trade"
+      "now": "Rs -106 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.76"
+      "now": "t = -0.90"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -2031 then Rs -1517"
+      "now": "Rs -2031 then Rs -2101"
      },
      {
       "id": "drawdown",
