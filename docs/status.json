@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 10:51 IST",
- "updated_ts": 1795584065,
+ "updated": "2026-11-25 11:01 IST",
+ "updated_ts": 1795584667,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -67,20 +67,6 @@
    "target": 9089.75,
    "entry_time": "09:35",
    "note": "ORB15 down"
-  },
-  "learner|POWERGRID": {
-   "strategy": "learner",
-   "symbol": "POWERGRID",
-   "side": 1,
-   "qty": 178,
-   "entry": 264.95,
-   "stop": 262.15,
-   "target": 267.7,
-   "entry_time": "09:35",
-   "note": "ORB15 up",
-   "via": "orb15",
-   "setup": "long, before 10:30, with market, against gap, wide stop, after usual delivery, against yesterday's market",
-   "score": 0.051
   },
   "orb30_2r|CIPLA": {
    "strategy": "orb30_2r",
@@ -359,19 +345,33 @@
    "net": 230.59,
    "r": 1.258,
    "mode": "live"
+  },
+  {
+   "strategy": "learner",
+   "symbol": "POWERGRID",
+   "side": 1,
+   "qty": 178,
+   "entry": 264.95,
+   "stop": 262.15,
+   "target": 267.7,
+   "entry_time": "09:35",
+   "note": "ORB15 up",
+   "via": "orb15",
+   "setup": "long, before 10:30, with market, against gap, wide stop, after usual delivery, against yesterday's market",
+   "score": 0.051,
+   "date": "2026-11-25",
+   "exit": 267.7,
+   "exit_time": "11:00",
+   "reason": "target",
+   "gross": 470.54,
+   "charges": 50.32,
+   "net": 420.22,
+   "r": 0.843,
+   "mode": "live"
   }
  ],
- "today_net": -1176.0,
+ "today_net": -756.0,
  "log": [
-  "10:00  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day",
-  "10:10  SKIP  HINDUNILVR  orb15     ORB15 up: max 3 trades a day",
-  "10:10  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day",
-  "10:10  SKIP  MARUTI      orb15     ORB15 down: max 3 trades a day",
-  "10:10  SKIP  MARUTI      orb30_2r  ORB30 down: max 3 trades a day",
-  "10:15  SKIP  DRREDDY     orb15     ORB15 up: max 3 trades a day",
-  "10:15  SKIP  DRREDDY     orb30_2r  ORB30 up: max 3 trades a day",
-  "10:15  SKIP  TMPV        orb15     ORB15 down: max 3 trades a day",
-  "10:15  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day",
   "10:20  OPEN  APOLLOHOSP  SHORT   10 @ 9230.00  stop 9268.50  target 9153.00  [vwap: VWAP loss]",
   "10:20  OPEN  CIPLA       BUY     34 @ 1431.50  stop 1417.20  target 1445.80  [orb60: ORB60 up]",
   "10:20  OPEN  HINDUNILVR  BUY     16 @ 2081.70  stop 2050.80  target 2112.60  [orb60: ORB60 up]",
@@ -422,12 +422,42 @@
   "10:50  SKIP  RELIANCE    orb15     ORB15 up: max 3 trades a day",
   "10:50  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day",
   "10:50  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day",
-  "10:50  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day"
+  "10:50  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day",
+  "10:55  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day",
+  "10:55  SKIP  ETERNAL     orb30_2r  ORB30 up: max 3 trades a day",
+  "10:55  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day",
+  "10:55  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day",
+  "10:55  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day",
+  "11:00  SKIP  ETERNAL     orb60     ORB60 up: max 3 trades a day",
+  "11:00  SKIP  NTPC        orb30_2r  ORB30 up: max 3 trades a day",
+  "11:00  SKIP  NTPC        orb60     ORB60 up: max 3 trades a day",
+  "11:00  CLOSE POWERGRID   target     @ 267.70  net Rs +420 [learner] (charges 50)"
  ],
- "all_trades": 266,
- "all_wins": 140,
- "all_net": -15334.0,
+ "all_trades": 267,
+ "all_wins": 141,
+ "all_net": -14914.0,
  "recent": [
+  {
+   "date": "2026-11-25",
+   "symbol": "POWERGRID",
+   "strategy": "learner",
+   "side": "1",
+   "qty": "178",
+   "entry_time": "09:35",
+   "entry": "264.95",
+   "stop": "262.15",
+   "target": "267.7",
+   "exit_time": "11:00",
+   "exit": "267.7",
+   "reason": "target",
+   "gross": "470.54",
+   "charges": "50.32",
+   "net": "420.22",
+   "r": "0.843",
+   "mode": "live",
+   "via": "orb15",
+   "setup": "long, before 10:30, with market, against gap, wide stop, after usual delivery, against yesterday's market"
+  },
   {
    "date": "2026-11-25",
    "symbol": "ONGC",
@@ -931,27 +961,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-23",
-   "symbol": "HINDALCO",
-   "strategy": "gap_fade",
-   "side": "1",
-   "qty": "110",
-   "entry_time": "09:30",
-   "entry": "908.05",
-   "stop": "905.75",
-   "target": "929.5",
-   "exit_time": "10:00",
-   "exit": "905.75",
-   "reason": "stop",
-   "gross": "-292.9",
-   "charges": "82.33",
-   "net": "-375.23",
-   "r": "-1.483",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -967,7 +976,7 @@
   "2026-11-19": -3408.0,
   "2026-11-20": 2067.0,
   "2026-11-23": -947.0,
-  "2026-11-25": -1176.0
+  "2026-11-25": -756.0
  },
  "by_strategy": {
   "orb15": {
@@ -1035,12 +1044,12 @@
   },
   "learner": {
    "desc": "takes only the signals last night's model expects to profit",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 0,
-   "all_trades": 26,
-   "all_wins": 12,
-   "all_net": -931
+   "today_trades": 1,
+   "today_net": 420,
+   "open": 2,
+   "all_trades": 27,
+   "all_wins": 13,
+   "all_net": -510
   }
  },
  "gate": {
@@ -1443,11 +1452,11 @@
     ]
    },
    "learner": {
-    "days": 9,
-    "trades": 26,
-    "net": -931,
-    "per_trade": -36,
-    "t": -0.56,
+    "days": 10,
+    "trades": 27,
+    "net": -510,
+    "per_trade": -19,
+    "t": -0.36,
     "drawdown": -3869,
     "passed": 1,
     "of": 7,
@@ -1457,31 +1466,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "9 of 60 days"
+      "now": "10 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "26 of 150 trades"
+      "now": "27 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -36 a trade"
+      "now": "Rs -19 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.56"
+      "now": "t = -0.36"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1446 then Rs +515"
+      "now": "Rs -1446 then Rs +936"
      },
      {
       "id": "drawdown",
