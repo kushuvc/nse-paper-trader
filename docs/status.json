@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-25 18:55 IST",
- "updated_ts": 1795613127,
+ "updated_ts": 1795613151,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -506,9 +506,6 @@
  ],
  "today_net": -195.0,
  "log": [
-  "11:45  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day",
-  "11:45  SKIP  TMPV        orb60     ORB60 up: max 3 trades a day",
-  "11:50  CLOSE AXISBANK    target     @ 1445.20  net Rs +892 [gap_go] (charges 61)",
   "11:50  SKIP  BSE         orb60     ORB60 up: max 3 trades a day",
   "11:50  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day",
   "11:50  SKIP  INFY        orb60     ORB60 down: max 3 trades a day",
@@ -565,7 +562,10 @@
   "15:15  CLOSE HCLTECH     square-off @ 1370.50  net Rs +60 [orb30_2r] (charges 35)",
   "15:15  CLOSE TCS         square-off @ 2508.00  net Rs -269 [learner] (charges 37)",
   "15:20  SKIP  HDFCBANK    vwap      VWAP reclaim: past square-off",
-  "15:20  SKIP  TECHM       vwap      VWAP loss: past square-off"
+  "15:20  SKIP  TECHM       vwap      VWAP loss: past square-off",
+  "18:55  SKIP  HDFCBANK    vwap      VWAP reclaim: past square-off",
+  "18:55  SKIP  ICICIBANK   vwap      VWAP reclaim: past square-off",
+  "18:55  SKIP  TCS         vwap      VWAP reclaim: past square-off"
  ],
  "all_trades": 282,
  "all_wins": 149,
