@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 10:21 IST",
- "updated_ts": 1795582261,
+ "updated": "2026-11-25 10:31 IST",
+ "updated_ts": 1795582862,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -354,13 +354,6 @@
  ],
  "today_net": -1406.0,
  "log": [
-  "09:35  SKIP  POWERGRID   orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day",
-  "09:40  CLOSE ADANIENT    stop       @ 2712.75  net Rs -605 [orb15] (charges 77)",
-  "09:40  SKIP  ADANIPORTS  orb15     ORB15 down: max 3 trades a day",
-  "09:40  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day",
-  "09:40  SKIP  ETERNAL     orb15     ORB15 up: max 3 trades a day",
-  "09:40  CLOSE INFY        stop       @ 1145.75  net Rs -605 [gap_fade] (charges 75)",
   "09:40  SKIP  INFY        orb15     ORB15 up: max 3 trades a day",
   "09:40  SKIP  JIOFIN      orb15     ORB15 up: max 3 trades a day",
   "09:45  CLOSE BAJAJFINSV  target     @ 1926.40  net Rs +387 [orb15] (charges 78)",
@@ -413,7 +406,14 @@
   "10:20  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day",
   "10:20  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day",
   "10:20  OPEN  RELIANCE    BUY     46 @ 1380.70  stop 1370.00  target 1402.10  [vwap: VWAP reclaim]",
-  "10:20  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day"
+  "10:20  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
+  "10:25  SKIP  DRREDDY     orb60     ORB60 up: max 3 trades a day",
+  "10:25  SKIP  INDIGO      orb15     ORB15 down: max 3 trades a day",
+  "10:25  SKIP  INDIGO      orb30_2r  ORB30 down: max 3 trades a day",
+  "10:25  SKIP  TRENT       orb30_2r  ORB30 up: max 3 trades a day",
+  "10:25  SKIP  TRENT       orb60     ORB60 up: max 3 trades a day",
+  "10:30  SKIP  SBIN        vwap      VWAP reclaim: max 3 trades a day",
+  "10:30  SKIP  TCS         vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 265,
  "all_wins": 139,
