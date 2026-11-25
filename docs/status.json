@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 13:36 IST",
- "updated_ts": 1795593974,
+ "updated": "2026-11-25 13:46 IST",
+ "updated_ts": 1795594576,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -453,8 +453,6 @@
  ],
  "today_net": -487.0,
  "log": [
-  "11:15  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day",
-  "11:20  CLOSE CIPLA       target     @ 1445.80  net Rs +415 [orb60] (charges 52)",
   "11:20  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
   "11:25  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day",
   "11:30  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day",
@@ -512,7 +510,9 @@
   "13:05  SKIP  ADANIPORTS  orb30_2r  ORB30 down: max 3 trades a day",
   "13:05  SKIP  ADANIPORTS  orb60     ORB60 down: max 3 trades a day",
   "13:10  CLOSE HCLTECH     target     @ 1364.30  net Rs +1243 [gap_fade] (charges 76)",
-  "13:30  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day"
+  "13:30  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day",
+  "13:45  SKIP  TATACONSUM  vwap      VWAP reclaim: max 3 trades a day",
+  "13:45  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 276,
  "all_wins": 145,
