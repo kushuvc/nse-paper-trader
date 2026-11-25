@@ -266,3 +266,4 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-25,ASIANPAINT,trap90,1,12,09:30,2618.1,2578.8,2622.05,10:00,2622.05,target,34.82,33.35,1.47,0.003,live,,
 2026-11-25,ONGC,vwap,1,447,10:20,223.51,223.1,224.3,10:50,224.3,target,313.1,82.51,230.59,1.258,live,,
 2026-11-25,POWERGRID,learner,1,178,09:35,264.95,262.15,267.7,11:00,267.7,target,470.54,50.32,420.22,0.843,live,orb15,"long, before 10:30, with market, against gap, wide stop, after usual delivery, against yesterday's market"
+2026-11-25,ITC,orb60,1,147,10:20,307.2,303.8,310.6,11:05,310.6,target,481.64,48.21,433.43,0.867,live,,
