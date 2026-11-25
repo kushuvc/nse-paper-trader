@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 12:26 IST",
- "updated_ts": 1795589763,
+ "updated": "2026-11-25 12:36 IST",
+ "updated_ts": 1795590364,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -426,13 +426,6 @@
  ],
  "today_net": -617.0,
  "log": [
-  "10:50  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day",
-  "10:55  SKIP  BSE         vwap      VWAP reclaim: max 3 trades a day",
-  "10:55  SKIP  ETERNAL     orb30_2r  ORB30 up: max 3 trades a day",
-  "10:55  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day",
-  "10:55  SKIP  HINDALCO    orb30_2r  ORB30 up: max 3 trades a day",
-  "10:55  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day",
-  "11:00  SKIP  ETERNAL     orb60     ORB60 up: max 3 trades a day",
   "11:00  SKIP  NTPC        orb30_2r  ORB30 up: max 3 trades a day",
   "11:00  SKIP  NTPC        orb60     ORB60 up: max 3 trades a day",
   "11:00  CLOSE POWERGRID   target     @ 267.70  net Rs +420 [learner] (charges 50)",
@@ -485,7 +478,14 @@
   "12:05  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day",
   "12:15  SKIP  APOLLOHOSP  orb30_2r  ORB30 up: max 3 trades a day",
   "12:15  SKIP  APOLLOHOSP  orb60     ORB60 up: max 3 trades a day",
-  "12:20  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day"
+  "12:20  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
+  "12:35  SKIP  ADANIPORTS  vwap      VWAP loss: max 3 trades a day",
+  "12:35  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day",
+  "12:35  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day",
+  "12:35  SKIP  LT          vwap      VWAP loss: max 3 trades a day",
+  "12:35  SKIP  M&M         vwap      VWAP loss: max 3 trades a day",
+  "12:35  SKIP  MARUTI      vwap      VWAP loss: max 3 trades a day",
+  "12:35  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 273,
  "all_wins": 144,

@@ -226,3 +226,10 @@ PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2
 Learner: model from 71 days of history
 NSE's own daily file: latest saved is 2026-11-23
 12:20  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day
+12:35  SKIP  ADANIPORTS  vwap      VWAP loss: max 3 trades a day
+12:35  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day
+12:35  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day
+12:35  SKIP  LT          vwap      VWAP loss: max 3 trades a day
+12:35  SKIP  M&M         vwap      VWAP loss: max 3 trades a day
+12:35  SKIP  MARUTI      vwap      VWAP loss: max 3 trades a day
+12:35  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day
