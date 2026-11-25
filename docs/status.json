@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 10:00 IST",
- "updated_ts": 1795581058,
+ "updated": "2026-11-25 10:10 IST",
+ "updated_ts": 1795581659,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -288,10 +288,6 @@
  ],
  "today_net": -1406.0,
  "log": [
-  "09:30  SKIP  SBIN        trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  TCS         gap_fade  gap +2.2% fading: max 3 trades a day",
-  "09:30  SKIP  TATACONSUM  gap_go    gap +2.2% and go: max 3 trades a day",
-  "09:30  SKIP  TATACONSUM  trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  TECHM       gap_fade  gap +1.9% fading: max 3 trades a day",
   "09:30  SKIP  TRENT       trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  ULTRACEMCO  trap90    tiny target, wide stop: max 3 trades a day",
@@ -347,7 +343,11 @@
   "10:00  SKIP  ITC         orb15     ORB15 up: max 3 trades a day",
   "10:00  SKIP  ITC         orb30_2r  ORB30 up: max 3 trades a day",
   "10:00  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day",
-  "10:00  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day"
+  "10:00  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day",
+  "10:10  SKIP  HINDUNILVR  orb15     ORB15 up: max 3 trades a day",
+  "10:10  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day",
+  "10:10  SKIP  MARUTI      orb15     ORB15 down: max 3 trades a day",
+  "10:10  SKIP  MARUTI      orb30_2r  ORB30 down: max 3 trades a day"
  ],
  "all_trades": 265,
  "all_wins": 139,
