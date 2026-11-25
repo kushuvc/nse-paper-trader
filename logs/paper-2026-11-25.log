@@ -218,3 +218,14 @@ NSE's own daily file: latest saved is 2026-11-23
 11:55  SKIP  JIOFIN      orb60     ORB60 up: max 3 trades a day
 12:00  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day
 12:05  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day
+12:15  SKIP  APOLLOHOSP  orb30_2r  ORB30 up: max 3 trades a day
+12:15  SKIP  APOLLOHOSP  orb60     ORB60 up: max 3 trades a day
+2026-11-25: 15 closed (9 won), 9 still open, net Rs -617 after charges
+  orb15     3 trades, net Rs -784
+  orb30_2r  0 trades, net Rs +0
+  orb60     2 trades, net Rs +848
+  gap_go    2 trades, net Rs +305
+  gap_fade  2 trades, net Rs -1139
+  vwap      2 trades, net Rs -271
+  trap90    3 trades, net Rs +4
+  learner   1 trades, net Rs +420
