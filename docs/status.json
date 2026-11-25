@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 10:41 IST",
- "updated_ts": 1795583464,
+ "updated": "2026-11-25 10:51 IST",
+ "updated_ts": 1795584065,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -187,17 +187,6 @@
    "entry_time": "10:20",
    "note": "ORB60 up"
   },
-  "vwap|ONGC": {
-   "strategy": "vwap",
-   "symbol": "ONGC",
-   "side": 1,
-   "qty": 447,
-   "entry": 223.51,
-   "stop": 223.1,
-   "target": 224.3,
-   "entry_time": "10:20",
-   "note": "VWAP reclaim"
-  },
   "vwap|RELIANCE": {
    "strategy": "vwap",
    "symbol": "RELIANCE",
@@ -350,28 +339,30 @@
    "net": 1.47,
    "r": 0.003,
    "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "ONGC",
+   "side": 1,
+   "qty": 447,
+   "entry": 223.51,
+   "stop": 223.1,
+   "target": 224.3,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim",
+   "date": "2026-11-25",
+   "exit": 224.3,
+   "exit_time": "10:50",
+   "reason": "target",
+   "gross": 313.1,
+   "charges": 82.51,
+   "net": 230.59,
+   "r": 1.258,
+   "mode": "live"
   }
  ],
- "today_net": -1406.0,
+ "today_net": -1176.0,
  "log": [
-  "09:50  OPEN  TCS         SHORT   14 @ 2492.40  stop 2527.65  target 2422.00  [learner via orb30_2r, expects +0.10R: short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market]",
-  "09:50  SKIP  TCS         orb30_2r  ORB30 down: max 3 trades a day",
-  "09:50  SKIP  TECHM       orb15     ORB15 down: max 3 trades a day",
-  "09:50  SKIP  TECHM       learner   via orb30_2r (expects +0.07R): max 3 trades a day",
-  "09:50  SKIP  TECHM       orb30_2r  ORB30 down: max 3 trades a day",
-  "09:55  CLOSE ADANIENT    stop       @ 2697.65  net Rs -587 [gap_go] (charges 73)",
-  "09:55  SKIP  ADANIENT    orb30_2r  ORB30 down: max 3 trades a day",
-  "09:55  SKIP  ICICIBANK   orb15     ORB15 up: max 3 trades a day",
-  "09:55  SKIP  ICICIBANK   orb30_2r  ORB30 up: max 3 trades a day",
-  "09:55  SKIP  TATACONSUM  orb30_2r  ORB30 up: max 3 trades a day",
-  "10:00  CLOSE ASIANPAINT  target     @ 2622.05  net Rs +1 [trap90] (charges 33)",
-  "10:00  SKIP  ASIANPAINT  orb15     ORB15 up: max 3 trades a day",
-  "10:00  SKIP  ASIANPAINT  orb30_2r  ORB30 up: max 3 trades a day",
-  "10:00  SKIP  BEL         orb15     ORB15 down: max 3 trades a day",
-  "10:00  SKIP  BEL         orb30_2r  ORB30 down: max 3 trades a day",
-  "10:00  SKIP  ITC         orb15     ORB15 up: max 3 trades a day",
-  "10:00  SKIP  ITC         orb30_2r  ORB30 up: max 3 trades a day",
-  "10:00  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day",
   "10:00  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day",
   "10:10  SKIP  HINDUNILVR  orb15     ORB15 up: max 3 trades a day",
   "10:10  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day",
@@ -413,12 +404,51 @@
   "10:40  SKIP  NTPC        vwap      VWAP reclaim: max 3 trades a day",
   "10:40  SKIP  NESTLEIND   orb30_2r  ORB30 up: max 3 trades a day",
   "10:40  SKIP  NESTLEIND   orb60     ORB60 up: max 3 trades a day",
-  "10:40  SKIP  TATASTEEL   orb60     ORB60 up: max 3 trades a day"
+  "10:40  SKIP  TATASTEEL   orb60     ORB60 up: max 3 trades a day",
+  "10:45  SKIP  GRASIM      orb15     ORB15 up: max 3 trades a day",
+  "10:45  SKIP  GRASIM      orb30_2r  ORB30 up: max 3 trades a day",
+  "10:45  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day",
+  "10:45  SKIP  JIOFIN      vwap      VWAP reclaim: max 3 trades a day",
+  "10:45  SKIP  MARUTI      orb60     ORB60 down: max 3 trades a day",
+  "10:50  SKIP  BAJFINANCE  vwap      VWAP reclaim: max 3 trades a day",
+  "10:50  SKIP  BEL         orb60     ORB60 up: max 3 trades a day",
+  "10:50  SKIP  EICHERMOT   orb15     ORB15 up: max 3 trades a day",
+  "10:50  SKIP  EICHERMOT   orb30_2r  ORB30 up: max 3 trades a day",
+  "10:50  SKIP  EICHERMOT   orb60     ORB60 up: max 3 trades a day",
+  "10:50  SKIP  GRASIM      orb60     ORB60 up: max 3 trades a day",
+  "10:50  CLOSE ONGC        target     @ 224.30  net Rs +231 [vwap] (charges 83)",
+  "10:50  SKIP  ONGC        orb30_2r  ORB30 up: max 3 trades a day",
+  "10:50  SKIP  ONGC        orb60     ORB60 up: max 3 trades a day",
+  "10:50  SKIP  RELIANCE    orb15     ORB15 up: max 3 trades a day",
+  "10:50  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day",
+  "10:50  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day",
+  "10:50  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day"
  ],
- "all_trades": 265,
- "all_wins": 139,
- "all_net": -15565.0,
+ "all_trades": 266,
+ "all_wins": 140,
+ "all_net": -15334.0,
  "recent": [
+  {
+   "date": "2026-11-25",
+   "symbol": "ONGC",
+   "strategy": "vwap",
+   "side": "1",
+   "qty": "447",
+   "entry_time": "10:20",
+   "entry": "223.51",
+   "stop": "223.1",
+   "target": "224.3",
+   "exit_time": "10:50",
+   "exit": "224.3",
+   "reason": "target",
+   "gross": "313.1",
+   "charges": "82.51",
+   "net": "230.59",
+   "r": "1.258",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-25",
    "symbol": "ASIANPAINT",
@@ -922,27 +952,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-23",
-   "symbol": "HINDALCO",
-   "strategy": "learner",
-   "side": "1",
-   "qty": "110",
-   "entry_time": "09:30",
-   "entry": "908.05",
-   "stop": "905.75",
-   "target": "929.5",
-   "exit_time": "10:00",
-   "exit": "905.75",
-   "reason": "stop",
-   "gross": "-292.9",
-   "charges": "82.33",
-   "net": "-375.23",
-   "r": "-1.483",
-   "mode": "live",
-   "via": "gap_fade",
-   "setup": "long, before 10:30, against market, against gap, tight stop, after low delivery, against yesterday's market"
   }
  ],
  "by_day": {
@@ -958,7 +967,7 @@
   "2026-11-19": -3408.0,
   "2026-11-20": 2067.0,
   "2026-11-23": -947.0,
-  "2026-11-25": -1407.0
+  "2026-11-25": -1176.0
  },
  "by_strategy": {
   "orb15": {
@@ -1008,12 +1017,12 @@
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 36,
-   "all_wins": 15,
-   "all_net": -3277
+   "today_trades": 1,
+   "today_net": 231,
+   "open": 2,
+   "all_trades": 37,
+   "all_wins": 16,
+   "all_net": -3046
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
@@ -1324,11 +1333,11 @@
     ]
    },
    "vwap": {
-    "days": 12,
-    "trades": 36,
-    "net": -3277,
-    "per_trade": -91,
-    "t": -0.78,
+    "days": 13,
+    "trades": 37,
+    "net": -3046,
+    "per_trade": -82,
+    "t": -0.61,
     "drawdown": -4206,
     "passed": 1,
     "of": 7,
@@ -1338,31 +1347,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "12 of 60 days"
+      "now": "13 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "36 of 150 trades"
+      "now": "37 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -91 a trade"
+      "now": "Rs -82 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.78"
+      "now": "t = -0.61"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1433 then Rs -1843"
+      "now": "Rs -1433 then Rs -1613"
      },
      {
       "id": "drawdown",
