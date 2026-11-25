@@ -263,3 +263,5 @@ NSE's own daily file: latest saved is 2026-11-23
 14:25  SKIP  LT          vwap      VWAP loss: max 3 trades a day
 14:35  SKIP  HDFCBANK    vwap      VWAP reclaim: after 14:30
 14:40  SKIP  POWERGRID   vwap      VWAP reclaim: after 14:30
+14:50  SKIP  HDFCLIFE    vwap      VWAP reclaim: after 14:30
+14:55  SKIP  NTPC        vwap      VWAP reclaim: after 14:30
