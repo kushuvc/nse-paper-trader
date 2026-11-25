@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 12:36 IST",
- "updated_ts": 1795590364,
+ "updated": "2026-11-25 12:46 IST",
+ "updated_ts": 1795590966,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -426,14 +426,6 @@
  ],
  "today_net": -617.0,
  "log": [
-  "11:00  SKIP  NTPC        orb30_2r  ORB30 up: max 3 trades a day",
-  "11:00  SKIP  NTPC        orb60     ORB60 up: max 3 trades a day",
-  "11:00  CLOSE POWERGRID   target     @ 267.70  net Rs +420 [learner] (charges 50)",
-  "11:05  SKIP  ASIANPAINT  orb60     ORB60 up: max 3 trades a day",
-  "11:05  SKIP  BAJFINANCE  orb15     ORB15 up: max 3 trades a day",
-  "11:05  SKIP  BAJFINANCE  orb30_2r  ORB30 up: max 3 trades a day",
-  "11:05  SKIP  BAJFINANCE  orb60     ORB60 up: max 3 trades a day",
-  "11:05  SKIP  COALINDIA   orb30_2r  ORB30 up: max 3 trades a day",
   "11:05  SKIP  COALINDIA   orb60     ORB60 up: max 3 trades a day",
   "11:05  SKIP  HDFCBANK    orb15     ORB15 up: max 3 trades a day",
   "11:05  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day",
@@ -485,7 +477,15 @@
   "12:35  SKIP  LT          vwap      VWAP loss: max 3 trades a day",
   "12:35  SKIP  M&M         vwap      VWAP loss: max 3 trades a day",
   "12:35  SKIP  MARUTI      vwap      VWAP loss: max 3 trades a day",
-  "12:35  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day"
+  "12:35  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day",
+  "12:40  SKIP  JSWSTEEL    orb15     ORB15 down: max 3 trades a day",
+  "12:40  SKIP  JSWSTEEL    orb30_2r  ORB30 down: max 3 trades a day",
+  "12:40  SKIP  JSWSTEEL    orb60     ORB60 down: max 3 trades a day",
+  "12:40  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
+  "12:40  SKIP  SHRIRAMFIN  orb15     ORB15 down: max 3 trades a day",
+  "12:40  SKIP  SHRIRAMFIN  orb30_2r  ORB30 down: max 3 trades a day",
+  "12:40  SKIP  SHRIRAMFIN  orb60     ORB60 down: max 3 trades a day",
+  "12:45  SKIP  ADANIENT    orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 273,
  "all_wins": 144,
