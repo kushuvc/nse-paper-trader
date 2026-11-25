@@ -251,3 +251,4 @@ NSE's own daily file: latest saved is 2026-11-23
 13:05  SKIP  ADANIPORTS  orb30_2r  ORB30 down: max 3 trades a day
 13:05  SKIP  ADANIPORTS  orb60     ORB60 down: max 3 trades a day
 13:10  CLOSE HCLTECH     target     @ 1364.30  net Rs +1243 [gap_fade] (charges 76)
+13:30  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day
