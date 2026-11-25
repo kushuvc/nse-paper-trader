@@ -217,3 +217,4 @@ NSE's own daily file: latest saved is 2026-11-23
 11:55  SKIP  JIOFIN      orb30_2r  ORB30 up: max 3 trades a day
 11:55  SKIP  JIOFIN      orb60     ORB60 up: max 3 trades a day
 12:00  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day
+12:05  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day
