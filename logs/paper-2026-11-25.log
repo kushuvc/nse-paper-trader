@@ -261,3 +261,4 @@ NSE's own daily file: latest saved is 2026-11-23
 14:15  SKIP  COALINDIA   vwap      VWAP reclaim: max 3 trades a day
 14:15  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day
 14:25  SKIP  LT          vwap      VWAP loss: max 3 trades a day
+14:35  SKIP  HDFCBANK    vwap      VWAP reclaim: after 14:30
