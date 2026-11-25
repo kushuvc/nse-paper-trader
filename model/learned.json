@@ -1,138 +1,134 @@
 {
- "asof": "2026-11-23",
- "built": "2026-11-25 05:18",
- "history_days": 72,
+ "asof": "2026-11-25",
+ "built": "2026-11-26 05:00",
+ "history_days": 73,
  "first_day": "2026-08-10",
  "strategies": {
   "orb15": {
-   "trades": 3358,
-   "avg_r": -0.224,
-   "shrunk_r": -0.219,
-   "setups_allowed": 33,
+   "trades": 3406,
+   "avg_r": -0.227,
+   "shrunk_r": -0.222,
+   "setups_allowed": 27,
    "setups_total": 1458,
    "setups_allowed_yesterday": 33
   },
   "orb30_2r": {
-   "trades": 3197,
-   "avg_r": -0.077,
-   "shrunk_r": -0.076,
-   "setups_allowed": 113,
+   "trades": 3244,
+   "avg_r": -0.081,
+   "shrunk_r": -0.079,
+   "setups_allowed": 105,
    "setups_total": 1458,
    "setups_allowed_yesterday": 113
   },
   "orb60": {
-   "trades": 2938,
-   "avg_r": -0.168,
-   "shrunk_r": -0.164,
-   "setups_allowed": 54,
+   "trades": 2983,
+   "avg_r": -0.169,
+   "shrunk_r": -0.165,
+   "setups_allowed": 47,
    "setups_total": 1458,
    "setups_allowed_yesterday": 54
   },
   "gap_go": {
-   "trades": 233,
-   "avg_r": -0.258,
-   "shrunk_r": -0.199,
-   "setups_allowed": 36,
+   "trades": 243,
+   "avg_r": -0.249,
+   "shrunk_r": -0.194,
+   "setups_allowed": 24,
    "setups_total": 1458,
    "setups_allowed_yesterday": 36
   },
   "gap_fade": {
-   "trades": 98,
-   "avg_r": -0.056,
-   "shrunk_r": -0.033,
-   "setups_allowed": 729,
+   "trades": 104,
+   "avg_r": -0.065,
+   "shrunk_r": -0.039,
+   "setups_allowed": 693,
    "setups_total": 1458,
    "setups_allowed_yesterday": 729
   },
   "vwap": {
-   "trades": 2274,
-   "avg_r": -0.36,
-   "shrunk_r": -0.348,
+   "trades": 2306,
+   "avg_r": -0.354,
+   "shrunk_r": -0.343,
    "setups_allowed": 0,
    "setups_total": 1458,
    "setups_allowed_yesterday": 0
   },
   "trap90": {
-   "trades": 1511,
-   "avg_r": -0.105,
-   "shrunk_r": -0.1,
+   "trades": 1539,
+   "avg_r": -0.102,
+   "shrunk_r": -0.098,
    "setups_allowed": 0,
    "setups_total": 1458,
    "setups_allowed_yesterday": 0
   }
  },
  "lessons": [
-  "orb15 tight stop: -0.39 R a trade over 860 trades (strategy average -0.22 R) -> avoid",
+  "orb15 tight stop: -0.40 R a trade over 861 trades (strategy average -0.23 R) -> avoid",
   "orb60 tight stop: -0.40 R a trade over 381 trades (strategy average -0.17 R) -> avoid",
-  "orb30_2r with market: +0.02 R a trade over 1337 trades (strategy average -0.08 R) -> better than usual",
-  "orb60 with market: -0.06 R a trade over 1303 trades (strategy average -0.17 R) -> better than usual",
-  "vwap normal stop: -0.23 R a trade over 750 trades (strategy average -0.36 R) -> better than usual",
-  "vwap against market: -0.53 R a trade over 400 trades (strategy average -0.36 R) -> avoid",
-  "vwap tight stop: -0.43 R a trade over 1503 trades (strategy average -0.36 R) -> avoid",
-  "orb60 flat market: -0.25 R a trade over 1304 trades (strategy average -0.17 R) -> avoid",
-  "orb30_2r against market: -0.27 R a trade over 325 trades (strategy average -0.08 R) -> avoid",
-  "orb60 wide stop: -0.02 R a trade over 495 trades (strategy average -0.17 R) -> better than usual",
-  "orb15 wide stop: -0.04 R a trade over 305 trades (strategy average -0.22 R) -> better than usual",
-  "orb30_2r normal stop: -0.14 R a trade over 1405 trades (strategy average -0.08 R) -> avoid"
+  "orb30_2r with market: +0.02 R a trade over 1366 trades (strategy average -0.08 R) -> better than usual",
+  "orb60 with market: -0.07 R a trade over 1339 trades (strategy average -0.17 R) -> better than usual",
+  "vwap against market: -0.52 R a trade over 413 trades (strategy average -0.35 R) -> avoid",
+  "orb30_2r against market: -0.27 R a trade over 335 trades (strategy average -0.08 R) -> avoid",
+  "vwap tight stop: -0.42 R a trade over 1513 trades (strategy average -0.35 R) -> avoid",
+  "vwap normal stop: -0.23 R a trade over 772 trades (strategy average -0.35 R) -> better than usual",
+  "orb60 flat market: -0.25 R a trade over 1305 trades (strategy average -0.17 R) -> avoid",
+  "orb60 wide stop: -0.03 R a trade over 509 trades (strategy average -0.17 R) -> better than usual",
+  "orb15 wide stop: -0.04 R a trade over 316 trades (strategy average -0.23 R) -> better than usual",
+  "orb30_2r normal stop: -0.14 R a trade over 1407 trades (strategy average -0.08 R) -> avoid"
  ],
  "changes": [
-  "No change in what it would take tomorrow."
+  "orb15: now takes 27 of 1458 setups (was 33)",
+  "orb30_2r: now takes 105 of 1458 setups (was 113)",
+  "orb60: now takes 47 of 1458 setups (was 54)",
+  "gap_go: now takes 24 of 1458 setups (was 36)",
+  "gap_fade: now takes 693 of 1458 setups (was 729)"
  ],
  "last_day": {
-  "date": "2026-11-23",
-  "signals": 165,
-  "approved": 49,
+  "date": "2026-11-25",
+  "signals": 216,
+  "approved": 6,
   "learner_trades": 3,
-  "learner_net": 32,
-  "every_signal_net": -931
+  "learner_net": 219,
+  "every_signal_net": -584
  },
  "nse": {
   "facts": [
    "delivery",
    "breadth"
   ],
-  "trades_with_nse_facts": 13609,
-  "trades": 13609,
-  "last_file": "2026-11-23"
+  "trades_with_nse_facts": 13825,
+  "trades": 13825,
+  "last_file": "2026-11-25"
  },
  "walk_forward": {
-  "days": 52,
+  "days": 53,
   "learner": {
-   "trades": 96,
-   "win_rate": 44.8,
-   "expectancy_rs": -71.4,
-   "expectancy_r": -0.163,
-   "t_stat": -2.06,
-   "total_net": -6853.0,
+   "trades": 99,
+   "win_rate": 45.5,
+   "expectancy_rs": -67.0,
+   "expectancy_r": -0.153,
+   "t_stat": -1.98,
+   "total_net": -6634.0,
    "max_drawdown": -9443.0
   },
   "every_signal": {
-   "trades": 156,
-   "win_rate": 69.9,
-   "expectancy_rs": -87.2,
-   "expectancy_r": -0.209,
-   "t_stat": -4.04,
-   "total_net": -13597.0,
-   "max_drawdown": -13598.0
+   "trades": 159,
+   "win_rate": 69.8,
+   "expectancy_rs": -89.2,
+   "expectancy_r": -0.213,
+   "t_stat": -4.15,
+   "total_net": -14181.0,
+   "max_drawdown": -14185.0
   },
   "without_nse": {
-   "trades": 102,
-   "win_rate": 40.2,
-   "expectancy_rs": -72.8,
-   "expectancy_r": -0.162,
-   "t_stat": -2.15,
-   "total_net": -7421.0,
+   "trades": 104,
+   "win_rate": 40.4,
+   "expectancy_rs": -73.2,
+   "expectancy_r": -0.163,
+   "t_stat": -2.2,
+   "total_net": -7617.0,
    "max_drawdown": -11085.0
   },
   "by_day": [
-   {
-    "date": "2026-10-09",
-    "signals": 195,
-    "approved": 0,
-    "learner_trades": 0,
-    "learner_net": 0,
-    "every_signal_net": -451
-   },
    {
     "date": "2026-10-12",
     "signals": 198,
@@ -364,6 +360,14 @@
     "learner_trades": 3,
     "learner_net": 32,
     "every_signal_net": -931
+   },
+   {
+    "date": "2026-11-25",
+    "signals": 216,
+    "approved": 6,
+    "learner_trades": 3,
+    "learner_net": 219,
+    "every_signal_net": -584
    }
   ]
  },
@@ -375,7 +379,7 @@
    "min_edge_r": 0.05,
    "warmup_days": 20
   },
-  "days": 71,
+  "days": 72,
   "facts": [
    "side",
    "time",
@@ -387,92 +391,92 @@
   ],
   "strategies": {
    "trap90": {
-    "n": 1511,
-    "raw_r": -0.105,
-    "r": -0.1,
+    "n": 1539,
+    "raw_r": -0.102,
+    "r": -0.098,
     "cells": {
      "side": {
       "long": {
-       "n": 1511,
-       "raw_r": -0.105,
-       "r": -0.105,
-       "delta": -0.005
+       "n": 1539,
+       "raw_r": -0.102,
+       "r": -0.102,
+       "delta": -0.004
       }
      },
      "time": {
       "before 10:30": {
-       "n": 1511,
-       "raw_r": -0.105,
-       "r": -0.105,
-       "delta": -0.005
+       "n": 1539,
+       "raw_r": -0.102,
+       "r": -0.102,
+       "delta": -0.004
       }
      },
      "market": {
       "against market": {
        "n": 144,
        "raw_r": -0.068,
-       "r": -0.079,
-       "delta": 0.021
+       "r": -0.078,
+       "delta": 0.02
       },
       "flat market": {
-       "n": 984,
-       "raw_r": -0.113,
-       "r": -0.112,
-       "delta": -0.012
+       "n": 1012,
+       "raw_r": -0.108,
+       "r": -0.107,
+       "delta": -0.01
       },
       "with market": {
        "n": 383,
        "raw_r": -0.1,
-       "r": -0.1,
-       "delta": 0.0
+       "r": -0.099,
+       "delta": -0.002
       }
      },
      "gap": {
       "no gap": {
-       "n": 937,
-       "raw_r": -0.121,
-       "r": -0.119,
-       "delta": -0.019
+       "n": 946,
+       "raw_r": -0.119,
+       "r": -0.117,
+       "delta": -0.02
       },
       "with gap": {
-       "n": 287,
-       "raw_r": -0.081,
-       "r": -0.085,
-       "delta": 0.015
+       "n": 305,
+       "raw_r": -0.074,
+       "r": -0.079,
+       "delta": 0.019
       },
       "against gap": {
-       "n": 287,
-       "raw_r": -0.082,
-       "r": -0.085,
-       "delta": 0.015
+       "n": 288,
+       "raw_r": -0.081,
+       "r": -0.084,
+       "delta": 0.013
       }
      },
      "stop": {
       "wide stop": {
-       "n": 1511,
-       "raw_r": -0.105,
-       "r": -0.105,
-       "delta": -0.005
+       "n": 1539,
+       "raw_r": -0.102,
+       "r": -0.102,
+       "delta": -0.004
       }
      },
      "delivery": {
       "after high delivery": {
-       "n": 121,
-       "raw_r": -0.068,
-       "r": -0.08,
+       "n": 124,
+       "raw_r": -0.065,
+       "r": -0.077,
        "delta": 0.02
       },
       "after usual delivery": {
-       "n": 1254,
-       "raw_r": -0.108,
-       "r": -0.108,
-       "delta": -0.008
+       "n": 1278,
+       "raw_r": -0.105,
+       "r": -0.105,
+       "delta": -0.007
       },
       "after low delivery": {
-       "n": 136,
-       "raw_r": -0.106,
-       "r": -0.104,
-       "delta": -0.004
+       "n": 137,
+       "raw_r": -0.105,
+       "r": -0.103,
+       "delta": -0.005
       }
      },
      "breadth": {
@@ -480,140 +484,140 @@
        "n": 607,
        "raw_r": -0.079,
        "r": -0.081,
-       "delta": 0.019
+       "delta": 0.017
       },
       "against yesterday's market": {
-       "n": 538,
-       "raw_r": -0.125,
-       "r": -0.122,
-       "delta": -0.022
+       "n": 566,
+       "raw_r": -0.116,
+       "r": -0.114,
+       "delta": -0.016
       },
       "with yesterday's market": {
        "n": 366,
        "raw_r": -0.116,
-       "r": -0.114,
-       "delta": -0.013
+       "r": -0.113,
+       "delta": -0.016
       }
      }
     }
    },
    "orb15": {
-    "n": 3358,
-    "raw_r": -0.224,
-    "r": -0.219,
+    "n": 3406,
+    "raw_r": -0.227,
+    "r": -0.222,
     "cells": {
      "side": {
       "short": {
-       "n": 1810,
-       "raw_r": -0.231,
-       "r": -0.231,
-       "delta": -0.011
+       "n": 1824,
+       "raw_r": -0.237,
+       "r": -0.236,
+       "delta": -0.015
       },
       "long": {
-       "n": 1548,
-       "raw_r": -0.216,
-       "r": -0.217,
-       "delta": 0.003
+       "n": 1582,
+       "raw_r": -0.215,
+       "r": -0.216,
+       "delta": 0.006
       }
      },
      "time": {
       "before 10:30": {
-       "n": 2557,
-       "raw_r": -0.232,
-       "r": -0.232,
+       "n": 2590,
+       "raw_r": -0.234,
+       "r": -0.234,
        "delta": -0.012
       },
       "10:30-13:00": {
-       "n": 681,
-       "raw_r": -0.208,
-       "r": -0.209,
+       "n": 696,
+       "raw_r": -0.211,
+       "r": -0.212,
        "delta": 0.01
       },
       "after 13:00": {
        "n": 120,
        "raw_r": -0.144,
-       "r": -0.173,
-       "delta": 0.047
+       "r": -0.174,
+       "delta": 0.048
       }
      },
      "market": {
       "with market": {
-       "n": 1266,
-       "raw_r": -0.169,
-       "r": -0.171,
+       "n": 1294,
+       "raw_r": -0.171,
+       "r": -0.174,
        "delta": 0.048
       },
       "against market": {
-       "n": 311,
-       "raw_r": -0.275,
-       "r": -0.265,
-       "delta": -0.046
+       "n": 318,
+       "raw_r": -0.291,
+       "r": -0.278,
+       "delta": -0.057
       },
       "flat market": {
-       "n": 1781,
-       "raw_r": -0.258,
+       "n": 1794,
+       "raw_r": -0.259,
        "r": -0.257,
-       "delta": -0.037
+       "delta": -0.036
       }
      },
      "gap": {
       "no gap": {
-       "n": 2177,
+       "n": 2192,
        "raw_r": -0.23,
        "r": -0.23,
-       "delta": -0.011
+       "delta": -0.008
       },
       "against gap": {
-       "n": 617,
-       "raw_r": -0.173,
-       "r": -0.178,
-       "delta": 0.041
+       "n": 630,
+       "raw_r": -0.186,
+       "r": -0.19,
+       "delta": 0.032
       },
       "with gap": {
-       "n": 564,
-       "raw_r": -0.258,
+       "n": 584,
+       "raw_r": -0.257,
        "r": -0.253,
-       "delta": -0.034
+       "delta": -0.031
       }
      },
      "stop": {
       "normal stop": {
-       "n": 2193,
-       "raw_r": -0.195,
-       "r": -0.196,
-       "delta": 0.024
+       "n": 2229,
+       "raw_r": -0.199,
+       "r": -0.2,
+       "delta": 0.022
       },
       "tight stop": {
-       "n": 860,
-       "raw_r": -0.393,
-       "r": -0.378,
+       "n": 861,
+       "raw_r": -0.395,
+       "r": -0.379,
        "delta": -0.158
       },
       "wide stop": {
-       "n": 305,
-       "raw_r": -0.035,
-       "r": -0.068,
-       "delta": 0.151
+       "n": 316,
+       "raw_r": -0.04,
+       "r": -0.072,
+       "delta": 0.15
       }
      },
      "delivery": {
       "after high delivery": {
-       "n": 242,
-       "raw_r": -0.346,
-       "r": -0.316,
-       "delta": -0.097
+       "n": 246,
+       "raw_r": -0.33,
+       "r": -0.305,
+       "delta": -0.083
       },
       "after usual delivery": {
-       "n": 2851,
-       "raw_r": -0.22,
-       "r": -0.22,
-       "delta": -0.001
+       "n": 2893,
+       "raw_r": -0.225,
+       "r": -0.225,
+       "delta": -0.003
       },
       "after low delivery": {
-       "n": 265,
-       "raw_r": -0.157,
-       "r": -0.17,
-       "delta": 0.049
+       "n": 267,
+       "raw_r": -0.155,
+       "r": -0.169,
+       "delta": 0.053
       }
      },
      "breadth": {
@@ -621,140 +625,140 @@
        "n": 1327,
        "raw_r": -0.26,
        "r": -0.258,
-       "delta": -0.038
+       "delta": -0.036
       },
       "with yesterday's market": {
-       "n": 1124,
-       "raw_r": -0.224,
-       "r": -0.224,
-       "delta": -0.004
+       "n": 1138,
+       "raw_r": -0.233,
+       "r": -0.232,
+       "delta": -0.01
       },
       "against yesterday's market": {
-       "n": 907,
+       "n": 941,
        "raw_r": -0.177,
        "r": -0.18,
-       "delta": 0.04
+       "delta": 0.042
       }
      }
     }
    },
    "orb30_2r": {
-    "n": 3197,
-    "raw_r": -0.077,
-    "r": -0.076,
+    "n": 3244,
+    "raw_r": -0.081,
+    "r": -0.079,
     "cells": {
      "side": {
       "short": {
-       "n": 1684,
-       "raw_r": -0.041,
-       "r": -0.043,
+       "n": 1698,
+       "raw_r": -0.044,
+       "r": -0.045,
        "delta": 0.033
       },
       "long": {
-       "n": 1513,
-       "raw_r": -0.115,
-       "r": -0.114,
+       "n": 1546,
+       "raw_r": -0.118,
+       "r": -0.116,
        "delta": -0.038
       }
      },
      "time": {
       "before 10:30": {
-       "n": 1933,
-       "raw_r": -0.054,
-       "r": -0.055,
-       "delta": 0.021
+       "n": 1954,
+       "raw_r": -0.056,
+       "r": -0.057,
+       "delta": 0.022
       },
       "10:30-13:00": {
-       "n": 1070,
-       "raw_r": -0.119,
-       "r": -0.116,
-       "delta": -0.04
+       "n": 1095,
+       "raw_r": -0.123,
+       "r": -0.121,
+       "delta": -0.042
       },
       "after 13:00": {
-       "n": 194,
-       "raw_r": -0.088,
+       "n": 195,
+       "raw_r": -0.087,
        "r": -0.085,
-       "delta": -0.009
+       "delta": -0.006
       }
      },
      "market": {
       "with market": {
-       "n": 1337,
-       "raw_r": 0.024,
-       "r": 0.019,
-       "delta": 0.095
+       "n": 1366,
+       "raw_r": 0.018,
+       "r": 0.013,
+       "delta": 0.092
       },
       "against market": {
-       "n": 325,
-       "raw_r": -0.265,
-       "r": -0.232,
+       "n": 335,
+       "raw_r": -0.266,
+       "r": -0.234,
        "delta": -0.156
       },
       "flat market": {
-       "n": 1535,
-       "raw_r": -0.135,
-       "r": -0.132,
-       "delta": -0.056
+       "n": 1543,
+       "raw_r": -0.136,
+       "r": -0.133,
+       "delta": -0.054
       }
      },
      "gap": {
       "no gap": {
-       "n": 2069,
+       "n": 2084,
        "raw_r": -0.093,
-       "r": -0.092,
-       "delta": -0.016
+       "r": -0.093,
+       "delta": -0.014
       },
       "against gap": {
-       "n": 601,
-       "raw_r": 0.002,
-       "r": -0.006,
-       "delta": 0.07
+       "n": 614,
+       "raw_r": -0.002,
+       "r": -0.01,
+       "delta": 0.069
       },
       "with gap": {
-       "n": 527,
-       "raw_r": -0.113,
-       "r": -0.109,
-       "delta": -0.033
+       "n": 546,
+       "raw_r": -0.124,
+       "r": -0.119,
+       "delta": -0.04
       }
      },
      "stop": {
       "normal stop": {
-       "n": 1405,
-       "raw_r": -0.141,
-       "r": -0.137,
-       "delta": -0.061
+       "n": 1407,
+       "raw_r": -0.142,
+       "r": -0.139,
+       "delta": -0.06
       },
       "wide stop": {
-       "n": 1766,
-       "raw_r": -0.03,
-       "r": -0.032,
-       "delta": 0.044
+       "n": 1811,
+       "raw_r": -0.036,
+       "r": -0.037,
+       "delta": 0.041
       },
       "tight stop": {
        "n": 26,
        "raw_r": -0.435,
-       "r": -0.153,
+       "r": -0.155,
        "delta": 0.0
       }
      },
      "delivery": {
       "after high delivery": {
-       "n": 230,
-       "raw_r": -0.17,
-       "r": -0.147,
-       "delta": -0.072
+       "n": 234,
+       "raw_r": -0.177,
+       "r": -0.153,
+       "delta": -0.074
       },
       "after usual delivery": {
-       "n": 2712,
-       "raw_r": -0.067,
-       "r": -0.067,
-       "delta": 0.009
+       "n": 2753,
+       "raw_r": -0.07,
+       "r": -0.07,
+       "delta": 0.008
       },
       "after low delivery": {
-       "n": 255,
-       "raw_r": -0.106,
+       "n": 257,
+       "raw_r": -0.104,
        "r": -0.099,
-       "delta": -0.023
+       "delta": -0.02
       }
      },
      "breadth": {
@@ -762,140 +766,140 @@
        "n": 1269,
        "raw_r": -0.116,
        "r": -0.113,
-       "delta": -0.038
+       "delta": -0.035
       },
       "with yesterday's market": {
-       "n": 1023,
-       "raw_r": -0.018,
-       "r": -0.022,
-       "delta": 0.054
+       "n": 1037,
+       "raw_r": -0.023,
+       "r": -0.026,
+       "delta": 0.052
       },
       "against yesterday's market": {
-       "n": 905,
-       "raw_r": -0.097,
-       "r": -0.095,
-       "delta": -0.019
+       "n": 938,
+       "raw_r": -0.102,
+       "r": -0.1,
+       "delta": -0.021
       }
      }
     }
    },
    "orb60": {
-    "n": 2938,
-    "raw_r": -0.168,
-    "r": -0.164,
+    "n": 2983,
+    "raw_r": -0.169,
+    "r": -0.165,
     "cells": {
      "side": {
       "short": {
-       "n": 1604,
-       "raw_r": -0.132,
+       "n": 1613,
+       "raw_r": -0.131,
        "r": -0.133,
-       "delta": 0.031
+       "delta": 0.032
       },
       "long": {
-       "n": 1334,
-       "raw_r": -0.21,
-       "r": -0.207,
-       "delta": -0.043
+       "n": 1370,
+       "raw_r": -0.211,
+       "r": -0.209,
+       "delta": -0.044
       }
      },
      "time": {
       "before 10:30": {
-       "n": 771,
-       "raw_r": -0.188,
-       "r": -0.186,
-       "delta": -0.022
+       "n": 778,
+       "raw_r": -0.182,
+       "r": -0.181,
+       "delta": -0.015
       },
       "10:30-13:00": {
-       "n": 1837,
-       "raw_r": -0.162,
-       "r": -0.162,
-       "delta": 0.002
+       "n": 1874,
+       "raw_r": -0.166,
+       "r": -0.166,
+       "delta": -0.001
       },
       "after 13:00": {
-       "n": 330,
+       "n": 331,
        "raw_r": -0.156,
-       "r": -0.158,
-       "delta": 0.006
+       "r": -0.157,
+       "delta": 0.008
       }
      },
      "market": {
       "with market": {
-       "n": 1303,
-       "raw_r": -0.063,
-       "r": -0.068,
-       "delta": 0.096
+       "n": 1339,
+       "raw_r": -0.07,
+       "r": -0.075,
+       "delta": 0.09
       },
       "against market": {
-       "n": 331,
-       "raw_r": -0.306,
-       "r": -0.282,
-       "delta": -0.117
+       "n": 339,
+       "raw_r": -0.298,
+       "r": -0.275,
+       "delta": -0.11
       },
       "flat market": {
-       "n": 1304,
+       "n": 1305,
        "raw_r": -0.248,
        "r": -0.243,
-       "delta": -0.079
+       "delta": -0.078
       }
      },
      "gap": {
       "no gap": {
-       "n": 1923,
-       "raw_r": -0.169,
-       "r": -0.169,
-       "delta": -0.005
+       "n": 1938,
+       "raw_r": -0.166,
+       "r": -0.166,
+       "delta": -0.0
       },
       "against gap": {
-       "n": 535,
-       "raw_r": -0.126,
-       "r": -0.131,
-       "delta": 0.033
+       "n": 545,
+       "raw_r": -0.13,
+       "r": -0.134,
+       "delta": 0.031
       },
       "with gap": {
-       "n": 480,
-       "raw_r": -0.21,
-       "r": -0.205,
-       "delta": -0.04
+       "n": 500,
+       "raw_r": -0.223,
+       "r": -0.216,
+       "delta": -0.051
       }
      },
      "stop": {
       "normal stop": {
-       "n": 2062,
-       "raw_r": -0.171,
+       "n": 2093,
+       "raw_r": -0.172,
        "r": -0.171,
        "delta": -0.006
       },
       "wide stop": {
-       "n": 495,
-       "raw_r": -0.021,
-       "r": -0.038,
-       "delta": 0.126
+       "n": 509,
+       "raw_r": -0.028,
+       "r": -0.044,
+       "delta": 0.121
       },
       "tight stop": {
        "n": 381,
        "raw_r": -0.397,
        "r": -0.354,
-       "delta": -0.19
+       "delta": -0.189
       }
      },
      "delivery": {
       "after usual delivery": {
-       "n": 2499,
-       "raw_r": -0.162,
-       "r": -0.162,
-       "delta": 0.002
+       "n": 2539,
+       "raw_r": -0.164,
+       "r": -0.164,
+       "delta": 0.001
       },
       "after high delivery": {
-       "n": 210,
-       "raw_r": -0.203,
-       "r": -0.193,
-       "delta": -0.028
+       "n": 214,
+       "raw_r": -0.201,
+       "r": -0.192,
+       "delta": -0.027
       },
       "after low delivery": {
-       "n": 229,
-       "raw_r": -0.202,
-       "r": -0.193,
-       "delta": -0.029
+       "n": 230,
+       "raw_r": -0.198,
+       "r": -0.19,
+       "delta": -0.025
       }
      },
      "breadth": {
@@ -903,256 +907,256 @@
        "n": 1168,
        "raw_r": -0.183,
        "r": -0.182,
-       "delta": -0.018
+       "delta": -0.017
       },
       "with yesterday's market": {
-       "n": 925,
-       "raw_r": -0.108,
-       "r": -0.112,
-       "delta": 0.052
+       "n": 934,
+       "raw_r": -0.107,
+       "r": -0.111,
+       "delta": 0.054
       },
       "against yesterday's market": {
-       "n": 845,
-       "raw_r": -0.216,
-       "r": -0.212,
-       "delta": -0.048
+       "n": 881,
+       "raw_r": -0.218,
+       "r": -0.214,
+       "delta": -0.049
       }
      }
     }
    },
    "vwap": {
-    "n": 2274,
-    "raw_r": -0.36,
-    "r": -0.348,
+    "n": 2306,
+    "raw_r": -0.354,
+    "r": -0.343,
     "cells": {
      "side": {
       "long": {
-       "n": 1047,
-       "raw_r": -0.404,
-       "r": -0.401,
-       "delta": -0.052
+       "n": 1066,
+       "raw_r": -0.391,
+       "r": -0.388,
+       "delta": -0.045
       },
       "short": {
-       "n": 1227,
-       "raw_r": -0.319,
+       "n": 1240,
+       "raw_r": -0.32,
        "r": -0.321,
-       "delta": 0.027
+       "delta": 0.022
       }
      },
      "time": {
       "before 10:30": {
-       "n": 365,
-       "raw_r": -0.286,
+       "n": 371,
+       "raw_r": -0.287,
        "r": -0.296,
-       "delta": 0.052
+       "delta": 0.047
       },
       "10:30-13:00": {
-       "n": 1590,
-       "raw_r": -0.392,
-       "r": -0.39,
-       "delta": -0.042
+       "n": 1609,
+       "raw_r": -0.385,
+       "r": -0.384,
+       "delta": -0.041
       },
       "after 13:00": {
-       "n": 319,
-       "raw_r": -0.288,
-       "r": -0.299,
-       "delta": 0.049
+       "n": 326,
+       "raw_r": -0.279,
+       "r": -0.291,
+       "delta": 0.052
       }
      },
      "market": {
       "against market": {
-       "n": 400,
-       "raw_r": -0.525,
-       "r": -0.499,
-       "delta": -0.15
+       "n": 413,
+       "raw_r": -0.517,
+       "r": -0.492,
+       "delta": -0.149
       },
       "with market": {
-       "n": 857,
-       "raw_r": -0.277,
-       "r": -0.282,
-       "delta": 0.066
+       "n": 873,
+       "raw_r": -0.269,
+       "r": -0.274,
+       "delta": 0.069
       },
       "flat market": {
-       "n": 1017,
-       "raw_r": -0.364,
-       "r": -0.363,
-       "delta": -0.015
+       "n": 1020,
+       "raw_r": -0.361,
+       "r": -0.359,
+       "delta": -0.017
       }
      },
      "gap": {
       "no gap": {
-       "n": 1472,
-       "raw_r": -0.361,
-       "r": -0.361,
-       "delta": -0.012
+       "n": 1484,
+       "raw_r": -0.357,
+       "r": -0.357,
+       "delta": -0.014
       },
       "against gap": {
-       "n": 362,
+       "n": 369,
        "raw_r": -0.316,
-       "r": -0.321,
-       "delta": 0.027
+       "r": -0.32,
+       "delta": 0.023
       },
       "with gap": {
-       "n": 440,
-       "raw_r": -0.391,
-       "r": -0.385,
-       "delta": -0.036
+       "n": 453,
+       "raw_r": -0.374,
+       "r": -0.37,
+       "delta": -0.027
       }
      },
      "stop": {
       "tight stop": {
-       "n": 1503,
-       "raw_r": -0.429,
-       "r": -0.425,
-       "delta": -0.077
+       "n": 1513,
+       "raw_r": -0.42,
+       "r": -0.416,
+       "delta": -0.073
       },
       "normal stop": {
-       "n": 750,
-       "raw_r": -0.227,
-       "r": -0.237,
-       "delta": 0.111
+       "n": 772,
+       "raw_r": -0.232,
+       "r": -0.241,
+       "delta": 0.102
       },
       "wide stop": {
        "n": 21,
        "raw_r": -0.509,
-       "r": -0.384,
+       "r": -0.38,
        "delta": 0.0
       }
      },
      "delivery": {
       "after high delivery": {
-       "n": 154,
-       "raw_r": -0.344,
-       "r": -0.346,
-       "delta": 0.003
+       "n": 157,
+       "raw_r": -0.306,
+       "r": -0.318,
+       "delta": 0.024
       },
       "after usual delivery": {
-       "n": 1933,
-       "raw_r": -0.347,
-       "r": -0.348,
-       "delta": 0.001
+       "n": 1961,
+       "raw_r": -0.343,
+       "r": -0.343,
+       "delta": -0.0
       },
       "after low delivery": {
-       "n": 187,
-       "raw_r": -0.492,
-       "r": -0.452,
-       "delta": -0.104
+       "n": 188,
+       "raw_r": -0.498,
+       "r": -0.455,
+       "delta": -0.112
       }
      },
      "breadth": {
       "after a mixed market": {
        "n": 906,
        "raw_r": -0.303,
-       "r": -0.307,
-       "delta": 0.041
+       "r": -0.306,
+       "delta": 0.036
       },
       "with yesterday's market": {
-       "n": 750,
-       "raw_r": -0.376,
-       "r": -0.374,
-       "delta": -0.025
+       "n": 763,
+       "raw_r": -0.375,
+       "r": -0.372,
+       "delta": -0.03
       },
       "against yesterday's market": {
-       "n": 618,
-       "raw_r": -0.414,
-       "r": -0.407,
-       "delta": -0.059
+       "n": 637,
+       "raw_r": -0.392,
+       "r": -0.387,
+       "delta": -0.045
       }
      }
     }
    },
    "gap_go": {
-    "n": 233,
-    "raw_r": -0.258,
-    "r": -0.199,
+    "n": 243,
+    "raw_r": -0.249,
+    "r": -0.194,
     "cells": {
      "side": {
       "long": {
-       "n": 107,
-       "raw_r": 0.018,
-       "r": -0.065,
-       "delta": 0.134
+       "n": 117,
+       "raw_r": 0.005,
+       "r": -0.066,
+       "delta": 0.128
       },
       "short": {
        "n": 126,
        "raw_r": -0.506,
-       "r": -0.396,
-       "delta": -0.197
+       "r": -0.393,
+       "delta": -0.199
       }
      },
      "time": {
       "before 10:30": {
-       "n": 233,
-       "raw_r": -0.258,
-       "r": -0.244,
-       "delta": -0.045
+       "n": 243,
+       "raw_r": -0.249,
+       "r": -0.237,
+       "delta": -0.043
       }
      },
      "market": {
       "flat market": {
-       "n": 161,
-       "raw_r": -0.245,
-       "r": -0.231,
-       "delta": -0.032
+       "n": 171,
+       "raw_r": -0.233,
+       "r": -0.222,
+       "delta": -0.028
       },
       "with market": {
        "n": 47,
        "raw_r": -0.12,
-       "r": -0.166,
-       "delta": 0.033
+       "r": -0.163,
+       "delta": 0.031
       },
       "against market": {
        "n": 25,
        "raw_r": -0.591,
-       "r": -0.308,
+       "r": -0.303,
        "delta": 0.0
       }
      },
      "gap": {
       "with gap": {
-       "n": 233,
-       "raw_r": -0.258,
-       "r": -0.244,
-       "delta": -0.045
+       "n": 243,
+       "raw_r": -0.249,
+       "r": -0.237,
+       "delta": -0.043
       }
      },
      "stop": {
       "wide stop": {
-       "n": 97,
-       "raw_r": -0.054,
-       "r": -0.114,
-       "delta": 0.085
+       "n": 103,
+       "raw_r": -0.078,
+       "r": -0.124,
+       "delta": 0.07
       },
       "normal stop": {
-       "n": 97,
-       "raw_r": -0.341,
-       "r": -0.282,
-       "delta": -0.084
+       "n": 101,
+       "raw_r": -0.307,
+       "r": -0.262,
+       "delta": -0.068
       },
       "tight stop": {
        "n": 39,
        "raw_r": -0.557,
-       "r": -0.328,
+       "r": -0.324,
        "delta": 0.0
       }
      },
      "delivery": {
       "after usual delivery": {
-       "n": 183,
-       "raw_r": -0.287,
-       "r": -0.263,
-       "delta": -0.064
+       "n": 192,
+       "raw_r": -0.268,
+       "r": -0.249,
+       "delta": -0.055
       },
       "after high delivery": {
        "n": 24,
        "raw_r": -0.066,
-       "r": -0.164,
+       "r": -0.161,
        "delta": 0.0
       },
       "after low delivery": {
-       "n": 26,
-       "raw_r": -0.223,
-       "r": -0.205,
+       "n": 27,
+       "raw_r": -0.268,
+       "r": -0.215,
        "delta": 0.0
       }
      },
@@ -1160,116 +1164,116 @@
       "after a mixed market": {
        "n": 57,
        "raw_r": -0.047,
-       "r": -0.129,
-       "delta": 0.07
+       "r": -0.127,
+       "delta": 0.067
       },
       "with yesterday's market": {
        "n": 91,
        "raw_r": -0.308,
-       "r": -0.261,
-       "delta": -0.062
+       "r": -0.258,
+       "delta": -0.065
       },
       "against yesterday's market": {
-       "n": 85,
-       "raw_r": -0.352,
-       "r": -0.283,
-       "delta": -0.084
+       "n": 95,
+       "raw_r": -0.316,
+       "r": -0.265,
+       "delta": -0.071
       }
      }
     }
    },
    "gap_fade": {
-    "n": 98,
-    "raw_r": -0.056,
-    "r": -0.033,
+    "n": 104,
+    "raw_r": -0.065,
+    "r": -0.039,
     "cells": {
      "side": {
       "short": {
-       "n": 50,
-       "raw_r": -0.322,
-       "r": -0.157,
-       "delta": -0.124
+       "n": 56,
+       "raw_r": -0.302,
+       "r": -0.161,
+       "delta": -0.122
       },
       "long": {
        "n": 48,
        "raw_r": 0.248,
-       "r": 0.079,
-       "delta": 0.112
+       "r": 0.074,
+       "delta": 0.114
       }
      },
      "time": {
       "before 10:30": {
-       "n": 98,
-       "raw_r": -0.056,
-       "r": -0.046,
-       "delta": -0.013
+       "n": 104,
+       "raw_r": -0.065,
+       "r": -0.055,
+       "delta": -0.016
       }
      },
      "market": {
       "flat market": {
-       "n": 75,
-       "raw_r": -0.02,
-       "r": -0.026,
-       "delta": 0.007
+       "n": 81,
+       "raw_r": -0.036,
+       "r": -0.037,
+       "delta": 0.002
       },
       "against market": {
        "n": 12,
        "raw_r": -0.738,
-       "r": -0.139,
+       "r": -0.143,
        "delta": 0.0
       },
       "with market": {
        "n": 11,
        "raw_r": 0.407,
-       "r": 0.034,
+       "r": 0.028,
        "delta": 0.0
       }
      },
      "gap": {
       "against gap": {
-       "n": 98,
-       "raw_r": -0.056,
-       "r": -0.046,
-       "delta": -0.013
+       "n": 104,
+       "raw_r": -0.065,
+       "r": -0.055,
+       "delta": -0.016
       }
      },
      "stop": {
       "tight stop": {
        "n": 25,
        "raw_r": -0.862,
-       "r": -0.249,
+       "r": -0.252,
        "delta": 0.0
       },
       "normal stop": {
-       "n": 60,
-       "raw_r": 0.208,
-       "r": 0.079,
-       "delta": 0.112
+       "n": 66,
+       "raw_r": 0.162,
+       "r": 0.06,
+       "delta": 0.099
       },
       "wide stop": {
        "n": 13,
        "raw_r": 0.228,
-       "r": 0.011,
+       "r": 0.005,
        "delta": 0.0
       }
      },
      "delivery": {
       "after usual delivery": {
-       "n": 76,
-       "raw_r": 0.021,
-       "r": -0.005,
-       "delta": 0.028
+       "n": 81,
+       "raw_r": -0.004,
+       "r": -0.02,
+       "delta": 0.019
       },
       "after low delivery": {
-       "n": 9,
-       "raw_r": -0.572,
-       "r": -0.096,
+       "n": 10,
+       "raw_r": -0.455,
+       "r": -0.094,
        "delta": 0.0
       },
       "after high delivery": {
        "n": 13,
        "raw_r": -0.146,
-       "r": -0.05,
+       "r": -0.055,
        "delta": 0.0
       }
      },
@@ -1277,19 +1281,19 @@
       "after a mixed market": {
        "n": 29,
        "raw_r": -0.081,
-       "r": -0.047,
+       "r": -0.051,
        "delta": 0.0
       },
       "with yesterday's market": {
-       "n": 33,
-       "raw_r": 0.247,
-       "r": 0.058,
+       "n": 39,
+       "raw_r": 0.163,
+       "r": 0.036,
        "delta": 0.0
       },
       "against yesterday's market": {
        "n": 36,
        "raw_r": -0.319,
-       "r": -0.13,
+       "r": -0.133,
        "delta": 0.0
       }
      }
