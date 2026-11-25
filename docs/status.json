@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 13:46 IST",
- "updated_ts": 1795594576,
+ "updated": "2026-11-25 13:56 IST",
+ "updated_ts": 1795595177,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -453,7 +453,6 @@
  ],
  "today_net": -487.0,
  "log": [
-  "11:20  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
   "11:25  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day",
   "11:30  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day",
   "11:30  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day",
@@ -512,7 +511,8 @@
   "13:10  CLOSE HCLTECH     target     @ 1364.30  net Rs +1243 [gap_fade] (charges 76)",
   "13:30  SKIP  CIPLA       vwap      VWAP reclaim: max 3 trades a day",
   "13:45  SKIP  TATACONSUM  vwap      VWAP reclaim: max 3 trades a day",
-  "13:45  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day"
+  "13:45  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day",
+  "13:50  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 276,
  "all_wins": 145,
