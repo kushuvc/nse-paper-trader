@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 11:51 IST",
- "updated_ts": 1795587676,
+ "updated": "2026-11-25 12:01 IST",
+ "updated_ts": 1795588277,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -426,10 +426,6 @@
  ],
  "today_net": -617.0,
  "log": [
-  "10:50  SKIP  EICHERMOT   orb60     ORB60 up: max 3 trades a day",
-  "10:50  SKIP  GRASIM      orb60     ORB60 up: max 3 trades a day",
-  "10:50  CLOSE ONGC        target     @ 224.30  net Rs +231 [vwap] (charges 83)",
-  "10:50  SKIP  ONGC        orb30_2r  ORB30 up: max 3 trades a day",
   "10:50  SKIP  ONGC        orb60     ORB60 up: max 3 trades a day",
   "10:50  SKIP  RELIANCE    orb15     ORB15 up: max 3 trades a day",
   "10:50  SKIP  SUNPHARMA   orb15     ORB15 up: max 3 trades a day",
@@ -485,7 +481,11 @@
   "11:50  CLOSE AXISBANK    target     @ 1445.20  net Rs +892 [gap_go] (charges 61)",
   "11:50  SKIP  BSE         orb60     ORB60 up: max 3 trades a day",
   "11:50  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day",
-  "11:50  SKIP  INFY        orb60     ORB60 down: max 3 trades a day"
+  "11:50  SKIP  INFY        orb60     ORB60 down: max 3 trades a day",
+  "11:55  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day",
+  "11:55  SKIP  JIOFIN      orb30_2r  ORB30 up: max 3 trades a day",
+  "11:55  SKIP  JIOFIN      orb60     ORB60 up: max 3 trades a day",
+  "12:00  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 273,
  "all_wins": 144,
