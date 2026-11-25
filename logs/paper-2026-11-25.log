@@ -107,3 +107,17 @@ NSE's own daily file: latest saved is 2026-11-23
 10:10  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day
 10:10  SKIP  MARUTI      orb15     ORB15 down: max 3 trades a day
 10:10  SKIP  MARUTI      orb30_2r  ORB30 down: max 3 trades a day
+10:15  SKIP  DRREDDY     orb15     ORB15 up: max 3 trades a day
+10:15  SKIP  DRREDDY     orb30_2r  ORB30 up: max 3 trades a day
+10:15  SKIP  TMPV        orb15     ORB15 down: max 3 trades a day
+10:15  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day
+10:20  OPEN  APOLLOHOSP  SHORT   10 @ 9230.00  stop 9268.50  target 9153.00  [vwap: VWAP loss]
+10:20  OPEN  CIPLA       BUY     34 @ 1431.50  stop 1417.20  target 1445.80  [orb60: ORB60 up]
+10:20  OPEN  HINDUNILVR  BUY     16 @ 2081.70  stop 2050.80  target 2112.60  [orb60: ORB60 up]
+10:20  OPEN  ITC         BUY    147 @ 307.20  stop 303.80  target 310.60  [orb60: ORB60 up]
+10:20  OPEN  ONGC        BUY    447 @ 223.51  stop 223.10  target 224.30  [vwap: VWAP reclaim]
+10:20  SKIP  POWERGRID   learner   via orb30_2r (expects +0.11R): already holding this stock
+10:20  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day
+10:20  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day
+10:20  OPEN  RELIANCE    BUY     46 @ 1380.70  stop 1370.00  target 1402.10  [vwap: VWAP reclaim]
+10:20  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day

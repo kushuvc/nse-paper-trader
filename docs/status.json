@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25 10:10 IST",
- "updated_ts": 1795581659,
+ "updated": "2026-11-25 10:21 IST",
+ "updated_ts": 1795582261,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -142,6 +142,72 @@
    "via": "orb30_2r",
    "setup": "short, before 10:30, flat market, against gap, wide stop, after usual delivery, with yesterday's market",
    "score": 0.099
+  },
+  "vwap|APOLLOHOSP": {
+   "strategy": "vwap",
+   "symbol": "APOLLOHOSP",
+   "side": -1,
+   "qty": 10,
+   "entry": 9230.0,
+   "stop": 9268.5,
+   "target": 9153.0,
+   "entry_time": "10:20",
+   "note": "VWAP loss"
+  },
+  "orb60|CIPLA": {
+   "strategy": "orb60",
+   "symbol": "CIPLA",
+   "side": 1,
+   "qty": 34,
+   "entry": 1431.5,
+   "stop": 1417.2,
+   "target": 1445.8,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
+  },
+  "orb60|HINDUNILVR": {
+   "strategy": "orb60",
+   "symbol": "HINDUNILVR",
+   "side": 1,
+   "qty": 16,
+   "entry": 2081.7,
+   "stop": 2050.8,
+   "target": 2112.6,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
+  },
+  "orb60|ITC": {
+   "strategy": "orb60",
+   "symbol": "ITC",
+   "side": 1,
+   "qty": 147,
+   "entry": 307.2,
+   "stop": 303.8,
+   "target": 310.6,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
+  },
+  "vwap|ONGC": {
+   "strategy": "vwap",
+   "symbol": "ONGC",
+   "side": 1,
+   "qty": 447,
+   "entry": 223.51,
+   "stop": 223.1,
+   "target": 224.3,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim"
+  },
+  "vwap|RELIANCE": {
+   "strategy": "vwap",
+   "symbol": "RELIANCE",
+   "side": 1,
+   "qty": 46,
+   "entry": 1380.7,
+   "stop": 1370.0,
+   "target": 1402.1,
+   "entry_time": "10:20",
+   "note": "VWAP reclaim"
   }
  },
  "closed": [
@@ -288,20 +354,6 @@
  ],
  "today_net": -1406.0,
  "log": [
-  "09:30  SKIP  TECHM       gap_fade  gap +1.9% fading: max 3 trades a day",
-  "09:30  SKIP  TRENT       trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  ULTRACEMCO  trap90    tiny target, wide stop: max 3 trades a day",
-  "09:35  CLOSE ADANIENT    target     @ 2719.65  net Rs +1 [trap90] (charges 35)",
-  "09:35  OPEN  ADANIENT    BUY     31 @ 2728.70  stop 2712.75  target 2744.60  [orb15: ORB15 up]",
-  "09:35  CLOSE ADANIPORTS  target     @ 1942.10  net Rs +1 [trap90] (charges 35)",
-  "09:35  OPEN  APOLLOHOSP  SHORT    5 @ 9189.50  stop 9289.25  target 9089.75  [orb15: ORB15 down]",
-  "09:35  OPEN  BAJAJFINSV  BUY     45 @ 1915.30  stop 1904.20  target 1926.40  [orb15: ORB15 up]",
-  "09:35  SKIP  COALINDIA   orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  NTPC        orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  NESTLEIND   orb15     ORB15 up: max 3 trades a day",
-  "09:35  SKIP  ONGC        orb15     ORB15 up: max 3 trades a day",
-  "09:35  OPEN  POWERGRID   BUY    178 @ 264.95  stop 262.15  target 267.70  [learner via orb15, expects +0.05R: long, before 10:30, with market, against gap, wide stop, after usual delivery, against yesterday's market]",
   "09:35  SKIP  POWERGRID   orb15     ORB15 up: max 3 trades a day",
   "09:35  SKIP  TATACONSUM  orb15     ORB15 up: max 3 trades a day",
   "09:40  CLOSE ADANIENT    stop       @ 2712.75  net Rs -605 [orb15] (charges 77)",
@@ -347,7 +399,21 @@
   "10:10  SKIP  HINDUNILVR  orb15     ORB15 up: max 3 trades a day",
   "10:10  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day",
   "10:10  SKIP  MARUTI      orb15     ORB15 down: max 3 trades a day",
-  "10:10  SKIP  MARUTI      orb30_2r  ORB30 down: max 3 trades a day"
+  "10:10  SKIP  MARUTI      orb30_2r  ORB30 down: max 3 trades a day",
+  "10:15  SKIP  DRREDDY     orb15     ORB15 up: max 3 trades a day",
+  "10:15  SKIP  DRREDDY     orb30_2r  ORB30 up: max 3 trades a day",
+  "10:15  SKIP  TMPV        orb15     ORB15 down: max 3 trades a day",
+  "10:15  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day",
+  "10:20  OPEN  APOLLOHOSP  SHORT   10 @ 9230.00  stop 9268.50  target 9153.00  [vwap: VWAP loss]",
+  "10:20  OPEN  CIPLA       BUY     34 @ 1431.50  stop 1417.20  target 1445.80  [orb60: ORB60 up]",
+  "10:20  OPEN  HINDUNILVR  BUY     16 @ 2081.70  stop 2050.80  target 2112.60  [orb60: ORB60 up]",
+  "10:20  OPEN  ITC         BUY    147 @ 307.20  stop 303.80  target 310.60  [orb60: ORB60 up]",
+  "10:20  OPEN  ONGC        BUY    447 @ 223.51  stop 223.10  target 224.30  [vwap: VWAP reclaim]",
+  "10:20  SKIP  POWERGRID   learner   via orb30_2r (expects +0.11R): already holding this stock",
+  "10:20  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day",
+  "10:20  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day",
+  "10:20  OPEN  RELIANCE    BUY     46 @ 1380.70  stop 1370.00  target 1402.10  [vwap: VWAP reclaim]",
+  "10:20  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 265,
  "all_wins": 139,
@@ -917,7 +983,7 @@
    "desc": "first-hour range breakout, stop at mid, 1R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 36,
    "all_wins": 17,
    "all_net": -5409
@@ -944,7 +1010,7 @@
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 36,
    "all_wins": 15,
    "all_net": -3277
