@@ -99,3 +99,14 @@ NSE's own daily file: latest saved is 2026-11-25
 10:20  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day
 10:20  OPEN  HDFCBANK    BUY     45 @ 863.25  stop 852.20  target 874.25  [orb60: ORB60 up]
 10:20  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day
+10:25  OPEN  APOLLOHOSP  SHORT   10 @ 9238.00  stop 9260.00  target 9194.00  [vwap: VWAP loss]
+10:25  CLOSE BSE         target     @ 3901.55  net Rs +1 [trap90] (charges 33)
+10:25  SKIP  BSE         orb15     ORB15 up: max 3 trades a day
+10:25  SKIP  BSE         orb30_2r  ORB30 up: max 3 trades a day
+10:25  SKIP  BSE         orb60     ORB60 up: max 3 trades a day
+10:30  SKIP  HCLTECH     orb60     ORB60 up: max 3 trades a day
+10:30  SKIP  M&M         orb15     ORB15 up: max 3 trades a day
+10:30  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day
+10:30  SKIP  M&M         orb60     ORB60 up: max 3 trades a day
+10:30  SKIP  NTPC        orb60     ORB60 up: max 3 trades a day
+10:30  SKIP  TATASTEEL   orb15     ORB15 up: max 3 trades a day
