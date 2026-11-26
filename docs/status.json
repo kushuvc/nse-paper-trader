@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 12:26 IST",
- "updated_ts": 1795676168,
+ "updated": "2026-11-26 12:36 IST",
+ "updated_ts": 1795676770,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -349,10 +349,6 @@
  ],
  "today_net": 1058.0,
  "log": [
-  "10:50  SKIP  ICICIBANK   vwap      VWAP loss: max 3 trades a day",
-  "10:50  SKIP  TECHM       orb60     ORB60 up: max 3 trades a day",
-  "10:50  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day",
-  "10:55  SKIP  COALINDIA   orb60     ORB60 up: max 3 trades a day",
   "10:55  CLOSE HINDALCO    target     @ 912.35  net Rs +636 [vwap] (charges 83)",
   "10:55  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day",
   "11:00  CLOSE ASIANPAINT  target     @ 2583.65  net Rs +378 [orb15] (charges 81)",
@@ -408,7 +404,11 @@
   "12:10  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day",
   "12:10  SKIP  LT          orb60     ORB60 up: max 3 trades a day",
   "12:10  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day",
-  "12:25  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day"
+  "12:25  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day",
+  "12:30  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day",
+  "12:30  SKIP  TATACONSUM  vwap      VWAP loss: max 3 trades a day",
+  "12:35  SKIP  COALINDIA   vwap      VWAP reclaim: max 3 trades a day",
+  "12:35  SKIP  INDIGO      vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 294,
  "all_wins": 158,
