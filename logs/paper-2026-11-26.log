@@ -167,3 +167,10 @@ NSE's own daily file: latest saved is 2026-11-25
 11:20  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day
 11:20  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day
 11:20  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day
+11:25  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day
+11:25  SKIP  TATACONSUM  vwap      VWAP loss: max 3 trades a day
+11:30  SKIP  ITC         vwap      VWAP loss: max 3 trades a day
+11:30  SKIP  INDIGO      orb30_2r  ORB30 down: max 3 trades a day
+11:30  SKIP  INDIGO      orb60     ORB60 down: max 3 trades a day
+11:30  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day
+11:30  CLOSE TCS         stop       @ 2552.00  net Rs -575 [vwap] (charges 82)
