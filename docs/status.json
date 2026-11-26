@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 10:51 IST",
- "updated_ts": 1795670471,
+ "updated": "2026-11-26 11:01 IST",
+ "updated_ts": 1795671073,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -56,17 +56,6 @@
    "target": 1173.5,
    "entry_time": "09:30",
    "note": "gap +1.9% and go"
-  },
-  "orb15|ASIANPAINT": {
-   "strategy": "orb15",
-   "symbol": "ASIANPAINT",
-   "side": -1,
-   "qty": 37,
-   "entry": 2597.1,
-   "stop": 2610.6,
-   "target": 2583.65,
-   "entry_time": "09:35",
-   "note": "ORB15 down"
   },
   "orb15|ETERNAL": {
    "strategy": "orb15",
@@ -137,17 +126,6 @@
    "entry_time": "10:20",
    "note": "ORB60 up"
   },
-  "orb60|DRREDDY": {
-   "strategy": "orb60",
-   "symbol": "DRREDDY",
-   "side": 1,
-   "qty": 64,
-   "entry": 1403.0,
-   "stop": 1395.25,
-   "target": 1410.75,
-   "entry_time": "10:20",
-   "note": "ORB60 up"
-  },
   "orb60|HDFCBANK": {
    "strategy": "orb60",
    "symbol": "HDFCBANK",
@@ -169,17 +147,6 @@
    "target": 9194.0,
    "entry_time": "10:25",
    "note": "VWAP loss"
-  },
-  "vwap|HINDALCO": {
-   "strategy": "vwap",
-   "symbol": "HINDALCO",
-   "side": 1,
-   "qty": 110,
-   "entry": 905.45,
-   "stop": 902.0,
-   "target": 912.35,
-   "entry_time": "10:35",
-   "note": "VWAP reclaim"
   },
   "vwap|TCS": {
    "strategy": "vwap",
@@ -273,16 +240,70 @@
    "net": 1.24,
    "r": 0.003,
    "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "HINDALCO",
+   "side": 1,
+   "qty": 110,
+   "entry": 905.45,
+   "stop": 902.0,
+   "target": 912.35,
+   "entry_time": "10:35",
+   "note": "VWAP reclaim",
+   "date": "2026-11-26",
+   "exit": 912.35,
+   "exit_time": "10:55",
+   "reason": "target",
+   "gross": 719.01,
+   "charges": 82.52,
+   "net": 636.49,
+   "r": 1.677,
+   "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "ASIANPAINT",
+   "side": -1,
+   "qty": 37,
+   "entry": 2597.1,
+   "stop": 2610.6,
+   "target": 2583.65,
+   "entry_time": "09:35",
+   "note": "ORB15 down",
+   "date": "2026-11-26",
+   "exit": 2583.65,
+   "exit_time": "11:00",
+   "reason": "target",
+   "gross": 459.31,
+   "charges": 81.03,
+   "net": 378.28,
+   "r": 0.757,
+   "mode": "live"
+  },
+  {
+   "strategy": "orb60",
+   "symbol": "DRREDDY",
+   "side": 1,
+   "qty": 64,
+   "entry": 1403.0,
+   "stop": 1395.25,
+   "target": 1410.75,
+   "entry_time": "10:20",
+   "note": "ORB60 up",
+   "date": "2026-11-26",
+   "exit": 1395.25,
+   "exit_time": "11:00",
+   "reason": "stop",
+   "gross": -531.82,
+   "charges": 78.7,
+   "net": -610.52,
+   "r": -1.231,
+   "mode": "live"
   }
  ],
- "today_net": 272.0,
+ "today_net": 676.0,
  "log": [
-  "10:05  SKIP  SUNPHARMA   orb30_2r  ORB30 up: max 3 trades a day",
-  "10:05  SKIP  TECHM       orb15     ORB15 up: max 3 trades a day",
-  "10:05  SKIP  TECHM       orb30_2r  ORB30 up: max 3 trades a day",
-  "10:10  SKIP  ETERNAL     orb30_2r  ORB30 down: max 3 trades a day",
-  "10:10  SKIP  HCLTECH     orb15     ORB15 up: max 3 trades a day",
-  "10:10  SKIP  HCLTECH     orb30_2r  ORB30 up: max 3 trades a day",
   "10:10  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day",
   "10:10  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day",
   "10:10  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day",
@@ -336,12 +357,81 @@
   "10:50  SKIP  APOLLOHOSP  orb60     ORB60 down: max 3 trades a day",
   "10:50  SKIP  ICICIBANK   vwap      VWAP loss: max 3 trades a day",
   "10:50  SKIP  TECHM       orb60     ORB60 up: max 3 trades a day",
-  "10:50  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day"
+  "10:50  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day",
+  "10:55  SKIP  COALINDIA   orb60     ORB60 up: max 3 trades a day",
+  "10:55  CLOSE HINDALCO    target     @ 912.35  net Rs +636 [vwap] (charges 83)",
+  "10:55  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day",
+  "11:00  CLOSE ASIANPAINT  target     @ 2583.65  net Rs +378 [orb15] (charges 81)",
+  "11:00  CLOSE DRREDDY     stop       @ 1395.25  net Rs -611 [orb60] (charges 79)",
+  "11:00  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day"
  ],
- "all_trades": 286,
- "all_wins": 153,
- "all_net": -14082.0,
+ "all_trades": 289,
+ "all_wins": 155,
+ "all_net": -13677.0,
  "recent": [
+  {
+   "date": "2026-11-26",
+   "symbol": "DRREDDY",
+   "strategy": "orb60",
+   "side": "1",
+   "qty": "64",
+   "entry_time": "10:20",
+   "entry": "1403.0",
+   "stop": "1395.25",
+   "target": "1410.75",
+   "exit_time": "11:00",
+   "exit": "1395.25",
+   "reason": "stop",
+   "gross": "-531.82",
+   "charges": "78.7",
+   "net": "-610.52",
+   "r": "-1.231",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
+  {
+   "date": "2026-11-26",
+   "symbol": "ASIANPAINT",
+   "strategy": "orb15",
+   "side": "-1",
+   "qty": "37",
+   "entry_time": "09:35",
+   "entry": "2597.1",
+   "stop": "2610.6",
+   "target": "2583.65",
+   "exit_time": "11:00",
+   "exit": "2583.65",
+   "reason": "target",
+   "gross": "459.31",
+   "charges": "81.03",
+   "net": "378.28",
+   "r": "0.757",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
+  {
+   "date": "2026-11-26",
+   "symbol": "HINDALCO",
+   "strategy": "vwap",
+   "side": "1",
+   "qty": "110",
+   "entry_time": "10:35",
+   "entry": "905.45",
+   "stop": "902.0",
+   "target": "912.35",
+   "exit_time": "10:55",
+   "exit": "912.35",
+   "reason": "target",
+   "gross": "719.01",
+   "charges": "82.52",
+   "net": "636.49",
+   "r": "1.677",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-26",
    "symbol": "BSE",
@@ -803,69 +893,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-25",
-   "symbol": "ADANIENT",
-   "strategy": "gap_go",
-   "side": "1",
-   "qty": "27",
-   "entry_time": "09:30",
-   "entry": "2715.6",
-   "stop": "2697.65",
-   "target": "2751.4",
-   "exit_time": "09:55",
-   "exit": "2697.65",
-   "reason": "stop",
-   "gross": "-513.88",
-   "charges": "72.9",
-   "net": "-586.78",
-   "r": "-1.211",
-   "mode": "live",
-   "via": "",
-   "setup": ""
-  },
-  {
-   "date": "2026-11-25",
-   "symbol": "BAJAJFINSV",
-   "strategy": "orb15",
-   "side": "1",
-   "qty": "45",
-   "entry_time": "09:35",
-   "entry": "1915.3",
-   "stop": "1904.2",
-   "target": "1926.4",
-   "exit_time": "09:45",
-   "exit": "1926.4",
-   "reason": "target",
-   "gross": "464.92",
-   "charges": "77.72",
-   "net": "387.2",
-   "r": "0.775",
-   "mode": "live",
-   "via": "",
-   "setup": ""
-  },
-  {
-   "date": "2026-11-25",
-   "symbol": "INFY",
-   "strategy": "gap_fade",
-   "side": "-1",
-   "qty": "68",
-   "entry_time": "09:30",
-   "entry": "1138.4",
-   "stop": "1145.75",
-   "target": "1103.4",
-   "exit_time": "09:40",
-   "exit": "1145.75",
-   "reason": "stop",
-   "gross": "-530.86",
-   "charges": "74.51",
-   "net": "-605.37",
-   "r": "-1.211",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -882,17 +909,17 @@
   "2026-11-20": 2067.0,
   "2026-11-23": -947.0,
   "2026-11-25": -195.0,
-  "2026-11-26": 271.0
+  "2026-11-26": 674.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 1,
-   "today_net": 268,
-   "open": 2,
-   "all_trades": 40,
-   "all_wins": 22,
-   "all_net": -1758
+   "today_trades": 2,
+   "today_net": 647,
+   "open": 1,
+   "all_trades": 41,
+   "all_wins": 23,
+   "all_net": -1380
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
@@ -905,12 +932,12 @@
   },
   "orb60": {
    "desc": "first-hour range breakout, stop at mid, 1R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 39,
+   "today_trades": 1,
+   "today_net": -611,
+   "open": 2,
+   "all_trades": 40,
    "all_wins": 20,
-   "all_net": -4116
+   "all_net": -4726
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
@@ -932,12 +959,12 @@
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 39,
-   "all_wins": 16,
-   "all_net": -4132
+   "today_trades": 1,
+   "today_net": 636,
+   "open": 2,
+   "all_trades": 40,
+   "all_wins": 17,
+   "all_net": -3496
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
@@ -974,10 +1001,10 @@
   "accounts": {
    "orb15": {
     "days": 14,
-    "trades": 40,
-    "net": -1758,
-    "per_trade": -44,
-    "t": -0.64,
+    "trades": 41,
+    "net": -1380,
+    "per_trade": -34,
+    "t": -0.5,
     "drawdown": -3580,
     "passed": 1,
     "of": 7,
@@ -993,25 +1020,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "40 of 150 trades"
+      "now": "41 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -44 a trade"
+      "now": "Rs -34 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.64"
+      "now": "t = -0.50"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1059 then Rs -700"
+      "now": "Rs -1059 then Rs -321"
      },
      {
       "id": "drawdown",
@@ -1083,11 +1110,11 @@
     ]
    },
    "orb60": {
-    "days": 13,
-    "trades": 39,
-    "net": -4116,
-    "per_trade": -106,
-    "t": -1.55,
+    "days": 14,
+    "trades": 40,
+    "net": -4726,
+    "per_trade": -118,
+    "t": -1.75,
     "drawdown": -6414,
     "passed": 1,
     "of": 7,
@@ -1097,31 +1124,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "13 of 60 days"
+      "now": "14 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "39 of 150 trades"
+      "now": "40 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -106 a trade"
+      "now": "Rs -118 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -1.55"
+      "now": "t = -1.75"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -3233 then Rs -883"
+      "now": "Rs -3026 then Rs -1700"
      },
      {
       "id": "drawdown",
@@ -1248,11 +1275,11 @@
     ]
    },
    "vwap": {
-    "days": 13,
-    "trades": 39,
-    "net": -4132,
-    "per_trade": -106,
-    "t": -0.9,
+    "days": 14,
+    "trades": 40,
+    "net": -3496,
+    "per_trade": -87,
+    "t": -0.68,
     "drawdown": -4206,
     "passed": 1,
     "of": 7,
@@ -1262,31 +1289,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "13 of 60 days"
+      "now": "14 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "39 of 150 trades"
+      "now": "40 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -106 a trade"
+      "now": "Rs -87 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.90"
+      "now": "t = -0.68"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -2031 then Rs -2101"
+      "now": "Rs -1495 then Rs -2001"
      },
      {
       "id": "drawdown",

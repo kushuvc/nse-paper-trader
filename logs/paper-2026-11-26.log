@@ -142,3 +142,9 @@ NSE's own daily file: latest saved is 2026-11-25
 10:50  SKIP  ICICIBANK   vwap      VWAP loss: max 3 trades a day
 10:50  SKIP  TECHM       orb60     ORB60 up: max 3 trades a day
 10:50  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day
+10:55  SKIP  COALINDIA   orb60     ORB60 up: max 3 trades a day
+10:55  CLOSE HINDALCO    target     @ 912.35  net Rs +636 [vwap] (charges 83)
+10:55  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day
+11:00  CLOSE ASIANPAINT  target     @ 2583.65  net Rs +378 [orb15] (charges 81)
+11:00  CLOSE DRREDDY     stop       @ 1395.25  net Rs -611 [orb60] (charges 79)
+11:00  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day
