@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 14:16 IST",
- "updated_ts": 1795682788,
+ "updated": "2026-11-26 14:26 IST",
+ "updated_ts": 1795683389,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -358,8 +358,6 @@
  ],
  "today_net": 1952.0,
  "log": [
-  "11:40  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day",
-  "11:45  SKIP  ITC         orb15     ORB15 down: max 3 trades a day",
   "11:45  SKIP  ITC         orb30_2r  ORB30 down: max 3 trades a day",
   "11:45  SKIP  ITC         orb60     ORB60 down: max 3 trades a day",
   "11:50  SKIP  HDFCLIFE    orb60     ORB60 down: max 3 trades a day",
@@ -417,7 +415,9 @@
   "14:10  SKIP  RELIANCE    vwap      VWAP reclaim: max 3 trades a day",
   "14:10  SKIP  TCS         orb15     ORB15 up: max 3 trades a day",
   "14:10  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day",
-  "14:10  SKIP  TCS         orb60     ORB60 up: max 3 trades a day"
+  "14:10  SKIP  TCS         orb60     ORB60 up: max 3 trades a day",
+  "14:25  SKIP  NTPC        vwap      VWAP reclaim: max 3 trades a day",
+  "14:25  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 295,
  "all_wins": 159,
