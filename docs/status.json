@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 09:40 IST",
- "updated_ts": 1795666259,
+ "updated": "2026-11-26 09:51 IST",
+ "updated_ts": 1795666861,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -43,17 +43,6 @@
    "entry": 3895.7,
    "stop": 3837.25,
    "target": 3901.55,
-   "entry_time": "09:30",
-   "note": "tiny target, wide stop"
-  },
-  "trap90|BAJAJ-AUTO": {
-   "strategy": "trap90",
-   "symbol": "BAJAJ-AUTO",
-   "side": 1,
-   "qty": 3,
-   "entry": 10797.0,
-   "stop": 10635.0,
-   "target": 10813.2,
    "entry_time": "09:30",
    "note": "tiny target, wide stop"
   },
@@ -111,6 +100,53 @@
    "target": 365.55,
    "entry_time": "09:35",
    "note": "ORB15 down"
+  },
+  "orb30_2r|COALINDIA": {
+   "strategy": "orb30_2r",
+   "symbol": "COALINDIA",
+   "side": 1,
+   "qty": 129,
+   "entry": 388.1,
+   "stop": 384.25,
+   "target": 395.7,
+   "entry_time": "09:50",
+   "note": "ORB30 up"
+  },
+  "orb30_2r|HINDALCO": {
+   "strategy": "orb30_2r",
+   "symbol": "HINDALCO",
+   "side": 1,
+   "qty": 37,
+   "entry": 907.7,
+   "stop": 894.45,
+   "target": 934.2,
+   "entry_time": "09:50",
+   "note": "ORB30 up"
+  },
+  "learner|MARUTI": {
+   "strategy": "learner",
+   "symbol": "MARUTI",
+   "side": -1,
+   "qty": 2,
+   "entry": 13955.0,
+   "stop": 14161.0,
+   "target": 13543.0,
+   "entry_time": "09:50",
+   "note": "ORB30 down",
+   "via": "orb30_2r",
+   "setup": "short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market",
+   "score": 0.068
+  },
+  "orb30_2r|MARUTI": {
+   "strategy": "orb30_2r",
+   "symbol": "MARUTI",
+   "side": -1,
+   "qty": 2,
+   "entry": 13955.0,
+   "stop": 14161.0,
+   "target": 13543.0,
+   "entry_time": "09:50",
+   "note": "ORB30 down"
   }
  },
  "closed": [
@@ -133,9 +169,29 @@
    "net": 0.7,
    "r": 0.001,
    "mode": "live"
+  },
+  {
+   "strategy": "trap90",
+   "symbol": "BAJAJ-AUTO",
+   "side": 1,
+   "qty": 3,
+   "entry": 10797.0,
+   "stop": 10635.0,
+   "target": 10813.2,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop",
+   "date": "2026-11-26",
+   "exit": 10813.2,
+   "exit_time": "09:50",
+   "reason": "target",
+   "gross": 35.63,
+   "charges": 34.38,
+   "net": 1.25,
+   "r": 0.003,
+   "mode": "live"
   }
  ],
- "today_net": 1.0,
+ "today_net": 2.0,
  "log": [
   "09:30  OPEN  AXISBANK    SHORT   46 @ 1430.50  stop 1441.15  target 1418.10  [gap_fade: gap +1.6% fading]",
   "09:30  OPEN  BSE         BUY      6 @ 3895.70  stop 3813.85  target 4059.30  [gap_go: gap +1.0% and go]",
@@ -174,12 +230,53 @@
   "09:40  SKIP  HDFCBANK    orb15     ORB15 up: max 3 trades a day",
   "09:40  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day",
   "09:40  SKIP  POWERGRID   orb15     ORB15 down: max 3 trades a day",
-  "09:40  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day"
+  "09:40  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day",
+  "09:45  SKIP  ADANIPORTS  orb15     ORB15 down: max 3 trades a day",
+  "09:45  SKIP  AXISBANK    orb15     ORB15 down: max 3 trades a day",
+  "09:45  SKIP  COALINDIA   orb15     ORB15 up: max 3 trades a day",
+  "09:45  SKIP  EICHERMOT   orb15     ORB15 down: max 3 trades a day",
+  "09:45  SKIP  HINDUNILVR  orb15     ORB15 down: max 3 trades a day",
+  "09:45  SKIP  ICICIBANK   orb15     ORB15 down: max 3 trades a day",
+  "09:45  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day",
+  "09:45  SKIP  LT          orb15     ORB15 down: max 3 trades a day",
+  "09:45  SKIP  MARUTI      orb15     ORB15 down: max 3 trades a day",
+  "09:45  SKIP  MAXHEALTH   orb15     ORB15 up: max 3 trades a day",
+  "09:45  SKIP  SBIN        orb15     ORB15 down: max 3 trades a day",
+  "09:45  SKIP  TMPV        orb15     ORB15 down: max 3 trades a day",
+  "09:50  CLOSE BAJAJ-AUTO  target     @ 10813.20  net Rs +1 [trap90] (charges 34)",
+  "09:50  OPEN  COALINDIA   BUY    129 @ 388.10  stop 384.25  target 395.70  [orb30_2r: ORB30 up]",
+  "09:50  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day",
+  "09:50  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day",
+  "09:50  OPEN  HINDALCO    BUY     37 @ 907.70  stop 894.45  target 934.20  [orb30_2r: ORB30 up]",
+  "09:50  OPEN  MARUTI      SHORT    2 @ 13955.00  stop 14161.00  target 13543.00  [learner via orb30_2r, expects +0.07R: short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market]",
+  "09:50  OPEN  MARUTI      SHORT    2 @ 13955.00  stop 14161.00  target 13543.00  [orb30_2r: ORB30 down]",
+  "09:50  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day"
  ],
- "all_trades": 283,
- "all_wins": 150,
- "all_net": -14353.0,
+ "all_trades": 284,
+ "all_wins": 151,
+ "all_net": -14351.0,
  "recent": [
+  {
+   "date": "2026-11-26",
+   "symbol": "BAJAJ-AUTO",
+   "strategy": "trap90",
+   "side": "1",
+   "qty": "3",
+   "entry_time": "09:30",
+   "entry": "10797.0",
+   "stop": "10635.0",
+   "target": "10813.2",
+   "exit_time": "09:50",
+   "exit": "10813.2",
+   "reason": "target",
+   "gross": "35.63",
+   "charges": "34.38",
+   "net": "1.25",
+   "r": "0.003",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-26",
    "symbol": "BEL",
@@ -683,27 +780,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-25",
-   "symbol": "ADANIENT",
-   "strategy": "trap90",
-   "side": "1",
-   "qty": "12",
-   "entry_time": "09:30",
-   "entry": "2715.6",
-   "stop": "2674.85",
-   "target": "2719.65",
-   "exit_time": "09:35",
-   "exit": "2719.65",
-   "reason": "target",
-   "gross": "35.56",
-   "charges": "34.59",
-   "net": "0.97",
-   "r": "0.002",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -720,7 +796,7 @@
   "2026-11-20": 2067.0,
   "2026-11-23": -947.0,
   "2026-11-25": -195.0,
-  "2026-11-26": 1.0
+  "2026-11-26": 2.0
  },
  "by_strategy": {
   "orb15": {
@@ -736,7 +812,7 @@
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 39,
    "all_wins": 17,
    "all_net": -4129
@@ -779,12 +855,12 @@
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
-   "today_trades": 1,
-   "today_net": 1,
-   "open": 2,
-   "all_trades": 40,
-   "all_wins": 36,
-   "all_net": -1623
+   "today_trades": 2,
+   "today_net": 2,
+   "open": 1,
+   "all_trades": 41,
+   "all_wins": 37,
+   "all_net": -1622
   },
   "learner": {
    "desc": "takes only the signals last night's model expects to profit",
@@ -1142,10 +1218,10 @@
    },
    "trap90": {
     "days": 14,
-    "trades": 40,
-    "net": -1623,
-    "per_trade": -41,
-    "t": -1.92,
+    "trades": 41,
+    "net": -1622,
+    "per_trade": -40,
+    "t": -1.91,
     "drawdown": -1674,
     "passed": 1,
     "of": 7,
@@ -1161,25 +1237,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "40 of 150 trades"
+      "now": "41 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -41 a trade"
+      "now": "Rs -40 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -1.92"
+      "now": "t = -1.91"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1031 then Rs -592"
+      "now": "Rs -1031 then Rs -590"
      },
      {
       "id": "drawdown",

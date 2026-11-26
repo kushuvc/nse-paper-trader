@@ -44,3 +44,23 @@ NSE's own daily file: latest saved is 2026-11-25
 09:40  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  POWERGRID   orb15     ORB15 down: max 3 trades a day
 09:40  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  ADANIPORTS  orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  AXISBANK    orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  COALINDIA   orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  EICHERMOT   orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  HINDUNILVR  orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  ICICIBANK   orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  LT          orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  MARUTI      orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  MAXHEALTH   orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  SBIN        orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  TMPV        orb15     ORB15 down: max 3 trades a day
+09:50  CLOSE BAJAJ-AUTO  target     @ 10813.20  net Rs +1 [trap90] (charges 34)
+09:50  OPEN  COALINDIA   BUY    129 @ 388.10  stop 384.25  target 395.70  [orb30_2r: ORB30 up]
+09:50  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day
+09:50  SKIP  HINDALCO    orb15     ORB15 up: max 3 trades a day
+09:50  OPEN  HINDALCO    BUY     37 @ 907.70  stop 894.45  target 934.20  [orb30_2r: ORB30 up]
+09:50  OPEN  MARUTI      SHORT    2 @ 13955.00  stop 14161.00  target 13543.00  [learner via orb30_2r, expects +0.07R: short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market]
+09:50  OPEN  MARUTI      SHORT    2 @ 13955.00  stop 14161.00  target 13543.00  [orb30_2r: ORB30 down]
+09:50  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day
