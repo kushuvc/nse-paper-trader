@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 14:46 IST",
- "updated_ts": 1795684593,
+ "updated": "2026-11-26 14:56 IST",
+ "updated_ts": 1795685195,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -23,17 +23,6 @@
    "target": 4059.3,
    "entry_time": "09:30",
    "note": "gap +1.0% and go"
-  },
-  "gap_go|INFY": {
-   "strategy": "gap_go",
-   "symbol": "INFY",
-   "side": 1,
-   "qty": 66,
-   "entry": 1158.5,
-   "stop": 1151.0,
-   "target": 1173.5,
-   "entry_time": "09:30",
-   "note": "gap +1.9% and go"
   },
   "orb30_2r|COALINDIA": {
    "strategy": "orb30_2r",
@@ -354,15 +343,30 @@
    "net": 893.9,
    "r": 1.831,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_go",
+   "symbol": "INFY",
+   "side": 1,
+   "qty": 66,
+   "entry": 1158.5,
+   "stop": 1151.0,
+   "target": 1173.5,
+   "entry_time": "09:30",
+   "note": "gap +1.9% and go",
+   "date": "2026-11-26",
+   "exit": 1173.5,
+   "exit_time": "14:55",
+   "reason": "target",
+   "gross": 959.22,
+   "charges": 74.43,
+   "net": 884.79,
+   "r": 1.787,
+   "mode": "live"
   }
  ],
- "today_net": 1952.0,
+ "today_net": 2837.0,
  "log": [
-  "12:00  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day",
-  "12:05  CLOSE APOLLOHOSP  stop       @ 9260.00  net Rs -337 [vwap] (charges 80)",
-  "12:05  SKIP  BAJAJFINSV  vwap      VWAP loss: max 3 trades a day",
-  "12:05  SKIP  TRENT       orb15     ORB15 down: max 3 trades a day",
-  "12:05  SKIP  TRENT       orb30_2r  ORB30 down: max 3 trades a day",
   "12:05  SKIP  TRENT       orb60     ORB60 down: max 3 trades a day",
   "12:10  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day",
   "12:10  SKIP  LT          orb60     ORB60 up: max 3 trades a day",
@@ -417,12 +421,38 @@
   "14:40  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: after 14:30",
   "14:45  SKIP  HDFCBANK    vwap      VWAP reclaim: after 14:30",
   "14:45  SKIP  ONGC        vwap      VWAP reclaim: after 14:30",
-  "14:45  SKIP  SBIN        vwap      VWAP reclaim: after 14:30"
+  "14:45  SKIP  SBIN        vwap      VWAP reclaim: after 14:30",
+  "14:50  SKIP  KOTAKBANK   vwap      VWAP reclaim: after 14:30",
+  "14:50  SKIP  ULTRACEMCO  vwap      VWAP reclaim: after 14:30",
+  "14:55  SKIP  BHARTIARTL  vwap      VWAP loss: after 14:30",
+  "14:55  CLOSE INFY        target     @ 1173.50  net Rs +885 [gap_go] (charges 74)",
+  "14:55  SKIP  TITAN       vwap      VWAP loss: after 14:30"
  ],
- "all_trades": 295,
- "all_wins": 159,
- "all_net": -12401.0,
+ "all_trades": 296,
+ "all_wins": 160,
+ "all_net": -11516.0,
  "recent": [
+  {
+   "date": "2026-11-26",
+   "symbol": "INFY",
+   "strategy": "gap_go",
+   "side": "1",
+   "qty": "66",
+   "entry_time": "09:30",
+   "entry": "1158.5",
+   "stop": "1151.0",
+   "target": "1173.5",
+   "exit_time": "14:55",
+   "exit": "1173.5",
+   "reason": "target",
+   "gross": "959.22",
+   "charges": "74.43",
+   "net": "884.79",
+   "r": "1.787",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-26",
    "symbol": "HCLTECH",
@@ -926,27 +956,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-25",
-   "symbol": "APOLLOHOSP",
-   "strategy": "orb15",
-   "side": "-1",
-   "qty": "5",
-   "entry_time": "09:35",
-   "entry": "9189.5",
-   "stop": "9289.25",
-   "target": "9089.75",
-   "exit_time": "11:45",
-   "exit": "9289.25",
-   "reason": "stop",
-   "gross": "-517.23",
-   "charges": "48.93",
-   "net": "-566.16",
-   "r": "-1.135",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -963,7 +972,7 @@
   "2026-11-20": 2067.0,
   "2026-11-23": -947.0,
   "2026-11-25": -195.0,
-  "2026-11-26": 1950.0
+  "2026-11-26": 2835.0
  },
  "by_strategy": {
   "orb15": {
@@ -995,12 +1004,12 @@
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
-   "today_trades": 1,
-   "today_net": 894,
-   "open": 2,
-   "all_trades": 36,
-   "all_wins": 15,
-   "all_net": -14
+   "today_trades": 2,
+   "today_net": 1779,
+   "open": 1,
+   "all_trades": 37,
+   "all_wins": 16,
+   "all_net": 871
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
@@ -1220,12 +1229,12 @@
    },
    "gap_go": {
     "days": 14,
-    "trades": 36,
-    "net": -14,
-    "per_trade": 0,
-    "t": -0.22,
+    "trades": 37,
+    "net": 871,
+    "per_trade": 24,
+    "t": -0.01,
     "drawdown": -3286,
-    "passed": 1,
+    "passed": 2,
     "of": 7,
     "ready": false,
     "checks": [
@@ -1239,25 +1248,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "36 of 150 trades"
+      "now": "37 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
-      "ok": false,
-      "now": "Rs -0 a trade"
+      "ok": true,
+      "now": "Rs +24 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.22"
+      "now": "t = -0.01"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -784 then Rs +770"
+      "now": "Rs -784 then Rs +1654"
      },
      {
       "id": "drawdown",
