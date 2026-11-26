@@ -198,3 +198,12 @@ NSE's own daily file: latest saved is 2026-11-25
 12:10  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day
 12:10  SKIP  LT          orb60     ORB60 up: max 3 trades a day
 12:10  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day
+2026-11-26: 12 closed (9 won), 8 still open, net Rs +1058 after charges
+  orb15     3 trades, net Rs +1062
+  orb30_2r  0 trades, net Rs +0
+  orb60     2 trades, net Rs -206
+  gap_go    0 trades, net Rs +0
+  gap_fade  1 trades, net Rs +475
+  vwap      3 trades, net Rs -275
+  trap90    3 trades, net Rs +3
+  learner   0 trades, net Rs +0
