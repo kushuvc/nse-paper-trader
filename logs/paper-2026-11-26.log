@@ -190,3 +190,11 @@ NSE's own daily file: latest saved is 2026-11-25
 12:00  SKIP  INFY        vwap      VWAP reclaim: max 3 trades a day
 12:00  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day
 12:00  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day
+12:05  CLOSE APOLLOHOSP  stop       @ 9260.00  net Rs -337 [vwap] (charges 80)
+12:05  SKIP  BAJAJFINSV  vwap      VWAP loss: max 3 trades a day
+12:05  SKIP  TRENT       orb15     ORB15 down: max 3 trades a day
+12:05  SKIP  TRENT       orb30_2r  ORB30 down: max 3 trades a day
+12:05  SKIP  TRENT       orb60     ORB60 down: max 3 trades a day
+12:10  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day
+12:10  SKIP  LT          orb60     ORB60 up: max 3 trades a day
+12:10  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day
