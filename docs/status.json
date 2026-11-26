@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 12:46 IST",
- "updated_ts": 1795677371,
+ "updated": "2026-11-26 12:56 IST",
+ "updated_ts": 1795677973,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -349,11 +349,6 @@
  ],
  "today_net": 1058.0,
  "log": [
-  "10:55  CLOSE HINDALCO    target     @ 912.35  net Rs +636 [vwap] (charges 83)",
-  "10:55  SKIP  HINDALCO    orb60     ORB60 up: max 3 trades a day",
-  "11:00  CLOSE ASIANPAINT  target     @ 2583.65  net Rs +378 [orb15] (charges 81)",
-  "11:00  CLOSE DRREDDY     stop       @ 1395.25  net Rs -611 [orb60] (charges 79)",
-  "11:00  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day",
   "11:05  SKIP  ASIANPAINT  orb60     ORB60 down: max 3 trades a day",
   "11:05  SKIP  AXISBANK    vwap      VWAP loss: max 3 trades a day",
   "11:05  CLOSE ETERNAL     target     @ 365.55  net Rs +415 [orb15] (charges 55)",
@@ -408,7 +403,12 @@
   "12:30  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day",
   "12:30  SKIP  TATACONSUM  vwap      VWAP loss: max 3 trades a day",
   "12:35  SKIP  COALINDIA   vwap      VWAP reclaim: max 3 trades a day",
-  "12:35  SKIP  INDIGO      vwap      VWAP loss: max 3 trades a day"
+  "12:35  SKIP  INDIGO      vwap      VWAP loss: max 3 trades a day",
+  "12:50  SKIP  ADANIPORTS  vwap      VWAP loss: max 3 trades a day",
+  "12:50  SKIP  BAJAJFINSV  vwap      VWAP loss: max 3 trades a day",
+  "12:50  SKIP  ONGC        orb15     ORB15 down: max 3 trades a day",
+  "12:50  SKIP  ONGC        orb30_2r  ORB30 down: max 3 trades a day",
+  "12:50  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 294,
  "all_wins": 158,
