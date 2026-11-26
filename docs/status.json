@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-26 18:34 IST",
- "updated_ts": 1795698247,
+ "updated_ts": 1795698275,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -420,13 +420,6 @@
  ],
  "today_net": 3155.0,
  "log": [
-  "13:00  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day",
-  "13:00  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day",
-  "13:05  SKIP  BAJFINANCE  vwap      VWAP loss: max 3 trades a day",
-  "13:05  SKIP  LT          vwap      VWAP loss: max 3 trades a day",
-  "13:10  SKIP  INFY        vwap      VWAP reclaim: max 3 trades a day",
-  "13:10  SKIP  NTPC        vwap      VWAP reclaim: max 3 trades a day",
-  "13:15  SKIP  BAJAJFINSV  orb60     ORB60 down: max 3 trades a day",
   "13:15  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day",
   "13:15  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day",
   "13:15  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day",
@@ -479,7 +472,14 @@
   "15:15  SKIP  HDFCBANK    vwap      VWAP reclaim: past square-off",
   "15:15  CLOSE HINDALCO    square-off @ 917.50  net Rs +313 [orb30_2r] (charges 36)",
   "15:15  CLOSE MARUTI      square-off @ 14054.00  net Rs -239 [learner] (charges 30)",
-  "15:15  CLOSE MARUTI      square-off @ 14054.00  net Rs -239 [orb30_2r] (charges 30)"
+  "15:15  CLOSE MARUTI      square-off @ 14054.00  net Rs -239 [orb30_2r] (charges 30)",
+  "18:34  SKIP  BAJFINANCE  orb15     ORB15 down: past square-off",
+  "18:34  SKIP  BAJFINANCE  orb30_2r  ORB30 down: past square-off",
+  "18:34  SKIP  BAJFINANCE  orb60     ORB60 down: past square-off",
+  "18:34  SKIP  MARUTI      vwap      VWAP loss: past square-off",
+  "18:34  SKIP  POWERGRID   vwap      VWAP loss: past square-off",
+  "18:34  SKIP  TITAN       vwap      VWAP loss: past square-off",
+  "18:34  SKIP  ULTRACEMCO  vwap      VWAP reclaim: past square-off"
  ],
  "all_trades": 302,
  "all_wins": 163,
