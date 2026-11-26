@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 14:06 IST",
- "updated_ts": 1795682186,
+ "updated": "2026-11-26 14:16 IST",
+ "updated_ts": 1795682788,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -358,12 +358,6 @@
  ],
  "today_net": 1952.0,
  "log": [
-  "11:35  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
-  "11:35  SKIP  TRENT       vwap      VWAP loss: max 3 trades a day",
-  "11:40  SKIP  GRASIM      orb60     ORB60 up: max 3 trades a day",
-  "11:40  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day",
-  "11:40  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
-  "11:40  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day",
   "11:40  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day",
   "11:45  SKIP  ITC         orb15     ORB15 down: max 3 trades a day",
   "11:45  SKIP  ITC         orb30_2r  ORB30 down: max 3 trades a day",
@@ -417,7 +411,13 @@
   "13:55  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day",
   "14:05  SKIP  INFY        orb60     ORB60 up: max 3 trades a day",
   "14:05  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day",
-  "14:05  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day"
+  "14:05  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day",
+  "14:10  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day",
+  "14:10  SKIP  JIOFIN      vwap      VWAP reclaim: max 3 trades a day",
+  "14:10  SKIP  RELIANCE    vwap      VWAP reclaim: max 3 trades a day",
+  "14:10  SKIP  TCS         orb15     ORB15 up: max 3 trades a day",
+  "14:10  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day",
+  "14:10  SKIP  TCS         orb60     ORB60 up: max 3 trades a day"
  ],
  "all_trades": 295,
  "all_wins": 159,

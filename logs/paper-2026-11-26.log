@@ -234,3 +234,9 @@ NSE's own daily file: latest saved is 2026-11-25
 14:05  SKIP  INFY        orb60     ORB60 up: max 3 trades a day
 14:05  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day
 14:05  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day
+14:10  SKIP  GRASIM      vwap      VWAP reclaim: max 3 trades a day
+14:10  SKIP  JIOFIN      vwap      VWAP reclaim: max 3 trades a day
+14:10  SKIP  RELIANCE    vwap      VWAP reclaim: max 3 trades a day
+14:10  SKIP  TCS         orb15     ORB15 up: max 3 trades a day
+14:10  SKIP  TCS         orb30_2r  ORB30 up: max 3 trades a day
+14:10  SKIP  TCS         orb60     ORB60 up: max 3 trades a day
