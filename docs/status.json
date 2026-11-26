@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 12:56 IST",
- "updated_ts": 1795677973,
+ "updated": "2026-11-26 13:06 IST",
+ "updated_ts": 1795678575,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -349,10 +349,6 @@
  ],
  "today_net": 1058.0,
  "log": [
-  "11:05  SKIP  ASIANPAINT  orb60     ORB60 down: max 3 trades a day",
-  "11:05  SKIP  AXISBANK    vwap      VWAP loss: max 3 trades a day",
-  "11:05  CLOSE ETERNAL     target     @ 365.55  net Rs +415 [orb15] (charges 55)",
-  "11:05  SKIP  INDIGO      vwap      VWAP loss: max 3 trades a day",
   "11:05  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day",
   "11:05  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day",
   "11:10  SKIP  EICHERMOT   vwap      VWAP loss: max 3 trades a day",
@@ -408,7 +404,11 @@
   "12:50  SKIP  BAJAJFINSV  vwap      VWAP loss: max 3 trades a day",
   "12:50  SKIP  ONGC        orb15     ORB15 down: max 3 trades a day",
   "12:50  SKIP  ONGC        orb30_2r  ORB30 down: max 3 trades a day",
-  "12:50  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day"
+  "12:50  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day",
+  "13:00  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day",
+  "13:00  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day",
+  "13:05  SKIP  BAJFINANCE  vwap      VWAP loss: max 3 trades a day",
+  "13:05  SKIP  LT          vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 294,
  "all_wins": 158,
