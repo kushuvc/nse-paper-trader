@@ -31,3 +31,16 @@ NSE's own daily file: latest saved is 2026-11-25
 09:30  SKIP  TATASTEEL   trap90    tiny target, wide stop: max 3 trades a day
 09:30  SKIP  TECHM       gap_go    gap +1.1% and go: max 3 trades a day
 09:30  SKIP  TECHM       trap90    tiny target, wide stop: max 3 trades a day
+09:35  OPEN  ASIANPAINT  SHORT   37 @ 2597.10  stop 2610.60  target 2583.65  [orb15: ORB15 down]
+09:35  CLOSE BEL         target     @ 405.20  net Rs +1 [trap90] (charges 35)
+09:35  OPEN  DRREDDY     BUY     71 @ 1397.00  stop 1391.50  target 1402.50  [orb15: ORB15 up]
+09:35  OPEN  ETERNAL     SHORT  140 @ 369.05  stop 372.60  target 365.55  [orb15: ORB15 down]
+09:35  SKIP  GRASIM      orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day
+09:35  SKIP  TATACONSUM  orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  ADANIENT    orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  HDFCBANK    orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day
+09:40  SKIP  POWERGRID   orb15     ORB15 down: max 3 trades a day
+09:40  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day
