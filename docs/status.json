@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 13:16 IST",
- "updated_ts": 1795679177,
+ "updated": "2026-11-26 13:26 IST",
+ "updated_ts": 1795679779,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -349,9 +349,6 @@
  ],
  "today_net": 1058.0,
  "log": [
-  "11:20  CLOSE AXISBANK    target     @ 1418.10  net Rs +475 [gap_fade] (charges 70)",
-  "11:20  SKIP  AXISBANK    orb30_2r  ORB30 down: max 3 trades a day",
-  "11:20  SKIP  AXISBANK    orb60     ORB60 down: max 3 trades a day",
   "11:20  SKIP  BAJAJFINSV  vwap      VWAP loss: max 3 trades a day",
   "11:20  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day",
   "11:20  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day",
@@ -408,7 +405,10 @@
   "13:15  SKIP  BAJAJFINSV  orb60     ORB60 down: max 3 trades a day",
   "13:15  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day",
   "13:15  SKIP  POWERGRID   vwap      VWAP loss: max 3 trades a day",
-  "13:15  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day"
+  "13:15  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day",
+  "13:20  SKIP  DRREDDY     vwap      VWAP reclaim: max 3 trades a day",
+  "13:20  SKIP  HCLTECH     vwap      VWAP reclaim: max 3 trades a day",
+  "13:20  SKIP  MARUTI      vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 294,
  "all_wins": 158,
