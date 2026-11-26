@@ -195,3 +195,7 @@ NSE's own end-of-day files -> data/nse/ (looking back 7 days) ...
   2026-11-24: no file from NSE (a holiday, or not published yet)
 0 new. 97 days saved, 2026-07-08 to 2026-11-25.
 Latest day, 2026-11-25: 1183 of 2774 shares rose (43.1%), Nifty 50 25,819 (+1.85%), 45.9% of the money traded was taken for delivery, India VIX 17.67.
+PAPER TRADING (dummy money, no orders sent anywhere). Strategies: orb15, orb30_2r, orb60, gap_go, gap_fade, vwap, trap90. 50 stocks. Ctrl-C to stop.
+Learner: model from 72 days of history
+NSE's own daily file: latest saved is 2026-11-25
+12:25  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day

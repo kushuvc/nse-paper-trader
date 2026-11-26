@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 12:16 IST",
- "updated_ts": 1795675566,
+ "updated": "2026-11-26 12:26 IST",
+ "updated_ts": 1795676168,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -349,7 +349,6 @@
  ],
  "today_net": 1058.0,
  "log": [
-  "10:50  SKIP  APOLLOHOSP  orb60     ORB60 down: max 3 trades a day",
   "10:50  SKIP  ICICIBANK   vwap      VWAP loss: max 3 trades a day",
   "10:50  SKIP  TECHM       orb60     ORB60 up: max 3 trades a day",
   "10:50  SKIP  ULTRACEMCO  orb60     ORB60 up: max 3 trades a day",
@@ -408,7 +407,8 @@
   "12:05  SKIP  TRENT       orb60     ORB60 down: max 3 trades a day",
   "12:10  SKIP  LT          orb30_2r  ORB30 up: max 3 trades a day",
   "12:10  SKIP  LT          orb60     ORB60 up: max 3 trades a day",
-  "12:10  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day"
+  "12:10  SKIP  MAXHEALTH   orb60     ORB60 up: max 3 trades a day",
+  "12:25  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 294,
  "all_wins": 158,
