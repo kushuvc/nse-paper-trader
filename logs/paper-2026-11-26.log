@@ -91,3 +91,11 @@ NSE's own daily file: latest saved is 2026-11-25
 10:10  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day
 10:10  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day
 10:10  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day
+10:15  SKIP  BAJAJFINSV  orb15     ORB15 down: max 3 trades a day
+10:15  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day
+10:15  CLOSE DRREDDY     target     @ 1402.50  net Rs +268 [orb15] (charges 82)
+10:20  OPEN  CIPLA       BUY     39 @ 1452.80  stop 1440.25  target 1465.30  [orb60: ORB60 up]
+10:20  OPEN  DRREDDY     BUY     64 @ 1403.00  stop 1395.25  target 1410.75  [orb60: ORB60 up]
+10:20  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day
+10:20  OPEN  HDFCBANK    BUY     45 @ 863.25  stop 852.20  target 874.25  [orb60: ORB60 up]
+10:20  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day

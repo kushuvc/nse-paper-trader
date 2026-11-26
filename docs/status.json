@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 10:11 IST",
- "updated_ts": 1795668064,
+ "updated": "2026-11-26 10:21 IST",
+ "updated_ts": 1795668666,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -79,17 +79,6 @@
    "entry_time": "09:35",
    "note": "ORB15 down"
   },
-  "orb15|DRREDDY": {
-   "strategy": "orb15",
-   "symbol": "DRREDDY",
-   "side": 1,
-   "qty": 71,
-   "entry": 1397.0,
-   "stop": 1391.5,
-   "target": 1402.5,
-   "entry_time": "09:35",
-   "note": "ORB15 up"
-  },
   "orb15|ETERNAL": {
    "strategy": "orb15",
    "symbol": "ETERNAL",
@@ -147,6 +136,39 @@
    "target": 13543.0,
    "entry_time": "09:50",
    "note": "ORB30 down"
+  },
+  "orb60|CIPLA": {
+   "strategy": "orb60",
+   "symbol": "CIPLA",
+   "side": 1,
+   "qty": 39,
+   "entry": 1452.8,
+   "stop": 1440.25,
+   "target": 1465.3,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
+  },
+  "orb60|DRREDDY": {
+   "strategy": "orb60",
+   "symbol": "DRREDDY",
+   "side": 1,
+   "qty": 64,
+   "entry": 1403.0,
+   "stop": 1395.25,
+   "target": 1410.75,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
+  },
+  "orb60|HDFCBANK": {
+   "strategy": "orb60",
+   "symbol": "HDFCBANK",
+   "side": 1,
+   "qty": 45,
+   "entry": 863.25,
+   "stop": 852.2,
+   "target": 874.25,
+   "entry_time": "10:20",
+   "note": "ORB60 up"
   }
  },
  "closed": [
@@ -189,18 +211,30 @@
    "net": 1.25,
    "r": 0.003,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "DRREDDY",
+   "side": 1,
+   "qty": 71,
+   "entry": 1397.0,
+   "stop": 1391.5,
+   "target": 1402.5,
+   "entry_time": "09:35",
+   "note": "ORB15 up",
+   "date": "2026-11-26",
+   "exit": 1402.5,
+   "exit_time": "10:15",
+   "reason": "target",
+   "gross": 350.75,
+   "charges": 82.27,
+   "net": 268.48,
+   "r": 0.688,
+   "mode": "live"
   }
  ],
- "today_net": 2.0,
+ "today_net": 270.0,
  "log": [
-  "09:35  OPEN  ASIANPAINT  SHORT   37 @ 2597.10  stop 2610.60  target 2583.65  [orb15: ORB15 down]",
-  "09:35  CLOSE BEL         target     @ 405.20  net Rs +1 [trap90] (charges 35)",
-  "09:35  OPEN  DRREDDY     BUY     71 @ 1397.00  stop 1391.50  target 1402.50  [orb15: ORB15 up]",
-  "09:35  OPEN  ETERNAL     SHORT  140 @ 369.05  stop 372.60  target 365.55  [orb15: ORB15 down]",
-  "09:35  SKIP  GRASIM      orb15     ORB15 down: max 3 trades a day",
-  "09:35  SKIP  NESTLEIND   orb15     ORB15 down: max 3 trades a day",
-  "09:35  SKIP  TATACONSUM  orb15     ORB15 down: max 3 trades a day",
-  "09:40  SKIP  ADANIENT    orb15     ORB15 down: max 3 trades a day",
   "09:40  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day",
   "09:40  SKIP  HDFCBANK    orb15     ORB15 up: max 3 trades a day",
   "09:40  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day",
@@ -252,12 +286,41 @@
   "10:10  SKIP  HCLTECH     orb30_2r  ORB30 up: max 3 trades a day",
   "10:10  SKIP  SBIN        orb30_2r  ORB30 up: max 3 trades a day",
   "10:10  SKIP  ULTRACEMCO  orb15     ORB15 up: max 3 trades a day",
-  "10:10  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day"
+  "10:10  SKIP  ULTRACEMCO  orb30_2r  ORB30 up: max 3 trades a day",
+  "10:15  SKIP  BAJAJFINSV  orb15     ORB15 down: max 3 trades a day",
+  "10:15  SKIP  BAJAJFINSV  orb30_2r  ORB30 down: max 3 trades a day",
+  "10:15  CLOSE DRREDDY     target     @ 1402.50  net Rs +268 [orb15] (charges 82)",
+  "10:20  OPEN  CIPLA       BUY     39 @ 1452.80  stop 1440.25  target 1465.30  [orb60: ORB60 up]",
+  "10:20  OPEN  DRREDDY     BUY     64 @ 1403.00  stop 1395.25  target 1410.75  [orb60: ORB60 up]",
+  "10:20  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day",
+  "10:20  OPEN  HDFCBANK    BUY     45 @ 863.25  stop 852.20  target 874.25  [orb60: ORB60 up]",
+  "10:20  SKIP  SHRIRAMFIN  orb60     ORB60 up: max 3 trades a day"
  ],
- "all_trades": 284,
- "all_wins": 151,
- "all_net": -14351.0,
+ "all_trades": 285,
+ "all_wins": 152,
+ "all_net": -14083.0,
  "recent": [
+  {
+   "date": "2026-11-26",
+   "symbol": "DRREDDY",
+   "strategy": "orb15",
+   "side": "1",
+   "qty": "71",
+   "entry_time": "09:35",
+   "entry": "1397.0",
+   "stop": "1391.5",
+   "target": "1402.5",
+   "exit_time": "10:15",
+   "exit": "1402.5",
+   "reason": "target",
+   "gross": "350.75",
+   "charges": "82.27",
+   "net": "268.48",
+   "r": "0.688",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-26",
    "symbol": "BAJAJ-AUTO",
@@ -761,27 +824,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-25",
-   "symbol": "ADANIPORTS",
-   "strategy": "trap90",
-   "side": "1",
-   "qty": "17",
-   "entry_time": "09:30",
-   "entry": "1939.2",
-   "stop": "1910.1",
-   "target": "1942.1",
-   "exit_time": "09:35",
-   "exit": "1942.1",
-   "reason": "target",
-   "gross": "36.1",
-   "charges": "34.99",
-   "net": "1.11",
-   "r": "0.002",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -798,17 +840,17 @@
   "2026-11-20": 2067.0,
   "2026-11-23": -947.0,
   "2026-11-25": -195.0,
-  "2026-11-26": 2.0
+  "2026-11-26": 270.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 39,
-   "all_wins": 21,
-   "all_net": -2027
+   "today_trades": 1,
+   "today_net": 268,
+   "open": 2,
+   "all_trades": 40,
+   "all_wins": 22,
+   "all_net": -1758
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
@@ -823,7 +865,7 @@
    "desc": "first-hour range breakout, stop at mid, 1R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 39,
    "all_wins": 20,
    "all_net": -4116
@@ -889,11 +931,11 @@
   },
   "accounts": {
    "orb15": {
-    "days": 13,
-    "trades": 39,
-    "net": -2027,
-    "per_trade": -52,
-    "t": -0.76,
+    "days": 14,
+    "trades": 40,
+    "net": -1758,
+    "per_trade": -44,
+    "t": -0.64,
     "drawdown": -3580,
     "passed": 1,
     "of": 7,
@@ -903,31 +945,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "13 of 60 days"
+      "now": "14 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "39 of 150 trades"
+      "now": "40 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -52 a trade"
+      "now": "Rs -44 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.76"
+      "now": "t = -0.64"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1423 then Rs -604"
+      "now": "Rs -1059 then Rs -700"
      },
      {
       "id": "drawdown",
