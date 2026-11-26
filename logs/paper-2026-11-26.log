@@ -277,3 +277,9 @@ NSE's own daily file: latest saved is 2026-11-25
   vwap      3 trades, net Rs -275
   trap90    3 trades, net Rs +3
   learner   1 trades, net Rs -239
+Shift until 15:20 IST (started 18:34)
+NSE's own end-of-day files -> data/nse/ (looking back 7 days) ...
+  2026-11-24: no file from NSE (a holiday, or not published yet)
+  2026-11-26: saved. 1497 of 2782 shares rose (54.6%), Nifty 50 25,884 (+0.25%), 44.7% of the money traded was taken for delivery, India VIX 16.84.
+1 new. 98 days saved, 2026-07-08 to 2026-11-26.
+Latest day, 2026-11-26: 1497 of 2782 shares rose (54.6%), Nifty 50 25,884 (+0.25%), 44.7% of the money traded was taken for delivery, India VIX 16.84.
