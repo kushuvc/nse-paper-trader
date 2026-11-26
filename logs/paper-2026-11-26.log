@@ -64,3 +64,19 @@ NSE's own daily file: latest saved is 2026-11-25
 09:50  OPEN  MARUTI      SHORT    2 @ 13955.00  stop 14161.00  target 13543.00  [learner via orb30_2r, expects +0.07R: short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market]
 09:50  OPEN  MARUTI      SHORT    2 @ 13955.00  stop 14161.00  target 13543.00  [orb30_2r: ORB30 down]
 09:50  SKIP  MAXHEALTH   orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  ASIANPAINT  orb30_2r  ORB30 down: max 3 trades a day
+09:55  SKIP  DRREDDY     orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  JSWSTEEL    orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  JSWSTEEL    orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  NTPC        orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  NTPC        orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day
+09:55  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day
+09:55  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day
+10:00  SKIP  BEL         orb15     ORB15 up: max 3 trades a day
+10:00  SKIP  BEL         orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  CIPLA       orb15     ORB15 up: max 3 trades a day
+10:00  SKIP  CIPLA       orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  HDFCLIFE    orb30_2r  ORB30 up: max 3 trades a day
+10:00  SKIP  SHRIRAMFIN  orb15     ORB15 up: max 3 trades a day
+10:00  SKIP  SHRIRAMFIN  orb30_2r  ORB30 up: max 3 trades a day
