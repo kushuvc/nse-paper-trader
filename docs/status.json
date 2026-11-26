@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 11:41 IST",
- "updated_ts": 1795673479,
+ "updated": "2026-11-26 11:51 IST",
+ "updated_ts": 1795674081,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -340,11 +340,6 @@
  ],
  "today_net": 1395.0,
  "log": [
-  "10:35  OPEN  TCS         BUY     39 @ 2563.60  stop 2552.00  target 2586.80  [vwap: VWAP reclaim]",
-  "10:40  SKIP  ADANIENT    orb30_2r  ORB30 up: max 3 trades a day",
-  "10:40  SKIP  ADANIENT    orb60     ORB60 up: max 3 trades a day",
-  "10:40  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day",
-  "10:40  SKIP  HINDUNILVR  orb60     ORB60 up: max 3 trades a day",
   "10:40  SKIP  MARUTI      vwap      VWAP loss: max 3 trades a day",
   "10:40  SKIP  ONGC        vwap      VWAP reclaim: max 3 trades a day",
   "10:40  SKIP  TATASTEEL   orb30_2r  ORB30 up: max 3 trades a day",
@@ -399,7 +394,12 @@
   "11:40  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day",
   "11:40  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
   "11:40  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day",
-  "11:40  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day"
+  "11:40  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day",
+  "11:45  SKIP  ITC         orb15     ORB15 down: max 3 trades a day",
+  "11:45  SKIP  ITC         orb30_2r  ORB30 down: max 3 trades a day",
+  "11:45  SKIP  ITC         orb60     ORB60 down: max 3 trades a day",
+  "11:50  SKIP  HDFCLIFE    orb60     ORB60 down: max 3 trades a day",
+  "11:50  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 293,
  "all_wins": 158,
