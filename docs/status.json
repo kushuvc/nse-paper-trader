@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 14:36 IST",
- "updated_ts": 1795683991,
+ "updated": "2026-11-26 14:46 IST",
+ "updated_ts": 1795684593,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -358,10 +358,6 @@
  ],
  "today_net": 1952.0,
  "log": [
-  "11:50  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day",
-  "11:55  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day",
-  "12:00  SKIP  INFY        vwap      VWAP reclaim: max 3 trades a day",
-  "12:00  SKIP  KOTAKBANK   orb30_2r  ORB30 up: max 3 trades a day",
   "12:00  SKIP  KOTAKBANK   orb60     ORB60 up: max 3 trades a day",
   "12:05  CLOSE APOLLOHOSP  stop       @ 9260.00  net Rs -337 [vwap] (charges 80)",
   "12:05  SKIP  BAJAJFINSV  vwap      VWAP loss: max 3 trades a day",
@@ -417,7 +413,11 @@
   "14:25  SKIP  ULTRACEMCO  vwap      VWAP reclaim: max 3 trades a day",
   "14:30  SKIP  JIOFIN      vwap      VWAP reclaim: max 3 trades a day",
   "14:35  SKIP  COALINDIA   vwap      VWAP reclaim: after 14:30",
-  "14:35  SKIP  M&M         vwap      VWAP reclaim: after 14:30"
+  "14:35  SKIP  M&M         vwap      VWAP reclaim: after 14:30",
+  "14:40  SKIP  BAJAJ-AUTO  vwap      VWAP reclaim: after 14:30",
+  "14:45  SKIP  HDFCBANK    vwap      VWAP reclaim: after 14:30",
+  "14:45  SKIP  ONGC        vwap      VWAP reclaim: after 14:30",
+  "14:45  SKIP  SBIN        vwap      VWAP reclaim: after 14:30"
  ],
  "all_trades": 295,
  "all_wins": 159,
