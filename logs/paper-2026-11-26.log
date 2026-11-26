@@ -155,3 +155,15 @@ NSE's own daily file: latest saved is 2026-11-25
 11:05  SKIP  SUNPHARMA   orb60     ORB60 up: max 3 trades a day
 11:05  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day
 11:10  SKIP  EICHERMOT   vwap      VWAP loss: max 3 trades a day
+11:15  CLOSE CIPLA       target     @ 1465.30  net Rs +404 [orb60] (charges 60)
+11:15  SKIP  DRREDDY     vwap      VWAP reclaim: max 3 trades a day
+11:15  SKIP  ITC         vwap      VWAP reclaim: max 3 trades a day
+11:20  CLOSE AXISBANK    target     @ 1418.10  net Rs +475 [gap_fade] (charges 70)
+11:20  SKIP  AXISBANK    orb30_2r  ORB30 down: max 3 trades a day
+11:20  SKIP  AXISBANK    orb60     ORB60 down: max 3 trades a day
+11:20  SKIP  BAJAJFINSV  vwap      VWAP loss: max 3 trades a day
+11:20  SKIP  BHARTIARTL  vwap      VWAP loss: max 3 trades a day
+11:20  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day
+11:20  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day
+11:20  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day
+11:20  SKIP  TITAN       vwap      VWAP loss: max 3 trades a day
