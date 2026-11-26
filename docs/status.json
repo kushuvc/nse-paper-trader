@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 11:31 IST",
- "updated_ts": 1795672878,
+ "updated": "2026-11-26 11:41 IST",
+ "updated_ts": 1795673479,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -340,13 +340,6 @@
  ],
  "today_net": 1395.0,
  "log": [
-  "10:35  OPEN  HINDALCO    BUY    110 @ 905.45  stop 902.00  target 912.35  [vwap: VWAP reclaim]",
-  "10:35  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day",
-  "10:35  SKIP  POWERGRID   orb60     ORB60 up: max 3 trades a day",
-  "10:35  SKIP  RELIANCE    orb15     ORB15 up: max 3 trades a day",
-  "10:35  SKIP  RELIANCE    orb30_2r  ORB30 up: max 3 trades a day",
-  "10:35  SKIP  RELIANCE    orb60     ORB60 up: max 3 trades a day",
-  "10:35  SKIP  SBIN        orb60     ORB60 up: max 3 trades a day",
   "10:35  OPEN  TCS         BUY     39 @ 2563.60  stop 2552.00  target 2586.80  [vwap: VWAP reclaim]",
   "10:40  SKIP  ADANIENT    orb30_2r  ORB30 up: max 3 trades a day",
   "10:40  SKIP  ADANIENT    orb60     ORB60 up: max 3 trades a day",
@@ -399,7 +392,14 @@
   "11:30  SKIP  INDIGO      orb30_2r  ORB30 down: max 3 trades a day",
   "11:30  SKIP  INDIGO      orb60     ORB60 down: max 3 trades a day",
   "11:30  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day",
-  "11:30  CLOSE TCS         stop       @ 2552.00  net Rs -575 [vwap] (charges 82)"
+  "11:30  CLOSE TCS         stop       @ 2552.00  net Rs -575 [vwap] (charges 82)",
+  "11:35  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
+  "11:35  SKIP  TRENT       vwap      VWAP loss: max 3 trades a day",
+  "11:40  SKIP  GRASIM      orb60     ORB60 up: max 3 trades a day",
+  "11:40  SKIP  KOTAKBANK   vwap      VWAP reclaim: max 3 trades a day",
+  "11:40  SKIP  SBILIFE     orb60     ORB60 up: max 3 trades a day",
+  "11:40  SKIP  TMPV        orb30_2r  ORB30 down: max 3 trades a day",
+  "11:40  SKIP  TMPV        orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 293,
  "all_wins": 158,
