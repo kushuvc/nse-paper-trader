@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 13:56 IST",
- "updated_ts": 1795681584,
+ "updated": "2026-11-26 14:06 IST",
+ "updated_ts": 1795682186,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -358,9 +358,6 @@
  ],
  "today_net": 1952.0,
  "log": [
-  "11:30  SKIP  INDIGO      orb60     ORB60 down: max 3 trades a day",
-  "11:30  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day",
-  "11:30  CLOSE TCS         stop       @ 2552.00  net Rs -575 [vwap] (charges 82)",
   "11:35  SKIP  MAXHEALTH   vwap      VWAP loss: max 3 trades a day",
   "11:35  SKIP  TRENT       vwap      VWAP loss: max 3 trades a day",
   "11:40  SKIP  GRASIM      orb60     ORB60 up: max 3 trades a day",
@@ -417,7 +414,10 @@
   "13:45  SKIP  INFY        orb15     ORB15 up: max 3 trades a day",
   "13:45  SKIP  INFY        orb30_2r  ORB30 up: max 3 trades a day",
   "13:55  CLOSE HCLTECH     target     @ 1432.60  net Rs +894 [gap_go] (charges 57)",
-  "13:55  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day"
+  "13:55  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day",
+  "14:05  SKIP  INFY        orb60     ORB60 up: max 3 trades a day",
+  "14:05  SKIP  JSWSTEEL    vwap      VWAP loss: max 3 trades a day",
+  "14:05  SKIP  TECHM       vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 295,
  "all_wins": 159,
