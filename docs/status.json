@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26 13:46 IST",
- "updated_ts": 1795680982,
+ "updated": "2026-11-26 13:56 IST",
+ "updated_ts": 1795681584,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -21,17 +21,6 @@
    "entry": 3895.7,
    "stop": 3813.85,
    "target": 4059.3,
-   "entry_time": "09:30",
-   "note": "gap +1.0% and go"
-  },
-  "gap_go|HCLTECH": {
-   "strategy": "gap_go",
-   "symbol": "HCLTECH",
-   "side": 1,
-   "qty": 38,
-   "entry": 1407.0,
-   "stop": 1394.15,
-   "target": 1432.6,
    "entry_time": "09:30",
    "note": "gap +1.0% and go"
   },
@@ -345,12 +334,30 @@
    "net": -336.77,
    "r": -1.531,
    "mode": "live"
+  },
+  {
+   "strategy": "gap_go",
+   "symbol": "HCLTECH",
+   "side": 1,
+   "qty": 38,
+   "entry": 1407.0,
+   "stop": 1394.15,
+   "target": 1432.6,
+   "entry_time": "09:30",
+   "note": "gap +1.0% and go",
+   "date": "2026-11-26",
+   "exit": 1432.6,
+   "exit_time": "13:55",
+   "reason": "target",
+   "gross": 951.22,
+   "charges": 57.32,
+   "net": 893.9,
+   "r": 1.831,
+   "mode": "live"
   }
  ],
- "today_net": 1058.0,
+ "today_net": 1952.0,
  "log": [
-  "11:30  SKIP  ITC         vwap      VWAP loss: max 3 trades a day",
-  "11:30  SKIP  INDIGO      orb30_2r  ORB30 down: max 3 trades a day",
   "11:30  SKIP  INDIGO      orb60     ORB60 down: max 3 trades a day",
   "11:30  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day",
   "11:30  CLOSE TCS         stop       @ 2552.00  net Rs -575 [vwap] (charges 82)",
@@ -408,12 +415,35 @@
   "13:35  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day",
   "13:40  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day",
   "13:45  SKIP  INFY        orb15     ORB15 up: max 3 trades a day",
-  "13:45  SKIP  INFY        orb30_2r  ORB30 up: max 3 trades a day"
+  "13:45  SKIP  INFY        orb30_2r  ORB30 up: max 3 trades a day",
+  "13:55  CLOSE HCLTECH     target     @ 1432.60  net Rs +894 [gap_go] (charges 57)",
+  "13:55  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day"
  ],
- "all_trades": 294,
- "all_wins": 158,
- "all_net": -13295.0,
+ "all_trades": 295,
+ "all_wins": 159,
+ "all_net": -12401.0,
  "recent": [
+  {
+   "date": "2026-11-26",
+   "symbol": "HCLTECH",
+   "strategy": "gap_go",
+   "side": "1",
+   "qty": "38",
+   "entry_time": "09:30",
+   "entry": "1407.0",
+   "stop": "1394.15",
+   "target": "1432.6",
+   "exit_time": "13:55",
+   "exit": "1432.6",
+   "reason": "target",
+   "gross": "951.22",
+   "charges": "57.32",
+   "net": "893.9",
+   "r": "1.831",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-26",
    "symbol": "APOLLOHOSP",
@@ -917,27 +947,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-25",
-   "symbol": "APOLLOHOSP",
-   "strategy": "vwap",
-   "side": "-1",
-   "qty": "10",
-   "entry_time": "10:20",
-   "entry": "9230.0",
-   "stop": "9268.5",
-   "target": "9153.0",
-   "exit_time": "11:40",
-   "exit": "9268.5",
-   "reason": "stop",
-   "gross": "-422.0",
-   "charges": "79.75",
-   "net": "-501.75",
-   "r": "-1.303",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -954,7 +963,7 @@
   "2026-11-20": 2067.0,
   "2026-11-23": -947.0,
   "2026-11-25": -195.0,
-  "2026-11-26": 1056.0
+  "2026-11-26": 1950.0
  },
  "by_strategy": {
   "orb15": {
@@ -986,12 +995,12 @@
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 35,
-   "all_wins": 14,
-   "all_net": -908
+   "today_trades": 1,
+   "today_net": 894,
+   "open": 2,
+   "all_trades": 36,
+   "all_wins": 15,
+   "all_net": -14
   },
   "gap_fade": {
    "desc": "gap >=1% that reverses: target yesterday's close",
@@ -1210,11 +1219,11 @@
     ]
    },
    "gap_go": {
-    "days": 13,
-    "trades": 35,
-    "net": -908,
-    "per_trade": -26,
-    "t": -0.44,
+    "days": 14,
+    "trades": 36,
+    "net": -14,
+    "per_trade": 0,
+    "t": -0.22,
     "drawdown": -3286,
     "passed": 1,
     "of": 7,
@@ -1224,31 +1233,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "13 of 60 days"
+      "now": "14 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "35 of 150 trades"
+      "now": "36 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -26 a trade"
+      "now": "Rs -0 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.44"
+      "now": "t = -0.22"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -185 then Rs -722"
+      "now": "Rs -784 then Rs +770"
      },
      {
       "id": "drawdown",

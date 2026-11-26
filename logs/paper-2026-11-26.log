@@ -229,3 +229,5 @@ NSE's own daily file: latest saved is 2026-11-25
 13:40  SKIP  HINDUNILVR  vwap      VWAP reclaim: max 3 trades a day
 13:45  SKIP  INFY        orb15     ORB15 up: max 3 trades a day
 13:45  SKIP  INFY        orb30_2r  ORB30 up: max 3 trades a day
+13:55  CLOSE HCLTECH     target     @ 1432.60  net Rs +894 [gap_go] (charges 57)
+13:55  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day
