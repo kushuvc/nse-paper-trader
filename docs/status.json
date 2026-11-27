@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 09:20 IST",
- "updated_ts": 1795751451,
+ "updated": "2026-11-27 09:30 IST",
+ "updated_ts": 1795752052,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -12,10 +12,79 @@
   "trap90"
  ],
  "date": "2026-11-27",
- "open": {},
+ "open": {
+  "trap90|ADANIPORTS": {
+   "strategy": "trap90",
+   "symbol": "ADANIPORTS",
+   "side": 1,
+   "qty": 17,
+   "entry": 1925.9,
+   "stop": 1897.0,
+   "target": 1928.8,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop"
+  },
+  "trap90|BSE": {
+   "strategy": "trap90",
+   "symbol": "BSE",
+   "side": 1,
+   "qty": 8,
+   "entry": 4033.7,
+   "stop": 3973.15,
+   "target": 4039.75,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop"
+  },
+  "trap90|BAJFINANCE": {
+   "strategy": "trap90",
+   "symbol": "BAJFINANCE",
+   "side": 1,
+   "qty": 30,
+   "entry": 1101.05,
+   "stop": 1084.5,
+   "target": 1102.7,
+   "entry_time": "09:30",
+   "note": "tiny target, wide stop"
+  },
+  "gap_go|TITAN": {
+   "strategy": "gap_go",
+   "symbol": "TITAN",
+   "side": 1,
+   "qty": 9,
+   "entry": 4755.1,
+   "stop": 4702.2,
+   "target": 4860.9,
+   "entry_time": "09:30",
+   "note": "gap +1.6% and go"
+  }
+ },
  "closed": [],
  "today_net": 0,
- "log": [],
+ "log": [
+  "09:30  OPEN  ADANIPORTS  BUY     17 @ 1925.90  stop 1897.00  target 1928.80  [trap90: tiny target, wide stop]",
+  "09:30  OPEN  BSE         BUY      8 @ 4033.70  stop 3973.15  target 4039.75  [trap90: tiny target, wide stop]",
+  "09:30  OPEN  BAJFINANCE  BUY     30 @ 1101.05  stop 1084.50  target 1102.70  [trap90: tiny target, wide stop]",
+  "09:30  SKIP  BAJAJFINSV  trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  BEL         trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  BHARTIARTL  trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  DRREDDY     trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  ETERNAL     trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  GRASIM      trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  HDFCBANK    trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  HDFCLIFE    trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  ICICIBANK   trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  INDIGO      trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  JSWSTEEL    trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  MAXHEALTH   trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  POWERGRID   trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  SBIN        trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  TMPV        trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  TATASTEEL   trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  OPEN  TITAN       BUY      9 @ 4755.10  stop 4702.20  target 4860.90  [gap_go: gap +1.6% and go]",
+  "09:30  SKIP  TITAN       trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  TRENT       trap90    tiny target, wide stop: max 3 trades a day",
+  "09:30  SKIP  ULTRACEMCO  trap90    tiny target, wide stop: max 3 trades a day"
+ ],
  "all_trades": 302,
  "all_wins": 163,
  "all_net": -11199.0,
@@ -594,7 +663,7 @@
    "desc": "gap >=1% that continues: join, 2R",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 1,
    "all_trades": 38,
    "all_wins": 17,
    "all_net": 1442
@@ -621,7 +690,7 @@
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
    "today_trades": 0,
    "today_net": 0,
-   "open": 0,
+   "open": 3,
    "all_trades": 42,
    "all_wins": 38,
    "all_net": -1620
