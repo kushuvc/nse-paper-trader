@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 14:46 IST",
- "updated_ts": 1795770984,
+ "updated": "2026-11-27 14:56 IST",
+ "updated_ts": 1795771586,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -353,7 +353,6 @@
  ],
  "today_net": -1008.0,
  "log": [
-  "11:05  SKIP  TATASTEEL   vwap      VWAP reclaim: max 3 trades a day",
   "11:10  SKIP  TMPV        vwap      VWAP reclaim: max 3 trades a day",
   "11:15  SKIP  POWERGRID   vwap      VWAP reclaim: max 3 trades a day",
   "11:20  SKIP  ADANIENT    learner   via orb30_2r (expects +0.09R): max 3 trades a day",
@@ -412,7 +411,8 @@
   "14:30  CLOSE COALINDIA   stop       @ 388.75  net Rs -610 [vwap] (charges 77)",
   "14:35  SKIP  HCLTECH     vwap      VWAP loss: after 14:30",
   "14:45  CLOSE EICHERMOT   target     @ 8063.00  net Rs +804 [vwap] (charges 82)",
-  "14:45  SKIP  INFY        vwap      VWAP loss: after 14:30"
+  "14:45  SKIP  INFY        vwap      VWAP loss: after 14:30",
+  "14:55  SKIP  BEL         vwap      VWAP reclaim: after 14:30"
  ],
  "all_trades": 315,
  "all_wins": 170,
