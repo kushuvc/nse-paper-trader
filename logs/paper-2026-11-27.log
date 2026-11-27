@@ -218,3 +218,4 @@ NSE's own daily file: latest saved is 2026-11-26
 13:35  SKIP  POWERGRID   vwap      VWAP reclaim: max 3 trades a day
 13:40  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day
 13:40  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day
+13:55  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day

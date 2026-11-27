@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 13:46 IST",
- "updated_ts": 1795767375,
+ "updated": "2026-11-27 13:56 IST",
+ "updated_ts": 1795767976,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -326,7 +326,6 @@
  ],
  "today_net": -589.0,
  "log": [
-  "10:55  SKIP  TITAN       learner   via orb60 (expects +0.09R): already holding this stock",
   "10:55  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day",
   "11:00  SKIP  CIPLA       orb60     ORB60 down: max 3 trades a day",
   "11:05  SKIP  APOLLOHOSP  orb60     ORB60 down: max 3 trades a day",
@@ -385,7 +384,8 @@
   "13:30  SKIP  M&M         orb60     ORB60 down: max 3 trades a day",
   "13:35  SKIP  POWERGRID   vwap      VWAP reclaim: max 3 trades a day",
   "13:40  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day",
-  "13:40  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day"
+  "13:40  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day",
+  "13:55  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 312,
  "all_wins": 169,
