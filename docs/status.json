@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 13:36 IST",
- "updated_ts": 1795766773,
+ "updated": "2026-11-27 13:46 IST",
+ "updated_ts": 1795767375,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -326,8 +326,6 @@
  ],
  "today_net": -589.0,
  "log": [
-  "10:55  OPEN  TITAN       SHORT    4 @ 4698.50  stop 4803.90  target 4487.70  [learner via orb30_2r, expects +0.09R: short, 10:30-13:00, with market, against gap, wide stop, after usual delivery, after a mixed market]",
-  "10:55  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day",
   "10:55  SKIP  TITAN       learner   via orb60 (expects +0.09R): already holding this stock",
   "10:55  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day",
   "11:00  SKIP  CIPLA       orb60     ORB60 down: max 3 trades a day",
@@ -385,7 +383,9 @@
   "13:25  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day",
   "13:30  CLOSE ADANIPORTS  target     @ 1882.80  net Rs +433 [learner] (charges 46)",
   "13:30  SKIP  M&M         orb60     ORB60 down: max 3 trades a day",
-  "13:35  SKIP  POWERGRID   vwap      VWAP reclaim: max 3 trades a day"
+  "13:35  SKIP  POWERGRID   vwap      VWAP reclaim: max 3 trades a day",
+  "13:40  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day",
+  "13:40  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 312,
  "all_wins": 169,
