@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 14:36 IST",
- "updated_ts": 1795770383,
+ "updated": "2026-11-27 14:46 IST",
+ "updated_ts": 1795770984,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -45,17 +45,6 @@
    "target": 2567.3,
    "entry_time": "10:20",
    "note": "ORB60 up"
-  },
-  "vwap|EICHERMOT": {
-   "strategy": "vwap",
-   "symbol": "EICHERMOT",
-   "side": -1,
-   "qty": 12,
-   "entry": 8140.0,
-   "stop": 8178.5,
-   "target": 8063.0,
-   "entry_time": "10:25",
-   "note": "VWAP loss"
   },
   "vwap|CIPLA": {
    "strategy": "vwap",
@@ -340,12 +329,30 @@
    "net": -609.53,
    "r": -1.221,
    "mode": "live"
+  },
+  {
+   "strategy": "vwap",
+   "symbol": "EICHERMOT",
+   "side": -1,
+   "qty": 12,
+   "entry": 8140.0,
+   "stop": 8178.5,
+   "target": 8063.0,
+   "entry_time": "10:25",
+   "note": "VWAP loss",
+   "date": "2026-11-27",
+   "exit": 8063.0,
+   "exit_time": "14:45",
+   "reason": "target",
+   "gross": 885.11,
+   "charges": 81.56,
+   "net": 803.55,
+   "r": 1.739,
+   "mode": "live"
   }
  ],
- "today_net": -1811.0,
+ "today_net": -1008.0,
  "log": [
-  "11:05  SKIP  MARUTI      orb60     ORB60 down: max 3 trades a day",
-  "11:05  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day",
   "11:05  SKIP  TATASTEEL   vwap      VWAP reclaim: max 3 trades a day",
   "11:10  SKIP  TMPV        vwap      VWAP reclaim: max 3 trades a day",
   "11:15  SKIP  POWERGRID   vwap      VWAP reclaim: max 3 trades a day",
@@ -403,12 +410,35 @@
   "14:25  SKIP  TATACONSUM  vwap      VWAP loss: max 3 trades a day",
   "14:30  CLOSE COALINDIA   stop       @ 388.65  net Rs -613 [orb60] (charges 78)",
   "14:30  CLOSE COALINDIA   stop       @ 388.75  net Rs -610 [vwap] (charges 77)",
-  "14:35  SKIP  HCLTECH     vwap      VWAP loss: after 14:30"
+  "14:35  SKIP  HCLTECH     vwap      VWAP loss: after 14:30",
+  "14:45  CLOSE EICHERMOT   target     @ 8063.00  net Rs +804 [vwap] (charges 82)",
+  "14:45  SKIP  INFY        vwap      VWAP loss: after 14:30"
  ],
- "all_trades": 314,
- "all_wins": 169,
- "all_net": -13010.0,
+ "all_trades": 315,
+ "all_wins": 170,
+ "all_net": -12207.0,
  "recent": [
+  {
+   "date": "2026-11-27",
+   "symbol": "EICHERMOT",
+   "strategy": "vwap",
+   "side": "-1",
+   "qty": "12",
+   "entry_time": "10:25",
+   "entry": "8140.0",
+   "stop": "8178.5",
+   "target": "8063.0",
+   "exit_time": "14:45",
+   "exit": "8063.0",
+   "reason": "target",
+   "gross": "885.11",
+   "charges": "81.56",
+   "net": "803.55",
+   "r": "1.739",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-27",
    "symbol": "COALINDIA",
@@ -912,27 +942,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "ETERNAL",
-   "strategy": "orb15",
-   "side": "-1",
-   "qty": "140",
-   "entry_time": "09:35",
-   "entry": "369.05",
-   "stop": "372.6",
-   "target": "365.55",
-   "exit_time": "11:05",
-   "exit": "365.55",
-   "reason": "target",
-   "gross": "469.43",
-   "charges": "54.58",
-   "net": "414.85",
-   "r": "0.835",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -950,7 +959,7 @@
   "2026-11-23": -947.0,
   "2026-11-25": -195.0,
   "2026-11-26": 3152.0,
-  "2026-11-27": -1813.0
+  "2026-11-27": -1009.0
  },
  "by_strategy": {
   "orb15": {
@@ -1000,12 +1009,12 @@
   },
   "vwap": {
    "desc": "VWAP reclaim/loss with the day's trend, 2R",
-   "today_trades": 1,
-   "today_net": -610,
-   "open": 2,
-   "all_trades": 43,
-   "all_wins": 17,
-   "all_net": -5017
+   "today_trades": 2,
+   "today_net": 194,
+   "open": 1,
+   "all_trades": 44,
+   "all_wins": 18,
+   "all_net": -4213
   },
   "trap90": {
    "desc": "WARNING demo: +0.15% target / -1.5% stop",
@@ -1317,10 +1326,10 @@
    },
    "vwap": {
     "days": 15,
-    "trades": 43,
-    "net": -5017,
-    "per_trade": -117,
-    "t": -1.12,
+    "trades": 44,
+    "net": -4213,
+    "per_trade": -96,
+    "t": -0.9,
     "drawdown": -5077,
     "passed": 1,
     "of": 7,
@@ -1336,25 +1345,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "43 of 150 trades"
+      "now": "44 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -117 a trade"
+      "now": "Rs -96 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -1.12"
+      "now": "t = -0.90"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -2104 then Rs -2913"
+      "now": "Rs -2434 then Rs -1779"
      },
      {
       "id": "drawdown",

@@ -313,3 +313,4 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-27,ADANIPORTS,learner,-1,23,10:35,1904.4,1926.0,1882.8,13:30,1882.8,target,479.38,46.24,433.14,0.872,live,orb60,"short, 10:30-13:00, with market, against gap, wide stop, after low delivery, after a mixed market"
 2026-11-27,COALINDIA,orb60,-1,227,10:20,386.45,388.65,384.25,14:30,388.65,stop,-534.59,78.15,-612.74,-1.227,live,,
 2026-11-27,COALINDIA,vwap,-1,217,10:20,386.45,388.75,381.95,14:30,388.75,stop,-532.74,76.79,-609.53,-1.221,live,,
+2026-11-27,EICHERMOT,vwap,-1,12,10:25,8140.0,8178.5,8063.0,14:45,8063.0,target,885.11,81.56,803.55,1.739,live,,
