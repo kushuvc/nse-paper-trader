@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 13:26 IST",
- "updated_ts": 1795766171,
+ "updated": "2026-11-27 13:36 IST",
+ "updated_ts": 1795766773,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -78,20 +78,6 @@
    "target": 8063.0,
    "entry_time": "10:25",
    "note": "VWAP loss"
-  },
-  "learner|ADANIPORTS": {
-   "strategy": "learner",
-   "symbol": "ADANIPORTS",
-   "side": -1,
-   "qty": 23,
-   "entry": 1904.4,
-   "stop": 1926.0,
-   "target": 1882.8,
-   "entry_time": "10:35",
-   "note": "ORB60 down",
-   "via": "orb60",
-   "setup": "short, 10:30-13:00, with market, against gap, wide stop, after low delivery, after a mixed market",
-   "score": 0.065
   },
   "vwap|CIPLA": {
    "strategy": "vwap",
@@ -313,13 +299,33 @@
    "net": -556.0,
    "r": -1.116,
    "mode": "live"
+  },
+  {
+   "strategy": "learner",
+   "symbol": "ADANIPORTS",
+   "side": -1,
+   "qty": 23,
+   "entry": 1904.4,
+   "stop": 1926.0,
+   "target": 1882.8,
+   "entry_time": "10:35",
+   "note": "ORB60 down",
+   "via": "orb60",
+   "setup": "short, 10:30-13:00, with market, against gap, wide stop, after low delivery, after a mixed market",
+   "score": 0.065,
+   "date": "2026-11-27",
+   "exit": 1882.8,
+   "exit_time": "13:30",
+   "reason": "target",
+   "gross": 479.38,
+   "charges": 46.24,
+   "net": 433.14,
+   "r": 0.872,
+   "mode": "live"
   }
  ],
- "today_net": -1022.0,
+ "today_net": -589.0,
  "log": [
-  "10:55  SKIP  SBIN        orb30_2r  ORB30 down: max 3 trades a day",
-  "10:55  SKIP  SBIN        orb60     ORB60 down: max 3 trades a day",
-  "10:55  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day",
   "10:55  OPEN  TITAN       SHORT    4 @ 4698.50  stop 4803.90  target 4487.70  [learner via orb30_2r, expects +0.09R: short, 10:30-13:00, with market, against gap, wide stop, after usual delivery, after a mixed market]",
   "10:55  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day",
   "10:55  SKIP  TITAN       learner   via orb60 (expects +0.09R): already holding this stock",
@@ -376,12 +382,36 @@
   "13:25  SKIP  EICHERMOT   orb30_2r  ORB30 down: max 3 trades a day",
   "13:25  SKIP  EICHERMOT   orb60     ORB60 down: max 3 trades a day",
   "13:25  SKIP  HCLTECH     vwap      VWAP loss: max 3 trades a day",
-  "13:25  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day"
+  "13:25  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day",
+  "13:30  CLOSE ADANIPORTS  target     @ 1882.80  net Rs +433 [learner] (charges 46)",
+  "13:30  SKIP  M&M         orb60     ORB60 down: max 3 trades a day",
+  "13:35  SKIP  POWERGRID   vwap      VWAP reclaim: max 3 trades a day"
  ],
- "all_trades": 311,
- "all_wins": 168,
- "all_net": -12221.0,
+ "all_trades": 312,
+ "all_wins": 169,
+ "all_net": -11788.0,
  "recent": [
+  {
+   "date": "2026-11-27",
+   "symbol": "ADANIPORTS",
+   "strategy": "learner",
+   "side": "-1",
+   "qty": "23",
+   "entry_time": "10:35",
+   "entry": "1904.4",
+   "stop": "1926.0",
+   "target": "1882.8",
+   "exit_time": "13:30",
+   "exit": "1882.8",
+   "reason": "target",
+   "gross": "479.38",
+   "charges": "46.24",
+   "net": "433.14",
+   "r": "0.872",
+   "mode": "live",
+   "via": "orb60",
+   "setup": "short, 10:30-13:00, with market, against gap, wide stop, after low delivery, after a mixed market"
+  },
   {
    "date": "2026-11-27",
    "symbol": "NTPC",
@@ -885,27 +915,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "HINDALCO",
-   "strategy": "vwap",
-   "side": "1",
-   "qty": "110",
-   "entry_time": "10:35",
-   "entry": "905.45",
-   "stop": "902.0",
-   "target": "912.35",
-   "exit_time": "10:55",
-   "exit": "912.35",
-   "reason": "target",
-   "gross": "719.01",
-   "charges": "82.52",
-   "net": "636.49",
-   "r": "1.677",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -923,7 +932,7 @@
   "2026-11-23": -947.0,
   "2026-11-25": -195.0,
   "2026-11-26": 3152.0,
-  "2026-11-27": -1023.0
+  "2026-11-27": -590.0
  },
  "by_strategy": {
   "orb15": {
@@ -991,12 +1000,12 @@
   },
   "learner": {
    "desc": "takes only the signals last night's model expects to profit",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 0,
-   "all_trades": 30,
-   "all_wins": 14,
-   "all_net": -959
+   "today_trades": 1,
+   "today_net": 433,
+   "open": 2,
+   "all_trades": 31,
+   "all_wins": 15,
+   "all_net": -526
   }
  },
  "gate": {
@@ -1399,11 +1408,11 @@
     ]
    },
    "learner": {
-    "days": 11,
-    "trades": 30,
-    "net": -959,
-    "per_trade": -32,
-    "t": -0.58,
+    "days": 12,
+    "trades": 31,
+    "net": -526,
+    "per_trade": -17,
+    "t": -0.38,
     "drawdown": -3869,
     "passed": 1,
     "of": 7,
@@ -1413,31 +1422,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "11 of 60 days"
+      "now": "12 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "30 of 150 trades"
+      "now": "31 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -32 a trade"
+      "now": "Rs -17 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.58"
+      "now": "t = -0.38"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -1401 then Rs +442"
+      "now": "Rs -1401 then Rs +875"
      },
      {
       "id": "drawdown",
