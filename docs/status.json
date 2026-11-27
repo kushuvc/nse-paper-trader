@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 12:56 IST",
- "updated_ts": 1795764366,
+ "updated": "2026-11-27 13:06 IST",
+ "updated_ts": 1795764968,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -317,9 +317,6 @@
  ],
  "today_net": -1022.0,
  "log": [
-  "10:40  SKIP  HCLTECH     orb15     ORB15 down: max 3 trades a day",
-  "10:40  SKIP  HCLTECH     orb30_2r  ORB30 down: max 3 trades a day",
-  "10:40  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day",
   "10:40  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day",
   "10:45  CLOSE ADANIPORTS  target     @ 1901.45  net Rs +408 [orb15] (charges 65)",
   "10:55  SKIP  BAJFINANCE  orb15     ORB15 down: max 3 trades a day",
@@ -376,7 +373,10 @@
   "12:25  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day",
   "12:30  SKIP  SUNPHARMA   orb60     ORB60 down: max 3 trades a day",
   "12:40  SKIP  RELIANCE    vwap      VWAP loss: max 3 trades a day",
-  "12:50  SKIP  POWERGRID   vwap      VWAP reclaim: max 3 trades a day"
+  "12:50  SKIP  POWERGRID   vwap      VWAP reclaim: max 3 trades a day",
+  "13:05  SKIP  BSE         orb30_2r  ORB30 down: max 3 trades a day",
+  "13:05  SKIP  BSE         learner   via orb60 (expects +0.07R): max 3 trades a day",
+  "13:05  SKIP  BSE         orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 311,
  "all_wins": 168,
