@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 14:16 IST",
- "updated_ts": 1795769179,
+ "updated": "2026-11-27 14:26 IST",
+ "updated_ts": 1795769781,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -326,7 +326,6 @@
  ],
  "today_net": -589.0,
  "log": [
-  "11:05  SKIP  GRASIM      orb30_2r  ORB30 down: max 3 trades a day",
   "11:05  SKIP  GRASIM      orb60     ORB60 down: max 3 trades a day",
   "11:05  SKIP  HINDUNILVR  vwap      VWAP loss: max 3 trades a day",
   "11:05  SKIP  MARUTI      orb30_2r  ORB30 down: max 3 trades a day",
@@ -385,7 +384,8 @@
   "14:10  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day",
   "14:10  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day",
   "14:15  SKIP  BEL         vwap      VWAP reclaim: max 3 trades a day",
-  "14:15  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day"
+  "14:15  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day",
+  "14:25  SKIP  TATACONSUM  vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 312,
  "all_wins": 169,
