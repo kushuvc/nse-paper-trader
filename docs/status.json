@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 13:06 IST",
- "updated_ts": 1795764968,
+ "updated": "2026-11-27 13:16 IST",
+ "updated_ts": 1795765570,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -317,11 +317,6 @@
  ],
  "today_net": -1022.0,
  "log": [
-  "10:40  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day",
-  "10:45  CLOSE ADANIPORTS  target     @ 1901.45  net Rs +408 [orb15] (charges 65)",
-  "10:55  SKIP  BAJFINANCE  orb15     ORB15 down: max 3 trades a day",
-  "10:55  SKIP  BAJFINANCE  orb30_2r  ORB30 down: max 3 trades a day",
-  "10:55  SKIP  BAJFINANCE  orb60     ORB60 down: max 3 trades a day",
   "10:55  SKIP  CIPLA       orb15     ORB15 down: max 3 trades a day",
   "10:55  SKIP  CIPLA       orb30_2r  ORB30 down: max 3 trades a day",
   "10:55  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day",
@@ -376,7 +371,12 @@
   "12:50  SKIP  POWERGRID   vwap      VWAP reclaim: max 3 trades a day",
   "13:05  SKIP  BSE         orb30_2r  ORB30 down: max 3 trades a day",
   "13:05  SKIP  BSE         learner   via orb60 (expects +0.07R): max 3 trades a day",
-  "13:05  SKIP  BSE         orb60     ORB60 down: max 3 trades a day"
+  "13:05  SKIP  BSE         orb60     ORB60 down: max 3 trades a day",
+  "13:10  SKIP  TECHM       orb15     ORB15 down: max 3 trades a day",
+  "13:10  SKIP  TECHM       learner   via orb30_2r (expects +0.13R): max 3 trades a day",
+  "13:10  SKIP  TECHM       orb30_2r  ORB30 down: max 3 trades a day",
+  "13:10  SKIP  TECHM       orb60     ORB60 down: max 3 trades a day",
+  "13:15  SKIP  ITC         vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 311,
  "all_wins": 168,
