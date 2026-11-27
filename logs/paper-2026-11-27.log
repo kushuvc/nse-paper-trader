@@ -113,3 +113,31 @@ NSE's own daily file: latest saved is 2026-11-26
 10:30  SKIP  ULTRACEMCO  orb15     ORB15 down: max 3 trades a day
 10:30  SKIP  ULTRACEMCO  orb30_2r  ORB30 down: max 3 trades a day
 10:30  SKIP  ULTRACEMCO  orb60     ORB60 down: max 3 trades a day
+10:35  OPEN  ADANIPORTS  SHORT   23 @ 1904.40  stop 1926.00  target 1882.80  [learner via orb60, expects +0.07R: short, 10:30-13:00, with market, against gap, wide stop, after low delivery, after a mixed market]
+10:35  SKIP  ADANIPORTS  orb60     ORB60 down: max 3 trades a day
+10:35  SKIP  AXISBANK    orb60     ORB60 down: max 3 trades a day
+10:35  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day
+10:35  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day
+10:35  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day
+10:35  OPEN  CIPLA       SHORT   67 @ 1444.20  stop 1451.60  target 1429.40  [vwap: VWAP loss]
+10:35  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day
+10:35  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day
+10:35  SKIP  EICHERMOT   orb15     ORB15 down: max 3 trades a day
+10:35  SKIP  INFY        orb15     ORB15 down: max 3 trades a day
+10:35  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day
+10:35  OPEN  INFY        SHORT   37 @ 1154.00  stop 1167.25  target 1140.75  [learner via orb60, expects +0.06R: short, 10:30-13:00, with market, no gap, wide stop, after usual delivery, after a mixed market]
+10:35  SKIP  INFY        orb60     ORB60 down: max 3 trades a day
+10:35  SKIP  MARUTI      vwap      VWAP loss: max 3 trades a day
+10:35  SKIP  RELIANCE    orb15     ORB15 down: max 3 trades a day
+10:35  SKIP  RELIANCE    orb30_2r  ORB30 down: max 3 trades a day
+10:35  SKIP  RELIANCE    orb60     ORB60 down: max 3 trades a day
+10:35  SKIP  SUNPHARMA   vwap      VWAP reclaim: max 3 trades a day
+10:35  SKIP  TCS         vwap      VWAP loss: max 3 trades a day
+10:35  SKIP  TECHM       vwap      VWAP loss: max 3 trades a day
+10:35  CLOSE TITAN       stop       @ 4702.20  net Rs -538 [gap_go] (charges 45)
+10:40  CLOSE BSE         stop       @ 4009.05  net Rs -543 [orb15] (charges 38)
+10:40  SKIP  BEL         orb60     ORB60 up: max 3 trades a day
+10:40  SKIP  HCLTECH     orb15     ORB15 down: max 3 trades a day
+10:40  SKIP  HCLTECH     orb30_2r  ORB30 down: max 3 trades a day
+10:40  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day
+10:40  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day
