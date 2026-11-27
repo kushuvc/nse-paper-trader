@@ -168,3 +168,8 @@ NSE's own daily file: latest saved is 2026-11-26
 11:05  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day
 11:05  SKIP  TATASTEEL   vwap      VWAP reclaim: max 3 trades a day
 11:10  SKIP  TMPV        vwap      VWAP reclaim: max 3 trades a day
+11:15  SKIP  POWERGRID   vwap      VWAP reclaim: max 3 trades a day
+11:20  SKIP  ADANIENT    learner   via orb30_2r (expects +0.09R): max 3 trades a day
+11:20  SKIP  ADANIENT    orb30_2r  ORB30 down: max 3 trades a day
+11:20  SKIP  ADANIENT    orb60     ORB60 down: max 3 trades a day
+11:20  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day
