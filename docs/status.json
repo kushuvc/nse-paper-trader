@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 13:16 IST",
- "updated_ts": 1795765570,
+ "updated": "2026-11-27 13:26 IST",
+ "updated_ts": 1795766171,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -317,10 +317,6 @@
  ],
  "today_net": -1022.0,
  "log": [
-  "10:55  SKIP  CIPLA       orb15     ORB15 down: max 3 trades a day",
-  "10:55  SKIP  CIPLA       orb30_2r  ORB30 down: max 3 trades a day",
-  "10:55  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day",
-  "10:55  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day",
   "10:55  SKIP  SBIN        orb30_2r  ORB30 down: max 3 trades a day",
   "10:55  SKIP  SBIN        orb60     ORB60 down: max 3 trades a day",
   "10:55  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day",
@@ -376,7 +372,11 @@
   "13:10  SKIP  TECHM       learner   via orb30_2r (expects +0.13R): max 3 trades a day",
   "13:10  SKIP  TECHM       orb30_2r  ORB30 down: max 3 trades a day",
   "13:10  SKIP  TECHM       orb60     ORB60 down: max 3 trades a day",
-  "13:15  SKIP  ITC         vwap      VWAP loss: max 3 trades a day"
+  "13:15  SKIP  ITC         vwap      VWAP loss: max 3 trades a day",
+  "13:25  SKIP  EICHERMOT   orb30_2r  ORB30 down: max 3 trades a day",
+  "13:25  SKIP  EICHERMOT   orb60     ORB60 down: max 3 trades a day",
+  "13:25  SKIP  HCLTECH     vwap      VWAP loss: max 3 trades a day",
+  "13:25  SKIP  TMPV        vwap      VWAP loss: max 3 trades a day"
  ],
  "all_trades": 311,
  "all_wins": 168,
