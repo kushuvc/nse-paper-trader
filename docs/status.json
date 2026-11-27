@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-27 18:32 IST",
- "updated_ts": 1795784532,
+ "updated_ts": 1795784556,
  "in_session": false,
  "strategies": [
   "orb15",
@@ -406,9 +406,6 @@
  ],
  "today_net": -525.0,
  "log": [
-  "11:50  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day",
-  "11:55  CLOSE ADANIENT    target     @ 2654.50  net Rs +385 [orb15] (charges 77)",
-  "11:55  SKIP  BEL         vwap      VWAP reclaim: max 3 trades a day",
   "12:00  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day",
   "12:00  SKIP  TMPV        vwap      VWAP reclaim: max 3 trades a day",
   "12:05  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day",
@@ -465,7 +462,10 @@
   "15:15  CLOSE ITC         square-off @ 304.15  net Rs +181 [orb30_2r] (charges 65)",
   "15:15  CLOSE INFY        square-off @ 1154.00  net Rs -62 [learner] (charges 45)",
   "15:15  CLOSE TITAN       square-off @ 4689.90  net Rs +7 [learner] (charges 20)",
-  "15:15  SKIP  TRENT       vwap      VWAP reclaim: past square-off"
+  "15:15  SKIP  TRENT       vwap      VWAP reclaim: past square-off",
+  "18:32  SKIP  BEL         vwap      VWAP reclaim: past square-off",
+  "18:32  SKIP  INDIGO      vwap      VWAP reclaim: past square-off",
+  "18:32  SKIP  LT          orb60     ORB60 down: past square-off"
  ],
  "all_trades": 321,
  "all_wins": 174,
