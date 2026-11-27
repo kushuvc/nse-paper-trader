@@ -142,3 +142,18 @@ NSE's own daily file: latest saved is 2026-11-26
 10:40  SKIP  HCLTECH     orb60     ORB60 down: max 3 trades a day
 10:40  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day
 10:45  CLOSE ADANIPORTS  target     @ 1901.45  net Rs +408 [orb15] (charges 65)
+10:55  SKIP  BAJFINANCE  orb15     ORB15 down: max 3 trades a day
+10:55  SKIP  BAJFINANCE  orb30_2r  ORB30 down: max 3 trades a day
+10:55  SKIP  BAJFINANCE  orb60     ORB60 down: max 3 trades a day
+10:55  SKIP  CIPLA       orb15     ORB15 down: max 3 trades a day
+10:55  SKIP  CIPLA       orb30_2r  ORB30 down: max 3 trades a day
+10:55  SKIP  ICICIBANK   orb30_2r  ORB30 down: max 3 trades a day
+10:55  SKIP  ICICIBANK   orb60     ORB60 down: max 3 trades a day
+10:55  SKIP  SBIN        orb30_2r  ORB30 down: max 3 trades a day
+10:55  SKIP  SBIN        orb60     ORB60 down: max 3 trades a day
+10:55  SKIP  TITAN       orb15     ORB15 down: max 3 trades a day
+10:55  OPEN  TITAN       SHORT    4 @ 4698.50  stop 4803.90  target 4487.70  [learner via orb30_2r, expects +0.09R: short, 10:30-13:00, with market, against gap, wide stop, after usual delivery, after a mixed market]
+10:55  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day
+10:55  SKIP  TITAN       learner   via orb60 (expects +0.09R): already holding this stock
+10:55  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day
+11:00  SKIP  CIPLA       orb60     ORB60 down: max 3 trades a day
