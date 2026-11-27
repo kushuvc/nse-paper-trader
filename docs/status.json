@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 12:26 IST",
- "updated_ts": 1795762562,
+ "updated": "2026-11-27 12:36 IST",
+ "updated_ts": 1795763163,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -317,7 +317,6 @@
  ],
  "today_net": -1022.0,
  "log": [
-  "10:35  CLOSE TITAN       stop       @ 4702.20  net Rs -538 [gap_go] (charges 45)",
   "10:40  CLOSE BSE         stop       @ 4009.05  net Rs -543 [orb15] (charges 38)",
   "10:40  SKIP  BEL         orb60     ORB60 up: max 3 trades a day",
   "10:40  SKIP  HCLTECH     orb15     ORB15 down: max 3 trades a day",
@@ -376,7 +375,8 @@
   "12:20  SKIP  TATASTEEL   orb30_2r  ORB30 down: max 3 trades a day",
   "12:20  SKIP  TATASTEEL   orb60     ORB60 down: max 3 trades a day",
   "12:25  SKIP  LT          vwap      VWAP loss: max 3 trades a day",
-  "12:25  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day"
+  "12:25  SKIP  NTPC        orb60     ORB60 down: max 3 trades a day",
+  "12:30  SKIP  SUNPHARMA   orb60     ORB60 down: max 3 trades a day"
  ],
  "all_trades": 311,
  "all_wins": 168,
