@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 11:31 IST",
- "updated_ts": 1795759270,
+ "updated": "2026-11-27 11:41 IST",
+ "updated_ts": 1795759871,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -290,10 +290,6 @@
  ],
  "today_net": -312.0,
  "log": [
-  "10:35  OPEN  ADANIPORTS  SHORT   23 @ 1904.40  stop 1926.00  target 1882.80  [learner via orb60, expects +0.07R: short, 10:30-13:00, with market, against gap, wide stop, after low delivery, after a mixed market]",
-  "10:35  SKIP  ADANIPORTS  orb60     ORB60 down: max 3 trades a day",
-  "10:35  SKIP  AXISBANK    orb60     ORB60 down: max 3 trades a day",
-  "10:35  SKIP  BHARTIARTL  orb15     ORB15 down: max 3 trades a day",
   "10:35  SKIP  BHARTIARTL  orb30_2r  ORB30 down: max 3 trades a day",
   "10:35  SKIP  BHARTIARTL  orb60     ORB60 down: max 3 trades a day",
   "10:35  OPEN  CIPLA       SHORT   67 @ 1444.20  stop 1451.60  target 1429.40  [vwap: VWAP loss]",
@@ -349,7 +345,11 @@
   "11:20  SKIP  ADANIENT    learner   via orb30_2r (expects +0.09R): max 3 trades a day",
   "11:20  SKIP  ADANIENT    orb30_2r  ORB30 down: max 3 trades a day",
   "11:20  SKIP  ADANIENT    orb60     ORB60 down: max 3 trades a day",
-  "11:20  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day"
+  "11:20  SKIP  ONGC        vwap      VWAP loss: max 3 trades a day",
+  "11:35  SKIP  ASIANPAINT  vwap      VWAP reclaim: max 3 trades a day",
+  "11:35  SKIP  POWERGRID   vwap      VWAP reclaim: max 3 trades a day",
+  "11:40  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day",
+  "11:40  SKIP  TMPV        vwap      VWAP reclaim: max 3 trades a day"
  ],
  "all_trades": 308,
  "all_wins": 167,
