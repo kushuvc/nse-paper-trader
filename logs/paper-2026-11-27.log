@@ -183,3 +183,7 @@ NSE's own daily file: latest saved is 2026-11-26
 11:55  SKIP  BEL         vwap      VWAP reclaim: max 3 trades a day
 12:00  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day
 12:00  SKIP  TMPV        vwap      VWAP reclaim: max 3 trades a day
+12:05  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day
+12:05  SKIP  HINDUNILVR  orb60     ORB60 up: max 3 trades a day
+12:10  CLOSE NTPC        stop       @ 320.35  net Rs -556 [orb30_2r] (charges 42)
+12:10  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day
