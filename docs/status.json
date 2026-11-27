@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 10:00 IST",
- "updated_ts": 1795753857,
+ "updated": "2026-11-27 10:10 IST",
+ "updated_ts": 1795754458,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -146,12 +146,6 @@
  ],
  "today_net": 2.0,
  "log": [
-  "09:30  OPEN  ADANIPORTS  BUY     17 @ 1925.90  stop 1897.00  target 1928.80  [trap90: tiny target, wide stop]",
-  "09:30  OPEN  BSE         BUY      8 @ 4033.70  stop 3973.15  target 4039.75  [trap90: tiny target, wide stop]",
-  "09:30  OPEN  BAJFINANCE  BUY     30 @ 1101.05  stop 1084.50  target 1102.70  [trap90: tiny target, wide stop]",
-  "09:30  SKIP  BAJAJFINSV  trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  BEL         trap90    tiny target, wide stop: max 3 trades a day",
-  "09:30  SKIP  BHARTIARTL  trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  DRREDDY     trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  ETERNAL     trap90    tiny target, wide stop: max 3 trades a day",
   "09:30  SKIP  GRASIM      trap90    tiny target, wide stop: max 3 trades a day",
@@ -205,7 +199,13 @@
   "09:55  SKIP  LT          orb15     ORB15 down: max 3 trades a day",
   "09:55  SKIP  LT          orb30_2r  ORB30 down: max 3 trades a day",
   "10:00  SKIP  BEL         orb30_2r  ORB30 up: max 3 trades a day",
-  "10:00  SKIP  INDIGO      orb30_2r  ORB30 up: max 3 trades a day"
+  "10:00  SKIP  INDIGO      orb30_2r  ORB30 up: max 3 trades a day",
+  "10:10  SKIP  HDFCBANK    orb15     ORB15 up: max 3 trades a day",
+  "10:10  SKIP  HDFCBANK    orb30_2r  ORB30 up: max 3 trades a day",
+  "10:10  SKIP  HDFCLIFE    orb30_2r  ORB30 up: max 3 trades a day",
+  "10:10  SKIP  M&M         orb15     ORB15 up: max 3 trades a day",
+  "10:10  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day",
+  "10:10  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day"
  ],
  "all_trades": 304,
  "all_wins": 165,
