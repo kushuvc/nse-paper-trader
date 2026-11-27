@@ -220,3 +220,7 @@ NSE's own daily file: latest saved is 2026-11-26
 13:40  SKIP  SBILIFE     vwap      VWAP reclaim: max 3 trades a day
 13:55  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day
 14:00  SKIP  NESTLEIND   vwap      VWAP loss: max 3 trades a day
+14:10  SKIP  JSWSTEEL    vwap      VWAP reclaim: max 3 trades a day
+14:10  SKIP  KOTAKBANK   vwap      VWAP loss: max 3 trades a day
+14:15  SKIP  BEL         vwap      VWAP reclaim: max 3 trades a day
+14:15  SKIP  M&M         vwap      VWAP reclaim: max 3 trades a day
