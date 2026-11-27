@@ -314,3 +314,9 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-27,COALINDIA,orb60,-1,227,10:20,386.45,388.65,384.25,14:30,388.65,stop,-534.59,78.15,-612.74,-1.227,live,,
 2026-11-27,COALINDIA,vwap,-1,217,10:20,386.45,388.75,381.95,14:30,388.75,stop,-532.74,76.79,-609.53,-1.221,live,,
 2026-11-27,EICHERMOT,vwap,-1,12,10:25,8140.0,8178.5,8063.0,14:45,8063.0,target,885.11,81.56,803.55,1.739,live,,
+2026-11-27,APOLLOHOSP,orb30_2r,-1,6,09:50,9225.0,9302.5,9070.0,15:15,9126.5,square-off,568.98,58.45,510.53,1.098,live,,
+2026-11-27,ASIANPAINT,orb60,1,24,10:20,2547.0,2526.65,2567.3,15:15,2532.0,square-off,-384.38,64.59,-448.97,-0.919,live,,
+2026-11-27,CIPLA,vwap,-1,67,10:35,1444.2,1451.6,1429.4,15:15,1438.0,square-off,376.78,81.27,295.51,0.596,live,,
+2026-11-27,ITC,orb30_2r,-1,200,09:50,305.5,308.0,300.5,15:15,304.15,square-off,245.62,64.68,180.94,0.362,live,,
+2026-11-27,INFY,learner,-1,37,10:35,1154.0,1167.25,1140.75,15:15,1154.0,square-off,-17.08,45.28,-62.36,-0.127,live,orb60,"short, 10:30-13:00, with market, no gap, wide stop, after usual delivery, after a mixed market"
+2026-11-27,TITAN,learner,-1,4,10:55,4698.5,4803.9,4487.7,15:15,4689.9,square-off,26.89,19.91,6.98,0.017,live,orb30_2r,"short, 10:30-13:00, with market, against gap, wide stop, after usual delivery, after a mixed market"

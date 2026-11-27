@@ -234,3 +234,11 @@ NSE's own daily file: latest saved is 2026-11-26
 15:05  SKIP  TCS         vwap      VWAP loss: after 14:30
 15:05  SKIP  TMPV        orb30_2r  ORB30 down: after 14:30
 15:05  SKIP  TMPV        orb60     ORB60 down: after 14:30
+15:15  CLOSE APOLLOHOSP  square-off @ 9126.50  net Rs +511 [orb30_2r] (charges 58)
+15:15  CLOSE ASIANPAINT  square-off @ 2532.00  net Rs -449 [orb60] (charges 65)
+15:15  CLOSE CIPLA       square-off @ 1438.00  net Rs +296 [vwap] (charges 81)
+15:15  SKIP  HDFCBANK    orb60     ORB60 down: past square-off
+15:15  CLOSE ITC         square-off @ 304.15  net Rs +181 [orb30_2r] (charges 65)
+15:15  CLOSE INFY        square-off @ 1154.00  net Rs -62 [learner] (charges 45)
+15:15  CLOSE TITAN       square-off @ 4689.90  net Rs +7 [learner] (charges 20)
+15:15  SKIP  TRENT       vwap      VWAP reclaim: past square-off
