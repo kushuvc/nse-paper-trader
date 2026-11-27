@@ -183,16 +183,8 @@ NSE's own daily file: latest saved is 2026-11-26
 11:55  SKIP  BEL         vwap      VWAP reclaim: max 3 trades a day
 12:00  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day
 12:00  SKIP  TMPV        vwap      VWAP reclaim: max 3 trades a day
-12:05  SKIP  HINDUNILVR  orb30_2r  ORB30 up: max 3 trades a day
-12:05  SKIP  HINDUNILVR  orb60     ORB60 up: max 3 trades a day
-12:10  CLOSE NTPC        stop       @ 320.35  net Rs -556 [orb30_2r] (charges 42)
-12:10  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day
-2026-11-27: 9 closed (5 won), 10 still open, net Rs -1022 after charges
-  orb15     3 trades, net Rs +250
-  orb30_2r  1 trades, net Rs -556
-  orb60     1 trades, net Rs +358
-  gap_go    1 trades, net Rs -538
-  gap_fade  0 trades, net Rs +0
-  vwap      0 trades, net Rs +0
-  trap90    3 trades, net Rs -536
-  learner   0 trades, net Rs +0
+Shift until 15:20 IST (started 12:15)
+NSE's own end-of-day files -> data/nse/ (looking back 7 days) ...
+  2026-11-24: no file from NSE (a holiday, or not published yet)
+0 new. 98 days saved, 2026-07-08 to 2026-11-26.
+Latest day, 2026-11-26: 1497 of 2782 shares rose (54.6%), Nifty 50 25,884 (+0.25%), 44.7% of the money traded was taken for delivery, India VIX 16.84.
