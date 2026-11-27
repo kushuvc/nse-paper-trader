@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 11:51 IST",
- "updated_ts": 1795760473,
+ "updated": "2026-11-27 12:01 IST",
+ "updated_ts": 1795761074,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -13,17 +13,6 @@
  ],
  "date": "2026-11-27",
  "open": {
-  "orb15|ADANIENT": {
-   "strategy": "orb15",
-   "symbol": "ADANIENT",
-   "side": -1,
-   "qty": 32,
-   "entry": 2670.0,
-   "stop": 2685.5,
-   "target": 2654.5,
-   "entry_time": "09:35",
-   "note": "ORB15 down"
-  },
   "orb30_2r|APOLLOHOSP": {
    "strategy": "orb30_2r",
    "symbol": "APOLLOHOSP",
@@ -295,14 +284,30 @@
    "net": -538.7,
    "r": -1.096,
    "mode": "live"
+  },
+  {
+   "strategy": "orb15",
+   "symbol": "ADANIENT",
+   "side": -1,
+   "qty": 32,
+   "entry": 2670.0,
+   "stop": 2685.5,
+   "target": 2654.5,
+   "entry_time": "09:35",
+   "note": "ORB15 down",
+   "date": "2026-11-27",
+   "exit": 2654.5,
+   "exit_time": "11:55",
+   "reason": "target",
+   "gross": 461.92,
+   "charges": 77.28,
+   "net": 384.64,
+   "r": 0.775,
+   "mode": "live"
   }
  ],
- "today_net": -851.0,
+ "today_net": -466.0,
  "log": [
-  "10:35  OPEN  CIPLA       SHORT   67 @ 1444.20  stop 1451.60  target 1429.40  [vwap: VWAP loss]",
-  "10:35  SKIP  DRREDDY     orb30_2r  ORB30 down: max 3 trades a day",
-  "10:35  SKIP  DRREDDY     orb60     ORB60 down: max 3 trades a day",
-  "10:35  SKIP  EICHERMOT   orb15     ORB15 down: max 3 trades a day",
   "10:35  SKIP  INFY        orb15     ORB15 down: max 3 trades a day",
   "10:35  SKIP  INFY        orb30_2r  ORB30 down: max 3 trades a day",
   "10:35  OPEN  INFY        SHORT   37 @ 1154.00  stop 1167.25  target 1140.75  [learner via orb60, expects +0.06R: short, 10:30-13:00, with market, no gap, wide stop, after usual delivery, after a mixed market]",
@@ -358,12 +363,37 @@
   "11:40  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day",
   "11:40  SKIP  TMPV        vwap      VWAP reclaim: max 3 trades a day",
   "11:45  CLOSE ADANIPORTS  stop       @ 1897.00  net Rs -539 [trap90] (charges 34)",
-  "11:50  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day"
+  "11:50  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day",
+  "11:55  CLOSE ADANIENT    target     @ 2654.50  net Rs +385 [orb15] (charges 77)",
+  "11:55  SKIP  BEL         vwap      VWAP reclaim: max 3 trades a day",
+  "12:00  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day",
+  "12:00  SKIP  TMPV        vwap      VWAP reclaim: max 3 trades a day"
  ],
- "all_trades": 309,
- "all_wins": 167,
- "all_net": -12050.0,
+ "all_trades": 310,
+ "all_wins": 168,
+ "all_net": -11665.0,
  "recent": [
+  {
+   "date": "2026-11-27",
+   "symbol": "ADANIENT",
+   "strategy": "orb15",
+   "side": "-1",
+   "qty": "32",
+   "entry_time": "09:35",
+   "entry": "2670.0",
+   "stop": "2685.5",
+   "target": "2654.5",
+   "exit_time": "11:55",
+   "exit": "2654.5",
+   "reason": "target",
+   "gross": "461.92",
+   "charges": "77.28",
+   "net": "384.64",
+   "r": "0.775",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-27",
    "symbol": "ADANIPORTS",
@@ -867,27 +897,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "DRREDDY",
-   "strategy": "orb15",
-   "side": "1",
-   "qty": "71",
-   "entry_time": "09:35",
-   "entry": "1397.0",
-   "stop": "1391.5",
-   "target": "1402.5",
-   "exit_time": "10:15",
-   "exit": "1402.5",
-   "reason": "target",
-   "gross": "350.75",
-   "charges": "82.27",
-   "net": "268.48",
-   "r": "0.688",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -905,17 +914,17 @@
   "2026-11-23": -947.0,
   "2026-11-25": -195.0,
   "2026-11-26": 3152.0,
-  "2026-11-27": -852.0
+  "2026-11-27": -467.0
  },
  "by_strategy": {
   "orb15": {
    "desc": "15-min opening-range breakout, stop at range mid, 1R target",
-   "today_trades": 2,
-   "today_net": -135,
-   "open": 1,
-   "all_trades": 44,
-   "all_wins": 25,
-   "all_net": -1100
+   "today_trades": 3,
+   "today_net": 250,
+   "open": 0,
+   "all_trades": 45,
+   "all_wins": 26,
+   "all_net": -715
   },
   "orb30_2r": {
    "desc": "30-min opening-range breakout, stop at other side, 2R target",
@@ -997,10 +1006,10 @@
   "accounts": {
    "orb15": {
     "days": 15,
-    "trades": 44,
-    "net": -1100,
-    "per_trade": -25,
-    "t": -0.4,
+    "trades": 45,
+    "net": -715,
+    "per_trade": -16,
+    "t": -0.27,
     "drawdown": -3580,
     "passed": 1,
     "of": 7,
@@ -1016,25 +1025,25 @@
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "44 of 150 trades"
+      "now": "45 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -25 a trade"
+      "now": "Rs -16 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -0.40"
+      "now": "t = -0.27"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -2033 then Rs +933"
+      "now": "Rs -2033 then Rs +1318"
      },
      {
       "id": "drawdown",

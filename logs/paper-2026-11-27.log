@@ -179,3 +179,7 @@ NSE's own daily file: latest saved is 2026-11-26
 11:40  SKIP  TMPV        vwap      VWAP reclaim: max 3 trades a day
 11:45  CLOSE ADANIPORTS  stop       @ 1897.00  net Rs -539 [trap90] (charges 34)
 11:50  SKIP  TRENT       vwap      VWAP reclaim: max 3 trades a day
+11:55  CLOSE ADANIENT    target     @ 2654.50  net Rs +385 [orb15] (charges 77)
+11:55  SKIP  BEL         vwap      VWAP reclaim: max 3 trades a day
+12:00  SKIP  HDFCBANK    vwap      VWAP reclaim: max 3 trades a day
+12:00  SKIP  TMPV        vwap      VWAP reclaim: max 3 trades a day
