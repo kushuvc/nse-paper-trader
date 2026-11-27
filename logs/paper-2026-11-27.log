@@ -72,3 +72,19 @@ NSE's own daily file: latest saved is 2026-11-26
 10:10  SKIP  M&M         orb15     ORB15 up: max 3 trades a day
 10:10  SKIP  M&M         orb30_2r  ORB30 up: max 3 trades a day
 10:10  SKIP  SBILIFE     orb30_2r  ORB30 up: max 3 trades a day
+10:15  SKIP  TATACONSUM  orb15     ORB15 down: max 3 trades a day
+10:15  SKIP  TATACONSUM  orb30_2r  ORB30 down: max 3 trades a day
+10:20  OPEN  ASIANPAINT  BUY     24 @ 2547.00  stop 2526.65  target 2567.30  [orb60: ORB60 up]
+10:20  SKIP  BAJAJ-AUTO  orb15     ORB15 down: max 3 trades a day
+10:20  SKIP  BAJAJ-AUTO  orb30_2r  ORB30 down: max 3 trades a day
+10:20  OPEN  BAJAJ-AUTO  SHORT    7 @ 10768.00  stop 10834.00  target 10702.00  [orb60: ORB60 down]
+10:20  SKIP  COALINDIA   orb15     ORB15 down: max 3 trades a day
+10:20  SKIP  COALINDIA   orb30_2r  ORB30 down: max 3 trades a day
+10:20  OPEN  COALINDIA   SHORT  227 @ 386.45  stop 388.65  target 384.25  [orb60: ORB60 down]
+10:20  OPEN  COALINDIA   SHORT  217 @ 386.45  stop 388.75  target 381.95  [vwap: VWAP loss]
+10:20  SKIP  HINDALCO    orb30_2r  ORB30 down: max 3 trades a day
+10:20  SKIP  HINDALCO    orb60     ORB60 down: max 3 trades a day
+10:20  SKIP  JIOFIN      orb15     ORB15 down: max 3 trades a day
+10:20  SKIP  JIOFIN      orb30_2r  ORB30 down: max 3 trades a day
+10:20  SKIP  JIOFIN      orb60     ORB60 down: max 3 trades a day
+10:20  SKIP  TATACONSUM  orb60     ORB60 down: max 3 trades a day
