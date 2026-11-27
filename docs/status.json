@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27 11:01 IST",
- "updated_ts": 1795757465,
+ "updated": "2026-11-27 11:11 IST",
+ "updated_ts": 1795758067,
  "in_session": true,
  "strategies": [
   "orb15",
@@ -78,17 +78,6 @@
    "target": 2567.3,
    "entry_time": "10:20",
    "note": "ORB60 up"
-  },
-  "orb60|BAJAJ-AUTO": {
-   "strategy": "orb60",
-   "symbol": "BAJAJ-AUTO",
-   "side": -1,
-   "qty": 7,
-   "entry": 10768.0,
-   "stop": 10834.0,
-   "target": 10702.0,
-   "entry_time": "10:20",
-   "note": "ORB60 down"
   },
   "orb60|COALINDIA": {
    "strategy": "orb60",
@@ -277,21 +266,30 @@
    "net": 408.32,
    "r": 0.821,
    "mode": "live"
+  },
+  {
+   "strategy": "orb60",
+   "symbol": "BAJAJ-AUTO",
+   "side": -1,
+   "qty": 7,
+   "entry": 10768.0,
+   "stop": 10834.0,
+   "target": 10702.0,
+   "entry_time": "10:20",
+   "note": "ORB60 down",
+   "date": "2026-11-27",
+   "exit": 10702.0,
+   "exit_time": "11:05",
+   "reason": "target",
+   "gross": 431.94,
+   "charges": 73.73,
+   "net": 358.21,
+   "r": 0.775,
+   "mode": "live"
   }
  ],
- "today_net": -670.0,
+ "today_net": -312.0,
  "log": [
-  "10:25  SKIP  NESTLEIND   orb60     ORB60 down: max 3 trades a day",
-  "10:25  SKIP  SHRIRAMFIN  orb15     ORB15 down: max 3 trades a day",
-  "10:25  SKIP  SHRIRAMFIN  orb30_2r  ORB30 down: max 3 trades a day",
-  "10:25  SKIP  SHRIRAMFIN  orb60     ORB60 down: max 3 trades a day",
-  "10:25  SKIP  SUNPHARMA   orb15     ORB15 down: max 3 trades a day",
-  "10:25  SKIP  SUNPHARMA   orb30_2r  ORB30 down: max 3 trades a day",
-  "10:30  SKIP  HDFCLIFE    orb60     ORB60 down: max 3 trades a day",
-  "10:30  SKIP  ITC         orb60     ORB60 down: max 3 trades a day",
-  "10:30  SKIP  KOTAKBANK   orb30_2r  ORB30 down: max 3 trades a day",
-  "10:30  SKIP  KOTAKBANK   orb60     ORB60 down: max 3 trades a day",
-  "10:30  SKIP  ONGC        orb15     ORB15 down: max 3 trades a day",
   "10:30  SKIP  ONGC        orb30_2r  ORB30 down: max 3 trades a day",
   "10:30  SKIP  ONGC        orb60     ORB60 down: max 3 trades a day",
   "10:30  SKIP  ULTRACEMCO  orb15     ORB15 down: max 3 trades a day",
@@ -340,12 +338,44 @@
   "10:55  SKIP  TITAN       orb30_2r  ORB30 down: max 3 trades a day",
   "10:55  SKIP  TITAN       learner   via orb60 (expects +0.09R): already holding this stock",
   "10:55  SKIP  TITAN       orb60     ORB60 down: max 3 trades a day",
-  "11:00  SKIP  CIPLA       orb60     ORB60 down: max 3 trades a day"
+  "11:00  SKIP  CIPLA       orb60     ORB60 down: max 3 trades a day",
+  "11:05  SKIP  APOLLOHOSP  orb60     ORB60 down: max 3 trades a day",
+  "11:05  CLOSE BAJAJ-AUTO  target     @ 10702.00  net Rs +358 [orb60] (charges 74)",
+  "11:05  SKIP  GRASIM      orb15     ORB15 down: max 3 trades a day",
+  "11:05  SKIP  GRASIM      orb30_2r  ORB30 down: max 3 trades a day",
+  "11:05  SKIP  GRASIM      orb60     ORB60 down: max 3 trades a day",
+  "11:05  SKIP  HINDUNILVR  vwap      VWAP loss: max 3 trades a day",
+  "11:05  SKIP  MARUTI      orb30_2r  ORB30 down: max 3 trades a day",
+  "11:05  SKIP  MARUTI      orb60     ORB60 down: max 3 trades a day",
+  "11:05  SKIP  SUNPHARMA   vwap      VWAP loss: max 3 trades a day",
+  "11:05  SKIP  TATASTEEL   vwap      VWAP reclaim: max 3 trades a day",
+  "11:10  SKIP  TMPV        vwap      VWAP reclaim: max 3 trades a day"
  ],
- "all_trades": 307,
- "all_wins": 166,
- "all_net": -11869.0,
+ "all_trades": 308,
+ "all_wins": 167,
+ "all_net": -11511.0,
  "recent": [
+  {
+   "date": "2026-11-27",
+   "symbol": "BAJAJ-AUTO",
+   "strategy": "orb60",
+   "side": "-1",
+   "qty": "7",
+   "entry_time": "10:20",
+   "entry": "10768.0",
+   "stop": "10834.0",
+   "target": "10702.0",
+   "exit_time": "11:05",
+   "exit": "10702.0",
+   "reason": "target",
+   "gross": "431.94",
+   "charges": "73.73",
+   "net": "358.21",
+   "r": "0.775",
+   "mode": "live",
+   "via": "",
+   "setup": ""
+  },
   {
    "date": "2026-11-27",
    "symbol": "ADANIPORTS",
@@ -849,27 +879,6 @@
    "mode": "live",
    "via": "",
    "setup": ""
-  },
-  {
-   "date": "2026-11-26",
-   "symbol": "BEL",
-   "strategy": "trap90",
-   "side": "1",
-   "qty": "81",
-   "entry_time": "09:30",
-   "entry": "404.6",
-   "stop": "398.5",
-   "target": "405.2",
-   "exit_time": "09:35",
-   "exit": "405.2",
-   "reason": "target",
-   "gross": "35.48",
-   "charges": "34.78",
-   "net": "0.7",
-   "r": "0.001",
-   "mode": "live",
-   "via": "",
-   "setup": ""
   }
  ],
  "by_day": {
@@ -887,7 +896,7 @@
   "2026-11-23": -947.0,
   "2026-11-25": -195.0,
   "2026-11-26": 3152.0,
-  "2026-11-27": -671.0
+  "2026-11-27": -313.0
  },
  "by_strategy": {
   "orb15": {
@@ -910,12 +919,12 @@
   },
   "orb60": {
    "desc": "first-hour range breakout, stop at mid, 1R",
-   "today_trades": 0,
-   "today_net": 0,
-   "open": 3,
-   "all_trades": 42,
-   "all_wins": 21,
-   "all_net": -4435
+   "today_trades": 1,
+   "today_net": 358,
+   "open": 2,
+   "all_trades": 43,
+   "all_wins": 22,
+   "all_net": -4077
   },
   "gap_go": {
    "desc": "gap >=1% that continues: join, 2R",
@@ -1088,11 +1097,11 @@
     ]
    },
    "orb60": {
-    "days": 14,
-    "trades": 42,
-    "net": -4435,
-    "per_trade": -106,
-    "t": -1.61,
+    "days": 15,
+    "trades": 43,
+    "net": -4077,
+    "per_trade": -95,
+    "t": -1.44,
     "drawdown": -6414,
     "passed": 1,
     "of": 7,
@@ -1102,31 +1111,31 @@
       "id": "days",
       "need": "60+ days of paper trading",
       "ok": false,
-      "now": "14 of 60 days"
+      "now": "15 of 60 days"
      },
      {
       "id": "trades",
       "need": "150+ paper trades",
       "ok": false,
-      "now": "42 of 150 trades"
+      "now": "43 of 150 trades"
      },
      {
       "id": "profit",
       "need": "Profit per trade after charges",
       "ok": false,
-      "now": "Rs -106 a trade"
+      "now": "Rs -95 a trade"
      },
      {
       "id": "luck",
       "need": "Too strong to be luck (t of 3 or more)",
       "ok": false,
-      "now": "t = -1.61"
+      "now": "t = -1.44"
      },
      {
       "id": "steady",
       "need": "Profitable in both halves",
       "ok": false,
-      "now": "Rs -2905 then Rs -1530"
+      "now": "Rs -2905 then Rs -1171"
      },
      {
       "id": "drawdown",
