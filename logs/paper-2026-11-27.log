@@ -45,3 +45,15 @@ NSE's own daily file: latest saved is 2026-11-26
 09:40  SKIP  INDIGO      orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  SBILIFE     orb15     ORB15 up: max 3 trades a day
 09:40  SKIP  SBIN        orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  APOLLOHOSP  orb15     ORB15 down: max 3 trades a day
+09:45  CLOSE BAJFINANCE  target     @ 1102.70  net Rs +1 [trap90] (charges 35)
+09:45  SKIP  HDFCLIFE    orb15     ORB15 up: max 3 trades a day
+09:45  SKIP  HINDUNILVR  orb15     ORB15 down: max 3 trades a day
+09:45  SKIP  ITC         orb15     ORB15 down: max 3 trades a day
+09:50  OPEN  APOLLOHOSP  SHORT    6 @ 9225.00  stop 9302.50  target 9070.00  [orb30_2r: ORB30 down]
+09:50  OPEN  ITC         SHORT  200 @ 305.50  stop 308.00  target 300.50  [orb30_2r: ORB30 down]
+09:50  SKIP  KOTAKBANK   orb15     ORB15 down: max 3 trades a day
+09:50  SKIP  MARUTI      orb15     ORB15 down: max 3 trades a day
+09:50  SKIP  NTPC        orb15     ORB15 up: max 3 trades a day
+09:50  OPEN  NTPC        BUY    123 @ 324.40  stop 320.35  target 332.40  [orb30_2r: ORB30 up]
+09:50  SKIP  POWERGRID   orb30_2r  ORB30 up: max 3 trades a day

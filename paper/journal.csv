@@ -302,3 +302,4 @@ date,symbol,strategy,side,qty,entry_time,entry,stop,target,exit_time,exit,reason
 2026-11-26,MARUTI,learner,-1,2,09:50,13955.0,14161.0,13543.0,15:15,14054.0,square-off,-209.2,29.68,-238.88,-0.58,live,orb30_2r,"short, before 10:30, with market, no gap, wide stop, after usual delivery, after a mixed market"
 2026-11-26,MARUTI,orb30_2r,-1,2,09:50,13955.0,14161.0,13543.0,15:15,14054.0,square-off,-209.2,29.68,-238.88,-0.58,live,,
 2026-11-27,BSE,trap90,1,8,09:30,4033.7,3973.15,4039.75,09:35,4039.75,target,35.48,34.25,1.23,0.003,live,,
+2026-11-27,BAJFINANCE,trap90,1,30,09:30,1101.05,1084.5,1102.7,09:45,1102.7,target,36.28,35.06,1.22,0.002,live,,
